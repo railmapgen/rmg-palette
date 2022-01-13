@@ -1,0 +1,1 @@
+document.body.append("Welcome to rmg-palette")
