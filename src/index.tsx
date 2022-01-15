@@ -7,7 +7,7 @@ const renderApp = () => {
         <React.StrictMode>
             <AppRoot />
         </React.StrictMode>,
-        document.getElementById('root'),
+        document.getElementById('root')
     );
 };
 

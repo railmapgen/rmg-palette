@@ -24,7 +24,7 @@ then
   export RMG_VER=$(node -p "require('./package.json').version")
 else
   # build with a hashed version
-  VERSION=`node -p "require('./package.json').version"`
+  VERSION=$(node -p "require('./package.json').version")
   GITHASH=$(git log -n 1 --pretty=%h)
   export RMG_VER="$VERSION.$BRANCH.$GITHASH"
   # git tag -a "${APP_NAME}-${RMG_VER}" -m "${APP_NAME}-${RMG_VER}"
@@ -32,13 +32,13 @@ fi
 
 
 ### BUILD
-mkdir -p $UAT_REPO_NAME/$APP_NAME/
+mkdir -p $UAT_REPO_NAME/"$APP_NAME"/
 
 # PRD
 if [ "$BRANCH" = "master" ]
 then
   CI='' npm run build
-  cp -r build/ $UAT_REPO_NAME/$APP_NAME/$RMG_VER/
+  cp -r build/ $UAT_REPO_NAME/"$APP_NAME"/"$RMG_VER"/
 fi
 
 ### PUSH TAG AND COMMIT
@@ -51,8 +51,8 @@ fi
 ### UPLOAD ARTIFACTS
 cd $UAT_REPO_NAME/
 git add .
-git commit -m "Build version $RMG_VER"
+git commit -m "Build version $APP_NAME-$RMG_VER"
 git push --force
 
 
-echo "Build Success: $RMG_VER"
+echo "Build Success: $APP_NAME-$RMG_VER"
