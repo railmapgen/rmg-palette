@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/rmg-palette/static/js/main.c74a1ed9.js",
+    "index.html": "/rmg-palette/index.html",
+    "main.c74a1ed9.js.map": "/rmg-palette/static/js/main.c74a1ed9.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c74a1ed9.js"
+  ]
+}
