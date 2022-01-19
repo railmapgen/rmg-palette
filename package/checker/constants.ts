@@ -27,7 +27,7 @@ enum LanguageCode {
 
 type Translation = { [l in LanguageCode]?: string };
 
-enum MonoColour {
+export enum MonoColour {
     black = '#000',
     white = '#fff',
 }

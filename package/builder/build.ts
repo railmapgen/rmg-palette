@@ -1,6 +1,6 @@
 // node --loader ts-node/esm .\builder\build.ts
 
-import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'fs';
 import { inspect } from 'util';
 
 import { CityEntry } from '../checker/constants';
@@ -22,20 +22,21 @@ if (!existsSync('./lib')) {
     mkdirSync('./lib');
 }
 
-// write complete constants.ts
+// write complete constants.ts as index.ts
 const rawConstants = readFileSync('./checker/constants.ts', 'utf-8').replace(
     'id: string; // replace me, builder!',
     'id: CityCode;'
 );
 const constantsFileContent = rawConstants + '\r\n' + cityCodeEnum;
-writeFileSync('./lib/constants.ts', constantsFileContent);
+writeFileSync('./lib/index.ts', constantsFileContent);
 
-// write city-config.ts with cities in CityCode format
+// append city-config with cities in CityCode format to index.ts
 cityConfig.forEach(city => (city.id = `CityCode.${capitalize(city.id)}`));
-const cityConfigFileContent =
-    "import { CityEntry, CityCode } from './constants';\r\n\r\n" +
-    `export const cityList: CityEntry[] = ${inspect(cityConfig)};\r\n`.replace(/'(CityCode.\w+)'/g, '$1');
-writeFileSync('./lib/city-config.ts', cityConfigFileContent);
+const cityConfigFileContent = `\r\nexport const cityList: CityEntry[] = ${inspect(cityConfig)};\r\n`.replace(
+    /'(CityCode.\w+)'/g,
+    '$1'
+);
+appendFileSync('./lib/index.ts', cityConfigFileContent);
 
 if (!existsSync('./lib/palettes')) mkdirSync('./lib/palettes');
 readdirSync('../public/resources/palettes/', 'utf-8')
@@ -50,8 +51,10 @@ readdirSync('../public/resources/palettes/', 'utf-8')
         return {
             city: removeExtension(cityFile.filename),
             content:
-                "import { PaletteEntry } from '../constants';\r\n\r\n" +
-                `const ${city}: PaletteEntry[] = ${inspect(cityFile.content)};\r\n\r\nexport default ${city};\r\n`,
+                "import { PaletteEntry, MonoColour } from '../index';\r\n\r\n" +
+                `const ${city}: PaletteEntry[] = ${JSON.stringify(cityFile.content)
+                    .replaceAll('"#000"', 'MonoColour.black')
+                    .replaceAll('"#fff"', 'MonoColour.white')};\r\n\r\nexport default ${city};\r\n`,
         };
     })
     .map(cityFile => writeFileSync(`./lib/palettes/${cityFile.city}.ts`, cityFile.content));

@@ -12,7 +12,7 @@ console.log('Hi, this is the RMG bot who will validate json resources');
 
 // check city-config.json follows the CityEntry[]
 const checkCityConfig = (): string[] => {
-    const rawCityConfig = JSON.parse(readFileSync('./public/resources/city-config.json', 'utf-8'));
+    const rawCityConfig = JSON.parse(readFileSync('../public/resources/city-config.json', 'utf-8'));
     if (!is<CityEntry[]>(rawCityConfig)) {
         throw new TypeError("city-config.json doesn't follow the CityEntry[]");
     }
@@ -25,7 +25,7 @@ const checkCityConfig = (): string[] => {
 
 // make sure every city in cityCode correspond to a JSON file in palettes
 const checkCorrespondence = (cityCode: string[]) => {
-    const cityNames = readdirSync('./public/resources/palettes/', 'utf-8').map(filename =>
+    const cityNames = readdirSync('../public/resources/palettes/', 'utf-8').map(filename =>
         filename.replace(/(.*)\.(.*?)$/, '$1')
     );
     const cityFileWithUnkownNames = cityCode
@@ -38,8 +38,8 @@ const checkCorrespondence = (cityCode: string[]) => {
 
 // check each city json follows the PaletteEntry[]
 const checkCity = () => {
-    const invalidCityFilenames = readdirSync('./public/resources/palettes/', 'utf-8')
-        .map(cityFilename => `./public/resources/palettes/${cityFilename}`)
+    const invalidCityFilenames = readdirSync('../public/resources/palettes/', 'utf-8')
+        .map(cityFilename => `../public/resources/palettes/${cityFilename}`)
         .map(cityFilename => {
             return { filename: cityFilename, content: JSON.parse(readFileSync(cityFilename, 'utf-8')) };
         })
