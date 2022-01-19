@@ -10,7 +10,7 @@
         "@chakra-ui/react": "^1.7.3",
         "@emotion/react": "^11.7.1",
         "@emotion/styled": "^11.6.0",
-        "@railmapgen/rmg-palette-resources": "0.1.5",
+        "@railmapgen/rmg-palette-resources": "file:package",
         "framer-motion": "^5.5.5",
         "i18next": "^21.5.4",
         "i18next-browser-languagedetector": "^6.1.2",
@@ -46,7 +46,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "test:no-watch": "cross-env CI=true react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "postinstall": "cd ./package && npm install"
     },
     "browserslist": {
         "production": [
