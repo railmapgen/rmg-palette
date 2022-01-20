@@ -1,4 +1,4 @@
-name: Build
+name: Check
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       - '#7-CI'
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     env:
       TS_NODE_COMPILER: ttypescript
