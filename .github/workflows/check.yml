@@ -1,4 +1,4 @@
-name: Check
+name: Build_Package
 
 on:
   workflow_dispatch:
@@ -19,4 +19,19 @@ jobs:
           cache: 'npm'
       - run: npm i
       - name: check
-        run: node --loader ts-node/esm ./checker/check.ts
+        run: cd ./package && node --loader ts-node/esm ./checker/check.ts
+
+  compile:
+    needs: [check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm i
+      - name: build
+        run: cd ./package && node --loader ts-node/esm ./builder/build.ts
+      - name: compile
+        run: cd ./lib && npx tsc
