@@ -8,7 +8,7 @@
         "validate": "TS_NODE_COMPILER=\"ttypescript\" && node --loader ts-node/esm ./checker/check.ts"
     },
     "author": "",
-    "license": "ISC",
+    "license": "GPL-3.0",
     "devDependencies": {
         "ts-node": "^10.4.0",
         "ttypescript": "^1.5.13",
