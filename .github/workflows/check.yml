@@ -33,5 +33,7 @@ jobs:
       - run: npm i
       - name: build
         run: cd ./package && node --loader ts-node/esm ./builder/build.ts
+      - name: move ts
+        run: mv ./package/lib ./lib
       - name: compile
         run: cd ./lib && npx tsc
