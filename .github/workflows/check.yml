@@ -36,10 +36,11 @@ jobs:
         if: github.ref == 'refs/heads/master'
         run: |
           cd ./package
-          npm version patch -m "rmg-palette-resources-%s release" --force
+          npm config set tag-version-prefix "rmg-palette-resources-"
           git config --global user.name "RMG Build Agent"
           git config --global user.email rmg.build.agent@users.noreply.github.com
-          git push --atomic origin HEAD "${APP_NAME}-${RMG_VER}"
+          npm version patch -m "rmg-palette-resources-%s release" --force
+          git push --atomic origin HEAD "rmg-palette-resources-${RMG_VER}"
 
       - name: build
         run: |
