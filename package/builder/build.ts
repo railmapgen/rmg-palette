@@ -48,13 +48,20 @@ readdirSync('../public/resources/palettes/', 'utf-8')
         const city = capitalize(removeExtension(cityFile.filename));
         return {
             city: removeExtension(cityFile.filename),
-            content:
-                "import { PaletteEntry, MonoColour } from '../index';\r\n\r\n" +
-                `const ${city}: PaletteEntry[] = ${JSON.stringify(cityFile.content)
-                    .replaceAll('"#000"', 'MonoColour.black')
-                    .replaceAll('"#fff"', 'MonoColour.white')};\r\n\r\nexport default ${city};\r\n`,
+            content: `
+import { PaletteEntry, MonoColour } from '../index';
+const ${city}: PaletteEntry[] = ${JSON.stringify(cityFile.content)
+                .replaceAll('"#000"', 'MonoColour.black')
+                .replaceAll('"#fff"', 'MonoColour.white')};
+export default ${city};
+`,
         };
     })
     .map(cityFile => writeFileSync(`${distPath}/palettes/${cityFile.city}.ts`, cityFile.content));
 
 console.log('.ts files are written to ./package/lib.');
+
+// create package.json for npm publish
+const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'));
+if (!existsSync('./dist')) mkdirSync('./dist');
+writeFileSync('./dist/package.json', JSON.stringify({ ...packageJson, type: undefined }));

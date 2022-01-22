@@ -1,8 +1,17 @@
-import React from 'react';
-import { cityList } from '@railmapgen/rmg-palette-resources/dist';
-import Guangzhou from '@railmapgen/rmg-palette-resources/dist/palettes/guangzhou';
+import React, { useEffect, useState } from 'react';
+import { cityList, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 
 export default function AppRoot() {
+    const [lineList, setLineList] = useState<PaletteEntry[]>([]);
+
+    useEffect(() => {
+        import('@railmapgen/rmg-palette-resources/palettes/guangzhou')
+            .then(module => module.default)
+            .then(list => setLineList(list as any));
+    }, []);
+
+    console.log(lineList);
+
     return (
         <div>
             <h1>RMG Palette</h1>
@@ -14,7 +23,7 @@ export default function AppRoot() {
             </ul>
 
             <ul>
-                {Guangzhou.map(line => (
+                {lineList.map(line => (
                     <div key={line.id}>{line.name.en}</div>
                 ))}
             </ul>

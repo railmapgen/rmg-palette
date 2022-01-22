@@ -1,4 +1,4 @@
-name: Build_Package
+name: Resources Build and Publish
 
 on:
   workflow_dispatch:
@@ -19,10 +19,10 @@ jobs:
           cache: 'npm'
       - run: npm i
       - name: check
-        run: cd ./package && node --loader ts-node/esm ./checker/check.ts
+        run: npm run check
 
   compile:
-    needs: [check]
+    needs: [ check ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,9 +31,17 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - run: npm i
+
+      - name: Bump version
+        if: github.ref == 'refs/heads/master'
+        run: npm version patch
+
       - name: build
-        run: cd ./package && node --loader ts-node/esm ./builder/build.ts
-      - name: move ts
-        run: mv ./package/lib/ ./lib/src/
-      - name: compile
-        run: cd ./lib && npx tsc
+        run: |
+          npm run build
+
+      - name: Pulish to npm
+        if: github.ref == 'refs/heads/master'
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrects.RMG_NPM_PUBLISH }}
