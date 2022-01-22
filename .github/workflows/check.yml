@@ -19,7 +19,7 @@ jobs:
           cache: 'npm'
       - run: npm i
       - name: check
-        run: npm run check
+        run: cd ./package && npm run check
 
   compile:
     needs: [ check ]
@@ -34,7 +34,12 @@ jobs:
 
       - name: Bump version
         if: github.ref == 'refs/heads/master'
-        run: npm version patch
+        run: |
+          cd ./package
+          npm version patch -m "rmg-palette-resources-%s release" --force
+          git config --global user.name "RMG Build Agent"
+          git config --global user.email rmg.build.agent@users.noreply.github.com
+          git push --atomic origin HEAD "${APP_NAME}-${RMG_VER}"
 
       - name: build
         run: |
