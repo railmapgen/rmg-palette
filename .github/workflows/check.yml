@@ -32,19 +32,10 @@ jobs:
           cache: 'npm'
       - run: npm i
 
-      - name: Bump version
-        if: github.ref == 'refs/heads/master'
+      - name: Pre-publish
         run: |
-          cd ./package
-          npm config set tag-version-prefix "rmg-palette-resources-"
-          git config --global user.name "RMG Build Agent"
-          git config --global user.email rmg.build.agent@users.noreply.github.com
-          npm version patch -m "rmg-palette-resources-%s release" --force
-          git push --atomic origin HEAD "rmg-palette-resources-${RMG_VER}"
-
-      - name: build
-        run: |
-          npm run build
+          chmod +x ./prepublish.sh
+          ./prepublish.sh
 
       - name: Pulish to npm
         if: github.ref == 'refs/heads/master'
