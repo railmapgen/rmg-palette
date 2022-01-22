@@ -4,8 +4,7 @@
     "description": "",
     "main": "./index.js",
     "scripts": {
-        "build": "node --loader ts-node/esm builder/build.ts",
-        "validate": "TS_NODE_COMPILER=\"ttypescript\" && node --loader ts-node/esm ./checker/check.ts"
+        "build": "npx tsc"
     },
     "author": "",
     "license": "GPL-3.0",
@@ -17,6 +16,5 @@
     },
     "exports": {
         "./": "./"
-    },
-    "type": "module"
+    }
 }

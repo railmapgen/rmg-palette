@@ -1,0 +1,39 @@
+name: Build_Package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '#7-CI'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      TS_NODE_COMPILER: ttypescript
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm i
+      - name: check
+        run: cd ./package && node --loader ts-node/esm ./checker/check.ts
+
+  compile:
+    needs: [check]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm i
+      - name: build
+        run: cd ./package && node --loader ts-node/esm ./builder/build.ts
+      - name: move ts
+        run: mv ./package/lib/ ./lib/src/
+      - name: compile
+        run: cd ./lib && npx tsc

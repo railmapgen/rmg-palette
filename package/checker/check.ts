@@ -8,7 +8,7 @@ import { is } from 'typescript-is';
 
 import { PaletteEntry, CityEntry } from './constants';
 
-console.log('Hi, this is the RMG bot who will validate json resources');
+console.log('Hi, this is the RMG bot who will validate json resources.');
 
 // check city-config.json follows the CityEntry[]
 const checkCityConfig = (): string[] => {
@@ -19,7 +19,7 @@ const checkCityConfig = (): string[] => {
     // record all the cities shown in the city-config
     const cityConfig = rawCityConfig as unknown as CityEntry[];
     const cityCode = cityConfig.map(city => city.id);
-    console.log(cityCode);
+    console.log('Cities that are identified: ', cityCode);
     return cityCode;
 };
 
