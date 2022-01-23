@@ -67,8 +67,8 @@ export interface CityEntry {
      * ISO 3166-1 alpha-2 country code. (For cities in Britain, append BS 6879 subdivision code. )
      */
     country: string;
-    flagEmoji: string;
-    flagSvg: string;
+    flagEmoji?: string;
+    flagSvg?: string;
     /**
      * Key-value pairs of multi-lingual names of the city.
      */

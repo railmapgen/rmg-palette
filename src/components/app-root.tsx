@@ -34,7 +34,7 @@ export default function AppRoot() {
 }
 
 interface FlagImageProps {
-    filename: string;
+    filename?: string;
 }
 
 const FlagImage = (props: FlagImageProps) => {
