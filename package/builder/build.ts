@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, append
 import { inspect } from 'util';
 
 import { CityEntry } from '../checker/constants';
+import { fetchFlagSvg, getFlagEmoji } from './emoji-util';
 
 console.log('Hi, this is the RMG bot who will build packages.');
 
@@ -29,12 +30,23 @@ const constantsFileContent = rawConstants + '\r\n' + cityCodeEnum;
 writeFileSync(`${distPath}/index.ts`, constantsFileContent);
 
 // append city-config with cities in CityCode format to index.ts
-cityConfig.forEach(city => (city.id = `CityCode.${capitalize(city.id)}`));
-const cityConfigFileContent = `\r\nexport const cityList: CityEntry[] = ${inspect(cityConfig)};\r\n`.replace(
-    /'(CityCode.\w+)'/g,
-    '$1'
-);
-appendFileSync(`${distPath}/index.ts`, cityConfigFileContent);
+Promise.all(
+    cityConfig.map(async city => {
+        const flagSvg = await fetchFlagSvg(city.country);
+        return {
+            ...city,
+            id: `CityCode.${capitalize(city.id)}`,
+            flagEmoji: getFlagEmoji(city.country),
+            flagSvg,
+        };
+    })
+).then(updatedConfig => {
+    const cityConfigFileContent = `\r\nexport const cityList: CityEntry[] = ${inspect(updatedConfig)};\r\n`.replace(
+        /'(CityCode.\w+)'/g,
+        '$1'
+    );
+    appendFileSync(`${distPath}/index.ts`, cityConfigFileContent);
+});
 
 if (!existsSync(`${distPath}/palettes`)) mkdirSync(`${distPath}/palettes`);
 readdirSync('../public/resources/palettes/', 'utf-8')

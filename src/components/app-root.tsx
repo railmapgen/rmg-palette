@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { cityList, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { Image } from '@chakra-ui/react';
 
 export default function AppRoot() {
     const [lineList, setLineList] = useState<PaletteEntry[]>([]);
@@ -18,7 +19,10 @@ export default function AppRoot() {
 
             <ul>
                 {cityList.map(city => (
-                    <li key={city.id}>{city.name.en}</li>
+                    <li key={city.id}>
+                        <Image src={city.flagSvg} h={20} />
+                        {city.flagEmoji + ' ' + city.name.en}
+                    </li>
                 ))}
             </ul>
 
