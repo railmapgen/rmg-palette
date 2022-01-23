@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { cityList, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { Image } from '@chakra-ui/react';
 
 export default function AppRoot() {
     const [lineList, setLineList] = useState<PaletteEntry[]>([]);
@@ -10,15 +11,16 @@ export default function AppRoot() {
             .then(list => setLineList(list as any));
     }, []);
 
-    console.log(lineList);
-
     return (
         <div>
             <h1>RMG Palette</h1>
 
             <ul>
                 {cityList.map(city => (
-                    <li key={city.id}>{city.name.en}</li>
+                    <li key={city.id}>
+                        <FlagImage filename={city.flagSvg} />
+                        {city.flagEmoji + ' ' + city.name.en}
+                    </li>
                 ))}
             </ul>
 
@@ -30,3 +32,19 @@ export default function AppRoot() {
         </div>
     );
 }
+
+interface FlagImageProps {
+    filename?: string;
+}
+
+const FlagImage = (props: FlagImageProps) => {
+    const { filename } = props;
+
+    const [flagUrl, setFlagUrl] = useState<string>();
+
+    useEffect(() => {
+        import('@railmapgen/rmg-palette-resources/flags/' + filename).then(module => module.default).then(setFlagUrl);
+    }, []);
+
+    return <Image src={flagUrl} h={20} />;
+};

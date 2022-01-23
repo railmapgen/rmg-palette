@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, append
 import { inspect } from 'util';
 
 import { CityEntry } from '../checker/constants';
+import { copyFlagSvgFromResources, getFlagEmoji, getFlagSvg } from './emoji-util';
 
 console.log('Hi, this is the RMG bot who will build packages.');
 
@@ -28,9 +29,28 @@ const rawConstants = readFileSync('./checker/constants.ts', 'utf-8').replace(
 const constantsFileContent = rawConstants + '\r\n' + cityCodeEnum;
 writeFileSync(`${distPath}/index.ts`, constantsFileContent);
 
+if (!existsSync('./dist/flags')) mkdirSync('./dist/flags', { recursive: true });
+
 // append city-config with cities in CityCode format to index.ts
-cityConfig.forEach(city => (city.id = `CityCode.${capitalize(city.id)}`));
-const cityConfigFileContent = `\r\nexport const cityList: CityEntry[] = ${inspect(cityConfig)};\r\n`.replace(
+const updatedConfig = cityConfig.map(city => {
+    return {
+        ...city,
+        id: `CityCode.${capitalize(city.id)}`,
+        flagEmoji: getFlagEmoji(city.country),
+        flagSvg: getFlagSvg(city.country),
+    };
+});
+// copy flags to dist
+Promise.all(
+    Object.values(updatedConfig)
+        .reduce<string[]>((acc, cur) => {
+            const { flagSvg } = cur;
+            return acc.includes(flagSvg) ? acc : [...acc, flagSvg];
+        }, [])
+        .map(copyFlagSvgFromResources)
+).then();
+
+const cityConfigFileContent = `export const cityList: CityEntry[] = ${inspect(updatedConfig)};\r\n`.replace(
     /'(CityCode.\w+)'/g,
     '$1'
 );
@@ -63,5 +83,4 @@ console.log('.ts files are written to ./package/lib.');
 
 // create package.json for npm publish
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf-8'));
-if (!existsSync('./dist')) mkdirSync('./dist');
 writeFileSync('./dist/package.json', JSON.stringify({ ...packageJson, type: undefined }));
