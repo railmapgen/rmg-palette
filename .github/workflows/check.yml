@@ -1,10 +1,8 @@
-name: Resources Build and Publish
+name: Resources Check
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - '#7-CI'
+  pull_request:
 
 jobs:
   check:
@@ -20,30 +18,3 @@ jobs:
       - run: npm run postinstall
       - name: check
         run: cd ./package && npm run check
-
-  compile:
-    needs: [ check ]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          cache: 'npm'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm run postinstall
-
-      - name: Pre-publish
-        run: |
-          chmod +x ./prepublish.sh
-          ./prepublish.sh
-
-      - name: Pulish to npm
-        if: github.ref == 'refs/heads/master'
-        run: |
-          cd ./package/dist
-          npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
