@@ -1,4 +1,6 @@
 import fetch from 'node-fetch';
+import { readFile, writeFile } from 'fs/promises';
+import { mkdir } from 'fs';
 
 const getFlagEmojiCodePoints = (countryCode: string): string[] => {
     const chars = countryCode.toUpperCase().split('');
@@ -23,15 +25,46 @@ export const getFlagEmoji = (countryCode: string): string => {
     return String.fromCodePoint(...codePoints.map(cp => parseInt(cp, 16)));
 };
 
-export const fetchFlagSvg = async (countryCode: string): Promise<string> => {
+export const getFlagSvg = (countryCode: string): string => {
     const codePoints = getFlagEmojiCodePoints(countryCode);
+    return codePoints.join('-') + '.svg';
+};
+
+export const copyFlagSvgFromResources = async (filename: string) => {
+    let flagSvgString = '';
+    try {
+        flagSvgString = await readSvgFromResources(filename);
+    } catch (err) {
+        console.info(
+            `copyFlagSvgFromResources():: Failed to find ${filename} from resources, falling back to OpenMoji.org`
+        );
+        try {
+            flagSvgString = await fetchAndSaveSvgFromOpenMoji(filename);
+        } catch (e) {
+            console.warn(
+                `copyFlagSvgFromResources():: Failed to find ${filename} from OpenMoji.org, countryCode=${filename}`
+            );
+        }
+    }
 
     try {
-        const response = await fetch(`https://openmoji.org/data/color/svg/${codePoints.join('-')}.svg`);
-        const arrayBuffer = await response.arrayBuffer();
-        return 'data:image/svg+xml;base64,' + Buffer.from(arrayBuffer).toString('base64');
+        await writeFile(`./dist/flags/${filename}`, flagSvgString);
     } catch (err) {
-        console.error('Failed to fetch SVG emoji for ' + countryCode, err);
-        return '';
+        console.log(`copyFlagSvgFromResources():: Failed to copy ${filename} to dist folder`);
     }
+};
+
+const readSvgFromResources = async (filename: string) => {
+    return await readFile(`../public/resources/flags/${filename}`, 'utf-8');
+};
+
+const fetchAndSaveSvgFromOpenMoji = async (filename: string) => {
+    const response = await fetch(`https://openmoji.org/data/color/svg/${filename}`);
+    const svgString = await response.text();
+    try {
+        await writeFile(`../public/resources/flags/${filename}`, svgString);
+    } catch (err) {
+        console.warn(`fetchAndSaveSvgFromOpenMoji():: Failed to save ${filename} to resources`);
+    }
+    return svgString;
 };

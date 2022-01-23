@@ -11,8 +11,6 @@ export default function AppRoot() {
             .then(list => setLineList(list as any));
     }, []);
 
-    console.log(lineList);
-
     return (
         <div>
             <h1>RMG Palette</h1>
@@ -20,7 +18,7 @@ export default function AppRoot() {
             <ul>
                 {cityList.map(city => (
                     <li key={city.id}>
-                        <Image src={city.flagSvg} h={20} />
+                        <FlagImage filename={city.flagSvg} />
                         {city.flagEmoji + ' ' + city.name.en}
                     </li>
                 ))}
@@ -34,3 +32,19 @@ export default function AppRoot() {
         </div>
     );
 }
+
+interface FlagImageProps {
+    filename: string;
+}
+
+const FlagImage = (props: FlagImageProps) => {
+    const { filename } = props;
+
+    const [flagUrl, setFlagUrl] = useState<string>();
+
+    useEffect(() => {
+        import('@railmapgen/rmg-palette-resources/flags/' + filename).then(module => module.default).then(setFlagUrl);
+    }, []);
+
+    return <Image src={flagUrl} h={20} />;
+};
