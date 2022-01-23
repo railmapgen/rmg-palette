@@ -1,0 +1,31 @@
+name: Resources Compile and Publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm run postinstall
+
+      - name: Pre-publish
+        run: |
+          chmod +x ./prepublish.sh
+          ./prepublish.sh
+
+      - name: Pulish to npm
+        run: |
+          cd ./package/dist
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
