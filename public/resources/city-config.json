@@ -212,6 +212,14 @@
         }
     },
     {
+        "id": "kunming",
+        "country": "CN",
+        "name": {
+            "en": "Kunming",
+            "zh": "昆明"
+        }
+    },
+    {
         "id": "istanbul",
         "country": "TR",
         "name": {
