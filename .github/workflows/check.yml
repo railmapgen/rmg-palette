@@ -43,6 +43,7 @@ jobs:
       - name: Pulish to npm
         if: github.ref == 'refs/heads/master'
         run: |
+          cp .npmrc ./package/dist
           cd ./package/dist
           npm publish
         env:
