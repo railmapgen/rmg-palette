@@ -130,6 +130,26 @@
         }
     },
     {
+        "id": "gothenburg",
+        "country": "SE",
+        "name": {
+            "en": "Gothenburg",
+            "es": "Göteborg",
+            "zh-Hans": "哥德堡",
+            "zh-Hant": "哥德堡"
+        }
+    },
+    {
+        "id": "guadalajara",
+        "country": "MX",
+        "name": {
+            "en": "Guadalajara",
+            "es": "Guadalajara",
+            "zh-Hans": "瓜达拉哈拉 ",
+            "zh-Hant": "瓜達拉哈拉"
+        }
+    },
+    {
         "id": "guangzhou",
         "country": "CN",
         "name": {
@@ -199,6 +219,16 @@
             "tr": "İstanbul",
             "zh-Hans": "伊斯坦布尔",
             "zh-Hant": "伊斯坦布爾"
+        }
+    },
+    {
+        "id": "lima",
+        "country": "PE",
+        "name": {
+            "en": "Lima",
+            "es": "Lima",
+            "zh-Hans": "利马",
+            "zh-Hant": "利馬"
         }
     },
     {
