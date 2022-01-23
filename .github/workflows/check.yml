@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'npm'
-      - run: npm i
+      - run: npm run postinstall
       - name: check
         run: cd ./package && npm run check
 
@@ -32,7 +32,8 @@ jobs:
         with:
           node-version: '16'
           cache: 'npm'
-      - run: npm i
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm run postinstall
 
       - name: Pre-publish
         run: |
@@ -41,6 +42,8 @@ jobs:
 
       - name: Pulish to npm
         if: github.ref == 'refs/heads/master'
-        run: npm publish
+        run: |
+          cd ./package/dist
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
