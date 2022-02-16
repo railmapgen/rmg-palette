@@ -13,6 +13,7 @@ enum LanguageCode {
     Gaelic = 'ga',
     German = 'de',
     Hindi = 'hi',
+    Hungarian = 'hu',
     Japanese = 'ja',
     Korean = 'ko',
     Malay = 'ms',

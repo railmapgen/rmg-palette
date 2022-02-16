@@ -29,6 +29,16 @@
         }
     },
     {
+        "id": "budapest",
+        "country": "HU",
+        "name": {
+            "en": "Budapest",
+            "hu": "Budapest",
+            "zh-Hans": "布达佩斯",
+            "zh-Hant": "布達佩斯"
+        }
+    },
+    {
         "id": "cairo",
         "country": "EG",
         "name": {
@@ -466,6 +476,16 @@
         }
     },
     {
+        "id": "vienna",
+        "country": "AT",
+        "name": {
+            "en": "Vienna",
+            "de": "Wien",
+            "zh-Hans": "维也纳",
+            "zh-Hant": "維也納"
+        }
+    },
+    {
         "id": "wuxi",
         "country": "CN",
         "name": {
@@ -489,6 +509,15 @@
         "name": {
             "en": "Xi'an",
             "zh": "西安"
+        }
+    },
+    {
+        "id": "zhengzhou",
+        "country": "CN",
+        "name": {
+            "en": "Zhengzhou",
+            "zh-Hans": "郑州",
+            "zh-Hant": "鄭州"
         }
     },
     {
