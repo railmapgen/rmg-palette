@@ -32,4 +32,4 @@ jobs:
 
       - name: Trigger RMG rebuild
         run: |
-          curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/wongchito/RailMapGenerator/actions/workflows/build2.yaml/dispatches --data '{"ref": "master"}'
+          curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/wongchito/RailMapGenerator/actions/workflows/build2.yml/dispatches --data '{"ref": "master"}'
