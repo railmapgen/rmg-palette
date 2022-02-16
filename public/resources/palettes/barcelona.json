@@ -86,6 +86,13 @@
         "colour": "#BBB3D8"
     },
     {
+        "id": "l13",
+        "name": {
+            "en": "Metro L13"
+        },
+        "colour": "#ED3FAE"
+    },
+    {
         "id": "montjuic",
         "name": {
             "ca": "Funicular de Montjuïc",
