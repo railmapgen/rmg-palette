@@ -1,6 +1,9 @@
 #!/bin/bash
 set -eux
 
+# build local resources
+cd ./package && npm run build && cd ..
+
 # run tests
 npm run test:no-watch
 

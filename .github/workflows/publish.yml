@@ -20,8 +20,8 @@ jobs:
 
       - name: Pre-publish
         run: |
-          chmod +x ./prepublish.sh
-          ./prepublish.sh
+          chmod +x ./scripts/prepublish.sh
+          ./scripts/prepublish.sh
 
       - name: Pulish to npm
         run: |
