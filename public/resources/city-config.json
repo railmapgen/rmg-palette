@@ -29,6 +29,15 @@
         }
     },
     {
+        "id": "bucharest",
+        "country": "RO",
+        "name": {
+            "en": "Bucharest",
+            "ro": "București",
+            "zh": "布加勒斯特"
+        }
+    },
+    {
         "id": "budapest",
         "country": "HU",
         "name": {
@@ -72,6 +81,15 @@
             "en": "Chongqing",
             "zh-Hans": "重庆",
             "zh-Hant": "重慶"
+        }
+    },
+    {
+        "id": "daegu",
+        "country": "KR",
+        "name": {
+            "en": "Daegu",
+            "kr": "대구",
+            "zh": "大邱"
         }
     },
     {
@@ -120,6 +138,16 @@
             "ga": "Dùn Èideann",
             "zh-Hans": "爱丁堡",
             "zh-Hant": "愛丁堡"
+        }
+    },
+    {
+        "id": "eskisehir",
+        "country": "TR",
+        "name": {
+            "en": "Eskişehir",
+            "tr": "Eskişehir",
+            "zh-Hans": "埃斯基谢希尔",
+            "zh-Hant": "埃斯基謝希爾"
         }
     },
     {
@@ -247,6 +275,15 @@
             "es": "Lima",
             "zh-Hans": "利马",
             "zh-Hant": "利馬"
+        }
+    },
+    {
+        "id": "lisbon",
+        "country": "PT",
+        "name": {
+            "en": "Lisbon",
+            "pt": "Lisboa",
+            "zh": "里斯本"
         }
     },
     {

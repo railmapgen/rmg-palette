@@ -21,6 +21,7 @@ enum LanguageCode {
     Spanish = 'es',
     Persian = 'fa',
     Portuguese = 'pt',
+    Romanian = 'ro',
     Russian = 'ru',
     Swedish = 'sv',
     Turkish = 'tr',
