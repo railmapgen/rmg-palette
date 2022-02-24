@@ -46,6 +46,9 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "test:no-watch": "cross-env CI=true react-scripts test --env=jsdom",
+        "lint": "eslint ./src",
+        "lint:dev": "eslint -c ./.eslintrc.dev.json ./src",
+        "lint:fix": "eslint ./src --fix",
         "eject": "react-scripts eject",
         "postinstall": "cd ./package && npm install"
     },

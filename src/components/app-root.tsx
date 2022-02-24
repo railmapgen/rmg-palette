@@ -1,50 +1,42 @@
-import React, { useEffect, useState } from 'react';
-import { cityList, PaletteEntry } from '@railmapgen/rmg-palette-resources';
-import { Image } from '@chakra-ui/react';
+import { Badge, Box, Flex, Heading, HStack } from '@chakra-ui/react';
+import React from 'react';
+import RmgLineBadge from './common/rmg-line-badge';
+import { Environments, getEnvironment, getVersion } from '../util/config';
+import { MonoColour } from '../util/constants';
+import Tokyo from '@railmapgen/rmg-palette-resources/palettes/tokyo';
 
 export default function AppRoot() {
-    const [lineList, setLineList] = useState<PaletteEntry[]>([]);
-
-    useEffect(() => {
-        import('@railmapgen/rmg-palette-resources/palettes/guangzhou')
-            .then(module => module.default)
-            .then(list => setLineList(list as any));
-    }, []);
-
+    const environment = getEnvironment();
+    const getBadgeColour = (env: Environments) => {
+        switch (env) {
+            case Environments.DEV:
+                return 'red';
+            case Environments.UAT:
+                return 'orange';
+            case Environments.PRD:
+                return 'green';
+        }
+    };
     return (
-        <div>
-            <h1>RMG Palette</h1>
-
-            <ul>
-                {cityList.map(city => (
-                    <li key={city.id}>
-                        <FlagImage filename={city.flagSvg} />
-                        {city.flagEmoji + ' ' + city.name.en}
-                    </li>
+        <Flex direction="column" height="100%" overflow="hidden">
+            <Flex pl={2} pr={2} pb={1} pt={1} align="center">
+                <Heading as="h4" size="md" mr="auto">
+                    RMG Palette
+                    <Badge ml={1} colorScheme={getBadgeColour(environment)}>
+                        {environment === Environments.PRD ? getVersion() : environment}
+                    </Badge>
+                </Heading>
+            </Flex>
+            <HStack flexWrap="wrap">
+                {Tokyo.map(line => (
+                    <RmgLineBadge
+                        key={line.id}
+                        name={line.name.ja!}
+                        fg={line.fg || MonoColour.white}
+                        bg={line.colour}
+                    ></RmgLineBadge>
                 ))}
-            </ul>
-
-            <ul>
-                {lineList.map(line => (
-                    <div key={line.id}>{line.name.en}</div>
-                ))}
-            </ul>
-        </div>
+            </HStack>
+        </Flex>
     );
 }
-
-interface FlagImageProps {
-    filename?: string;
-}
-
-const FlagImage = (props: FlagImageProps) => {
-    const { filename } = props;
-
-    const [flagUrl, setFlagUrl] = useState<string>();
-
-    useEffect(() => {
-        import('@railmapgen/rmg-palette-resources/flags/' + filename).then(module => module.default).then(setFlagUrl);
-    }, []);
-
-    return <Image src={flagUrl} h={20} />;
-};
