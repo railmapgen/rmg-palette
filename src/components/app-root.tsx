@@ -1,9 +1,6 @@
-import { Badge, Box, Flex, Heading, HStack } from '@chakra-ui/react';
-import React from 'react';
-import RmgLineBadge from './common/rmg-line-badge';
+import { Badge, Flex, Heading } from '@chakra-ui/react';
 import { Environments, getEnvironment, getVersion } from '../util/config';
-import { MonoColour } from '../util/constants';
-import Tokyo from '@railmapgen/rmg-palette-resources/palettes/tokyo';
+import PaletteDataTable from './data-table/palette-data-table';
 
 export default function AppRoot() {
     const environment = getEnvironment();
@@ -27,16 +24,7 @@ export default function AppRoot() {
                     </Badge>
                 </Heading>
             </Flex>
-            <HStack flexWrap="wrap">
-                {Tokyo.map(line => (
-                    <RmgLineBadge
-                        key={line.id}
-                        name={line.name.ja!}
-                        fg={line.fg || MonoColour.white}
-                        bg={line.colour}
-                    ></RmgLineBadge>
-                ))}
-            </HStack>
+            <PaletteDataTable></PaletteDataTable>
         </Flex>
     );
 }
