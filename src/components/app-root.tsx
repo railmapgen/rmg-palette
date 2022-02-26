@@ -1,30 +1,16 @@
-import { Badge, Flex, Heading } from '@chakra-ui/react';
-import { Environments, getEnvironment, getVersion } from '../util/config';
+import { Flex } from '@chakra-ui/react';
 import PaletteDataTable from './data-table/palette-data-table';
+import PageHeader from './page-header';
+import WindowHeader from './window-header';
 
 export default function AppRoot() {
-    const environment = getEnvironment();
-    const getBadgeColour = (env: Environments) => {
-        switch (env) {
-            case Environments.DEV:
-                return 'red';
-            case Environments.UAT:
-                return 'orange';
-            case Environments.PRD:
-                return 'green';
-        }
-    };
     return (
         <Flex direction="column" height="100%" overflow="hidden">
-            <Flex pl={2} pr={2} pb={1} pt={1} align="center">
-                <Heading as="h4" size="md" mr="auto">
-                    RMG Palette
-                    <Badge ml={1} colorScheme={getBadgeColour(environment)}>
-                        {environment === Environments.PRD ? getVersion() : environment}
-                    </Badge>
-                </Heading>
+            <WindowHeader />
+            <Flex direction="column" flex={1} overflow="hidden">
+                <PageHeader></PageHeader>
+                <PaletteDataTable></PaletteDataTable>
             </Flex>
-            <PaletteDataTable></PaletteDataTable>
         </Flex>
     );
 }
