@@ -2,11 +2,12 @@
     {
         "id": "fs1",
         "name": {
-            "en": "Guangfo Line (Line 1)",
-            "zh-Hans": "广佛线（1号线）",
-            "zh-Hant": "廣佛線（1號線）"
+            "en": "Guangfo Line",
+            "zh-Hans": "广佛线",
+            "zh-Hant": "廣佛線"
         },
-        "colour": "#C4D600"
+        "colour": "#C4D600",
+        "fg": "#000"
     },
     {
         "id": "fs2",
@@ -15,7 +16,7 @@
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
         },
-        "colour": "#DD0027"
+        "colour": "#F5333F"
     },
     {
         "id": "fs3",
@@ -24,7 +25,7 @@
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
         },
-        "colour": "#4747C5"
+        "colour": "#002F87"
     },
     {
         "id": "fs4",
@@ -33,7 +34,7 @@
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
         },
-        "colour": "#FF00FF"
+        "colour": "#923A7F"
     },
     {
         "id": "fs6",
@@ -60,7 +61,7 @@
             "zh-Hans": "11号线",
             "zh-Hant": "11號線"
         },
-        "colour": "#6600CC"
+        "colour": "#035C67"
     },
     {
         "id": "fs13",
@@ -70,5 +71,23 @@
             "zh-Hant": "13號線"
         },
         "colour": "#32B7EA"
+    },
+    {
+        "id": "tnh1",
+        "name": {
+            "en": "Nanhai Tram Line 1",
+            "zh-Hans": "南海有轨1号线",
+            "zh-Hant": "南海有軌1號線"
+        },
+        "colour": "#5EB3E4"
+    },
+    {
+        "id": "tgm1",
+        "name": {
+            "en": "Gaoming Tram Line 1",
+            "zh-Hans": "高明有轨1号线",
+            "zh-Hant": "高明有軌1號線"
+        },
+        "colour": "#4CA585"
     }
 ]

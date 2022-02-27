@@ -29,6 +29,25 @@
         }
     },
     {
+        "id": "bucharest",
+        "country": "RO",
+        "name": {
+            "en": "Bucharest",
+            "ro": "București",
+            "zh": "布加勒斯特"
+        }
+    },
+    {
+        "id": "budapest",
+        "country": "HU",
+        "name": {
+            "en": "Budapest",
+            "hu": "Budapest",
+            "zh-Hans": "布达佩斯",
+            "zh-Hant": "布達佩斯"
+        }
+    },
+    {
         "id": "cairo",
         "country": "EG",
         "name": {
@@ -62,6 +81,15 @@
             "en": "Chongqing",
             "zh-Hans": "重庆",
             "zh-Hant": "重慶"
+        }
+    },
+    {
+        "id": "daegu",
+        "country": "KR",
+        "name": {
+            "en": "Daegu",
+            "ko": "대구",
+            "zh": "大邱"
         }
     },
     {
@@ -113,6 +141,16 @@
         }
     },
     {
+        "id": "eskisehir",
+        "country": "TR",
+        "name": {
+            "en": "Eskişehir",
+            "tr": "Eskişehir",
+            "zh-Hans": "埃斯基谢希尔",
+            "zh-Hant": "埃斯基謝希爾"
+        }
+    },
+    {
         "id": "foshan",
         "country": "CN",
         "name": {
@@ -127,6 +165,26 @@
             "en": "Glasgow",
             "ga": "Glaschu",
             "zh": "格拉斯哥"
+        }
+    },
+    {
+        "id": "gothenburg",
+        "country": "SE",
+        "name": {
+            "en": "Gothenburg",
+            "es": "Göteborg",
+            "zh-Hans": "哥德堡",
+            "zh-Hant": "哥德堡"
+        }
+    },
+    {
+        "id": "guadalajara",
+        "country": "MX",
+        "name": {
+            "en": "Guadalajara",
+            "es": "Guadalajara",
+            "zh-Hans": "瓜达拉哈拉 ",
+            "zh-Hant": "瓜達拉哈拉"
         }
     },
     {
@@ -192,6 +250,14 @@
         }
     },
     {
+        "id": "kunming",
+        "country": "CN",
+        "name": {
+            "en": "Kunming",
+            "zh": "昆明"
+        }
+    },
+    {
         "id": "istanbul",
         "country": "TR",
         "name": {
@@ -199,6 +265,25 @@
             "tr": "İstanbul",
             "zh-Hans": "伊斯坦布尔",
             "zh-Hant": "伊斯坦布爾"
+        }
+    },
+    {
+        "id": "lima",
+        "country": "PE",
+        "name": {
+            "en": "Lima",
+            "es": "Lima",
+            "zh-Hans": "利马",
+            "zh-Hant": "利馬"
+        }
+    },
+    {
+        "id": "lisbon",
+        "country": "PT",
+        "name": {
+            "en": "Lisbon",
+            "pt": "Lisboa",
+            "zh": "里斯本"
         }
     },
     {
@@ -428,6 +513,16 @@
         }
     },
     {
+        "id": "vienna",
+        "country": "AT",
+        "name": {
+            "en": "Vienna",
+            "de": "Wien",
+            "zh-Hans": "维也纳",
+            "zh-Hant": "維也納"
+        }
+    },
+    {
         "id": "wuxi",
         "country": "CN",
         "name": {
@@ -451,6 +546,15 @@
         "name": {
             "en": "Xi'an",
             "zh": "西安"
+        }
+    },
+    {
+        "id": "zhengzhou",
+        "country": "CN",
+        "name": {
+            "en": "Zhengzhou",
+            "zh-Hans": "郑州",
+            "zh-Hant": "鄭州"
         }
     },
     {

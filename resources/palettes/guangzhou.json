@@ -208,7 +208,8 @@
             "zh-Hans": "广佛线",
             "zh-Hant": "廣佛線"
         },
-        "colour": "#C4D600"
+        "colour": "#C4D600",
+        "fg": "#000"
     },
     {
         "id": "apm",
@@ -222,18 +223,18 @@
     {
         "id": "thz1",
         "name": {
-            "en": "THZ1",
-            "zh-Hans": "海珠环岛新型有轨电车",
-            "zh-Hant": "海珠環島新型有軌電車"
+            "en": "Haizhu Tram Line 1",
+            "zh-Hans": "海珠有轨1号线",
+            "zh-Hant": "海珠有軌1號線"
         },
-        "colour": "#44A729"
+        "colour": "#43B02A"
     },
     {
         "id": "thp1",
         "name": {
             "en": "Huangpu Tram Line 1",
-            "zh-Hans": "黄埔有轨电车1号线",
-            "zh-Hant": "黃埔有軌電車1號線"
+            "zh-Hans": "黄埔有轨1号线",
+            "zh-Hant": "黃埔有軌1號線"
         },
         "colour": "#D42D1B"
     },
