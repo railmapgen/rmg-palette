@@ -29,6 +29,15 @@
         }
     },
     {
+        "id": "berlin",
+        "country": "DE",
+        "name": {
+            "de": "Berlin",
+            "en": "Berlin",
+            "zh": "柏林"
+        }
+    },
+    {
         "id": "bucharest",
         "country": "RO",
         "name": {
@@ -156,6 +165,16 @@
         "name": {
             "en": "Foshan",
             "zh": "佛山"
+        }
+    },
+    {
+        "id": "frankfurt",
+        "country": "DE",
+        "name": {
+            "de": "Frankfurt am Main",
+            "en": "Frankfurt am Main",
+            "zh-Hans": "美茵河畔法兰克福",
+            "zh-Hant": "美茵河畔法蘭克福"
         }
     },
     {
@@ -315,6 +334,15 @@
         }
     },
     {
+        "id": "munich",
+        "country": "DE",
+        "name": {
+            "de": "München",
+            "en": "Munich",
+            "zh": "慕尼黑"
+        }
+    },
+    {
         "id": "nanjing",
         "country": "CN",
         "name": {
@@ -363,6 +391,16 @@
             "en": "Qingdao",
             "zh-Hans": "青岛",
             "zh-Hant": "青島"
+        }
+    },
+    {
+        "id": "rheinruhr",
+        "country": "DE",
+        "name": {
+            "de": "Metropolregion Rhein-Ruhr",
+            "en": "Rhein-Ruhr Metropolitan Region",
+            "zh-Hans": "莱茵-鲁尔都会区",
+            "zh-Hant": "萊茵-魯爾都會區"
         }
     },
     {
