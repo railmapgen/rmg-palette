@@ -1,5 +1,14 @@
 [
     {
+        "id": "athens",
+        "country": "GR",
+        "name": {
+            "el": "Αθήνα",
+            "en": "Athens",
+            "zh": "雅典"
+        }
+    },
+    {
         "id": "baku",
         "country": "AZ",
         "name": {
@@ -224,6 +233,16 @@
         }
     },
     {
+        "id": "hanoi",
+        "country": "VN",
+        "name": {
+            "en": "Hanoi",
+            "vn": "Hà Nội",
+            "zh-Hans": "河内",
+            "zh-Hant": "河內"
+        }
+    },
+    {
         "id": "harbin",
         "country": "CN",
         "name": {
@@ -233,11 +252,29 @@
         }
     },
     {
+        "id": "hochiminh",
+        "country": "VN",
+        "name": {
+            "en": "Ho Chi Minh City",
+            "vn": "Thành phố Hồ Chí Minh",
+            "zh": "胡志明市"
+        }
+    },
+    {
         "id": "hongkong",
         "country": "HK",
         "name": {
             "en": "Hong Kong",
             "zh": "香港"
+        }
+    },
+    {
+        "id": "jinan",
+        "country": "CN",
+        "name": {
+            "en": "Jinan",
+            "zh-Hans": "济南",
+            "zh-Hant": "濟南"
         }
     },
     {
@@ -331,6 +368,16 @@
             "en": "Madrid",
             "zh-Hans": "马德里",
             "zh-Hant": "馬德里"
+        }
+    },
+    {
+        "id": "milan",
+        "country": "IT",
+        "name": {
+            "en": "Milan",
+            "it": "Milano",
+            "zh-Hans": "米兰",
+            "zh-Hant": "米蘭"
         }
     },
     {
