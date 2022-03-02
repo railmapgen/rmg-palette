@@ -1,5 +1,14 @@
 [
     {
+        "id": "athens",
+        "country": "GR",
+        "name": {
+            "el": "Αθήνα",
+            "en": "Athens",
+            "zh": "雅典"
+        }
+    },
+    {
         "id": "baku",
         "country": "AZ",
         "name": {
@@ -26,6 +35,15 @@
         "name": {
             "en": "Beijing",
             "zh": "北京"
+        }
+    },
+    {
+        "id": "berlin",
+        "country": "DE",
+        "name": {
+            "de": "Berlin",
+            "en": "Berlin",
+            "zh": "柏林"
         }
     },
     {
@@ -159,6 +177,16 @@
         }
     },
     {
+        "id": "frankfurt",
+        "country": "DE",
+        "name": {
+            "de": "Frankfurt am Main",
+            "en": "Frankfurt am Main",
+            "zh-Hans": "美茵河畔法兰克福",
+            "zh-Hant": "美茵河畔法蘭克福"
+        }
+    },
+    {
         "id": "glasgow",
         "country": "GBSCT",
         "name": {
@@ -205,6 +233,16 @@
         }
     },
     {
+        "id": "hanoi",
+        "country": "VN",
+        "name": {
+            "en": "Hanoi",
+            "vn": "Hà Nội",
+            "zh-Hans": "河内",
+            "zh-Hant": "河內"
+        }
+    },
+    {
         "id": "harbin",
         "country": "CN",
         "name": {
@@ -214,11 +252,29 @@
         }
     },
     {
+        "id": "hochiminh",
+        "country": "VN",
+        "name": {
+            "en": "Ho Chi Minh City",
+            "vn": "Thành phố Hồ Chí Minh",
+            "zh": "胡志明市"
+        }
+    },
+    {
         "id": "hongkong",
         "country": "HK",
         "name": {
             "en": "Hong Kong",
             "zh": "香港"
+        }
+    },
+    {
+        "id": "jinan",
+        "country": "CN",
+        "name": {
+            "en": "Jinan",
+            "zh-Hans": "济南",
+            "zh-Hant": "濟南"
         }
     },
     {
@@ -315,6 +371,25 @@
         }
     },
     {
+        "id": "milan",
+        "country": "IT",
+        "name": {
+            "en": "Milan",
+            "it": "Milano",
+            "zh-Hans": "米兰",
+            "zh-Hant": "米蘭"
+        }
+    },
+    {
+        "id": "munich",
+        "country": "DE",
+        "name": {
+            "de": "München",
+            "en": "Munich",
+            "zh": "慕尼黑"
+        }
+    },
+    {
         "id": "nanjing",
         "country": "CN",
         "name": {
@@ -363,6 +438,16 @@
             "en": "Qingdao",
             "zh-Hans": "青岛",
             "zh-Hant": "青島"
+        }
+    },
+    {
+        "id": "rheinruhr",
+        "country": "DE",
+        "name": {
+            "de": "Metropolregion Rhein-Ruhr",
+            "en": "Rhein-Ruhr Metropolitan Region",
+            "zh-Hans": "莱茵-鲁尔都会区",
+            "zh-Hant": "萊茵-魯爾都會區"
         }
     },
     {
