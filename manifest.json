@@ -1,6 +1,6 @@
 {
-    "short_name": "rmg-components",
-    "name": "RMG Components",
+    "short_name": "RMG",
+    "name": "Rail Map Generator",
     "icons": [
         {
             "src": "favicon.ico",
