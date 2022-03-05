@@ -1,8 +1,8 @@
 import { HStack } from '@chakra-ui/react';
-import RmgLineBadge from '../common/rmg-line-badge';
 import { MonoColour } from '../../util/constants';
 import { CityCode, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import React, { useEffect, useState } from 'react';
+import { RmgLineBadge } from '@railmapgen/rmg-components';
 
 const usePalette = (cityCode?: CityCode) => {
     const [paletteList, setPaletteList] = useState<PaletteEntry[]>([]);

@@ -1,7 +1,7 @@
 import { cityList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/action';
-import RmgFields, { RmgFieldsField } from './common/rmg-fields';
+import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 
 export default function PageHeader() {
     const dispatch = useDispatch();
