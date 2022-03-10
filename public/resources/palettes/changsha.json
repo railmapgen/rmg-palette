@@ -111,14 +111,13 @@
         "colour": "#9063CD"
     },
     {
-        "id": "add1",
+        "id": "maglev",
         "name": {
-            "en": "Supplement 1",
-            "zh-Hans": "补充色1",
-            "zh-Hant": "補充色1"
+            "en": "Maglev Express",
+            "zh-Hans": "磁浮快线",
+            "zh-Hant": "磁浮快線"
         },
-        "colour": "#F891A5",
-        "fg": "#000"
+        "colour": "#F891A5"
     },
     {
         "id": "add2",

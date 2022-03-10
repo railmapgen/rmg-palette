@@ -1,4 +1,4 @@
-name: Resources Check
+name: Resources and Code Check
 
 on:
   workflow_dispatch:
@@ -16,5 +16,11 @@ jobs:
           node-version: '16'
           cache: 'npm'
       - run: npm run postinstall
-      - name: check
+
+      - name: Resources check
         run: cd ./package && npm run check
+
+      - name: Code check
+        run: |
+          npm run lint:dev
+          npm run test:no-watch

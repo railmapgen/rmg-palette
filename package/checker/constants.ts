@@ -12,8 +12,10 @@ enum LanguageCode {
     French = 'fr',
     Gaelic = 'ga',
     German = 'de',
+    Greek = 'el',
     Hindi = 'hi',
     Hungarian = 'hu',
+    Italian = 'it',
     Japanese = 'ja',
     Korean = 'ko',
     Malay = 'ms',
@@ -25,6 +27,7 @@ enum LanguageCode {
     Russian = 'ru',
     Swedish = 'sv',
     Turkish = 'tr',
+    Vietnamese = 'vn',
 }
 
 type Translation = { [l in LanguageCode]?: string };

@@ -4,12 +4,12 @@ import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRoot from './components/app-root';
 import store from './redux';
-import chakraTheme from './theme/theme';
+import { rmgChakraTheme } from '@railmapgen/rmg-components';
 
 const renderApp = () => {
     ReactDOM.render(
         <Provider store={store}>
-            <ChakraProvider theme={chakraTheme}>
+            <ChakraProvider theme={rmgChakraTheme}>
                 <React.StrictMode>
                     <AppRoot />
                 </React.StrictMode>
