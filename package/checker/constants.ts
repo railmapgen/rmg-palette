@@ -67,7 +67,7 @@ export interface CityEntry {
      * This should be CityCode.
      * But as its values may change at another push, change it to string and verify it at fly.
      */
-    id: string; // replace me, builder!
+    id: string; // replace me to CityCode, builder!
     /**
      * ISO 3166-1 alpha-2 country code. (For cities in Britain, append BS 6879 subdivision code. )
      */
@@ -76,6 +76,19 @@ export interface CityEntry {
     flagSvg?: string;
     /**
      * Key-value pairs of multi-lingual names of the city.
+     */
+    name: Translation;
+}
+
+export interface CountryEntry {
+    /**
+     * ISO 3166-1 alpha-2 country code. (For cities in Britain, append BS 6879 subdivision code. )
+     */
+    id: string; // replace me to CountryCode, builder!
+    flagEmoji?: string;
+    flagSvg?: string;
+    /**
+     * Key-value pairs of multi-lingual names of the country.
      */
     name: Translation;
 }
