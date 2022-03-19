@@ -1,6 +1,6 @@
 import { CountryEntry } from '../checker/constants';
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, appendFileSync} from 'fs';
-import { getFlagEmoji, getFlagSvg } from './emoji-util';
+import { copyFlagSvgFromResources, getFlagEmoji, getFlagSvg } from './emoji-util';
 import { inspect } from 'util';
 
 // append country-config format to index.
@@ -30,6 +30,13 @@ const updatedConfig = countryConfig.map(country => {
         flagSvg: getFlagSvg(country.id),
     };
 });
+
+// copy flags to dist
+Promise.all(
+    Object.values(updatedConfig)
+        .map(country => country.flagSvg)
+        .map(copyFlagSvgFromResources)
+).then();
 
 export const getCountryConfigText = () => {
     return `export const countryList: CountryEntry[] = ${inspect(updatedConfig)};\r\n`.replace(
