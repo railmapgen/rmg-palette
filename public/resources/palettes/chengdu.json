@@ -96,7 +96,7 @@
             "zh-Hans": "11号线",
             "zh-Hant": "11號線"
         },
-        "colour": "#0085CA"
+        "colour": "#8C7732"
     },
     {
         "id": "cd12",
@@ -123,7 +123,7 @@
             "zh-Hans": "14号线",
             "zh-Hant": "14號線"
         },
-        "colour": "#80E0A7"
+        "colour": "#6F263D"
     },
     {
         "id": "cd15",
@@ -141,7 +141,7 @@
             "zh-Hans": "16号线",
             "zh-Hant": "16號線"
         },
-        "colour": "#8C7732"
+        "colour": "#0085CA"
     },
     {
         "id": "cd17",
@@ -150,7 +150,7 @@
             "zh-Hans": "17号线",
             "zh-Hant": "17號線"
         },
-        "colour": "#6F263D"
+        "colour": "#80E0A7"
     },
     {
         "id": "cd18",
