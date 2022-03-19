@@ -1,7 +1,8 @@
-import DataTable, { DataTableFieldType } from './data-table';
 import { cityList, CityEntry } from '@railmapgen/rmg-palette-resources';
 import LineBadges from './line-badges';
 import { useAppSelector } from '../../redux';
+import { RmgDataTable, RmgDataTableFieldType } from '@railmapgen/rmg-components';
+
 export default function PaletteDataTable() {
     const selectedCountry = useAppSelector(state => state.app.selectedCountry);
     const data = cityList.filter(city => {
@@ -12,10 +13,10 @@ export default function PaletteDataTable() {
         }
     });
 
-    const fields: DataTableFieldType<CityEntry>[] = [
+    const fields: RmgDataTableFieldType<CityEntry>[] = [
         { label: 'City', displayHandler: city => city.name.en! },
-        { label: 'Lines', displayHandler: city => <LineBadges city={city.id}></LineBadges> },
+        { label: 'Lines', displayHandler: city => <LineBadges city={city.id} /> },
     ];
 
-    return <DataTable data={data} fields={fields} />;
+    return <RmgDataTable data={data} fields={fields} />;
 }

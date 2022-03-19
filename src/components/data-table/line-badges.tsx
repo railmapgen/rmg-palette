@@ -26,12 +26,7 @@ export default function LineBadges(props: LineBadgesProps) {
     return (
         <HStack flexWrap="wrap">
             {paletteList.map(line => (
-                <RmgLineBadge
-                    key={line.id}
-                    name={line.name.en!}
-                    fg={line.fg || MonoColour.white}
-                    bg={line.colour}
-                ></RmgLineBadge>
+                <RmgLineBadge key={line.id} name={line.name.en!} fg={line.fg || MonoColour.white} bg={line.colour} />
             ))}
         </HStack>
     );

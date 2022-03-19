@@ -509,6 +509,15 @@
         }
     },
     {
+        "id": "shenyang",
+        "country": "CN",
+        "name": {
+            "en": "Shenyang",
+            "zh-Hans": "沈阳",
+            "zh-Hant": "瀋陽"
+        }
+    },
+    {
         "id": "shenzhen",
         "country": "CN",
         "name": {

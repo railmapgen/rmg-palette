@@ -8,8 +8,8 @@ export default function AppRoot() {
         <Flex direction="column" height="100%" overflow="hidden">
             <WindowHeader />
             <Flex direction="column" flex={1} overflow="hidden">
-                <PageHeader></PageHeader>
-                <PaletteDataTable></PaletteDataTable>
+                <PageHeader />
+                <PaletteDataTable />
             </Flex>
         </Flex>
     );
