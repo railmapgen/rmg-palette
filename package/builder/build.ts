@@ -4,6 +4,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, append
 import { inspect } from 'util';
 
 import { CityEntry } from '../checker/constants';
+import { getCountryCodeEnum, getCountryConfigText } from './country-config';
 import { copyFlagSvgFromResources, getFlagEmoji, getFlagSvg } from './emoji-util';
 
 console.log('Hi, this is the RMG bot who will build packages.');
@@ -22,11 +23,10 @@ const cityCodeEnum = `export enum CityCode {\r\n${cityCode
 
 // write complete constants.ts as index.ts
 if (!existsSync(distPath)) mkdirSync(distPath);
-const rawConstants = readFileSync('./checker/constants.ts', 'utf-8').replace(
-    'id: string; // replace me, builder!',
-    'id: CityCode;'
-);
-const constantsFileContent = rawConstants + '\r\n' + cityCodeEnum;
+const rawConstants = readFileSync('./checker/constants.ts', 'utf-8')
+    .replace('id: string; // replace me to CityCode, builder!', 'id: CityCode;')
+    .replace('id: string; // replace me to CountryCode, builder!', 'id: CountryCode;');
+const constantsFileContent = rawConstants + '\r\n' + cityCodeEnum + getCountryCodeEnum();
 writeFileSync(`${distPath}/index.ts`, constantsFileContent);
 
 if (!existsSync('./dist/flags')) mkdirSync('./dist/flags', { recursive: true });
@@ -36,6 +36,7 @@ const updatedConfig = cityConfig.map(city => {
     return {
         ...city,
         id: `CityCode.${capitalize(city.id)}`,
+        country: `CountryCode.`,
         flagEmoji: getFlagEmoji(city.country),
         flagSvg: getFlagSvg(city.country),
     };
@@ -55,6 +56,7 @@ const cityConfigFileContent = `export const cityList: CityEntry[] = ${inspect(up
     '$1'
 );
 appendFileSync(`${distPath}/index.ts`, cityConfigFileContent);
+appendFileSync(`${distPath}/index.ts`, getCountryConfigText());
 
 if (!existsSync(`${distPath}/palettes`)) mkdirSync(`${distPath}/palettes`);
 readdirSync('../public/resources/palettes/', 'utf-8')
