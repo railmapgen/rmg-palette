@@ -5,7 +5,7 @@ import { inspect } from 'util';
 
 import { CityEntry } from '../checker/constants';
 import { getCountryCodeEnum, getCountryConfigText } from './country-config';
-import { copyFlagSvgFromResources, getFlagEmoji, getFlagSvg } from './emoji-util';
+import { copyFlagSvgFromResources } from './emoji-util';
 
 console.log('Hi, this is the RMG bot who will build packages.');
 
@@ -37,19 +37,8 @@ const updatedConfig = cityConfig.map(city => {
         ...city,
         id: `CityCode.${capitalize(city.id)}`,
         country: `CountryCode.`,
-        flagEmoji: getFlagEmoji(city.country),
-        flagSvg: getFlagSvg(city.country),
     };
 });
-// copy flags to dist
-Promise.all(
-    Object.values(updatedConfig)
-        .reduce<string[]>((acc, cur) => {
-            const { flagSvg } = cur;
-            return acc.includes(flagSvg) ? acc : [...acc, flagSvg];
-        }, [])
-        .map(copyFlagSvgFromResources)
-).then();
 
 const cityConfigFileContent = `export const cityList: CityEntry[] = ${inspect(updatedConfig)};\r\n`.replace(
     /'(CityCode.\w+)'/g,

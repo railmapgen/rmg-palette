@@ -63,12 +63,6 @@
         }
     },
     {
-        "id": "KR",
-        "name": {
-            "en": "South Korea"
-        }
-    },
-    {
         "id": "IN",
         "name": {
             "en": "India"
@@ -230,5 +224,4 @@
             "zh-Hant": "自訂"
         }
     }
-
 ]
