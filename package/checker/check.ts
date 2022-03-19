@@ -6,7 +6,7 @@
 import { readFileSync, readdirSync } from 'fs';
 import { is } from 'typescript-is';
 
-import { PaletteEntry, CityEntry } from './constants';
+import { PaletteEntry, CityEntry, CountryEntry } from './constants';
 
 console.log('Hi, this is the RMG bot who will validate json resources.');
 
@@ -50,10 +50,36 @@ const checkCity = () => {
     }
 };
 
+// check country-config.json follows the CountryEntry[]
+const checkCountryConfig = (): string[] => {
+    const rawCountryConfig = JSON.parse(readFileSync('../public/resources/country-config.json', 'utf-8'));
+    if (!is<CountryEntry[]>(rawCountryConfig)) {
+        throw new TypeError("country-config.json doesn't follow the CountryEntry[]");
+    }
+    // record all the countries shown in the country-config
+    const countryConfig = rawCountryConfig as unknown as CountryEntry[];
+    const countryCode = countryConfig.map(country => country.id);
+    console.log('Countries that are identified: ', countryCode);
+    return countryCode;
+};
+
+//check city-config countries are in country-config
+const checkCityInCountry = (countryCode: string[]) => {
+    const rawCityConfig: CityEntry[] = JSON.parse(readFileSync('../public/resources/city-config.json', 'utf-8'));
+    const cityCountrySet = new Set(rawCityConfig.map(city => city.country));
+    const countryWithUnkownNames = [...cityCountrySet].filter(country => !countryCode.includes(country));
+    if (countryWithUnkownNames.length > 0) {
+        throw new TypeError(`These country names are unkown: ${countryWithUnkownNames}`);
+    }
+};
+
 try {
     const cityCode = checkCityConfig();
     checkCorrespondence(cityCode);
     checkCity();
+
+    const countryCode = checkCountryConfig();
+    checkCityInCountry(countryCode);
     console.log('All tests pass.');
 } catch (error) {
     console.error(error);
