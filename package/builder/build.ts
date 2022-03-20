@@ -36,14 +36,13 @@ const updatedConfig = cityConfig.map(city => {
     return {
         ...city,
         id: `CityCode.${capitalize(city.id)}`,
-        country: `CountryCode.`,
+        country: `CountryCode.${city.country}`,
     };
 });
 
-const cityConfigFileContent = `export const cityList: CityEntry[] = ${inspect(updatedConfig)};\r\n`.replace(
-    /'(CityCode.\w+)'/g,
-    '$1'
-);
+const cityConfigFileContent = `export const cityList: CityEntry[] = ${inspect(updatedConfig)};\r\n`
+    .replace(/'(CityCode.\w+)'/g, '$1')
+    .replace(/'(CountryCode.\w+)'/g, '$1');
 appendFileSync(`${distPath}/index.ts`, cityConfigFileContent);
 appendFileSync(`${distPath}/index.ts`, getCountryConfigText());
 

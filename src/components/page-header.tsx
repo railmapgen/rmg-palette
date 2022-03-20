@@ -1,24 +1,27 @@
-import { cityList } from '@railmapgen/rmg-palette-resources';
+import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/action';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
+import { useAppSelector } from '../redux';
 
 export default function PageHeader() {
     const dispatch = useDispatch();
-    const countryOptions = cityList.reduce<Record<string, string>>((acc, cur) => {
-        if (Object.keys(acc).includes(cur.country)) {
-            return acc;
-        } else {
-            return { ...acc, [cur.country]: cur.country };
-        }
-    }, {});
+    const selectedCountry = useAppSelector(state => state.app.selectedCountry);
+    const countryOptions = countryList.reduce<Record<string, string>>(
+        (acc, cur) => {
+            return { ...acc, [cur.id]: cur.name.en! };
+        },
+        { '': 'Please select...' }
+    );
+
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
-            label: 'Country',
-            value: undefined,
+            label: 'Country/Region',
+            value: selectedCountry,
             options: countryOptions,
-            onChange: value => dispatch(setSelectedCountry(value)),
+            disabledOptions: [''],
+            onChange: value => dispatch(setSelectedCountry(value as string)),
         },
     ];
     return <RmgFields fields={fields} />;
