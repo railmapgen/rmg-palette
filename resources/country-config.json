@@ -1,0 +1,227 @@
+[
+    {
+        "id": "CN",
+        "name": {
+            "en": "China",
+            "zh": "中国"
+        }
+    },
+    {
+        "id": "JP",
+        "name": {
+            "en": "Japan",
+            "ja": "日本"
+        }
+    },
+    {
+        "id": "DE",
+        "name": {
+            "en": "Germany",
+            "de": "Deutsche"
+        }
+    },
+    {
+        "id": "AZ",
+        "name": {
+            "en": "Azerbaijan"
+        }
+    },
+    {
+        "id": "ES",
+        "name": {
+            "en": "Spain"
+        }
+    },
+    {
+        "id": "GR",
+        "name": {
+            "en": "Greece"
+        }
+    },
+    {
+        "id": "RO",
+        "name": {
+            "en": "Romania"
+        }
+    },
+    {
+        "id": "HU",
+        "name": {
+            "en": "Hungary"
+        }
+    },
+    {
+        "id": "EG",
+        "name": {
+            "en": "Egypt"
+        }
+    },
+    {
+        "id": "KR",
+        "name": {
+            "en": "South Korea"
+        }
+    },
+    {
+        "id": "IN",
+        "name": {
+            "en": "India"
+        }
+    },
+    {
+        "id": "GBSCT",
+        "name": {
+            "en": "Scotland"
+        }
+    },
+    {
+        "id": "TR",
+        "name": {
+            "en": "Turkey"
+        }
+    },
+    {
+        "id": "SE",
+        "name": {
+            "en": "Sweden"
+        }
+    },
+    {
+        "id": "MX",
+        "name": {
+            "en": "Mexico"
+        }
+    },
+    {
+        "id": "VN",
+        "name": {
+            "en": "Vietnam"
+        }
+    },
+    {
+        "id": "HK",
+        "name": {
+            "en": "Hong Kong",
+            "zh": "香港"
+        }
+    },
+    {
+        "id": "MY",
+        "name": {
+            "en": "Malaysia"
+        }
+    },
+    {
+        "id": "TW",
+        "name": {
+            "en": "Taiwan"
+        } 
+    },
+    {
+        "id": "PE",
+        "name": {
+            "en": "Peru"
+        } 
+    },
+    {
+        "id": "PT",
+        "name": {
+            "en": "Portugal"
+        } 
+    },
+    {
+        "id": "GBENG",
+        "name": {
+            "en": "England"
+        } 
+    },
+    {
+        "id": "MO",
+        "name": {
+            "en": "Macao",
+            "pt": "Macau",
+            "zh-Hans": "澳门",
+            "zh-Hant": "澳門"
+        } 
+    },
+    {
+        "id": "IT",
+        "name": {
+            "en": "Italy",
+            "it": "Italia",
+            "zh-Hans": "意大利"
+        } 
+    },
+    {
+        "id": "NO",
+        "name": {
+            "en": "Norway",
+            "zh": "挪威"
+        } 
+    },
+    {
+        "id": "FR",
+        "name": {
+            "en": "France",
+            "zh-Hans": "法国"
+        } 
+    },
+    {
+        "id": "US",
+        "name": {
+            "en": "United States",
+            "zh-Hans": "美国"
+        }
+    },
+    {
+        "id": "RU",
+        "name": {
+            "en": "Russia"
+        } 
+    },
+    {
+        "id": "CL",
+        "name": {
+            "en": "Chile"
+        } 
+    },
+    {
+        "id": "BR",
+        "name": {
+            "en": "Brazil"
+        } 
+    },
+    {
+        "id": "SG",
+        "name": {
+            "en": "Singapore",
+            "zh": "新加坡"
+        }
+    },
+    {
+        "id": "IR",
+        "name": {
+            "en": "Iran"
+        }
+    },
+    {
+        "id": "CA",
+        "name": {
+            "en": "Canada"
+        }
+    },
+    {
+        "id": "AT",
+        "name": {
+            "en": "Austria"
+        }
+    },
+    {
+        "id": "UN",
+        "name": {
+            "en": "Customise",
+            "zh-Hans": "自定义",
+            "zh-Hant": "自訂"
+        }
+    }
+]
