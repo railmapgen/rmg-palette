@@ -1,11 +1,11 @@
 import { setSelectedCountryAction, SET_SELECTED_COUNTRY } from './action';
 
 interface AppState {
-    selectedCountry?: string;
+    selectedCountry: string;
 }
 
 const initialState: AppState = {
-    selectedCountry: undefined,
+    selectedCountry: '',
 };
 export default function AppReducer(state = initialState, action: setSelectedCountryAction): AppState {
     switch (action.type) {
