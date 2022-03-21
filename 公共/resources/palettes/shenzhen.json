@@ -123,7 +123,7 @@
             "zh-Hans": "14号线",
             "zh-Hant": "14號線"
         },
-        "colour": "#919D9D"
+        "colour": "#F2C75C"
     },
     {
         "id": "sz15",
@@ -141,7 +141,7 @@
             "zh-Hans": "16号线",
             "zh-Hant": "16號線"
         },
-        "colour": "#AEE2AE"
+        "colour": "#1E22AA"
     },
     {
         "id": "sz20",
@@ -150,6 +150,6 @@
             "zh-Hans": "20号线",
             "zh-Hant": "20號線"
         },
-        "colour": "#FFD700"
+        "colour": "#9CD0CB"
     }
 ]
