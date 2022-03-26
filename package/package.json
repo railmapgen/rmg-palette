@@ -1,5 +1,11 @@
 {
+    "homepage": "https://railmapgen.github.io/rmg-palette",
     "name": "@railmapgen/rmg-palette-resources",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/railmapgen/rmg-palette.git",
+        "directory": "package"
+    },
     "version": "0.3.1",
     "description": "",
     "main": "./index.js",
