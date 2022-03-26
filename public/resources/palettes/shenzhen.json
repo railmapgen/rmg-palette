@@ -54,6 +54,15 @@
         "colour": "#00C7B1"
     },
     {
+        "id": "sz6b",
+        "name": {
+            "en": "Line 6 branch",
+            "zh-Hans": "6号线支线",
+            "zh-Hant": "6號線支線"
+        },
+        "colour": "#168773"
+    },
+    {
         "id": "sz7",
         "name": {
             "en": "Line 7",
@@ -123,7 +132,7 @@
             "zh-Hans": "14号线",
             "zh-Hant": "14號線"
         },
-        "colour": "#919D9D"
+        "colour": "#F2C75C"
     },
     {
         "id": "sz15",
@@ -141,7 +150,7 @@
             "zh-Hans": "16号线",
             "zh-Hant": "16號線"
         },
-        "colour": "#AEE2AE"
+        "colour": "#1E22AA"
     },
     {
         "id": "sz20",
@@ -150,6 +159,6 @@
             "zh-Hans": "20号线",
             "zh-Hant": "20號線"
         },
-        "colour": "#FFD700"
+        "colour": "#88DBDF"
     }
 ]
