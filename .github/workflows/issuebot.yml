@@ -1,0 +1,57 @@
+name: Issue bot
+
+on:
+  issues:
+    type: [opened, edited]
+
+jobs:
+  updateCities:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm i
+        working-directory: ./package
+
+      - name: Dump payload
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT" > ./package/issuebot/issue.txt
+
+      - name: Update cities
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        working-directory: ./package
+        run: |
+          node --loader ts-node/esm ./issuebot/issuebot.ts
+          git add .
+
+      - name: Build to check
+        working-directory: ./package
+        run: CI='' npm run build
+
+      - name: Commit
+        run: |
+          rm ./package/issuebot/issue.txt
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git checkout -b "bot-${{ github.event.issue.number }}"
+          git commit -m "#${{ github.event.issue.number }}-${{ github.event.issue.title }}
+          
+          Co-authored-by: ${{ github.event.issue.user.login }} <${{ github.event.issue.user.id }}+${{ github.event.issue.user.login }}@users.noreply.github.com>"
+          git push --set-upstream origin "bot-${{ github.event.issue.number }}"
+
+      - name: pull-request-action
+        uses: vsoch/pull-request-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_PREFIX: "bot-"
+          PULL_REQUEST_FROM_BRANCH: bot-${{ github.event.issue.number }}
+          PULL_REQUEST_BRANCH: "master"
+          PULL_REQUEST_TOKEN: ${{ secrets.RMG_BUILD_AND_RELEASE }}
