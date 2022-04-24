@@ -130,6 +130,15 @@
         }
     },
     {
+        "id": "dongguan",
+        "country": "CN",
+        "name": {
+            "en": "Dongguan",
+            "zh-Hans": "东莞",
+            "zh-Hant": "東莞"
+        }
+    },
+    {
         "id": "dortmund",
         "country": "DE",
         "name": {
