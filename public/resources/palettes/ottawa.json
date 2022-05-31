@@ -8,7 +8,7 @@
             "zh-Hant": "1號線 - 聯邦線"
         },
         "colour": "#D52D3A",
-        "fg": "#FFF"
+        "fg": "#fff"
     },
     {
         "id": "line 2",
@@ -19,7 +19,7 @@
             "zh-Hant": "2號線 - 延齡草線"
         },
         "colour": "#77B821",
-        "fg": "#FFF"
+        "fg": "#fff"
     },
     {
         "id": "line 3",
@@ -30,7 +30,7 @@
             "zh-Hant": "3號線"
         },
         "colour": "#AE8736",
-        "fg": "#FFF"
+        "fg": "#fff"
     },
     {
         "id": "line 4",
