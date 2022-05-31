@@ -433,6 +433,16 @@
         }
     },
     {
+        "id": "ottawa",
+        "country": "CA",
+        "name": {
+            "en": "Ottawa",
+            "fr": "Ottawa",
+            "zh-Hans": "渥太华",
+            "zh-Hant": "渥太華"
+        }
+    },
+    {
         "id": "paris",
         "country": "FR",
         "name": {
