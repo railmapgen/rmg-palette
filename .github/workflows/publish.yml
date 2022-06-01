@@ -29,6 +29,7 @@ jobs:
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
+        id: publish
 
       - name: Trigger RMG Palette rebuild
         run: |
@@ -38,7 +39,7 @@ jobs:
             --data '{"ref": "master", "inputs": {"auto_deploy": "PRD"}}'
 
       - name: Trigger RMG rebuild
-        if: ${{ github.env.IS_PATCH == true }}
+        if: ${{ steps.publish.outputs.IS_PATCH == true }}
         run: |
           curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
             -H "Accept: application/vnd.github.everest-preview+json" \
