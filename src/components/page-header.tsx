@@ -1,12 +1,12 @@
 import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
-import { setSelectedCountry } from '../redux/app/action';
+import { setSelectedCountry } from '../redux/app/app-slice';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-import { useAppSelector } from '../redux';
+import { useRootSelector } from '../redux';
 
 export default function PageHeader() {
     const dispatch = useDispatch();
-    const selectedCountry = useAppSelector(state => state.app.selectedCountry);
+    const selectedCountry = useRootSelector(state => state.app.selectedCountry);
     const countryOptions = countryList.reduce<Record<string, string>>(
         (acc, cur) => {
             return { ...acc, [cur.id]: cur.name.en! };

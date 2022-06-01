@@ -1,10 +1,10 @@
 import { cityList, CityEntry } from '@railmapgen/rmg-palette-resources';
 import LineBadges from './line-badges';
-import { useAppSelector } from '../../redux';
+import { useRootSelector } from '../../redux';
 import { RmgDataTable, RmgDataTableFieldType } from '@railmapgen/rmg-components';
 
 export default function PaletteDataTable() {
-    const selectedCountry = useAppSelector(state => state.app.selectedCountry);
+    const selectedCountry = useRootSelector(state => state.app.selectedCountry);
     const data = cityList.filter(city => {
         if (city.country === selectedCountry) {
             return true;
