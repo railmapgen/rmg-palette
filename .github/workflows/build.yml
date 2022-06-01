@@ -30,6 +30,7 @@ jobs:
         run: |
           chmod +x ./scripts/build.sh
           ./scripts/build.sh
+        id: build
 
       - name: Auto deploy
         if: ${{ github.event.inputs.auto_deploy == 'UAT' || github.event.inputs.auto_deploy == 'PRD' }}
