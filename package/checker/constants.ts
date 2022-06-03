@@ -1,4 +1,4 @@
-enum LanguageCode {
+export enum LanguageCode {
     Azerbaijani = 'az',
     Arabic = 'ar',
     Catalan = 'ca',
@@ -30,7 +30,7 @@ enum LanguageCode {
     Vietnamese = 'vn',
 }
 
-type Translation = { [l in LanguageCode]?: string };
+export type Translation = Partial<Record<LanguageCode, string>>;
 
 export enum MonoColour {
     black = '#000',

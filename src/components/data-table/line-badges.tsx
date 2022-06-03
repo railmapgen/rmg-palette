@@ -24,7 +24,7 @@ export default function LineBadges(props: LineBadgesProps) {
     const { city } = props;
     const paletteList = usePalette(city);
     return (
-        <HStack flexWrap="wrap">
+        <HStack flexWrap="wrap" sx={{ '& .chakra-badge': { mb: 1 } }}>
             {paletteList.map(line => (
                 <RmgLineBadge key={line.id} name={line.name.en!} fg={line.fg || MonoColour.white} bg={line.colour} />
             ))}
