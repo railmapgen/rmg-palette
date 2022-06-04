@@ -16,3 +16,5 @@ export const useRootDispatch = () => useDispatch<RootDispatch>();
 export const useRootSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 export default store;
+
+(window as any).xyStore = store;

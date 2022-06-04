@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { removeCityName, setCity, updateCityName, updateCityNameLanguage } from '../../redux/ticket-slice';
+import { addCityName, removeCityName, setCity, updateCityName } from '../../redux/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 
 export default function CitySection() {
@@ -10,7 +10,7 @@ export default function CitySection() {
 
     const { city, cityName } = useRootSelector(state => state.ticket);
 
-    const cityFields: RmgFieldsField[] = [
+    const fields: RmgFieldsField[] = [
         {
             type: 'input',
             label: 'City code',
@@ -26,12 +26,12 @@ export default function CitySection() {
                 City
             </Heading>
 
-            <RmgFields fields={cityFields} />
+            <RmgFields fields={fields} />
             <MultiLangEntryCard
                 entries={cityName}
-                onLanguageChange={(prevLang, nextLang) => dispatch(updateCityNameLanguage({ prevLang, nextLang }))}
-                onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
-                onRemove={lang => dispatch(removeCityName(lang))}
+                onUpdate={(id, changes) => dispatch(updateCityName({ id, changes }))}
+                onAdd={lang => dispatch(addCityName(lang))}
+                onRemove={id => dispatch(removeCityName(id))}
             />
         </Box>
     );

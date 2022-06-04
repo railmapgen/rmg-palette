@@ -3,11 +3,11 @@ import { Box, Heading } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
+    addCountryName,
     removeCountryName,
     setCountry,
     setNewCountry,
     updateCountryName,
-    updateCountryNameLanguage,
 } from '../../redux/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
@@ -29,7 +29,7 @@ export default function CountrySection() {
         new: 'Add a new country/region...',
     };
 
-    const countryFields: RmgFieldsField[] = [
+    const fields: RmgFieldsField[] = [
         {
             type: 'select',
             label: 'Country/region',
@@ -53,15 +53,13 @@ export default function CountrySection() {
                 Country / Region
             </Heading>
 
-            <RmgFields fields={countryFields} />
+            <RmgFields fields={fields} />
             {country === 'new' && (
                 <MultiLangEntryCard
                     entries={countryName}
-                    onLanguageChange={(prevLang, nextLang) =>
-                        dispatch(updateCountryNameLanguage({ prevLang, nextLang }))
-                    }
-                    onUpdate={(lang, name) => dispatch(updateCountryName({ lang, name }))}
-                    onRemove={lang => dispatch(removeCountryName(lang))}
+                    onUpdate={(id, changes) => dispatch(updateCountryName({ id, changes }))}
+                    onAdd={lang => dispatch(addCountryName(lang))}
+                    onRemove={id => dispatch(removeCountryName(id))}
                 />
             )}
         </Box>
