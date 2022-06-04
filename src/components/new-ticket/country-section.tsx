@@ -39,8 +39,8 @@ export default function CountrySection() {
         },
         {
             type: 'input',
-            label: 'Country code (ISO 3166-1 alpha-2)',
-            placeholder: 'e.g. CN, HK, JP',
+            label: 'Country code',
+            placeholder: 'e.g. CN, HK, JP (ISO 3166-1 alpha-2)',
             value: newCountry,
             onChange: value => dispatch(setNewCountry(value)),
             hidden: country !== 'new',

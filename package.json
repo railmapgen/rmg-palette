@@ -65,5 +65,13 @@
             "last 1 safari version"
         ]
     },
-    "version": "0.3.1"
+    "version": "0.3.1",
+    "jest": {
+        "transformIgnorePatterns": [
+            "/node_modules/(?!(@railmapgen/.*))"
+        ],
+        "moduleNameMapper": {
+            "\\.(css|less)$": "identity-obj-proxy"
+        }
+    }
 }
