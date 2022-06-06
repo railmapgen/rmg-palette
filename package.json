@@ -46,7 +46,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "build:resouces": "cd ./package && npm run build && cd ..",
+        "build:resources": "cd ./package && npm run build && cd ..",
         "test": "react-scripts test",
         "test:no-watch": "cross-env CI=true react-scripts test --env=jsdom",
         "lint": "eslint ./src",
