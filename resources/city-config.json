@@ -269,22 +269,22 @@
         }
     },
     {
+        "id": "istanbul",
+        "country": "TR",
+        "name": {
+            "en": "Istanbul",
+            "tr": "İstanbul",
+            "zh-Hans": "伊斯坦布尔",
+            "zh-Hant": "伊斯坦布爾"
+        }
+    },
+    {
         "id": "jinan",
         "country": "CN",
         "name": {
             "en": "Jinan",
             "zh-Hans": "济南",
             "zh-Hant": "濟南"
-        }
-    },
-    {
-        "id": "klangvalley",
-        "country": "MY",
-        "name": {
-            "en": "Greater KL/Klang Valley",
-            "ms": "Greater KL/Klang Valley",
-            "zh-Hans": "大吉隆坡/巴生谷",
-            "zh-Hant": "大吉隆坡/巴生谷"
         }
     },
     {
@@ -306,21 +306,21 @@
         }
     },
     {
+        "id": "klangvalley",
+        "country": "MY",
+        "name": {
+            "en": "Greater KL/Klang Valley",
+            "ms": "Greater KL/Klang Valley",
+            "zh-Hans": "大吉隆坡/巴生谷",
+            "zh-Hant": "大吉隆坡/巴生谷"
+        }
+    },
+    {
         "id": "kunming",
         "country": "CN",
         "name": {
             "en": "Kunming",
             "zh": "昆明"
-        }
-    },
-    {
-        "id": "istanbul",
-        "country": "TR",
-        "name": {
-            "en": "Istanbul",
-            "tr": "İstanbul",
-            "zh-Hans": "伊斯坦布尔",
-            "zh-Hant": "伊斯坦布爾"
         }
     },
     {
@@ -421,6 +421,25 @@
             "en": "Oslo",
             "zh-Hans": "奥斯陆",
             "zh-Hant": "奧斯陸"
+        }
+    },
+    {
+        "id": "other",
+        "country": "UN",
+        "name": {
+            "en": "Customise",
+            "zh-Hans": "自定义",
+            "zh-Hant": "自訂"
+        }
+    },
+    {
+        "id": "ottawa",
+        "country": "CA",
+        "name": {
+            "en": "Ottawa",
+            "fr": "Ottawa",
+            "zh-Hans": "渥太华",
+            "zh-Hant": "渥太華"
         }
     },
     {
@@ -649,15 +668,6 @@
             "en": "Zhengzhou",
             "zh-Hans": "郑州",
             "zh-Hant": "鄭州"
-        }
-    },
-    {
-        "id": "other",
-        "country": "UN",
-        "name": {
-            "en": "Customise",
-            "zh-Hans": "自定义",
-            "zh-Hant": "自訂"
         }
     }
 ]
