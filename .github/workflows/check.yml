@@ -22,5 +22,6 @@ jobs:
 
       - name: Code check
         run: |
+          npm run build:resources
           npm run lint:dev
           npm run test:no-watch
