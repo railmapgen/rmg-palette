@@ -2,7 +2,7 @@
 set -eux
 
 # build local resources
-cd ./package && npm run build && cd ..
+npm run build:resources
 
 # run tests
 npm run test:no-watch
