@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, HStack, IconButton } from '@chakra-ui/react';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';
-import { TranslationEntity } from '../../redux/ticket-slice';
+import { TranslationEntity, translationEntitySelector } from '../../redux/ticket-slice';
 import { EntityId, EntityState } from '@reduxjs/toolkit';
 
 interface MultiLangEntryCardProps {
@@ -17,9 +17,7 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
     const { entries, onUpdate, onAdd, onRemove } = props;
 
     const getFields = (id: EntityId): RmgFieldsField[] => {
-        const {
-            entities: { [id]: entity },
-        } = entries;
+        const entity = translationEntitySelector.selectById(entries, id);
 
         if (!entity) {
             return [];
@@ -60,8 +58,8 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
 
     return (
         <RmgCard direction="column">
-            {entries.ids.map((id, i) => (
-                <HStack key={id} sx={{ '& > div:first-of-type': { flex: 1 } }}>
+            {translationEntitySelector.selectIds(entries).map((id, i) => (
+                <HStack key={id} sx={{ '& > div:first-of-type': { flex: 1 } }} data-testid={'entry-card-stack-' + id}>
                     <RmgFields fields={getFields(id)} noLabel={i > 0} />
 
                     {i === entries.ids.length - 1 ? (

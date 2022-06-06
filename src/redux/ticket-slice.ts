@@ -1,4 +1,12 @@
-import { CountryCode, LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import {
+    CityCode,
+    CityEntry,
+    CountryCode,
+    LanguageCode,
+    MonoColour,
+    PaletteEntry,
+    Translation,
+} from '@railmapgen/rmg-palette-resources';
 import { createEntityAdapter, createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 import { ColourHex } from '../util/constants';
@@ -16,7 +24,19 @@ export interface PaletteEntryWithTranslationEntity {
     fg: MonoColour;
 }
 
-const translationEntityAdapter = createEntityAdapter<TranslationEntity>();
+export const translationEntityAdapter = createEntityAdapter<TranslationEntity>();
+
+export const translationEntitySelector = translationEntityAdapter.getSelectors();
+const convertEntityStateToTranslation = (entityState: EntityState<TranslationEntity>): Translation => {
+    return translationEntitySelector.selectAll(entityState).reduce<Translation>(
+        (acc, cur) => ({
+            ...acc,
+            [cur.lang]: cur.name,
+        }),
+        {}
+    );
+};
+
 const initialTranslation = translationEntityAdapter.upsertOne(translationEntityAdapter.getInitialState(), {
     id: nanoid(),
     lang: LanguageCode.English,
@@ -130,8 +150,27 @@ const ticketSlice = createSlice({
         addLine: state => {
             state.lines[nanoid()] = initialPaletteEntry;
         },
+
+        resetTicket: () => initialState,
     },
 });
+
+export const ticketSelectors = {
+    getCityEntry: (state: TicketState): CityEntry => {
+        return {
+            id: state.city as CityCode,
+            country: state.country === 'new' ? state.newCountry : state.country ?? '',
+            name: convertEntityStateToTranslation(state.cityName),
+        };
+    },
+
+    getPalettes: (state: TicketState): PaletteEntry[] => {
+        return Object.values(state.lines).map(line => {
+            const { nameEntity, ...others } = line;
+            return { ...others, name: convertEntityStateToTranslation(nameEntity) };
+        });
+    },
+};
 
 export const {
     setCountry,
@@ -150,5 +189,6 @@ export const {
     addLineName,
     removeLineName,
     addLine,
+    resetTicket,
 } = ticketSlice.actions;
 export default ticketSlice.reducer;
