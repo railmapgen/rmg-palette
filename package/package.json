@@ -6,7 +6,7 @@
         "url": "https://github.com/railmapgen/rmg-palette.git",
         "directory": "package"
     },
-    "version": "0.3.3",
+    "version": "0.3.4",
     "description": "",
     "main": "./index.js",
     "scripts": {
