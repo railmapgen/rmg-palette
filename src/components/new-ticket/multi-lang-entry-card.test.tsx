@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../test-utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { translationEntityAdapter } from '../../redux/ticket-slice';
+import { translationEntityAdapter } from '../../redux/ticket/ticket-slice';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { screen, within } from '@testing-library/react';
 

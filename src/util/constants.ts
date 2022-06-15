@@ -24,3 +24,10 @@ export const getGitHubIssueLinesBlock = (lines: PaletteEntry[]) => {
 ${JSON.stringify(lines, null, 4)}
 </details>`;
 };
+
+export enum TicketInvalidReason {
+    COUNTRY_CODE_UNDEFINED = 'Country code is not defined',
+    CITY_CODE_UNDEFINED = 'City code is not defined',
+    LINE_CODE_UNDEFINED = 'At least one line code is not defined',
+    LINE_CODE_DUPLICATED = 'Duplicated line code found',
+}

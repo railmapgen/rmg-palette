@@ -12,7 +12,7 @@ import {
     updateLineFgColour,
     updateLineId,
     updateLineName,
-} from '../../redux/ticket-slice';
+} from '../../redux/ticket/ticket-slice';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdAdd } from 'react-icons/md';
 import { ColourHex } from '../../util/constants';

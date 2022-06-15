@@ -3,7 +3,7 @@ import React from 'react';
 import { Box, HStack, IconButton } from '@chakra-ui/react';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';
-import { TranslationEntity, translationEntitySelector } from '../../redux/ticket-slice';
+import { TranslationEntity, translationEntitySelector } from '../../redux/ticket/ticket-slice';
 import { EntityId, EntityState } from '@reduxjs/toolkit';
 
 interface MultiLangEntryCardProps {

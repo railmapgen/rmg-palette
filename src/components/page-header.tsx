@@ -1,6 +1,6 @@
 import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
-import { setSelectedCountry } from '../redux/app-slice';
+import { setSelectedCountry } from '../redux/app/app-slice';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../redux';
 import { Button, Flex, HStack } from '@chakra-ui/react';

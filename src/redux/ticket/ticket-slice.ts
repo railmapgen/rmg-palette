@@ -9,7 +9,7 @@ import {
 } from '@railmapgen/rmg-palette-resources';
 import { createEntityAdapter, createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { ColourHex } from '../util/constants';
+import { ColourHex, TicketInvalidReason } from '../../util/constants';
 
 export interface TranslationEntity {
     id: string;
@@ -50,7 +50,7 @@ const initialPaletteEntry: PaletteEntryWithTranslationEntity = {
     fg: MonoColour.white,
 };
 
-interface TicketState {
+export interface TicketState {
     // country
     country?: CountryCode | 'new';
     newCountry: string;
@@ -169,6 +169,28 @@ export const ticketSelectors = {
             const { nameEntity, ...others } = line;
             return { ...others, name: convertEntityStateToTranslation(nameEntity) };
         });
+    },
+
+    getInvalidReason: (state: TicketState): TicketInvalidReason | undefined => {
+        const { country, newCountry, city, lines } = state;
+
+        if (!country || (country === 'new' && !newCountry)) {
+            return TicketInvalidReason.COUNTRY_CODE_UNDEFINED;
+        }
+
+        if (!city) {
+            return TicketInvalidReason.CITY_CODE_UNDEFINED;
+        }
+
+        if (Object.values(lines).find(line => line.id === '')) {
+            return TicketInvalidReason.LINE_CODE_UNDEFINED;
+        }
+
+        if (new Set(Object.values(lines).map(line => line.id)).size !== Object.keys(lines).length) {
+            return TicketInvalidReason.LINE_CODE_DUPLICATED;
+        }
+
+        return undefined;
     },
 };
 

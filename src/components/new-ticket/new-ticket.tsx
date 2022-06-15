@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import CountrySection from './country-section';
 import CitySection from './city-section';
 import LinesSection from './lines-section';
-import { resetTicket, ticketSelectors } from '../../redux/ticket-slice';
+import { resetTicket, ticketSelectors } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
 import { CityEntry, PaletteEntry } from '@railmapgen/rmg-palette-resources';
@@ -32,6 +32,8 @@ export default function NewTicket() {
         setSubmitModalPaletteList([]);
     };
 
+    const invalidReason = ticketSelectors.getInvalidReason(ticket);
+
     return (
         <Flex direction="column" flex={1} p={2} width={520} overflow="hidden">
             <Flex direction="column" flex={1} overflowY="auto">
@@ -44,7 +46,12 @@ export default function NewTicket() {
                 <Button variant="outline" onClick={() => dispatch(resetTicket())}>
                     Reset
                 </Button>
-                <Button colorScheme="teal" onClick={handleSubmit}>
+                <Button
+                    colorScheme="teal"
+                    onClick={handleSubmit}
+                    isDisabled={invalidReason !== undefined}
+                    title={invalidReason}
+                >
                     Submit
                 </Button>
             </HStack>
