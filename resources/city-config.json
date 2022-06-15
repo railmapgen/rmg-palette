@@ -398,6 +398,16 @@
         }
     },
     {
+        "id": "naples",
+        "country": "IT",
+        "name": {
+            "en": "Naples",
+            "it": "Napoli",
+            "zh-Hans": "那不勒斯",
+            "zh-Hant": "拿坡里"
+        }
+    },
+    {
         "id": "newtaipei",
         "country": "TW",
         "name": {
@@ -633,6 +643,15 @@
             "de": "Wien",
             "zh-Hans": "维也纳",
             "zh-Hant": "維也納"
+        }
+    },
+    {
+        "id": "wuhan",
+        "country": "CN",
+        "name": {
+            "en": "Wuhan",
+            "zh-Hans": "武汉",
+            "zh-Hant": "武漢"
         }
     },
     {
