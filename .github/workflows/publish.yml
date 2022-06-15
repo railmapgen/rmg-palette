@@ -22,6 +22,7 @@ jobs:
         run: |
           chmod +x ./scripts/prepublish.sh
           ./scripts/prepublish.sh
+        id: prepublish
 
       - name: Pulish to npm
         run: |
@@ -29,7 +30,6 @@ jobs:
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
-        id: publish
 
       - name: Trigger RMG Palette rebuild
         run: |
@@ -39,7 +39,7 @@ jobs:
             --data '{"ref": "master", "inputs": {"auto_deploy": "PRD"}}'
 
       - name: Trigger RMG rebuild
-        if: ${{ steps.publish.outputs.IS_PATCH == true }}
+        if: ${{ steps.prepublish.outputs.IS_PATCH == true }}
         run: |
           curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
             -H "Accept: application/vnd.github.everest-preview+json" \
