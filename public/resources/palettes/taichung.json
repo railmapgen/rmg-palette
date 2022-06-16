@@ -6,7 +6,7 @@
         "name": {
             "en": "Green Line (Line 1)",
             "zh-Hans": "绿线",
-            "zh-TW": "綠線"
+            "zh-Hant": "綠線"
         }
     },
     {
@@ -16,7 +16,7 @@
         "name": {
             "en": "Blue Line (Line 2)",
             "zh-Hans": "蓝线",
-            "zh-TW": "藍線"
+            "zh-Hant": "藍線"
         }
     },
     {
@@ -26,7 +26,7 @@
         "name": {
             "en": "Orange Line (Line 3)",
             "zh-Hans": "橘线",
-            "zh-TW": "橘線"
+            "zh-Hant": "橘線"
         }
     },
     {
@@ -36,7 +36,7 @@
         "name": {
             "en": "Purple Line (Line 4)",
             "zh-Hans": "紫线",
-            "zh-TW": "紫線"
+            "zh-Hant": "紫線"
         }
     }
 ]
