@@ -57,3 +57,5 @@ jobs:
           PULL_REQUEST_FROM_BRANCH: bot-${{ github.event.issue.number }}
           PULL_REQUEST_BRANCH: "master"
           PULL_REQUEST_TOKEN: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+          PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
+          PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}."
