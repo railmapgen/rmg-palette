@@ -2,7 +2,7 @@ name: Issue bot
 
 on:
   issues:
-    type: [opened, edited]
+    type: [opened]
 
 jobs:
   updateCities:
@@ -58,4 +58,4 @@ jobs:
           PULL_REQUEST_BRANCH: "master"
           PULL_REQUEST_TOKEN: ${{ secrets.RMG_BUILD_AND_RELEASE }}
           PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
-          PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}."
+          PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}"
