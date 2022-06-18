@@ -581,6 +581,14 @@
         }
     },
     {
+        "id": "taichung",
+        "country": "TW",
+        "name": {
+            "en": "Taichung",
+            "zh": "台中"
+        }
+    },
+    {
         "id": "taipei",
         "country": "TW",
         "name": {

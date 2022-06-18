@@ -14,8 +14,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-          cache: 'npm'
-      - run: npm install
+      - run: npm ci
 
       - name: Resources check
         run: cd ./package && npm run check
