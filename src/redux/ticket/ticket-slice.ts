@@ -171,7 +171,10 @@ export const ticketSelectors = {
             result.push(TicketInvalidReason.LINE_CODE_DUPLICATED);
         }
 
-        result.push(...getTranslationEntityInvalidReasons(countryName));
+        if (country === 'new') {
+            result.push(...getTranslationEntityInvalidReasons(countryName));
+        }
+
         result.push(...getTranslationEntityInvalidReasons(cityName));
         Object.values(lines)
             .map(line => line.nameEntity)

@@ -5,7 +5,7 @@ set -eux
 npm run build:resources
 
 # run tests
-npm run test:no-watch
+npm run test
 
 # git config
 git config --global user.name 'github-actions[bot]'
