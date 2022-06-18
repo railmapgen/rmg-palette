@@ -1,11 +1,13 @@
-import React, { Fragment } from 'react';
-import { Box, Button, Flex, Heading } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-import { MonoColour } from '@railmapgen/rmg-palette-resources';
+import React, { useState } from 'react';
+import { Box, Button, Flex, Heading, HStack, IconButton } from '@chakra-ui/react';
+import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
+import { LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
     addLineName,
+    copyLine,
+    removeLine,
     removeLineName,
     updateLineBgColour,
     updateLineFgColour,
@@ -13,42 +15,52 @@ import {
     updateLineName,
 } from '../../redux/ticket/ticket-slice';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { MdAdd } from 'react-icons/md';
+import { MdAdd, MdContentCopy, MdDelete, MdEdit } from 'react-icons/md';
 import { ColourHex } from '../../util/constants';
-import { PaletteEntryWithTranslationEntity } from '../../redux/ticket/util';
+import { translationEntitySelector } from '../../redux/ticket/util';
 
 export default function LinesSection() {
     const dispatch = useRootDispatch();
 
     const lines = useRootSelector(state => state.ticket.lines);
 
-    const getFields = (entryId: string, line: PaletteEntryWithTranslationEntity): RmgFieldsField[] => [
-        {
-            type: 'input',
-            label: 'Line code',
-            placeholder: 'e.g. twl, gz1, sh1',
-            value: line.id,
-            onChange: value => dispatch(updateLineId({ entryId, lineId: value })),
-            validator: value => value !== '' && !value.match(/[^a-z0-9]/),
-        },
-        {
-            type: 'input',
-            label: 'Background colour',
-            variant: 'color',
-            value: line.colour,
-            onChange: value => dispatch(updateLineBgColour({ entryId, bgColour: value as ColourHex })),
-        },
-        {
-            type: 'select',
-            label: 'Foreground colour',
-            value: line.fg,
-            options: {
-                [MonoColour.white]: 'White',
-                [MonoColour.black]: 'Black',
+    const [selectedLine, setSelectedLine] = useState(Object.keys(lines)[0]);
+
+    const getFields = (entryId: string): RmgFieldsField[] => {
+        const line = lines[entryId];
+
+        if (!line) {
+            return [];
+        }
+
+        return [
+            {
+                type: 'input',
+                label: 'Line code',
+                placeholder: 'e.g. twl, gz1, sh1',
+                value: line.id,
+                onChange: value => dispatch(updateLineId({ entryId, lineId: value })),
+                validator: value => value !== '' && !value.match(/[^a-z0-9]/),
             },
-            onChange: value => dispatch(updateLineFgColour({ entryId, fgColour: value as MonoColour })),
-        },
-    ];
+            {
+                type: 'input',
+                label: 'Background colour',
+                variant: 'color',
+                value: line.colour,
+                onChange: value => dispatch(updateLineBgColour({ entryId, bgColour: value as ColourHex })),
+            },
+            {
+                type: 'select',
+                label: 'Foreground colour',
+                value: line.fg,
+                options: {
+                    [MonoColour.white]: 'White',
+                    [MonoColour.black]: 'Black',
+                },
+                onChange: value => dispatch(updateLineFgColour({ entryId, fgColour: value as MonoColour })),
+            },
+        ];
+    };
 
     return (
         <Box as="section">
@@ -62,17 +74,57 @@ export default function LinesSection() {
                 </Button>
             </Flex>
 
-            {Object.entries(lines).map(([entryId, line]) => (
-                <Fragment key={entryId}>
-                    <RmgFields fields={getFields(entryId, line)} />
-                    <MultiLangEntryCard
-                        entries={line.nameEntity}
-                        onUpdate={(id, changes) => dispatch(updateLineName({ entryId, id, changes }))}
-                        onAdd={lang => dispatch(addLineName({ entryId, lang }))}
-                        onRemove={id => dispatch(removeLineName({ entryId, id }))}
-                    />
-                </Fragment>
-            ))}
+            <HStack flexWrap="wrap" sx={{ '& .chakra-badge': { mb: 1 } }}>
+                {Object.entries(lines).map(([entryId, line]) => {
+                    const enNameEntity = translationEntitySelector
+                        .selectAll(line.nameEntity)
+                        .find(entity => entity.lang === LanguageCode.English);
+                    return (
+                        <RmgLineBadge
+                            key={entryId}
+                            name={enNameEntity?.name ?? ''}
+                            bg={line.colour}
+                            fg={line.fg}
+                            actions={
+                                <>
+                                    <IconButton
+                                        size="xs"
+                                        variant="ghost"
+                                        color={line.fg}
+                                        aria-label={'Edit ' + enNameEntity}
+                                        icon={<MdEdit />}
+                                        onClick={() => setSelectedLine(entryId)}
+                                    />
+                                    <IconButton
+                                        size="xs"
+                                        variant="ghost"
+                                        color={line.fg}
+                                        aria-label={'Copy ' + enNameEntity}
+                                        icon={<MdContentCopy />}
+                                        onClick={() => dispatch(copyLine(entryId))}
+                                    />
+                                    <IconButton
+                                        size="xs"
+                                        variant="ghost"
+                                        color={line.fg}
+                                        aria-label={'Remove ' + enNameEntity}
+                                        icon={<MdDelete />}
+                                        onClick={() => dispatch(removeLine(entryId))}
+                                    />
+                                </>
+                            }
+                        />
+                    );
+                })}
+            </HStack>
+
+            <RmgFields fields={getFields(selectedLine)} />
+            <MultiLangEntryCard
+                entries={lines[selectedLine]?.nameEntity}
+                onUpdate={(id, changes) => dispatch(updateLineName({ entryId: selectedLine, id, changes }))}
+                onAdd={lang => dispatch(addLineName({ entryId: selectedLine, lang }))}
+                onRemove={id => dispatch(removeLineName({ entryId: selectedLine, id }))}
+            />
         </Box>
     );
 }

@@ -4,17 +4,18 @@ import { Box, HStack, IconButton } from '@chakra-ui/react';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';
 import { EntityId, EntityState } from '@reduxjs/toolkit';
-import { TranslationEntity, translationEntitySelector } from '../../redux/ticket/util';
+import { TranslationEntity, translationEntityAdapter, translationEntitySelector } from '../../redux/ticket/util';
 
 interface MultiLangEntryCardProps {
-    entries: EntityState<TranslationEntity>;
+    entries?: EntityState<TranslationEntity>;
     onUpdate: (id: EntityId, changes: Partial<TranslationEntity>) => void;
     onAdd: (lang: LanguageCode) => void;
     onRemove: (id: EntityId) => void;
 }
 
 export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
-    const { entries, onUpdate, onAdd, onRemove } = props;
+    const { onUpdate, onAdd, onRemove } = props;
+    const entries = props.entries ?? translationEntityAdapter.getInitialState();
 
     const getFields = (id: EntityId): RmgFieldsField[] => {
         const entity = translationEntitySelector.selectById(entries, id);

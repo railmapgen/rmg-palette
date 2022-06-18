@@ -131,6 +131,14 @@ const ticketSlice = createSlice({
             state.lines[nanoid()] = initialPaletteEntry;
         },
 
+        copyLine: (state, action: PayloadAction<string>) => {
+            state.lines[nanoid()] = JSON.parse(JSON.stringify(state.lines[action.payload]));
+        },
+
+        removeLine: (state, action: PayloadAction<string>) => {
+            delete state.lines[action.payload];
+        },
+
         resetTicket: () => initialState,
     },
 });
@@ -203,6 +211,8 @@ export const {
     addLineName,
     removeLineName,
     addLine,
+    copyLine,
+    removeLine,
     resetTicket,
 } = ticketSlice.actions;
 export default ticketSlice.reducer;
