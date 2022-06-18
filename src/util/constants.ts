@@ -34,11 +34,11 @@ export enum TicketInvalidReason {
 
 export enum TranslationEntityInvalidReason {
     EN_UNDEFINED = 'English name is missing',
-    ZH_UNDEFINED = 'Chinese is missing',
-    ZH_HANS_UNDEFINED = 'Simplified Chinese is missing',
-    ZH_HANT_UNDEFINED = 'Traditional Chinese is missing',
-    ZH_HK_UNDEFINED = 'Traditional Chinese (Hong Kong variant) is missing',
-    ZH_TW_UNDEFINED = 'Traditional Chinese (Taiwan variant) is missing',
+    ZH_UNDEFINED = 'Chinese name is missing',
+    ZH_HANS_UNDEFINED = 'Simplified Chinese name is missing',
+    ZH_HANT_UNDEFINED = 'Traditional Chinese name is missing',
+    ZH_HK_UNDEFINED = 'Traditional Chinese (Hong Kong variant) name is missing',
+    ZH_TW_UNDEFINED = 'Traditional Chinese (Taiwan variant) name is missing',
     ZH_VARIANTS_REDEFINED = 'Chinese variants are redefined',
     LANGUAGE_DUPLICATED = 'Duplicated language found',
 }
