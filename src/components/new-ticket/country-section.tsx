@@ -8,7 +8,7 @@ import {
     setCountry,
     setNewCountry,
     updateCountryName,
-} from '../../redux/ticket-slice';
+} from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
 

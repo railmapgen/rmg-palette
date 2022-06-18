@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { addCityName, removeCityName, setCity, updateCityName } from '../../redux/ticket-slice';
+import { addCityName, removeCityName, setCity, updateCityName } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 
 export default function CitySection() {
@@ -17,6 +17,7 @@ export default function CitySection() {
             placeholder: 'e.g. hongkong, guangzhou, shanghai',
             value: city,
             onChange: value => dispatch(setCity(value)),
+            validator: value => value !== '' && !value.match(/[^a-z]/),
         },
     ];
 

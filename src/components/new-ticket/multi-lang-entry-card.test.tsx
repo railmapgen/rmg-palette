@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '../../test-utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { translationEntityAdapter } from '../../redux/ticket-slice';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { screen, within } from '@testing-library/react';
+import { translationEntityAdapter } from '../../redux/ticket/util';
 
 const mockEntries = translationEntityAdapter.upsertMany(translationEntityAdapter.getInitialState(), [
     { id: '001', lang: LanguageCode.English, name: 'Hong Kong' },

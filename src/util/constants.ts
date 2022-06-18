@@ -24,3 +24,21 @@ export const getGitHubIssueLinesBlock = (lines: PaletteEntry[]) => {
 ${JSON.stringify(lines, null, 4)}
 </details>`;
 };
+
+export enum TicketInvalidReason {
+    COUNTRY_CODE_UNDEFINED = 'Country code is missing',
+    CITY_CODE_UNDEFINED = 'City code is missing',
+    LINE_CODE_UNDEFINED = 'At least one line code is missing',
+    LINE_CODE_DUPLICATED = 'Duplicated line code found',
+}
+
+export enum TranslationEntityInvalidReason {
+    EN_UNDEFINED = 'English name is missing',
+    ZH_UNDEFINED = 'Chinese is missing',
+    ZH_HANS_UNDEFINED = 'Simplified Chinese is missing',
+    ZH_HANT_UNDEFINED = 'Traditional Chinese is missing',
+    ZH_HK_UNDEFINED = 'Traditional Chinese (Hong Kong variant) is missing',
+    ZH_TW_UNDEFINED = 'Traditional Chinese (Taiwan variant) is missing',
+    ZH_VARIANTS_REDEFINED = 'Chinese variants are redefined',
+    LANGUAGE_DUPLICATED = 'Duplicated language found',
+}

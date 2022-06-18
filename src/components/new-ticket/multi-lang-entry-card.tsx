@@ -3,8 +3,8 @@ import React from 'react';
 import { Box, HStack, IconButton } from '@chakra-ui/react';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';
-import { TranslationEntity, translationEntitySelector } from '../../redux/ticket-slice';
 import { EntityId, EntityState } from '@reduxjs/toolkit';
+import { TranslationEntity, translationEntitySelector } from '../../redux/ticket/util';
 
 interface MultiLangEntryCardProps {
     entries: EntityState<TranslationEntity>;
@@ -45,6 +45,7 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                 label: 'Name',
                 value: name,
                 onChange: value => onUpdate(id, { name: value }),
+                validator: value => value !== '',
             },
         ];
     };
