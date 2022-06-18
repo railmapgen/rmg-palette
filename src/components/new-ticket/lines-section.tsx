@@ -6,7 +6,6 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
     addLineName,
-    PaletteEntryWithTranslationEntity,
     removeLineName,
     updateLineBgColour,
     updateLineFgColour,
@@ -16,6 +15,7 @@ import {
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdAdd } from 'react-icons/md';
 import { ColourHex } from '../../util/constants';
+import { PaletteEntryWithTranslationEntity } from '../../redux/ticket/util';
 
 export default function LinesSection() {
     const dispatch = useRootDispatch();
@@ -29,6 +29,7 @@ export default function LinesSection() {
             placeholder: 'e.g. twl, gz1, sh1',
             value: line.id,
             onChange: value => dispatch(updateLineId({ entryId, lineId: value })),
+            validator: value => value !== '' && !value.match(/[^a-z0-9]/),
         },
         {
             type: 'input',

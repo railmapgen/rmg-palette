@@ -62,21 +62,29 @@ describe('TicketSlice', () => {
     describe('TicketSlice - validation', () => {
         it('Can validate country code as expected', () => {
             const initialState: TicketState = { ...realStore.ticket };
-            expect(ticketSelectors.getInvalidReason(initialState)).toBe(TicketInvalidReason.COUNTRY_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).toContain(
+                TicketInvalidReason.COUNTRY_CODE_UNDEFINED
+            );
 
             initialState.country = 'new';
-            expect(ticketSelectors.getInvalidReason(initialState)).toBe(TicketInvalidReason.COUNTRY_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).toContain(
+                TicketInvalidReason.COUNTRY_CODE_UNDEFINED
+            );
 
             initialState.newCountry = 'HK';
-            expect(ticketSelectors.getInvalidReason(initialState)).not.toBe(TicketInvalidReason.COUNTRY_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).not.toContain(
+                TicketInvalidReason.COUNTRY_CODE_UNDEFINED
+            );
         });
 
         it('Can validate city code as expected', () => {
             const initialState: TicketState = { ...realStore.ticket, country: CountryCode.HK };
-            expect(ticketSelectors.getInvalidReason(initialState)).toBe(TicketInvalidReason.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).toContain(TicketInvalidReason.CITY_CODE_UNDEFINED);
 
             initialState.city = 'hongkong';
-            expect(ticketSelectors.getInvalidReason(initialState)).not.toBe(TicketInvalidReason.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).not.toContain(
+                TicketInvalidReason.CITY_CODE_UNDEFINED
+            );
         });
 
         it('Can validate line code as expected', () => {
@@ -93,16 +101,20 @@ describe('TicketSlice', () => {
                     },
                 },
             };
-            expect(ticketSelectors.getInvalidReason(initialState)).toBe(TicketInvalidReason.LINE_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).toContain(TicketInvalidReason.LINE_CODE_UNDEFINED);
 
             initialState.lines['id-001'].id = 'twl';
-            expect(ticketSelectors.getInvalidReason(initialState)).not.toBe(TicketInvalidReason.LINE_CODE_UNDEFINED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).not.toContain(
+                TicketInvalidReason.LINE_CODE_UNDEFINED
+            );
 
             initialState.lines['id-002'] = { ...initialState.lines['id-001'] };
-            expect(ticketSelectors.getInvalidReason(initialState)).toBe(TicketInvalidReason.LINE_CODE_DUPLICATED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).toContain(TicketInvalidReason.LINE_CODE_DUPLICATED);
 
             initialState.lines['id-002'].id = 'ktl';
-            expect(ticketSelectors.getInvalidReason(initialState)).not.toBe(TicketInvalidReason.LINE_CODE_DUPLICATED);
+            expect(ticketSelectors.getInvalidReasons(initialState)).not.toContain(
+                TicketInvalidReason.LINE_CODE_DUPLICATED
+            );
         });
     });
 });

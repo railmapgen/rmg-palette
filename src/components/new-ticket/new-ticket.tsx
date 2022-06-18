@@ -32,7 +32,7 @@ export default function NewTicket() {
         setSubmitModalPaletteList([]);
     };
 
-    const invalidReason = ticketSelectors.getInvalidReason(ticket);
+    const invalidReasons = ticketSelectors.getInvalidReasons(ticket);
 
     return (
         <Flex direction="column" flex={1} p={2} width={520} overflow="hidden">
@@ -49,8 +49,8 @@ export default function NewTicket() {
                 <Button
                     colorScheme="teal"
                     onClick={handleSubmit}
-                    isDisabled={invalidReason !== undefined}
-                    title={invalidReason}
+                    isDisabled={invalidReasons.length !== 0}
+                    title={invalidReasons.join(', ')}
                 >
                     Submit
                 </Button>

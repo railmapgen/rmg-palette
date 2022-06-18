@@ -17,6 +17,7 @@ export default function CitySection() {
             placeholder: 'e.g. hongkong, guangzhou, shanghai',
             value: city,
             onChange: value => dispatch(setCity(value)),
+            validator: value => value !== '' && !value.match(/[^a-z]/),
         },
     ];
 

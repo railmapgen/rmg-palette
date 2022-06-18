@@ -5,37 +5,17 @@ import {
     LanguageCode,
     MonoColour,
     PaletteEntry,
-    Translation,
 } from '@railmapgen/rmg-palette-resources';
-import { createEntityAdapter, createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { ColourHex, TicketInvalidReason } from '../../util/constants';
-
-export interface TranslationEntity {
-    id: string;
-    lang: LanguageCode;
-    name: string;
-}
-
-export interface PaletteEntryWithTranslationEntity {
-    id: string;
-    nameEntity: EntityState<TranslationEntity>;
-    colour: ColourHex;
-    fg: MonoColour;
-}
-
-export const translationEntityAdapter = createEntityAdapter<TranslationEntity>();
-
-export const translationEntitySelector = translationEntityAdapter.getSelectors();
-const convertEntityStateToTranslation = (entityState: EntityState<TranslationEntity>): Translation => {
-    return translationEntitySelector.selectAll(entityState).reduce<Translation>(
-        (acc, cur) => ({
-            ...acc,
-            [cur.lang]: cur.name,
-        }),
-        {}
-    );
-};
+import { ColourHex, TicketInvalidReason, TranslationEntityInvalidReason } from '../../util/constants';
+import {
+    convertEntityStateToTranslation,
+    getTranslationEntityInvalidReasons,
+    PaletteEntryWithTranslationEntity,
+    TranslationEntity,
+    translationEntityAdapter,
+} from './util';
 
 const initialTranslation = translationEntityAdapter.upsertOne(translationEntityAdapter.getInitialState(), {
     id: nanoid(),
@@ -171,26 +151,35 @@ export const ticketSelectors = {
         });
     },
 
-    getInvalidReason: (state: TicketState): TicketInvalidReason | undefined => {
-        const { country, newCountry, city, lines } = state;
+    getInvalidReasons: (state: TicketState): (TicketInvalidReason | TranslationEntityInvalidReason)[] => {
+        const result = [];
+        const { country, newCountry, countryName, city, cityName, lines } = state;
 
         if (!country || (country === 'new' && !newCountry)) {
-            return TicketInvalidReason.COUNTRY_CODE_UNDEFINED;
+            result.push(TicketInvalidReason.COUNTRY_CODE_UNDEFINED);
         }
 
         if (!city) {
-            return TicketInvalidReason.CITY_CODE_UNDEFINED;
+            result.push(TicketInvalidReason.CITY_CODE_UNDEFINED);
         }
 
-        if (Object.values(lines).find(line => line.id === '')) {
-            return TicketInvalidReason.LINE_CODE_UNDEFINED;
+        if (Object.values(lines).some(line => line.id === '')) {
+            result.push(TicketInvalidReason.LINE_CODE_UNDEFINED);
         }
 
         if (new Set(Object.values(lines).map(line => line.id)).size !== Object.keys(lines).length) {
-            return TicketInvalidReason.LINE_CODE_DUPLICATED;
+            result.push(TicketInvalidReason.LINE_CODE_DUPLICATED);
         }
 
-        return undefined;
+        result.push(...getTranslationEntityInvalidReasons(countryName));
+        result.push(...getTranslationEntityInvalidReasons(cityName));
+        Object.values(lines)
+            .map(line => line.nameEntity)
+            .forEach(name => {
+                result.push(...getTranslationEntityInvalidReasons(name));
+            });
+
+        return result;
     },
 };
 
