@@ -8,7 +8,7 @@ import {
 } from '@railmapgen/rmg-palette-resources';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { ColourHex, TicketInvalidReason, TranslationEntityInvalidReason } from '../../util/constants';
+import { ColourHex, TicketInvalidReason } from '../../util/constants';
 import {
     convertEntityStateToTranslation,
     getTranslationEntityInvalidReasons,
@@ -159,36 +159,49 @@ export const ticketSelectors = {
         });
     },
 
-    getInvalidReasons: (state: TicketState): (TicketInvalidReason | TranslationEntityInvalidReason)[] => {
+    getCountryErrors: (state: TicketState): string[] => {
         const result = [];
-        const { country, newCountry, countryName, city, cityName, lines } = state;
+        const { country, newCountry, countryName } = state;
 
         if (!country || (country === 'new' && !newCountry)) {
             result.push(TicketInvalidReason.COUNTRY_CODE_UNDEFINED);
-        }
-
-        if (!city) {
-            result.push(TicketInvalidReason.CITY_CODE_UNDEFINED);
-        }
-
-        if (Object.values(lines).some(line => line.id === '')) {
-            result.push(TicketInvalidReason.LINE_CODE_UNDEFINED);
-        }
-
-        if (new Set(Object.values(lines).map(line => line.id)).size !== Object.keys(lines).length) {
-            result.push(TicketInvalidReason.LINE_CODE_DUPLICATED);
         }
 
         if (country === 'new') {
             result.push(...getTranslationEntityInvalidReasons(countryName));
         }
 
+        return result;
+    },
+
+    getCityErrors: (state: TicketState): string[] => {
+        const result = [];
+        const { city, cityName } = state;
+
+        if (!city) {
+            result.push(TicketInvalidReason.CITY_CODE_UNDEFINED);
+        }
+
         result.push(...getTranslationEntityInvalidReasons(cityName));
-        Object.values(lines)
-            .map(line => line.nameEntity)
-            .forEach(name => {
-                result.push(...getTranslationEntityInvalidReasons(name));
-            });
+
+        return result;
+    },
+
+    getLineErrors: (state: TicketState): Record<string, string[]> => {
+        const result: Record<string, string[]> = { Overall: [] };
+        const { lines } = state;
+
+        if (Object.values(lines).some(line => line.id === '')) {
+            result['Overall'].push(TicketInvalidReason.LINE_CODE_UNDEFINED);
+        }
+
+        if (new Set(Object.values(lines).map(line => line.id)).size !== Object.keys(lines).length) {
+            result['Overall'].push(TicketInvalidReason.LINE_CODE_DUPLICATED);
+        }
+
+        Object.values(lines).forEach(line => {
+            result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity);
+        });
 
         return result;
     },
