@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rmg-palette/static/css/main.c73a35a3.css",
-    "main.js": "/rmg-palette/static/js/main.4026e0df.js",
+    "main.js": "/rmg-palette/static/js/main.3a7ce357.js",
     "palettes0.js": "/rmg-palette/static/js/palettes0.91e362b1.chunk.js",
     "palettes1.js": "/rmg-palette/static/js/palettes1.cf5e9b04.chunk.js",
     "palettes2.js": "/rmg-palette/static/js/palettes2.94785b12.chunk.js",
@@ -53,7 +53,7 @@
     "palettes48.js": "/rmg-palette/static/js/palettes48.6904f329.chunk.js",
     "palettes49.js": "/rmg-palette/static/js/palettes49.d2bff425.chunk.js",
     "palettes50.js": "/rmg-palette/static/js/palettes50.d9c7547f.chunk.js",
-    "palettes51.js": "/rmg-palette/static/js/palettes51.a9de4e8a.chunk.js",
+    "palettes51.js": "/rmg-palette/static/js/palettes51.d2f17c89.chunk.js",
     "palettes52.js": "/rmg-palette/static/js/palettes52.8b7a1398.chunk.js",
     "palettes53.js": "/rmg-palette/static/js/palettes53.c5cdea67.chunk.js",
     "palettes54.js": "/rmg-palette/static/js/palettes54.3c1578cc.chunk.js",
@@ -80,7 +80,7 @@
     "palettes75.js": "/rmg-palette/static/js/palettes75.ec23d3ab.chunk.js",
     "index.html": "/rmg-palette/index.html",
     "main.c73a35a3.css.map": "/rmg-palette/static/css/main.c73a35a3.css.map",
-    "main.4026e0df.js.map": "/rmg-palette/static/js/main.4026e0df.js.map",
+    "main.3a7ce357.js.map": "/rmg-palette/static/js/main.3a7ce357.js.map",
     "palettes0.91e362b1.chunk.js.map": "/rmg-palette/static/js/palettes0.91e362b1.chunk.js.map",
     "palettes1.cf5e9b04.chunk.js.map": "/rmg-palette/static/js/palettes1.cf5e9b04.chunk.js.map",
     "palettes2.94785b12.chunk.js.map": "/rmg-palette/static/js/palettes2.94785b12.chunk.js.map",
@@ -132,7 +132,7 @@
     "palettes48.6904f329.chunk.js.map": "/rmg-palette/static/js/palettes48.6904f329.chunk.js.map",
     "palettes49.d2bff425.chunk.js.map": "/rmg-palette/static/js/palettes49.d2bff425.chunk.js.map",
     "palettes50.d9c7547f.chunk.js.map": "/rmg-palette/static/js/palettes50.d9c7547f.chunk.js.map",
-    "palettes51.a9de4e8a.chunk.js.map": "/rmg-palette/static/js/palettes51.a9de4e8a.chunk.js.map",
+    "palettes51.d2f17c89.chunk.js.map": "/rmg-palette/static/js/palettes51.d2f17c89.chunk.js.map",
     "palettes52.8b7a1398.chunk.js.map": "/rmg-palette/static/js/palettes52.8b7a1398.chunk.js.map",
     "palettes53.c5cdea67.chunk.js.map": "/rmg-palette/static/js/palettes53.c5cdea67.chunk.js.map",
     "palettes54.3c1578cc.chunk.js.map": "/rmg-palette/static/js/palettes54.3c1578cc.chunk.js.map",
@@ -160,6 +160,6 @@
   },
   "entrypoints": [
     "static/css/main.c73a35a3.css",
-    "static/js/main.4026e0df.js"
+    "static/js/main.3a7ce357.js"
   ]
 }
