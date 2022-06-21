@@ -5,6 +5,7 @@ import {
     LanguageCode,
     MonoColour,
     PaletteEntry,
+    Translation,
 } from '@railmapgen/rmg-palette-resources';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
@@ -81,6 +82,17 @@ const ticketSlice = createSlice({
 
         setCity: (state, action: PayloadAction<string>) => {
             state.city = action.payload;
+        },
+
+        initCityNames: (state, action: PayloadAction<Translation>) => {
+            translationEntityAdapter.setAll(
+                state.cityName,
+                Object.entries(action.payload).map(([lang, name]) => ({
+                    id: nanoid(),
+                    lang: lang as LanguageCode,
+                    name,
+                }))
+            );
         },
 
         updateCityName: (state, action: PayloadAction<{ id: EntityId; changes: Partial<TranslationEntity> }>) => {
@@ -214,6 +226,7 @@ export const {
     addCountryName,
     removeCountryName,
     setCity,
+    initCityNames,
     updateCityName,
     addCityName,
     removeCityName,

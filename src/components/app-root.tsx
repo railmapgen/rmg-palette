@@ -1,9 +1,9 @@
 import { Flex } from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
-import PaletteDataTable from './data-table/palette-data-table';
 import PageHeader from './page-header';
 import WindowHeader from './window-header';
 import NewTicket from './new-ticket/new-ticket';
+import PaletteGrid from './ag-grid/palette-grid';
 
 export default function AppRoot() {
     return (
@@ -17,7 +17,7 @@ export default function AppRoot() {
                         element={
                             <>
                                 <PageHeader />
-                                <PaletteDataTable />
+                                <PaletteGrid />
                             </>
                         }
                     />
