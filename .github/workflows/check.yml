@@ -22,5 +22,5 @@ jobs:
       - name: Code check
         run: |
           npm run build:resources
-          npm run lint:dev
+          npm run lint
           npm run test

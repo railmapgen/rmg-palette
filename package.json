@@ -47,11 +47,10 @@
         "build": "react-scripts build",
         "build:resources": "cd ./package && npm run build && cd ..",
         "test": "react-scripts test --watchAll=false",
-        "lint": "eslint ./src",
-        "lint:dev": "eslint -c ./.eslintrc.dev.json ./src",
+        "lint": "eslint -c ./.eslintrc.dev.json ./src",
         "lint:fix": "eslint ./src --fix",
         "eject": "react-scripts eject",
-        "postinstall": "cd ./package && npm install"
+        "postinstall": "cd ./package && npm ci"
     },
     "browserslist": {
         "production": [
