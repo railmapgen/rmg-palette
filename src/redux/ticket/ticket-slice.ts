@@ -11,6 +11,7 @@ import { nanoid } from 'nanoid';
 import { ColourHex, TicketInvalidReason } from '../../util/constants';
 import {
     convertEntityStateToTranslation,
+    createTranslationEntityInitialState,
     getTranslationEntityInvalidReasons,
     PaletteEntryWithTranslationEntity,
     TranslationEntity,
@@ -140,6 +141,33 @@ const ticketSlice = createSlice({
         },
 
         resetTicket: () => initialState,
+
+        populateTicket: (state, action: PayloadAction<{ city: CityEntry; palettes: PaletteEntry[] }>) => {
+            const { city, palettes } = action.payload;
+            state.country = city.country as CountryCode;
+
+            state.city = city.id;
+            translationEntityAdapter.setAll(
+                state.cityName,
+                Object.entries(city.name).map(([lang, name]) => ({
+                    id: nanoid(),
+                    lang: lang as LanguageCode,
+                    name,
+                }))
+            );
+
+            state.lines = palettes.reduce<Record<string, PaletteEntryWithTranslationEntity>>((acc, cur) => {
+                const { id, colour, fg } = cur;
+                const nameEntity = createTranslationEntityInitialState(
+                    Object.entries(cur.name).map(([lang, name]) => ({
+                        id: nanoid(),
+                        lang: lang as LanguageCode,
+                        name,
+                    }))
+                );
+                return { ...acc, [nanoid()]: { id, nameEntity, colour, fg: fg ?? MonoColour.white } };
+            }, {});
+        },
     },
 });
 
@@ -227,5 +255,6 @@ export const {
     copyLine,
     removeLine,
     resetTicket,
+    populateTicket,
 } = ticketSlice.actions;
 export default ticketSlice.reducer;

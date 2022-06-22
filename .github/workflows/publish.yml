@@ -16,7 +16,7 @@ jobs:
           node-version: '16'
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
-      - run: npm install
+      - run: npm ci
 
       - name: Pre-publish
         run: |
@@ -44,6 +44,6 @@ jobs:
           then
             curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
               -H "Accept: application/vnd.github.everest-preview+json" \
-              -H "Content-Type: application/json" https://api.github.com/repos/wongchito/RailMapGenerator/actions/workflows/build2.yml/dispatches \
-              --data '{"ref": "master", "inputs": {"auto_deploy": "PRD"}}'
+              -H "Content-Type: application/json" https://api.github.com/repos/railmapgen/rmg/actions/workflows/build2.yml/dispatches \
+              --data '{"ref": "main", "inputs": {"auto_deploy": "PRD"}}'
           fi
