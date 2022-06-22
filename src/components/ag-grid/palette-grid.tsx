@@ -2,11 +2,11 @@ import { RmgAgGrid, RmgAgGridColDef } from '@railmapgen/rmg-components';
 import React, { useMemo, useState } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
-import { CityEntry, cityList, CountryCode } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
 import LineBadges from './line-badges';
 import { IconButton } from '@chakra-ui/react';
 import { MdEdit } from 'react-icons/md';
-import { initCityNames, setCity, setCountry } from '../../redux/ticket/ticket-slice';
+import { populateTicket } from '../../redux/ticket/ticket-slice';
 import { useNavigate } from 'react-router-dom';
 
 export default function PaletteGrid() {
@@ -44,13 +44,20 @@ export default function PaletteGrid() {
 
     const defaultColDef = useMemo(() => ({ resizable: true }), []);
 
-    const handleCityEdit = (id: string) => {
-        const city = cityList.find(city => city.id === id)!;
-        dispatch(setCountry(city.country as CountryCode));
-        dispatch(setCity(id));
-        dispatch(initCityNames(city.name));
+    const handleCityEdit = async (id: string) => {
+        try {
+            const city = cityList.find(city => city.id === id)!;
 
-        navigate('/new');
+            const paletteModule = await import(
+                /* webpackChunkName: "palettes" */ `@railmapgen/rmg-palette-resources/palettes/${id}.js`
+            );
+            const { default: palettes } = paletteModule;
+
+            dispatch(populateTicket({ city, palettes }));
+            navigate('/new');
+        } catch (e) {
+            console.error('PaletteGrid.handleCityEdit():: Unexpected errors', e);
+        }
     };
 
     return (
@@ -63,6 +70,7 @@ export default function PaletteGrid() {
                 headerHeight={36}
                 rowHeight={36}
                 suppressCellFocus={true}
+                suppressRowVirtualisation={true}
                 debug={process.env.NODE_ENV !== 'production'}
             />
         </RmgAgGrid>
