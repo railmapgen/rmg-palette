@@ -6,30 +6,39 @@ import LinesSection from './lines-section';
 import { resetTicket } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
+import { RmgPage } from '@railmapgen/rmg-components';
+import { useNavigate } from 'react-router-dom';
 
 export default function NewTicket() {
     const dispatch = useRootDispatch();
+    const navigate = useNavigate();
 
     const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
 
     return (
-        <Flex direction="column" flex={1} p={2} width={520} overflow="hidden">
+        <RmgPage px={2} pt={2} width={520}>
             <Flex direction="column" flex={1} overflowY="auto">
                 <CountrySection />
                 <CitySection />
                 <LinesSection />
             </Flex>
 
-            <HStack alignSelf="flex-end">
-                <Button variant="outline" onClick={() => dispatch(resetTicket())}>
-                    Reset
+            <Flex my={2}>
+                <Button size="sm" onClick={() => navigate('/')}>
+                    Go back
                 </Button>
-                <Button colorScheme="teal" onClick={() => setIsSubmitModalOpen(true)}>
-                    Submit
-                </Button>
-            </HStack>
+
+                <HStack ml="auto">
+                    <Button size="sm" variant="outline" onClick={() => dispatch(resetTicket())}>
+                        Reset
+                    </Button>
+                    <Button size="sm" colorScheme="teal" onClick={() => setIsSubmitModalOpen(true)}>
+                        Submit
+                    </Button>
+                </HStack>
+            </Flex>
 
             <SubmitModal isOpen={isSubmitModalOpen} onClose={() => setIsSubmitModalOpen(false)} />
-        </Flex>
+        </RmgPage>
     );
 }

@@ -1,15 +1,15 @@
-import { Flex } from '@chakra-ui/react';
 import { Route, Routes } from 'react-router-dom';
 import PageHeader from './page-header';
 import WindowHeader from './window-header';
 import NewTicket from './new-ticket/new-ticket';
 import PaletteGrid from './ag-grid/palette-grid';
+import { RmgPage, RmgWindow } from '@railmapgen/rmg-components';
 
 export default function AppRoot() {
     return (
-        <Flex direction="column" height="100%" overflow="hidden">
+        <RmgWindow>
             <WindowHeader />
-            <Flex direction="column" flex={1} overflow="hidden">
+            <RmgPage>
                 <Routes>
                     <Route path="/new" element={<NewTicket />} />
                     <Route
@@ -22,7 +22,7 @@ export default function AppRoot() {
                         }
                     />
                 </Routes>
-            </Flex>
-        </Flex>
+            </RmgPage>
+        </RmgWindow>
     );
 }
