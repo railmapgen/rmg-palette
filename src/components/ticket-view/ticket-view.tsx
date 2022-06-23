@@ -7,17 +7,16 @@ import { resetTicket } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
 import { useNavigate } from 'react-router-dom';
+import { RmgPage } from '@railmapgen/rmg-components';
 
-export default function NewTicket() {
+export default function TicketView() {
     const dispatch = useRootDispatch();
     const navigate = useNavigate();
 
     const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
 
     return (
-        <Flex
-            direction="column"
-            flex={1}
+        <RmgPage
             px={2}
             pt={2}
             sx={{
@@ -46,6 +45,6 @@ export default function NewTicket() {
             </Flex>
 
             <SubmitModal isOpen={isSubmitModalOpen} onClose={() => setIsSubmitModalOpen(false)} />
-        </Flex>
+        </RmgPage>
     );
 }
