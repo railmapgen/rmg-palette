@@ -16,9 +16,9 @@ import {
     Text,
     UnorderedList,
 } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { getGitHubIssueCityBlock, getGitHubIssueLinesBlock, GITHUB_ISSUE_PREAMBLE } from '../../util/constants';
-import { MdOpenInNew } from 'react-icons/md';
+import { MdContentCopy, MdOpenInNew } from 'react-icons/md';
 import { RmgDebouncedTextarea } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../../redux';
 import { ticketSelectors } from '../../redux/ticket/ticket-slice';
@@ -36,6 +36,8 @@ export default function SubmitModal(props: SubmitModalProps) {
     const [lineErrors, setLineErrors] = useState<Record<string, string[]>>({});
     const [isIgnoreErrors, setIsIgnoreErrors] = useState(false);
 
+    const textareaRef = useRef<HTMLTextAreaElement>(null);
+
     const ticket = useRootSelector(state => state.ticket);
     const cityEntry = ticketSelectors.getCityEntry(ticket);
     const paletteList = ticketSelectors.getPalettes(ticket);
@@ -51,18 +53,31 @@ export default function SubmitModal(props: SubmitModalProps) {
     }, [isOpen]);
 
     const issueBody = [
-        '(Input anything you want here)',
+        '**Justification:** (Replace the content within these brackets, or we will not proceed your request.)',
         GITHUB_ISSUE_PREAMBLE,
         getGitHubIssueCityBlock(cityEntry),
         getGitHubIssueLinesBlock(paletteList),
     ].join('\n\n');
 
-    const searchParams = new URLSearchParams({
+    const fullSearchParams = new URLSearchParams({
         template: 'new-palettes-request.md',
         label: 'resources',
         title: 'Resources: New palettes of ' + cityEntry?.name?.en,
         body: issueBody,
     });
+
+    const manualSearchParams = new URLSearchParams({
+        template: 'new-palettes-request.md',
+        label: 'resources',
+        title: 'Resources: New palettes of ' + cityEntry?.name?.en,
+    });
+
+    const handleCopy = async () => {
+        if (textareaRef?.current) {
+            textareaRef.current.select();
+            await navigator.clipboard.writeText(issueBody);
+        }
+    };
 
     const isContainError =
         countryErrors.length > 0 || cityErrors.length > 0 || Object.values(lineErrors).flat().length > 0;
@@ -135,17 +150,23 @@ export default function SubmitModal(props: SubmitModalProps) {
                                     Open{' '}
                                     <Link
                                         color="teal.500"
-                                        href={'https://github.com/railmapgen/rmg-palette/issues'}
+                                        href={
+                                            'https://github.com/railmapgen/rmg-palette/issues/new?' +
+                                            manualSearchParams.toString()
+                                        }
                                         isExternal={true}
                                     >
-                                        Issues Page of railmapgen/rmg-palette <Icon as={MdOpenInNew} />
-                                    </Link>{' '}
-                                    and click 'New issue' button.
+                                        Issue: New Palettes Request <Icon as={MdOpenInNew} />
+                                    </Link>
+                                    .
                                 </ListItem>
-                                <ListItem>Login to GitHub at the top right corner if you haven't done so.</ListItem>
                                 <ListItem>
-                                    Paste following text to the issue body and add anything you want to say.
+                                    Paste following text to the issue body and add anything you want to say.{' '}
+                                    <Button size="xs" leftIcon={<MdContentCopy />} onClick={handleCopy}>
+                                        Copy
+                                    </Button>
                                     <RmgDebouncedTextarea
+                                        ref={textareaRef}
                                         isReadOnly={true}
                                         defaultValue={issueBody}
                                         onClick={({ target }) => (target as HTMLTextAreaElement).select()}
@@ -169,12 +190,13 @@ export default function SubmitModal(props: SubmitModalProps) {
                             colorScheme="teal"
                             onClick={() =>
                                 window.open(
-                                    'https://github.com/railmapgen/rmg-palette/issues/new?' + searchParams.toString(),
+                                    'https://github.com/railmapgen/rmg-palette/issues/new?' +
+                                        fullSearchParams.toString(),
                                     '_blank'
                                 )
                             }
                         >
-                            New GitHub issue in one click
+                            1-click open issue
                         </Button>
                     )}
                 </ModalFooter>
