@@ -1,0 +1,42 @@
+[
+    {
+        "id": "green",
+        "colour": "#069037",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "fr": "Ligne verte",
+            "zh": "绿线"
+        }
+    },
+    {
+        "id": "orange",
+        "colour": "#f07d05",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "fr": "Ligne orange",
+            "zh": "橙线"
+        }
+    },
+    {
+        "id": "yellow",
+        "colour": "#fad706",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow Line",
+            "fr": "Ligne jaune",
+            "zh": "黄线"
+        }
+    },
+    {
+        "id": "blue",
+        "colour": "#057bc4",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "fr": "Ligne bleue",
+            "zh": "蓝线"
+        }
+    }
+]
