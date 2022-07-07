@@ -1,6 +1,19 @@
 import rootReducer from '../index';
-import ticketReducer, { removeCountryName, ticketSelectors, TicketState, updateCountryName } from './ticket-slice';
-import { CountryCode, LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import ticketReducer, {
+    populateTicket,
+    removeCountryName,
+    ticketSelectors,
+    TicketState,
+    updateCountryName,
+} from './ticket-slice';
+import {
+    CityCode,
+    CityEntry,
+    CountryCode,
+    LanguageCode,
+    MonoColour,
+    PaletteEntry,
+} from '@railmapgen/rmg-palette-resources';
 import { TicketInvalidReason } from '../../util/constants';
 
 const realStore = rootReducer.getState();
@@ -116,6 +129,73 @@ describe('TicketSlice', () => {
             initialState.lines['id-002'].id = 'ktl';
             expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
                 TicketInvalidReason.LINE_CODE_DUPLICATED
+            );
+        });
+    });
+
+    describe('TicketSlice - populate city and palettes', () => {
+        const mockCityEntry: CityEntry = {
+            id: CityCode.Hongkong,
+            country: 'HK',
+            name: {
+                en: 'Hong Kong',
+                zh: '香港',
+            },
+        };
+        const mockPaletteEntries: PaletteEntry[] = [
+            {
+                id: 'twl',
+                name: {
+                    en: 'Tsuen Wan Line',
+                    'zh-Hans': '荃湾线',
+                    'zh-Hant': '荃灣綫',
+                },
+                colour: '#E2231A',
+            },
+            {
+                id: 'ktl',
+                name: {
+                    en: 'Kwun Tong Line',
+                    'zh-Hans': '观塘线',
+                    'zh-Hant': '觀塘綫',
+                },
+                colour: '#00AF41',
+            },
+        ];
+
+        it('Can populate ticket with existing city and palettes as expected', () => {
+            const initialState = { ...realStore.ticket };
+            const nextState = ticketReducer(
+                initialState,
+                populateTicket({
+                    city: mockCityEntry,
+                    palettes: mockPaletteEntries,
+                })
+            );
+
+            expect(nextState.country).toBe('HK');
+
+            expect(nextState.city).toBe('hongkong');
+            expect(nextState.cityName.ids).toHaveLength(2);
+            expect(Object.values(nextState.cityName.entities)).toContainEqual(
+                expect.objectContaining({
+                    lang: 'en',
+                    name: 'Hong Kong',
+                })
+            );
+
+            expect(Object.keys(nextState.lines)).toHaveLength(2);
+            expect(Object.values(nextState.lines)).toContainEqual(
+                expect.objectContaining({
+                    id: 'twl',
+                    colour: '#E2231A',
+                })
+            );
+            expect(Object.values(nextState.lines)).toContainEqual(
+                expect.objectContaining({
+                    id: 'ktl',
+                    colour: '#00AF41',
+                })
             );
         });
     });

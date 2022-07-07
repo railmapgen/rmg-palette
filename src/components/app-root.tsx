@@ -1,28 +1,39 @@
-import { Flex } from '@chakra-ui/react';
+import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import PaletteDataTable from './data-table/palette-data-table';
-import PageHeader from './page-header';
 import WindowHeader from './window-header';
-import NewTicket from './new-ticket/new-ticket';
+import { RmgWindow } from '@railmapgen/rmg-components';
+import FallbackLoader from './fallback-loader';
+import ErrorBoundary from '../error-boundary';
+
+const PaletteView = lazy(() => import(/* webpackChunkName: "PaletteView" */ './palette-view/palette-view'));
+const TicketView = lazy(() => import(/* webpackChunkName: "TicketView" */ './ticket-view/ticket-view'));
 
 export default function AppRoot() {
     return (
-        <Flex direction="column" height="100%" overflow="hidden">
+        <RmgWindow>
             <WindowHeader />
-            <Flex direction="column" flex={1} overflow="hidden">
-                <Routes>
-                    <Route path="/new" element={<NewTicket />} />
-                    <Route
-                        path="/"
-                        element={
-                            <>
-                                <PageHeader />
-                                <PaletteDataTable />
-                            </>
-                        }
-                    />
-                </Routes>
-            </Flex>
-        </Flex>
+            <Routes>
+                <Route
+                    path="/new"
+                    element={
+                        <Suspense fallback={<FallbackLoader />}>
+                            <ErrorBoundary>
+                                <TicketView />
+                            </ErrorBoundary>
+                        </Suspense>
+                    }
+                />
+                <Route
+                    path="/"
+                    element={
+                        <Suspense fallback={<FallbackLoader />}>
+                            <ErrorBoundary>
+                                <PaletteView />
+                            </ErrorBoundary>
+                        </Suspense>
+                    }
+                />
+            </Routes>
+        </RmgWindow>
     );
 }

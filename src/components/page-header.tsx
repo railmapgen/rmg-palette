@@ -1,9 +1,9 @@
 import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/app-slice';
-import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
+import { RmgFields, RmgFieldsField, RmgPageHeader } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../redux';
-import { Button, Flex, HStack } from '@chakra-ui/react';
+import { Button, HStack } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 export default function PageHeader() {
@@ -31,7 +31,7 @@ export default function PageHeader() {
     ];
 
     return (
-        <Flex align="center" wrap="wrap" pl={2} pr={3} py={1}>
+        <RmgPageHeader>
             <RmgFields fields={fields} />
 
             <HStack ml="auto">
@@ -39,6 +39,6 @@ export default function PageHeader() {
                     Add a city
                 </Button>
             </HStack>
-        </Flex>
+        </RmgPageHeader>
     );
 }

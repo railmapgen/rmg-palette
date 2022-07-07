@@ -28,7 +28,7 @@ describe('SubmitModal', () => {
 
         // one click button is displayed if submit anyway button is clicked
         fireEvent.click(screen.getByRole('button', { name: 'Submit anyway' }));
-        expect(screen.getByRole('button', { name: 'New GitHub issue in one click' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: '1-click open issue' })).toBeInTheDocument();
     });
 
     it('Can display one click submit button if no errors', () => {
@@ -67,6 +67,6 @@ describe('SubmitModal', () => {
         expect(screen.queryByRole('button', { name: 'Submit anyway' })).not.toBeInTheDocument();
 
         // one click button is displayed
-        expect(screen.getByRole('button', { name: 'New GitHub issue in one click' })).toBeInTheDocument();
+        expect(screen.getByRole('button', { name: '1-click open issue' })).toBeInTheDocument();
     });
 });

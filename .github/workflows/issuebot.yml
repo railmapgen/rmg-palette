@@ -7,7 +7,7 @@ on:
 jobs:
   updateCities:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!')
+    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'Replace the content within these brackets')
     steps:
       - uses: actions/checkout@v2
         with:
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: npm i
+      - run: npm ci
         working-directory: ./package
 
       - name: Dump payload

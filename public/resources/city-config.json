@@ -381,6 +381,17 @@
         }
     },
     {
+        "id": "montreal",
+        "country": "CA",
+        "name": {
+            "en": "Montreal",
+            "fr": "Montréal",
+            "zh-Hans": "蒙特利尔",
+            "zh-HK": "滿地可",
+            "zh-TW": "蒙特婁"
+        }
+    },
+    {
         "id": "munich",
         "country": "DE",
         "name": {
