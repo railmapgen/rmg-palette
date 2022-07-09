@@ -700,6 +700,16 @@
         }
     },
     {
+        "id": "yokohama",
+        "country": "JP",
+        "name": {
+            "en": "Yokohama",
+            "ja": "横浜",
+            "zh-Hans": "横滨",
+            "zh-Hant": "橫濱"
+        }
+    },
+    {
         "id": "zhengzhou",
         "country": "CN",
         "name": {
