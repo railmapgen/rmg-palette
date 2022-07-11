@@ -64,7 +64,9 @@ export default function SubmitModal(props: SubmitModalProps) {
     }, [isOpen]);
 
     const issueBody = [
-        '**Justification:** (Replace the content within these brackets, or we will not proceed your request.)',
+        `**Justification:** ${t(
+            'Please provide any source or justification or we will not proceed with your request.'
+        )} (REPLACE ME)`,
         GITHUB_ISSUE_PREAMBLE,
         getGitHubIssueCityBlock(cityEntry),
         getGitHubIssueLinesBlock(paletteList),

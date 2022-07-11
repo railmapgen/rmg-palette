@@ -7,7 +7,7 @@ on:
 jobs:
   updateCities:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'Replace the content within these brackets')
+    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'REPLACE ME')
     steps:
       - uses: actions/checkout@v2
         with:
