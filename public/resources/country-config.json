@@ -2,82 +2,112 @@
     {
         "id": "AT",
         "name": {
-            "en": "Austria"
+            "en": "Austria",
+            "de": "Österreich",
+            "zh-Hans": "奥地利",
+            "zh-Hant": "奧地利"
         }
     },
     {
         "id": "AZ",
         "name": {
-            "en": "Azerbaijan"
+            "en": "Azerbaijan",
+            "az": "Azərbaycan",
+            "zh-Hans": "阿塞拜疆",
+            "zh-HK": "阿塞拜疆",
+            "zh-TW": "亞塞拜然"
         }
     },
     {
         "id": "BR",
         "name": {
-            "en": "Brazil"
+            "en": "Brazil",
+            "pt": "Brasil",
+            "zh": "巴西"
         }
     },
     {
         "id": "CA",
         "name": {
-            "en": "Canada"
+            "en": "Canada",
+            "fr": "Canada",
+            "zh": "加拿大"
         }
     },
     {
         "id": "CL",
         "name": {
-            "en": "Chile"
+            "en": "Chile",
+            "es": "Chile",
+            "zh": "智利"
         }
     },
     {
         "id": "CN",
         "name": {
             "en": "China",
-            "zh": "中国"
+            "zh-Hans": "中国",
+            "zh-Hant": "中國"
         }
     },
     {
         "id": "DE",
         "name": {
             "en": "Germany",
-            "de": "Deutsche"
+            "de": "Deutsche",
+            "zh-Hans": "德国",
+            "zh-Hant": "德國"
         }
     },
     {
         "id": "EG",
         "name": {
-            "en": "Egypt"
+            "en": "Egypt",
+            "ar": "مِصر",
+            "zh": "埃及"
         }
     },
     {
         "id": "ES",
         "name": {
-            "en": "Spain"
+            "en": "Spain",
+            "es": "España",
+            "zh": "西班牙"
         }
     },
     {
         "id": "FR",
         "name": {
             "en": "France",
-            "zh-Hans": "法国"
+            "fr": "France",
+            "zh-Hans": "法国",
+            "zh-Hant": "法國"
         }
     },
     {
         "id": "GBENG",
         "name": {
-            "en": "England"
+            "en": "England",
+            "zh-Hans": "英格兰",
+            "zh-Hant": "英格蘭"
         }
     },
     {
         "id": "GBSCT",
         "name": {
-            "en": "Scotland"
+            "en": "Scotland",
+            "ga": "Alba",
+            "zh-Hans": "苏格兰",
+            "zh-Hant": "蘇格蘭"
         }
     },
     {
         "id": "GR",
         "name": {
-            "en": "Greece"
+            "en": "Greece",
+            "el": "Ελλάδα",
+            "zh-Hans": "希腊",
+            "zh-Hant": "希臘"
         }
     },
     {
@@ -90,19 +120,25 @@
     {
         "id": "HU",
         "name": {
-            "en": "Hungary"
+            "en": "Hungary",
+            "hu": "Magyarország",
+            "zh": "匈牙利"
         }
     },
     {
         "id": "IN",
         "name": {
-            "en": "India"
+            "en": "India",
+            "hi": "भारत",
+            "zh": "印度"
         }
     },
     {
         "id": "IR",
         "name": {
-            "en": "Iran"
+            "en": "Iran",
+            "ar": "ایران",
+            "fa": "伊朗"
         }
     },
     {
@@ -110,20 +146,26 @@
         "name": {
             "en": "Italy",
             "it": "Italia",
-            "zh-Hans": "意大利"
+            "zh-Hans": "意大利",
+            "zh-HK": "意大利",
+            "zh-TW": "義大利"
         }
     },
     {
         "id": "JP",
         "name": {
             "en": "Japan",
-            "ja": "日本"
+            "ja": "日本",
+            "zh": "日本"
         }
     },
     {
         "id": "KR",
         "name": {
-            "en": "South Korea"
+            "en": "South Korea",
+            "ko": "대한민국",
+            "zh-Hans": "韩国",
+            "zh-Hant": "南韓"
         }
     },
     {
@@ -138,26 +180,35 @@
     {
         "id": "MX",
         "name": {
-            "en": "Mexico"
+            "en": "Mexico",
+            "es": "México",
+            "zh": "墨西哥"
         }
     },
     {
         "id": "MY",
         "name": {
-            "en": "Malaysia"
+            "en": "Malaysia",
+            "ms": "Malaysia",
+            "zh-Hans": "马来西亚",
+            "zh-Hant": "馬來西亞"
         }
     },
     {
         "id": "NO",
         "name": {
             "en": "Norway",
+            "no": "Norge",
             "zh": "挪威"
         }
     },
     {
         "id": "PE",
         "name": {
-            "en": "Peru"
+            "en": "Peru",
+            "es": "Perú",
+            "zh-Hans": "秘鲁",
+            "zh-Hant": "秘魯"
         }
     },
     {
@@ -172,44 +223,59 @@
     {
         "id": "PT",
         "name": {
-            "en": "Portugal"
+            "en": "Portugal",
+            "pt": "Portugal",
+            "zh": "葡萄牙"
         }
     },
     {
         "id": "RO",
         "name": {
-            "en": "Romania"
+            "en": "Romania",
+            "ro": "România",
+            "zh-Hans": "罗马尼亚",
+            "zh-Hant": "羅馬尼亞"
         }
     },
     {
         "id": "RU",
         "name": {
-            "en": "Russia"
+            "en": "Russia",
+            "ru": "Россия",
+            "zh-Hans": "俄罗斯",
+            "zh-Hant": "俄羅斯"
         }
     },
     {
         "id": "SE",
         "name": {
-            "en": "Sweden"
+            "en": "Sweden",
+            "sv": "Sverige",
+            "zh": "瑞典"
         }
     },
     {
         "id": "SG",
         "name": {
             "en": "Singapore",
+            "ms": "Singapura",
             "zh": "新加坡"
         }
     },
     {
         "id": "TR",
         "name": {
-            "en": "Turkey"
+            "en": "Turkey",
+            "tr": "Türkiye",
+            "zh": "土耳其"
         }
     },
     {
         "id": "TW",
         "name": {
-            "en": "Taiwan"
+            "en": "Taiwan",
+            "zh-Hans": "台湾",
+            "zh-Hant": "台灣"
         }
     },
     {
@@ -224,13 +290,16 @@
         "id": "US",
         "name": {
             "en": "United States",
-            "zh-Hans": "美国"
+            "zh-Hans": "美国",
+            "zh-Hant": "美國"
         }
     },
     {
         "id": "VN",
         "name": {
-            "en": "Vietnam"
+            "en": "Vietnam",
+            "vn": "Việt Nam",
+            "zh": "越南"
         }
     }
 ]
