@@ -161,6 +161,15 @@
         }
     },
     {
+        "id": "PL",
+        "name": {
+            "en": "Poland",
+            "pl": "Polska",
+            "zh-Hans": "波兰",
+            "zh-Hant": "波蘭"
+        }
+    },
+    {
         "id": "PT",
         "name": {
             "en": "Portugal"
