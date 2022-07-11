@@ -665,6 +665,15 @@
         }
     },
     {
+        "id": "warsaw",
+        "country": "PL",
+        "name": {
+            "en": "Warsaw",
+            "zh-Hans": "华沙",
+            "zh-Hant": "華沙"
+        }
+    },
+    {
         "id": "wuhan",
         "country": "CN",
         "name": {
