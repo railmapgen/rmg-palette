@@ -26,6 +26,9 @@ export default function PaletteGrid() {
                 headerName: t('City'),
                 field: 'name',
                 valueFormatter: ({ value }: { value: CityEntry['name'] }) => translateName(value),
+                comparator: (a, b) => translateName(a).localeCompare(translateName(b), i18n.languages[0]),
+                sortable: true,
+                sort: 'asc',
                 wrapText: true,
             },
             {

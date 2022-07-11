@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 
 export default function CountrySection() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const translateName = useTranslatedName();
 
     const dispatch = useRootDispatch();
@@ -23,14 +23,17 @@ export default function CountrySection() {
     const { country, newCountry, countryName } = useRootSelector(state => state.ticket);
 
     const countryOptions = {
-        ...countryList.reduce<Record<string, string>>((acc, cur) => {
-            if (cur.id === CountryCode.UN) {
-                // exclude customise
-                return acc;
-            } else {
-                return { ...acc, [cur.id]: translateName(cur.name) };
-            }
-        }, {}),
+        ...countryList
+            .map(country => [country.id, translateName(country.name)]) // translate country name
+            .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
+            .reduce<Record<string, string>>((acc, cur) => {
+                if (cur[0] === CountryCode.UN) {
+                    // exclude customise
+                    return acc;
+                } else {
+                    return { ...acc, [cur[0]]: cur[1] };
+                }
+            }, {}), // associate to obj
         new: t('Add a country/region...'),
     };
 

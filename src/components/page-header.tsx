@@ -1,4 +1,4 @@
-import { countryList } from '@railmapgen/rmg-palette-resources';
+import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/app-slice';
 import { RmgFields, RmgFieldsField, RmgPageHeader } from '@railmapgen/rmg-components';
@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslatedName from './hooks/use-translated-name';
 
 export default function PageHeader() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const translateName = useTranslatedName();
 
     const dispatch = useDispatch();
@@ -17,12 +17,20 @@ export default function PageHeader() {
 
     const selectedCountry = useRootSelector(state => state.app.selectedCountry);
 
-    const countryOptions = countryList.reduce<Record<string, string>>(
-        (acc, cur) => {
-            return { ...acc, [cur.id]: translateName(cur.name) };
-        },
-        { '': t('Please select...') }
-    );
+    const countryOptions = countryList
+        .map(country => [country.id, translateName(country.name)]) // translate country name
+        .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
+        .reduce<Record<string, string>>(
+            (acc, cur) => {
+                if (cur[0] === CountryCode.UN) {
+                    // exclude customise
+                    return acc;
+                } else {
+                    return { ...acc, [cur[0]]: cur[1] };
+                }
+            },
+            { '': t('Please select...') }
+        );
 
     const fields: RmgFieldsField[] = [
         {
