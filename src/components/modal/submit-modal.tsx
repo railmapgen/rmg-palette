@@ -17,11 +17,19 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
-import { getGitHubIssueCityBlock, getGitHubIssueLinesBlock, GITHUB_ISSUE_PREAMBLE } from '../../util/constants';
+import {
+    getGitHubIssueCityBlock,
+    getGitHubIssueLinesBlock,
+    GITHUB_ISSUE_PREAMBLE,
+    INVALID_REASON,
+    InvalidReasonType,
+} from '../../util/constants';
 import { MdContentCopy, MdOpenInNew } from 'react-icons/md';
 import { RmgDebouncedTextarea } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../../redux';
 import { ticketSelectors } from '../../redux/ticket/ticket-slice';
+import { useTranslation } from 'react-i18next';
+import useTranslatedName from '../hooks/use-translated-name';
 
 interface SubmitModalProps {
     isOpen: boolean;
@@ -31,9 +39,12 @@ interface SubmitModalProps {
 export default function SubmitModal(props: SubmitModalProps) {
     const { isOpen, onClose } = props;
 
-    const [countryErrors, setCountryErrors] = useState<string[]>([]);
-    const [cityErrors, setCityErrors] = useState<string[]>([]);
-    const [lineErrors, setLineErrors] = useState<Record<string, string[]>>({});
+    const { t } = useTranslation();
+    const translateName = useTranslatedName();
+
+    const [countryErrors, setCountryErrors] = useState<InvalidReasonType[]>([]);
+    const [cityErrors, setCityErrors] = useState<InvalidReasonType[]>([]);
+    const [lineErrors, setLineErrors] = useState<Record<string, InvalidReasonType[]>>({});
     const [isIgnoreErrors, setIsIgnoreErrors] = useState(false);
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -86,24 +97,26 @@ export default function SubmitModal(props: SubmitModalProps) {
         <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
             <ModalOverlay />
             <ModalContent>
-                <ModalHeader>Submit palettes</ModalHeader>
+                <ModalHeader>{t('Submit palettes')}</ModalHeader>
                 <ModalCloseButton />
 
                 <ModalBody>
                     {isContainError && (
                         <Text>
-                            Your inputs contain the following errors. Please consider fixing it before submitting.
+                            {t(
+                                'Your inputs contain the following errors. Please consider fixing it before submitting.'
+                            )}
                         </Text>
                     )}
 
                     {countryErrors.length > 0 && (
                         <>
                             <Heading as="h5" size="sm" my={2}>
-                                Country / Region
+                                {t('Country / Region')}
                             </Heading>
                             <UnorderedList aria-label="List of country errors">
                                 {countryErrors.map((e, i) => (
-                                    <ListItem key={i}>{e}</ListItem>
+                                    <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
                                 ))}
                             </UnorderedList>
                         </>
@@ -112,11 +125,11 @@ export default function SubmitModal(props: SubmitModalProps) {
                     {cityErrors.length > 0 && (
                         <>
                             <Heading as="h5" size="sm" my={2}>
-                                City
+                                {t('City')}
                             </Heading>
                             <UnorderedList aria-label="List of city errors">
                                 {cityErrors.map((e, i) => (
-                                    <ListItem key={i}>{e}</ListItem>
+                                    <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
                                 ))}
                             </UnorderedList>
                         </>
@@ -125,7 +138,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                     {Object.values(lineErrors).flat().length > 0 && (
                         <>
                             <Heading as="h5" size="sm" my={2}>
-                                Lines
+                                {t('Lines')}
                             </Heading>
                             <UnorderedList aria-label="List of line errors">
                                 {Object.entries(lineErrors).map(([item, errors]) => (
@@ -133,7 +146,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                                         {item}
                                         <UnorderedList>
                                             {errors.map((e, i) => (
-                                                <ListItem key={i}>{e}</ListItem>
+                                                <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
                                             ))}
                                         </UnorderedList>
                                     </ListItem>
@@ -144,10 +157,12 @@ export default function SubmitModal(props: SubmitModalProps) {
 
                     {(!isContainError || isIgnoreErrors) && (
                         <>
-                            <Text>If the button below doesn't work for you, please follow the instructions below:</Text>
+                            <Text>
+                                {t("If the button below doesn't work for you, please follow the instructions below:")}
+                            </Text>
                             <OrderedList>
                                 <ListItem>
-                                    Open{' '}
+                                    {t('Open')}{' '}
                                     <Link
                                         color="teal.500"
                                         href={
@@ -158,12 +173,11 @@ export default function SubmitModal(props: SubmitModalProps) {
                                     >
                                         Issue: New Palettes Request <Icon as={MdOpenInNew} />
                                     </Link>
-                                    .
                                 </ListItem>
                                 <ListItem>
-                                    Paste following text to the issue body and add anything you want to say.{' '}
+                                    {t('Paste following text to the issue body and add anything you want to say.')}{' '}
                                     <Button size="xs" leftIcon={<MdContentCopy />} onClick={handleCopy}>
-                                        Copy
+                                        {t('Copy')}
                                     </Button>
                                     <RmgDebouncedTextarea
                                         ref={textareaRef}
@@ -180,9 +194,9 @@ export default function SubmitModal(props: SubmitModalProps) {
                 <ModalFooter>
                     {!isIgnoreErrors && isContainError ? (
                         <HStack>
-                            <Button onClick={() => setIsIgnoreErrors(true)}>Submit anyway</Button>
+                            <Button onClick={() => setIsIgnoreErrors(true)}>{t('Submit anyway')}</Button>
                             <Button colorScheme="teal" onClick={onClose}>
-                                Go back
+                                {t('Go back')}
                             </Button>
                         </HStack>
                     ) : (
@@ -196,7 +210,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                                 )
                             }
                         >
-                            1-click open issue
+                            {t('1-click open issue')}
                         </Button>
                     )}
                 </ModalFooter>

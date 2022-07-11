@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Flex, Heading, HStack, IconButton } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
-import { LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
@@ -18,8 +18,12 @@ import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdAdd, MdContentCopy, MdDelete, MdEdit } from 'react-icons/md';
 import { ColourHex } from '../../util/constants';
 import { translationEntitySelector } from '../../redux/ticket/util';
+import { useTranslation } from 'react-i18next';
+import useTranslatedName from '../hooks/use-translated-name';
 
 export default function LinesSection() {
+    const { t } = useTranslation();
+    const translateName = useTranslatedName();
     const dispatch = useRootDispatch();
 
     const lines = useRootSelector(state => state.ticket.lines);
@@ -36,7 +40,7 @@ export default function LinesSection() {
         return [
             {
                 type: 'input',
-                label: 'Line code',
+                label: t('Line code'),
                 placeholder: 'e.g. twl, gz1, sh1',
                 value: line.id,
                 onChange: value => dispatch(updateLineId({ entryId, lineId: value })),
@@ -44,18 +48,18 @@ export default function LinesSection() {
             },
             {
                 type: 'input',
-                label: 'Background colour',
+                label: t('Background colour'),
                 variant: 'color',
                 value: line.colour,
                 onChange: value => dispatch(updateLineBgColour({ entryId, bgColour: value as ColourHex })),
             },
             {
                 type: 'select',
-                label: 'Foreground colour',
+                label: t('Foreground colour'),
                 value: line.fg,
                 options: {
-                    [MonoColour.white]: 'White',
-                    [MonoColour.black]: 'Black',
+                    [MonoColour.white]: t('White'),
+                    [MonoColour.black]: t('Black'),
                 },
                 onChange: value => dispatch(updateLineFgColour({ entryId, fgColour: value as MonoColour })),
             },
@@ -66,23 +70,25 @@ export default function LinesSection() {
         <Box as="section">
             <Flex mt={3} mb={2} alignItems="center">
                 <Heading as="h5" size="sm" mr="auto">
-                    Lines
+                    {t('Lines')}
                 </Heading>
 
                 <Button size="xs" variant="ghost" leftIcon={<MdAdd />} mr={1} onClick={() => dispatch(addLine())}>
-                    Add line
+                    {t('Add a line')}
                 </Button>
             </Flex>
 
             <HStack flexWrap="wrap" sx={{ '& .chakra-badge': { mb: 1 } }}>
                 {Object.entries(lines).map(([entryId, line]) => {
-                    const enNameEntity = translationEntitySelector
+                    const nameTranslation = translationEntitySelector
                         .selectAll(line.nameEntity)
-                        .find(entity => entity.lang === LanguageCode.English);
+                        .reduce<Translation>((acc, cur) => ({ ...acc, [cur.lang]: cur.name }), {});
+                    const nameToShow = translateName(nameTranslation);
+
                     return (
                         <RmgLineBadge
                             key={entryId}
-                            name={enNameEntity?.name ?? ''}
+                            name={nameToShow}
                             bg={line.colour}
                             fg={line.fg}
                             actions={
@@ -91,7 +97,8 @@ export default function LinesSection() {
                                         size="xs"
                                         variant="ghost"
                                         color={line.fg}
-                                        aria-label={'Edit ' + enNameEntity}
+                                        aria-label={t('Edit') + ' ' + nameToShow}
+                                        title={t('Edit') + ' ' + nameToShow}
                                         icon={<MdEdit />}
                                         onClick={() => setSelectedLine(entryId)}
                                     />
@@ -99,7 +106,8 @@ export default function LinesSection() {
                                         size="xs"
                                         variant="ghost"
                                         color={line.fg}
-                                        aria-label={'Copy ' + enNameEntity}
+                                        aria-label={t('Copy') + ' ' + nameToShow}
+                                        title={t('Copy') + ' ' + nameToShow}
                                         icon={<MdContentCopy />}
                                         onClick={() => dispatch(copyLine(entryId))}
                                     />
@@ -107,7 +115,8 @@ export default function LinesSection() {
                                         size="xs"
                                         variant="ghost"
                                         color={line.fg}
-                                        aria-label={'Remove ' + enNameEntity}
+                                        aria-label={t('Remove') + ' ' + nameToShow}
+                                        title={t('Remove') + ' ' + nameToShow}
                                         icon={<MdDelete />}
                                         onClick={() => dispatch(removeLine(entryId))}
                                     />

@@ -1,5 +1,5 @@
 import { RmgAgGrid, RmgAgGridColDef } from '@railmapgen/rmg-components';
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
@@ -8,39 +8,52 @@ import { IconButton } from '@chakra-ui/react';
 import { MdEdit } from 'react-icons/md';
 import { populateTicket } from '../../redux/ticket/ticket-slice';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import useTranslatedName from '../hooks/use-translated-name';
 
 export default function PaletteGrid() {
+    const { t, i18n } = useTranslation();
+    const translateName = useTranslatedName();
     const dispatch = useRootDispatch();
     const navigate = useNavigate();
 
     const selectedCountry = useRootSelector(state => state.app.selectedCountry);
     const rowData = cityList.filter(city => city.country === selectedCountry);
 
-    const [columnDefs] = useState<RmgAgGridColDef<CityEntry>[]>([
-        {
-            headerName: 'City',
-            field: 'name',
-            valueFormatter: ({ value }: { value: CityEntry['name'] }) => value.en ?? '',
-            wrapText: true,
-        },
-        {
-            headerName: 'Lines',
-            field: 'id',
-            cellRenderer: ({ value }: { value: CityEntry['id'] }) => <LineBadges city={value} />,
-            flex: 1,
-            autoHeight: true,
-            resizable: false,
-        },
-        {
-            headerName: 'Action',
-            field: 'id',
-            cellRenderer: ({ value }: { value: CityEntry['id'] }) => (
-                <IconButton size="xs" aria-label="Edit city" icon={<MdEdit />} onClick={() => handleCityEdit(value)} />
-            ),
-            resizable: false,
-            width: 72,
-        },
-    ]);
+    const columnDefs: RmgAgGridColDef<CityEntry>[] = useMemo(
+        () => [
+            {
+                headerName: t('City'),
+                field: 'name',
+                valueFormatter: ({ value }: { value: CityEntry['name'] }) => translateName(value),
+                wrapText: true,
+            },
+            {
+                headerName: t('Lines'),
+                field: 'id',
+                cellRenderer: ({ value }: { value: CityEntry['id'] }) => <LineBadges city={value} />,
+                flex: 1,
+                autoHeight: true,
+                resizable: false,
+            },
+            {
+                headerName: t('Action'),
+                field: 'id',
+                cellRenderer: ({ value }: { value: CityEntry['id'] }) => (
+                    <IconButton
+                        size="xs"
+                        aria-label={t('Edit city')}
+                        title={t('Edit city')}
+                        icon={<MdEdit />}
+                        onClick={() => handleCityEdit(value)}
+                    />
+                ),
+                resizable: false,
+                width: 72,
+            },
+        ],
+        [i18n.language]
+    );
 
     const defaultColDef = useMemo(() => ({ resizable: true }), []);
 

@@ -11,8 +11,13 @@ import {
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
+import { useTranslation } from 'react-i18next';
+import useTranslatedName from '../hooks/use-translated-name';
 
 export default function CountrySection() {
+    const { t } = useTranslation();
+    const translateName = useTranslatedName();
+
     const dispatch = useRootDispatch();
 
     const { country, newCountry, countryName } = useRootSelector(state => state.ticket);
@@ -23,23 +28,23 @@ export default function CountrySection() {
                 // exclude customise
                 return acc;
             } else {
-                return { ...acc, [cur.id]: cur.name.en! };
+                return { ...acc, [cur.id]: translateName(cur.name) };
             }
         }, {}),
-        new: 'Add a new country/region...',
+        new: t('Add a country/region...'),
     };
 
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
-            label: 'Country/region',
+            label: t('Country / Region'),
             value: country,
             options: countryOptions,
             onChange: value => dispatch(setCountry(value as CountryCode | 'new')),
         },
         {
             type: 'input',
-            label: 'Country code',
+            label: t('Country/region code'),
             placeholder: 'e.g. CN, HK, JP (ISO 3166-1 alpha-2)',
             value: newCountry,
             onChange: value => dispatch(setNewCountry(value)),
@@ -50,7 +55,7 @@ export default function CountrySection() {
     return (
         <Box as="section">
             <Heading as="h5" size="sm" mb={2}>
-                Country / Region
+                {t('Country / Region')}
             </Heading>
 
             <RmgFields fields={fields} />

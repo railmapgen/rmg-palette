@@ -5,6 +5,7 @@ import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';
 import { EntityId, EntityState } from '@reduxjs/toolkit';
 import { TranslationEntity, translationEntityAdapter, translationEntitySelector } from '../../redux/ticket/util';
+import { useTranslation } from 'react-i18next';
 
 interface MultiLangEntryCardProps {
     entries?: EntityState<TranslationEntity>;
@@ -16,6 +17,8 @@ interface MultiLangEntryCardProps {
 export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
     const { onUpdate, onAdd, onRemove } = props;
     const entries = props.entries ?? translationEntityAdapter.getInitialState();
+
+    const { t } = useTranslation();
 
     const getFields = (id: EntityId): RmgFieldsField[] => {
         const entity = translationEntitySelector.selectById(entries, id);
@@ -36,14 +39,14 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
         return [
             {
                 type: 'select',
-                label: 'Language',
+                label: t('Language'),
                 value: lang,
                 options: languageOptions,
                 onChange: value => onUpdate(id, { lang: value as LanguageCode }),
             },
             {
                 type: 'input',
-                label: 'Name',
+                label: t('Name'),
                 value: name,
                 onChange: value => onUpdate(id, { name: value }),
                 validator: value => value !== '',
@@ -68,7 +71,8 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                         <IconButton
                             size="sm"
                             variant="ghost"
-                            aria-label="Add name in another language"
+                            aria-label={t('Add a name in another language')}
+                            title={t('Add a name in another language')}
                             onClick={handleAddEntry}
                             icon={<MdAdd />}
                         />
@@ -79,7 +83,8 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                     <IconButton
                         size="sm"
                         variant="ghost"
-                        aria-label="Remove name"
+                        aria-label={t('Remove this name')}
+                        title={t('Remove this name')}
                         onClick={() => onRemove(id)}
                         icon={<MdDelete />}
                     />

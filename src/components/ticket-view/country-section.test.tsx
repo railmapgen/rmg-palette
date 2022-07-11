@@ -34,10 +34,10 @@ describe('CountrySection', () => {
         );
 
         // 'add a country' selected
-        expect(screen.getByDisplayValue(/Add a new country/)).toBeInTheDocument();
+        expect(screen.getByDisplayValue(/Add a country/)).toBeInTheDocument();
 
         // custom country code and multi-language name input exists
-        expect(screen.getByRole('combobox', { name: 'Country code' })).toBeInTheDocument();
+        expect(screen.getByRole('combobox', { name: 'Country/region code' })).toBeInTheDocument();
         expect(screen.getByRole('combobox', { name: 'Language' })).toBeInTheDocument();
         expect(screen.getByRole('combobox', { name: 'Name' })).toBeInTheDocument();
     });
