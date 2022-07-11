@@ -95,7 +95,9 @@ describe('TicketSlice', () => {
             expect(ticketSelectors.getCityErrors(initialState)).toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
 
             initialState.city = 'hongkong';
-            expect(ticketSelectors.getCityErrors(initialState)).not.toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getCityErrors(initialState)).not.toContain(
+                TicketInvalidReasonType.CITY_CODE_UNDEFINED
+            );
         });
 
         it('Can validate line code as expected', () => {

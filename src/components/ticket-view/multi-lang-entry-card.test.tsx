@@ -37,11 +37,13 @@ describe('MultiLangEntryCard', () => {
         render(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
 
         const stack1 = screen.getByTestId('entry-card-stack-001');
-        expect(within(stack1).queryByRole('button', { name: 'Add name in another language' })).not.toBeInTheDocument();
-        expect(within(stack1).getByRole('button', { name: 'Remove name' })).toBeInTheDocument();
+        expect(
+            within(stack1).queryByRole('button', { name: 'Add a name in another language' })
+        ).not.toBeInTheDocument();
+        expect(within(stack1).getByRole('button', { name: 'Remove this name' })).toBeInTheDocument();
 
         const stack2 = screen.getByTestId('entry-card-stack-002');
-        expect(within(stack2).getByRole('button', { name: 'Add name in another language' })).toBeInTheDocument();
-        expect(within(stack2).getByRole('button', { name: 'Remove name' })).toBeInTheDocument();
+        expect(within(stack2).getByRole('button', { name: 'Add a name in another language' })).toBeInTheDocument();
+        expect(within(stack2).getByRole('button', { name: 'Remove this name' })).toBeInTheDocument();
     });
 });
