@@ -29,7 +29,7 @@ jobs:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         working-directory: ./package
         run: |
-          node --loader ts-node/esm ./issuebot/issuebot.ts
+          npm run issuebot
 
       - name: Commit
         run: |

@@ -11,7 +11,8 @@
     "main": "./index.js",
     "scripts": {
         "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/build.ts && npx tsc",
-        "check": "export TS_NODE_COMPILER=\"ttypescript\" && node --loader ts-node/esm ./checker/check.ts"
+        "check": "export TS_NODE_COMPILER=\"ttypescript\" && node --loader ts-node/esm ./checker/check.ts",
+        "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts"
     },
     "author": "",
     "license": "GPL-3.0",
