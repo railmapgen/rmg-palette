@@ -8,7 +8,7 @@ import {
 } from '@railmapgen/rmg-palette-resources';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { ColourHex, TicketInvalidReason } from '../../util/constants';
+import { ColourHex, InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
 import {
     convertEntityStateToTranslation,
     createTranslationEntityInitialState,
@@ -187,12 +187,12 @@ export const ticketSelectors = {
         });
     },
 
-    getCountryErrors: (state: TicketState): string[] => {
+    getCountryErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
         const { country, newCountry, countryName } = state;
 
         if (!country || (country === 'new' && !newCountry)) {
-            result.push(TicketInvalidReason.COUNTRY_CODE_UNDEFINED);
+            result.push(TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED);
         }
 
         if (country === 'new') {
@@ -202,12 +202,12 @@ export const ticketSelectors = {
         return result;
     },
 
-    getCityErrors: (state: TicketState): string[] => {
+    getCityErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
         const { city, cityName } = state;
 
         if (!city) {
-            result.push(TicketInvalidReason.CITY_CODE_UNDEFINED);
+            result.push(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
         }
 
         result.push(...getTranslationEntityInvalidReasons(cityName));
@@ -215,16 +215,16 @@ export const ticketSelectors = {
         return result;
     },
 
-    getLineErrors: (state: TicketState): Record<string, string[]> => {
-        const result: Record<string, string[]> = { Overall: [] };
+    getLineErrors: (state: TicketState): Record<string, InvalidReasonType[]> => {
+        const result: Record<string, InvalidReasonType[]> = { Overall: [] };
         const { lines } = state;
 
         if (Object.values(lines).some(line => line.id === '')) {
-            result['Overall'].push(TicketInvalidReason.LINE_CODE_UNDEFINED);
+            result['Overall'].push(TicketInvalidReasonType.LINE_CODE_UNDEFINED);
         }
 
         if (new Set(Object.values(lines).map(line => line.id)).size !== Object.keys(lines).length) {
-            result['Overall'].push(TicketInvalidReason.LINE_CODE_DUPLICATED);
+            result['Overall'].push(TicketInvalidReasonType.LINE_CODE_DUPLICATED);
         }
 
         Object.values(lines).forEach(line => {

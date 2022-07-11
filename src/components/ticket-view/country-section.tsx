@@ -31,7 +31,7 @@ export default function CountrySection() {
                 return { ...acc, [cur.id]: translateName(cur.name) };
             }
         }, {}),
-        new: 'Add a new country/region...',
+        new: t('Add a country/region...'),
     };
 
     const fields: RmgFieldsField[] = [
@@ -44,7 +44,7 @@ export default function CountrySection() {
         },
         {
             type: 'input',
-            label: 'Country code',
+            label: t('Country/region code'),
             placeholder: 'e.g. CN, HK, JP (ISO 3166-1 alpha-2)',
             value: newCountry,
             onChange: value => dispatch(setNewCountry(value)),

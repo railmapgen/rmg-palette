@@ -14,7 +14,7 @@ import {
     MonoColour,
     PaletteEntry,
 } from '@railmapgen/rmg-palette-resources';
-import { TicketInvalidReason } from '../../util/constants';
+import { TicketInvalidReasonType } from '../../util/constants';
 
 const realStore = rootReducer.getState();
 
@@ -76,26 +76,26 @@ describe('TicketSlice', () => {
         it('Can validate country code as expected', () => {
             const initialState: TicketState = { ...realStore.ticket };
             expect(ticketSelectors.getCountryErrors(initialState)).toContain(
-                TicketInvalidReason.COUNTRY_CODE_UNDEFINED
+                TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED
             );
 
             initialState.country = 'new';
             expect(ticketSelectors.getCountryErrors(initialState)).toContain(
-                TicketInvalidReason.COUNTRY_CODE_UNDEFINED
+                TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED
             );
 
             initialState.newCountry = 'HK';
             expect(ticketSelectors.getCountryErrors(initialState)).not.toContain(
-                TicketInvalidReason.COUNTRY_CODE_UNDEFINED
+                TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED
             );
         });
 
         it('Can validate city code as expected', () => {
             const initialState: TicketState = { ...realStore.ticket, country: CountryCode.HK };
-            expect(ticketSelectors.getCityErrors(initialState)).toContain(TicketInvalidReason.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getCityErrors(initialState)).toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
 
             initialState.city = 'hongkong';
-            expect(ticketSelectors.getCityErrors(initialState)).not.toContain(TicketInvalidReason.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getCityErrors(initialState)).not.toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
         });
 
         it('Can validate line code as expected', () => {
@@ -113,22 +113,22 @@ describe('TicketSlice', () => {
                 },
             };
             expect(ticketSelectors.getLineErrors(initialState)['Overall']).toContain(
-                TicketInvalidReason.LINE_CODE_UNDEFINED
+                TicketInvalidReasonType.LINE_CODE_UNDEFINED
             );
 
             initialState.lines['id-001'].id = 'twl';
             expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
-                TicketInvalidReason.LINE_CODE_UNDEFINED
+                TicketInvalidReasonType.LINE_CODE_UNDEFINED
             );
 
             initialState.lines['id-002'] = { ...initialState.lines['id-001'] };
             expect(ticketSelectors.getLineErrors(initialState)['Overall']).toContain(
-                TicketInvalidReason.LINE_CODE_DUPLICATED
+                TicketInvalidReasonType.LINE_CODE_DUPLICATED
             );
 
             initialState.lines['id-002'].id = 'ktl';
             expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
-                TicketInvalidReason.LINE_CODE_DUPLICATED
+                TicketInvalidReasonType.LINE_CODE_DUPLICATED
             );
         });
     });

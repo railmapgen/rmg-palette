@@ -21,7 +21,7 @@ export default function PageHeader() {
         (acc, cur) => {
             return { ...acc, [cur.id]: translateName(cur.name) };
         },
-        { '': 'Please select...' }
+        { '': t('Please select...') }
     );
 
     const fields: RmgFieldsField[] = [

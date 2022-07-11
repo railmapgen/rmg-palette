@@ -17,12 +17,19 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
-import { getGitHubIssueCityBlock, getGitHubIssueLinesBlock, GITHUB_ISSUE_PREAMBLE } from '../../util/constants';
+import {
+    getGitHubIssueCityBlock,
+    getGitHubIssueLinesBlock,
+    GITHUB_ISSUE_PREAMBLE,
+    INVALID_REASON,
+    InvalidReasonType,
+} from '../../util/constants';
 import { MdContentCopy, MdOpenInNew } from 'react-icons/md';
 import { RmgDebouncedTextarea } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../../redux';
 import { ticketSelectors } from '../../redux/ticket/ticket-slice';
 import { useTranslation } from 'react-i18next';
+import useTranslatedName from '../hooks/use-translated-name';
 
 interface SubmitModalProps {
     isOpen: boolean;
@@ -33,10 +40,11 @@ export default function SubmitModal(props: SubmitModalProps) {
     const { isOpen, onClose } = props;
 
     const { t } = useTranslation();
+    const translateName = useTranslatedName();
 
-    const [countryErrors, setCountryErrors] = useState<string[]>([]);
-    const [cityErrors, setCityErrors] = useState<string[]>([]);
-    const [lineErrors, setLineErrors] = useState<Record<string, string[]>>({});
+    const [countryErrors, setCountryErrors] = useState<InvalidReasonType[]>([]);
+    const [cityErrors, setCityErrors] = useState<InvalidReasonType[]>([]);
+    const [lineErrors, setLineErrors] = useState<Record<string, InvalidReasonType[]>>({});
     const [isIgnoreErrors, setIsIgnoreErrors] = useState(false);
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -108,7 +116,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                             </Heading>
                             <UnorderedList aria-label="List of country errors">
                                 {countryErrors.map((e, i) => (
-                                    <ListItem key={i}>{e}</ListItem>
+                                    <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
                                 ))}
                             </UnorderedList>
                         </>
@@ -121,7 +129,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                             </Heading>
                             <UnorderedList aria-label="List of city errors">
                                 {cityErrors.map((e, i) => (
-                                    <ListItem key={i}>{e}</ListItem>
+                                    <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
                                 ))}
                             </UnorderedList>
                         </>
@@ -138,7 +146,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                                         {item}
                                         <UnorderedList>
                                             {errors.map((e, i) => (
-                                                <ListItem key={i}>{e}</ListItem>
+                                                <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
                                             ))}
                                         </UnorderedList>
                                     </ListItem>

@@ -25,11 +25,11 @@ ${JSON.stringify(lines, null, 4)}
 </details>`;
 };
 
-export enum TicketInvalidReason {
-    COUNTRY_CODE_UNDEFINED = 'Country code is missing',
-    CITY_CODE_UNDEFINED = 'City code is missing',
-    LINE_CODE_UNDEFINED = 'At least one line code is missing',
-    LINE_CODE_DUPLICATED = 'Duplicated line code found',
+export enum TicketInvalidReasonType {
+    COUNTRY_CODE_UNDEFINED = 'COUNTRY_CODE_UNDEFINED',
+    CITY_CODE_UNDEFINED = 'CITY_CODE_UNDEFINED',
+    LINE_CODE_UNDEFINED = 'LINE_CODE_UNDEFINED',
+    LINE_CODE_DUPLICATED = 'LINE_CODE_DUPLICATED',
 }
 
 export enum TranslationInvalidReasonType {
@@ -43,7 +43,30 @@ export enum TranslationInvalidReasonType {
     LANGUAGE_DUPLICATED = 'LANGUAGE_DUPLICATED',
 }
 
-export const TRANSLATION_INVALID_REASON: Record<TranslationInvalidReasonType, Translation> = {
+export type InvalidReasonType = TicketInvalidReasonType | TranslationInvalidReasonType;
+
+export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
+    COUNTRY_CODE_UNDEFINED: {
+        en: 'Country/region code is missing',
+        'zh-Hans': '缺少国家/地区代码',
+        'zh-Hant': '缺少國家/地區代碼',
+    },
+    CITY_CODE_UNDEFINED: {
+        en: 'City code is missing',
+        'zh-Hans': '缺少城市代码',
+        'zh-Hant': '缺少城市代碼',
+    },
+    LINE_CODE_UNDEFINED: {
+        en: 'At least one line code is missing',
+        'zh-Hans': '至少1条线路的代码缺失',
+        'zh-Hant': '至少1條路綫的代碼缺失',
+    },
+    LINE_CODE_DUPLICATED: {
+        en: 'Duplicated line code found',
+        'zh-Hans': '包含重复的线路代码',
+        'zh-Hant': '包含重複的路綫代碼',
+    },
+
     EN_UNDEFINED: {
         en: 'English name is missing',
         'zh-Hans': '缺少英文名称',
