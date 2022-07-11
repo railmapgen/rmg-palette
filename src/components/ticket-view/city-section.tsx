@@ -4,8 +4,10 @@ import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { addCityName, removeCityName, setCity, updateCityName } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
+import { useTranslation } from 'react-i18next';
 
 export default function CitySection() {
+    const { t } = useTranslation();
     const dispatch = useRootDispatch();
 
     const { city, cityName } = useRootSelector(state => state.ticket);
@@ -13,7 +15,7 @@ export default function CitySection() {
     const fields: RmgFieldsField[] = [
         {
             type: 'input',
-            label: 'City code',
+            label: t('City code'),
             placeholder: 'e.g. hongkong, guangzhou, shanghai',
             value: city,
             onChange: value => dispatch(setCity(value)),
@@ -24,7 +26,7 @@ export default function CitySection() {
     return (
         <Box as="section">
             <Heading as="h5" size="sm" mt={3} mb={2}>
-                City
+                {t('City')}
             </Heading>
 
             <RmgFields fields={fields} />

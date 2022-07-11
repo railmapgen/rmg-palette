@@ -5,8 +5,13 @@ import { RmgFields, RmgFieldsField, RmgPageHeader } from '@railmapgen/rmg-compon
 import { useRootSelector } from '../redux';
 import { Button, HStack } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import useTranslatedName from './hooks/use-translated-name';
 
 export default function PageHeader() {
+    const { t } = useTranslation();
+    const translateName = useTranslatedName();
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -14,7 +19,7 @@ export default function PageHeader() {
 
     const countryOptions = countryList.reduce<Record<string, string>>(
         (acc, cur) => {
-            return { ...acc, [cur.id]: cur.name.en! };
+            return { ...acc, [cur.id]: translateName(cur.name) };
         },
         { '': 'Please select...' }
     );
@@ -22,7 +27,7 @@ export default function PageHeader() {
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
-            label: 'Country/Region',
+            label: t('Country / Region'),
             value: selectedCountry,
             options: countryOptions,
             disabledOptions: [''],
@@ -36,7 +41,7 @@ export default function PageHeader() {
 
             <HStack ml="auto">
                 <Button variant="solid" size="sm" colorScheme="teal" onClick={() => navigate('/new')}>
-                    Add a city
+                    {t('Add a city')}
                 </Button>
             </HStack>
         </RmgPageHeader>

@@ -8,8 +8,10 @@ import { useRootDispatch } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
 import { useNavigate } from 'react-router-dom';
 import { RmgPage } from '@railmapgen/rmg-components';
+import { useTranslation } from 'react-i18next';
 
 export default function TicketView() {
+    const { t } = useTranslation();
     const dispatch = useRootDispatch();
     const navigate = useNavigate();
 
@@ -31,15 +33,15 @@ export default function TicketView() {
 
             <Flex my={2}>
                 <Button size="sm" onClick={() => navigate('/')}>
-                    Go back
+                    {t('Go back')}
                 </Button>
 
                 <HStack ml="auto">
                     <Button size="sm" variant="outline" onClick={() => dispatch(resetTicket())}>
-                        Reset
+                        {t('Reset')}
                     </Button>
                     <Button size="sm" colorScheme="teal" onClick={() => setIsSubmitModalOpen(true)}>
-                        Submit
+                        {t('Submit')}
                     </Button>
                 </HStack>
             </Flex>

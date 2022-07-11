@@ -1,7 +1,7 @@
 import { createTranslationEntityInitialState, getTranslationEntityInvalidReasons } from './util';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { nanoid } from 'nanoid';
-import { TranslationEntityInvalidReason } from '../../util/constants';
+import { TranslationInvalidReasonType } from '../../util/constants';
 
 describe('TicketUtil', () => {
     describe('TicketUtil - translation validation', () => {
@@ -10,7 +10,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.Chinese, name: '香港' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries1)).toEqual([
-                TranslationEntityInvalidReason.EN_UNDEFINED,
+                TranslationInvalidReasonType.EN_UNDEFINED,
             ]);
 
             const mockEntries2 = createTranslationEntityInitialState([
@@ -26,7 +26,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.ChineseTrad, name: '香港（繁）' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries1)).toEqual([
-                TranslationEntityInvalidReason.ZH_HANS_UNDEFINED,
+                TranslationInvalidReasonType.ZH_HANS_UNDEFINED,
             ]);
 
             const mockEntries2 = createTranslationEntityInitialState([
@@ -43,7 +43,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.ChineseCN, name: '香港（中）' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries3)).toEqual([
-                TranslationEntityInvalidReason.ZH_VARIANTS_REDEFINED,
+                TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED,
             ]);
         });
 
@@ -53,7 +53,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.ChineseSimp, name: '香港（简）' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries1)).toEqual([
-                TranslationEntityInvalidReason.ZH_HANT_UNDEFINED,
+                TranslationInvalidReasonType.ZH_HANT_UNDEFINED,
             ]);
 
             const mockEntries2 = createTranslationEntityInitialState([
@@ -62,7 +62,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.ChineseTW, name: '香港（台）' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries2)).toEqual([
-                TranslationEntityInvalidReason.ZH_HK_UNDEFINED,
+                TranslationInvalidReasonType.ZH_HK_UNDEFINED,
             ]);
 
             const mockEntries3 = createTranslationEntityInitialState([
@@ -71,7 +71,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.ChineseHK, name: '香港（港）' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries3)).toEqual([
-                TranslationEntityInvalidReason.ZH_TW_UNDEFINED,
+                TranslationInvalidReasonType.ZH_TW_UNDEFINED,
             ]);
 
             const mockEntries4 = createTranslationEntityInitialState([
@@ -97,7 +97,7 @@ describe('TicketUtil', () => {
                 { id: nanoid(), lang: LanguageCode.English, name: 'Hong Kong' },
             ]);
             expect(getTranslationEntityInvalidReasons(mockEntries)).toEqual([
-                TranslationEntityInvalidReason.LANGUAGE_DUPLICATED,
+                TranslationInvalidReasonType.LANGUAGE_DUPLICATED,
             ]);
         });
     });

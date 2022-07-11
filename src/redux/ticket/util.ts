@@ -1,6 +1,6 @@
 import { LanguageCode, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
 import { createEntityAdapter, EntityState } from '@reduxjs/toolkit';
-import { ColourHex, TranslationEntityInvalidReason } from '../../util/constants';
+import { ColourHex, TranslationInvalidReasonType } from '../../util/constants';
 
 export interface TranslationEntity {
     id: string;
@@ -34,13 +34,13 @@ export const convertEntityStateToTranslation = (entityState: EntityState<Transla
 
 export const getTranslationEntityInvalidReasons = (
     entityState: EntityState<TranslationEntity>
-): TranslationEntityInvalidReason[] => {
+): TranslationInvalidReasonType[] => {
     const result = [];
     const entities = translationEntitySelector.selectAll(entityState);
 
     // English
     if (!entities.some(entity => entity.lang === LanguageCode.English && entity.name)) {
-        result.push(TranslationEntityInvalidReason.EN_UNDEFINED);
+        result.push(TranslationInvalidReasonType.EN_UNDEFINED);
     }
 
     // Chinese
@@ -53,16 +53,16 @@ export const getTranslationEntityInvalidReasons = (
     if (!entities.some(entity => entity.lang === LanguageCode.Chinese && entity.name)) {
         if (!zhHansExists && !zhHantExists && !zhCNExists && !zhHKExists && !zhTWExists) {
             // not exist any Chinese
-            result.push(TranslationEntityInvalidReason.ZH_UNDEFINED);
+            result.push(TranslationInvalidReasonType.ZH_UNDEFINED);
         } else {
             // zh-Hans not defined
             if (!zhHansExists) {
                 if (!zhCNExists) {
-                    result.push(TranslationEntityInvalidReason.ZH_HANS_UNDEFINED);
+                    result.push(TranslationInvalidReasonType.ZH_HANS_UNDEFINED);
                 }
             } else {
                 if (zhCNExists) {
-                    result.push(TranslationEntityInvalidReason.ZH_VARIANTS_REDEFINED);
+                    result.push(TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED);
                 }
             }
 
@@ -70,29 +70,29 @@ export const getTranslationEntityInvalidReasons = (
             if (!zhHantExists) {
                 if (!zhHKExists && !zhTWExists) {
                     // zh-HK zh-TW both not defined
-                    result.push(TranslationEntityInvalidReason.ZH_HANT_UNDEFINED);
+                    result.push(TranslationInvalidReasonType.ZH_HANT_UNDEFINED);
                 } else if (!zhHKExists) {
                     // zh-HK not defined
-                    result.push(TranslationEntityInvalidReason.ZH_HK_UNDEFINED);
+                    result.push(TranslationInvalidReasonType.ZH_HK_UNDEFINED);
                 } else if (!zhTWExists) {
                     // zh-TW not defined
-                    result.push(TranslationEntityInvalidReason.ZH_TW_UNDEFINED);
+                    result.push(TranslationInvalidReasonType.ZH_TW_UNDEFINED);
                 }
             } else {
                 if (zhHKExists || zhTWExists) {
-                    result.push(TranslationEntityInvalidReason.ZH_VARIANTS_REDEFINED);
+                    result.push(TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED);
                 }
             }
         }
     } else {
         if (zhHansExists || zhHantExists || zhCNExists || zhHKExists || zhTWExists) {
-            result.push(TranslationEntityInvalidReason.ZH_VARIANTS_REDEFINED);
+            result.push(TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED);
         }
     }
 
     // Duplication
     if (new Set(entities.map(entity => entity.lang)).size !== entities.length) {
-        result.push(TranslationEntityInvalidReason.LANGUAGE_DUPLICATED);
+        result.push(TranslationInvalidReasonType.LANGUAGE_DUPLICATED);
     }
 
     return result;
