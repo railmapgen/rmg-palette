@@ -22,6 +22,7 @@ export enum LanguageCode {
     Norwegian = 'no',
     Spanish = 'es',
     Persian = 'fa',
+    Polish = 'pl',
     Portuguese = 'pt',
     Romanian = 'ro',
     Russian = 'ru',
