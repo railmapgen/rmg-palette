@@ -2,6 +2,7 @@ import {
     CityCode,
     CityEntry,
     CountryCode,
+    CountryEntry,
     LanguageCode,
     MonoColour,
     PaletteEntry,
@@ -172,6 +173,16 @@ const ticketSlice = createSlice({
 });
 
 export const ticketSelectors = {
+    getCountryEntry: (state: TicketState): CountryEntry | null => {
+        if (state.country !== 'new') {
+            return null;
+        }
+        return {
+            id: state.newCountry as CountryCode,
+            name: convertEntityStateToTranslation(state.countryName),
+        };
+    },
+
     getCityEntry: (state: TicketState): CityEntry => {
         return {
             id: state.city as CityCode,

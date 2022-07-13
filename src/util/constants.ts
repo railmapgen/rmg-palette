@@ -1,4 +1,4 @@
-import { CityEntry, PaletteEntry, Translation } from '@railmapgen/rmg-palette-resources';
+import { Translation } from '@railmapgen/rmg-palette-resources';
 
 export type ColourHex = `#${string}`;
 
@@ -14,15 +14,16 @@ export enum MonoColour {
 export type Name = [string, string];
 
 export const GITHUB_ISSUE_PREAMBLE = '**Do not edit lines below, they are meant for bots only!!!**';
-export const getGitHubIssueCityBlock = (cityEntry: CityEntry | null) => {
-    return `<details repo="rmg-palette" type="city">
-${JSON.stringify(cityEntry, null, 4)}
-</details>`;
-};
-export const getGitHubIssueLinesBlock = (lines: PaletteEntry[]) => {
-    return `<details repo="rmg-palette" type="lines">
-${JSON.stringify(lines, null, 4)}
-</details>`;
+export const getGitHubIssueDetailsBlock = (type: 'country' | 'city' | 'lines', data: any): string => {
+    if (data !== null) {
+        const details = document.createElement('details');
+        details.setAttribute('repo', 'rmg-palette');
+        details.setAttribute('type', type);
+        details.textContent = JSON.stringify(data, null, 4);
+        return details.outerHTML;
+    } else {
+        return '';
+    }
 };
 
 export enum TicketInvalidReasonType {
