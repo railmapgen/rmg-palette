@@ -618,6 +618,14 @@
         }
     },
     {
+        "id": "testcity",
+        "country": "XX",
+        "name": {
+            "en": "Test City",
+            "zh": "測試城市"
+        }
+    },
+    {
         "id": "tianjin",
         "country": "CN",
         "name": {
