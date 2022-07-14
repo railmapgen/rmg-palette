@@ -247,6 +247,15 @@
         }
     },
     {
+        "id": "SA",
+        "name": {
+            "en": "Saudi Arabia",
+            "ar": "المملكة العربية السعودية",
+            "zh-Hans": "沙特阿拉伯",
+            "zh-Hant": "沙特阿拉伯"
+        }
+    },
+    {
         "id": "SE",
         "name": {
             "en": "Sweden",

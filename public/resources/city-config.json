@@ -500,6 +500,16 @@
         }
     },
     {
+        "id": "riyadh",
+        "country": "SA",
+        "name": {
+            "en": "Riyadh",
+            "ar": "الرياض",
+            "zh-Hans": "利雅得",
+            "zh-Hant": "利雅得"
+        }
+    },
+    {
         "id": "sanfrancisco",
         "country": "US",
         "name": {
