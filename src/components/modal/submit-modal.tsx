@@ -18,8 +18,7 @@ import {
 } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
 import {
-    getGitHubIssueCityBlock,
-    getGitHubIssueLinesBlock,
+    getGitHubIssueDetailsBlock,
     GITHUB_ISSUE_PREAMBLE,
     INVALID_REASON,
     InvalidReasonType,
@@ -50,6 +49,7 @@ export default function SubmitModal(props: SubmitModalProps) {
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const ticket = useRootSelector(state => state.ticket);
+    const countryEntry = ticketSelectors.getCountryEntry(ticket);
     const cityEntry = ticketSelectors.getCityEntry(ticket);
     const paletteList = ticketSelectors.getPalettes(ticket);
 
@@ -68,8 +68,9 @@ export default function SubmitModal(props: SubmitModalProps) {
             'Please provide any source or justification or we will not proceed with your request.'
         )} (REPLACE ME)`,
         GITHUB_ISSUE_PREAMBLE,
-        getGitHubIssueCityBlock(cityEntry),
-        getGitHubIssueLinesBlock(paletteList),
+        getGitHubIssueDetailsBlock('country', countryEntry),
+        getGitHubIssueDetailsBlock('city', cityEntry),
+        getGitHubIssueDetailsBlock('lines', paletteList),
     ].join('\n\n');
 
     const fullSearchParams = new URLSearchParams({
