@@ -47,6 +47,15 @@
         }
     },
     {
+        "id": "boston",
+        "country": "US",
+        "name": {
+            "en": "Boston",
+            "zh-Hans": "波士顿",
+            "zh-Hant": "波士頓"
+        }
+    },
+    {
         "id": "bucharest",
         "country": "RO",
         "name": {
