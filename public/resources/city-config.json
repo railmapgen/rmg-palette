@@ -490,6 +490,15 @@
         }
     },
     {
+        "id": "qingyuan",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "清远",
+            "zh-Hant": "清遠",
+            "en": "Qingyuan"
+        }
+    },
+    {
         "id": "rheinruhr",
         "country": "DE",
         "name": {
