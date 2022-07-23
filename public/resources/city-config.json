@@ -85,6 +85,15 @@
         }
     },
     {
+        "id": "Changchun",
+        "country": "CN",
+        "name": {
+            "en": "Changchun",
+            "zh-Hans": "长春",
+            "zh-Hant": "長春"
+        }
+    },
+    {
         "id": "changsha",
         "country": "CN",
         "name": {
