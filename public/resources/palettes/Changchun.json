@@ -40,16 +40,6 @@
         }
     },
     {
-        "id": "cc8",
-        "colour": "#4bb4b8",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
-        }
-    },
-    {
         "id": "cc5",
         "colour": "#f8408a",
         "fg": "#fff",
@@ -80,13 +70,13 @@
         }
     },
     {
-        "id": "cc54",
-        "colour": "#fd93a0",
+        "id": "cc8",
+        "colour": "#4bb4b8",
         "fg": "#fff",
         "name": {
-            "en": "Tram Route 54",
-            "zh-Hans": "有轨电车54路",
-            "zh-Hant": "有軌電車54線"
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
         }
     },
     {
@@ -97,6 +87,16 @@
             "en": "Line 9",
             "zh-Hans": "9号线",
             "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "cc54",
+        "colour": "#fd93a0",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Route 54",
+            "zh-Hans": "有轨电车54路",
+            "zh-Hant": "有軌電車54線"
         }
     },
     {
