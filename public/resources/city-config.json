@@ -577,6 +577,14 @@
         }
     },
     {
+        "id": "shaoxing",
+        "country": "CN",
+        "name": {
+            "en": "Shaoxing",
+            "zh": "绍兴"
+        }
+    },
+    {
         "id": "shenyang",
         "country": "CN",
         "name": {
