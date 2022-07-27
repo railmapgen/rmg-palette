@@ -48,5 +48,65 @@
             "zh-Hans": "8号线",
             "zh-Hant": "8號線"
         }
+    },
+    {
+        "id": "cc5",
+        "colour": "#f8408a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "cc6",
+        "colour": "#df7413",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "cc7",
+        "colour": "#f6cf44",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "cc54",
+        "colour": "#fd93a0",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Route 54",
+            "zh-Hans": "有轨电车54路",
+            "zh-Hant": "有軌電車54線"
+        }
+    },
+    {
+        "id": "cc9",
+        "colour": "#a26745",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "cc55",
+        "colour": "#73c8ec",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Route 55",
+            "zh-Hans": "有轨电车55路",
+            "zh-Hant": "有軌電車55線"
+        }
     }
 ]
