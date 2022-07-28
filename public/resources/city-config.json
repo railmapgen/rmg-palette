@@ -205,6 +205,15 @@
         }
     },
     {
+        "id": "fuzhou",
+        "country": "CN",
+        "name": {
+            "en": "Fuzhou",
+            "zh-Hans": "福州",
+            "zh-Hant": "福州"
+        }
+    },
+    {
         "id": "glasgow",
         "country": "GBSCT",
         "name": {
