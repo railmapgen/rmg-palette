@@ -21,7 +21,7 @@ for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
         const cityConfigFilepath = '../public/resources/city-config.json';
         let cityConfig = JSON.parse(readFileSync(cityConfigFilepath, 'utf-8')) as unknown as CityEntry[];
         const city = JSON.parse(value.trim()) as unknown as CityEntry;
-        cityID = city.id; // save for lines op
+        cityID = city.id.toLowerCase(); // save for lines op
         cityConfig = cityConfig
             .concat(city) // push the city
             .filter((v, i, a) => a.findIndex(v2 => v2.id === v.id) === i) // remove duplicate
