@@ -445,6 +445,15 @@
         }
     },
     {
+        "id": "ningbo",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "宁波",
+            "en": "Ningbo",
+            "zh-Hant": "寜波"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
