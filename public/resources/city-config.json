@@ -270,6 +270,14 @@
         }
     },
     {
+        "id": "hefei",
+        "country": "CN",
+        "name": {
+            "zh": "合肥",
+            "en": "Hefei"
+        }
+    },
+    {
         "id": "hochiminh",
         "country": "VN",
         "name": {
