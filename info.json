@@ -1,5 +1,6 @@
 {
   "component": "rmg-palette",
-  "version": "0.5.12",
-  "environment": "PRD"
+  "version": "0.5.13",
+  "environment: "PRD",
+  "instance": "GitHub"
 }
