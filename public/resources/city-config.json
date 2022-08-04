@@ -85,7 +85,7 @@
         }
     },
     {
-        "id": "Changchun",
+        "id": "changchun",
         "country": "CN",
         "name": {
             "en": "Changchun",
@@ -582,6 +582,14 @@
         "name": {
             "en": "Shanghai",
             "zh": "上海"
+        }
+    },
+    {
+        "id": "shaoxing",
+        "country": "CN",
+        "name": {
+            "en": "Shaoxing",
+            "zh": "绍兴"
         }
     },
     {
