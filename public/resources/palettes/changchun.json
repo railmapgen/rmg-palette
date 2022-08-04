@@ -88,25 +88,5 @@
             "zh-Hans": "9号线",
             "zh-Hant": "9號線"
         }
-    },
-    {
-        "id": "cc54",
-        "colour": "#fd93a0",
-        "fg": "#fff",
-        "name": {
-            "en": "Tram Route 54",
-            "zh-Hans": "有轨电车54路",
-            "zh-Hant": "有軌電車54線"
-        }
-    },
-    {
-        "id": "cc55",
-        "colour": "#73c8ec",
-        "fg": "#fff",
-        "name": {
-            "en": "Tram Route 55",
-            "zh-Hans": "有轨电车55路",
-            "zh-Hant": "有軌電車55線"
-        }
     }
 ]
