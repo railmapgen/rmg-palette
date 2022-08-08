@@ -1,63 +1,79 @@
 [
     {
         "id": "l1",
+        "colour": "#F8C300",
+        "fg": "#000",
         "name": {
             "en": "Line 1 Yonge-University",
-            "zh-Hant": "1號央街-大學線"
-        },
-        "colour": "#F8C300",
-        "fg": "#000"
+            "fr": "Ligne 1 Yonge-University",
+            "zh-Hans": "1 - 央街－大学线",
+            "zh-Hant": "1 - 央街－大學線"
+        }
     },
     {
         "id": "l2",
+        "colour": "#00923F",
+        "fg": "#fff",
         "name": {
-            "en": "Line 2 Bloor-Danforth"
-        },
-        "colour": "#00923F"
+            "en": "Line 2 Bloor-Danforth",
+            "fr": "Ligne 2 Bloor-Danforth",
+            "zh-Hans": "2 - 布鲁亚－丹佛线",
+            "zh-Hant": "2 - 布魯亞－丹佛線"
+        }
     },
     {
         "id": "l3",
+        "colour": "#0082C9",
+        "fg": "#fff",
         "name": {
             "en": "Line 3 Scarborough",
-            "zh-Hant": "3號士嘉堡輕鐵"
-        },
-        "colour": "#0082C9"
+            "fr": "Ligne 3 Scarborough",
+            "zh-Hans": "3 - 士嘉堡线",
+            "zh-Hant": "3 - 士嘉堡線"
+        }
     },
     {
         "id": "l4",
+        "colour": "#A21A68",
+        "fg": "#fff",
         "name": {
             "en": "Line 4 Sheppard",
-            "zh-Hant": "4號雪柏線"
-        },
-        "colour": "#A21A68"
+            "fr": "Ligne 4 Sheppard",
+            "zh-Hans": "4 - 雪柏线",
+            "zh-Hant": "4 - 雪柏線"
+        }
     },
     {
         "id": "l5",
+        "colour": "#E77817",
+        "fg": "#fff",
         "name": {
             "en": "Line 5 Eglinton",
-            "zh-Hant": "5號艾靈頓輕鐵"
-        },
-        "colour": "#E77817"
-    },
-    {
-        "id": "selrt",
-        "name": {
-            "en": "Sheppard East Rapid Transit Line"
-        },
-        "colour": "#969594"
+            "fr": "Ligne 5 Eglinton",
+            "zh-Hans": "5 - 艾林顿线",
+            "zh-Hant": "5 - 艾林頓線"
+        }
     },
     {
         "id": "l6",
+        "colour": "#888888",
+        "fg": "#fff",
         "name": {
-            "en": "Line 6 Finch West"
-        },
-        "colour": "#8BCA98"
+            "en": "Line 6 Finch West",
+            "fr": "Ligne 6 Finch Ouest",
+            "zh-Hans": "6 - 西芬治线",
+            "zh-Hant": "6 - 西芬治線"
+        }
     },
     {
         "id": "ttc",
+        "colour": "#DA251D",
+        "fg": "#fff",
         "name": {
-            "en": "Surface Routes"
-        },
-        "colour": "#DA251D"
+            "en": "Surface Routes",
+            "fr": "Routes de surface",
+            "zh-Hans": "地面线路",
+            "zh-Hant": "地面線路"
+        }
     }
 ]
