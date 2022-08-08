@@ -85,7 +85,7 @@
         }
     },
     {
-        "id": "Changchun",
+        "id": "changchun",
         "country": "CN",
         "name": {
             "en": "Changchun",
@@ -276,6 +276,14 @@
             "en": "Harbin",
             "zh-Hans": "哈尔滨",
             "zh-Hant": "哈爾濱"
+        }
+    },
+    {
+        "id": "hefei",
+        "country": "CN",
+        "name": {
+            "zh": "合肥",
+            "en": "Hefei"
         }
     },
     {
