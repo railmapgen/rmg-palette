@@ -60,6 +60,14 @@
         }
     },
     {
+        "id": "DK",
+        "name": {
+            "en": "Denmark",
+            "zh-Hans": "丹麦",
+            "zh-Hant": "丹麥"
+        }
+    },
+    {
         "id": "EG",
         "name": {
             "en": "Egypt",

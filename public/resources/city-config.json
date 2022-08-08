@@ -120,6 +120,15 @@
         }
     },
     {
+        "id": "copenhagen",
+        "country": "DK",
+        "name": {
+            "en": "Copenhagen",
+            "zh-Hans": "哥本哈根",
+            "zh-Hant": "哥本哈根"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {
