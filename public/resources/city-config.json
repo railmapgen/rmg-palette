@@ -310,7 +310,7 @@
             "en": "Istanbul",
             "tr": "İstanbul",
             "zh-Hans": "伊斯坦布尔",
-            "zh-Hant": "伊斯坦布爾"
+            "zh-Hant": "伊斯坦堡"
         }
     },
     {
@@ -450,7 +450,8 @@
             "en": "Naples",
             "it": "Napoli",
             "zh-Hans": "那不勒斯",
-            "zh-Hant": "拿坡里"
+            "zh-HK": "拿坡利",
+            "zh-TW": "拿坡里"
         }
     },
     {
@@ -598,7 +599,8 @@
         "country": "CN",
         "name": {
             "en": "Shaoxing",
-            "zh": "绍兴"
+            "zh-Hans": "绍兴",
+            "zh-Hant": "紹興"
         }
     },
     {
