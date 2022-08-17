@@ -1,47 +1,52 @@
 [
     {
         "id": "nb1",
-        "colour": "#1590ca",
+        "colour": "#0064ab",
         "fg": "#fff",
         "name": {
+            "zh-Hans": "1号线",
             "en": "Line 1",
-            "zh": "1号线"
+            "zh-Hant": "1號線"
         }
     },
     {
         "id": "nb2",
-        "colour": "#d60e19",
+        "colour": "#ab1515",
         "fg": "#fff",
         "name": {
+            "zh-Hans": "2号线",
             "en": "Line 2",
-            "zh": "2号线"
+            "zh-Hant": "2號線"
         }
     },
     {
         "id": "nb3",
-        "colour": "#f39800",
-        "fg": "#000",
+        "colour": "#ebb400",
+        "fg": "#fff",
         "name": {
-            "en": "Line 3",
-            "zh": "3号线"
+            "zh-Hans": "3号线/宁奉城际",
+            "en": "Line3/Ningbo-Fenghua Intercity Railway",
+            "zh-Hant": "3號線/寜奉城際"
         }
     },
     {
         "id": "nb4",
-        "colour": "#abcd03",
-        "fg": "#000",
+        "colour": "#6fb330",
+        "fg": "#fff",
         "name": {
+            "zh-Hans": "4号线",
             "en": "Line 4",
-            "zh": "4号线"
+            "zh-Hant": "4號線"
         }
     },
     {
         "id": "nb5",
-        "colour": "#1d2088",
+        "colour": "#4700ab",
         "fg": "#fff",
         "name": {
+            "zh-Hans": "5号线",
             "en": "Line 5",
-            "zh": "5号线"
+            "zh-Hant": "5號線"
         }
     }
 ]
