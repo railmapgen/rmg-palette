@@ -5,6 +5,7 @@
         "fg": "#fff",
         "name": {
             "en": "Wenhu Line (BR)",
+            "zh-Hans": "文湖线",
             "zh-Hant": "文湖線"
         }
     },
@@ -14,16 +15,8 @@
         "fg": "#fff",
         "name": {
             "en": "Tamsui-Xinyi Line (R)",
+            "zh-Hans": "淡水信义线",
             "zh-Hant": "淡水信義線"
-        }
-    },
-    {
-        "id": "rb",
-        "colour": "#fd92a3",
-        "fg": "#fff",
-        "name": {
-            "en": "Xinbeitou Branch Line",
-            "zh-Hant": "新北投支線"
         }
     },
     {
@@ -32,16 +25,8 @@
         "fg": "#fff",
         "name": {
             "en": "Songshan-Xindian Line (G)",
+            "zh-Hans": "松山新店线",
             "zh-Hant": "松山新店線"
-        }
-    },
-    {
-        "id": "gb",
-        "colour": "#cfdb00",
-        "fg": "#fff",
-        "name": {
-            "en": "Xiaobitan Branch Line",
-            "zh-Hant": "小碧潭支線"
         }
     },
     {
@@ -50,6 +35,7 @@
         "fg": "#000",
         "name": {
             "en": "Zhonghe-Xinlu Line (O)",
+            "zh-Hans": "中和新芦线",
             "zh-Hant": "中和新蘆線"
         }
     },
@@ -59,6 +45,7 @@
         "fg": "#fff",
         "name": {
             "en": "Bannan Line (BL)",
+            "zh-Hans": "板南线",
             "zh-Hant": "板南線"
         }
     },
@@ -68,7 +55,28 @@
         "fg": "#000",
         "name": {
             "en": "Circular Line (Y)",
+            "zh-Hans": "环状线",
             "zh-Hant": "環狀線"
+        }
+    },
+    {
+        "id": "rb",
+        "colour": "#fd92a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Xinbeitou Branch Line",
+            "zh-Hans": "新北投支线",
+            "zh-Hant": "新北投支線"
+        }
+    },
+    {
+        "id": "gb",
+        "colour": "#cfdb00",
+        "fg": "#fff",
+        "name": {
+            "en": "Xiaobitan Branch Line",
+            "zh-Hans": "小碧潭支线",
+            "zh-Hant": "小碧潭支線"
         }
     },
     {
@@ -77,6 +85,7 @@
         "fg": "#fff",
         "name": {
             "en": "Wanda-Zhonghe-Shulin Line (LG)",
+            "zh-Hans": "万大-中和-树林线",
             "zh-Hant": "萬大-中和-樹林線"
         }
     },
@@ -86,6 +95,7 @@
         "fg": "#fff",
         "name": {
             "en": "Minsheng-Xizhi Line",
+            "zh-Hans": "民生汐止线",
             "zh-Hant": "民生汐止線"
         }
     },
@@ -95,6 +105,7 @@
         "fg": "#fff",
         "name": {
             "en": "Donghu Branch Line",
+            "zh-Hans": "东湖支线",
             "zh-Hant": "東湖支線"
         }
     },
@@ -104,6 +115,7 @@
         "fg": "#fff",
         "name": {
             "en": "Shezi Line",
+            "zh-Hans": "社子线",
             "zh-Hant": "社子線"
         }
     },
@@ -113,6 +125,7 @@
         "fg": "#fff",
         "name": {
             "en": "Maokong Gondola",
+            "zh-Hans": "猫空缆车",
             "zh-Hant": "貓空䌫車"
         }
     }
