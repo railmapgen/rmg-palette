@@ -1,0 +1,38 @@
+[
+    {
+        "id": "nc1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "zh": "1号线",
+            "en": "Line 1"
+        }
+    },
+    {
+        "id": "nc2",
+        "colour": "#ffff00",
+        "fg": "#000",
+        "name": {
+            "zh": "2号线",
+            "en": "Line 2"
+        }
+    },
+    {
+        "id": "nc3",
+        "colour": "#006ce0",
+        "fg": "#fff",
+        "name": {
+            "zh": "3号线",
+            "en": "Line 3"
+        }
+    },
+    {
+        "id": "nc4",
+        "colour": "#00b300",
+        "fg": "#fff",
+        "name": {
+            "zh": "4号线",
+            "en": "Line 4"
+        }
+    }
+]
