@@ -1,82 +1,112 @@
 [
     {
         "id": "at1",
+        "colour": "#007a28",
+        "fg": "#fff",
         "name": {
-            "en": "Line 1",
-            "el": "Γραμμή 1",
-            "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
-        },
-        "colour": "#38A800"
+            "en": "Metro Line 1",
+            "el": "Μετρό Γραμμή 1",
+            "zh-Hans": "地铁1号线",
+            "zh-Hant": "地鐵1號線"
+        }
     },
     {
         "id": "at2",
+        "colour": "#e41b12",
+        "fg": "#fff",
         "name": {
-            "en": "Line 2",
-            "el": "Γραμμή 2",
-            "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
-        },
-        "colour": "#FF0000"
+            "en": "Metro Line 2",
+            "el": "Μετρό Γραμμή 2",
+            "zh-Hans": "地铁2号线",
+            "zh-Hant": "地鐵2號線"
+        }
     },
     {
         "id": "at3",
+        "colour": "#0099d5",
+        "fg": "#fff",
         "name": {
-            "en": "Line 3",
-            "el": "Γραμμή 3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
-        },
-        "colour": "#008CD1"
+            "en": "Metro Line 3",
+            "el": "Μετρό Γραμμή 3",
+            "zh-Hans": "地铁3号线",
+            "zh-Hant": "地鐵3號線"
+        }
     },
     {
         "id": "at4",
+        "colour": "#f39900",
+        "fg": "#fff",
         "name": {
-            "en": "Line 4",
-            "el": "Γραμμή 4",
-            "zh-Hans": "4号线",
-            "zh-Hant": "4號線"
-        },
-        "colour": "#FFAA00"
+            "en": "Metro Line 4",
+            "el": "Μετρό Γραμμή 4",
+            "zh-Hans": "地铁4号线",
+            "zh-Hant": "地鐵4號線"
+        }
     },
     {
-        "id": "at5",
+        "id": "att",
+        "colour": "#83b81a",
+        "fg": "#fff",
         "name": {
-            "en": "Line 5",
-            "el": "Γραμμή 5",
-            "zh-Hans": "5号线",
-            "zh-Hant": "5號線"
-        },
-        "colour": "#0000FF"
+            "en": "Tram",
+            "el": "Τραμ",
+            "zh-Hans": "有轨电车",
+            "zh-Hant": "有軌電車"
+        }
     },
     {
-        "id": "at6",
+        "id": "atp1",
+        "colour": "#ffd700",
+        "fg": "#000",
         "name": {
-            "en": "Line 6",
-            "el": "Γραμμή 6",
-            "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
-        },
-        "colour": "#FF73DF"
+            "en": "Proastiakos Line 1",
+            "el": "Προαστιακός Γραμμή 1",
+            "zh-Hans": "市郊铁路1号线",
+            "zh-Hant": "市郊鐵路1號線"
+        }
     },
     {
-        "id": "at7",
+        "id": "atp2",
+        "colour": "#00bfff",
+        "fg": "#fff",
         "name": {
-            "en": "Line 7",
-            "el": "Γραμμή 7",
-            "zh-Hans": "7号线",
-            "zh-Hant": "7號線"
-        },
-        "colour": "#FFFF00"
+            "en": "Proastiakos Line 2",
+            "el": "Προαστιακός Γραμμή 2",
+            "zh-Hans": "市郊铁路2号线",
+            "zh-Hant": "市郊鐵路2號線"
+        }
     },
     {
-        "id": "at8",
+        "id": "atp3",
+        "colour": "#1cf421",
+        "fg": "#fff",
         "name": {
-            "en": "Line 8",
-            "el": "Γραμμή 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
-        },
-        "colour": "#8E3212"
+            "en": "Proastiakos Line 3",
+            "el": "Προαστιακός Γραμμή 3",
+            "zh-Hans": "市郊铁路3号线",
+            "zh-Hant": "市郊鐵路3號線"
+        }
+    },
+    {
+        "id": "atp4",
+        "colour": "#696969",
+        "fg": "#fff",
+        "name": {
+            "en": "Proastiakos Line 4",
+            "el": "Προαστιακός Γραμμή 4",
+            "zh-Hans": "市郊铁路4号线",
+            "zh-Hant": "市郊鐵路4號線"
+        }
+    },
+    {
+        "id": "atp5",
+        "colour": "#9400d3",
+        "fg": "#fff",
+        "name": {
+            "en": "Proastiakos Line 5",
+            "el": "Προαστιακός Γραμμή 5",
+            "zh-Hans": "市郊铁路5号线",
+            "zh-Hant": "市郊鐵路5號線"
+        }
     }
 ]
