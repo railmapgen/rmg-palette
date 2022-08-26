@@ -281,6 +281,14 @@
         }
     },
     {
+        "id": "TH",
+        "name": {
+            "en": "Thailand",
+            "zh-Hans": "泰国",
+            "zh-Hant": "泰國"
+        }
+    },
+    {
         "id": "TR",
         "name": {
             "en": "Turkey",
