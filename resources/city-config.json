@@ -19,6 +19,15 @@
         }
     },
     {
+        "id": "bangkok",
+        "country": "TH",
+        "name": {
+            "en": "Bangkok",
+            "zh-Hans": "曼谷",
+            "zh-Hant": "曼谷"
+        }
+    },
+    {
         "id": "barcelona",
         "country": "ES",
         "name": {
