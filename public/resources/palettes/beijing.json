@@ -238,25 +238,5 @@
             "zh-Hans": "亦庄T1线",
             "zh-Hant": "亦莊T1線"
         }
-    },
-    {
-        "id": "bcrs",
-        "colour": "#11385b",
-        "fg": "#fff",
-        "name": {
-            "en": "BCR Standard",
-            "zh-Hans": "北京市郊铁路 (标准颜色)",
-            "zh-Hant": "北京市郊鐵路 (標準顏色)"
-        }
-    },
-    {
-        "id": "bcrh",
-        "colour": "#f65275",
-        "fg": "#000",
-        "name": {
-            "en": "BCR Huairou-Miyun Line",
-            "zh-Hans": "北京市郊铁路 (怀柔-密云线)",
-            "zh-Hant": "北京市郊鐵路 (懷柔-密雲線)"
-        }
     }
 ]
