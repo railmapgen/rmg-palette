@@ -5,7 +5,6 @@
         "fg": "#fff",
         "name": {
             "en": "M1",
-            "pl": "M1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
         }
@@ -16,7 +15,6 @@
         "fg": "#fff",
         "name": {
             "en": "M2",
-            "pl": "M2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
         }
@@ -27,7 +25,6 @@
         "fg": "#fff",
         "name": {
             "en": "M3",
-            "pl": "M3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
         }
