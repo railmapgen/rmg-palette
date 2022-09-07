@@ -5,3 +5,11 @@ import { getDefaultMiddleware, ThunkDispatch } from '@reduxjs/toolkit';
 // FIXME: any -> AnyAction?
 type DispatchExts = ThunkDispatch<RootState, void, any>;
 export const createMockRootStore = createMockStore<RootState, DispatchExts>(getDefaultMiddleware());
+
+class BroadcastChannel {
+    postMessage() {}
+
+    onmessage() {}
+}
+
+global.BroadcastChannel = BroadcastChannel as any;
