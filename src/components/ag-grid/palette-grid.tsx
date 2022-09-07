@@ -1,4 +1,4 @@
-import { RmgAgGrid, RmgAgGridColDef } from '@railmapgen/rmg-components';
+import { RmgAgGrid } from '@railmapgen/rmg-components';
 import React, { useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
@@ -10,6 +10,7 @@ import { populateTicket } from '../../redux/ticket/ticket-slice';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
+import { ColDef } from 'ag-grid-community';
 
 export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
@@ -20,7 +21,7 @@ export default function PaletteGrid() {
     const selectedCountry = useRootSelector(state => state.app.selectedCountry);
     const rowData = cityList.filter(city => city.country === selectedCountry);
 
-    const columnDefs: RmgAgGridColDef<CityEntry>[] = useMemo(
+    const columnDefs = useMemo<ColDef<CityEntry>[]>(
         () => [
             {
                 headerName: t('City'),

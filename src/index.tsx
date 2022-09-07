@@ -1,27 +1,31 @@
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import React from 'react';
+import React, { StrictMode } from 'react';
 import { createRoot, Root } from 'react-dom/client';
-import App from './App';
+import { Provider } from 'react-redux';
+import store from './redux';
+import { ChakraProvider } from '@chakra-ui/react';
+import { rmgChakraTheme } from '@railmapgen/rmg-components';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n/config';
+import AppRoot from './components/app-root';
+import './index.css';
 
 let root: Root;
 
 const renderApp = () => {
     root = createRoot(document.getElementById('root') as HTMLDivElement);
-    root.render(<App />);
+    root.render(
+        <StrictMode>
+            <Provider store={store}>
+                <ChakraProvider theme={rmgChakraTheme}>
+                    <I18nextProvider i18n={i18n}>
+                        <AppRoot />
+                    </I18nextProvider>
+                </ChakraProvider>
+            </Provider>
+        </StrictMode>
+    );
 };
 
 renderApp();
-
-const dryRun = async () => {
-    try {
-        const appVersion = await rmgRuntime.getAppVersion();
-        const env = await rmgRuntime.getEnv();
-        const instance = await rmgRuntime.getInstance();
-        console.log(appVersion, env, instance);
-        console.log('ms since rmg-runtime loaded:', rmgRuntime.getMsSinceStartUp());
-    } catch (e) {
-        console.error('Unexpected error during dry run rmg-runtime', e);
-    }
-};
-
-dryRun().then();
+rmgRuntime.injectCss();

@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WindowHeader from './window-header';
 import { RmgWindow } from '@railmapgen/rmg-components';
 import FallbackLoader from './fallback-loader';
@@ -10,30 +10,32 @@ const TicketView = lazy(() => import(/* webpackChunkName: "TicketView" */ './tic
 
 export default function AppRoot() {
     return (
-        <RmgWindow>
-            <WindowHeader />
-            <Routes>
-                <Route
-                    path="/new"
-                    element={
-                        <Suspense fallback={<FallbackLoader />}>
-                            <ErrorBoundary>
-                                <TicketView />
-                            </ErrorBoundary>
-                        </Suspense>
-                    }
-                />
-                <Route
-                    path="/"
-                    element={
-                        <Suspense fallback={<FallbackLoader />}>
-                            <ErrorBoundary>
-                                <PaletteView />
-                            </ErrorBoundary>
-                        </Suspense>
-                    }
-                />
-            </Routes>
-        </RmgWindow>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <RmgWindow>
+                <WindowHeader />
+                <Routes>
+                    <Route
+                        path="/new"
+                        element={
+                            <Suspense fallback={<FallbackLoader />}>
+                                <ErrorBoundary>
+                                    <TicketView />
+                                </ErrorBoundary>
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/"
+                        element={
+                            <Suspense fallback={<FallbackLoader />}>
+                                <ErrorBoundary>
+                                    <PaletteView />
+                                </ErrorBoundary>
+                            </Suspense>
+                        }
+                    />
+                </Routes>
+            </RmgWindow>
+        </BrowserRouter>
     );
 }

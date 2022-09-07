@@ -1,4 +1,4 @@
-import { Translation } from '@railmapgen/rmg-palette-resources';
+import { Translation } from '@railmapgen/rmg-translate';
 
 export type ColourHex = `#${string}`;
 
