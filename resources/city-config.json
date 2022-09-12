@@ -545,6 +545,16 @@
         }
     },
     {
+        "id": "rio",
+        "country": "BR",
+        "name": {
+            "en": "Rio de Janeiro",
+            "pt": "Rio de Janeiro",
+            "zh-Hans": "里约热内卢",
+            "zh-Hant": "里約熱內盧"
+        }
+    },
+    {
         "id": "riyadh",
         "country": "SA",
         "name": {
