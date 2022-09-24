@@ -27,5 +27,7 @@ const renderApp = () => {
     );
 };
 
-renderApp();
-rmgRuntime.injectCss();
+rmgRuntime.ready().then(() => {
+    renderApp();
+    rmgRuntime.injectCss();
+});
