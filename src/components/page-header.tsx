@@ -7,6 +7,8 @@ import { Button, HStack } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from './hooks/use-translated-name';
+import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Events } from '../util/constants';
 
 export default function PageHeader() {
     const { t, i18n } = useTranslation();
@@ -43,12 +45,17 @@ export default function PageHeader() {
         },
     ];
 
+    const handleAddCity = () => {
+        navigate('/new');
+        rmgRuntime.event(Events.ADD_CITY, {});
+    };
+
     return (
         <RmgPageHeader>
             <RmgFields fields={fields} />
 
             <HStack ml="auto">
-                <Button variant="solid" size="sm" colorScheme="teal" onClick={() => navigate('/new')}>
+                <Button variant="solid" size="sm" colorScheme="primary" onClick={handleAddCity}>
                     {t('Add a city')}
                 </Button>
             </HStack>

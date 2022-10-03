@@ -109,3 +109,11 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hant': '包含重複的語言',
     },
 };
+
+export enum Events {
+    APP_LOAD = 'APP_LOAD',
+
+    ADD_CITY = 'ADD_CITY',
+    EDIT_CITY = 'EDIT_CITY',
+    RESET_TICKET = 'RESET_TICKET',
+}

@@ -9,6 +9,7 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n/config';
 import AppRoot from './components/app-root';
 import './index.css';
+import { Events } from './util/constants';
 
 let root: Root;
 
@@ -30,4 +31,5 @@ const renderApp = () => {
 rmgRuntime.ready().then(() => {
     renderApp();
     rmgRuntime.injectCss();
+    rmgRuntime.event(Events.APP_LOAD, { isStandaloneWindow: rmgRuntime.isStandaloneWindow() });
 });
