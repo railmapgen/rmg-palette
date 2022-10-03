@@ -11,6 +11,8 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { ColDef } from 'ag-grid-community';
+import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Events } from '../../util/constants';
 
 export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
@@ -72,6 +74,7 @@ export default function PaletteGrid() {
 
             dispatch(populateTicket({ city, palettes }));
             navigate('/new');
+            rmgRuntime.event(Events.EDIT_CITY, { city: city.id });
         } catch (e) {
             console.error('PaletteGrid.handleCityEdit():: Unexpected errors', e);
         }
