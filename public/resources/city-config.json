@@ -323,6 +323,15 @@
         }
     },
     {
+        "id": "jakarta",
+        "country": "ID",
+        "name": {
+            "en": "Jakarta",
+            "zh-Hans": "雅加达",
+            "zh-Hant": "雅加達"
+        }
+    },
+    {
         "id": "jinan",
         "country": "CN",
         "name": {
