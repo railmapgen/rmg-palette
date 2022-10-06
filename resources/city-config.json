@@ -296,6 +296,16 @@
         }
     },
     {
+        "id": "hiroshima",
+        "country": "JP",
+        "name": {
+            "en": "Hiroshima",
+            "zh-Hans": "广岛",
+            "zh-Hant": "廣島",
+            "ja": "広島"
+        }
+    },
+    {
         "id": "hochiminh",
         "country": "VN",
         "name": {
