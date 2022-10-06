@@ -134,6 +134,13 @@
         }
     },
     {
+        "id": "ID",
+        "name": {
+            "en": "Indonesia",
+            "zh": "印度尼西亚"
+        }
+    },
+    {
         "id": "IN",
         "name": {
             "en": "India",
