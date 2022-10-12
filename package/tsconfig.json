@@ -19,7 +19,7 @@
         "noFallthroughCasesInSwitch": true,
         "plugins": [
             {
-                "transform": "typescript-is/lib/transform-inline/transformer"
+                "transform": "typescript-json/lib/transform"
             }
         ]
     },
