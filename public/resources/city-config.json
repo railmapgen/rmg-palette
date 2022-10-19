@@ -129,6 +129,15 @@
         }
     },
     {
+        "id": "cologne",
+        "country": "DE",
+        "name": {
+            "en": "Cologne",
+            "de": "Köln",
+            "zh": "科隆"
+        }
+    },
+    {
         "id": "copenhagen",
         "country": "DK",
         "name": {
