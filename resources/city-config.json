@@ -56,6 +56,15 @@
         }
     },
     {
+        "id": "bonn",
+        "country": "DE",
+        "name": {
+            "en": "Bonn",
+            "de": "Bonn",
+            "zh": "波恩"
+        }
+    },
+    {
         "id": "boston",
         "country": "US",
         "name": {
@@ -126,6 +135,15 @@
             "en": "Chongqing",
             "zh-Hans": "重庆",
             "zh-Hant": "重慶"
+        }
+    },
+    {
+        "id": "cologne",
+        "country": "DE",
+        "name": {
+            "en": "Cologne",
+            "de": "Köln",
+            "zh": "科隆"
         }
     },
     {
