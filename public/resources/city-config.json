@@ -56,6 +56,15 @@
         }
     },
     {
+        "id": "bonn",
+        "country": "DE",
+        "name": {
+            "en": "Bonn",
+            "de": "Bonn",
+            "zh": "波恩"
+        }
+    },
+    {
         "id": "boston",
         "country": "US",
         "name": {
