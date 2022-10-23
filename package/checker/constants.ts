@@ -15,6 +15,7 @@ export enum LanguageCode {
     Greek = 'el',
     Hindi = 'hi',
     Hungarian = 'hu',
+    Indonesian = 'id',
     Italian = 'it',
     Japanese = 'ja',
     Korean = 'ko',
