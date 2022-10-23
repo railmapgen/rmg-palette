@@ -151,8 +151,7 @@
         "country": "DK",
         "name": {
             "en": "Copenhagen",
-            "zh-Hans": "哥本哈根",
-            "zh-Hant": "哥本哈根"
+            "zh": "哥本哈根"
         }
     },
     {
@@ -179,8 +178,7 @@
         "name": {
             "en": "Delhi",
             "hi": "दिल्ली",
-            "zh-Hans": "德里",
-            "zh-Hant": "德里"
+            "zh": "德里"
         }
     },
     {
@@ -198,8 +196,7 @@
         "name": {
             "en": "Dortmund",
             "de": "Dortmund",
-            "zh-Hans": "多特蒙德",
-            "zh-Hant": "多特蒙德"
+            "zh": "多特蒙德"
         }
     },
     {
@@ -255,8 +252,7 @@
         "name": {
             "en": "Gothenburg",
             "es": "Göteborg",
-            "zh-Hans": "哥德堡",
-            "zh-Hant": "哥德堡"
+            "zh": "哥德堡"
         }
     },
     {
@@ -265,7 +261,7 @@
         "name": {
             "en": "Guadalajara",
             "es": "Guadalajara",
-            "zh-Hans": "瓜达拉哈拉 ",
+            "zh-Hans": "瓜达拉哈拉",
             "zh-Hant": "瓜達拉哈拉"
         }
     },
@@ -355,6 +351,7 @@
         "country": "ID",
         "name": {
             "en": "Jakarta",
+            "id": "Jakarta",
             "zh-Hans": "雅加达",
             "zh-Hant": "雅加達"
         }
@@ -391,9 +388,8 @@
         "country": "MY",
         "name": {
             "en": "Greater KL/Klang Valley",
-            "ms": "Greater KL/Klang Valley",
-            "zh-Hans": "大吉隆坡/巴生谷",
-            "zh-Hant": "大吉隆坡/巴生谷"
+            "ms": "Kuala Lumpur Raya/Lembah Klang",
+            "zh": "大吉隆坡/巴生谷"
         }
     },
     {
