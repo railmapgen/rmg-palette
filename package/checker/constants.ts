@@ -38,7 +38,7 @@ export enum MonoColour {
     white = '#fff',
 }
 
-type ColourHex = `#${string}`;
+export type ColourHex = `#${string}`;
 
 export interface PaletteEntry {
     /**

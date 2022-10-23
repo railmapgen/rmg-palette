@@ -1,6 +1,6 @@
-import { LanguageCode, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, LanguageCode, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
 import { createEntityAdapter, EntityState } from '@reduxjs/toolkit';
-import { ColourHex, TranslationInvalidReasonType } from '../../util/constants';
+import { TranslationInvalidReasonType } from '../../util/constants';
 
 export interface TranslationEntity {
     id: string;

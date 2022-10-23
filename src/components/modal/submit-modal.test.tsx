@@ -4,9 +4,8 @@ import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
-import { CountryCode, LanguageCode } from '@railmapgen/rmg-palette-resources';
+import { CountryCode, LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { createTranslationEntityInitialState } from '../../redux/ticket/util';
-import { MonoColour } from '../../util/constants';
 
 const realStore = rootReducer.getState();
 
