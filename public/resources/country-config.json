@@ -137,7 +137,9 @@
         "id": "ID",
         "name": {
             "en": "Indonesia",
-            "zh": "印度尼西亚"
+            "id": "Indonesia",
+            "zh-Hans": "印度尼西亚",
+            "zh-Hant": "印度尼西亞"
         }
     },
     {
