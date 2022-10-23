@@ -1,6 +1,7 @@
 import {
     CityCode,
     CityEntry,
+    ColourHex,
     CountryCode,
     CountryEntry,
     LanguageCode,
@@ -9,7 +10,7 @@ import {
 } from '@railmapgen/rmg-palette-resources';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { ColourHex, InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
+import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
 import {
     convertEntityStateToTranslation,
     createTranslationEntityInitialState,
