@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Button, Flex, Heading, HStack, IconButton } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
-import { MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
@@ -16,7 +16,6 @@ import {
 } from '../../redux/ticket/ticket-slice';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdAdd, MdContentCopy, MdDelete, MdEdit } from 'react-icons/md';
-import { ColourHex } from '../../util/constants';
 import { translationEntitySelector } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
