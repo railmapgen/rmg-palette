@@ -448,6 +448,15 @@
         }
     },
     {
+        "id": "manchester",
+        "country": "GBENG",
+        "name": {
+            "en": "Manchester",
+            "zh-Hans": "曼彻斯特",
+            "zh-Hant": "曼徹斯特"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
