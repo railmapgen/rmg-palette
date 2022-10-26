@@ -384,6 +384,15 @@
         }
     },
     {
+        "id": "kharkiv",
+        "country": "UA",
+        "name": {
+            "en": "Kharkiv",
+            "zh-Hans": "哈尔科夫",
+            "zh-Hant": "哈爾科夫"
+        }
+    },
+    {
         "id": "klangvalley",
         "country": "MY",
         "name": {

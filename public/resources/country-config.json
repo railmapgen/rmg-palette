@@ -314,6 +314,14 @@
         }
     },
     {
+        "id": "UA",
+        "name": {
+            "en": "Ukraine",
+            "zh-Hans": "乌克兰",
+            "zh-Hant": "烏克蘭"
+        }
+    },
+    {
         "id": "UN",
         "name": {
             "en": "Customise",
