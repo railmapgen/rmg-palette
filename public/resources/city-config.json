@@ -835,6 +835,15 @@
         }
     },
     {
+        "id": "yevpatoria",
+        "country": "UA",
+        "name": {
+            "en": "Yevpatoria",
+            "zh-Hans": "叶夫帕托里亚",
+            "zh-Hant": "葉夫帕托里亞"
+        }
+    },
+    {
         "id": "yokohama",
         "country": "JP",
         "name": {
