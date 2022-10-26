@@ -384,6 +384,15 @@
         }
     },
     {
+        "id": "kharkiv",
+        "country": "UA",
+        "name": {
+            "en": "Kharkiv",
+            "zh-Hans": "哈尔科夫",
+            "zh-Hant": "哈爾科夫"
+        }
+    },
+    {
         "id": "klangvalley",
         "country": "MY",
         "name": {
@@ -832,6 +841,15 @@
         "name": {
             "en": "Xi'an",
             "zh": "西安"
+        }
+    },
+    {
+        "id": "yevpatoria",
+        "country": "UA",
+        "name": {
+            "en": "Yevpatoria",
+            "zh-Hans": "叶夫帕托里亚",
+            "zh-Hant": "葉夫帕托里亞"
         }
     },
     {
