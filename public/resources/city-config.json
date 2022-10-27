@@ -742,6 +742,14 @@
         }
     },
     {
+        "id": "tashkent",
+        "country": "UZ",
+        "name": {
+            "en": "Tashkent",
+            "zh": "塔什干"
+        }
+    },
+    {
         "id": "tehran",
         "country": "IR",
         "name": {

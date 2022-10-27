@@ -338,6 +338,14 @@
         }
     },
     {
+        "id": "UZ",
+        "name": {
+            "en": "Uzbekistan",
+            "zh-Hans": "乌兹别克斯坦",
+            "zh-Hant": "烏茲別克斯坦"
+        }
+    },
+    {
         "id": "VN",
         "name": {
             "en": "Vietnam",
