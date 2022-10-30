@@ -31,7 +31,7 @@ export enum LanguageCode {
     Swedish = 'sv',
     Thai = 'th',
     Turkish = 'tr',
-    Uzbekistan = 'uz',
+    Uzbek = 'uz',
     Vietnamese = 'vn',
 }
 
