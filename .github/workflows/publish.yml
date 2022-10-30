@@ -24,7 +24,7 @@ jobs:
           ./scripts/prepublish.sh
         id: prepublish
 
-      - name: Pulish to npm
+      - name: Publish to npm
         run: |
           cd ./package/dist
           npm publish

@@ -1,12 +1,5 @@
 import { Translation } from '@railmapgen/rmg-translate';
 
-export type ColourHex = `#${string}`;
-
-export enum MonoColour {
-    black = '#000',
-    white = '#fff',
-}
-
 /**
  * @property {string} 0 - Chinese characters
  * @property {string} 1 - Latin characters
@@ -109,3 +102,11 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hant': '包含重複的語言',
     },
 };
+
+export enum Events {
+    APP_LOAD = 'APP_LOAD',
+
+    ADD_CITY = 'ADD_CITY',
+    EDIT_CITY = 'EDIT_CITY',
+    RESET_TICKET = 'RESET_TICKET',
+}

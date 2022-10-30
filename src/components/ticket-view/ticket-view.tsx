@@ -9,6 +9,8 @@ import SubmitModal from '../modal/submit-modal';
 import { useNavigate } from 'react-router-dom';
 import { RmgPage } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
+import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Events } from '../../util/constants';
 
 export default function TicketView() {
     const { t } = useTranslation();
@@ -16,6 +18,11 @@ export default function TicketView() {
     const navigate = useNavigate();
 
     const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+
+    const handleReset = () => {
+        dispatch(resetTicket());
+        rmgRuntime.event(Events.RESET_TICKET, {});
+    };
 
     return (
         <RmgPage
@@ -37,10 +44,10 @@ export default function TicketView() {
                 </Button>
 
                 <HStack ml="auto">
-                    <Button size="sm" variant="outline" onClick={() => dispatch(resetTicket())}>
+                    <Button size="sm" variant="outline" onClick={handleReset}>
                         {t('Reset')}
                     </Button>
-                    <Button size="sm" colorScheme="teal" onClick={() => setIsSubmitModalOpen(true)}>
+                    <Button size="sm" colorScheme="primary" onClick={() => setIsSubmitModalOpen(true)}>
                         {t('Submit')}
                     </Button>
                 </HStack>

@@ -8,6 +8,7 @@ export enum LanguageCode {
     ChineseTrad = 'zh-Hant',
     ChineseHK = 'zh-HK',
     ChineseTW = 'zh-TW',
+    Danish = 'da',
     English = 'en',
     French = 'fr',
     Gaelic = 'ga',
@@ -15,19 +16,22 @@ export enum LanguageCode {
     Greek = 'el',
     Hindi = 'hi',
     Hungarian = 'hu',
+    Indonesian = 'id',
     Italian = 'it',
     Japanese = 'ja',
     Korean = 'ko',
     Malay = 'ms',
     Norwegian = 'no',
-    Spanish = 'es',
     Persian = 'fa',
     Polish = 'pl',
     Portuguese = 'pt',
     Romanian = 'ro',
     Russian = 'ru',
+    Spanish = 'es',
     Swedish = 'sv',
+    Thai = 'th',
     Turkish = 'tr',
+    Uzbek = 'uz',
     Vietnamese = 'vn',
 }
 
@@ -38,7 +42,7 @@ export enum MonoColour {
     white = '#fff',
 }
 
-type ColourHex = `#${string}`;
+export type ColourHex = `#${string}`;
 
 export interface PaletteEntry {
     /**
@@ -90,4 +94,5 @@ export interface CountryEntry {
      * Key-value pairs of multi-lingual names of the country.
      */
     name: Translation;
+    language?: LanguageCode;
 }

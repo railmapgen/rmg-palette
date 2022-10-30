@@ -4,7 +4,7 @@
 // node --loader ts-node/esm .\checker\check.ts
 
 import { readFileSync, readdirSync } from 'fs';
-import { is } from 'typescript-is';
+import { equals, assertEquals } from "typescript-json";
 
 import { PaletteEntry, CityEntry, CountryEntry } from './constants';
 
@@ -13,9 +13,7 @@ console.log('Hi, this is the RMG bot who will validate json resources.');
 // check city-config.json follows the CityEntry[]
 const checkCityConfig = (): string[] => {
     const rawCityConfig = JSON.parse(readFileSync('../public/resources/city-config.json', 'utf-8'));
-    if (!is<CityEntry[]>(rawCityConfig)) {
-        throw new TypeError("city-config.json doesn't follow the CityEntry[]");
-    }
+    assertEquals<CityEntry[]>(rawCityConfig);
     // record all the cities shown in the city-config
     const cityConfig = rawCityConfig as unknown as CityEntry[];
     const cityCode = cityConfig.map(city => city.id);
@@ -37,25 +35,18 @@ const checkCorrespondence = (cityCode: string[]) => {
 };
 
 // check each city json follows the PaletteEntry[]
-const checkCity = () => {
-    const invalidCityFilenames = readdirSync('../public/resources/palettes/', 'utf-8')
+const checkCity = () =>
+    readdirSync('../public/resources/palettes/', 'utf-8')
         .map(cityFilename => `../public/resources/palettes/${cityFilename}`)
-        .map(cityFilename => {
-            return { filename: cityFilename, content: JSON.parse(readFileSync(cityFilename, 'utf-8')) };
-        })
-        .filter(cityFile => !is<PaletteEntry[]>(cityFile.content))
-        .map(cityFile => cityFile.filename);
-    if (invalidCityFilenames.length > 0) {
-        throw new TypeError(`${invalidCityFilenames} doesn't follow the CityEntry[]`);
-    }
-};
+        .map(cityFilename => JSON.parse(readFileSync(cityFilename, 'utf-8')))
+        .forEach(cityFileContent => {
+            assertEquals<PaletteEntry[]>(cityFileContent);
+        });
 
 // check country-config.json follows the CountryEntry[]
 const checkCountryConfig = (): string[] => {
     const rawCountryConfig = JSON.parse(readFileSync('../public/resources/country-config.json', 'utf-8'));
-    if (!is<CountryEntry[]>(rawCountryConfig)) {
-        throw new TypeError("country-config.json doesn't follow the CountryEntry[]");
-    }
+    assertEquals<CountryEntry[]>(rawCountryConfig);
     // record all the countries shown in the country-config
     const countryConfig = rawCountryConfig as unknown as CountryEntry[];
     const countryCode = countryConfig.map(country => country.id);

@@ -56,6 +56,15 @@
         }
     },
     {
+        "id": "bonn",
+        "country": "DE",
+        "name": {
+            "en": "Bonn",
+            "de": "Bonn",
+            "zh": "波恩"
+        }
+    },
+    {
         "id": "boston",
         "country": "US",
         "name": {
@@ -129,12 +138,20 @@
         }
     },
     {
+        "id": "cologne",
+        "country": "DE",
+        "name": {
+            "en": "Cologne",
+            "de": "Köln",
+            "zh": "科隆"
+        }
+    },
+    {
         "id": "copenhagen",
         "country": "DK",
         "name": {
             "en": "Copenhagen",
-            "zh-Hans": "哥本哈根",
-            "zh-Hant": "哥本哈根"
+            "zh": "哥本哈根"
         }
     },
     {
@@ -161,8 +178,7 @@
         "name": {
             "en": "Delhi",
             "hi": "दिल्ली",
-            "zh-Hans": "德里",
-            "zh-Hant": "德里"
+            "zh": "德里"
         }
     },
     {
@@ -180,8 +196,7 @@
         "name": {
             "en": "Dortmund",
             "de": "Dortmund",
-            "zh-Hans": "多特蒙德",
-            "zh-Hant": "多特蒙德"
+            "zh": "多特蒙德"
         }
     },
     {
@@ -237,8 +252,7 @@
         "name": {
             "en": "Gothenburg",
             "es": "Göteborg",
-            "zh-Hans": "哥德堡",
-            "zh-Hant": "哥德堡"
+            "zh": "哥德堡"
         }
     },
     {
@@ -247,7 +261,7 @@
         "name": {
             "en": "Guadalajara",
             "es": "Guadalajara",
-            "zh-Hans": "瓜达拉哈拉 ",
+            "zh-Hans": "瓜达拉哈拉",
             "zh-Hant": "瓜達拉哈拉"
         }
     },
@@ -296,6 +310,16 @@
         }
     },
     {
+        "id": "hiroshima",
+        "country": "JP",
+        "name": {
+            "en": "Hiroshima",
+            "zh-Hans": "广岛",
+            "zh-Hant": "廣島",
+            "ja": "広島"
+        }
+    },
+    {
         "id": "hochiminh",
         "country": "VN",
         "name": {
@@ -320,6 +344,16 @@
             "tr": "İstanbul",
             "zh-Hans": "伊斯坦布尔",
             "zh-Hant": "伊斯坦堡"
+        }
+    },
+    {
+        "id": "jakarta",
+        "country": "ID",
+        "name": {
+            "en": "Jakarta",
+            "id": "Jakarta",
+            "zh-Hans": "雅加达",
+            "zh-Hant": "雅加達"
         }
     },
     {
@@ -350,13 +384,21 @@
         }
     },
     {
+        "id": "kharkiv",
+        "country": "UA",
+        "name": {
+            "en": "Kharkiv",
+            "zh-Hans": "哈尔科夫",
+            "zh-Hant": "哈爾科夫"
+        }
+    },
+    {
         "id": "klangvalley",
         "country": "MY",
         "name": {
             "en": "Greater KL/Klang Valley",
-            "ms": "Greater KL/Klang Valley",
-            "zh-Hans": "大吉隆坡/巴生谷",
-            "zh-Hant": "大吉隆坡/巴生谷"
+            "ms": "Kuala Lumpur Raya/Lembah Klang",
+            "zh": "大吉隆坡/巴生谷"
         }
     },
     {
@@ -412,6 +454,15 @@
             "en": "Madrid",
             "zh-Hans": "马德里",
             "zh-Hant": "馬德里"
+        }
+    },
+    {
+        "id": "manchester",
+        "country": "GBENG",
+        "name": {
+            "en": "Manchester",
+            "zh-Hans": "曼彻斯特",
+            "zh-Hant": "曼徹斯特"
         }
     },
     {
@@ -691,6 +742,14 @@
         }
     },
     {
+        "id": "tashkent",
+        "country": "UZ",
+        "name": {
+            "en": "Tashkent",
+            "zh": "塔什干"
+        }
+    },
+    {
         "id": "tehran",
         "country": "IR",
         "name": {
@@ -790,6 +849,15 @@
         "name": {
             "en": "Xi'an",
             "zh": "西安"
+        }
+    },
+    {
+        "id": "yevpatoria",
+        "country": "UA",
+        "name": {
+            "en": "Yevpatoria",
+            "zh-Hans": "叶夫帕托里亚",
+            "zh-Hant": "葉夫帕托里亞"
         }
     },
     {

@@ -198,13 +198,13 @@ export default function SubmitModal(props: SubmitModalProps) {
                     {!isIgnoreErrors && isContainError ? (
                         <HStack>
                             <Button onClick={() => setIsIgnoreErrors(true)}>{t('Submit anyway')}</Button>
-                            <Button colorScheme="teal" onClick={onClose}>
+                            <Button colorScheme="primary" onClick={onClose}>
                                 {t('Go back')}
                             </Button>
                         </HStack>
                     ) : (
                         <Button
-                            colorScheme="teal"
+                            colorScheme="primary"
                             onClick={() =>
                                 window.open(
                                     'https://github.com/railmapgen/rmg-palette/issues/new?' +
