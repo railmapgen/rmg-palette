@@ -1,5 +1,5 @@
-import { CountryEntry } from '../checker/constants';
-import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, appendFileSync} from 'fs';
+import { CountryEntry, LanguageCode } from '../checker/constants';
+import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'fs';
 import { copyFlagSvgFromResources, getFlagEmoji, getFlagSvg } from './emoji-util';
 import { inspect } from 'util';
 
@@ -21,6 +21,14 @@ if (!existsSync(distPath)) mkdirSync(distPath);
 
 if (!existsSync('./dist/flags')) mkdirSync('./dist/flags', { recursive: true });
 
+export const getLanguageName = (langCode?: string) => {
+    const langName = Object.entries(LanguageCode).find(entry => entry[1] === langCode)?.[0];
+    if (langName) {
+        return 'LanguageCode.' + langName;
+    } else {
+        return undefined;
+    }
+};
 
 const updatedConfig = countryConfig.map(country => {
     return {
@@ -28,6 +36,7 @@ const updatedConfig = countryConfig.map(country => {
         id: `CountryCode.${capitalize(country.id)}`,
         flagEmoji: getFlagEmoji(country.id),
         flagSvg: getFlagSvg(country.id),
+        language: getLanguageName(country.language),
     };
 });
 
@@ -39,8 +48,7 @@ Promise.all(
 ).then();
 
 export const getCountryConfigText = () => {
-    return `export const countryList: CountryEntry[] = ${inspect(updatedConfig)};\r\n`.replace(
-        /'(CountryCode.\w+)'/g,
-        '$1'
-    );
+    return `export const countryList: CountryEntry[] = ${inspect(updatedConfig)};\r\n`
+        .replace(/'(CountryCode.\w+)'/g, '$1')
+        .replace(/'(LanguageCode.\w+)'/g, '$1');
 };

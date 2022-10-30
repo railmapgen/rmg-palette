@@ -8,6 +8,7 @@ export enum LanguageCode {
     ChineseTrad = 'zh-Hant',
     ChineseHK = 'zh-HK',
     ChineseTW = 'zh-TW',
+    Danish = 'da',
     English = 'en',
     French = 'fr',
     Gaelic = 'ga',
@@ -21,14 +22,16 @@ export enum LanguageCode {
     Korean = 'ko',
     Malay = 'ms',
     Norwegian = 'no',
-    Spanish = 'es',
     Persian = 'fa',
     Polish = 'pl',
     Portuguese = 'pt',
     Romanian = 'ro',
     Russian = 'ru',
+    Spanish = 'es',
     Swedish = 'sv',
+    Thai = 'th',
     Turkish = 'tr',
+    Uzbekistan = 'uz',
     Vietnamese = 'vn',
 }
 
@@ -91,4 +94,5 @@ export interface CountryEntry {
      * Key-value pairs of multi-lingual names of the country.
      */
     name: Translation;
+    language?: LanguageCode;
 }
