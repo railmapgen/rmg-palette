@@ -258,5 +258,15 @@
             "zh-Hans": "黄埔有轨1号线",
             "zh-Hant": "黃埔有軌1號線"
         }
+    },
+    {
+        "id": "gz24",
+        "colour": "#7bcfb7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
+        }
     }
 ]
