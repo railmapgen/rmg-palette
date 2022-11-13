@@ -4,13 +4,14 @@ import {
     ColourHex,
     CountryCode,
     CountryEntry,
+    countryList,
     LanguageCode,
     MonoColour,
     PaletteEntry,
 } from '@railmapgen/rmg-palette-resources';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
+import { InvalidReasonType, TicketInvalidReasonType, TranslationInvalidReasonType } from '../../util/constants';
 import {
     convertEntityStateToTranslation,
     createTranslationEntityInitialState,
@@ -208,14 +209,14 @@ export const ticketSelectors = {
 
     getCountryErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
-        const { country, newCountry, countryName } = state;
+        const { country, newCountry, newCountryLang,countryName } = state;
 
         if (!country || (country === 'new' && !newCountry)) {
             result.push(TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED);
         }
 
         if (country === 'new') {
-            result.push(...getTranslationEntityInvalidReasons(countryName));
+            result.push(...getTranslationEntityInvalidReasons(countryName, newCountryLang));
         }
 
         return result;
@@ -223,20 +224,22 @@ export const ticketSelectors = {
 
     getCityErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
-        const { city, cityName } = state;
+        const { country, newCountryLang, city, cityName } = state;
 
         if (!city) {
             result.push(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
         }
-
-        result.push(...getTranslationEntityInvalidReasons(cityName));
+        //if the case is a new country has officalLanguage then get it, otherwise find the exisiting country officalLanguage - see if it is filled
+        const officialLanguage =
+            country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
+        result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguage));
 
         return result;
     },
 
     getLineErrors: (state: TicketState): Record<string, InvalidReasonType[]> => {
         const result: Record<string, InvalidReasonType[]> = { Overall: [] };
-        const { lines } = state;
+        const { country, newCountryLang, lines } = state;
 
         if (Object.values(lines).some(line => line.id === '')) {
             result['Overall'].push(TicketInvalidReasonType.LINE_CODE_UNDEFINED);
@@ -246,8 +249,10 @@ export const ticketSelectors = {
             result['Overall'].push(TicketInvalidReasonType.LINE_CODE_DUPLICATED);
         }
 
+        const officialLanguage =
+            country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
         Object.values(lines).forEach(line => {
-            result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity);
+            result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity, officialLanguage);
         });
 
         return result;
