@@ -39,7 +39,8 @@ export default function CountrySection() {
         new: t('Add a country/region...'),
     };
 
-    const languageOptions = Object.entries(LanguageCode).reduce<Record<string, string>>((acc, cur) => {
+    const languageOptions = Object.entries(LanguageCode).reduce<Record<string, string>>(
+        (acc, cur) => {
             return { ...acc, [cur[1]]: cur[0] };
         },
         { '': t('Please select...') }
@@ -66,7 +67,7 @@ export default function CountrySection() {
             label: t('Offical language'),
             value: newCountryLang,
             options: languageOptions,
-            onChange: value => dispatch(setNewCountryLang(value? value as LanguageCode: undefined)),
+            onChange: value => dispatch(setNewCountryLang(value ? (value as LanguageCode) : undefined)),
             hidden: country !== 'new',
         },
     ];
