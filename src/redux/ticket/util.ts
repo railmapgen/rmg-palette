@@ -97,7 +97,7 @@ export const getTranslationEntityInvalidReasons = (
     }
 
     //Offical Language
-    if (offcialLanguage && !Object.keys(entities).includes(offcialLanguage)) {
+    if (offcialLanguage && entities.every(entity => entity.lang !== offcialLanguage)) {
         result.push(TranslationInvalidReasonType.OFFICAL_LANGUAGE_UNDEFINED);
     }
 
