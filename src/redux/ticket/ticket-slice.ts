@@ -209,7 +209,7 @@ export const ticketSelectors = {
 
     getCountryErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
-        const { country, newCountry, newCountryLang,countryName } = state;
+        const { country, newCountry, newCountryLang, countryName } = state;
 
         if (!country || (country === 'new' && !newCountry)) {
             result.push(TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED);

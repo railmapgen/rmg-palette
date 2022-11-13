@@ -102,7 +102,7 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hans': '包含重复的语言',
         'zh-Hant': '包含重複的語言',
     },
-    OFFICAL_LANGUAGE_UNDEFINED:{
+    OFFICAL_LANGUAGE_UNDEFINED: {
         en: 'Name in offcial language is missing',
         'zh-Hans': '缺少官方语言名称',
         'zh-Hant': '缺少官方語言名稱',
