@@ -33,7 +33,8 @@ export const convertEntityStateToTranslation = (entityState: EntityState<Transla
 };
 
 export const getTranslationEntityInvalidReasons = (
-    entityState: EntityState<TranslationEntity>
+    entityState: EntityState<TranslationEntity>,
+    offcialLanguage?: LanguageCode
 ): TranslationInvalidReasonType[] => {
     const result = [];
     const entities = translationEntitySelector.selectAll(entityState);
@@ -93,6 +94,11 @@ export const getTranslationEntityInvalidReasons = (
     // Duplication
     if (new Set(entities.map(entity => entity.lang)).size !== entities.length) {
         result.push(TranslationInvalidReasonType.LANGUAGE_DUPLICATED);
+    }
+
+    //Offical Language
+    if (offcialLanguage && entities.every(entity => entity.lang !== offcialLanguage)) {
+        result.push(TranslationInvalidReasonType.OFFICAL_LANGUAGE_UNDEFINED);
     }
 
     return result;
