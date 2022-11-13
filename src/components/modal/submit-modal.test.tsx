@@ -39,7 +39,9 @@ describe('SubmitModal', () => {
                 city: 'hongkong',
                 cityName: createTranslationEntityInitialState([
                     { id: '001', lang: LanguageCode.English, name: 'Hong Kong' },
-                    { id: '002', lang: LanguageCode.Chinese, name: '香港' },
+                    { id: '002', lang: LanguageCode.ChineseSimp, name: '香港' },
+                    { id: '003', lang: LanguageCode.ChineseHK, name: '香港' },
+                    { id: '004', lang: LanguageCode.ChineseTW, name: '香港' },
                 ]),
                 lines: {
                     '991': {
@@ -47,7 +49,8 @@ describe('SubmitModal', () => {
                         nameEntity: createTranslationEntityInitialState([
                             { id: '801', lang: LanguageCode.English, name: 'Kwun Tong Line' },
                             { id: '802', lang: LanguageCode.ChineseSimp, name: '观塘线' },
-                            { id: '803', lang: LanguageCode.ChineseTrad, name: '觀塘綫' },
+                            { id: '803', lang: LanguageCode.ChineseHK, name: '觀塘綫' },
+                            { id: '804', lang: LanguageCode.ChineseTW, name: '觀塘綫' },
                         ]),
                         colour: '#AAAAAA',
                         fg: MonoColour.white,
