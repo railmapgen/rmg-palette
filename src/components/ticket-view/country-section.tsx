@@ -7,12 +7,14 @@ import {
     removeCountryName,
     setCountry,
     setNewCountry,
+    setNewCountryLang,
     updateCountryName,
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
+import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();
@@ -20,7 +22,7 @@ export default function CountrySection() {
 
     const dispatch = useRootDispatch();
 
-    const { country, newCountry, countryName } = useRootSelector(state => state.ticket);
+    const { country, newCountry, countryName, newCountryLang } = useRootSelector(state => state.ticket);
 
     const countryOptions = {
         ...countryList
@@ -37,6 +39,12 @@ export default function CountrySection() {
         new: t('Add a country/region...'),
     };
 
+    const languageOptions = Object.entries(LanguageCode).reduce<Record<string, string>>((acc, cur) => {
+            return { ...acc, [cur[1]]: cur[0] };
+        },
+        { '': t('Please select...') }
+    );
+
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
@@ -51,6 +59,14 @@ export default function CountrySection() {
             placeholder: 'e.g. CN, HK, JP (ISO 3166-1 alpha-2)',
             value: newCountry,
             onChange: value => dispatch(setNewCountry(value)),
+            hidden: country !== 'new',
+        },
+        {
+            type: 'select',
+            label: t('Offical language'),
+            value: newCountryLang,
+            options: languageOptions,
+            onChange: value => dispatch(setNewCountryLang(value? value as LanguageCode: undefined)),
             hidden: country !== 'new',
         },
     ];

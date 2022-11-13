@@ -38,6 +38,7 @@ export interface TicketState {
     country?: CountryCode | 'new';
     newCountry: string;
     countryName: EntityState<TranslationEntity>;
+    newCountryLang?: LanguageCode;
 
     // city
     city: string;
@@ -50,6 +51,7 @@ export interface TicketState {
 const initialState: TicketState = {
     country: undefined,
     newCountry: '',
+    newCountryLang: undefined,
     countryName: initialTranslation,
 
     city: '',
@@ -68,6 +70,10 @@ const ticketSlice = createSlice({
 
         setNewCountry: (state, action: PayloadAction<string>) => {
             state.newCountry = action.payload;
+        },
+
+        setNewCountryLang: (state, action: PayloadAction<LanguageCode | undefined>) => {
+            state.newCountryLang = action.payload;
         },
 
         updateCountryName: (state, action: PayloadAction<{ id: EntityId; changes: Partial<TranslationEntity> }>) => {
@@ -181,6 +187,7 @@ export const ticketSelectors = {
         return {
             id: state.newCountry as CountryCode,
             name: convertEntityStateToTranslation(state.countryName),
+            language: state.newCountryLang,
         };
     },
 
@@ -250,6 +257,7 @@ export const ticketSelectors = {
 export const {
     setCountry,
     setNewCountry,
+    setNewCountryLang,
     updateCountryName,
     addCountryName,
     removeCountryName,
