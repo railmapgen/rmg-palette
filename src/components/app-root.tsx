@@ -5,8 +5,8 @@ import { RmgWindow } from '@railmapgen/rmg-components';
 import FallbackLoader from './fallback-loader';
 import ErrorBoundary from '../error-boundary';
 
-const PaletteView = lazy(() => import(/* webpackChunkName: "PaletteView" */ './palette-view/palette-view'));
-const TicketView = lazy(() => import(/* webpackChunkName: "TicketView" */ './ticket-view/ticket-view'));
+const PaletteView = lazy(() => import('./palette-view/palette-view'));
+const TicketView = lazy(() => import('./ticket-view/ticket-view'));
 
 export default function AppRoot() {
     return (

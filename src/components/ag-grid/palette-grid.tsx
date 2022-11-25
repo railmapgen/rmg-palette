@@ -68,7 +68,7 @@ export default function PaletteGrid() {
             const city = cityList.find(city => city.id === id)!;
 
             const paletteModule = await import(
-                /* webpackChunkName: "palettes" */ `@railmapgen/rmg-palette-resources/palettes/${id}.js`
+                `../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${id}.js`
             );
             const { default: palettes } = paletteModule;
 
