@@ -10,7 +10,7 @@ const TicketView = lazy(() => import(/* webpackChunkName: "TicketView" */ './tic
 
 export default function AppRoot() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <RmgWindow>
                 <WindowHeader />
                 <Routes>
