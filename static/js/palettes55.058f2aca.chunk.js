@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkrmg_palette=self.webpackChunkrmg_palette||[]).push([[5288],{3451:function(e,n,t){t.r(n);var a=t(2638),h=[{id:"nt1",colour:"#e04461",fg:a.AJ.white,name:{en:"Line 1","zh-Hans":"1\u53f7\u7ebf","zh-Hant":"1\u865f\u7dab"}},{id:"nt2",colour:"#0073cf",fg:a.AJ.white,name:{en:"Line 2","zh-Hans":"2\u53f7\u7ebf","zh-Hant":"2\u865f\u7dab"}}];n.default=h}}]);
-//# sourceMappingURL=palettes55.058f2aca.chunk.js.map
