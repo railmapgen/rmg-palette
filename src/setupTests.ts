@@ -1,6 +1,7 @@
 import { RootState } from './redux';
 import createMockStore from 'redux-mock-store';
 import { getDefaultMiddleware, ThunkDispatch } from '@reduxjs/toolkit';
+import { TextEncoder } from 'util';
 
 // FIXME: any -> AnyAction?
 type DispatchExts = ThunkDispatch<RootState, void, any>;
@@ -32,3 +33,5 @@ global.fetch = (...args) => {
         return originalFetch(...args);
     }
 };
+
+global.TextEncoder = TextEncoder;
