@@ -1,0 +1,62 @@
+[
+    {
+        "id": "bs1",
+        "colour": "#f06a00",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "ko": "1호선",
+            "zh": "1号线"
+        }
+    },
+    {
+        "id": "bs2",
+        "colour": "#81bf48",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "ko": "2호선",
+            "zh": "2号线"
+        }
+    },
+    {
+        "id": "bs3",
+        "colour": "#bb8c00",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "ko": "3호선",
+            "zh": "3号线"
+        }
+    },
+    {
+        "id": "bs4",
+        "colour": "#217dcb",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "ko": "4호선",
+            "zh": "4号线"
+        }
+    },
+    {
+        "id": "bsg",
+        "colour": "#8f65b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Busan–Gimhae Light Rail Transit",
+            "ko": "부산-김해 경전철",
+            "zh": "釜山－金海轻电铁"
+        }
+    },
+    {
+        "id": "bsd",
+        "colour": "#004ea3",
+        "fg": "#fff",
+        "name": {
+            "en": "Donghae Line",
+            "ko": "동해선",
+            "zh": "东海线"
+        }
+    }
+]
