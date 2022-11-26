@@ -505,6 +505,16 @@
         }
     },
     {
+        "id": "nagoya",
+        "country": "JP",
+        "name": {
+            "en": "Nagoya (Chūkyō Area)",
+            "ja": "名古屋（中京圏）",
+            "zh-Hans": "名古屋（中京圈）",
+            "zh-Hant": "名古屋（中京圈）"
+        }
+    },
+    {
         "id": "nanjing",
         "country": "CN",
         "name": {
