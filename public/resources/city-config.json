@@ -760,6 +760,15 @@
         }
     },
     {
+        "id": "taoyuan",
+        "country": "TW",
+        "name": {
+            "en": "Taoyuan",
+            "zh-Hans": "桃园",
+            "zh-Hant": "桃園"
+        }
+    },
+    {
         "id": "tashkent",
         "country": "UZ",
         "name": {
