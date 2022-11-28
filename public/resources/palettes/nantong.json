@@ -1,7 +1,7 @@
 [
     {
         "id": "nt1",
-        "colour": "#e04461",
+        "colour": "#e6000d",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "nt2",
-        "colour": "#0073cf",
+        "colour": "#5d9ccf",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
