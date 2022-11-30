@@ -1,1 +1,0 @@
-import{M as n}from"./index.2f6cbf84.js";import"./vendor.396a8425.js";const e=[{id:"nt1",colour:"#e04461",fg:n.white,name:{en:"Line 1","zh-Hans":"1\u53F7\u7EBF","zh-Hant":"1\u865F\u7DAB"}},{id:"nt2",colour:"#0073cf",fg:n.white,name:{en:"Line 2","zh-Hans":"2\u53F7\u7EBF","zh-Hant":"2\u865F\u7DAB"}}];export{e as default};

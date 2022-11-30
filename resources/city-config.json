@@ -93,15 +93,6 @@
         }
     },
     {
-        "id": "busan",
-        "country": "KR",
-        "name": {
-            "en": "Busan",
-            "ko": "부산",
-            "zh": "釜山"
-        }
-    },
-    {
         "id": "cairo",
         "country": "EG",
         "name": {
@@ -505,30 +496,11 @@
         }
     },
     {
-        "id": "nagoya",
-        "country": "JP",
-        "name": {
-            "en": "Nagoya (Chūkyō Area)",
-            "ja": "名古屋（中京圏）",
-            "zh-Hans": "名古屋（中京圈）",
-            "zh-Hant": "名古屋（中京圈）"
-        }
-    },
-    {
         "id": "nanjing",
         "country": "CN",
         "name": {
             "en": "Nanjing",
             "zh": "南京"
-        }
-    },
-    {
-        "id": "nantong",
-        "country": "CN",
-        "name": {
-            "en": "Nantong",
-            "zh-Hans": "南通",
-            "zh-Hant": "南通"
         }
     },
     {
@@ -767,15 +739,6 @@
         "name": {
             "en": "Taipei",
             "zh": "台北"
-        }
-    },
-    {
-        "id": "taoyuan",
-        "country": "TW",
-        "name": {
-            "en": "Taoyuan",
-            "zh-Hans": "桃园",
-            "zh-Hant": "桃園"
         }
     },
     {
