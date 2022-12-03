@@ -788,15 +788,6 @@
         }
     },
     {
-        "id": "toronto",
-        "country": "CA",
-        "name": {
-            "en": "Toronto",
-            "zh-Hans": "多伦多",
-            "zh-Hant": "多倫多"
-        }
-    },
-    {
         "id": "tyneandwear",
         "country": "GBENG",
         "name": {
