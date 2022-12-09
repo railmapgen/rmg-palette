@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
       - uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
