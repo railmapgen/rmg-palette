@@ -1,3 +1,4 @@
+import React from 'react';
 import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/app-slice';

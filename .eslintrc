@@ -1,6 +1,7 @@
 {
-    "extends": ["react-app", "react-app/jest"],
-    "plugins": ["prettier"],
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["prettier", "react", "@typescript-eslint"],
     "rules": {
         "prettier/prettier": [
             "warn",
@@ -15,6 +16,17 @@
                 "component": true
             }
         ],
-        "@typescript-eslint/no-unused-vars": "off"
-    }
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-explicit-any": "off"
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "ignorePatterns": ["**/*.json"]
 }
