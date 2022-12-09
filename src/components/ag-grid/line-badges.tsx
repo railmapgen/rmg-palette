@@ -1,6 +1,6 @@
 import { HStack } from '@chakra-ui/react';
 import { CityCode, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RmgLineBadge } from '@railmapgen/rmg-components';
 import useTranslatedName from '../hooks/use-translated-name';
 

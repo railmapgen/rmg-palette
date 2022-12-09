@@ -1,4 +1,3 @@
-import React from 'react';
 import { TestingProvider } from '../../test-utils';
 import CountrySection from './country-section';
 import { render, screen } from '@testing-library/react';

@@ -1,5 +1,5 @@
 import { RmgAgGrid } from '@railmapgen/rmg-components';
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';

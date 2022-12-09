@@ -1,7 +1,16 @@
 {
-    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
+        "plugin:@typescript-eslint/recommended"
+    ],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["prettier", "react", "@typescript-eslint"],
+    "plugins": [
+        "prettier",
+        "react",
+        "@typescript-eslint"
+    ],
     "rules": {
         "prettier/prettier": [
             "warn",
@@ -9,15 +18,13 @@
                 "endOfLine": "auto"
             }
         ],
-        "react-hooks/exhaustive-deps": "off",
-        "react/self-closing-comp": [
-            "error",
-            {
-                "component": true
-            }
-        ],
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-explicit-any": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     },
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -28,5 +35,7 @@
         "es6": true,
         "node": true
     },
-    "ignorePatterns": ["**/*.json"]
+    "ignorePatterns": [
+        "**/*.json"
+    ]
 }

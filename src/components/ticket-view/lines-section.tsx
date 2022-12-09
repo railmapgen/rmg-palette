@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Box, Button, Flex, Heading, HStack, IconButton } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
 import { ColourHex, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';

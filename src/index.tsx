@@ -1,5 +1,5 @@
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import React, { StrictMode } from 'react';
+import { StrictMode } from 'react';
 import { createRoot, Root } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import store from './redux';

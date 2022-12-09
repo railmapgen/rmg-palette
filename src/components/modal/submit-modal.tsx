@@ -16,7 +16,7 @@ import {
     Text,
     UnorderedList,
 } from '@chakra-ui/react';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
     getGitHubIssueDetailsBlock,
     GITHUB_ISSUE_PREAMBLE,
