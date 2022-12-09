@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '../../test-utils';
+import { vi } from 'vitest';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { screen, within } from '@testing-library/react';
@@ -11,9 +12,9 @@ const mockEntries = translationEntityAdapter.upsertMany(translationEntityAdapter
 ]);
 
 const mockCallbacks = {
-    onUpdate: jest.fn(),
-    onAdd: jest.fn(),
-    onRemove: jest.fn(),
+    onUpdate: vi.fn(),
+    onAdd: vi.fn(),
+    onRemove: vi.fn(),
 };
 
 describe('MultiLangEntryCard', () => {

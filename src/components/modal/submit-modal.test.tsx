@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '../../test-utils';
+import { vi } from 'vitest';
 import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
@@ -10,7 +11,7 @@ import { createTranslationEntityInitialState } from '../../redux/ticket/util';
 const realStore = rootReducer.getState();
 
 const mockCallbacks = {
-    onClose: jest.fn(),
+    onClose: vi.fn(),
 };
 
 describe('SubmitModal', () => {
