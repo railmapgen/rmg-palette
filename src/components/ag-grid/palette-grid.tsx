@@ -1,5 +1,5 @@
 import { RmgAgGrid } from '@railmapgen/rmg-components';
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
@@ -65,16 +65,19 @@ export default function PaletteGrid() {
 
     const handleCityEdit = async (id: string) => {
         try {
-            const city = cityList.find(city => city.id === id)!;
+            const city = cityList.find(city => city.id === id);
+            if (city) {
+                const paletteModule = await import(
+                    `../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${id}.js`
+                );
+                const { default: palettes } = paletteModule;
 
-            const paletteModule = await import(
-                `../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${id}.js`
-            );
-            const { default: palettes } = paletteModule;
-
-            dispatch(populateTicket({ city, palettes }));
-            navigate('/new');
-            rmgRuntime.event(Events.EDIT_CITY, { city: city.id });
+                dispatch(populateTicket({ city, palettes }));
+                navigate('/new');
+                rmgRuntime.event(Events.EDIT_CITY, { city: city.id });
+            } else {
+                throw new Error('Input city ID is invalid');
+            }
         } catch (e) {
             console.error('PaletteGrid.handleCityEdit():: Unexpected errors', e);
         }

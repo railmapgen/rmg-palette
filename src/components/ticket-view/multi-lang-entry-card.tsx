@@ -1,5 +1,5 @@
 import { RmgCard, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-import React from 'react';
+
 import { Box, HStack, IconButton } from '@chakra-ui/react';
 import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';

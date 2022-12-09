@@ -1,5 +1,5 @@
 import { Button, Flex, HStack } from '@chakra-ui/react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CountrySection from './country-section';
 import CitySection from './city-section';
 import LinesSection from './lines-section';
