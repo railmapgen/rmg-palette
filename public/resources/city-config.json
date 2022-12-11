@@ -103,6 +103,15 @@
         }
     },
     {
+        "id": "caracas",
+        "country": "VE",
+        "name": {
+            "en": "Caracas",
+            "es": "Caracas",
+            "zh": "加拉加斯"
+        }
+    },
+    {
         "id": "changchun",
         "country": "CN",
         "name": {
