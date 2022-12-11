@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Heading } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';

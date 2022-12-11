@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heading, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
 import { RmgEnvBadge, RmgWindowHeader } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
