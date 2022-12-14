@@ -21,6 +21,16 @@
         "language": "az"
     },
     {
+        "id": "BO",
+        "name": {
+            "en": "Bolivia",
+            "zh-Hans": "玻利维亚",
+            "zh-Hant": "玻利維亞",
+            "es": "Bolivia"
+        },
+        "language": "es"
+    },
+    {
         "id": "BR",
         "name": {
             "en": "Brazil",
