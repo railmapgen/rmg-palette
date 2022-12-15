@@ -41,7 +41,43 @@
         "fg": "#fff",
         "name": {
             "zh": "5号线",
-            "en": "Line5"
+            "en": "Line 5"
+        }
+    },
+    {
+        "id": "hf6",
+        "colour": "#613ee0",
+        "fg": "#fff",
+        "name": {
+            "zh": "6号线",
+            "en": "Line 6"
+        }
+    },
+    {
+        "id": "hf7",
+        "colour": "#fee920",
+        "fg": "#fff",
+        "name": {
+            "zh": "7号线",
+            "en": "Line 7"
+        }
+    },
+    {
+        "id": "hf8",
+        "colour": "#2bd6f3",
+        "fg": "#fff",
+        "name": {
+            "zh": "8号线",
+            "en": "Line 8"
+        }
+    },
+    {
+        "id": "hfs1",
+        "colour": "#905730",
+        "fg": "#fff",
+        "name": {
+            "zh": "S1号线",
+            "en": "Line S1"
         }
     }
 ]
