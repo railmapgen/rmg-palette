@@ -457,6 +457,15 @@
         }
     },
     {
+        "id": "luoyang",
+        "country": "CN",
+        "name": {
+            "en": "Luoyang",
+            "zh-Hans": "洛阳",
+            "zh-Hant": "洛陽"
+        }
+    },
+    {
         "id": "macao",
         "country": "MO",
         "name": {
