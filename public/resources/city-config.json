@@ -779,6 +779,14 @@
         }
     },
     {
+        "id": "taiyuan",
+        "country": "CN",
+        "name": {
+            "en": "Taiyuan",
+            "zh-Hans": "太原"
+        }
+    },
+    {
         "id": "tashkent",
         "country": "UZ",
         "name": {
