@@ -303,6 +303,16 @@
         }
     },
     {
+        "id": "hamburg",
+        "country": "DE",
+        "name": {
+            "en": "Hamburg",
+            "de": "Hamburg",
+            "zh-Hans": "汉堡",
+            "zh-Hant": "漢堡"
+        }
+    },
+    {
         "id": "hangzhou",
         "country": "CN",
         "name": {
