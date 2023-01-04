@@ -147,6 +147,15 @@
         }
     },
     {
+        "id": "cochabamba",
+        "country": "BO",
+        "name": {
+            "es": "Cochabamba",
+            "zh": "科恰班巴",
+            "en": "Cochabamba"
+        }
+    },
+    {
         "id": "cologne",
         "country": "DE",
         "name": {
