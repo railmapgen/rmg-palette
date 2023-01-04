@@ -147,6 +147,15 @@
         }
     },
     {
+        "id": "cochabamba",
+        "country": "BO",
+        "name": {
+            "es": "Cochabamba",
+            "zh": "科恰班巴",
+            "en": "Cochabamba"
+        }
+    },
+    {
         "id": "cologne",
         "country": "DE",
         "name": {
@@ -566,6 +575,14 @@
             "en": "Ningbo",
             "zh-Hans": "宁波",
             "zh-Hant": "寧波"
+        }
+    },
+    {
+        "id": "ny",
+        "country": "US",
+        "name": {
+            "en": "New York",
+            "zh-Hans": "纽约"
         }
     },
     {
