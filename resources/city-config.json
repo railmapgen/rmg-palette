@@ -147,6 +147,15 @@
         }
     },
     {
+        "id": "cochabamba",
+        "country": "BO",
+        "name": {
+            "es": "Cochabamba",
+            "zh": "科恰班巴",
+            "en": "Cochabamba"
+        }
+    },
+    {
         "id": "cologne",
         "country": "DE",
         "name": {
@@ -291,6 +300,16 @@
             "en": "Guangzhou",
             "zh-Hans": "广州",
             "zh-Hant": "廣州"
+        }
+    },
+    {
+        "id": "hamburg",
+        "country": "DE",
+        "name": {
+            "en": "Hamburg",
+            "de": "Hamburg",
+            "zh-Hans": "汉堡",
+            "zh-Hant": "漢堡"
         }
     },
     {
@@ -566,6 +585,14 @@
             "en": "Ningbo",
             "zh-Hans": "宁波",
             "zh-Hant": "寧波"
+        }
+    },
+    {
+        "id": "ny",
+        "country": "US",
+        "name": {
+            "en": "New York",
+            "zh-Hans": "纽约"
         }
     },
     {

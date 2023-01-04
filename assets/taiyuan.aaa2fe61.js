@@ -1,0 +1,1 @@
+import{M as o}from"./index.54ff4779.js";import"./vendor.19ab26d5.js";const t=[{id:"2",colour:"#b31c21",fg:o.white,name:{en:"Line 2","zh-Hans":"2\u53F7\u7EBF","zh-Hant":"2\u865F\u7DDA"}}];export{t as default};
