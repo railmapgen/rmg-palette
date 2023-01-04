@@ -578,6 +578,14 @@
         }
     },
     {
+        "id": "ny",
+        "country": "US",
+        "name": {
+            "en": "New York",
+            "zh-Hans": "纽约"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
