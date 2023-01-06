@@ -1,4 +1,14 @@
-import { Button, Icon, Link, ListItem, ModalBody, ModalFooter, OrderedList, Text } from '@chakra-ui/react';
+import {
+    Button,
+    Icon,
+    Link,
+    ListItem,
+    ModalBody,
+    ModalFooter,
+    OrderedList,
+    Text,
+    useColorModeValue,
+} from '@chakra-ui/react';
 import { MdChevronLeft, MdContentCopy, MdOpenInNew } from 'react-icons/md';
 import { RmgDebouncedTextarea } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
@@ -20,6 +30,7 @@ export default function SubmitModalStepSubmit(props: SubmitModalStepSubmitProps)
 
     const { t } = useTranslation();
 
+    const linkColour = useColorModeValue('primary.500', 'primary.300');
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const issueBody = [
@@ -59,7 +70,7 @@ export default function SubmitModalStepSubmit(props: SubmitModalStepSubmitProps)
                     <ListItem>
                         {t('Open')}{' '}
                         <Link
-                            color="teal.500"
+                            color={linkColour}
                             href={
                                 'https://github.com/railmapgen/rmg-palette/issues/new?' + manualSearchParams.toString()
                             }

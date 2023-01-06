@@ -9,6 +9,6 @@ assignees: ''
 
 Hi RMG team! I would like to contribute the palettes below.
 
-**Justification:** Please provide any source or justification or we will not proceed with your request. (REPLACE ME)
+_Follow instruction in https://railmapgen.github.io/rmg-palette/new and paste the palette data below_
 
-_Enter new palettes data and follow instruction in https://railmapgen.github.io/rmg-palette/new_
+(REPLACE ME/替代我)

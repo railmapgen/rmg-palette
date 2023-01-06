@@ -25,9 +25,9 @@ describe('SubmitModal', () => {
         // submit anyway button is displayed
         expect(screen.getByRole('button', { name: 'Submit anyway' })).toBeInTheDocument();
 
-        // one click button is displayed if submit anyway button is clicked
+        // justification field is displayed if submit anyway button is clicked
         fireEvent.click(screen.getByRole('button', { name: 'Submit anyway' }));
-        expect(screen.getByRole('button', { name: '1-click open issue' })).toBeInTheDocument();
+        expect(screen.getByRole('textbox', { name: 'Justification' })).toBeInTheDocument();
     });
 
     it('Can display one click submit button if no errors', () => {
@@ -68,7 +68,7 @@ describe('SubmitModal', () => {
         // submit anyway button is not displayed
         expect(screen.queryByRole('button', { name: 'Submit anyway' })).not.toBeInTheDocument();
 
-        // one click button is displayed
-        expect(screen.getByRole('button', { name: '1-click open issue' })).toBeInTheDocument();
+        // justification field is displayed
+        expect(screen.getByRole('textbox', { name: 'Justification' })).toBeInTheDocument();
     });
 });
