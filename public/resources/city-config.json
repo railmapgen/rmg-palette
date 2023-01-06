@@ -731,6 +731,14 @@
         }
     },
     {
+        "id": "sevilla",
+        "country": "ES",
+        "name": {
+            "es": "Sevilla",
+            "en": "Seville"
+        }
+    },
+    {
         "id": "shanghai",
         "country": "CN",
         "name": {
