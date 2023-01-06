@@ -19,6 +19,10 @@ jobs:
       - run: npm ci
         working-directory: ./package
 
+      - name: Checkout to new/existing branch
+        run: |
+          { git checkout "bot-${{ github.event.issue.number }}" } || { git checkout -b "bot-${{ github.event.issue.number }}" }
+
       - name: Dump payload
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -36,7 +40,6 @@ jobs:
           rm ./package/issuebot/issue.txt
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git checkout -b "bot-${{ github.event.issue.number }}"
           git add .
           git commit -m "#${{ github.event.issue.number }}-${{ github.event.issue.title }}
           
