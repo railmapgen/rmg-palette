@@ -12,8 +12,9 @@ git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
 # Checkout to new/existing branch
 BRANCH_NAME="bot-$1"
-{ git checkout $BRANCH_NAME;
-  git pull
+{
+  git fetch origin $BRANCH_NAME;
+  git switch $BRANCH_NAME;
 } || {
   git checkout -b $BRANCH_NAME;
 }
