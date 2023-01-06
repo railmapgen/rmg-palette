@@ -579,21 +579,21 @@
         }
     },
     {
-        "id": "ningbo",
-        "country": "CN",
-        "name": {
-            "en": "Ningbo",
-            "zh-Hans": "宁波",
-            "zh-Hant": "寧波"
-        }
-    },
-    {
         "id": "newyork",
         "country": "US",
         "name": {
             "en": "New York",
             "zh-Hans": "纽约",
             "zh-Hant": "紐約"
+        }
+    },
+    {
+        "id": "ningbo",
+        "country": "CN",
+        "name": {
+            "en": "Ningbo",
+            "zh-Hans": "宁波",
+            "zh-Hant": "寧波"
         }
     },
     {
