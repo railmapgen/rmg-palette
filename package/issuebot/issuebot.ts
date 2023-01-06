@@ -30,6 +30,6 @@ for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
         writeFileSync(cityConfigFilepath, `${JSON.stringify(cityConfig, null, 4)}\n`);
     } else if (type === 'lines') {
         const cityFilepath = `../public/resources/palettes/${cityID}.json`;
-        writeFileSync(cityFilepath, `${value.trim()}\n`);
+        writeFileSync(cityFilepath, `${JSON.stringify(JSON.parse(value.trim()), null, 4)}\n`);
     }
 }
