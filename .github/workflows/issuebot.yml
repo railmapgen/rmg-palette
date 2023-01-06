@@ -19,38 +19,15 @@ jobs:
       - run: npm ci
         working-directory: ./package
 
-      - name: Checkout to new/existing branch
-        run: |
-          { git checkout "bot-${{ github.event.issue.number }}" } || { git checkout -b "bot-${{ github.event.issue.number }}" }
-
       - name: Dump payload
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT" > ./package/issuebot/issue.txt
 
-      - name: Update cities
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        working-directory: ./package
+      - name: Update and push
         run: |
-          npm run issuebot
-
-      - name: Commit
-        run: |
-          rm ./package/issuebot/issue.txt
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "#${{ github.event.issue.number }}-${{ github.event.issue.title }}
-          
-          Co-authored-by: ${{ github.event.issue.user.login }} <${{ github.event.issue.user.id }}+${{ github.event.issue.user.login }}@users.noreply.github.com>"
-
-      - name: Build to check
-        working-directory: ./package
-        run: CI='' npm run build
-
-      - name: Publish branch
-        run: git push --set-upstream origin "bot-${{ github.event.issue.number }}"
+          chmod +x ./scripts/issuebot.sh
+          ./scripts/issuebot.sh ${{ github.event.issue.number }} ${{ github.event.issue.title }} ${{ github.event.issue.user.login }} ${{ github.event.issue.user.id }}
 
       - name: pull-request-action
         uses: vsoch/pull-request-action@master
