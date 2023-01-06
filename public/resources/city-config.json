@@ -592,7 +592,8 @@
         "country": "US",
         "name": {
             "en": "New York",
-            "zh-Hans": "纽约"
+            "zh-Hans": "纽约",
+            "zh-Hant": "紐約"
         }
     },
     {
