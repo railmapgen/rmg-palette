@@ -100,16 +100,6 @@
         }
     },
     {
-        "id": "hz16",
-        "colour": "#FFB25B",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 16",
-            "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
-        }
-    },
-    {
         "id": "hz19",
         "colour": "#05c3de",
         "fg": "#fff",
@@ -117,6 +107,36 @@
             "en": "Line 19 (Airport Express)",
             "zh-Hans": "19号线 (机场快线)",
             "zh-Hant": "19號線 (機場快線)"
+        }
+    },
+    {
+        "id": "hz12",
+        "colour": "#3863a8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
+    },
+    {
+        "id": "hz15",
+        "colour": "#ec9dec",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
+        "id": "hz18",
+        "colour": "#8de88d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
         }
     }
 ]
