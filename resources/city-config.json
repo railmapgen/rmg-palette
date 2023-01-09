@@ -571,6 +571,15 @@
         }
     },
     {
+        "id": "neworleans",
+        "country": "US",
+        "name": {
+            "en": "New Orleans",
+            "zh-Hans": "新奥尔良",
+            "zh-Hant": "新奧爾良"
+        }
+    },
+    {
         "id": "newtaipei",
         "country": "TW",
         "name": {
