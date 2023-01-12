@@ -824,6 +824,16 @@
         }
     },
     {
+        "id": "taoyuan",
+        "country": "TW",
+        "name": {
+            "en": "Taoyuan",
+            "zh-TW": "桃園",
+            "zh-CN": "桃园",
+            "zh-HK": "桃園"
+        }
+    },
+    {
         "id": "tashkent",
         "country": "UZ",
         "name": {
