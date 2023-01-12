@@ -1,0 +1,22 @@
+[
+    {
+        "id": "cz1",
+        "colour": "#da2c30",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
+        "id": "cz2",
+        "colour": "#51b5ce",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    }
+]

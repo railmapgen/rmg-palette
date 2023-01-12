@@ -130,6 +130,15 @@
         }
     },
     {
+        "id": "changzhou",
+        "country": "CN",
+        "name": {
+            "en": "Changzhou",
+            "zh-Hans": "常州",
+            "zh-Hant": "常州"
+        }
+    },
+    {
         "id": "chengdu",
         "country": "CN",
         "name": {
