@@ -1,5 +1,14 @@
 [
     {
+        "id": "ankara",
+        "country": "TR",
+        "name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "zh": "安卡拉"
+        }
+    },
+    {
         "id": "athens",
         "country": "GR",
         "name": {
