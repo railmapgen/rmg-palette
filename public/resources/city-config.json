@@ -384,6 +384,15 @@
         }
     },
     {
+        "id": "iashi",
+        "country": "RO",
+        "name": {
+            "en": "Iași",
+            "ro": "Iași",
+            "zh": "雅西"
+        }
+    },
+    {
         "id": "istanbul",
         "country": "TR",
         "name": {
