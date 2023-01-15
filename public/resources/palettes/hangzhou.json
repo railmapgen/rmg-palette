@@ -114,9 +114,18 @@
         "colour": "#05c3de",
         "fg": "#fff",
         "name": {
-            "en": "Line 19 (Airport Express)",
-            "zh-Hans": "19号线 (机场快线)",
-            "zh-Hant": "19號線 (機場快線)"
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "hzhh",
+        "colour": "#0077c8",
+        "fg": "#fff",
+        "name": {
+            "en": "Hanghai Line",
+            "zh-Hans": "杭海城际"
         }
     }
 ]
