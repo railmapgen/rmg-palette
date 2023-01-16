@@ -1,0 +1,242 @@
+[
+    {
+        "id": "ca",
+        "colour": "#f68719",
+        "fg": "#fff",
+        "name": {
+            "en": "Tokaido Main Line",
+            "ja": "東海道本線",
+            "zh-Hans": "东海道本线"
+        }
+    },
+    {
+        "id": "tkdsks",
+        "colour": "#175baa",
+        "fg": "#fff",
+        "name": {
+            "en": "Tokaido Shinkansen",
+            "ja": "東海道新幹線",
+            "zh-Hans": "东海道新干线"
+        }
+    },
+    {
+        "id": "cf",
+        "colour": "#2d7197",
+        "fg": "#fff",
+        "name": {
+            "en": "Chuo Main Line",
+            "ja": "中央本線",
+            "zh-Hans": "中央本线"
+        }
+    },
+    {
+        "id": "cj",
+        "colour": "#0eb790",
+        "fg": "#fff",
+        "name": {
+            "en": "Kansai Main Line",
+            "ja": "関西本線",
+            "zh-Hans": "关西本线"
+        }
+    },
+    {
+        "id": "nhtk",
+        "colour": "#d12027",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Nagoya Main Line-Toyokawa Line",
+            "ja": "名鉄名古屋本線・豊川線",
+            "zh-Hans": "名铁名古屋本线·丰川线"
+        }
+    },
+    {
+        "id": "iykghm",
+        "colour": "#018340",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Inuyama Line-Kakamigahara Line-Hiromi Line",
+            "ja": "名鉄犬山線・各務原線・広見線",
+            "zh-Hans": "名铁犬山线·各务原线·广见线"
+        }
+    },
+    {
+        "id": "ta",
+        "colour": "#0f62a6",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Tokoname Line-Airport Line",
+            "ja": "名鉄常滑線・空港線",
+            "zh-Hans": "名铁常滑线·机场线"
+        }
+    },
+    {
+        "id": "ch",
+        "colour": "#727171",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Chikko Line",
+            "ja": "名鉄築港線",
+            "zh-Hans": "名铁筑港线"
+        }
+    },
+    {
+        "id": "st",
+        "colour": "#732678",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Seto Line",
+            "ja": "名鉄瀬戸線",
+            "zh-Hans": "名铁濑户线"
+        }
+    },
+    {
+        "id": "km",
+        "colour": "#da5290",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Komaki Line",
+            "ja": "名鉄小牧線",
+            "zh-Hans": "名铁小牧线"
+        }
+    },
+    {
+        "id": "gnmu",
+        "colour": "#654e9e",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Nishio Line-Gamagri Line-Mikawa Line",
+            "ja": "名鉄西尾線・蒲郡線・三河線（海線）",
+            "zh-Hans": "名铁西尾线·蒲郡线·三河线（海线）"
+        }
+    },
+    {
+        "id": "mytt",
+        "colour": "#9eb03a",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Mikawa Line-Toyota Line",
+            "ja": "名鉄三河線（山線）・豊田線",
+            "zh-Hans": "名铁三河线（山线）·丰田线"
+        }
+    },
+    {
+        "id": "kc",
+        "colour": "#2a9dd8",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Kowa Line-Chita New Line",
+            "ja": "名鉄河和線・知多新線",
+            "zh-Hans": "名铁河和线·知多新线"
+        }
+    },
+    {
+        "id": "tbbs",
+        "colour": "#e85624",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Tsushima Line-Bisai Line",
+            "ja": "名鉄津島線・尾西線",
+            "zh-Hans": "名铁津岛线·尾西线"
+        }
+    },
+    {
+        "id": "th",
+        "colour": "#d7a629",
+        "fg": "#fff",
+        "name": {
+            "en": "Meitetsu Takehana Line-Hashima Line",
+            "ja": "名鉄竹鼻線・羽島線",
+            "zh-Hans": "名铁竹鼻线·羽岛线"
+        }
+    },
+    {
+        "id": "kte",
+        "colour": "#143ab1",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Nagoya Line",
+            "ja": "近鉄名古屋線",
+            "zh-Hans": "近铁名古屋线"
+        }
+    },
+    {
+        "id": "h",
+        "colour": "#fab21e",
+        "fg": "#fff",
+        "name": {
+            "en": "Higashiyama Line",
+            "ja": "東山線",
+            "zh-Hans": "东山线"
+        }
+    },
+    {
+        "id": "me",
+        "colour": "#b175d7",
+        "fg": "#fff",
+        "name": {
+            "en": "Meijo Line-Meiko Line",
+            "ja": "名城線・名港線",
+            "zh-Hans": "名城线·名港线"
+        }
+    },
+    {
+        "id": "t",
+        "colour": "#0099bc",
+        "fg": "#fff",
+        "name": {
+            "en": "Tsurumai Line",
+            "ja": "鶴舞線",
+            "zh-Hans": "鹤舞线"
+        }
+    },
+    {
+        "id": "s",
+        "colour": "#ca2b42",
+        "fg": "#fff",
+        "name": {
+            "en": "Sakura-dori Line",
+            "ja": "桜通線",
+            "zh-Hans": "樱通线"
+        }
+    },
+    {
+        "id": "k",
+        "colour": "#ed79b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Kamiiida Line",
+            "ja": "上飯田線",
+            "zh-Hans": "上饭田线"
+        }
+    },
+    {
+        "id": "jhk",
+        "colour": "#ff6600",
+        "fg": "#fff",
+        "name": {
+            "en": "Johoku Line",
+            "ja": "城北線",
+            "zh-Hans": "城北线"
+        }
+    },
+    {
+        "id": "anm",
+        "colour": "#334fa0",
+        "fg": "#fff",
+        "name": {
+            "en": "Aonami Line",
+            "ja": "あおなみ線",
+            "zh-Hans": "青波线"
+        }
+    },
+    {
+        "id": "lnm",
+        "colour": "#0067c0",
+        "fg": "#fff",
+        "name": {
+            "en": "Linimo",
+            "ja": "東部丘陵線",
+            "zh-Hans": "东部丘陵线"
+        }
+    }
+]
