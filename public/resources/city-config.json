@@ -615,6 +615,15 @@
         }
     },
     {
+        "id": "ngy",
+        "country": "JP",
+        "name": {
+            "en": "Nagoya",
+            "ja": "名古屋",
+            "zh-Hans": "名古屋"
+        }
+    },
+    {
         "id": "ningbo",
         "country": "CN",
         "name": {
