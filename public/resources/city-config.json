@@ -1,5 +1,14 @@
 [
     {
+        "id": "ankara",
+        "country": "TR",
+        "name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "zh": "安卡拉"
+        }
+    },
+    {
         "id": "athens",
         "country": "GR",
         "name": {
@@ -372,6 +381,15 @@
         "name": {
             "en": "Hong Kong",
             "zh": "香港"
+        }
+    },
+    {
+        "id": "iashi",
+        "country": "RO",
+        "name": {
+            "en": "Iași",
+            "ro": "Iași",
+            "zh": "雅西"
         }
     },
     {
