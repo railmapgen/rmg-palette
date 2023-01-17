@@ -312,6 +312,14 @@
         }
     },
     {
+        "id": "guiyang",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "贵阳",
+            "en": "Guiyang"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
