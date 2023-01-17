@@ -22,7 +22,7 @@
     {
         "id": "gz3",
         "colour": "#ECA154",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
