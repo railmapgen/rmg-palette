@@ -792,6 +792,14 @@
         }
     },
     {
+        "id": "shijiazhuang",
+        "country": "CN",
+        "name": {
+            "zh": "石家庄",
+            "en": "shijiazhuang"
+        }
+    },
+    {
         "id": "singapore",
         "country": "SG",
         "name": {

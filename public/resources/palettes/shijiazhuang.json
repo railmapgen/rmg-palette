@@ -1,0 +1,83 @@
+[
+    {
+        "id": "sjz1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Line1",
+            "zh": "1号线"
+        }
+    },
+    {
+        "id": "sjz2",
+        "colour": "#ffff00",
+        "fg": "#fff",
+        "name": {
+            "en": "Line2",
+            "zh": "2号线"
+        }
+    },
+    {
+        "id": "sjz3",
+        "colour": "#5dcef4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line3",
+            "zh": "3号线"
+        }
+    },
+    {
+        "id": "sjz4",
+        "colour": "#c0c0c0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line4",
+            "zh": "4号线"
+        }
+    },
+    {
+        "id": "sjz5",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "en": "Line5",
+            "zh": "5号线"
+        }
+    },
+    {
+        "id": "sjz6",
+        "colour": "#0846aa",
+        "fg": "#fff",
+        "name": {
+            "en": "Line6",
+            "zh": "6号线"
+        }
+    },
+    {
+        "id": "sjz7",
+        "colour": "#8de29e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line7",
+            "zh": "7号线"
+        }
+    },
+    {
+        "id": "sjz8",
+        "colour": "#0011ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line8",
+            "zh": "8号线"
+        }
+    },
+    {
+        "id": "sjz9",
+        "colour": "#9dd747",
+        "fg": "#fff",
+        "name": {
+            "en": "Line9",
+            "zh": "9号线"
+        }
+    }
+]
