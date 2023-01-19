@@ -62,7 +62,7 @@
     {
         "id": "gz7",
         "colour": "#97D700",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 7",
             "zh-Hans": "7号线",
