@@ -21,7 +21,8 @@ BRANCH_NAME="bot-$1"
 
 # Update cities
 cd package
-npm run issuebot
+BOT_RUN_RESULT=$(npm run issuebot)
+echo "COLOURS<<EOF"$'\n'"$BOT_RUN_RESULT"$'\n'EOF >> $GITHUB_OUTPUT
 cd ..
 
 # Commit

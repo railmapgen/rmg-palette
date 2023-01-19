@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { CityEntry, CountryEntry } from '../checker/constants';
+import { CityEntry, CountryEntry, PaletteEntry } from '../checker/constants';
 
 const body = JSON.parse(readFileSync('./issuebot/issue.txt', 'utf-8'))['event']['issue']['body'];
 const HEADER = 'Do not edit lines below, they are meant for bots only!!!';
@@ -30,6 +30,11 @@ for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
         writeFileSync(cityConfigFilepath, `${JSON.stringify(cityConfig, null, 4)}\n`);
     } else if (type === 'lines') {
         const cityFilepath = `../public/resources/palettes/${cityID}.json`;
-        writeFileSync(cityFilepath, `${JSON.stringify(JSON.parse(value.trim()), null, 4)}\n`);
+        const lines = JSON.parse(value.trim()) as PaletteEntry[];
+        console.log('Printing all colours...\n');
+        lines.forEach(line => {
+            console.log(`$\\colorbox{${line.colour}}{\\textcolor{${line.fg ?? '#fff'}}{${line.name.en}}}$`);
+        });
+        writeFileSync(cityFilepath, `${JSON.stringify(lines, null, 4)}\n`);
     }
 }
