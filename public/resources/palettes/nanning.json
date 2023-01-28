@@ -1,0 +1,74 @@
+[
+    {
+        "id": "nn1",
+        "colour": "#62bd6b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh": "1号线"
+        }
+    },
+    {
+        "id": "nn2",
+        "colour": "#ee3d2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh": "2号线"
+        }
+    },
+    {
+        "id": "nn3",
+        "colour": "#a81ba7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh": "3号线"
+        }
+    },
+    {
+        "id": "nn4",
+        "colour": "#cdd718",
+        "fg": "#000",
+        "name": {
+            "en": "Line 4",
+            "zh": "4号线"
+        }
+    },
+    {
+        "id": "nn5",
+        "colour": "#3a61a8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh": "5号线"
+        }
+    },
+    {
+        "id": "nn7",
+        "colour": "#e97c17",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh": "6号线"
+        }
+    },
+    {
+        "id": "nn7",
+        "colour": "#ac6a4f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh": "7号线"
+        }
+    },
+    {
+        "id": "nn8",
+        "colour": "#1fc4c8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh": "8号线"
+        }
+    }
+]
