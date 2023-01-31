@@ -180,13 +180,23 @@
         }
     },
     {
-        "id": "szT",
+        "id": "tram",
         "colour": "#b8b8b8",
         "fg": "#fff",
         "name": {
             "en": "Tram",
             "zh-Hans": "有轨电车",
             "zh-Hant": "有軌電車"
+        }
+    },
+    {
+        "id": "sz8orig",
+        "colour": "#E45DBF",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8 (Original)",
+            "zh-Hans": "8号线（原）",
+            "zh-Hant": "8號線（原）"
         }
     }
 ]
