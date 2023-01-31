@@ -2,7 +2,7 @@ name: Issue bot
 
 on:
   issues:
-    type: [opened]
+    types: [opened, edited]
 
 jobs:
   updateCities:
