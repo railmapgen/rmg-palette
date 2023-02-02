@@ -588,6 +588,15 @@
         }
     },
     {
+        "id": "nanning",
+        "country": "CN",
+        "name": {
+            "en": "Nanning",
+            "zh-Hans": "南宁",
+            "zh-Hant": "南寧"
+        }
+    },
+    {
         "id": "naples",
         "country": "IT",
         "name": {
