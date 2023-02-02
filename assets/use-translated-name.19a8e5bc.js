@@ -1,0 +1,1 @@
+import{L as t}from"./index.233a9d95.js";import{f as e}from"./vendor.aa828424.js";function f(){const{i18n:s}=e();return a=>{var n,o;return(o=(n=s.languages.map(r=>a[r]).find(r=>r!==void 0))!=null?n:a[t.English])!=null?o:"(Translation Error)"}}export{f as u};
