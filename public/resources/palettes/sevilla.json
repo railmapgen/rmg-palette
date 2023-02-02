@@ -1,41 +1,5 @@
 [
     {
-        "id": "L1",
-        "colour": "#01820b",
-        "fg": "#fff",
-        "name": {
-            "es": "Línea 1",
-            "en": "Line 1"
-        }
-    },
-    {
-        "id": "L2",
-        "colour": "#284eca",
-        "fg": "#fff",
-        "name": {
-            "es": "Línea 2",
-            "en": "Line 2"
-        }
-    },
-    {
-        "id": "L3",
-        "colour": "#b90702",
-        "fg": "#fff",
-        "name": {
-            "es": "Línea 3",
-            "en": "Line 3"
-        }
-    },
-    {
-        "id": "L4",
-        "colour": "#e5b024",
-        "fg": "#fff",
-        "name": {
-            "es": "Línea 4",
-            "en": "Line 4"
-        }
-    },
-    {
         "id": "C1",
         "colour": "#4c90c3",
         "fg": "#fff",
@@ -78,51 +42,6 @@
         "name": {
             "es": "Cercanías 5",
             "en": "Commuter 5"
-        }
-    },
-    {
-        "id": "T1",
-        "colour": "#ff0000",
-        "fg": "#fff",
-        "name": {
-            "es": "Tranvía 1",
-            "en": "Tram 1"
-        }
-    },
-    {
-        "id": "T2",
-        "colour": "#4ebdeb",
-        "fg": "#fff",
-        "name": {
-            "es": "Tranvía 2",
-            "en": "Tram 2"
-        }
-    },
-    {
-        "id": "T3",
-        "colour": "#009a4d",
-        "fg": "#fff",
-        "name": {
-            "es": "Tranvía 3",
-            "en": "Tram 3"
-        }
-    },
-    {
-        "id": "L5",
-        "colour": "#e50094",
-        "fg": "#fff",
-        "name": {
-            "es": "Línea 5",
-            "en": "Line 5"
-        }
-    },
-    {
-        "id": "T4",
-        "colour": "#d27c03",
-        "fg": "#fff",
-        "name": {
-            "es": "Tranvía 4",
-            "en": "Tram 4"
         }
     }
 ]
