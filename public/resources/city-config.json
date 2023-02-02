@@ -265,6 +265,15 @@
         }
     },
     {
+        "id": "gdansk",
+        "country": "PL",
+        "name": {
+            "pl": "Gdańsk",
+            "en": "Gdańsk",
+            "zh": "格但斯克"
+        }
+    },
+    {
         "id": "glasgow",
         "country": "GBSCT",
         "name": {

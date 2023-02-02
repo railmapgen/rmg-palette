@@ -1,0 +1,82 @@
+[
+    {
+        "id": "tram2",
+        "colour": "#a4ff63",
+        "fg": "#fff",
+        "name": {
+            "en": "2"
+        }
+    },
+    {
+        "id": "tram3",
+        "colour": "#ff00ff",
+        "fg": "#fff",
+        "name": {
+            "en": "3"
+        }
+    },
+    {
+        "id": "tram4",
+        "colour": "#8000db",
+        "fg": "#fff",
+        "name": {
+            "en": "4"
+        }
+    },
+    {
+        "id": "tram5",
+        "colour": "#ffbb54",
+        "fg": "#000",
+        "name": {
+            "en": "5"
+        }
+    },
+    {
+        "id": "tram6",
+        "colour": "#00a1d6",
+        "fg": "#fff",
+        "name": {
+            "en": "6"
+        }
+    },
+    {
+        "id": "tram7",
+        "colour": "#b06700",
+        "fg": "#fff",
+        "name": {
+            "en": "7"
+        }
+    },
+    {
+        "id": "tram8",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "8"
+        }
+    },
+    {
+        "id": "tram9",
+        "colour": "#0044ff",
+        "fg": "#fff",
+        "name": {
+            "en": "9"
+        }
+    },
+    {
+        "id": "tram10",
+        "colour": "#3d2400",
+        "fg": "#fff",
+        "name": {
+            "en": "10"
+        }
+    },
+    {
+        "id": "tram12",
+        "colour": "#ff8521",
+        "fg": "#fff",
+        "name": {
+            "en": "12"
+        }
+    }
+]
