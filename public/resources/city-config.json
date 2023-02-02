@@ -83,6 +83,16 @@
         }
     },
     {
+        "id": "brussels",
+        "country": "BE",
+        "name": {
+            "en": "Brussels",
+            "fr": "Bruxelles",
+            "zh-Hans": "布鲁塞尔",
+            "zh-Hant": "布魯塞爾"
+        }
+    },
+    {
         "id": "bucharest",
         "country": "RO",
         "name": {
