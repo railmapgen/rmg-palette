@@ -1,5 +1,14 @@
 [
     {
+        "id": "ankara",
+        "country": "TR",
+        "name": {
+            "en": "Ankara",
+            "tr": "Ankara",
+            "zh": "安卡拉"
+        }
+    },
+    {
         "id": "athens",
         "country": "GR",
         "name": {
@@ -375,6 +384,15 @@
         }
     },
     {
+        "id": "iashi",
+        "country": "RO",
+        "name": {
+            "en": "Iași",
+            "ro": "Iași",
+            "zh": "雅西"
+        }
+    },
+    {
         "id": "istanbul",
         "country": "TR",
         "name": {
@@ -568,6 +586,15 @@
             "zh-Hans": "那不勒斯",
             "zh-HK": "拿坡利",
             "zh-TW": "拿坡里"
+        }
+    },
+    {
+        "id": "neworleans",
+        "country": "US",
+        "name": {
+            "en": "New Orleans",
+            "zh-Hans": "新奥尔良",
+            "zh-Hant": "新奧爾良"
         }
     },
     {
@@ -820,6 +847,16 @@
         "name": {
             "en": "Taiyuan",
             "zh-Hans": "太原"
+        }
+    },
+    {
+        "id": "taoyuan",
+        "country": "TW",
+        "name": {
+            "en": "Taoyuan",
+            "zh-TW": "桃園",
+            "zh-CN": "桃园",
+            "zh-HK": "桃園"
         }
     },
     {

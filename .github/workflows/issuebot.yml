@@ -2,7 +2,7 @@ name: Issue bot
 
 on:
   issues:
-    type: [opened]
+    types: [opened, edited]
 
 jobs:
   updateCities:
@@ -28,6 +28,7 @@ jobs:
         run: |
           chmod +x ./scripts/issuebot.sh
           ./scripts/issuebot.sh ${{ github.event.issue.number }} "${{ github.event.issue.title }}" "${{ github.event.issue.user.login }}" "${{ github.event.issue.user.id }}"
+        id: bot
 
       - name: pull-request-action
         uses: vsoch/pull-request-action@master
@@ -38,4 +39,4 @@ jobs:
           PULL_REQUEST_BRANCH: "master"
           PULL_REQUEST_TOKEN: ${{ secrets.RMG_BUILD_AND_RELEASE }}
           PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
-          PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}"
+          PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}\n${{ steps.bot.outputs.COLOURS }}"
