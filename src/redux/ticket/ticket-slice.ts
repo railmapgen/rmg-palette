@@ -11,7 +11,7 @@ import {
 } from '@railmapgen/rmg-palette-resources';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
-import { InvalidReasonType, TicketInvalidReasonType, TranslationInvalidReasonType } from '../../util/constants';
+import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
 import {
     convertEntityStateToTranslation,
     createTranslationEntityInitialState,
@@ -32,6 +32,7 @@ const initialPaletteEntry: PaletteEntryWithTranslationEntity = {
     nameEntity: initialTranslation,
     colour: '#aaaaaa',
     fg: MonoColour.white,
+    pantone: undefined,
 };
 
 export interface TicketState {
@@ -49,7 +50,7 @@ export interface TicketState {
     lines: Record<string, PaletteEntryWithTranslationEntity>;
 }
 
-const initialState: TicketState = {
+const getInitialState = (): TicketState => ({
     country: undefined,
     newCountry: '',
     newCountryLang: undefined,
@@ -59,11 +60,11 @@ const initialState: TicketState = {
     cityName: initialTranslation,
 
     lines: { [nanoid()]: initialPaletteEntry },
-};
+});
 
 const ticketSlice = createSlice({
     name: 'ticket',
-    initialState,
+    initialState: getInitialState(),
     reducers: {
         setCountry: (state, action: PayloadAction<CountryCode | 'new'>) => {
             state.country = action.payload;
@@ -110,7 +111,15 @@ const ticketSlice = createSlice({
         },
 
         updateLineBgColour: (state, action: PayloadAction<{ entryId: string; bgColour: ColourHex }>) => {
-            state.lines[action.payload.entryId].colour = action.payload.bgColour;
+            const { entryId, bgColour } = action.payload;
+            state.lines[entryId].colour = bgColour;
+            state.lines[entryId].pantone = undefined;
+        },
+
+        updateLinePantone: (state, action: PayloadAction<{ entryId: string; pantone: string; hex: ColourHex }>) => {
+            const { entryId, pantone, hex } = action.payload;
+            state.lines[entryId].colour = hex;
+            state.lines[entryId].pantone = pantone;
         },
 
         updateLineFgColour: (state, action: PayloadAction<{ entryId: string; fgColour: MonoColour }>) => {
@@ -149,7 +158,7 @@ const ticketSlice = createSlice({
             delete state.lines[action.payload];
         },
 
-        resetTicket: () => initialState,
+        resetTicket: () => getInitialState(),
 
         populateTicket: (state, action: PayloadAction<{ city: CityEntry; palettes: PaletteEntry[] }>) => {
             const { city, palettes } = action.payload;
@@ -166,7 +175,7 @@ const ticketSlice = createSlice({
             );
 
             state.lines = palettes.reduce<Record<string, PaletteEntryWithTranslationEntity>>((acc, cur) => {
-                const { id, colour, fg } = cur;
+                const { id, colour, fg, pantone } = cur;
                 const nameEntity = createTranslationEntityInitialState(
                     Object.entries(cur.name).map(([lang, name]) => ({
                         id: nanoid(),
@@ -174,7 +183,7 @@ const ticketSlice = createSlice({
                         name,
                     }))
                 );
-                return { ...acc, [nanoid()]: { id, nameEntity, colour, fg: fg ?? MonoColour.white } };
+                return { ...acc, [nanoid()]: { id, nameEntity, colour, fg: fg ?? MonoColour.white, pantone } };
             }, {});
         },
     },
@@ -272,6 +281,7 @@ export const {
     removeCityName,
     updateLineId,
     updateLineBgColour,
+    updateLinePantone,
     updateLineFgColour,
     updateLineName,
     addLineName,
