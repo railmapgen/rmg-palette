@@ -112,6 +112,15 @@
         }
     },
     {
+        "id": "busan",
+        "country": "KR",
+        "name": {
+            "en": "Busan",
+            "ko": "부산",
+            "zh": "釜山"
+        }
+    },
+    {
         "id": "cairo",
         "country": "EG",
         "name": {
