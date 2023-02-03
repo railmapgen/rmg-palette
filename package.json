@@ -15,6 +15,7 @@
         "@railmapgen/rmg-runtime": "^3.0.4",
         "@railmapgen/rmg-translate": "^0.4.2",
         "@reduxjs/toolkit": "^1.9.2",
+        "@vitejs/plugin-legacy": "^4.0.1",
         "ag-grid-community": "^29.0.0",
         "ag-grid-react": "^29.0.0",
         "framer-motion": "^9.0.1",
@@ -25,7 +26,8 @@
         "react-i18next": "^12.1.5",
         "react-icons": "^4.7.1",
         "react-redux": "^8.0.5",
-        "react-router-dom": "^6.8.0"
+        "react-router-dom": "^6.8.0",
+        "terser": "^5.16.3"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.16.5",
@@ -57,18 +59,6 @@
         "lint:fix": "eslint ./src --fix",
         "postinstall": "cd ./package && npm i",
         "preview": "vite preview"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
     },
     "version": "0.8.20"
 }
