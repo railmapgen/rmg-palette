@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Box, Button, Flex, Heading, HStack, IconButton } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
-import { ColourHex, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
+import { RmgLineBadge } from '@railmapgen/rmg-components';
+import { Translation } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
@@ -9,9 +9,6 @@ import {
     copyLine,
     removeLine,
     removeLineName,
-    updateLineBgColour,
-    updateLineFgColour,
-    updateLineId,
     updateLineName,
 } from '../../redux/ticket/ticket-slice';
 import MultiLangEntryCard from './multi-lang-entry-card';
@@ -19,6 +16,8 @@ import { MdAdd, MdContentCopy, MdDelete, MdEdit } from 'react-icons/md';
 import { translationEntitySelector } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
+import PantoneChecker from './pantone-checker';
+import ColourEntryCard from './colour-entry-card';
 
 export default function LinesSection() {
     const { t } = useTranslation();
@@ -28,42 +27,7 @@ export default function LinesSection() {
     const lines = useRootSelector(state => state.ticket.lines);
 
     const [selectedLine, setSelectedLine] = useState(Object.keys(lines)[0]);
-
-    const getFields = (entryId: string): RmgFieldsField[] => {
-        const line = lines[entryId];
-
-        if (!line) {
-            return [];
-        }
-
-        return [
-            {
-                type: 'input',
-                label: t('Line code'),
-                placeholder: 'e.g. twl, gz1, sh1',
-                value: line.id,
-                onChange: value => dispatch(updateLineId({ entryId, lineId: value })),
-                validator: value => value !== '' && !value.match(/[^a-z0-9]/),
-            },
-            {
-                type: 'input',
-                label: t('Background colour'),
-                variant: 'color',
-                value: line.colour,
-                onChange: value => dispatch(updateLineBgColour({ entryId, bgColour: value as ColourHex })),
-            },
-            {
-                type: 'select',
-                label: t('Foreground colour'),
-                value: line.fg,
-                options: {
-                    [MonoColour.white]: t('White'),
-                    [MonoColour.black]: t('Black'),
-                },
-                onChange: value => dispatch(updateLineFgColour({ entryId, fgColour: value as MonoColour })),
-            },
-        ];
-    };
+    const [pantoneReady, setPantoneReady] = useState<boolean>();
 
     return (
         <Box as="section">
@@ -72,9 +36,7 @@ export default function LinesSection() {
                     {t('Lines')}
                 </Heading>
 
-                <Button size="xs" variant="ghost" leftIcon={<MdAdd />} mr={1} onClick={() => dispatch(addLine())}>
-                    {t('Add a line')}
-                </Button>
+                <PantoneChecker ready={pantoneReady} onReady={setPantoneReady} />
             </Flex>
 
             <HStack flexWrap="wrap" sx={{ '& .chakra-badge': { mb: 1 } }}>
@@ -124,9 +86,19 @@ export default function LinesSection() {
                         />
                     );
                 })}
+
+                <Button
+                    size="xs"
+                    variant="ghost"
+                    leftIcon={<MdAdd />}
+                    ml="auto !important"
+                    onClick={() => dispatch(addLine())}
+                >
+                    {t('Add a line')}
+                </Button>
             </HStack>
 
-            <RmgFields fields={getFields(selectedLine)} />
+            {lines[selectedLine] && <ColourEntryCard entryId={selectedLine} pantoneReady={pantoneReady} />}
             <MultiLangEntryCard
                 entries={lines[selectedLine]?.nameEntity}
                 onUpdate={(id, changes) => dispatch(updateLineName({ entryId: selectedLine, id, changes }))}

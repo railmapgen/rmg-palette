@@ -13,6 +13,7 @@ export interface PaletteEntryWithTranslationEntity {
     nameEntity: EntityState<TranslationEntity>;
     colour: ColourHex;
     fg: MonoColour;
+    pantone?: string;
 }
 
 export const translationEntityAdapter = createEntityAdapter<TranslationEntity>();
