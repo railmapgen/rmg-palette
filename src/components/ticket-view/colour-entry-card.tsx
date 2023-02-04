@@ -10,6 +10,7 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { getRGBByPantone } from '../../service/pantone-service';
+import { flushSync } from 'react-dom';
 
 interface ColourEntryCardProps {
     entryId: string;
@@ -42,27 +43,29 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
         }
     }, [entryId]);
 
-    const handlePantoneInput = (value: string) => {
+    const handlePantoneInput = async (value: string) => {
         controllerRef.current.abort();
-        setPantoneInput(value);
 
         if (!line || !pantoneReady) {
             return;
         }
 
         controllerRef.current = new AbortController();
-        getRGBByPantone(value, controllerRef.current.signal)
-            .then(hex => {
-                dispatch(updateLinePantone({ entryId, pantone: value, hex }));
-            })
-            .catch(() => {
-                setPantoneInput(line.pantone ?? '');
+        try {
+            const hex = await getRGBByPantone(value, controllerRef.current.signal);
+            dispatch(updateLinePantone({ entryId, pantone: value, hex }));
+            setPantoneInput(value);
+        } catch (e) {
+            flushSync(() => {
+                setPantoneInput(value);
             });
+            setPantoneInput(line.pantone ?? '');
+        }
     };
 
     const colourModeOptions = [
         { label: 'RGB', value: 'hex' },
-        { label: 'Pantone', value: 'pantone' },
+        { label: t('Pantone'), value: 'pantone' },
     ];
 
     const fields: RmgFieldsField[] = [
@@ -99,7 +102,7 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
             label: t('Pantone code'),
             value: pantoneInput,
             onChange: handlePantoneInput,
-            debouncedDelay: 1000,
+            debouncedDelay: 1500,
             hidden: !pantoneReady || colourMode !== 'pantone',
         },
         {

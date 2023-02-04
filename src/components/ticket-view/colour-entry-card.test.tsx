@@ -82,7 +82,7 @@ describe('ColourEntryCard', () => {
             vi.useFakeTimers();
             fireEvent.change(screen.getByRole('combobox', { name: 'Pantone code' }), { target: { value: '3015 C' } });
             await act(async () => {
-                vi.advanceTimersByTime(1001);
+                vi.advanceTimersByTime(1501);
             });
 
             expect(mockFetch).toBeCalledTimes(1);
@@ -101,12 +101,14 @@ describe('ColourEntryCard', () => {
             vi.useFakeTimers();
             fireEvent.change(screen.getByRole('combobox', { name: 'Pantone code' }), { target: { value: '3015 C' } });
             await act(async () => {
-                vi.advanceTimersByTime(1001);
+                vi.advanceTimersByTime(1501);
             });
 
             expect(mockFetch).toBeCalledTimes(1);
             const actions = mockStore.getActions();
             expect(actions).toHaveLength(0);
+
+            expect(screen.getByRole('combobox', { name: 'Pantone code' })).toHaveValue('130 C');
         });
     });
 });
