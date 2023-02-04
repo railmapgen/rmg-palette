@@ -10,7 +10,7 @@
         "@chakra-ui/react": "^2.4.9",
         "@emotion/react": "^11.10.5",
         "@emotion/styled": "^11.10.5",
-        "@railmapgen/rmg-components": "^6.1.0",
+        "@railmapgen/rmg-components": "^6.1.2",
         "@railmapgen/rmg-palette-resources": "file:package/dist",
         "@railmapgen/rmg-runtime": "^3.0.4",
         "@railmapgen/rmg-translate": "^0.4.2",
@@ -60,5 +60,5 @@
         "postinstall": "cd ./package && npm i",
         "preview": "vite preview"
     },
-    "version": "0.8.21"
+    "version": "0.8.22"
 }

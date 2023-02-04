@@ -44,14 +44,14 @@ export default function SubmitModalStepSubmit(props: SubmitModalStepSubmitProps)
 
     const fullSearchParams = new URLSearchParams({
         template: 'new-palettes-request.md',
-        label: 'resources',
+        labels: 'resources',
         title: 'Resources: New palettes of ' + cityEntry?.name?.en,
         body: issueBody,
     });
 
     const manualSearchParams = new URLSearchParams({
         template: 'new-palettes-request.md',
-        label: 'resources',
+        labels: 'resources',
         title: 'Resources: New palettes of ' + cityEntry?.name?.en,
     });
 
