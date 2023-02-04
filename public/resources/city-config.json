@@ -293,16 +293,6 @@
         }
     },
     {
-        "id": "greatertorontoandhamiltonarea",
-        "country": "CA",
-        "name": {
-            "en": "Greater Toronto and Hamilton Area",
-            "fr": "Région du Grand Toronto et de Hamilton",
-            "zh-Hans": "大多伦多及汉密尔顿地区",
-            "zh-Hant": "大多倫多及漢密爾頓地區"
-        }
-    },
-    {
         "id": "guadalajara",
         "country": "MX",
         "name": {
@@ -912,6 +902,17 @@
             "ja": "東京（首都圏）",
             "zh-Hans": "东京（首都圈）",
             "zh-Hant": "東京（首都圈）"
+        }
+    },
+    {
+        "id": "toronto",
+        "country": "CA",
+        "name": {
+            "en": "Toronto (Greater Toronto and Hamilton Area)",
+            "fr": "Toronto (Région du Grand Toronto et de Hamilton)",
+            "zh-Hans": "多伦多（大多伦多及汉密尔顿地区）",
+            "zh-HK": "多倫多（大多倫多暨咸美頓地區）",
+            "zh-TW": "多倫多（大多倫多暨哈密爾頓地區）"
         }
     },
     {
