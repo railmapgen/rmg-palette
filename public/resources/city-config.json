@@ -955,6 +955,14 @@
         }
     },
     {
+        "id": "washington",
+        "country": "US",
+        "name": {
+            "en": "Washington DC",
+            "zh": "华盛顿特区"
+        }
+    },
+    {
         "id": "wuhan",
         "country": "CN",
         "name": {

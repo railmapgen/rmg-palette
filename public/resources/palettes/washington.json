@@ -1,0 +1,62 @@
+[
+    {
+        "id": "wdcr",
+        "colour": "#e31233",
+        "fg": "#fff",
+        "name": {
+            "en": "Red line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線"
+        }
+    },
+    {
+        "id": "wdcb",
+        "colour": "#0077c0",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue line",
+            "zh-Hans": "蓝线",
+            "zh-Hant": "藍線"
+        }
+    },
+    {
+        "id": "wdco",
+        "colour": "#f69318",
+        "fg": "#000",
+        "name": {
+            "en": "Orange line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橙線"
+        }
+    },
+    {
+        "id": "wdcy",
+        "colour": "#ffd300",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow line",
+            "zh-Hans": "黄线",
+            "zh-Hant": "黃線"
+        }
+    },
+    {
+        "id": "wdcg",
+        "colour": "#00aa4e",
+        "fg": "#fff",
+        "name": {
+            "en": "Green line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線"
+        }
+    },
+    {
+        "id": "wdcs",
+        "colour": "#a2a2a2",
+        "fg": "#000",
+        "name": {
+            "en": " Silver line",
+            "zh-Hans": "银线",
+            "zh-Hant": "銀線"
+        }
+    }
+]
