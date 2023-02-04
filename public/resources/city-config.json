@@ -959,7 +959,8 @@
         "country": "US",
         "name": {
             "en": "Washington DC",
-            "zh": "华盛顿特区"
+            "zh-Hans": "华盛顿特区",
+            "zh-Hant": "華盛頓特區"
         }
     },
     {
