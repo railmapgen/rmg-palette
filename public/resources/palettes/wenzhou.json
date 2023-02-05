@@ -1,0 +1,65 @@
+[
+    {
+        "id": "wzs1",
+        "colour": "#2061ad",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh": "S1线"
+        }
+    },
+    {
+        "id": "wzs2",
+        "colour": "#cf3631",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2",
+            "zh": "S2线"
+        }
+    },
+    {
+        "id": "wzs3",
+        "colour": "#fb7f2c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S3",
+            "zh": "S3线"
+        }
+    },
+    {
+        "id": "wzm1",
+        "colour": "#6ac1be",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh": "1号线"
+        }
+    },
+    {
+        "id": "wzm2",
+        "colour": "#6ac1be",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh": "2号线"
+        }
+    },
+    {
+        "id": "wzm3",
+        "colour": "#fbc733",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh": "3号线"
+        }
+    },
+    {
+        "id": "wzm4",
+        "colour": "#6ac1be",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "zh": "4号线"
+        }
+    }
+]

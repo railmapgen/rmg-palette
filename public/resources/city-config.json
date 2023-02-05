@@ -955,6 +955,15 @@
         }
     },
     {
+        "id": "wenzhou",
+        "country": "CN",
+        "name": {
+            "en": "Wenzhou",
+            "zh-Hans": "温州",
+            "zh-Hant": "溫州"
+        }
+    },
+    {
         "id": "wuhan",
         "country": "CN",
         "name": {
