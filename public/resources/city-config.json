@@ -312,6 +312,14 @@
         }
     },
     {
+        "id": "guangnan",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "广南",
+            "en": "GuangNan"
+        }
+    },
+    {
         "id": "guangzhou",
         "country": "CN",
         "name": {
