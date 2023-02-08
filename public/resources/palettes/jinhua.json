@@ -1,0 +1,24 @@
+[
+    {
+        "id": "金义线",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "金义线",
+            "en": "Jinyi Line",
+            "zh-HK": "金義線",
+            "zh-TW": "金義線"
+        }
+    },
+    {
+        "id": "义东线",
+        "colour": "#167cca",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "义东线",
+            "en": "Yidong Line",
+            "zh-HK": "義東線",
+            "zh-TW": "義東線"
+        }
+    }
+]
