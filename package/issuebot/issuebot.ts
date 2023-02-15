@@ -33,7 +33,7 @@ for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
         const lines = JSON.parse(value.trim()) as PaletteEntry[];
         console.log('Printing all colours...\n');
         lines.forEach(line => {
-            console.log(`$\\colorbox{${line.colour}}{\\textcolor{${line.fg ?? '#fff'}}{${line.name.en}}}$`);
+            console.log(`${line.name.en}: background=\`${line.colour}\`, foreground=\`${line.fg ?? '#fff'}\``);
         });
         writeFileSync(cityFilepath, `${JSON.stringify(lines, null, 4)}\n`);
     }
