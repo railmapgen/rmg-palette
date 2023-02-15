@@ -2,7 +2,13 @@
 set -eux
 
 # build local resources
-npm run build:resources
+cd ./package
+npm install
+npm run build
+cd ..
+
+# npm install
+npm install
 
 # run tests
 npm run test
