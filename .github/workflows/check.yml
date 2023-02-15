@@ -24,5 +24,6 @@ jobs:
 
       - name: Code check
         run: |
+          npm install
           npm run lint
           npm run test
