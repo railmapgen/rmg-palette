@@ -1,0 +1,1 @@
+import{h as e,L as t}from"./vendor-1e2cd711.js";function u(){const{i18n:o}=e();return n=>{var r,s;return(s=(r=o.languages.map(a=>n[a]).find(a=>a!==void 0))!=null?r:n[t.English])!=null?s:"(Translation Error)"}}export{u};
