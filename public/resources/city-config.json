@@ -999,6 +999,14 @@
         }
     },
     {
+        "id": "yc",
+        "country": "GBSCT",
+        "name": {
+            "en": "Yucheng",
+            "zh": "雨城"
+        }
+    },
+    {
         "id": "yevpatoria",
         "country": "UA",
         "name": {
