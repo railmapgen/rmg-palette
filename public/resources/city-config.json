@@ -1018,6 +1018,15 @@
         }
     },
     {
+        "id": "yucheng",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "雨城",
+            "zh-Hant": "雨城",
+            "en": "Yucheng"
+        }
+    },
+    {
         "id": "zhengzhou",
         "country": "CN",
         "name": {

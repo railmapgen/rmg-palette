@@ -1,0 +1,12 @@
+[
+    {
+        "id": "circle",
+        "colour": "#ffdd00",
+        "fg": "#000",
+        "name": {
+            "en": "Circle Line",
+            "zh-Hans": "环线",
+            "zh-Hant": "环线"
+        }
+    }
+]
