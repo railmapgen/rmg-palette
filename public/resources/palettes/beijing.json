@@ -72,7 +72,7 @@
     {
         "id": "bj9",
         "colour": "#8fc31f",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 9",
             "zh-Hans": "9号线",
@@ -172,7 +172,7 @@
     {
         "id": "bj27cp",
         "colour": "#de82b2",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Changping Line",
             "zh-Hans": "昌平线",
@@ -202,7 +202,7 @@
     {
         "id": "bj34sj",
         "colour": "#a29bbb",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Capital Airport Express",
             "zh-Hans": "首都机场线",
