@@ -1,7 +1,7 @@
 [
     {
         "id": "sh1",
-        "colour": "#E4002B",
+        "colour": "#e3002b",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sh2",
-        "colour": "#97D700",
+        "colour": "#8cc220",
         "fg": "#000",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "sh3",
-        "colour": "#FFD100",
+        "colour": "#fcd700",
         "fg": "#000",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "sh4",
-        "colour": "#5F259F",
+        "colour": "#461e85",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "sh5",
-        "colour": "#AC4FC6",
+        "colour": "#944d9a",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "sh6",
-        "colour": "#D9027D",
+        "colour": "#d40068",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "sh7",
-        "colour": "#FF6900",
+        "colour": "#ed6f00",
         "fg": "#000",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "sh8",
-        "colour": "#00A3E0",
+        "colour": "#0094d8",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -81,7 +81,7 @@
     },
     {
         "id": "sh9",
-        "colour": "#71C5E8",
+        "colour": "#87caed",
         "fg": "#000",
         "name": {
             "en": "Line 9",
@@ -91,7 +91,7 @@
     },
     {
         "id": "sh10",
-        "colour": "#C1A7E2",
+        "colour": "#c6afd4",
         "fg": "#000",
         "name": {
             "en": "Line 10",
@@ -101,7 +101,7 @@
     },
     {
         "id": "sh11",
-        "colour": "#76232F",
+        "colour": "#871c2b",
         "fg": "#fff",
         "name": {
             "en": "Line 11",
@@ -111,7 +111,7 @@
     },
     {
         "id": "sh12",
-        "colour": "#007B5F",
+        "colour": "#007a60",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
@@ -121,7 +121,7 @@
     },
     {
         "id": "sh13",
-        "colour": "#EF95CF",
+        "colour": "#e999c0",
         "fg": "#000",
         "name": {
             "en": "Line 13",
@@ -131,7 +131,7 @@
     },
     {
         "id": "sh14",
-        "colour": "#827A04",
+        "colour": "#626020",
         "fg": "#fff",
         "name": {
             "en": "Line 14",
@@ -141,7 +141,7 @@
     },
     {
         "id": "sh15",
-        "colour": "#BBA786",
+        "colour": "#bca886",
         "fg": "#000",
         "name": {
             "en": "Line 15",
@@ -151,7 +151,7 @@
     },
     {
         "id": "sh16",
-        "colour": "#2CD5C4",
+        "colour": "#98d1c0",
         "fg": "#000",
         "name": {
             "en": "Line 16",
@@ -161,7 +161,7 @@
     },
     {
         "id": "sh17",
-        "colour": "#C09C83",
+        "colour": "#bc796f",
         "fg": "#fff",
         "name": {
             "en": "Line 17",
@@ -171,7 +171,7 @@
     },
     {
         "id": "sh18",
-        "colour": "#D6A461",
+        "colour": "#c4984f",
         "fg": "#000",
         "name": {
             "en": "Line 18",
@@ -180,8 +180,48 @@
         }
     },
     {
+        "id": "sh19",
+        "colour": "#48864d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "sh20",
+        "colour": "#365299",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "sh21",
+        "colour": "#d6c66c",
+        "fg": "#000",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "sh23",
+        "colour": "#e0815e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
         "id": "pjl",
-        "colour": "#999999",
+        "colour": "#b5b5b6",
         "fg": "#fff",
         "name": {
             "en": "Pujiang Line",
@@ -251,7 +291,7 @@
     },
     {
         "id": "maglev",
-        "colour": "#009090",
+        "colour": "#0e7572",
         "fg": "#fff",
         "name": {
             "en": "Shanghai Maglev Train",
@@ -264,8 +304,39 @@
         "colour": "#000000",
         "fg": "#fff",
         "name": {
-            "zh": "金山铁路",
-            "en": "Jinshan Railway"
+            "en": "Jinshan Railway",
+            "zh-Hans": "金山铁路",
+            "zh-Hant": "金山鐵路"
+        }
+    },
+    {
+        "id": "jcll",
+        "colour": "#266883",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Link Line",
+            "zh-Hans": "机场联络线",
+            "zh-Hant": "機場聯絡線"
+        }
+    },
+    {
+        "id": "jm",
+        "colour": "#733a52",
+        "fg": "#fff",
+        "name": {
+            "en": "Jiamin Line",
+            "zh-Hans": "嘉闵线",
+            "zh-Hant": "嘉閔線"
+        }
+    },
+    {
+        "id": "cm",
+        "colour": "#6bb392",
+        "fg": "#000",
+        "name": {
+            "en": "Chongming Line",
+            "zh-Hans": "崇明线",
+            "zh-Hant": "崇明線"
         }
     }
 ]
