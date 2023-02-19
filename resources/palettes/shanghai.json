@@ -1,7 +1,7 @@
 [
     {
         "id": "sh1",
-        "colour": "#E4002B",
+        "colour": "#E3002B",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sh2",
-        "colour": "#97D700",
+        "colour": "#8CC220",
         "fg": "#000",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "sh3",
-        "colour": "#FFD100",
+        "colour": "#FCD600",
         "fg": "#000",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "sh4",
-        "colour": "#5F259F",
+        "colour": "#461D84",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "sh5",
-        "colour": "#AC4FC6",
+        "colour": "#944D9A",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "sh6",
-        "colour": "#D9027D",
+        "colour": "#D40068",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "sh7",
-        "colour": "#FF6900",
+        "colour": "#ED6F00",
         "fg": "#000",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "sh8",
-        "colour": "#00A3E0",
+        "colour": "#0094D8",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -81,7 +81,7 @@
     },
     {
         "id": "sh9",
-        "colour": "#71C5E8",
+        "colour": "#87CAED",
         "fg": "#000",
         "name": {
             "en": "Line 9",
@@ -91,7 +91,7 @@
     },
     {
         "id": "sh10",
-        "colour": "#C1A7E2",
+        "colour": "#C6AFD4",
         "fg": "#000",
         "name": {
             "en": "Line 10",
@@ -101,7 +101,7 @@
     },
     {
         "id": "sh11",
-        "colour": "#76232F",
+        "colour": "#871C2B",
         "fg": "#fff",
         "name": {
             "en": "Line 11",
@@ -111,7 +111,7 @@
     },
     {
         "id": "sh12",
-        "colour": "#007B5F",
+        "colour": "#007B61",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
@@ -121,7 +121,7 @@
     },
     {
         "id": "sh13",
-        "colour": "#EF95CF",
+        "colour": "#E999C0",
         "fg": "#000",
         "name": {
             "en": "Line 13",
@@ -131,7 +131,7 @@
     },
     {
         "id": "sh14",
-        "colour": "#827A04",
+        "colour": "#626020",
         "fg": "#fff",
         "name": {
             "en": "Line 14",
@@ -141,7 +141,7 @@
     },
     {
         "id": "sh15",
-        "colour": "#BBA786",
+        "colour": "#BCA886",
         "fg": "#000",
         "name": {
             "en": "Line 15",
@@ -151,7 +151,7 @@
     },
     {
         "id": "sh16",
-        "colour": "#2CD5C4",
+        "colour": "#98D1C0",
         "fg": "#000",
         "name": {
             "en": "Line 16",
@@ -161,7 +161,7 @@
     },
     {
         "id": "sh17",
-        "colour": "#C09C83",
+        "colour": "#BC796F",
         "fg": "#fff",
         "name": {
             "en": "Line 17",
@@ -171,7 +171,7 @@
     },
     {
         "id": "sh18",
-        "colour": "#D6A461",
+        "colour": "#C4984F",
         "fg": "#000",
         "name": {
             "en": "Line 18",
@@ -181,7 +181,7 @@
     },
     {
         "id": "pjl",
-        "colour": "#999999",
+        "colour": "#B5B5B6",
         "fg": "#fff",
         "name": {
             "en": "Pujiang Line",
