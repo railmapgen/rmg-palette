@@ -2,7 +2,13 @@
 set -eux
 
 # build local resources
-npm run build:resources
+cd ./package
+npm install
+npm run build
+cd ..
+
+# npm install
+npm install
 
 # run tests
 npm run test
@@ -14,7 +20,6 @@ git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 # variables
 export APP_NAME=$(node -p "require('./package.json').name")
 BRANCH=$(git branch | grep \* | cut -d ' ' -f2 | tr '/' '.')
-UAT_REPO_NAME=rmg-repositories
 
 # npm config
 npm config set tag-version-prefix "${APP_NAME}-"
@@ -33,13 +38,8 @@ else
   # git tag -a "${APP_NAME}-${RMG_VER}" -m "${APP_NAME}-${RMG_VER}"
 fi
 
-
 ### BUILD
-mkdir -p $UAT_REPO_NAME/"$APP_NAME"/
-
 CI='' npm run build
-cp -r dist/ $UAT_REPO_NAME/"$APP_NAME"/"$RMG_VER"/
-
 
 ### PUSH TAG AND COMMIT
 if [ "$BRANCH" = "master" ]
@@ -47,12 +47,5 @@ then
   git push --atomic origin HEAD "${APP_NAME}-${RMG_VER}"
 fi
 
-### UPLOAD ARTIFACTS
-cd $UAT_REPO_NAME/
-git add .
-git commit -m "Build version $APP_NAME-$RMG_VER"
-git push --force
-
-
 echo "Build Success: $APP_NAME-$RMG_VER"
-echo "::set-output name=RMG_VER::$RMG_VER"
+echo "RMG_VER=$RMG_VER" >> $GITHUB_OUTPUT

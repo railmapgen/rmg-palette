@@ -1,32 +1,79 @@
 [
     {
         "id": "cr1",
+        "colour": "#144996",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "ar": "خط 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#144996"
+        }
     },
     {
-        "id": "spg2",
+        "id": "cr2",
+        "colour": "#B22530",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "ar": "خط 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#B22530"
+        }
     },
     {
-        "id": "spg3",
+        "id": "cr3",
+        "colour": "#315F0A",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "ar": "خط 3 ",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#315F0A"
+        }
+    },
+    {
+        "id": "cr1r",
+        "colour": "#03528e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1 (RATP)",
+            "ar": "خط 1 (RATP)",
+            "zh-Hans": "1号线（RATP）",
+            "zh-Hant": "1號線（RATP）"
+        }
+    },
+    {
+        "id": "cr2r",
+        "colour": "#c32d2e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2 (RATP)",
+            "ar": "خط 2 (RATP)",
+            "zh-Hans": "2号线（RATP）",
+            "zh-Hant": "2號線（RATP）"
+        }
+    },
+    {
+        "id": "cr3r",
+        "colour": "#00a990",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3 (RATP)",
+            "ar": "خط 3  (RATP)",
+            "zh-Hans": "3号线（RATP）",
+            "zh-Hant": "3號線（RATP）"
+        }
+    },
+    {
+        "id": "crct",
+        "colour": "#9e1632",
+        "fg": "#fff",
+        "name": {
+            "en": "Cairo Capital Train",
+            "ar": "خط القطار الكهربائي الخفيف",
+            "zh-Hans": "斋月十日城铁路",
+            "zh-Hant": "齋月十日城鐵路"
+        }
     }
 ]
