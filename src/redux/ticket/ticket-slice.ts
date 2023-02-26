@@ -5,10 +5,10 @@ import {
     CountryCode,
     CountryEntry,
     countryList,
-    LanguageCode,
     MonoColour,
     PaletteEntry,
 } from '@railmapgen/rmg-palette-resources';
+import { LanguageCode } from '@railmapgen/rmg-translate';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
@@ -23,7 +23,7 @@ import {
 
 const initialTranslation = translationEntityAdapter.upsertOne(translationEntityAdapter.getInitialState(), {
     id: nanoid(),
-    lang: LanguageCode.English,
+    lang: 'en',
     name: '',
 });
 
@@ -197,7 +197,7 @@ export const ticketSelectors = {
         return {
             id: state.newCountry as CountryCode,
             name: convertEntityStateToTranslation(state.countryName),
-            language: state.newCountryLang,
+            language: state.newCountryLang as any,
         };
     },
 
@@ -241,7 +241,7 @@ export const ticketSelectors = {
         //if the case is a new country has officalLanguage then get it, otherwise find the exisiting country officalLanguage - see if it is filled
         const officialLanguage =
             country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
-        result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguage));
+        result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguage as LanguageCode));
 
         return result;
     },
@@ -261,7 +261,10 @@ export const ticketSelectors = {
         const officialLanguage =
             country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
         Object.values(lines).forEach(line => {
-            result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity, officialLanguage);
+            result['Line ' + line.id] = getTranslationEntityInvalidReasons(
+                line.nameEntity,
+                officialLanguage as LanguageCode
+            );
         });
 
         return result;

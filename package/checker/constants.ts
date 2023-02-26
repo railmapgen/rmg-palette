@@ -1,41 +1,41 @@
-export enum LanguageCode {
-    Azerbaijani = 'az',
-    Arabic = 'ar',
-    Catalan = 'ca',
-    Chinese = 'zh',
-    ChineseCN = 'zh-CN',
-    ChineseSimp = 'zh-Hans',
-    ChineseTrad = 'zh-Hant',
-    ChineseHK = 'zh-HK',
-    ChineseTW = 'zh-TW',
-    Danish = 'da',
-    English = 'en',
-    French = 'fr',
-    Gaelic = 'ga',
-    German = 'de',
-    Greek = 'el',
-    Hindi = 'hi',
-    Hungarian = 'hu',
-    Indonesian = 'id',
-    Italian = 'it',
-    Japanese = 'ja',
-    Korean = 'ko',
-    Malay = 'ms',
-    Norwegian = 'no',
-    Persian = 'fa',
-    Polish = 'pl',
-    Portuguese = 'pt',
-    Romanian = 'ro',
-    Russian = 'ru',
-    Spanish = 'es',
-    Swedish = 'sv',
-    Thai = 'th',
-    Turkish = 'tr',
-    Uzbek = 'uz',
-    Vietnamese = 'vn',
-}
-
-export type Translation = Partial<Record<LanguageCode, string>>;
+type LanguageCode =
+    | 'ar'
+    | 'az'
+    | 'ca'
+    | 'da'
+    | 'de'
+    | 'el'
+    | 'en'
+    | 'es'
+    | 'fa'
+    | 'fr'
+    | 'ga'
+    | 'gd'
+    | 'hi'
+    | 'hu'
+    | 'id'
+    | 'it'
+    | 'ja'
+    | 'ko'
+    | 'ms'
+    | 'no'
+    | 'pl'
+    | 'pt'
+    | 'ro'
+    | 'ru'
+    | 'sv'
+    | 'th'
+    | 'tr'
+    | 'ur'
+    | 'uz'
+    | 'vi'
+    | 'zh'
+    | 'zh-CN'
+    | 'zh-Hans'
+    | 'zh-Hant'
+    | 'zh-HK'
+    | 'zh-TW';
+type Translation = Partial<Record<LanguageCode, string>>;
 
 export enum MonoColour {
     black = '#000',

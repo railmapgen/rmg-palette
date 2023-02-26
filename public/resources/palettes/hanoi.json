@@ -3,7 +3,7 @@
         "id": "hn1",
         "name": {
             "en": "Line 1",
-            "vn": "Tuyến số 1",
+            "vi": "Tuyến số 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
         },
@@ -13,7 +13,7 @@
         "id": "hn2",
         "name": {
             "en": "Line 2",
-            "vn": "Tuyến số 2",
+            "vi": "Tuyến số 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
         },
@@ -23,7 +23,7 @@
         "id": "hn3",
         "name": {
             "en": "Line 3",
-            "vn": "Tuyến số 3",
+            "vi": "Tuyến số 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
         },
@@ -33,7 +33,7 @@
         "id": "hn4",
         "name": {
             "en": "Line 4",
-            "vn": "Tuyến số 4",
+            "vi": "Tuyến số 4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
         },
@@ -43,7 +43,7 @@
         "id": "hn5",
         "name": {
             "en": "Line 5",
-            "vn": "Tuyến số 5",
+            "vi": "Tuyến số 5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號線"
         },
@@ -53,7 +53,7 @@
         "id": "hn6",
         "name": {
             "en": "Line 6",
-            "vn": "Tuyến số 6",
+            "vi": "Tuyến số 6",
             "zh-Hans": "6号线",
             "zh-Hant": "6號線"
         },
@@ -63,7 +63,7 @@
         "id": "hn7",
         "name": {
             "en": "Line 7",
-            "vn": "Tuyến số 7",
+            "vi": "Tuyến số 7",
             "zh-Hans": "7号线",
             "zh-Hant": "7號線"
         },
@@ -73,7 +73,7 @@
         "id": "hn8",
         "name": {
             "en": "Line 8",
-            "vn": "Tuyến số 8",
+            "vi": "Tuyến số 8",
             "zh-Hans": "8号线",
             "zh-Hant": "8號線"
         },
@@ -83,7 +83,7 @@
         "id": "hnm1",
         "name": {
             "en": "Line M1",
-            "vn": "Tuyến số M1",
+            "vi": "Tuyến số M1",
             "zh-Hans": "M1号线",
             "zh-Hant": "M1號線"
         },
@@ -93,7 +93,7 @@
         "id": "hnm2",
         "name": {
             "en": "Line M2",
-            "vn": "Tuyến số M2",
+            "vi": "Tuyến số M2",
             "zh-Hans": "M2号线",
             "zh-Hant": "M2號線"
         },
@@ -103,7 +103,7 @@
         "id": "hnm3",
         "name": {
             "en": "Line M3",
-            "vn": "Tuyến số M3",
+            "vi": "Tuyến số M3",
             "zh-Hans": "M3号线",
             "zh-Hant": "M3號線"
         },

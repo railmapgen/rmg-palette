@@ -1,13 +1,12 @@
 import { render } from '../../test-utils';
 import { vi } from 'vitest';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { screen, within } from '@testing-library/react';
 import { translationEntityAdapter } from '../../redux/ticket/util';
 
 const mockEntries = translationEntityAdapter.upsertMany(translationEntityAdapter.getInitialState(), [
-    { id: '001', lang: LanguageCode.English, name: 'Hong Kong' },
-    { id: '002', lang: LanguageCode.Chinese, name: '香港' },
+    { id: '001', lang: 'en', name: 'Hong Kong' },
+    { id: '002', lang: 'zh', name: '香港' },
 ]);
 
 const mockCallbacks = {
