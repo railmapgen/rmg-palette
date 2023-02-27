@@ -84,9 +84,9 @@
         "colour": "#828C47",
         "fg": "#fff",
         "name": {
-            "en": "Line 9 Suburban Line",
-            "zh-Hans": "9 - 城郊线",
-            "zh-Hant": "9 - 城郊線"
+            "en": "Suburban Line",
+            "zh-Hans": "城郊线",
+            "zh-Hant": "城郊線"
         }
     },
     {
@@ -124,9 +124,9 @@
         "colour": "#1D4155",
         "fg": "#fff",
         "name": {
-            "en": "Line 17 Zhengxu Line",
-            "zh-Hans": "17 - 郑许市域铁路",
-            "zh-Hant": "17 - 鄭許市域鐵路"
+            "en": "Line 17 (Zhengxu Line)",
+            "zh-Hans": "17号线（郑许市域铁路）",
+            "zh-Hant": "17號線（鄭許市域鐵路）"
         }
     }
 ]
