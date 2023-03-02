@@ -343,7 +343,7 @@
         "country": "VN",
         "name": {
             "en": "Hanoi",
-            "vn": "Hà Nội",
+            "vi": "Hà Nội",
             "zh-Hans": "河内",
             "zh-Hant": "河內"
         }
@@ -380,7 +380,7 @@
         "country": "VN",
         "name": {
             "en": "Ho Chi Minh City",
-            "vn": "Thành phố Hồ Chí Minh",
+            "vi": "Thành phố Hồ Chí Minh",
             "zh": "胡志明市"
         }
     },

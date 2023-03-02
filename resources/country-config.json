@@ -419,9 +419,9 @@
         "id": "VN",
         "name": {
             "en": "Vietnam",
-            "vn": "Việt Nam",
+            "vi": "Việt Nam",
             "zh": "越南"
         },
-        "language": "vn"
+        "language": "vi"
     }
 ]
