@@ -5,10 +5,10 @@ import {
     CountryCode,
     CountryEntry,
     countryList,
-    LanguageCode,
     MonoColour,
     PaletteEntry,
 } from '@railmapgen/rmg-palette-resources';
+import { LanguageCode } from '@railmapgen/rmg-translate';
 import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
@@ -23,7 +23,7 @@ import {
 
 const initialTranslation = translationEntityAdapter.upsertOne(translationEntityAdapter.getInitialState(), {
     id: nanoid(),
-    lang: LanguageCode.English,
+    lang: 'en',
     name: '',
 });
 

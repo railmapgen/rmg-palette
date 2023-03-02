@@ -2,7 +2,7 @@ import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
 import { translationEntityAdapter } from '../../redux/ticket/util';
 import { nanoid } from 'nanoid';
-import { LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import { render } from '../../test-utils';
 import ColourEntryCard from './colour-entry-card';
 import { act, fireEvent, screen } from '@testing-library/react';
@@ -10,7 +10,7 @@ import { vi } from 'vitest';
 
 const initialTranslation = translationEntityAdapter.upsertOne(translationEntityAdapter.getInitialState(), {
     id: nanoid(),
-    lang: LanguageCode.English,
+    lang: 'en',
     name: '',
 });
 

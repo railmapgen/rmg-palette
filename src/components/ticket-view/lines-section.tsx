@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Box, Button, Flex, Heading, HStack, IconButton } from '@chakra-ui/react';
 import { RmgLineBadge } from '@railmapgen/rmg-components';
-import { Translation } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
@@ -18,6 +17,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import PantoneChecker from './pantone-checker';
 import ColourEntryCard from './colour-entry-card';
+import { Translation } from '@railmapgen/rmg-translate';
 
 export default function LinesSection() {
     const { t } = useTranslation();

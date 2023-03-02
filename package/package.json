@@ -6,7 +6,7 @@
         "url": "https://github.com/railmapgen/rmg-palette.git",
         "directory": "package"
     },
-    "version": "0.6.32",
+    "version": "0.7.0-0",
     "description": "",
     "main": "./index.js",
     "scripts": {
@@ -27,5 +27,8 @@
         ".": "./index.js",
         "./": "./"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "@railmapgen/rmg-translate": "^2.0.0"
+    }
 }

@@ -13,7 +13,7 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
-import { LanguageCode } from '@railmapgen/rmg-palette-resources';
+import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();
@@ -38,11 +38,12 @@ export default function CountrySection() {
         new: t('Add a country/region...'),
     };
 
-    const languageOptions = Object.entries(LanguageCode).reduce<Record<string, string>>(
-        (acc, cur) => {
-            return { ...acc, [cur[1]]: cur[0] };
-        },
-        { '': t('Please select...') }
+    const languageOptions = Object.entries(LANGUAGE_NAMES).reduce(
+        (acc, cur) => ({
+            ...acc,
+            [cur[0]]: translateName(cur[1]),
+        }),
+        {} as Record<LanguageCode, string>
     );
 
     const fields: RmgFieldsField[] = [

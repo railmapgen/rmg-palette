@@ -4,7 +4,7 @@ import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
-import { CountryCode, LanguageCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { CountryCode, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { createTranslationEntityInitialState } from '../../redux/ticket/util';
 
 const realStore = rootReducer.getState();
@@ -38,19 +38,19 @@ describe('SubmitModal', () => {
                 country: CountryCode.HK,
                 city: 'hongkong',
                 cityName: createTranslationEntityInitialState([
-                    { id: '001', lang: LanguageCode.English, name: 'Hong Kong' },
-                    { id: '002', lang: LanguageCode.ChineseSimp, name: '香港' },
-                    { id: '003', lang: LanguageCode.ChineseHK, name: '香港' },
-                    { id: '004', lang: LanguageCode.ChineseTW, name: '香港' },
+                    { id: '001', lang: 'en', name: 'Hong Kong' },
+                    { id: '002', lang: 'zh-Hans', name: '香港' },
+                    { id: '003', lang: 'zh-HK', name: '香港' },
+                    { id: '004', lang: 'zh-TW', name: '香港' },
                 ]),
                 lines: {
                     '991': {
                         id: 'ktl',
                         nameEntity: createTranslationEntityInitialState([
-                            { id: '801', lang: LanguageCode.English, name: 'Kwun Tong Line' },
-                            { id: '802', lang: LanguageCode.ChineseSimp, name: '观塘线' },
-                            { id: '803', lang: LanguageCode.ChineseHK, name: '觀塘綫' },
-                            { id: '804', lang: LanguageCode.ChineseTW, name: '觀塘綫' },
+                            { id: '801', lang: 'en', name: 'Kwun Tong Line' },
+                            { id: '802', lang: 'zh-Hans', name: '观塘线' },
+                            { id: '803', lang: 'zh-HK', name: '觀塘綫' },
+                            { id: '804', lang: 'zh-TW', name: '觀塘綫' },
                         ]),
                         colour: '#AAAAAA',
                         fg: MonoColour.white,

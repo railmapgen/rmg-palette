@@ -6,26 +6,19 @@ import ticketReducer, {
     TicketState,
     updateCountryName,
 } from './ticket-slice';
-import {
-    CityCode,
-    CityEntry,
-    CountryCode,
-    LanguageCode,
-    MonoColour,
-    PaletteEntry,
-} from '@railmapgen/rmg-palette-resources';
+import { CityCode, CityEntry, CountryCode, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { TicketInvalidReasonType } from '../../util/constants';
 
 const realStore = rootReducer.getState();
 
 describe('TicketSlice', () => {
     describe('TicketSlice - multi-language name mutation', () => {
-        const initialState = {
+        const initialState: TicketState = {
             ...realStore.ticket,
             countryName: {
                 entities: {
-                    '001': { id: '001', lang: LanguageCode.English, name: 'Country' },
-                    '002': { id: '002', lang: LanguageCode.Chinese, name: '國家' },
+                    '001': { id: '001', lang: 'en', name: 'Country' },
+                    '002': { id: '002', lang: 'zh', name: '國家' },
                 },
                 ids: ['001', '002'],
             },
@@ -55,7 +48,7 @@ describe('TicketSlice', () => {
                 initialState,
                 updateCountryName({
                     id: '002',
-                    changes: { lang: LanguageCode.ChineseTrad },
+                    changes: { lang: 'zh-Hant' },
                 })
             );
 

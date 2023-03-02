@@ -1,11 +1,11 @@
 import { RmgCard, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-
 import { Box, HStack, IconButton } from '@chakra-ui/react';
-import { LanguageCode } from '@railmapgen/rmg-palette-resources';
 import { MdAdd, MdDelete } from 'react-icons/md';
 import { EntityId, EntityState } from '@reduxjs/toolkit';
 import { TranslationEntity, translationEntityAdapter, translationEntitySelector } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
+import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
+import useTranslatedName from '../hooks/use-translated-name';
 
 interface MultiLangEntryCardProps {
     entries?: EntityState<TranslationEntity>;
@@ -19,6 +19,7 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
     const entries = props.entries ?? translationEntityAdapter.getInitialState();
 
     const { t } = useTranslation();
+    const translateName = useTranslatedName();
 
     const getFields = (id: EntityId): RmgFieldsField[] => {
         const entity = translationEntitySelector.selectById(entries, id);
@@ -28,13 +29,13 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
         }
 
         const { lang, name } = entity;
-        const languageOptions = Object.entries(LanguageCode).reduce<Record<string, string>>((acc, cur) => {
-            if (cur[1] !== lang && cur[1] in entries) {
-                return acc;
-            } else {
-                return { ...acc, [cur[1]]: cur[0] };
-            }
-        }, {});
+        const languageOptions = Object.entries(LANGUAGE_NAMES).reduce(
+            (acc, cur) => ({
+                ...acc,
+                [cur[0]]: translateName(cur[1]),
+            }),
+            {} as Record<LanguageCode, string>
+        );
 
         return [
             {
@@ -55,9 +56,9 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
     };
 
     const handleAddEntry = () => {
-        const lang = Object.values(LanguageCode).filter(
+        const lang = Object.keys(LANGUAGE_NAMES).filter(
             l => !Object.values(entries.entities).find(entity => entity?.lang === l)
-        )[0];
+        )[0] as LanguageCode;
         onAdd(lang);
     };
 

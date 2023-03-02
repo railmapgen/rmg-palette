@@ -1,4 +1,5 @@
-import { ColourHex, LanguageCode, MonoColour, Translation } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { LanguageCode, Translation } from '@railmapgen/rmg-translate';
 import { createEntityAdapter, EntityState } from '@reduxjs/toolkit';
 import { TranslationInvalidReasonType } from '../../util/constants';
 
@@ -41,18 +42,18 @@ export const getTranslationEntityInvalidReasons = (
     const entities = translationEntitySelector.selectAll(entityState);
 
     // English
-    if (!entities.some(entity => entity.lang === LanguageCode.English && entity.name)) {
+    if (!entities.some(entity => entity.lang === 'en' && entity.name)) {
         result.push(TranslationInvalidReasonType.EN_UNDEFINED);
     }
 
     // Chinese
-    const zhHansExists = entities.some(entity => entity.lang === LanguageCode.ChineseSimp && entity.name);
-    const zhHantExists = entities.some(entity => entity.lang === LanguageCode.ChineseTrad && entity.name);
-    const zhCNExists = entities.some(entity => entity.lang === LanguageCode.ChineseCN && entity.name);
-    const zhHKExists = entities.some(entity => entity.lang === LanguageCode.ChineseHK && entity.name);
-    const zhTWExists = entities.some(entity => entity.lang === LanguageCode.ChineseTW && entity.name);
+    const zhHansExists = entities.some(entity => entity.lang === 'zh-Hans' && entity.name);
+    const zhHantExists = entities.some(entity => entity.lang === 'zh-Hant' && entity.name);
+    const zhCNExists = entities.some(entity => entity.lang === 'zh-CN' && entity.name);
+    const zhHKExists = entities.some(entity => entity.lang === 'zh-HK' && entity.name);
+    const zhTWExists = entities.some(entity => entity.lang === 'zh-TW' && entity.name);
 
-    if (!entities.some(entity => entity.lang === LanguageCode.Chinese && entity.name)) {
+    if (!entities.some(entity => entity.lang === 'zh' && entity.name)) {
         if (!zhHansExists && !zhHantExists && !zhCNExists && !zhHKExists && !zhTWExists) {
             // not exist any Chinese
             result.push(TranslationInvalidReasonType.ZH_UNDEFINED);
