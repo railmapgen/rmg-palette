@@ -1,41 +1,4 @@
-type LanguageCode =
-    | 'ar'
-    | 'az'
-    | 'ca'
-    | 'da'
-    | 'de'
-    | 'el'
-    | 'en'
-    | 'es'
-    | 'fa'
-    | 'fr'
-    | 'ga'
-    | 'gd'
-    | 'hi'
-    | 'hu'
-    | 'id'
-    | 'it'
-    | 'ja'
-    | 'ko'
-    | 'ms'
-    | 'no'
-    | 'pl'
-    | 'pt'
-    | 'ro'
-    | 'ru'
-    | 'sv'
-    | 'th'
-    | 'tr'
-    | 'ur'
-    | 'uz'
-    | 'vi'
-    | 'zh'
-    | 'zh-CN'
-    | 'zh-Hans'
-    | 'zh-Hant'
-    | 'zh-HK'
-    | 'zh-TW';
-type Translation = Partial<Record<LanguageCode, string>>;
+import { LanguageCode, Translation } from '@railmapgen/rmg-translate';
 
 export enum MonoColour {
     black = '#000',

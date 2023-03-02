@@ -197,7 +197,7 @@ export const ticketSelectors = {
         return {
             id: state.newCountry as CountryCode,
             name: convertEntityStateToTranslation(state.countryName),
-            language: state.newCountryLang as any,
+            language: state.newCountryLang,
         };
     },
 
@@ -241,7 +241,7 @@ export const ticketSelectors = {
         //if the case is a new country has officalLanguage then get it, otherwise find the exisiting country officalLanguage - see if it is filled
         const officialLanguage =
             country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
-        result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguage as LanguageCode));
+        result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguage));
 
         return result;
     },
@@ -261,10 +261,7 @@ export const ticketSelectors = {
         const officialLanguage =
             country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
         Object.values(lines).forEach(line => {
-            result['Line ' + line.id] = getTranslationEntityInvalidReasons(
-                line.nameEntity,
-                officialLanguage as LanguageCode
-            );
+            result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity, officialLanguage);
         });
 
         return result;

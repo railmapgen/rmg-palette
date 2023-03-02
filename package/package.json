@@ -27,5 +27,8 @@
         ".": "./index.js",
         "./": "./"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "@railmapgen/rmg-translate": "^2.0.0"
+    }
 }
