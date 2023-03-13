@@ -66,6 +66,17 @@
         }
     },
     {
+        "id": "mu9",
+        "colour": "#009fe3",
+        "fg": "#fff",
+        "name": {
+            "en": "U9",
+            "de": "U9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
         "id": "ms1",
         "colour": "#15BFE9",
         "fg": "#fff",
@@ -109,7 +120,7 @@
             "zh-Hant": "市域S4"
         }
     },
-   {
+    {
         "id": "ms6",
         "colour": "#00975f",
         "fg": "#fff",
