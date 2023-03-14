@@ -999,6 +999,15 @@
         }
     },
     {
+        "id": "xuzhou",
+        "country": "CN",
+        "name": {
+            "en": "Xuzhou",
+            "zh-Hans": "徐州",
+            "zh-Hant": "徐州"
+        }
+    },
+    {
         "id": "yevpatoria",
         "country": "UA",
         "name": {
