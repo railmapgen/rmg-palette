@@ -1,0 +1,10 @@
+[
+    {
+        "id": "test",
+        "colour": "#aaaaaa",
+        "fg": "#fff",
+        "name": {
+            "en": "Test"
+        }
+    }
+]
