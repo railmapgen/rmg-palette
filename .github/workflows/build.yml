@@ -40,6 +40,8 @@ jobs:
         id: build
         run: ./scripts/build.sh
         shell: bash
+        env:
+          BUMP_VERSION: ${{ github.event.inputs.bump_version }}
 
       - name: Upload artefacts
         uses: railmapgen/upload-artefacts@main
