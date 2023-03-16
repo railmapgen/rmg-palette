@@ -935,6 +935,15 @@
         }
     },
     {
+        "id": "urumqi",
+        "country": "CN",
+        "name": {
+            "en": "Urumqi",
+            "zh": "乌鲁木齐",
+            "zh-HK": "烏魯木齊"
+        }
+    },
+    {
         "id": "vienna",
         "country": "AT",
         "name": {

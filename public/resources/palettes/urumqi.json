@@ -1,0 +1,122 @@
+[
+    {
+        "id": "wlmq1",
+        "colour": "#10069f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
+        "id": "wlmq2",
+        "colour": "#32cd32",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    },
+    {
+        "id": "wlmq3",
+        "colour": "#d0bb53",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
+        "id": "wlmq4",
+        "colour": "#eb2e2e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
+        }
+    },
+    {
+        "id": "wlmq5",
+        "colour": "#8b008b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "wlmq6",
+        "colour": "#009e53",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "wlmq7",
+        "colour": "#87a0ac",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "wlmq8",
+        "colour": "#b76430",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "wlmquc",
+        "colour": "#ffa23b",
+        "fg": "#fff",
+        "name": {
+            "en": "Changji Maglev Line ",
+            "zh-Hans": "昌吉磁浮线",
+            "zh-Hant": "昌吉磁浮線"
+        }
+    },
+    {
+        "id": "wlmqun",
+        "colour": "#00bfcd",
+        "fg": "#fff",
+        "name": {
+            "en": "Nanshan tourism Maglev Line ",
+            "zh-Hans": "南山旅游磁浮线",
+            "zh-Hant": "南山旅遊磁浮線"
+        }
+    },
+    {
+        "id": "wlmquw",
+        "colour": "#ff69b4",
+        "fg": "#fff",
+        "name": {
+            "en": "WujiaquLine ",
+            "zh-Hans": "五家渠线",
+            "zh-Hant": "五家渠線"
+        }
+    },
+    {
+        "id": "wlmqug",
+        "colour": "#ffd700",
+        "fg": "#fff",
+        "name": {
+            "en": "Ganjiabao Line ",
+            "zh-Hans": "甘家堡线",
+            "zh-Hant": "甘家堡線"
+        }
+    }
+]
