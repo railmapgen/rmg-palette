@@ -49,6 +49,6 @@ PATTERN='\([0-9]\+\.\)\{2\}'
 PREV_MAJ_MIN=$(echo $PREV_VER | grep --colour=never -o $PATTERN)
 CUR_MAJ_MIN=$(echo $RMG_VER | grep --colour=never -o $PATTERN)
 [ $PREV_MAJ_MIN == $CUR_MAJ_MIN ] && IS_PATCH=true || IS_PATCH=false
-echo "::set-output name=IS_PATCH::$IS_PATCH"
+echo "IS_PATCH=$IS_PATCH" >> $GITHUB_OUTPUT
 
 # going to publish package

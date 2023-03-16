@@ -28,9 +28,7 @@ cd ..
 # Commit
 rm ./package/issuebot/issue.txt
 git add .
-git commit -m "#$1 $2
-
-Co-authored-by: $3 <$4+$3@users.noreply.github.com>"
+git commit -m "#$1 $2" --author="$3 <$4+$3@users.noreply.github.com>"
 
 # Build to check
 cd package
