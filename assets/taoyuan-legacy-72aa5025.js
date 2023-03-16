@@ -1,1 +1,0 @@
-System.register(["./index-legacy-2b3f5f6b.js","./vendor-legacy-1d706868.js"],(function(e,t){"use strict";var n;return{setters:[function(e){n=e.M},null],execute:function(){e("default",[{id:"taoyuanairport",colour:"#8246af",fg:n.white,name:{en:"Taoyuan Airport MRT","zh-CN":"桃园机场捷运","zh-TW":"桃園機場捷運","zh-HK":"桃園機場捷運"}}])}}}));
