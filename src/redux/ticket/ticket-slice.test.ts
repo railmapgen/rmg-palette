@@ -2,6 +2,7 @@ import rootReducer from '../index';
 import ticketReducer, {
     populateTicket,
     removeCountryName,
+    switchCountryNameLang,
     ticketSelectors,
     TicketState,
     updateCountryName,
@@ -15,53 +16,34 @@ describe('TicketSlice', () => {
     describe('TicketSlice - multi-language name mutation', () => {
         const initialState: TicketState = {
             ...realStore.ticket,
-            countryName: {
-                entities: {
-                    '001': { id: '001', lang: 'en', name: 'Country' },
-                    '002': { id: '002', lang: 'zh', name: '國家' },
-                },
-                ids: ['001', '002'],
-            },
+            countryName: [
+                ['en', 'Country'],
+                ['zh', '國家'],
+            ],
         };
 
         it('Can update name in specific language as expected', () => {
-            const nextState = ticketReducer(
-                initialState,
-                updateCountryName({
-                    id: '002',
-                    changes: { name: '国家' },
-                })
-            );
+            const nextState = ticketReducer(initialState, updateCountryName({ lang: 'zh', name: '国家' }));
 
-            expect(nextState.countryName.ids).toHaveLength(2);
-            expect(nextState.countryName.entities).toHaveProperty(
-                '002',
-                expect.objectContaining({
-                    lang: 'zh',
-                    name: '国家',
-                })
-            );
+            expect(nextState.countryName).toHaveLength(2);
+            expect(nextState.countryName).toContainEqual(['zh', '国家']);
         });
 
         it('Can change language of a name input as expected', () => {
             const nextState = ticketReducer(
                 initialState,
-                updateCountryName({
-                    id: '002',
-                    changes: { lang: 'zh-Hant' },
-                })
+                switchCountryNameLang({ prevLang: 'zh', nextLang: 'zh-Hant' })
             );
 
-            expect(nextState.countryName.ids).toHaveLength(2);
-            expect(nextState.countryName.entities['002']).not.toHaveProperty('lang', 'zh');
-            expect(nextState.countryName.entities['002']).toHaveProperty('lang', 'zh-Hant');
+            expect(nextState.countryName).toHaveLength(2);
+            expect(nextState.countryName).toContainEqual(['zh-Hant', '國家']);
         });
 
         it('Can remove name in specific language as expected', () => {
-            const nextState = ticketReducer(initialState, removeCountryName('002'));
+            const nextState = ticketReducer(initialState, removeCountryName('zh'));
 
-            expect(nextState.countryName.ids).toHaveLength(1);
-            expect(nextState.countryName).not.toHaveProperty('zh');
+            expect(nextState.countryName).toHaveLength(1);
+            expect(nextState.countryName[0]).not.toContain('zh');
         });
     });
 
@@ -101,7 +83,7 @@ describe('TicketSlice', () => {
                 lines: {
                     'id-001': {
                         id: '',
-                        nameEntity: { ids: [], entities: {} },
+                        nameEntity: [],
                         colour: '#aaaaaa',
                         fg: MonoColour.white,
                     },
@@ -171,13 +153,8 @@ describe('TicketSlice', () => {
             expect(nextState.country).toBe('HK');
 
             expect(nextState.city).toBe('hongkong');
-            expect(nextState.cityName.ids).toHaveLength(2);
-            expect(Object.values(nextState.cityName.entities)).toContainEqual(
-                expect.objectContaining({
-                    lang: 'en',
-                    name: 'Hong Kong',
-                })
-            );
+            expect(nextState.cityName).toHaveLength(2);
+            expect(nextState.cityName).toContainEqual(['en', 'Hong Kong']);
 
             expect(Object.keys(nextState.lines)).toHaveLength(2);
             expect(Object.values(nextState.lines)).toContainEqual(

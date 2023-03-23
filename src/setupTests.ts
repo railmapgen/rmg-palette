@@ -2,6 +2,8 @@ import { RootState } from './redux';
 import createMockStore from 'redux-mock-store';
 import { getDefaultMiddleware, ThunkDispatch } from '@reduxjs/toolkit';
 import { TextEncoder } from 'util';
+import { vi } from 'vitest';
+import crypto from 'node:crypto';
 
 // FIXME: any -> AnyAction?
 type DispatchExts = ThunkDispatch<RootState, void, any>;
@@ -39,3 +41,4 @@ global.fetch = (...args) => {
 };
 
 global.TextEncoder = TextEncoder;
+vi.stubGlobal('crypto', crypto);
