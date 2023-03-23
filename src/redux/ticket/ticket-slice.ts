@@ -8,26 +8,14 @@ import {
     MonoColour,
     PaletteEntry,
 } from '@railmapgen/rmg-palette-resources';
-import { LanguageCode } from '@railmapgen/rmg-translate';
-import { createSlice, EntityId, EntityState, PayloadAction } from '@reduxjs/toolkit';
-import { nanoid } from 'nanoid';
+import { LanguageCode, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
+import { createSlice, EntityId, PayloadAction } from '@reduxjs/toolkit';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
-import {
-    convertEntityStateToTranslation,
-    createTranslationEntityInitialState,
-    getTranslationEntityInvalidReasons,
-    PaletteEntryWithTranslationEntity,
-    TranslationEntity,
-    translationEntityAdapter,
-} from './util';
+import { getTranslationEntityInvalidReasons, PaletteEntryWithTranslationEntry, TranslationEntry } from './util';
 
-const initialTranslation = translationEntityAdapter.upsertOne(translationEntityAdapter.getInitialState(), {
-    id: nanoid(),
-    lang: 'en',
-    name: '',
-});
+const initialTranslation: TranslationEntry[] = SUPPORTED_LANGUAGES.map(lang => [lang, '']);
 
-const initialPaletteEntry: PaletteEntryWithTranslationEntity = {
+const initialPaletteEntry: PaletteEntryWithTranslationEntry = {
     id: '',
     nameEntity: initialTranslation,
     colour: '#aaaaaa',
@@ -39,15 +27,15 @@ export interface TicketState {
     // country
     country?: CountryCode | 'new';
     newCountry: string;
-    countryName: EntityState<TranslationEntity>;
+    countryName: TranslationEntry[];
     newCountryLang?: LanguageCode;
 
     // city
     city: string;
-    cityName: EntityState<TranslationEntity>;
+    cityName: TranslationEntry[];
 
     // lines
-    lines: Record<string, PaletteEntryWithTranslationEntity>;
+    lines: Record<string, PaletteEntryWithTranslationEntry>;
 }
 
 const getInitialState = (): TicketState => ({
@@ -59,7 +47,7 @@ const getInitialState = (): TicketState => ({
     city: '',
     cityName: initialTranslation,
 
-    lines: { [nanoid()]: initialPaletteEntry },
+    lines: { [crypto.randomUUID()]: initialPaletteEntry },
 });
 
 const ticketSlice = createSlice({
@@ -78,32 +66,46 @@ const ticketSlice = createSlice({
             state.newCountryLang = action.payload;
         },
 
-        updateCountryName: (state, action: PayloadAction<{ id: EntityId; changes: Partial<TranslationEntity> }>) => {
-            translationEntityAdapter.updateOne(state.countryName, action.payload);
+        updateCountryName: (state, action: PayloadAction<{ lang: LanguageCode; name: string }>) => {
+            const { lang, name } = action.payload;
+            const idx = state.countryName.findIndex(entry => entry[0] === lang);
+            if (idx >= 0) {
+                state.countryName[idx] = [lang, name];
+            } else {
+                state.countryName.push([lang, name]);
+            }
         },
 
-        addCountryName: (state, action: PayloadAction<LanguageCode>) => {
-            translationEntityAdapter.addOne(state.countryName, { id: nanoid(), lang: action.payload, name: '' });
+        switchCountryNameLang: (state, action: PayloadAction<{ prevLang: LanguageCode; nextLang: LanguageCode }>) => {
+            const { prevLang, nextLang } = action.payload;
+            state.countryName = state.countryName.map(entry => (entry[0] === prevLang ? [nextLang, entry[1]] : entry));
         },
 
-        removeCountryName: (state, action: PayloadAction<EntityId>) => {
-            translationEntityAdapter.removeOne(state.countryName, action.payload);
+        removeCountryName: (state, action: PayloadAction<LanguageCode>) => {
+            state.countryName = state.countryName.filter(entry => entry[0] !== action.payload);
         },
 
         setCity: (state, action: PayloadAction<string>) => {
             state.city = action.payload;
         },
 
-        updateCityName: (state, action: PayloadAction<{ id: EntityId; changes: Partial<TranslationEntity> }>) => {
-            translationEntityAdapter.updateOne(state.cityName, action.payload);
+        updateCityName: (state, action: PayloadAction<{ lang: LanguageCode; name: string }>) => {
+            const { lang, name } = action.payload;
+            const idx = state.cityName.findIndex(entry => entry[0] === lang);
+            if (idx >= 0) {
+                state.cityName[idx] = [lang, name];
+            } else {
+                state.cityName.push([lang, name]);
+            }
         },
 
-        addCityName: (state, action: PayloadAction<LanguageCode>) => {
-            translationEntityAdapter.addOne(state.cityName, { id: nanoid(), lang: action.payload, name: '' });
+        switchCityNameLang: (state, action: PayloadAction<{ prevLang: LanguageCode; nextLang: LanguageCode }>) => {
+            const { prevLang, nextLang } = action.payload;
+            state.cityName = state.cityName.map(entry => (entry[0] === prevLang ? [nextLang, entry[1]] : entry));
         },
 
         removeCityName: (state, action: PayloadAction<EntityId>) => {
-            translationEntityAdapter.removeOne(state.cityName, action.payload);
+            state.cityName = state.cityName.filter(entry => entry[0] !== action.payload);
         },
 
         updateLineId: (state, action: PayloadAction<{ entryId: string; lineId: string }>) => {
@@ -126,32 +128,37 @@ const ticketSlice = createSlice({
             state.lines[action.payload.entryId].fg = action.payload.fgColour;
         },
 
-        updateLineName: (
+        updateLineName: (state, action: PayloadAction<{ entryId: string; lang: LanguageCode; name: string }>) => {
+            const { entryId, lang, name } = action.payload;
+            const idx = state.lines[entryId].nameEntity.findIndex(entry => entry[0] === lang);
+            if (idx >= 0) {
+                state.lines[entryId].nameEntity[idx] = [lang, name];
+            } else {
+                state.lines[entryId].nameEntity.push([lang, name]);
+            }
+        },
+
+        switchLineNameLang: (
             state,
-            action: PayloadAction<{ entryId: string; id: EntityId; changes: Partial<TranslationEntity> }>
+            action: PayloadAction<{ entryId: string; prevLang: LanguageCode; nextLang: LanguageCode }>
         ) => {
-            const { entryId, ...entityUpdates } = action.payload;
-            translationEntityAdapter.updateOne(state.lines[entryId].nameEntity, entityUpdates);
+            const { entryId, prevLang, nextLang } = action.payload;
+            state.lines[entryId].nameEntity = state.lines[entryId].nameEntity.map(entry =>
+                entry[0] === prevLang ? [nextLang, entry[1]] : entry
+            );
         },
 
-        addLineName: (state, action: PayloadAction<{ entryId: string; lang: LanguageCode }>) => {
-            translationEntityAdapter.addOne(state.lines[action.payload.entryId].nameEntity, {
-                id: nanoid(),
-                lang: action.payload.lang,
-                name: '',
-            });
-        },
-
-        removeLineName: (state, action: PayloadAction<{ entryId: string; id: EntityId }>) => {
-            translationEntityAdapter.removeOne(state.lines[action.payload.entryId].nameEntity, action.payload.id);
+        removeLineName: (state, action: PayloadAction<{ entryId: string; lang: LanguageCode }>) => {
+            const { entryId, lang } = action.payload;
+            state.lines[entryId].nameEntity = state.lines[entryId].nameEntity.filter(entry => entry[0] !== lang);
         },
 
         addLine: state => {
-            state.lines[nanoid()] = initialPaletteEntry;
+            state.lines[crypto.randomUUID()] = initialPaletteEntry;
         },
 
         copyLine: (state, action: PayloadAction<string>) => {
-            state.lines[nanoid()] = JSON.parse(JSON.stringify(state.lines[action.payload]));
+            state.lines[crypto.randomUUID()] = JSON.parse(JSON.stringify(state.lines[action.payload]));
         },
 
         removeLine: (state, action: PayloadAction<string>) => {
@@ -165,25 +172,18 @@ const ticketSlice = createSlice({
             state.country = city.country as CountryCode;
 
             state.city = city.id;
-            translationEntityAdapter.setAll(
-                state.cityName,
-                Object.entries(city.name).map(([lang, name]) => ({
-                    id: nanoid(),
-                    lang: lang as LanguageCode,
-                    name,
-                }))
-            );
+            state.cityName = Object.entries(city.name).map(([lang, name]) => [lang as LanguageCode, name]);
 
-            state.lines = palettes.reduce<Record<string, PaletteEntryWithTranslationEntity>>((acc, cur) => {
+            state.lines = palettes.reduce<Record<string, PaletteEntryWithTranslationEntry>>((acc, cur) => {
                 const { id, colour, fg, pantone } = cur;
-                const nameEntity = createTranslationEntityInitialState(
-                    Object.entries(cur.name).map(([lang, name]) => ({
-                        id: nanoid(),
-                        lang: lang as LanguageCode,
-                        name,
-                    }))
-                );
-                return { ...acc, [nanoid()]: { id, nameEntity, colour, fg: fg ?? MonoColour.white, pantone } };
+                const nameEntity: TranslationEntry[] = Object.entries(cur.name).map(([lang, name]) => [
+                    lang as LanguageCode,
+                    name,
+                ]);
+                return {
+                    ...acc,
+                    [crypto.randomUUID()]: { id, nameEntity, colour, fg: fg ?? MonoColour.white, pantone },
+                };
             }, {});
         },
     },
@@ -196,7 +196,7 @@ export const ticketSelectors = {
         }
         return {
             id: state.newCountry as CountryCode,
-            name: convertEntityStateToTranslation(state.countryName),
+            name: Object.fromEntries(state.countryName),
             language: state.newCountryLang,
         };
     },
@@ -205,14 +205,14 @@ export const ticketSelectors = {
         return {
             id: state.city as CityCode,
             country: state.country === 'new' ? state.newCountry : state.country ?? '',
-            name: convertEntityStateToTranslation(state.cityName),
+            name: Object.fromEntries(state.cityName),
         };
     },
 
     getPalettes: (state: TicketState): PaletteEntry[] => {
         return Object.values(state.lines).map(line => {
             const { nameEntity, ...others } = line;
-            return { ...others, name: convertEntityStateToTranslation(nameEntity) };
+            return { ...others, name: Object.fromEntries(nameEntity) };
         });
     },
 
@@ -273,18 +273,18 @@ export const {
     setNewCountry,
     setNewCountryLang,
     updateCountryName,
-    addCountryName,
+    switchCountryNameLang,
     removeCountryName,
     setCity,
     updateCityName,
-    addCityName,
+    switchCityNameLang,
     removeCityName,
     updateLineId,
     updateLineBgColour,
     updateLinePantone,
     updateLineFgColour,
     updateLineName,
-    addLineName,
+    switchLineNameLang,
     removeLineName,
     addLine,
     copyLine,

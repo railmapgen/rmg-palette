@@ -4,20 +4,18 @@ import { RmgLineBadge } from '@railmapgen/rmg-components';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
-    addLineName,
     copyLine,
     removeLine,
     removeLineName,
+    switchLineNameLang,
     updateLineName,
 } from '../../redux/ticket/ticket-slice';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdAdd, MdContentCopy, MdDelete, MdEdit } from 'react-icons/md';
-import { translationEntitySelector } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import PantoneChecker from './pantone-checker';
 import ColourEntryCard from './colour-entry-card';
-import { Translation } from '@railmapgen/rmg-translate';
 
 export default function LinesSection() {
     const { t } = useTranslation();
@@ -41,10 +39,7 @@ export default function LinesSection() {
 
             <HStack flexWrap="wrap" sx={{ '& .chakra-badge': { mb: 1 } }}>
                 {Object.entries(lines).map(([entryId, line]) => {
-                    const nameTranslation = translationEntitySelector
-                        .selectAll(line.nameEntity)
-                        .reduce<Translation>((acc, cur) => ({ ...acc, [cur.lang]: cur.name }), {});
-                    const nameToShow = translateName(nameTranslation);
+                    const nameToShow = translateName(Object.fromEntries(line.nameEntity));
 
                     return (
                         <RmgLineBadge
@@ -101,9 +96,11 @@ export default function LinesSection() {
             {lines[selectedLine] && <ColourEntryCard entryId={selectedLine} pantoneReady={pantoneReady} />}
             <MultiLangEntryCard
                 entries={lines[selectedLine]?.nameEntity}
-                onUpdate={(id, changes) => dispatch(updateLineName({ entryId: selectedLine, id, changes }))}
-                onAdd={lang => dispatch(addLineName({ entryId: selectedLine, lang }))}
-                onRemove={id => dispatch(removeLineName({ entryId: selectedLine, id }))}
+                onUpdate={(lang, name) => dispatch(updateLineName({ entryId: selectedLine, lang, name }))}
+                onLangSwitch={(prevLang, nextLang) =>
+                    dispatch(switchLineNameLang({ entryId: selectedLine, prevLang, nextLang }))
+                }
+                onRemove={lang => dispatch(removeLineName({ entryId: selectedLine, lang }))}
             />
         </Box>
     );
