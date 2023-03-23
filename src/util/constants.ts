@@ -116,3 +116,5 @@ export enum Events {
     EDIT_CITY = 'EDIT_CITY',
     RESET_TICKET = 'RESET_TICKET',
 }
+
+export const DRAFT_TICKET_KEY = 'rmg-palette__draftTicket';

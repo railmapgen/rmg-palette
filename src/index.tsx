@@ -8,6 +8,7 @@ import i18n from './i18n/config';
 import AppRoot from './components/app-root';
 import './index.css';
 import { Events } from './util/constants';
+import { initStore } from './redux/init';
 
 let root: Root;
 
@@ -25,6 +26,7 @@ const renderApp = () => {
 };
 
 rmgRuntime.ready().then(() => {
+    initStore(store);
     renderApp();
     rmgRuntime.injectCss();
     rmgRuntime.event(Events.APP_LOAD, { isStandaloneWindow: rmgRuntime.isStandaloneWindow() });
