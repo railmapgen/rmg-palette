@@ -1,13 +1,13 @@
 import { RmgCard, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import { Box, HStack, IconButton, SystemStyleObject } from '@chakra-ui/react';
 import { MdAdd, MdDelete } from 'react-icons/md';
-import { TranslationEntity } from '../../redux/ticket/util';
+import { TranslationEntry } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import useTranslatedName from '../hooks/use-translated-name';
 
 interface MultiLangEntryCardProps {
-    entries?: TranslationEntity[];
+    entries?: TranslationEntry[];
     onUpdate: (lang: LanguageCode, name: string) => void;
     onLangSwitch: (prevLang: LanguageCode, nextLang: LanguageCode) => void;
     onRemove: (lang: LanguageCode) => void;

@@ -11,11 +11,11 @@ import {
 import { LanguageCode, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
 import { createSlice, EntityId, PayloadAction } from '@reduxjs/toolkit';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
-import { getTranslationEntityInvalidReasons, PaletteEntryWithTranslationEntity, TranslationEntity } from './util';
+import { getTranslationEntityInvalidReasons, PaletteEntryWithTranslationEntry, TranslationEntry } from './util';
 
-const initialTranslation: TranslationEntity[] = SUPPORTED_LANGUAGES.map(lang => [lang, '']);
+const initialTranslation: TranslationEntry[] = SUPPORTED_LANGUAGES.map(lang => [lang, '']);
 
-const initialPaletteEntry: PaletteEntryWithTranslationEntity = {
+const initialPaletteEntry: PaletteEntryWithTranslationEntry = {
     id: '',
     nameEntity: initialTranslation,
     colour: '#aaaaaa',
@@ -27,15 +27,15 @@ export interface TicketState {
     // country
     country?: CountryCode | 'new';
     newCountry: string;
-    countryName: TranslationEntity[];
+    countryName: TranslationEntry[];
     newCountryLang?: LanguageCode;
 
     // city
     city: string;
-    cityName: TranslationEntity[];
+    cityName: TranslationEntry[];
 
     // lines
-    lines: Record<string, PaletteEntryWithTranslationEntity>;
+    lines: Record<string, PaletteEntryWithTranslationEntry>;
 }
 
 const getInitialState = (): TicketState => ({
@@ -174,9 +174,9 @@ const ticketSlice = createSlice({
             state.city = city.id;
             state.cityName = Object.entries(city.name).map(([lang, name]) => [lang as LanguageCode, name]);
 
-            state.lines = palettes.reduce<Record<string, PaletteEntryWithTranslationEntity>>((acc, cur) => {
+            state.lines = palettes.reduce<Record<string, PaletteEntryWithTranslationEntry>>((acc, cur) => {
                 const { id, colour, fg, pantone } = cur;
-                const nameEntity: TranslationEntity[] = Object.entries(cur.name).map(([lang, name]) => [
+                const nameEntity: TranslationEntry[] = Object.entries(cur.name).map(([lang, name]) => [
                     lang as LanguageCode,
                     name,
                 ]);

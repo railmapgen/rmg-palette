@@ -2,9 +2,9 @@ import { render } from '../../test-utils';
 import { vi } from 'vitest';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { screen, within } from '@testing-library/react';
-import { TranslationEntity } from '../../redux/ticket/util';
+import { TranslationEntry } from '../../redux/ticket/util';
 
-const mockEntries: TranslationEntity[] = [
+const mockEntries: TranslationEntry[] = [
     ['en', 'Hong Kong'],
     ['zh', '香港'],
 ];

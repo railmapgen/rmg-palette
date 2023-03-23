@@ -1,24 +1,20 @@
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { LanguageCode } from '@railmapgen/rmg-translate';
-import { createEntityAdapter } from '@reduxjs/toolkit';
 import { TranslationInvalidReasonType } from '../../util/constants';
 
-export type TranslationEntity = [LanguageCode, string];
+export type TranslationEntry = [LanguageCode, string];
 
-export interface PaletteEntryWithTranslationEntity {
+export interface PaletteEntryWithTranslationEntry {
     id: string;
-    nameEntity: TranslationEntity[];
+    nameEntity: TranslationEntry[];
     colour: ColourHex;
     fg: MonoColour;
     pantone?: string;
 }
 
-export const translationEntityAdapter = createEntityAdapter<TranslationEntity>();
-export const translationEntitySelector = translationEntityAdapter.getSelectors();
-
 export const getTranslationEntityInvalidReasons = (
-    entities: TranslationEntity[],
-    offcialLanguage?: LanguageCode
+    entities: TranslationEntry[],
+    officialLanguage?: LanguageCode
 ): TranslationInvalidReasonType[] => {
     const result = [];
 
@@ -79,9 +75,9 @@ export const getTranslationEntityInvalidReasons = (
         result.push(TranslationInvalidReasonType.LANGUAGE_DUPLICATED);
     }
 
-    //Offical Language
-    if (offcialLanguage && entities.every(entity => entity[0] !== offcialLanguage)) {
-        result.push(TranslationInvalidReasonType.OFFICAL_LANGUAGE_UNDEFINED);
+    // Official Language
+    if (officialLanguage && entities.every(entity => entity[0] !== officialLanguage)) {
+        result.push(TranslationInvalidReasonType.OFFICIAL_LANGUAGE_UNDEFINED);
     }
 
     return result;

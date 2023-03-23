@@ -1,13 +1,13 @@
 import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
-import { TranslationEntity } from '../../redux/ticket/util';
+import { TranslationEntry } from '../../redux/ticket/util';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import { render } from '../../test-utils';
 import ColourEntryCard from './colour-entry-card';
 import { act, fireEvent, screen } from '@testing-library/react';
 import { vi } from 'vitest';
 
-const initialTranslation: TranslationEntity[] = [['en', '']];
+const initialTranslation: TranslationEntry[] = [['en', '']];
 
 const realStore = rootReducer.getState();
 const mockStore = createMockRootStore({
