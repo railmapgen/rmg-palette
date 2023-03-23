@@ -1,6 +1,6 @@
 [
     {
-        "id": "wlmq1",
+        "id": "urumqi1",
         "colour": "#10069f",
         "fg": "#fff",
         "name": {
@@ -10,7 +10,7 @@
         }
     },
     {
-        "id": "wlmq2",
+        "id": "urumqi2",
         "colour": "#5fe864",
         "fg": "#fff",
         "name": {
@@ -20,7 +20,7 @@
         }
     },
     {
-        "id": "wlmq3",
+        "id": "urumqi3",
         "colour": "#ffc110",
         "fg": "#fff",
         "name": {
@@ -30,7 +30,7 @@
         }
     },
     {
-        "id": "wlmq4",
+        "id": "urumqi4",
         "colour": "#ff4152",
         "fg": "#fff",
         "name": {
