@@ -5,6 +5,7 @@ import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
 import { CountryCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { createTranslationEntityInitialState } from '../../redux/ticket/util';
 
 const realStore = rootReducer.getState();
 
@@ -36,21 +37,21 @@ describe('SubmitModal', () => {
                 ...realStore.ticket,
                 country: CountryCode.HK,
                 city: 'hongkong',
-                cityName: [
-                    ['en', 'Hong Kong'],
-                    ['zh-Hans', '香港'],
-                    ['zh-HK', '香港'],
-                    ['zh-TW', '香港'],
-                ],
+                cityName: createTranslationEntityInitialState([
+                    { id: '001', lang: 'en', name: 'Hong Kong' },
+                    { id: '002', lang: 'zh-Hans', name: '香港' },
+                    { id: '003', lang: 'zh-HK', name: '香港' },
+                    { id: '004', lang: 'zh-TW', name: '香港' },
+                ]),
                 lines: {
                     '991': {
                         id: 'ktl',
-                        nameEntity: [
-                            ['en', 'Kwun Tong Line'],
-                            ['zh-Hans', '观塘线'],
-                            ['zh-HK', '觀塘綫'],
-                            ['zh-TW', '觀塘綫'],
-                        ],
+                        nameEntity: createTranslationEntityInitialState([
+                            { id: '801', lang: 'en', name: 'Kwun Tong Line' },
+                            { id: '802', lang: 'zh-Hans', name: '观塘线' },
+                            { id: '803', lang: 'zh-HK', name: '觀塘綫' },
+                            { id: '804', lang: 'zh-TW', name: '觀塘綫' },
+                        ]),
                         colour: '#AAAAAA',
                         fg: MonoColour.white,
                     },

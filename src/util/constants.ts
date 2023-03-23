@@ -35,7 +35,7 @@ export enum TranslationInvalidReasonType {
     ZH_TW_UNDEFINED = 'ZH_TW_UNDEFINED',
     ZH_VARIANTS_REDEFINED = 'ZH_VARIANTS_REDEFINED',
     LANGUAGE_DUPLICATED = 'LANGUAGE_DUPLICATED',
-    OFFICIAL_LANGUAGE_UNDEFINED = 'OFFICIAL_LANGUAGE_UNDEFINED',
+    OFFICAL_LANGUAGE_UNDEFINED = 'OFFICAL_LANGUAGE_UNDEFINED',
 }
 
 export type InvalidReasonType = TicketInvalidReasonType | TranslationInvalidReasonType;
@@ -102,8 +102,8 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hans': '包含重复的语言',
         'zh-Hant': '包含重複的語言',
     },
-    OFFICIAL_LANGUAGE_UNDEFINED: {
-        en: 'Name in official language is missing',
+    OFFICAL_LANGUAGE_UNDEFINED: {
+        en: 'Name in offcial language is missing',
         'zh-Hans': '缺少官方语言名称',
         'zh-Hant': '缺少官方語言名稱',
     },

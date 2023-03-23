@@ -2,11 +2,11 @@ import { Box, Heading } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
+    addCountryName,
     removeCountryName,
     setCountry,
     setNewCountry,
     setNewCountryLang,
-    switchCountryNameLang,
     updateCountryName,
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
@@ -82,9 +82,9 @@ export default function CountrySection() {
             {country === 'new' && (
                 <MultiLangEntryCard
                     entries={countryName}
-                    onUpdate={(lang, name) => dispatch(updateCountryName({ lang, name }))}
-                    onLangSwitch={(prevLang, nextLang) => dispatch(switchCountryNameLang({ prevLang, nextLang }))}
-                    onRemove={lang => dispatch(removeCountryName(lang))}
+                    onUpdate={(id, changes) => dispatch(updateCountryName({ id, changes }))}
+                    onAdd={lang => dispatch(addCountryName(lang))}
+                    onRemove={id => dispatch(removeCountryName(id))}
                 />
             )}
         </Box>

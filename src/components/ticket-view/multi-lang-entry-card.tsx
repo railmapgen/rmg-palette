@@ -1,70 +1,74 @@
 import { RmgCard, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-import { Box, HStack, IconButton, SystemStyleObject } from '@chakra-ui/react';
+import { Box, HStack, IconButton } from '@chakra-ui/react';
 import { MdAdd, MdDelete } from 'react-icons/md';
-import { TranslationEntry } from '../../redux/ticket/util';
+import { EntityId, EntityState } from '@reduxjs/toolkit';
+import { TranslationEntity, translationEntityAdapter, translationEntitySelector } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import useTranslatedName from '../hooks/use-translated-name';
 
 interface MultiLangEntryCardProps {
-    entries?: TranslationEntry[];
-    onUpdate: (lang: LanguageCode, name: string) => void;
-    onLangSwitch: (prevLang: LanguageCode, nextLang: LanguageCode) => void;
-    onRemove: (lang: LanguageCode) => void;
+    entries?: EntityState<TranslationEntity>;
+    onUpdate: (id: EntityId, changes: Partial<TranslationEntity>) => void;
+    onAdd: (lang: LanguageCode) => void;
+    onRemove: (id: EntityId) => void;
 }
 
-const cardRowStyles: SystemStyleObject = {
-    '& > div:first-of-type': {
-        flex: 1,
-    },
-};
-
 export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
-    const { onUpdate, onLangSwitch, onRemove } = props;
-    const entries = props.entries ?? [];
+    const { onUpdate, onAdd, onRemove } = props;
+    const entries = props.entries ?? translationEntityAdapter.getInitialState();
 
     const { t } = useTranslation();
     const translateName = useTranslatedName();
 
-    const getFields = (lang: LanguageCode, name: string): RmgFieldsField[] => {
+    const getFields = (id: EntityId): RmgFieldsField[] => {
+        const entity = translationEntitySelector.selectById(entries, id);
+
+        if (!entity) {
+            return [];
+        }
+
+        const { lang, name } = entity;
+        const languageOptions = Object.entries(LANGUAGE_NAMES).reduce(
+            (acc, cur) => ({
+                ...acc,
+                [cur[0]]: translateName(cur[1]),
+            }),
+            {} as Record<LanguageCode, string>
+        );
+
         return [
             {
                 type: 'select',
                 label: t('Language'),
                 value: lang,
-                options: Object.entries(LANGUAGE_NAMES).reduce(
-                    (acc, cur) => ({
-                        ...acc,
-                        [cur[0]]: translateName(cur[1]),
-                    }),
-                    {} as Record<LanguageCode, string>
-                ),
-                disabledOptions: entries.filter(entry => entry[0] !== lang).map(entry => entry[0]),
-                onChange: value => onLangSwitch(lang, value as LanguageCode),
+                options: languageOptions,
+                onChange: value => onUpdate(id, { lang: value as LanguageCode }),
             },
             {
                 type: 'input',
                 label: t('Name'),
                 value: name,
-                onChange: value => onUpdate(lang, value),
-                validator: value => !!value,
+                onChange: value => onUpdate(id, { name: value }),
+                validator: value => value !== '',
             },
         ];
     };
 
     const handleAddEntry = () => {
-        const nextLang = Object.keys(LANGUAGE_NAMES).filter(
-            l => !entries.find(entry => entry[0] === l)
+        const lang = Object.keys(LANGUAGE_NAMES).filter(
+            l => !Object.values(entries.entities).find(entity => entity?.lang === l)
         )[0] as LanguageCode;
-        onUpdate(nextLang, '');
+        onAdd(lang);
     };
 
     return (
         <RmgCard direction="column">
-            {entries.map(([lang, name], idx, arr) => (
-                <HStack key={idx} sx={cardRowStyles} data-testid={'entry-card-stack-' + lang}>
-                    <RmgFields fields={getFields(lang as LanguageCode, name)} noLabel={idx > 0} />
-                    {idx === arr.length - 1 ? (
+            {translationEntitySelector.selectIds(entries).map((id, i) => (
+                <HStack key={id} sx={{ '& > div:first-of-type': { flex: 1 } }} data-testid={'entry-card-stack-' + id}>
+                    <RmgFields fields={getFields(id)} noLabel={i > 0} />
+
+                    {i === entries.ids.length - 1 ? (
                         <IconButton
                             size="sm"
                             variant="ghost"
@@ -77,16 +81,14 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                         <Box minW={8} />
                     )}
 
-                    {arr.length > 1 && (
-                        <IconButton
-                            size="sm"
-                            variant="ghost"
-                            aria-label={t('Remove this name')}
-                            title={t('Remove this name')}
-                            onClick={() => onRemove(lang as LanguageCode)}
-                            icon={<MdDelete />}
-                        />
-                    )}
+                    <IconButton
+                        size="sm"
+                        variant="ghost"
+                        aria-label={t('Remove this name')}
+                        title={t('Remove this name')}
+                        onClick={() => onRemove(id)}
+                        icon={<MdDelete />}
+                    />
                 </HStack>
             ))}
         </RmgCard>
