@@ -9,5 +9,32 @@
             "zh-TW": "桃園機場捷運",
             "zh-HK": "桃園機場捷運"
         }
+    },
+    {
+        "id": "",
+        "colour": "#62a033",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-TW": "綠線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#ffa500",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-TW": "橘線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#824729",
+        "fg": "#fff",
+        "name": {
+            "en": "Brown Line",
+            "zh-TW": "棕線"
+        }
     }
 ]
