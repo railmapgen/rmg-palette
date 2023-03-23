@@ -64,7 +64,7 @@ export default function CountrySection() {
         },
         {
             type: 'select',
-            label: t('Offical language'),
+            label: t('Official language'),
             value: newCountryLang,
             options: languageOptions,
             onChange: value => dispatch(setNewCountryLang(value ? (value as LanguageCode) : undefined)),

@@ -165,7 +165,7 @@ const ticketSlice = createSlice({
             delete state.lines[action.payload];
         },
 
-        resetTicket: () => getInitialState(),
+        resetTicket: (state, action: PayloadAction<TicketState | undefined>) => action.payload ?? getInitialState(),
 
         populateTicket: (state, action: PayloadAction<{ city: CityEntry; palettes: PaletteEntry[] }>) => {
             const { city, palettes } = action.payload;

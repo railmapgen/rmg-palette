@@ -1,6 +1,6 @@
 import { Modal, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import { InvalidReasonType } from '../../util/constants';
+import { DRAFT_TICKET_KEY, InvalidReasonType } from '../../util/constants';
 import { useRootSelector } from '../../redux';
 import { ticketSelectors } from '../../redux/ticket/ticket-slice';
 import { useTranslation } from 'react-i18next';
@@ -52,12 +52,19 @@ export default function SubmitModal(props: SubmitModalProps) {
     const isShowStepError = isContainError && !isIgnoreErrors;
     const isShowStepJustification = !isShowStepError && !isFinishJustification;
 
+    const handleCloseAfterFinish = () => {
+        if (!isShowStepError && !isShowStepJustification) {
+            window.localStorage.removeItem(DRAFT_TICKET_KEY);
+        }
+        onClose();
+    };
+
     return (
         <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
             <ModalOverlay />
             <ModalContent>
                 <ModalHeader>{t('Submit palettes')}</ModalHeader>
-                <ModalCloseButton />
+                <ModalCloseButton onClick={handleCloseAfterFinish} />
 
                 {isShowStepError && (
                     <SubmitModalStepError

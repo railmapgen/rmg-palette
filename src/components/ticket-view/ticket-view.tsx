@@ -1,26 +1,38 @@
 import { Button, Flex, HStack } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CountrySection from './country-section';
 import CitySection from './city-section';
 import LinesSection from './lines-section';
-import { resetTicket } from '../../redux/ticket/ticket-slice';
+import { resetTicket, TicketState } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
 import { useNavigate } from 'react-router-dom';
 import { RmgPage } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import { Events } from '../../util/constants';
+import { DRAFT_TICKET_KEY, Events } from '../../util/constants';
+import UnsavedDraftModal from '../modal/unsaved-draft-modal';
 
 export default function TicketView() {
     const { t } = useTranslation();
     const dispatch = useRootDispatch();
     const navigate = useNavigate();
 
+    const [draftTicket, setDraftTicket] = useState<TicketState>();
+    const [isUnsavedDraftModalOpen, setIsUnsavedDraftModalOpen] = useState(false);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+
+    useEffect(() => {
+        const draftTicketStr = window.localStorage.getItem(DRAFT_TICKET_KEY);
+        if (draftTicketStr) {
+            setDraftTicket(JSON.parse(draftTicketStr));
+            setIsUnsavedDraftModalOpen(true);
+        }
+    }, []);
 
     const handleReset = () => {
         dispatch(resetTicket());
+        window.localStorage.removeItem(DRAFT_TICKET_KEY);
         rmgRuntime.event(Events.RESET_TICKET, {});
     };
 
@@ -53,6 +65,11 @@ export default function TicketView() {
                 </HStack>
             </Flex>
 
+            <UnsavedDraftModal
+                isOpen={isUnsavedDraftModalOpen}
+                onClose={() => setIsUnsavedDraftModalOpen(false)}
+                incomingState={draftTicket}
+            />
             <SubmitModal isOpen={isSubmitModalOpen} onClose={() => setIsSubmitModalOpen(false)} />
         </RmgPage>
     );
