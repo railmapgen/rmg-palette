@@ -188,5 +188,15 @@
             "zh-Hans": "18号线",
             "zh-Hant": "18號線"
         }
+    },
+    {
+        "id": "cq27",
+        "colour": "#ffc638",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27號線"
+        }
     }
 ]
