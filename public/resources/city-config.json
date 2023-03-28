@@ -112,6 +112,16 @@
         }
     },
     {
+        "id": "buenosaires",
+        "country": "AR",
+        "name": {
+            "es": "Buenos Aires",
+            "zh-Hans": "布宜诺斯艾利斯",
+            "zh-Hant": "布宜諾斯艾利斯",
+            "en": "Buenos Aires"
+        }
+    },
+    {
         "id": "busan",
         "country": "KR",
         "name": {

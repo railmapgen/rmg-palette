@@ -1,0 +1,98 @@
+[
+    {
+        "id": "baa",
+        "colour": "#00aedc",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "A线",
+            "es": "Línea A"
+        }
+    },
+    {
+        "id": "bab",
+        "colour": "#ee1b2c",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea B",
+            "zh-Hans": "B线"
+        }
+    },
+    {
+        "id": "bac",
+        "colour": "#0168b3",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea C",
+            "zh-Hans": "C线",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "bad",
+        "colour": "#008066",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea D",
+            "zh-Hans": "D线",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "bae",
+        "colour": "#6b1f7e",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea E",
+            "zh-Hans": "E线",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "baf",
+        "colour": "#800000",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea F",
+            "zh-Hans": "F线",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "bag",
+        "colour": "#ff69b4",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea G",
+            "zh-Hans": "G线"
+        }
+    },
+    {
+        "id": "bah",
+        "colour": "#fed105",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea H",
+            "zh-Hans": "H线"
+        }
+    },
+    {
+        "id": "bai",
+        "colour": "#ff4500",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea I",
+            "zh-Hans": "I线",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "bap",
+        "colour": "#fdbb2e",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea P",
+            "zh-Hans": "P线",
+            "zh-Hant": ""
+        }
+    }
+]
