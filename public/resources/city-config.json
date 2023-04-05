@@ -879,6 +879,14 @@
         }
     },
     {
+        "id": "taizhou",
+        "country": "CN",
+        "name": {
+            "en": "Taizhou",
+            "zh": "台州"
+        }
+    },
+    {
         "id": "taoyuan",
         "country": "TW",
         "name": {
