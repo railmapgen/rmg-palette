@@ -294,6 +294,17 @@
         }
     },
     {
+        "id": "fuzhou",
+        "country": "CN",
+        "name": {
+            "en": "Fuzhou",
+            "ko": "푸저우",
+            "zh-Hans": "福州",
+            "zh-TW": "福州",
+            "zh-HK": "福州"
+        }
+    },
+    {
         "id": "glasgow",
         "country": "GBSCT",
         "name": {
