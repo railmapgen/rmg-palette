@@ -1,7 +1,7 @@
 [
     {
         "id": "loop",
-        "colour": "#A89968",
+        "colour": "#f2a900",
         "fg": "#fff",
         "name": {
             "en": "Loop Line",
@@ -21,7 +21,7 @@
     },
     {
         "id": "cq2",
-        "colour": "#007A33",
+        "colour": "#007033",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -91,7 +91,7 @@
     },
     {
         "id": "cq9",
-        "colour": "#862041",
+        "colour": "#861f41",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
@@ -101,7 +101,7 @@
     },
     {
         "id": "cq10",
-        "colour": "#5F249F",
+        "colour": "#5f259f",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -151,7 +151,7 @@
     },
     {
         "id": "cq15",
-        "colour": "#0057B7",
+        "colour": "#0057b8",
         "fg": "#fff",
         "name": {
             "en": "Line 15",
@@ -181,12 +181,42 @@
     },
     {
         "id": "cq18",
-        "colour": "#3cdbc0",
+        "colour": "#2ad2c9",
         "fg": "#fff",
         "name": {
             "en": "Line 18",
             "zh-Hans": "18号线",
             "zh-Hant": "18號線"
+        }
+    },
+    {
+        "id": "cq24",
+        "colour": "#00a3ad",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
+        }
+    },
+    {
+        "id": "cq27",
+        "colour": "#685bc7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27號線"
+        }
+    },
+    {
+        "id": "jiangtiao",
+        "colour": "#0077c8",
+        "fg": "#fff",
+        "name": {
+            "en": "Jiangtiao Line",
+            "zh-Hans": "江跳线",
+            "zh-Hant": "江跳線"
         }
     }
 ]
