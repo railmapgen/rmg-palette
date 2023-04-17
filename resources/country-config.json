@@ -1,5 +1,15 @@
 [
     {
+        "id": "AR",
+        "name": {
+            "es": "Argentina",
+            "zh-Hans": "阿根廷",
+            "zh-Hant": "阿根廷",
+            "en": "Argentina"
+        },
+        "language": "es"
+    },
+    {
         "id": "AT",
         "name": {
             "en": "Austria",
