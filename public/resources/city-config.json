@@ -736,6 +736,17 @@
         }
     },
     {
+        "id": "rome",
+        "country": "IT",
+        "name": {
+            "en": "Rome",
+            "ko": "로마",
+            "zh-Hans": "罗马",
+            "zh-Hant": "羅馬",
+            "it": "Roma"
+        }
+    },
+    {
         "id": "sanfrancisco",
         "country": "US",
         "name": {
