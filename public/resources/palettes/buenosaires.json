@@ -5,7 +5,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "A线",
-            "es": "Línea A"
+            "es": "Línea A",
+            "en": "Line A"
         }
     },
     {
@@ -14,7 +15,8 @@
         "fg": "#fff",
         "name": {
             "es": "Línea B",
-            "zh-Hans": "B线"
+            "zh-Hans": "B线",
+            "en": "Line B"
         }
     },
     {
@@ -24,7 +26,7 @@
         "name": {
             "es": "Línea C",
             "zh-Hans": "C线",
-            "zh-Hant": ""
+            "en": "Line C"
         }
     },
     {
@@ -34,7 +36,7 @@
         "name": {
             "es": "Línea D",
             "zh-Hans": "D线",
-            "zh-Hant": ""
+            "en": "Line D"
         }
     },
     {
@@ -44,7 +46,7 @@
         "name": {
             "es": "Línea E",
             "zh-Hans": "E线",
-            "zh-Hant": ""
+            "en": "Line E"
         }
     },
     {
@@ -54,7 +56,7 @@
         "name": {
             "es": "Línea F",
             "zh-Hans": "F线",
-            "zh-Hant": ""
+            "en": "Line F"
         }
     },
     {
@@ -63,7 +65,8 @@
         "fg": "#fff",
         "name": {
             "es": "Línea G",
-            "zh-Hans": "G线"
+            "zh-Hans": "G线",
+            "en": "Line G"
         }
     },
     {
@@ -72,7 +75,8 @@
         "fg": "#fff",
         "name": {
             "es": "Línea H",
-            "zh-Hans": "H线"
+            "zh-Hans": "H线",
+            "en": "Line H"
         }
     },
     {
@@ -82,7 +86,7 @@
         "name": {
             "es": "Línea I",
             "zh-Hans": "I线",
-            "zh-Hant": ""
+            "en": "Line I"
         }
     },
     {
@@ -92,7 +96,7 @@
         "name": {
             "es": "Línea P",
             "zh-Hans": "P线",
-            "zh-Hant": ""
+            "en": "Line P"
         }
     }
 ]
