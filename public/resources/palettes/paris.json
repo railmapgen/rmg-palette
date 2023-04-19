@@ -88,6 +88,17 @@
         }
     },
     {
+        "id": "m7b",
+        "colour": "#84c28e",
+        "fg": "#000",
+        "name": {
+            "en": "Metro Line 7b",
+            "fr": "Métro Ligne 7b",
+            "zh-Hans": "地铁7b号线",
+            "zh-Hant": "地鐵7b號線"
+        }
+    },
+    {
         "id": "m8",
         "colour": "#CEADD2",
         "fg": "#000",
@@ -349,8 +360,19 @@
         }
     },
     {
+        "id": "t13",
+        "colour": "#6e491e",
+        "fg": "#fff",
+        "name": {
+            "en": "Tramway Line 13",
+            "fr": "Tramway Ligne 13",
+            "zh-Hans": "有轨电车T13号线",
+            "zh-Hant": "有軌電車T13號線"
+        }
+    },
+    {
         "id": "trainh",
-        "colour": "#A1565C",
+        "colour": "#8c602b",
         "fg": "#fff",
         "name": {
             "en": "Transilien Line H",
@@ -359,7 +381,7 @@
     },
     {
         "id": "trainj",
-        "colour": "#C7D530",
+        "colour": "#d2ce00",
         "fg": "#000",
         "name": {
             "en": "Transilien Line J",
@@ -368,7 +390,7 @@
     },
     {
         "id": "traink",
-        "colour": "#C2A712",
+        "colour": "#9d9b22",
         "fg": "#fff",
         "name": {
             "en": "Transilien Line K",
@@ -377,7 +399,7 @@
     },
     {
         "id": "trainl",
-        "colour": "#7784C0",
+        "colour": "#ceaacf",
         "fg": "#000",
         "name": {
             "en": "Transilien Line L",
@@ -386,7 +408,7 @@
     },
     {
         "id": "trainn",
-        "colour": "#27B4AE",
+        "colour": "#00aa8f",
         "fg": "#fff",
         "name": {
             "en": "Transilien Line N",
@@ -395,7 +417,7 @@
     },
     {
         "id": "trainp",
-        "colour": "#FAB31E",
+        "colour": "#f2933d",
         "fg": "#000",
         "name": {
             "en": "Transilien Line P",
@@ -404,7 +426,7 @@
     },
     {
         "id": "trainr",
-        "colour": "#EEC0DB",
+        "colour": "#f2a4b7",
         "fg": "#000",
         "name": {
             "en": "Transilien Line R",
@@ -413,7 +435,7 @@
     },
     {
         "id": "trainu",
-        "colour": "#E5006D",
+        "colour": "#be0045",
         "fg": "#fff",
         "name": {
             "en": "Transilien Line U",
