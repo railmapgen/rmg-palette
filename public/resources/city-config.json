@@ -850,6 +850,14 @@
         }
     },
     {
+        "id": "shijiazhuang",
+        "country": "CN",
+        "name": {
+            "en": "Shijiazhuang",
+            "zh-Hans": "石家庄"
+        }
+    },
+    {
         "id": "singapore",
         "country": "SG",
         "name": {
