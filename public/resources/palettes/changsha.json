@@ -128,5 +128,65 @@
             "zh-Hans": "磁浮快线",
             "zh-Hant": "磁浮快線"
         }
+    },
+    {
+        "id": "cs13",
+        "colour": "#d89fa0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號線"
+        }
+    },
+    {
+        "id": "cs14",
+        "colour": "#4f7a28",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 14",
+            "zh-Hans": "14号线",
+            "zh-Hant": "14號線"
+        }
+    },
+    {
+        "id": "cs15",
+        "colour": "#0cbc12",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
+        "id": "cs16",
+        "colour": "#b92d5d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16",
+            "zh-Hans": "16号线",
+            "zh-Hant": "16號線"
+        }
+    },
+    {
+        "id": "cs17",
+        "colour": "#aaaaaa",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號線"
+        }
+    },
+    {
+        "id": "cs18",
+        "colour": "#002e7a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
     }
 ]
