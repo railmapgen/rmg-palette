@@ -758,6 +758,14 @@
         }
     },
     {
+        "id": "rongcheng",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "荣城",
+            "en": "Rongcheng"
+        }
+    },
+    {
         "id": "sanfrancisco",
         "country": "US",
         "name": {
