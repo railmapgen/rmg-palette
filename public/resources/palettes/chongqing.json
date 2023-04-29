@@ -190,6 +190,56 @@
         }
     },
     {
+        "id": "cq19",
+        "colour": "#bc204b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "cq20",
+        "colour": "#e31c79",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "cq21",
+        "colour": "#007fa3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "cq22",
+        "colour": "#003d4c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
+        "id": "cq23",
+        "colour": "#e35205",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
         "id": "cq24",
         "colour": "#00a3ad",
         "fg": "#fff",
@@ -200,6 +250,26 @@
         }
     },
     {
+        "id": "cq25",
+        "colour": "#00685e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线",
+            "zh-Hant": "25號線"
+        }
+    },
+    {
+        "id": "cq26",
+        "colour": "#00c389",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26",
+            "zh-Hans": "26号线",
+            "zh-Hant": "26號線"
+        }
+    },
+    {
         "id": "cq27",
         "colour": "#685bc7",
         "fg": "#fff",
@@ -207,6 +277,16 @@
             "en": "Line 27",
             "zh-Hans": "27号线",
             "zh-Hant": "27號線"
+        }
+    },
+    {
+        "id": "cq28",
+        "colour": "#007398",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号线",
+            "zh-Hant": "28號線"
         }
     },
     {
