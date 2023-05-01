@@ -13,10 +13,7 @@ const parseDetailsEl = (details: HTMLDetailsElement) => {
     if (!type) {
         throw new Error('Missing required attributes and/or data.');
     }
-
-    const valueEl = details.querySelector('details[type="param"]');
-    const value = valueEl ? (JSON.parse(valueEl.textContent as string) as Record<string, any>) : "";
-
+    const value = JSON.parse(details.textContent as string) as Record<string, any>;
     return { type, value };
 };
 
