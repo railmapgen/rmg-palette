@@ -27,7 +27,7 @@ cd ..
 
 # Commit
 git add .
-git commit -m "#$ISSUE_NUMBER $ISSUE_TITLE" --author="$3 <$4+$3@users.noreply.github.com>"
+git commit -m "#$ISSUE_NUMBER $ISSUE_TITLE" --author="$USER_LOGIN <$USER_ID+$USER_LOGIN@users.noreply.github.com>"
 
 # Build to check
 cd package
