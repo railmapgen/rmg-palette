@@ -1,13 +1,29 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { CityEntry, CountryEntry, PaletteEntry } from '../checker/constants';
+import { JSDOM } from 'jsdom';
 
-const body = JSON.parse(readFileSync('./issuebot/issue.txt', 'utf-8'))['event']['issue']['body'];
-const HEADER = 'Do not edit lines below, they are meant for bots only!!!';
-const data = body.slice(body.indexOf(HEADER) + HEADER.length);
-const TYPE_PATTERN = /<details repo="rmg-palette" type="(\w+)">((.|\n|\r\n)*?)<\/details>/g;
+const readIssueBody = (): HTMLDetailsElement[] => {
+    const issueBody = process.env.ISSUE_BODY;
+    const dom = new JSDOM(issueBody);
+    return Array.from(dom.window.document.querySelectorAll('details[repo="rmg-palette"]'));
+};
+
+const parseDetailsEl = (details: HTMLDetailsElement) => {
+    const type = details.getAttribute('type');
+    if (!type) {
+        throw new Error('Missing required attributes and/or data.');
+    }
+
+    const valueEl = details.querySelector('details[type="param"]');
+    const value = valueEl ? (JSON.parse(valueEl.textContent as string) as Record<string, any>) : null;
+
+    return { type, value };
+};
 
 let cityID: string | undefined = undefined;
-for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
+const detailEls = readIssueBody();
+const items = detailEls.map(parseDetailsEl);
+for (const { type, value } of items) {
     if (type === 'country') {
         const countryConfigFilepath = '../public/resources/country-config.json';
         let countryConfig = JSON.parse(readFileSync(countryConfigFilepath, 'utf-8')) as unknown as CountryEntry[];
@@ -22,7 +38,7 @@ for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
         let cityConfig = JSON.parse(readFileSync(cityConfigFilepath, 'utf-8')) as unknown as CityEntry[];
         const city = JSON.parse(value.trim()) as unknown as CityEntry;
         cityID = city.id.toLowerCase(); // save for lines op
-        city.id = cityID; // in case if some one capitalize the city id
+        city.id = cityID; // in case if someone capitalize the city id
         cityConfig = cityConfig
             .concat(city) // push the city
             .filter((v, i, a) => a.findIndex(v2 => v2.id === v.id) === i) // remove duplicate
@@ -33,7 +49,7 @@ for (const [, type, value] of data.matchAll(TYPE_PATTERN)) {
         const lines = JSON.parse(value.trim()) as PaletteEntry[];
         console.log('Printing all colours...\n');
         lines.forEach(line => {
-            console.log(`${line.name.en}: background=\`${line.colour}\`, foreground=\`${line.fg ?? '#fff'}\``);
+            console.log(`${line.name.en}: bg=\`${line.colour}\`, fg=\`${line.fg ?? '#fff'}\``);
         });
         writeFileSync(cityFilepath, `${JSON.stringify(lines, null, 4)}\n`);
     }

@@ -19,9 +19,10 @@
         "noFallthroughCasesInSwitch": true,
         "plugins": [
             {
-                "transform": "typescript-json/lib/transform"
+                "transform": "typia/lib/transform"
             }
-        ]
+        ],
+        "strictNullChecks": true
     },
     "include": ["lib/**/*"]
 }

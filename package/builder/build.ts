@@ -1,11 +1,8 @@
 // node --loader ts-node/esm .\builder\build.ts
 
-import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, appendFileSync } from 'fs';
-import { inspect } from 'util';
-
+import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs';
 import { CityEntry } from '../checker/constants';
 import { getCountryCodeEnum, getCountryConfigText } from './country-config';
-import { copyFlagSvgFromResources } from './emoji-util';
 
 console.log('Hi, this is the RMG bot who will build packages.');
 
