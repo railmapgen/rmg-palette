@@ -13,7 +13,7 @@ const parseDetailsEl = (details: HTMLDetailsElement) => {
     if (!type) {
         throw new Error('Missing required attributes and/or data.');
     }
-    const value = details.textContent;
+    const value = details.textContent || '';
     return { type, value };
 };
 
