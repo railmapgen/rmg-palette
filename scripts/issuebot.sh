@@ -1,17 +1,17 @@
 #!/bin/bash
 set -eux
 
-echo "Issue number: $1"
-echo "Issue title: $2"
-echo "User login: $3"
-echo "User ID: $4"
+echo "Issue number: $ISSUE_NUMBER"
+echo "Issue title: $ISSUE_TITLE"
+echo "User login: $USER_LOGIN"
+echo "User ID: $USER_ID"
 
 # git config
 git config --global user.name 'github-actions[bot]'
 git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
 # Checkout to new/existing branch
-BRANCH_NAME="bot-$1"
+BRANCH_NAME="bot-$ISSUE_NUMBER"
 {
   git fetch origin $BRANCH_NAME;
   git checkout $BRANCH_NAME;
@@ -26,9 +26,8 @@ echo "COLOURS<<EOF"$'\n'"$BOT_RUN_RESULT"$'\n'EOF >> $GITHUB_OUTPUT
 cd ..
 
 # Commit
-rm ./package/issuebot/issue.txt
 git add .
-git commit -m "#$1 $2" --author="$3 <$4+$3@users.noreply.github.com>"
+git commit -m "#$ISSUE_NUMBER $ISSUE_TITLE" --author="$3 <$4+$3@users.noreply.github.com>"
 
 # Build to check
 cd package

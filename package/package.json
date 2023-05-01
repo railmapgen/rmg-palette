@@ -17,6 +17,7 @@
     "author": "",
     "license": "GPL-3.0",
     "devDependencies": {
+        "jsdom": "^21.1.2",
         "node-fetch": "^3.2.6",
         "ts-node": "^10.8.1",
         "ttypescript": "^1.5.13",

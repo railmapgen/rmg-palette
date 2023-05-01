@@ -13,7 +13,7 @@ export interface PaletteEntry {
      */
     id: string;
     /**
-     * Key-value pairs of multi-lingual names of the line.
+     * Key-value pairs of multilingual names of the line.
      */
     name: Translation;
     /**
@@ -41,7 +41,7 @@ export interface CityEntry {
      */
     country: string;
     /**
-     * Key-value pairs of multi-lingual names of the city.
+     * Key-value pairs of multilingual names of the city.
      */
     name: Translation;
 }
@@ -54,7 +54,7 @@ export interface CountryEntry {
     flagEmoji?: string;
     flagSvg?: string;
     /**
-     * Key-value pairs of multi-lingual names of the country.
+     * Key-value pairs of multilingual names of the country.
      */
     name: Translation;
     language?: LanguageCode;
