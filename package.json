@@ -60,5 +60,5 @@
         "postinstall": "cd ./package && npm i",
         "preview": "vite preview"
     },
-    "version": "0.8.44"
+    "version": "0.8.45"
 }
