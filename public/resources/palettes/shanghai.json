@@ -180,6 +180,46 @@
         }
     },
     {
+        "id": "sh19",
+        "colour": "#48864D",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "sh20",
+        "colour": "#365299",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "sh21",
+        "colour": "#D6C66C",
+        "fg": "#000",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "sh23",
+        "colour": "#E0815E",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
         "id": "pjl",
         "colour": "#B5B5B6",
         "fg": "#fff",
@@ -269,48 +309,8 @@
         }
     },
     {
-        "id": "sh19",
-        "colour": "#409a52",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 19",
-            "zh-Hans": "19号线",
-            "zh-Hant": "19號線"
-        }
-    },
-    {
-        "id": "sh20",
-        "colour": "#365ba9",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 20",
-            "zh-Hans": "20号线",
-            "zh-Hant": "20號線"
-        }
-    },
-    {
-        "id": "sh21",
-        "colour": "#dfc765",
-        "fg": "#000",
-        "name": {
-            "en": "Line 21",
-            "zh-Hans": "21号线",
-            "zh-Hant": "21號線"
-        }
-    },
-    {
-        "id": "sh23",
-        "colour": "#ee8564",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 23",
-            "zh-Hans": "23号线",
-            "zh-Hant": "23號線"
-        }
-    },
-    {
         "id": "airport",
-        "colour": "#326a8b",
+        "colour": "#266883",
         "fg": "#fff",
         "name": {
             "en": "Airport Link Line",
@@ -320,7 +320,7 @@
     },
     {
         "id": "jiamin",
-        "colour": "#6b394e",
+        "colour": "#733C54",
         "fg": "#fff",
         "name": {
             "en": "Jiamin Line",
@@ -330,42 +330,12 @@
     },
     {
         "id": "chongming",
-        "colour": "#6eb897",
+        "colour": "#6BB392",
         "fg": "#000",
         "name": {
             "en": "Chongming Line",
             "zh-Hans": "崇明线",
             "zh-Hant": "崇明線"
-        }
-    },
-    {
-        "id": "lgt1",
-        "colour": "#ff222a",
-        "fg": "#fff",
-        "name": {
-            "en": "Lingang Tram 1",
-            "zh-Hans": "临港中运量1号线",
-            "zh-Hant": "臨港中運量1號線"
-        }
-    },
-    {
-        "id": "lgt2",
-        "colour": "#3daaf5",
-        "fg": "#fff",
-        "name": {
-            "en": "Lingang Tram 2",
-            "zh-Hans": "临港中运量2号线",
-            "zh-Hant": "臨港中運量2號線"
-        }
-    },
-    {
-        "id": "lgt6",
-        "colour": "#7bca41",
-        "fg": "#fff",
-        "name": {
-            "en": "Lingang Tram 6",
-            "zh-Hans": "临港中运量6号线",
-            "zh-Hant": "臨港中運量6號線"
         }
     }
 ]
