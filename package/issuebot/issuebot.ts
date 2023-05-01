@@ -13,7 +13,7 @@ const parseDetailsEl = (details: HTMLDetailsElement) => {
     if (!type) {
         throw new Error('Missing required attributes and/or data.');
     }
-    const value = JSON.parse(details.textContent as string) as Record<string, any>;
+    const value = details.textContent;
     return { type, value };
 };
 
