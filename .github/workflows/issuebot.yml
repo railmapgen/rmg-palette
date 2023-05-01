@@ -19,11 +19,6 @@ jobs:
       - run: npm ci
         working-directory: ./package
 
-      - name: Dump payload
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT" > ./package/issuebot/issue.txt
-
       - name: Update and push
         run: ./scripts/issuebot.sh
         shell: bash
