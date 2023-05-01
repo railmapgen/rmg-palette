@@ -15,7 +15,7 @@ const parseDetailsEl = (details: HTMLDetailsElement) => {
     }
 
     const valueEl = details.querySelector('details[type="param"]');
-    const value = valueEl ? (JSON.parse(valueEl.textContent as string) as Record<string, any>) : null;
+    const value = valueEl ? (JSON.parse(valueEl.textContent as string) as Record<string, any>) : "";
 
     return { type, value };
 };
