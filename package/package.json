@@ -11,8 +11,9 @@
     "main": "./index.js",
     "scripts": {
         "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/build.ts && npx tsc",
-        "check": "export TS_NODE_COMPILER=\"ttypescript\" && node --loader ts-node/esm ./checker/check.ts",
-        "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts"
+        "check": "node --loader ts-node/esm ./checker/check.ts",
+        "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts",
+        "prepare": "ts-patch install"
     },
     "author": "",
     "license": "GPL-3.0",
@@ -20,9 +21,10 @@
         "jsdom": "^21.1.2",
         "node-fetch": "^3.3.1",
         "ts-node": "^10.9.1",
+        "ts-patch": "^2.1.0",
         "ttypescript": "^1.5.15",
-        "typescript": "^5.0.4",
-        "typescript-json": "^3.8.3"
+        "typescript": "^4.9.5",
+        "typia": "^3.8.3"
     },
     "exports": {
         ".": "./index.js",

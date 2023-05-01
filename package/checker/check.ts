@@ -1,10 +1,7 @@
-// Set the system environment and run the checker
-//
-// $Env:TS_NODE_COMPILER="ttypescript"
 // node --loader ts-node/esm .\checker\check.ts
 
 import { readdirSync, readFileSync } from 'fs';
-import { assertEquals } from 'typescript-json';
+import { assertEquals } from 'typia';
 import { CityEntry, CountryEntry, PaletteEntry } from './constants';
 
 console.log('Hi, this is the RMG bot who will validate json resources.');
