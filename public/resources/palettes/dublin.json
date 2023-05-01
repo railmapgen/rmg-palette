@@ -1,0 +1,10 @@
+[
+    {
+        "id": "l1",
+        "colour": "#aaaaaa",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1"
+        }
+    }
+]

@@ -256,6 +256,13 @@
         }
     },
     {
+        "id": "dublin",
+        "country": "IE",
+        "name": {
+            "en": "Dublin"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {
