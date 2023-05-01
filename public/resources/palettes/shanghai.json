@@ -180,6 +180,46 @@
         }
     },
     {
+        "id": "sh19",
+        "colour": "#48864D",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "sh20",
+        "colour": "#365299",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "sh21",
+        "colour": "#D6C66C",
+        "fg": "#000",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "sh23",
+        "colour": "#E0815E",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
         "id": "pjl",
         "colour": "#B5B5B6",
         "fg": "#fff",
@@ -266,6 +306,36 @@
         "name": {
             "zh": "金山铁路",
             "en": "Jinshan Railway"
+        }
+    },
+    {
+        "id": "airport",
+        "colour": "#266883",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Link Line",
+            "zh-Hans": "机场联络线",
+            "zh-Hant": "機場聯絡線"
+        }
+    },
+    {
+        "id": "jiamin",
+        "colour": "#733C54",
+        "fg": "#fff",
+        "name": {
+            "en": "Jiamin Line",
+            "zh-Hans": "嘉闵线",
+            "zh-Hant": "嘉閔線"
+        }
+    },
+    {
+        "id": "chongming",
+        "colour": "#6BB392",
+        "fg": "#000",
+        "name": {
+            "en": "Chongming Line",
+            "zh-Hans": "崇明线",
+            "zh-Hant": "崇明線"
         }
     }
 ]
