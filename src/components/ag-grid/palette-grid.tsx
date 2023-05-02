@@ -13,6 +13,7 @@ import useTranslatedName from '../hooks/use-translated-name';
 import { ColDef } from 'ag-grid-community';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
+import { getTicketByCityId } from '../../redux/ticket/util';
 
 export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
@@ -64,22 +65,11 @@ export default function PaletteGrid() {
     const defaultColDef = useMemo(() => ({ resizable: true }), []);
 
     const handleCityEdit = async (id: string) => {
-        try {
-            const city = cityList.find(city => city.id === id);
-            if (city) {
-                const paletteModule = await import(
-                    `../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${id}.js`
-                );
-                const { default: palettes } = paletteModule;
-
-                dispatch(populateTicket({ city, palettes }));
-                navigate('/new');
-                rmgRuntime.event(Events.EDIT_CITY, { city: city.id });
-            } else {
-                throw new Error('Input city ID is invalid');
-            }
-        } catch (e) {
-            console.error('PaletteGrid.handleCityEdit():: Unexpected errors', e);
+        const ticket = await getTicketByCityId(id);
+        if (ticket) {
+            dispatch(populateTicket(ticket));
+            navigate('/new');
+            rmgRuntime.event(Events.EDIT_CITY, { city: id });
         }
     };
 

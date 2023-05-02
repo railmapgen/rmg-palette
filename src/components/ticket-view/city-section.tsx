@@ -13,6 +13,7 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import { cityList } from '@railmapgen/rmg-palette-resources';
 import useTranslatedName from '../hooks/use-translated-name';
+import { getTicketByCityId } from '../../redux/ticket/util';
 
 export default function CitySection() {
     const { t, i18n } = useTranslation();
@@ -32,18 +33,13 @@ export default function CitySection() {
                 },
                 { '': t('Please select...') }
             ),
-        new: t('Add a city...'),
+        new: t('Add a city') + '...',
     };
 
     const handleSelectCity = async (cityId: string) => {
-        const city = cityList.find(entry => entry.id === cityId);
-        if (city) {
-            const paletteModule = await import(
-                `../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${cityId}.js`
-            );
-            const { default: palettes } = paletteModule;
-
-            dispatch(populateTicket({ city, palettes }));
+        const ticket = await getTicketByCityId(cityId);
+        if (ticket) {
+            dispatch(populateTicket(ticket));
         } else {
             dispatch(clearLines());
         }

@@ -34,14 +34,14 @@ describe('CitySection', () => {
         );
     });
 
-    it('Can clear lines when adding a new city', () => {
+    it('Can clear lines when adding a new city', async () => {
         render(<CitySection />, { store: mockStore });
 
         // select new
         fireEvent.change(screen.getByRole('combobox', { name: 'City' }), { target: { value: 'new' } });
+        await waitFor(() => expect(mockStore.getActions()).toHaveLength(1));
 
         const actions = mockStore.getActions();
-        expect(actions).toHaveLength(1);
         expect(actions).toContainEqual({ type: 'ticket/clearLines' });
     });
 });

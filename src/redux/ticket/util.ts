@@ -1,4 +1,4 @@
-import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, cityList, ColourHex, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { LanguageCode } from '@railmapgen/rmg-translate';
 import { TranslationInvalidReasonType } from '../../util/constants';
 
@@ -81,4 +81,23 @@ export const getTranslationEntityInvalidReasons = (
     }
 
     return result;
+};
+
+export const getTicketByCityId = async (
+    id: string
+): Promise<{ city: CityEntry; palettes: PaletteEntry[] } | undefined> => {
+    const city = cityList.find(entry => entry.id === id);
+    if (!city) {
+        console.error('getTicketByCityId():: invalid city ID', id);
+        return undefined;
+    }
+
+    try {
+        const paletteModule = await import(`../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${id}.js`);
+        const { default: palettes } = paletteModule;
+        return { city, palettes };
+    } catch (e) {
+        console.error('getTicketByCityId():: unexpected errors', e);
+        return undefined;
+    }
 };
