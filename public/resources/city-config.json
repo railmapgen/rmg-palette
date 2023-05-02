@@ -470,6 +470,16 @@
         }
     },
     {
+        "id": "kaosiung",
+        "country": "TW",
+        "name": {
+            "en": "Kaosiung",
+            "zh-Hans": "高雄",
+            "zh-Hant": "高雄",
+            "ko": "가오슝"
+        }
+    },
+    {
         "id": "kharkiv",
         "country": "UA",
         "name": {
