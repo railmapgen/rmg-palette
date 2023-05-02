@@ -32,6 +32,7 @@ export interface TicketState {
 
     // city
     city: string;
+    newCity: string;
     cityName: TranslationEntry[];
 
     // lines
@@ -45,6 +46,7 @@ const getInitialState = (): TicketState => ({
     countryName: initialTranslation,
 
     city: '',
+    newCity: '',
     cityName: initialTranslation,
 
     lines: { [crypto.randomUUID()]: initialPaletteEntry },
@@ -87,6 +89,10 @@ const ticketSlice = createSlice({
 
         setCity: (state, action: PayloadAction<string>) => {
             state.city = action.payload;
+        },
+
+        setNewCity: (state, action: PayloadAction<string>) => {
+            state.newCity = action.payload;
         },
 
         updateCityName: (state, action: PayloadAction<{ lang: LanguageCode; name: string }>) => {
@@ -163,6 +169,10 @@ const ticketSlice = createSlice({
 
         removeLine: (state, action: PayloadAction<string>) => {
             delete state.lines[action.payload];
+        },
+
+        clearLines: state => {
+            state.lines = getInitialState().lines;
         },
 
         resetTicket: (state, action: PayloadAction<TicketState | undefined>) => action.payload ?? getInitialState(),
@@ -276,6 +286,7 @@ export const {
     switchCountryNameLang,
     removeCountryName,
     setCity,
+    setNewCity,
     updateCityName,
     switchCityNameLang,
     removeCityName,
@@ -289,6 +300,7 @@ export const {
     addLine,
     copyLine,
     removeLine,
+    clearLines,
     resetTicket,
     populateTicket,
 } = ticketSlice.actions;
