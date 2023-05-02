@@ -256,6 +256,16 @@
         }
     },
     {
+        "id": "dublin",
+        "country": "Ireland",
+        "name": {
+            "en": "Dublin",
+            "ga": "Baile Átha Cliath",
+            "zh-Hans": "都柏林",
+            "zh-Hant": "都柏林"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {
@@ -467,6 +477,16 @@
         "name": {
             "en": "Kaohsiung",
             "zh": "高雄"
+        }
+    },
+    {
+        "id": "kaosiung",
+        "country": "TW",
+        "name": {
+            "en": "Kaosiung",
+            "zh-Hans": "高雄",
+            "zh-Hant": "高雄",
+            "ko": "가오슝"
         }
     },
     {
