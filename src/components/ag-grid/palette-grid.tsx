@@ -6,7 +6,6 @@ import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
 import LineBadges from './line-badges';
 import { IconButton } from '@chakra-ui/react';
 import { MdEdit } from 'react-icons/md';
-import { populateTicket } from '../../redux/ticket/ticket-slice';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
@@ -14,6 +13,7 @@ import { ColDef } from 'ag-grid-community';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { getTicketByCityId } from '../../redux/ticket/util';
+import { populateTicket } from '../../redux/ticket/ticket-slice';
 
 export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
@@ -65,12 +65,16 @@ export default function PaletteGrid() {
     const defaultColDef = useMemo(() => ({ resizable: true }), []);
 
     const handleCityEdit = async (id: string) => {
-        const ticket = await getTicketByCityId(id);
-        if (ticket) {
-            dispatch(populateTicket(ticket));
-            navigate('/new');
-            rmgRuntime.event(Events.EDIT_CITY, { city: id });
+        if (rmgRuntime.isStandaloneWindow()) {
+            const ticket = await getTicketByCityId(id);
+            if (ticket) {
+                dispatch(populateTicket(ticket));
+                navigate('/new');
+            }
+        } else {
+            rmgRuntime.openApp('rmg-palette-upload');
         }
+        rmgRuntime.event(Events.EDIT_CITY, { city: id });
     };
 
     return (

@@ -55,6 +55,7 @@ export default function CountrySection() {
             label: t('Country / Region'),
             value: country,
             options: countryOptions,
+            disabledOptions: [''],
             onChange: value => dispatch(setCountry(value as CountryCode | 'new')),
         },
         {

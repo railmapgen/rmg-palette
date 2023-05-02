@@ -11,13 +11,20 @@ const realStore = rootReducer.getState();
 const mockStore = createMockRootStore({ ...realStore });
 
 describe('TicketView', () => {
+    const effectiveEmptyTicket: TicketState = {
+        ...realStore.ticket,
+        country: CountryCode.HK,
+        city: 'hongkong',
+        lines: {},
+    };
+
     const draftTicket: TicketState = {
         ...realStore.ticket,
         country: CountryCode.HK,
         city: 'hongkong',
         lines: {
             'id-001': {
-                id: '',
+                id: 'twl',
                 nameEntity: [],
                 colour: '#aaaaaa',
                 fg: MonoColour.white,
@@ -28,6 +35,20 @@ describe('TicketView', () => {
     afterEach(() => {
         mockStore.clearActions();
         window.localStorage.clear();
+    });
+
+    it('Do not apply draft ticket if it is effectively empty', async () => {
+        window.localStorage.setItem(DRAFT_TICKET_KEY, JSON.stringify(effectiveEmptyTicket));
+
+        render(<TicketView />, { store: mockStore });
+        try {
+            await screen.findByRole('dialog');
+            throw new Error('promise not expected to be resolved');
+        } catch (e) {
+            const error = e as Error;
+            console.log('error occurs:', error.message);
+            expect(error.message).toContain('Unable to find role="dialog"');
+        }
     });
 
     it('Can apply draft ticket as expected', async () => {

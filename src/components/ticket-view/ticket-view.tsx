@@ -25,10 +25,25 @@ export default function TicketView() {
     useEffect(() => {
         const draftTicketStr = window.localStorage.getItem(DRAFT_TICKET_KEY);
         if (draftTicketStr) {
-            setDraftTicket(JSON.parse(draftTicketStr));
-            setIsUnsavedDraftModalOpen(true);
+            try {
+                const draftTicket = JSON.parse(draftTicketStr);
+                if (Object.keys(draftTicket.lines).length > 0 && (Object.values(draftTicket.lines)[0] as any).id) {
+                    setDraftTicket(draftTicket);
+                    setIsUnsavedDraftModalOpen(true);
+                }
+            } catch (e) {
+                console.error('TicketView:: unable to restore draft ticket', draftTicketStr);
+            }
         }
     }, []);
+
+    const handleGoBack = () => {
+        if (rmgRuntime.isStandaloneWindow()) {
+            navigate('/');
+        } else {
+            rmgRuntime.openApp('rmg-palette');
+        }
+    };
 
     const handleReset = () => {
         dispatch(resetTicket());
@@ -51,7 +66,7 @@ export default function TicketView() {
             </Flex>
 
             <Flex my={2}>
-                <Button size="sm" onClick={() => navigate('/')}>
+                <Button size="sm" onClick={handleGoBack}>
                     {t('Go back')}
                 </Button>
 
