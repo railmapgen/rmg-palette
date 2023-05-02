@@ -1,6 +1,5 @@
 import fetch from 'node-fetch';
 import { readFile, writeFile } from 'fs/promises';
-import { mkdir } from 'fs';
 
 const getFlagEmojiCodePoints = (countryCode: string): string[] => {
     const chars = countryCode.toUpperCase().split('');

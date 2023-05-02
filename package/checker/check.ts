@@ -1,12 +1,8 @@
-// Set the system environment and run the checker
-//
-// $Env:TS_NODE_COMPILER="ttypescript"
 // node --loader ts-node/esm .\checker\check.ts
 
-import { readFileSync, readdirSync } from 'fs';
-import { equals, assertEquals } from "typescript-json";
-
-import { PaletteEntry, CityEntry, CountryEntry } from './constants';
+import { readdirSync, readFileSync } from 'fs';
+import { assertEquals } from 'typia';
+import { CityEntry, CountryEntry, PaletteEntry } from './constants';
 
 console.log('Hi, this is the RMG bot who will validate json resources.');
 
@@ -58,9 +54,9 @@ const checkCountryConfig = (): string[] => {
 const checkCityInCountry = (countryCode: string[]) => {
     const rawCityConfig: CityEntry[] = JSON.parse(readFileSync('../public/resources/city-config.json', 'utf-8'));
     const cityCountrySet = new Set(rawCityConfig.map(city => city.country));
-    const countryWithUnkownNames = [...cityCountrySet].filter(country => !countryCode.includes(country));
+    const countryWithUnkownNames = Array.from(cityCountrySet).filter(country => !countryCode.includes(country));
     if (countryWithUnkownNames.length > 0) {
-        throw new TypeError(`These country names are unkown: ${countryWithUnkownNames}`);
+        throw new TypeError(`These country names are unknown: ${countryWithUnkownNames}`);
     }
 };
 
