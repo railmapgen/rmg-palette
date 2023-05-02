@@ -256,6 +256,16 @@
         }
     },
     {
+        "id": "dublin",
+        "country": "Ireland",
+        "name": {
+            "en": "Dublin",
+            "ga": "Baile Átha Cliath",
+            "zh-Hans": "都柏林",
+            "zh-Hant": "都柏林"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {

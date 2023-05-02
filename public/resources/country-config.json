@@ -209,6 +209,16 @@
         "language": "fa"
     },
     {
+        "id": "Ireland",
+        "name": {
+            "en": "Ireland",
+            "ga": "Éire",
+            "zh-Hans": "爱尔兰",
+            "zh-Hant": "愛爾蘭"
+        },
+        "language": "ga"
+    },
+    {
         "id": "IT",
         "name": {
             "en": "Italy",
