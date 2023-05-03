@@ -20,6 +20,16 @@
         }
     },
     {
+        "id": "bj3",
+        "colour": "#d90627",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
         "id": "bj4",
         "colour": "#008e9c",
         "fg": "#fff",
@@ -100,6 +110,16 @@
         }
     },
     {
+        "id": "bj12",
+        "colour": "#9c4f01",
+        "fg": "#000",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
+    },
+    {
         "id": "bj13",
         "colour": "#f9e700",
         "fg": "#000",
@@ -157,6 +177,26 @@
             "en": "Line 19",
             "zh-Hans": "19号线",
             "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "bj22",
+        "colour": "#f4c1ca",
+        "fg": "#000",
+        "name": {
+            "en": "Line 22 (Pinggu Line)",
+            "zh-Hans": "22号线（平谷线）",
+            "zh-Hant": "22號線（平谷線）"
+        }
+    },
+    {
+        "id": "bj28",
+        "colour": "#476205",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号线",
+            "zh-Hant": "28號線"
         }
     },
     {
