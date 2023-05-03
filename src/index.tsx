@@ -25,9 +25,11 @@ const renderApp = () => {
     );
 };
 
-rmgRuntime.ready().then(() => {
-    initStore(store);
-    renderApp();
-    rmgRuntime.injectUITools();
-    rmgRuntime.event(Events.APP_LOAD, { isStandaloneWindow: rmgRuntime.isStandaloneWindow() });
-});
+rmgRuntime
+    .ready()
+    .then(() => initStore(store))
+    .then(() => {
+        renderApp();
+        rmgRuntime.injectUITools();
+        rmgRuntime.event(Events.APP_LOAD, { isStandaloneWindow: rmgRuntime.isStandaloneWindow() });
+    });

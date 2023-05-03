@@ -46,7 +46,11 @@ export default function PageHeader() {
     ];
 
     const handleAddCity = () => {
-        navigate('/new');
+        if (rmgRuntime.isStandaloneWindow()) {
+            navigate('/new');
+        } else {
+            rmgRuntime.openApp('rmg-palette-upload');
+        }
         rmgRuntime.event(Events.ADD_CITY, {});
     };
 

@@ -1,24 +1,67 @@
 import { Box, Heading } from '@chakra-ui/react';
 import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { removeCityName, setCity, switchCityNameLang, updateCityName } from '../../redux/ticket/ticket-slice';
+import {
+    clearLines,
+    populateTicket,
+    removeCityName,
+    setNewCity,
+    switchCityNameLang,
+    updateCityName,
+} from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
+import { cityList } from '@railmapgen/rmg-palette-resources';
+import useTranslatedName from '../hooks/use-translated-name';
+import { getTicketByCityId } from '../../redux/ticket/util';
 
 export default function CitySection() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const dispatch = useRootDispatch();
+    const translateName = useTranslatedName();
 
-    const { city, cityName } = useRootSelector(state => state.ticket);
+    const { country, city, newCity, cityName } = useRootSelector(state => state.ticket);
+
+    const cityOptions: Record<string, string> = {
+        ...cityList
+            .filter(entry => entry.country === country)
+            .map(entry => [entry.id, translateName(entry.name)])
+            .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
+            .reduce(
+                (acc, cur) => {
+                    return { ...acc, [cur[0]]: cur[1] };
+                },
+                { '': t('Please select...') }
+            ),
+        new: t('Add a city') + '...',
+    };
+
+    const handleSelectCity = async (cityId: string) => {
+        const ticket = await getTicketByCityId(cityId);
+        if (ticket) {
+            dispatch(populateTicket(ticket));
+        } else {
+            dispatch(clearLines());
+        }
+    };
 
     const fields: RmgFieldsField[] = [
+        {
+            type: 'select',
+            label: t('City'),
+            value: city,
+            options: cityOptions,
+            disabledOptions: [''],
+            onChange: value => handleSelectCity(value as string),
+        },
         {
             type: 'input',
             label: t('City code'),
             placeholder: 'e.g. hongkong, guangzhou, shanghai',
-            value: city,
-            onChange: value => dispatch(setCity(value)),
+            value: newCity,
+            onChange: value => dispatch(setNewCity(value)),
             validator: value => value !== '' && !value.match(/[^a-z]/),
+            hidden: city !== 'new',
         },
     ];
 
@@ -29,12 +72,14 @@ export default function CitySection() {
             </Heading>
 
             <RmgFields fields={fields} />
-            <MultiLangEntryCard
-                entries={cityName}
-                onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
-                onLangSwitch={(prevLang, nextLang) => dispatch(switchCityNameLang({ prevLang, nextLang }))}
-                onRemove={lang => dispatch(removeCityName(lang))}
-            />
+            {city === 'new' && (
+                <MultiLangEntryCard
+                    entries={cityName}
+                    onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
+                    onLangSwitch={(prevLang, nextLang) => dispatch(switchCityNameLang({ prevLang, nextLang }))}
+                    onRemove={lang => dispatch(removeCityName(lang))}
+                />
+            )}
         </Box>
     );
 }
