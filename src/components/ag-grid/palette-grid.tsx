@@ -72,7 +72,7 @@ export default function PaletteGrid() {
                 navigate('/new');
             }
         } else {
-            rmgRuntime.openApp('rmg-palette-upload');
+            rmgRuntime.openApp('rmg-palette-upload', '/rmg-palette/new?city=' + id);
         }
         rmgRuntime.event(Events.EDIT_CITY, { city: id });
     };
