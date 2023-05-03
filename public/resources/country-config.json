@@ -278,6 +278,15 @@
         "language": "ms"
     },
     {
+        "id": "NL",
+        "name": {
+            "en": "Netherlands",
+            "ko": "네덜란드",
+            "zh-Hans": "荷兰",
+            "zh-Hant": "荷蘭"
+        }
+    },
+    {
         "id": "NO",
         "name": {
             "en": "Norway",
