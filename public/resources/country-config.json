@@ -209,6 +209,16 @@
         "language": "fa"
     },
     {
+        "id": "Ireland",
+        "name": {
+            "en": "Ireland",
+            "ga": "Éire",
+            "zh-Hans": "爱尔兰",
+            "zh-Hant": "愛爾蘭"
+        },
+        "language": "ga"
+    },
+    {
         "id": "IT",
         "name": {
             "en": "Italy",
@@ -266,6 +276,15 @@
             "zh-Hant": "馬來西亞"
         },
         "language": "ms"
+    },
+    {
+        "id": "NL",
+        "name": {
+            "en": "Netherlands",
+            "ko": "네덜란드",
+            "zh-Hans": "荷兰",
+            "zh-Hant": "荷蘭"
+        }
     },
     {
         "id": "NO",

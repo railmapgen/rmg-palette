@@ -1,5 +1,14 @@
 [
     {
+        "id": "amsterdam",
+        "country": "NL",
+        "name": {
+            "en": "Amsterdam",
+            "ko": "암스테르담",
+            "zh": "阿姆斯特丹"
+        }
+    },
+    {
         "id": "ankara",
         "country": "TR",
         "name": {
@@ -253,6 +262,16 @@
             "en": "Dortmund",
             "de": "Dortmund",
             "zh": "多特蒙德"
+        }
+    },
+    {
+        "id": "dublin",
+        "country": "Ireland",
+        "name": {
+            "en": "Dublin",
+            "ga": "Baile Átha Cliath",
+            "zh-Hans": "都柏林",
+            "zh-Hant": "都柏林"
         }
     },
     {

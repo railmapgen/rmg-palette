@@ -1,0 +1,66 @@
+[
+    {
+        "id": "dart",
+        "colour": "#029641",
+        "fg": "#fff",
+        "name": {
+            "en": "DART Train"
+        }
+    },
+    {
+        "id": "red",
+        "colour": "#e30813",
+        "fg": "#fff",
+        "name": {
+            "en": "Luas Red Line Tram"
+        }
+    },
+    {
+        "id": "green",
+        "colour": "#86bd4c",
+        "fg": "#fff",
+        "name": {
+            "en": "Luas Green Line Tram"
+        }
+    },
+    {
+        "id": "aircoach",
+        "colour": "#847ab8",
+        "fg": "#fff",
+        "name": {
+            "en": "Aircoach Bus 700"
+        }
+    },
+    {
+        "id": "northern",
+        "colour": "#e56da4",
+        "fg": "#fff",
+        "name": {
+            "en": "Northern Commuter Train"
+        }
+    },
+    {
+        "id": "southwestern",
+        "colour": "#fec502",
+        "fg": "#fff",
+        "name": {
+            "en": "Southwestern Commuter Train"
+        }
+    },
+    {
+        "id": "western",
+        "colour": "#2b3089",
+        "fg": "#fff",
+        "name": {
+            "en": "Western Commuter Train"
+        }
+    },
+    {
+        "id": "southeastern",
+        "colour": "#f69e02",
+        "fg": "#fff",
+        "name": {
+            "en": "Southeastern Commuter Train"
+        }
+    }
+]
