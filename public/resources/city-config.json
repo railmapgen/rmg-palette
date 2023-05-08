@@ -177,6 +177,16 @@
         }
     },
     {
+        "id": "changzhou",
+        "country": "CN",
+        "name": {
+            "en": "Changzhou",
+            "ko": "창저우",
+            "zh-Hans": "常州",
+            "zh-Hant": "常州"
+        }
+    },
+    {
         "id": "chengdu",
         "country": "CN",
         "name": {
