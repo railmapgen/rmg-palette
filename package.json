@@ -10,10 +10,10 @@
         "@chakra-ui/react": "^2.6.0",
         "@emotion/react": "^11.10.8",
         "@emotion/styled": "^11.10.8",
-        "@railmapgen/rmg-components": "^7.1.2",
+        "@railmapgen/rmg-components": "^7.1.5",
         "@railmapgen/rmg-palette-resources": "file:package/dist",
-        "@railmapgen/rmg-runtime": "^6.0.1",
-        "@railmapgen/rmg-translate": "^2.0.2",
+        "@railmapgen/rmg-runtime": "^6.0.3",
+        "@railmapgen/rmg-translate": "^2.0.3",
         "@reduxjs/toolkit": "^1.9.5",
         "@vitejs/plugin-legacy": "^4.0.3",
         "ag-grid-community": "^29.3.3",
@@ -51,7 +51,7 @@
         "nwsapi": "2.2.2"
     },
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host",
         "build": "tsc && vite build",
         "build:resources": "cd ./package && npm run build && cd ..",
         "test": "vitest",
