@@ -1052,6 +1052,16 @@
         }
     },
     {
+        "id": "wenzhou",
+        "country": "CN",
+        "name": {
+            "en": "Wenzhou",
+            "ko": "원저우",
+            "zh-Hans": "温州",
+            "zh-Hant": "溫州"
+        }
+    },
+    {
         "id": "wuhan",
         "country": "CN",
         "name": {
