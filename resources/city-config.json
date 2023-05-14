@@ -639,6 +639,16 @@
         }
     },
     {
+        "id": "nanchang",
+        "country": "CN",
+        "name": {
+            "en": "Nanchang",
+            "ko": "난창",
+            "zh-Hans": "南昌",
+            "zh-Hant": "南昌"
+        }
+    },
+    {
         "id": "nanjing",
         "country": "CN",
         "name": {
@@ -794,6 +804,15 @@
             "zh-Hans": "罗马",
             "zh-Hant": "羅馬",
             "it": "Roma"
+        }
+    },
+    {
+        "id": "rotterdam",
+        "country": "NL",
+        "name": {
+            "en": "Rotterdam",
+            "ko": "로테르담",
+            "zh": "鹿特丹"
         }
     },
     {
