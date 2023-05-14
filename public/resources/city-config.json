@@ -639,6 +639,16 @@
         }
     },
     {
+        "id": "nanchang",
+        "country": "CN",
+        "name": {
+            "en": "Nanchang",
+            "ko": "난창",
+            "zh-Hans": "南昌",
+            "zh-Hant": "南昌"
+        }
+    },
+    {
         "id": "nanjing",
         "country": "CN",
         "name": {
