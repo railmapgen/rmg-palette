@@ -807,6 +807,15 @@
         }
     },
     {
+        "id": "rotterdam",
+        "country": "NL",
+        "name": {
+            "en": "Rotterdam",
+            "ko": "로테르담",
+            "zh": "鹿特丹"
+        }
+    },
+    {
         "id": "sanfrancisco",
         "country": "US",
         "name": {
