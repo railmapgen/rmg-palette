@@ -703,6 +703,14 @@
         }
     },
     {
+        "id": "nice",
+        "country": "FR",
+        "name": {
+            "en": "Nice",
+            "zh": "尼斯"
+        }
+    },
+    {
         "id": "ningbo",
         "country": "CN",
         "name": {
