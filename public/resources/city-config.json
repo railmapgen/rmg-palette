@@ -572,6 +572,14 @@
         }
     },
     {
+        "id": "lyon",
+        "country": "FR",
+        "name": {
+            "en": "Lyon",
+            "zh": "里昂"
+        }
+    },
+    {
         "id": "macao",
         "country": "MO",
         "name": {
