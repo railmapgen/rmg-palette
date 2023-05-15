@@ -572,6 +572,14 @@
         }
     },
     {
+        "id": "lyon",
+        "country": "FR",
+        "name": {
+            "en": "Lyon",
+            "zh": "里昂"
+        }
+    },
+    {
         "id": "macao",
         "country": "MO",
         "name": {
@@ -700,6 +708,14 @@
             "en": "New York",
             "zh-Hans": "纽约",
             "zh-Hant": "紐約"
+        }
+    },
+    {
+        "id": "nice",
+        "country": "FR",
+        "name": {
+            "en": "Nice",
+            "zh": "尼斯"
         }
     },
     {
