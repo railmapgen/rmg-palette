@@ -435,6 +435,16 @@
         }
     },
     {
+        "id": "hohhot",
+        "country": "CN",
+        "name": {
+            "en": "Hohhot",
+            "ko": "후허하오터",
+            "zh-Hans": "呼和浩特",
+            "zh-Hant": "呼和浩特"
+        }
+    },
+    {
         "id": "hongkong",
         "country": "HK",
         "name": {
