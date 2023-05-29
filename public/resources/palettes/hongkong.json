@@ -1,307 +1,521 @@
 [
     {
         "id": "twl",
+        "colour": "#e60012",
+        "fg": "#fff",
         "name": {
             "en": "Tsuen Wan Line",
             "zh-Hans": "荃湾线",
             "zh-Hant": "荃灣綫"
-        },
-        "colour": "#E2231A"
+        }
     },
     {
         "id": "ktl",
+        "colour": "#00a040",
+        "fg": "#fff",
         "name": {
             "en": "Kwun Tong Line",
             "zh-Hans": "观塘线",
             "zh-Hant": "觀塘綫"
-        },
-        "colour": "#00AF41"
+        }
     },
     {
         "id": "isl",
+        "colour": "#0075c2",
+        "fg": "#fff",
         "name": {
             "en": "Island Line",
             "zh-Hans": "港岛线",
             "zh-Hant": "港島綫"
-        },
-        "colour": "#0071CE"
+        }
     },
     {
         "id": "tkl",
+        "colour": "#7e3c93",
+        "fg": "#fff",
         "name": {
             "en": "Tseung Kwan O Line",
             "zh-Hans": "将军澳线",
             "zh-Hant": "將軍澳綫"
-        },
-        "colour": "#A35EB5"
+        }
     },
     {
         "id": "tcl",
+        "colour": "#f3982d",
+        "fg": "#fff",
         "name": {
             "en": "Tung Chung Line",
             "zh-Hans": "东涌线",
             "zh-Hant": "東涌綫"
-        },
-        "colour": "#F38B00"
+        }
     },
     {
         "id": "drl",
+        "colour": "#eb6ea5",
+        "fg": "#fff",
         "name": {
             "en": "Disney Resort Line",
             "zh-Hans": "迪士尼线",
             "zh-Hant": "迪士尼綫"
-        },
-        "colour": "#E777CB"
+        }
     },
     {
         "id": "ael",
+        "colour": "#00888e",
+        "fg": "#fff",
         "name": {
             "en": "Airport Express",
             "zh-Hans": "机场快线",
             "zh-Hant": "機場快綫"
-        },
-        "colour": "#007078"
+        }
     },
     {
         "id": "sile",
+        "colour": "#cbd300",
+        "fg": "#fff",
         "name": {
             "en": "South Island Line (East)",
             "zh-Hans": "南港岛线（东段）",
             "zh-Hant": "南港島綫（東段）"
-        },
-        "colour": "#B6BD00"
+        }
     },
     {
         "id": "silw",
+        "colour": "#9182C2",
+        "fg": "#fff",
         "name": {
             "en": "South Island Line (West)",
             "zh-Hans": "南港岛线（西段）",
             "zh-Hant": "南港島綫（西段）"
-        },
-        "colour": "#9182C2"
+        }
     },
     {
         "id": "ekl",
+        "colour": "#00FF00",
+        "fg": "#fff",
         "name": {
             "en": "East Kowloon Line",
             "zh-Hans": "东九龙线",
             "zh-Hant": "東九龍綫"
-        },
-        "colour": "#00FF00"
+        }
     },
     {
         "id": "eal",
+        "colour": "#5eb7e8",
+        "fg": "#fff",
         "name": {
             "en": "East Rail Line",
             "zh-Hans": "东铁线",
             "zh-Hant": "東鐵綫"
-        },
-        "colour": "#61B4E4"
+        }
     },
     {
         "id": "mol",
+        "colour": "#9c2e00",
+        "fg": "#fff",
         "name": {
             "en": "Tuen Ma Line",
             "zh-Hans": "屯马线",
             "zh-Hant": "屯馬綫"
-        },
-        "colour": "#9A3820"
+        }
     },
     {
         "id": "nol",
+        "colour": "#FF0066",
+        "fg": "#fff",
         "name": {
             "en": "Northern Link",
             "zh-Hans": "北环线",
             "zh-Hant": "北環綫"
-        },
-        "colour": "#FF0066"
+        }
     },
     {
         "id": "lrl",
+        "colour": "#dbb400",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail",
             "zh-Hans": "轻铁",
             "zh-Hant": "輕鐵"
-        },
-        "colour": "#CD9700"
+        }
     },
     {
         "id": "lrl505",
+        "colour": "#da2128",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 505",
             "zh-Hans": "轻铁505线",
             "zh-Hant": "輕鐵505綫"
-        },
-        "colour": "#DB1F26"
+        }
     },
     {
         "id": "lrl507",
+        "colour": "#00A650",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 507",
             "zh-Hans": "轻铁507线",
             "zh-Hant": "輕鐵507綫"
-        },
-        "colour": "#00A650"
+        }
     },
     {
         "id": "lrl610",
+        "colour": "#541912",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 610",
             "zh-Hans": "轻铁610线",
             "zh-Hant": "輕鐵610綫"
-        },
-        "colour": "#431115"
+        }
     },
     {
         "id": "lrl614",
+        "colour": "#15c0f2",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 614",
             "zh-Hans": "轻铁614线",
             "zh-Hant": "輕鐵614綫"
-        },
-        "colour": "#4DC6F4"
+        }
     },
     {
         "id": "lrl614p",
+        "colour": "#f3858d",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 614P",
             "zh-Hans": "轻铁614P线",
             "zh-Hant": "輕鐵614P綫"
-        },
-        "colour": "#F46989"
+        }
     },
     {
         "id": "lrl615",
+        "colour": "#ffdc01",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 615",
             "zh-Hans": "轻铁615线",
             "zh-Hant": "輕鐵615綫"
-        },
-        "colour": "#FDDD04"
+        }
     },
     {
         "id": "lrl615p",
+        "colour": "#016584",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 615P",
             "zh-Hans": "轻铁615P线",
             "zh-Hant": "輕鐵615P綫"
-        },
-        "colour": "#215483"
+        }
     },
     {
         "id": "lrl705",
+        "colour": "#71bf44",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 705",
             "zh-Hans": "轻铁705线",
             "zh-Hant": "輕鐵705綫"
-        },
-        "colour": "#64C542"
+        }
     },
     {
         "id": "lrl706",
+        "colour": "#b279b4",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 706",
             "zh-Hans": "轻铁706线",
             "zh-Hant": "輕鐵706綫"
-        },
-        "colour": "#B365B9"
+        }
     },
     {
         "id": "lrl751",
+        "colour": "#f58220",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 751",
             "zh-Hans": "轻铁751线",
             "zh-Hant": "輕鐵751綫"
-        },
-        "colour": "#F47216"
+        }
     },
     {
         "id": "lrl761",
+        "colour": "#6e2c91",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Route 761/761P",
             "zh-Hans": "轻铁761/761P线",
             "zh-Hant": "輕鐵761/761P綫"
-        },
-        "colour": "#672290"
+        }
     },
     {
         "id": "efls",
+        "colour": "#000000",
+        "fg": "#fff",
         "name": {
             "en": "Environmentally Friendly Linkage System",
             "zh-Hans": "环保连接系统",
             "zh-Hant": "環保連接系統"
-        },
-        "colour": "#000000"
+        }
     },
     {
         "id": "hsr",
+        "colour": "#9c948b",
+        "fg": "#fff",
         "name": {
             "en": "High Speed Rail",
             "zh-Hans": "高速铁路",
             "zh-Hant": "高速鐵路"
-        },
-        "colour": "#9D968D"
+        }
     },
     {
         "id": "np360",
+        "colour": "#94989A",
+        "fg": "#fff",
         "name": {
             "en": "Ngong Ping 360",
             "zh": "昂坪360"
-        },
-        "colour": "#94989A"
+        }
     },
     {
         "id": "tramways",
+        "colour": "#008544",
+        "fg": "#fff",
         "name": {
             "en": "Hong Kong Tramways",
             "zh-Hans": "香港电车",
             "zh-Hant": "香港電車"
-        },
-        "colour": "#007549"
+        }
     },
     {
         "id": "ealkcr",
+        "colour": "#3d7dbc",
+        "fg": "#fff",
         "name": {
             "en": "KCR East Rail",
             "zh-Hans": "九广东铁",
             "zh-Hant": "九廣東鐵"
-        },
-        "colour": "#005DA0"
+        }
     },
     {
         "id": "wrlkcr",
+        "colour": "#a30074",
+        "fg": "#fff",
         "name": {
             "en": "KCR West Rail",
             "zh-Hans": "九广西铁",
             "zh-Hant": "九廣西鐵"
-        },
-        "colour": "#AC2571"
+        }
     },
     {
         "id": "molkcr",
+        "colour": "#915127",
+        "fg": "#fff",
         "name": {
             "en": "Ma On Shan Rail",
             "zh-Hans": "九广马铁",
             "zh-Hant": "九廣馬鐵"
-        },
-        "colour": "#761E10"
+        }
     },
     {
         "id": "lrlkcr",
+        "colour": "#f79239",
+        "fg": "#fff",
         "name": {
             "en": "KCR Light Rail",
             "zh-Hans": "九广轻铁",
             "zh-Hant": "九廣輕鐵"
-        },
-        "colour": "#FD722D"
+        }
     },
     {
         "id": "wrl",
+        "colour": "#a3238f",
+        "fg": "#fff",
         "name": {
             "en": "West Rail Line",
             "zh-Hans": "西铁线",
             "zh-Hant": "西鐵綫"
-        },
-        "colour": "#B6008D"
+        }
+    },
+    {
+        "id": "szmetro",
+        "colour": "#c1c4c6",
+        "fg": "#fff",
+        "name": {
+            "en": "Shenzhen Metro Network",
+            "zh-Hans": "深圳地铁网络",
+            "zh-Hant": "深圳地鐵網絡"
+        }
+    },
+    {
+        "id": "itt",
+        "colour": "#333d74",
+        "fg": "#fff",
+        "name": {
+            "en": "Intercity Through Train",
+            "zh-Hans": "城际直通车",
+            "zh-Hant": "城際直通車"
+        }
+    },
+    {
+        "id": "gktt",
+        "colour": "#6468fa",
+        "fg": "#fff",
+        "name": {
+            "en": "Guangdong-Kowloon Through Train",
+            "zh-Hans": "城际直通车广东线",
+            "zh-Hant": "城際直通車廣東綫"
+        }
+    },
+    {
+        "id": "sktt",
+        "colour": "#359a33",
+        "fg": "#fff",
+        "name": {
+            "en": "Shanghai–Kowloon Through Train",
+            "zh-Hans": "城际直通车上海线",
+            "zh-Hant": "城際直通車上海綫"
+        }
+    },
+    {
+        "id": "bktt",
+        "colour": "#fda034",
+        "fg": "#fff",
+        "name": {
+            "en": "Beijing–Kowloon Through Train",
+            "zh-Hans": "城际直通车北京线",
+            "zh-Hant": "城際直通車北京綫"
+        }
+    },
+    {
+        "id": "mtr",
+        "colour": "#808284",
+        "fg": "#fff",
+        "name": {
+            "en": "MTR Line",
+            "zh-Hans": "地铁线路",
+            "zh-Hant": "地鐵線路"
+        }
+    },
+    {
+        "id": "kcrlrt505",
+        "colour": "#8c2979",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 505",
+            "zh-Hans": "九广轻铁505线",
+            "zh-Hant": "九廣輕鐵505綫"
+        }
+    },
+    {
+        "id": "kcrlrt507",
+        "colour": "#fff82d",
+        "fg": "#000",
+        "name": {
+            "en": "KCR Light Rail Route 507",
+            "zh-Hans": "九广轻铁507线",
+            "zh-Hant": "九廣輕鐵507綫"
+        }
+    },
+    {
+        "id": "kcrlrt610",
+        "colour": "#53367a",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 610",
+            "zh-Hans": "九广轻铁610线",
+            "zh-Hant": "九廣輕鐵610綫"
+        }
+    },
+    {
+        "id": "kcrlrt614",
+        "colour": "#cf1f37",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 614",
+            "zh-Hans": "九广轻铁614线",
+            "zh-Hant": "九廣輕鐵614綫"
+        }
+    },
+    {
+        "id": "kcrlrt614p",
+        "colour": "#7fcdf3",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 614P",
+            "zh-Hans": "九广轻铁614P线",
+            "zh-Hant": "九廣輕鐵614P綫"
+        }
+    },
+    {
+        "id": "kcrlrt615",
+        "colour": "#bd705b",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 615",
+            "zh-Hans": "九广轻铁615线",
+            "zh-Hant": "九廣輕鐵615綫"
+        }
+    },
+    {
+        "id": "kcrlrt615p",
+        "colour": "#d24096",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 615P",
+            "zh-Hans": "九广轻铁615P线",
+            "zh-Hant": "九廣輕鐵615P綫"
+        }
+    },
+    {
+        "id": "kcrlrt701",
+        "colour": "#ebfa94",
+        "fg": "#000",
+        "name": {
+            "en": "KCR Light Rail Route 701",
+            "zh-Hans": "九广轻铁701线",
+            "zh-Hant": "九廣輕鐵701綫"
+        }
+    },
+    {
+        "id": "kcrlrt705",
+        "colour": "#ec6ca8",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 705",
+            "zh-Hans": "九广轻铁705线",
+            "zh-Hant": "九廣輕鐵705綫"
+        }
+    },
+    {
+        "id": "kcrlrt705",
+        "colour": "#d7c3df",
+        "fg": "#000",
+        "name": {
+            "en": "KCR Light Rail Route 706",
+            "zh-Hans": "九广轻铁706线",
+            "zh-Hant": "九廣輕鐵706綫"
+        }
+    },
+    {
+        "id": "kcrlrt751",
+        "colour": "#ffcd2f",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 751",
+            "zh-Hans": "九广轻铁751线",
+            "zh-Hant": "九廣輕鐵751綫"
+        }
+    },
+    {
+        "id": "kcrlrt761",
+        "colour": "#4fb95b",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail Route 761/761P",
+            "zh-Hans": "九广轻铁761/761P线",
+            "zh-Hant": "九廣輕鐵761/761P綫"
+        }
     }
 ]
