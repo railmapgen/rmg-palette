@@ -68,5 +68,94 @@
             "zh-Hans": "10号线",
             "zh-Hant": "10號線"
         }
+    },
+    {
+        "id": "sy5",
+        "colour": "#8f2714",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "sy8",
+        "colour": "#d322d3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "sy7",
+        "colour": "#119715",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "sy13",
+        "colour": "#a4ae24",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號線"
+        }
+    },
+    {
+        "id": "sy15",
+        "colour": "#2c5615",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
+        "id": "syk1",
+        "colour": "#119aac",
+        "fg": "#fff",
+        "name": {
+            "en": "Line K1",
+            "zh-Hans": "K1号线",
+            "zh-Hant": "K1號線"
+        }
+    },
+    {
+        "id": "sy16",
+        "colour": "#ac2a3d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16",
+            "zh-Hans": "16号线",
+            "zh-Hant": "16號線"
+        }
+    },
+    {
+        "id": "syk2",
+        "colour": "#113fac",
+        "fg": "#fff",
+        "name": {
+            "en": "Line K2",
+            "zh-Hans": "K2号线",
+            "zh-Hant": "K2號線"
+        }
+    },
+    {
+        "id": "sys",
+        "colour": "#930fc2",
+        "fg": "#fff",
+        "name": {
+            "en": "City Rail",
+            "zh-Hans": "市郊铁路"
+        }
     }
 ]
