@@ -20,6 +20,16 @@
         "language": "de"
     },
     {
+        "id": "AU",
+        "name": {
+            "en": "Australia",
+            "ko": "호주",
+            "zh-Hans": "澳大利亚",
+            "zh-Hant": "澳大利亞"
+        },
+        "language": "en"
+    },
+    {
         "id": "AZ",
         "name": {
             "en": "Azerbaijan",
