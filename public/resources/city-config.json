@@ -371,6 +371,16 @@
         }
     },
     {
+        "id": "guiyang",
+        "country": "CN",
+        "name": {
+            "en": "Guiyang",
+            "ko": "구이양",
+            "zh-Hans": "贵阳",
+            "zh-Hant": "貴陽"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
