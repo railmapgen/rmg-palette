@@ -684,6 +684,16 @@
         }
     },
     {
+        "id": "nantong",
+        "country": "CN",
+        "name": {
+            "en": "Nantong",
+            "ko": "난퉁",
+            "zh-Hans": "南通",
+            "zh-Hant": "南通"
+        }
+    },
+    {
         "id": "naples",
         "country": "IT",
         "name": {
