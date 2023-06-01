@@ -47,9 +47,6 @@
         "vite": "^4.3.9",
         "vitest": "^0.31.4"
     },
-    "overrides": {
-        "nwsapi": "2.2.2"
-    },
     "scripts": {
         "dev": "vite --host",
         "build": "tsc && vite build",
