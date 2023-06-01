@@ -4,7 +4,7 @@
         "name": {
             "en": "Bakerloo Line",
             "zh-Hans": "贝克卢线",
-            "zh-HK": "必嘉老綫"
+            "zh-Hant": "必嘉老綫"
         },
         "colour": "#B26300"
     },
@@ -13,7 +13,7 @@
         "name": {
             "en": "Central Line",
             "zh-Hans": "中央线",
-            "zh-HK": "中央綫"
+            "zh-Hant": "中央綫"
         },
         "colour": "#DC241F"
     },
@@ -21,7 +21,7 @@
         "id": "circle",
         "name": {
             "en": "Circle Line",
-            "zh-HK": "環綫"
+            "zh-Hant": "環綫"
         },
         "colour": "#FFD329"
     },
@@ -36,7 +36,7 @@
         "id": "hsmithcity",
         "name": {
             "en": "Hammersmith & City Line",
-            "zh-HK": "咸默史密夫及城市綫"
+            "zh-Hant": "咸默史密夫及城市綫"
         },
         "colour": "#F4A9BE"
     },
@@ -45,7 +45,7 @@
         "name": {
             "en": "Jubilee Line",
             "zh-Hans": "银禧线",
-            "zh-HK": "銀禧綫"
+            "zh-Hant": "銀禧綫"
         },
         "colour": "#A1A5A7"
     },
@@ -54,7 +54,7 @@
         "name": {
             "en": "Metropolitan Line",
             "zh-Hans": "大都会线",
-            "zh-HK": "大都會綫"
+            "zh-Hant": "大都會綫"
         },
         "colour": "#9B0058"
     },
@@ -77,7 +77,7 @@
         "name": {
             "en": "Victoria Line",
             "zh-Hans": "维多利亚线",
-            "zh-HK": "維多利亞綫"
+            "zh-Hant": "維多利亞綫"
         },
         "colour": "#0098D8"
     },
@@ -86,7 +86,7 @@
         "name": {
             "en": "Waterloo & City Line",
             "zh-Hans": "滑铁卢及城市线",
-            "zh-HK": "窩打老及城市綫"
+            "zh-Hant": "窩打老及城市綫"
         },
         "colour": "#93CEBA"
     },
@@ -101,7 +101,7 @@
         "id": "elizabeth",
         "name": {
             "en": "Elizabeth Line",
-            "zh-HK": "伊利沙伯綫"
+            "zh-Hant": "伊利沙伯綫"
         },
         "colour": "#9364CC"
     },
