@@ -4,7 +4,7 @@
         "colour": "#e61e25",
         "fg": "#fff",
         "name": {
-            "zh": "1号线",
+            "zh-Hans": "1号线",
             "en": "Line 1"
         }
     },
@@ -13,7 +13,7 @@
         "colour": "#0168b3",
         "fg": "#fff",
         "name": {
-            "zh": "2号线",
+            "zh-Hans": "2号线",
             "en": "Line 2"
         }
     },
@@ -22,7 +22,7 @@
         "colour": "#00843d",
         "fg": "#fff",
         "name": {
-            "zh": "3号线",
+            "zh-Hans": "3号线",
             "en": "Line 3"
         }
     },
@@ -31,7 +31,7 @@
         "colour": "#f79727",
         "fg": "#fff",
         "name": {
-            "zh": "4号线",
+            "zh-Hans": "4号线",
             "en": "Line 4"
         }
     },
@@ -40,7 +40,7 @@
         "colour": "#c1d72f",
         "fg": "#fff",
         "name": {
-            "zh": "5号线",
+            "zh-Hans": "5号线",
             "en": "Line5"
         }
     }
