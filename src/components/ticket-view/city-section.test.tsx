@@ -42,6 +42,6 @@ describe('CitySection', () => {
         await waitFor(() => expect(mockStore.getActions()).toHaveLength(1));
 
         const actions = mockStore.getActions();
-        expect(actions).toContainEqual({ type: 'ticket/clearLines' });
+        expect(actions).toContainEqual({ type: 'ticket/setCity', payload: 'new' });
     });
 });
