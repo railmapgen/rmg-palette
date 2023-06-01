@@ -52,7 +52,7 @@ export default function CountrySection() {
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
-            label: t('Country / Region'),
+            label: t('Country/Region'),
             value: country,
             options: countryOptions,
             disabledOptions: [''],
@@ -79,7 +79,7 @@ export default function CountrySection() {
     return (
         <Box as="section">
             <Heading as="h5" size="sm" mb={2}>
-                {t('Country / Region')}
+                {t('Country/Region')}
             </Heading>
 
             <RmgFields fields={fields} />

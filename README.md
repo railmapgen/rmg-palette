@@ -22,8 +22,7 @@ A typical example of an entry of `city-config.json`:
   "name": {
     "en": "San Francisco",
     "zh-Hans": "旧金山",
-    "zh-HK": "三藩市",
-    "zh-TW": "舊金山"
+    "zh-Hant": "三藩市"
     // Merge country variants if applicable
   }
 }
