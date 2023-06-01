@@ -58,6 +58,10 @@ const ticketSlice = createSlice({
     reducers: {
         setCountry: (state, action: PayloadAction<CountryCode | 'new'>) => {
             state.country = action.payload;
+            if (action.payload === 'new') {
+                state.city = 'new';
+                state.lines = getInitialState().lines;
+            }
         },
 
         setNewCountry: (state, action: PayloadAction<string>) => {
@@ -89,6 +93,9 @@ const ticketSlice = createSlice({
 
         setCity: (state, action: PayloadAction<string>) => {
             state.city = action.payload;
+            if (action.payload === 'new') {
+                state.lines = getInitialState().lines;
+            }
         },
 
         setNewCity: (state, action: PayloadAction<string>) => {
