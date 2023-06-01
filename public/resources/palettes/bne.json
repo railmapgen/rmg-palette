@@ -1,7 +1,7 @@
 [
     {
         "id": "fgbn",
-        "colour": "#cf202f",
+        "colour": "#e31837",
         "fg": "#fff",
         "name": {
             "en": "Ferny Grove and Beenleigh lines",
@@ -45,7 +45,7 @@
     },
     {
         "id": "rpsp",
-        "colour": "#1278be",
+        "colour": "#1578be",
         "fg": "#fff",
         "name": {
             "en": "Redcliffe Peninsula and Springfield lines",
@@ -67,7 +67,7 @@
     },
     {
         "id": "sp",
-        "colour": "#47626f",
+        "colour": "#435860",
         "fg": "#fff",
         "name": {
             "en": "Special event service only",
@@ -78,7 +78,7 @@
     },
     {
         "id": "bb",
-        "colour": "#e8891d",
+        "colour": "#dd822c",
         "fg": "#fff",
         "name": {
             "en": "Busway lines",
@@ -89,7 +89,7 @@
     },
     {
         "id": "glks",
-        "colour": "#ffdb1e",
+        "colour": "#f9c822",
         "fg": "#fff",
         "name": {
             "en": "G:link Tram",
