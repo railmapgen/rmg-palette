@@ -197,6 +197,16 @@
         "language": "id"
     },
     {
+        "id": "IE",
+        "name": {
+            "en": "Ireland",
+            "ga": "Éire",
+            "zh-Hans": "爱尔兰",
+            "zh-Hant": "愛爾蘭"
+        },
+        "language": "ga"
+    },
+    {
         "id": "IN",
         "name": {
             "en": "India",
@@ -215,16 +225,6 @@
             "zh-Hant": "伊朗"
         },
         "language": "fa"
-    },
-    {
-        "id": "Ireland",
-        "name": {
-            "en": "Ireland",
-            "ga": "Éire",
-            "zh-Hans": "爱尔兰",
-            "zh-Hant": "愛爾蘭"
-        },
-        "language": "ga"
     },
     {
         "id": "IT",
