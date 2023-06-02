@@ -220,7 +220,7 @@ export const ticketSelectors = {
 
     getCityEntry: (state: TicketState): CityEntry => {
         return {
-            id: state.city as CityCode,
+            id: (state.city === 'new' ? state.newCity : state.city) as CityCode,
             country: state.country === 'new' ? state.newCountry : state.country ?? '',
             name: Object.fromEntries(state.cityName),
         };
@@ -250,9 +250,9 @@ export const ticketSelectors = {
 
     getCityErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
-        const { country, newCountryLang, city, cityName } = state;
+        const { country, newCountryLang, city, newCity, cityName } = state;
 
-        if (!city) {
+        if (!city || city === 'new' && !newCity) {
             result.push(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
         }
         //if the case is a new country has officalLanguage then get it, otherwise find the exisiting country officalLanguage - see if it is filled
