@@ -37,7 +37,7 @@ export default function PageHeader() {
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
-            label: t('Country / Region'),
+            label: t('Country/Region'),
             value: selectedCountry,
             options: countryOptions,
             disabledOptions: [''],
