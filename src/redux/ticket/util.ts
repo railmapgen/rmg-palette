@@ -26,48 +26,13 @@ export const getTranslationEntityInvalidReasons = (
     // Chinese
     const zhHansExists = entities.some(entity => entity[0] === 'zh-Hans' && entity[1]);
     const zhHantExists = entities.some(entity => entity[0] === 'zh-Hant' && entity[1]);
-    const zhCNExists = entities.some(entity => entity[0] === 'zh-CN' && entity[1]);
-    const zhHKExists = entities.some(entity => entity[0] === 'zh-HK' && entity[1]);
-    const zhTWExists = entities.some(entity => entity[0] === 'zh-TW' && entity[1]);
 
-    if (!entities.some(entity => entity[0] === 'zh' && entity[1])) {
-        if (!zhHansExists && !zhHantExists && !zhCNExists && !zhHKExists && !zhTWExists) {
-            // not exist any Chinese
-            result.push(TranslationInvalidReasonType.ZH_UNDEFINED);
-        } else {
-            // zh-Hans not defined
-            if (!zhHansExists) {
-                if (!zhCNExists) {
-                    result.push(TranslationInvalidReasonType.ZH_HANS_UNDEFINED);
-                }
-            } else {
-                if (zhCNExists) {
-                    result.push(TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED);
-                }
-            }
+    if (!zhHansExists) {
+        result.push(TranslationInvalidReasonType.ZH_HANS_UNDEFINED);
+    }
 
-            // zh-Hant not defined
-            if (!zhHantExists) {
-                if (!zhHKExists && !zhTWExists) {
-                    // zh-HK zh-TW both not defined
-                    result.push(TranslationInvalidReasonType.ZH_HANT_UNDEFINED);
-                } else if (!zhHKExists) {
-                    // zh-HK not defined
-                    result.push(TranslationInvalidReasonType.ZH_HK_UNDEFINED);
-                } else if (!zhTWExists) {
-                    // zh-TW not defined
-                    result.push(TranslationInvalidReasonType.ZH_TW_UNDEFINED);
-                }
-            } else {
-                if (zhHKExists || zhTWExists) {
-                    result.push(TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED);
-                }
-            }
-        }
-    } else {
-        if (zhHansExists || zhHantExists || zhCNExists || zhHKExists || zhTWExists) {
-            result.push(TranslationInvalidReasonType.ZH_VARIANTS_REDEFINED);
-        }
+    if (!zhHantExists) {
+        result.push(TranslationInvalidReasonType.ZH_HANT_UNDEFINED);
     }
 
     // Duplication

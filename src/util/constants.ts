@@ -28,12 +28,8 @@ export enum TicketInvalidReasonType {
 
 export enum TranslationInvalidReasonType {
     EN_UNDEFINED = 'EN_UNDEFINED',
-    ZH_UNDEFINED = 'ZH_UNDEFINED',
     ZH_HANS_UNDEFINED = 'ZH_HANS_UNDEFINED',
     ZH_HANT_UNDEFINED = 'ZH_HANT_UNDEFINED',
-    ZH_HK_UNDEFINED = 'ZH_HK_UNDEFINED',
-    ZH_TW_UNDEFINED = 'ZH_TW_UNDEFINED',
-    ZH_VARIANTS_REDEFINED = 'ZH_VARIANTS_REDEFINED',
     LANGUAGE_DUPLICATED = 'LANGUAGE_DUPLICATED',
     OFFICIAL_LANGUAGE_UNDEFINED = 'OFFICIAL_LANGUAGE_UNDEFINED',
 }
@@ -67,11 +63,6 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hans': '缺少英文名称',
         'zh-Hant': '缺少英文名稱',
     },
-    ZH_UNDEFINED: {
-        en: 'Chinese name is missing',
-        'zh-Hans': '缺少中文名称',
-        'zh-Hant': '缺少中文名稱',
-    },
     ZH_HANS_UNDEFINED: {
         en: 'Simplified Chinese name is missing',
         'zh-Hans': '缺少简体中文名称',
@@ -81,21 +72,6 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         en: 'Traditional Chinese name is missing',
         'zh-Hans': '缺少繁体中文名称',
         'zh-Hant': '缺少繁體中文名稱',
-    },
-    ZH_HK_UNDEFINED: {
-        en: 'Traditional Chinese (Hong Kong variant) name is missing',
-        'zh-Hans': '缺少繁体中文（香港变体）名称',
-        'zh-Hant': '缺少繁體中文（香港變體）名稱',
-    },
-    ZH_TW_UNDEFINED: {
-        en: 'Traditional Chinese (Taiwan variant) name is missing',
-        'zh-Hans': '缺少繁体中文（台湾变体）名称',
-        'zh-Hant': '缺少繁體中文（台灣變體）名稱',
-    },
-    ZH_VARIANTS_REDEFINED: {
-        en: 'Chinese variants are redefined',
-        'zh-Hans': '包含重复的中文变体',
-        'zh-Hant': '包含重複的中文變體',
     },
     LANGUAGE_DUPLICATED: {
         en: 'Duplicated language found',
