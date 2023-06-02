@@ -5,6 +5,7 @@ import {
     clearLines,
     populateTicket,
     removeCityName,
+    setCity,
     setNewCity,
     switchCityNameLang,
     updateCityName,
@@ -37,6 +38,11 @@ export default function CitySection() {
     };
 
     const handleSelectCity = async (cityId: string) => {
+        if (cityId === 'new') {
+            dispatch(setCity('new'));
+            return;
+        }
+
         const ticket = await getTicketByCityId(cityId);
         if (ticket) {
             dispatch(populateTicket(ticket));
