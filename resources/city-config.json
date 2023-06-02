@@ -78,6 +78,16 @@
         }
     },
     {
+        "id": "bne",
+        "country": "AU",
+        "name": {
+            "en": "Brisbane",
+            "ko": "브리즈번",
+            "zh-Hans": "布里斯班",
+            "zh-Hant": "布里斯本"
+        }
+    },
+    {
         "id": "bonn",
         "country": "DE",
         "name": {
@@ -385,6 +395,16 @@
             "en": "Guangzhou",
             "zh-Hans": "广州",
             "zh-Hant": "廣州"
+        }
+    },
+    {
+        "id": "guiyang",
+        "country": "CN",
+        "name": {
+            "en": "Guiyang",
+            "ko": "구이양",
+            "zh-Hans": "贵阳",
+            "zh-Hant": "貴陽"
         }
     },
     {
@@ -710,6 +730,16 @@
             "en": "Nanning",
             "zh-Hans": "南宁",
             "zh-Hant": "南寧"
+        }
+    },
+    {
+        "id": "nantong",
+        "country": "CN",
+        "name": {
+            "en": "Nantong",
+            "ko": "난퉁",
+            "zh-Hans": "南通",
+            "zh-Hant": "南通"
         }
     },
     {
