@@ -131,7 +131,7 @@
     },
     {
         "id": "intercityrailway",
-        "colour": "#929292",
+        "colour": "#999999",
         "fg": "#fff",
         "name": {
             "en": "Intercity Railway",
