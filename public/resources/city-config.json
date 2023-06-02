@@ -78,6 +78,16 @@
         }
     },
     {
+        "id": "bne",
+        "country": "AU",
+        "name": {
+            "en": "Brisbane",
+            "ko": "브리즈번",
+            "zh-Hans": "布里斯班",
+            "zh-Hant": "布里斯本"
+        }
+    },
+    {
         "id": "bonn",
         "country": "DE",
         "name": {
