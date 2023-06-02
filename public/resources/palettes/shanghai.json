@@ -304,7 +304,7 @@
         "colour": "#000000",
         "fg": "#fff",
         "name": {
-            "zh": "金山铁路",
+            "zh-Hans": "金山铁路",
             "en": "Jinshan Railway"
         }
     },

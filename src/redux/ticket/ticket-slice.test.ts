@@ -18,32 +18,32 @@ describe('TicketSlice', () => {
             ...realStore.ticket,
             countryName: [
                 ['en', 'Country'],
-                ['zh', '國家'],
+                ['zh-Hant', '國家'],
             ],
         };
 
         it('Can update name in specific language as expected', () => {
-            const nextState = ticketReducer(initialState, updateCountryName({ lang: 'zh', name: '国家' }));
+            const nextState = ticketReducer(initialState, updateCountryName({ lang: 'zh-Hant', name: '国家' }));
 
             expect(nextState.countryName).toHaveLength(2);
-            expect(nextState.countryName).toContainEqual(['zh', '国家']);
+            expect(nextState.countryName).toContainEqual(['zh-Hant', '国家']);
         });
 
         it('Can change language of a name input as expected', () => {
             const nextState = ticketReducer(
                 initialState,
-                switchCountryNameLang({ prevLang: 'zh', nextLang: 'zh-Hant' })
+                switchCountryNameLang({ prevLang: 'zh-Hant', nextLang: 'zh-Hans' })
             );
 
             expect(nextState.countryName).toHaveLength(2);
-            expect(nextState.countryName).toContainEqual(['zh-Hant', '國家']);
+            expect(nextState.countryName).toContainEqual(['zh-Hans', '國家']);
         });
 
         it('Can remove name in specific language as expected', () => {
-            const nextState = ticketReducer(initialState, removeCountryName('zh'));
+            const nextState = ticketReducer(initialState, removeCountryName('zh-Hant'));
 
             expect(nextState.countryName).toHaveLength(1);
-            expect(nextState.countryName[0]).not.toContain('zh');
+            expect(nextState.countryName[0]).not.toContain('zh-Hant');
         });
     });
 
@@ -116,7 +116,8 @@ describe('TicketSlice', () => {
             country: 'HK',
             name: {
                 en: 'Hong Kong',
-                zh: '香港',
+                'zh-Hans': '香港',
+                'zh-Hant': '香港',
             },
         };
         const mockPaletteEntries: PaletteEntry[] = [
@@ -153,7 +154,7 @@ describe('TicketSlice', () => {
             expect(nextState.country).toBe('HK');
 
             expect(nextState.city).toBe('hongkong');
-            expect(nextState.cityName).toHaveLength(2);
+            expect(nextState.cityName).toHaveLength(3);
             expect(nextState.cityName).toContainEqual(['en', 'Hong Kong']);
 
             expect(Object.keys(nextState.lines)).toHaveLength(2);

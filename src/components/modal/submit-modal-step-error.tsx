@@ -27,7 +27,7 @@ export default function SubmitModalStepError(props: SubmitModalStepErrorProps) {
                 {countryErrors.length > 0 && (
                     <>
                         <Heading as="h5" size="sm" my={2}>
-                            {t('Country / Region')}
+                            {t('Country/Region')}
                         </Heading>
                         <UnorderedList aria-label="List of country errors">
                             {countryErrors.map((e, i) => (

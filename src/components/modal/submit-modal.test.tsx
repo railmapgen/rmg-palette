@@ -39,8 +39,7 @@ describe('SubmitModal', () => {
                 cityName: [
                     ['en', 'Hong Kong'],
                     ['zh-Hans', '香港'],
-                    ['zh-HK', '香港'],
-                    ['zh-TW', '香港'],
+                    ['zh-Hant', '香港'],
                 ],
                 lines: {
                     '991': {
@@ -48,8 +47,7 @@ describe('SubmitModal', () => {
                         nameEntity: [
                             ['en', 'Kwun Tong Line'],
                             ['zh-Hans', '观塘线'],
-                            ['zh-HK', '觀塘綫'],
-                            ['zh-TW', '觀塘綫'],
+                            ['zh-Hant', '觀塘綫'],
                         ],
                         colour: '#AAAAAA',
                         fg: MonoColour.white,
