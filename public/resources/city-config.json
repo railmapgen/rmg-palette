@@ -1034,6 +1034,15 @@
         }
     },
     {
+        "id": "sydney",
+        "country": "AU",
+        "name": {
+            "en": "Sydney",
+            "zh-Hans": "悉尼",
+            "zh-Hant": "雪梨"
+        }
+    },
+    {
         "id": "taichung",
         "country": "TW",
         "name": {
