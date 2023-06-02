@@ -6,7 +6,7 @@ import { TranslationEntry } from '../../redux/ticket/util';
 
 const mockEntries: TranslationEntry[] = [
     ['en', 'Hong Kong'],
-    ['zh', '香港'],
+    ['zh-Hant', '香港'],
 ];
 
 const mockCallbacks = {
@@ -25,7 +25,7 @@ describe('MultiLangEntryCard', () => {
         expect(stack1Fields[0]).toHaveAccessibleName('Language');
         expect(stack1Fields[1]).toHaveAccessibleName('Name');
 
-        const stack2 = screen.getByTestId('entry-card-stack-zh');
+        const stack2 = screen.getByTestId('entry-card-stack-zh-Hant');
         const stack2Fields = within(stack2).getAllByRole('combobox');
         expect(stack2Fields).toHaveLength(2);
         expect(stack2Fields[0]).toHaveAccessibleName('');
@@ -41,7 +41,7 @@ describe('MultiLangEntryCard', () => {
         ).not.toBeInTheDocument();
         expect(within(stack1).getByRole('button', { name: 'Remove this name' })).toBeInTheDocument();
 
-        const stack2 = screen.getByTestId('entry-card-stack-zh');
+        const stack2 = screen.getByTestId('entry-card-stack-zh-Hant');
         expect(within(stack2).getByRole('button', { name: 'Add a name in another language' })).toBeInTheDocument();
         expect(within(stack2).getByRole('button', { name: 'Remove this name' })).toBeInTheDocument();
     });

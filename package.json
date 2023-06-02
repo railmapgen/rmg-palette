@@ -7,48 +7,45 @@
     },
     "license": "GPL-3.0-only",
     "dependencies": {
-        "@chakra-ui/react": "^2.6.1",
+        "@chakra-ui/react": "^2.7.0",
         "@emotion/react": "^11.11.0",
         "@emotion/styled": "^11.11.0",
-        "@railmapgen/rmg-components": "^7.1.5",
+        "@railmapgen/rmg-components": "^7.1.6",
         "@railmapgen/rmg-palette-resources": "file:package/dist",
         "@railmapgen/rmg-runtime": "^6.0.3",
-        "@railmapgen/rmg-translate": "^2.0.3",
+        "@railmapgen/rmg-translate": "^3.0.1",
         "@reduxjs/toolkit": "^1.9.5",
-        "@vitejs/plugin-legacy": "^4.0.3",
-        "ag-grid-community": "^29.3.4",
-        "ag-grid-react": "^29.3.4",
-        "framer-motion": "^10.12.8",
+        "@vitejs/plugin-legacy": "^4.0.4",
+        "ag-grid-community": "^29.3.5",
+        "ag-grid-react": "^29.3.5",
+        "framer-motion": "^10.12.16",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-i18next": "^12.2.2",
-        "react-icons": "^4.8.0",
-        "react-redux": "^8.0.5",
-        "react-router-dom": "^6.11.1",
-        "terser": "^5.17.2"
+        "react-i18next": "^12.3.1",
+        "react-icons": "^4.9.0",
+        "react-redux": "^8.0.7",
+        "react-router-dom": "^6.11.2",
+        "terser": "^5.17.7"
     },
     "devDependencies": {
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^14.0.0",
         "@types/node": "^18.16.5",
-        "@types/react": "^18.2.6",
+        "@types/react": "^18.2.7",
         "@types/react-dom": "^18.2.4",
         "@types/react-router-dom": "^5.3.3",
         "@types/redux-mock-store": "^1.0.3",
-        "@typescript-eslint/eslint-plugin": "^5.59.2",
-        "@typescript-eslint/parser": "^5.59.2",
+        "@typescript-eslint/eslint-plugin": "^5.59.8",
+        "@typescript-eslint/parser": "^5.59.8",
         "@vitejs/plugin-react": "^4.0.0",
-        "eslint": "^8.40.0",
+        "eslint": "^8.41.0",
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-react": "^7.32.2",
         "prettier": "^2.8.8",
         "redux-mock-store": "^1.5.4",
         "typescript": "^5.0.4",
-        "vite": "^4.3.5",
-        "vitest": "^0.31.0"
-    },
-    "overrides": {
-        "nwsapi": "2.2.2"
+        "vite": "^4.3.9",
+        "vitest": "^0.31.4"
     },
     "scripts": {
         "dev": "vite --host",
@@ -60,5 +57,5 @@
         "postinstall": "cd ./package && npm i",
         "preview": "vite preview"
     },
-    "version": "0.8.58"
+    "version": "0.8.60"
 }

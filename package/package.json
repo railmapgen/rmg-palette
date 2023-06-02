@@ -6,11 +6,11 @@
         "url": "https://github.com/railmapgen/rmg-palette.git",
         "directory": "package"
     },
-    "version": "0.7.18",
+    "version": "0.8.0",
     "description": "",
     "main": "./index.js",
     "scripts": {
-        "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/build.ts && npx tsc",
+        "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/build.ts && npx tsc --project tsconfig.build.json",
         "check": "node --loader ts-node/esm ./checker/check.ts",
         "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts",
         "prepare": "ts-patch install"
@@ -33,6 +33,6 @@
     },
     "type": "module",
     "dependencies": {
-        "@railmapgen/rmg-translate": "^2.0.3"
+        "@railmapgen/rmg-translate": "^3.0.1"
     }
 }
