@@ -146,7 +146,7 @@
         "name": {
             "en": "F1 - Manly",
             "zh-Hans": "F1 - 曼利轮渡",
-            "zh-Hant": "F1 - 曼利輪渡"
+            "zh-Hant": "F1 - 曼利渡輪"
         }
     },
     {
@@ -156,7 +156,7 @@
         "name": {
             "en": "F2 - Taronga Zoo",
             "zh-Hans": "F2 - 塔隆加动物园轮渡",
-            "zh-Hant": "F2 - 塔隆加動物園輪渡"
+            "zh-Hant": "F2 - 塔隆加動物園渡輪"
         }
     },
     {
@@ -166,7 +166,7 @@
         "name": {
             "en": "F3 - Parramatta River",
             "zh-Hans": "F3 - 帕拉玛塔河轮渡",
-            "zh-Hant": "F3 - 帕拉瑪塔河輪渡"
+            "zh-Hant": "F3 - 帕拉瑪塔河渡輪"
         }
     },
     {
@@ -176,7 +176,7 @@
         "name": {
             "en": "F4 - Pyrmont Bay",
             "zh-Hans": "F4 - 派尔蒙特湾轮渡",
-            "zh-Hant": "F4 - 派爾蒙特灣輪渡"
+            "zh-Hant": "F4 - 派爾蒙特灣渡輪"
         }
     },
     {
@@ -186,7 +186,7 @@
         "name": {
             "en": "F5 - Neutral Bay",
             "zh-Hans": "F5 - 纽图尔湾轮渡",
-            "zh-Hant": "F5 - 紐圖爾灣輪渡"
+            "zh-Hant": "F5 - 紐圖爾灣渡輪"
         }
     },
     {
@@ -196,7 +196,7 @@
         "name": {
             "en": "F6 - Mosman Bay",
             "zh-Hans": "F6 - 莫斯曼湾轮渡",
-            "zh-Hant": "F6 - 莫斯曼灣輪渡"
+            "zh-Hant": "F6 - 莫斯曼灣渡輪"
         }
     },
     {
@@ -206,7 +206,7 @@
         "name": {
             "en": "F7 - Double Bay",
             "zh-Hans": "F7 - 双湾轮渡",
-            "zh-Hant": "F7 - 雙灣輪渡"
+            "zh-Hant": "F7 - 雙灣渡輪"
         }
     },
     {
@@ -216,7 +216,7 @@
         "name": {
             "en": "F8 - Cockatoo Island",
             "zh-Hans": "F8 - 凤头鹦鹉岛轮渡",
-            "zh-Hant": "F8 - 鳳頭鸚鵡島輪渡"
+            "zh-Hant": "F8 - 鳳頭鸚鵡島渡輪"
         }
     },
     {
@@ -226,137 +226,17 @@
         "name": {
             "en": "F9 - Watsons Bay",
             "zh-Hans": "F9 - 沃特森斯湾轮渡",
-            "zh-Hant": "F9 - 沃特森斯灣輪渡"
+            "zh-Hant": "F9 - 沃特森斯灣渡輪"
         }
     },
     {
-        "id": "brkl",
+        "id": "syff",
         "colour": "#5ab031",
         "fg": "#fff",
         "name": {
-            "en": "Brooklyn Ferry",
-            "zh-Hans": "布鲁克林轮渡",
-            "zh-Hant": "布魯克林輪渡"
-        }
-    },
-    {
-        "id": "bunc",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Cronulla Bundeena Ferry",
-            "zh-Hans": "克洛努拉本迪娜轮渡",
-            "zh-Hant": "克洛努拉本迪娜輪渡"
-        }
-    },
-    {
-        "id": "cclc",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Lane Cove Ferry",
-            "zh-Hans": "拉恩科夫轮渡",
-            "zh-Hant": "拉恩科夫輪渡"
-        }
-    },
-    {
-        "id": "ccsh",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "City to Shark Island Ferry",
-            "zh-Hans": "市区至鲨岛轮渡",
-            "zh-Hant": "市區至鯊島輪渡"
-        }
-    },
-    {
-        "id": "cctz",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "City to Taronga Zoo Ferry",
-            "zh-Hans": "市区至塔隆加动物园快速轮渡",
-            "zh-Hant": "市區至塔隆加動物園快速輪渡"
-        }
-    },
-    {
-        "id": "ccwb",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "City to Watsons Bay Ferry",
-            "zh-Hans": "市区至沃特森斯湾快速轮渡",
-            "zh-Hant": "市區至沃特森斯灣快速輪渡"
-        }
-    },
-    {
-        "id": "ccwm",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "City to Manly via Watsons Bay Ferry",
-            "zh-Hans": "市区至曼利途径沃特森斯湾快速轮渡",
-            "zh-Hant": "市區至曼利途徑沃特森斯灣快速輪渡"
-        }
-    },
-    {
-        "id": "chcp",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Church Point Ferry",
-            "zh-Hans": "教堂点轮渡",
-            "zh-Hant": "教堂點輪渡"
-        }
-    },
-    {
-        "id": "crf",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Yamba to Iluka Ferry",
-            "zh-Hans": "雅姆巴至伊鲁卡轮渡",
-            "zh-Hant": "雅姆巴至伊魯卡輪渡"
-        }
-    },
-    {
-        "id": "empb",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Woy Woy Empire Bay Ferry",
-            "zh-Hans": "沃伊沃伊帝国湾轮渡",
-            "zh-Hant": "沃伊沃伊帝國灣輪渡"
-        }
-    },
-    {
-        "id": "mff",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Manly Fast Ferry",
-            "zh-Hans": "曼利快速轮渡",
-            "zh-Hant": "曼利快速輪渡"
-        }
-    },
-    {
-        "id": "plmb",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Palm Beach to Coasters Retreat Ferry",
-            "zh-Hans": "帕姆海滩至考斯特度假村轮渡",
-            "zh-Hant": "帕姆海灘至考斯特度假村輪渡"
-        }
-    },
-    {
-        "id": "wage",
-        "colour": "#5ab031",
-        "fg": "#fff",
-        "name": {
-            "en": "Palm Beach, Wagstaffe, Ettalong Ferry",
-            "zh-Hans": "帕姆海滩，瓦格斯塔夫，伊塔隆轮渡",
-            "zh-Hant": "帕姆海灘，瓦格斯塔夫，伊塔隆輪渡"
+            "en": "Private Ferry and Fast Ferry Services",
+            "zh-Hans": "私营和快速轮渡服务",
+            "zh-Hant": "私營與快速渡輪服務"
         }
     },
     {
