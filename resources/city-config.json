@@ -590,6 +590,16 @@
         }
     },
     {
+        "id": "lanzhou",
+        "country": "CN",
+        "name": {
+            "en": "Lanzhou",
+            "ko": "란저우",
+            "zh-Hans": "兰州",
+            "zh-Hant": "蘭州"
+        }
+    },
+    {
         "id": "lima",
         "country": "PE",
         "name": {
