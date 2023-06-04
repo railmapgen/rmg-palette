@@ -629,6 +629,16 @@
         }
     },
     {
+        "id": "losangeles",
+        "country": "US",
+        "name": {
+            "en": "Los Angeles",
+            "zh-Hans": "洛杉矶",
+            "zh-Hant": "洛杉磯",
+            "ko": "로스 앤젤레스"
+        }
+    },
+    {
         "id": "luoyang",
         "country": "CN",
         "name": {
