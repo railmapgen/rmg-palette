@@ -965,6 +965,16 @@
         }
     },
     {
+        "id": "scax",
+        "country": "US",
+        "name": {
+            "en": "South California (Metrolink)",
+            "zh-Hans": "南加州（都会铁路）",
+            "zh-Hant": "南加州（都會鐵路）",
+            "ar": "남부 캘리포니아 (메트로링크)"
+        }
+    },
+    {
         "id": "seoul",
         "country": "KR",
         "name": {
