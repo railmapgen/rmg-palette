@@ -99,7 +99,7 @@
         }
     },
     {
-        "id": "scaxav",
+        "id": "av",
         "colour": "#1c9d03",
         "fg": "#fff",
         "name": {
@@ -110,7 +110,7 @@
         }
     },
     {
-        "id": "scaxio",
+        "id": "ieoc",
         "colour": "#bd295a",
         "fg": "#fff",
         "name": {
@@ -121,7 +121,7 @@
         }
     },
     {
-        "id": "scaxoc",
+        "id": "oc",
         "colour": "#ff7600",
         "fg": "#fff",
         "name": {
@@ -132,7 +132,7 @@
         }
     },
     {
-        "id": "scaxrs",
+        "id": "riv",
         "colour": "#682e86",
         "fg": "#fff",
         "name": {
@@ -143,7 +143,7 @@
         }
     },
     {
-        "id": "scaxsb",
+        "id": "sb",
         "colour": "#a32136",
         "fg": "#fff",
         "name": {
@@ -154,7 +154,7 @@
         }
     },
     {
-        "id": "scaxvc",
+        "id": "vc",
         "colour": "#f6a704",
         "fg": "#fff",
         "name": {
@@ -165,7 +165,7 @@
         }
     },
     {
-        "id": "scaxpv",
+        "id": "pvl",
         "colour": "#0071ce",
         "fg": "#fff",
         "name": {
