@@ -632,10 +632,10 @@
         "id": "losangeles",
         "country": "US",
         "name": {
-            "en": "Los Angeles",
-            "zh-Hans": "洛杉矶",
-            "zh-Hant": "洛杉磯",
-            "ko": "로스 앤젤레스"
+            "en": "Los Angeles (South California)",
+            "zh-Hans": "洛杉矶（南加州）",
+            "zh-Hant": "洛杉磯（南加州）",
+            "ko": "로스 앤젤레스 (남부 캘리포니아)"
         }
     },
     {
