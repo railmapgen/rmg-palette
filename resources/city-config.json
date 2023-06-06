@@ -1,5 +1,14 @@
 [
     {
+        "id": "adelaide",
+        "country": "AU",
+        "name": {
+            "en": "Adelaide",
+            "zh-Hans": "阿德莱德",
+            "zh-Hant": "阿德萊德"
+        }
+    },
+    {
         "id": "amsterdam",
         "country": "NL",
         "name": {
@@ -863,6 +872,15 @@
             "en": "Paris",
             "zh-Hans": "巴黎",
             "zh-Hant": "巴黎"
+        }
+    },
+    {
+        "id": "perth",
+        "country": "AU",
+        "name": {
+            "en": "Perth",
+            "zh-Hans": "珀斯",
+            "zh-Hant": "珀斯"
         }
     },
     {
