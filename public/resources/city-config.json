@@ -1,5 +1,14 @@
 [
     {
+        "id": "adelaide",
+        "country": "AU",
+        "name": {
+            "en": "Adelaide",
+            "zh-Hans": "阿德莱德",
+            "zh-Hant": "阿德萊德"
+        }
+    },
+    {
         "id": "amsterdam",
         "country": "NL",
         "name": {
