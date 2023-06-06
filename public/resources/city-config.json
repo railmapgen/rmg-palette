@@ -875,6 +875,15 @@
         }
     },
     {
+        "id": "perth",
+        "country": "AU",
+        "name": {
+            "en": "Perth",
+            "zh-Hans": "珀斯",
+            "zh-Hant": "珀斯"
+        }
+    },
+    {
         "id": "qingdao",
         "country": "CN",
         "name": {
