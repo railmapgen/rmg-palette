@@ -186,6 +186,15 @@
         }
     },
     {
+        "id": "cbr",
+        "country": "AU",
+        "name": {
+            "en": "Canberra",
+            "zh-Hans": "堪培拉",
+            "zh-Hant": "堪培拉"
+        }
+    },
+    {
         "id": "changchun",
         "country": "CN",
         "name": {
