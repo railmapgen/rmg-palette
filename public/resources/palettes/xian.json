@@ -31,7 +31,7 @@
     },
     {
         "id": "xa4",
-        "colour": "#2CCCD3",
+        "colour": "#39b09e",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -60,16 +60,6 @@
         }
     },
     {
-        "id": "xa8",
-        "colour": "#FFE400",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
-        }
-    },
-    {
         "id": "xa9",
         "colour": "#FF9E1B",
         "fg": "#fff",
@@ -80,8 +70,18 @@
         }
     },
     {
+        "id": "xa14",
+        "colour": "#00C1D4",
+        "fg": "#000",
+        "name": {
+            "en": "Airport Intercity Railway/Line 14",
+            "zh-Hans": "机场城际/14号线",
+            "zh-Hant": "機場城際/14號線"
+        }
+    },
+    {
         "id": "xa10",
-        "colour": "#009f4d",
+        "colour": "#00a353",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -90,13 +90,33 @@
         }
     },
     {
-        "id": "xa14",
-        "colour": "#00C1D4",
-        "fg": "#000",
+        "id": "xa16",
+        "colour": "#ee805f",
+        "fg": "#fff",
         "name": {
-            "en": "Airport Intercity Railway/Line 14",
-            "zh-Hans": "机场城际/14号线",
-            "zh-Hant": "機場城際/14號線"
+            "en": "Line 16",
+            "zh-Hans": "16号线",
+            "zh-Hant": "16號線"
+        }
+    },
+    {
+        "id": "xaxh",
+        "colour": "#720160",
+        "fg": "#fff",
+        "name": {
+            "en": "Xihu Line",
+            "zh-Hans": "西户线",
+            "zh-Hant": "西戶線"
+        }
+    },
+    {
+        "id": "xxzg",
+        "colour": "#bb0601",
+        "fg": "#fff",
+        "name": {
+            "en": "Xixian ART Line 1",
+            "zh-Hans": "西咸智轨1号线",
+            "zh-Hant": "西咸智軌1號線"
         }
     }
 ]
