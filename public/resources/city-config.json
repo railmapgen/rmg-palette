@@ -893,6 +893,16 @@
         }
     },
     {
+        "id": "pyongyang",
+        "country": "KP",
+        "name": {
+            "en": "Pyongyang",
+            "zh-Hans": "平壤",
+            "zh-Hant": "平壤",
+            "ko": "평양"
+        }
+    },
+    {
         "id": "qingdao",
         "country": "CN",
         "name": {

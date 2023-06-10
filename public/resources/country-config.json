@@ -257,6 +257,16 @@
         "language": "ja"
     },
     {
+        "id": "KP",
+        "name": {
+            "en": "North Korea",
+            "zh-Hans": "朝鲜民主主义人民共和国",
+            "zh-Hant": "朝鮮民主主義人民共和國",
+            "ko": "조선민주주의인민공화국"
+        },
+        "language": "ko"
+    },
+    {
         "id": "KR",
         "name": {
             "en": "South Korea",
