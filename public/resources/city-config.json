@@ -771,6 +771,16 @@
         }
     },
     {
+        "id": "nantes",
+        "country": "FR",
+        "name": {
+            "en": "Nantes",
+            "fr": "Nantes",
+            "zh-Hans": "南特",
+            "zh-Hant": "南特"
+        }
+    },
+    {
         "id": "nantong",
         "country": "CN",
         "name": {
