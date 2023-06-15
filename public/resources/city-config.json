@@ -847,6 +847,16 @@
         }
     },
     {
+        "id": "novosibirsk",
+        "country": "RU",
+        "name": {
+            "en": "Novosibirsk",
+            "zh-Hans": "新西伯利亚",
+            "zh-Hant": "新西伯利亞",
+            "ru": "Новосибирский"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
