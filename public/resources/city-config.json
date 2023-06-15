@@ -973,6 +973,16 @@
         }
     },
     {
+        "id": "samara",
+        "country": "RU",
+        "name": {
+            "en": "Samara",
+            "zh-Hans": "萨马拉",
+            "zh-Hant": "薩馬拉",
+            "ru": "Самарское"
+        }
+    },
+    {
         "id": "sanfrancisco",
         "country": "US",
         "name": {
