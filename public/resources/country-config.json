@@ -336,6 +336,15 @@
         "language": "es"
     },
     {
+        "id": "PK",
+        "name": {
+            "en": "Pakistan",
+            "zh-Hans": "巴基斯坦",
+            "zh-Hant": "巴基斯坦"
+        },
+        "language": "en"
+    },
+    {
         "id": "PL",
         "name": {
             "en": "Poland",
