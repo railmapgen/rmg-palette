@@ -1,0 +1,13 @@
+[
+    {
+        "id": "L1",
+        "colour": "#ea1d23",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "一号线",
+            "zh-Hant": "一號線",
+            "fa": "خط ۱"
+        }
+    }
+]

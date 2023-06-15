@@ -1074,6 +1074,16 @@
         }
     },
     {
+        "id": "shiraz",
+        "country": "IR",
+        "name": {
+            "en": "Shiraz",
+            "zh-Hans": "设拉子",
+            "zh-Hant": "設拉子",
+            "fa": "شیراز"
+        }
+    },
+    {
         "id": "singapore",
         "country": "SG",
         "name": {
