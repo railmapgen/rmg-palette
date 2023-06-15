@@ -9,6 +9,16 @@
         }
     },
     {
+        "id": "almaty",
+        "country": "KZ",
+        "name": {
+            "en": "Almaty",
+            "zh-Hans": "阿拉木图",
+            "zh-Hant": "阿拉木圖",
+            "uz": "Алматы"
+        }
+    },
+    {
         "id": "amsterdam",
         "country": "NL",
         "name": {

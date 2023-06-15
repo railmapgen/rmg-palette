@@ -277,6 +277,16 @@
         "language": "ko"
     },
     {
+        "id": "KZ",
+        "name": {
+            "en": "Kazakhstan",
+            "zh-Hans": "哈萨克斯坦",
+            "zh-Hant": "哈薩克",
+            "uz": "Қазақстан"
+        },
+        "language": "uz"
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",

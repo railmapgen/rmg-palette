@@ -1,0 +1,13 @@
+[
+    {
+        "id": "m",
+        "colour": "#fbab87",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro",
+            "zh-Hans": "地铁",
+            "zh-Hant": "捷運",
+            "uz": "Метрополитен"
+        }
+    }
+]
