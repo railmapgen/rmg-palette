@@ -1,0 +1,24 @@
+[
+    {
+        "id": "m1",
+        "colour": "#fdc41f",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 1",
+            "zh-Hans": "地铁一号线",
+            "zh-Hant": "捷運一號線",
+            "fr": "Ligne 1 du métro"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#e30613",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 2",
+            "zh-Hans": "地铁二号线",
+            "zh-Hant": "捷運二號線",
+            "fr": "Ligne 2 du métro"
+        }
+    }
+]

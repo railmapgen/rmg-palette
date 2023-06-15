@@ -618,6 +618,16 @@
         }
     },
     {
+        "id": "lille",
+        "country": "FR",
+        "name": {
+            "en": "Lille",
+            "zh-Hans": "里尔",
+            "zh-Hant": "里爾",
+            "fr": "Lille"
+        }
+    },
+    {
         "id": "lima",
         "country": "PE",
         "name": {
