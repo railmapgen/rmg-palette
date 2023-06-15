@@ -232,6 +232,16 @@
         }
     },
     {
+        "id": "chennai",
+        "country": "IN",
+        "name": {
+            "en": "Chennai",
+            "zh-Hans": "金奈",
+            "zh-Hant": "金奈",
+            "hi": "சென்னை"
+        }
+    },
+    {
         "id": "chongqing",
         "country": "CN",
         "name": {
