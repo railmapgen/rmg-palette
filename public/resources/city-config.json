@@ -743,6 +743,16 @@
         }
     },
     {
+        "id": "nagpur",
+        "country": "IN",
+        "name": {
+            "en": "Nagpur",
+            "zh-Hans": "那格浦尔",
+            "zh-Hant": "那格浦爾",
+            "hi": "नागपुर"
+        }
+    },
+    {
         "id": "nanchang",
         "country": "CN",
         "name": {
