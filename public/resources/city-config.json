@@ -1295,6 +1295,16 @@
         }
     },
     {
+        "id": "yekaterinburg",
+        "country": "RU",
+        "name": {
+            "en": "Yekaterinburg",
+            "zh-Hans": "叶卡捷琳堡",
+            "zh-Hant": "葉卡捷琳堡",
+            "ru": "Екатеринбургский"
+        }
+    },
+    {
         "id": "yevpatoria",
         "country": "UA",
         "name": {
