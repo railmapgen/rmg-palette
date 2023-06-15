@@ -1,0 +1,35 @@
+[
+    {
+        "id": "l1",
+        "colour": "#eb1e25",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "一号线",
+            "zh-Hant": "一號線",
+            "es": "Línea 1"
+        }
+    },
+    {
+        "id": "l2",
+        "colour": "#28733a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "二号线",
+            "zh-Hant": "二號線",
+            "es": "Línea 2"
+        }
+    },
+    {
+        "id": "l3",
+        "colour": "#d63092",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3 (Under Construction)",
+            "zh-Hans": "三号线（在建）",
+            "zh-Hant": "三號線（在建）",
+            "es": "Línea 3"
+        }
+    }
+]

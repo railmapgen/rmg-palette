@@ -326,6 +326,16 @@
         "language": "no"
     },
     {
+        "id": "PA",
+        "name": {
+            "en": "Panama",
+            "zh-Hans": "巴拿马",
+            "zh-Hant": "巴拿馬",
+            "es": "Panamá"
+        },
+        "language": "es"
+    },
+    {
         "id": "PE",
         "name": {
             "en": "Peru",

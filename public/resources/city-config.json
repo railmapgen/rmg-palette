@@ -885,6 +885,16 @@
         }
     },
     {
+        "id": "panamacity",
+        "country": "PA",
+        "name": {
+            "en": "Panama City",
+            "zh-Hans": "巴拿马城",
+            "zh-Hant": "巴拿馬城",
+            "es": "Ciudad de Panamá"
+        }
+    },
+    {
         "id": "paris",
         "country": "FR",
         "name": {
