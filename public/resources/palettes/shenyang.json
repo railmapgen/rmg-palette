@@ -68,5 +68,55 @@
             "zh-Hans": "10号线",
             "zh-Hant": "10號線"
         }
+    },
+    {
+        "id": "syhnt1",
+        "colour": "#ec020d",
+        "fg": "#fff",
+        "name": {
+            "en": "Hunnan Tram Line 1",
+            "zh-Hans": "浑南有轨电车1号线",
+            "zh-Hant": "渾南有軌電車1號綫"
+        }
+    },
+    {
+        "id": "syhnt2",
+        "colour": "#a5499c",
+        "fg": "#fff",
+        "name": {
+            "en": "Hunnan Tram Line 2",
+            "zh-Hans": "浑南有轨电车2号线",
+            "zh-Hant": "渾南有軌電車2號綫"
+        }
+    },
+    {
+        "id": "syhnt3",
+        "colour": "#039942",
+        "fg": "#fff",
+        "name": {
+            "en": "Hunnan Tram Line 3",
+            "zh-Hans": "浑南有轨电车3号线",
+            "zh-Hant": "渾南有軌電車3號綫"
+        }
+    },
+    {
+        "id": "syhnt4",
+        "colour": "#00a2e8",
+        "fg": "#fff",
+        "name": {
+            "en": "Hunnan Tram Line 4",
+            "zh-Hans": "浑南有轨电车4号线",
+            "zh-Hant": "渾南有軌電車4號綫"
+        }
+    },
+    {
+        "id": "syhnt5",
+        "colour": "#1f2188",
+        "fg": "#fff",
+        "name": {
+            "en": "Hunnan Tram Line 5",
+            "zh-Hans": "浑南有轨电车5号线",
+            "zh-Hant": "渾南有軌電車5號綫"
+        }
     }
 ]
