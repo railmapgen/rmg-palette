@@ -5,8 +5,8 @@
         "fg": "#fff",
         "name": {
             "en": "Metro Line 1",
-            "zh-Hans": "地铁一号线",
-            "zh-Hant": "捷運一號線",
+            "zh-Hans": "地铁1号线",
+            "zh-Hant": "捷運1號線",
             "ru": "M1"
         }
     },
@@ -16,8 +16,8 @@
         "fg": "#fff",
         "name": {
             "en": "Metro Line 2",
-            "zh-Hans": "地铁二号线",
-            "zh-Hant": "捷運二號線",
+            "zh-Hans": "地铁2号线",
+            "zh-Hant": "捷運2號線",
             "ru": "M2"
         }
     },
@@ -27,8 +27,8 @@
         "fg": "#fff",
         "name": {
             "en": "Metro Line 3",
-            "zh-Hans": "地铁三号线",
-            "zh-Hant": "捷運三號線",
+            "zh-Hans": "地铁3号线",
+            "zh-Hant": "捷運3號線",
             "ru": "M3"
         }
     }
