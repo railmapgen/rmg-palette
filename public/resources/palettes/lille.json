@@ -5,8 +5,8 @@
         "fg": "#fff",
         "name": {
             "en": "Metro Line 1",
-            "zh-Hans": "地铁一号线",
-            "zh-Hant": "捷運一號線",
+            "zh-Hans": "地铁1号线",
+            "zh-Hant": "捷運1號線",
             "fr": "Ligne 1 du métro"
         }
     },
@@ -16,8 +16,8 @@
         "fg": "#fff",
         "name": {
             "en": "Metro Line 2",
-            "zh-Hans": "地铁二号线",
-            "zh-Hant": "捷運二號線",
+            "zh-Hans": "地铁2号线",
+            "zh-Hant": "捷運2號線",
             "fr": "Ligne 2 du métro"
         }
     }
