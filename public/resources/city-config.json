@@ -703,6 +703,15 @@
         }
     },
     {
+        "id": "melbourne",
+        "country": "AU",
+        "name": {
+            "en": "Melbourne",
+            "zh-Hans": "墨尔本",
+            "zh-Hant": "墨爾本"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
@@ -1071,6 +1080,16 @@
         "name": {
             "en": "Shijiazhuang",
             "zh-Hans": "石家庄"
+        }
+    },
+    {
+        "id": "shiraz",
+        "country": "IR",
+        "name": {
+            "en": "Shiraz",
+            "zh-Hans": "设拉子",
+            "zh-Hant": "設拉子",
+            "fa": "شیراز"
         }
     },
     {
