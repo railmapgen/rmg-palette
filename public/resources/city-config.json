@@ -1212,16 +1212,6 @@
         }
     },
     {
-        "id": "turin",
-        "country": "IT",
-        "name": {
-            "en": "Turin",
-            "zh-Hans": "都灵",
-            "zh-Hant": "都靈",
-            "it": "Torino"
-        }
-    },
-    {
         "id": "tyneandwear",
         "country": "GBENG",
         "name": {
