@@ -703,6 +703,15 @@
         }
     },
     {
+        "id": "melbourne",
+        "country": "AU",
+        "name": {
+            "en": "Melbourne",
+            "zh-Hans": "墨尔本",
+            "zh-Hant": "墨爾本"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
