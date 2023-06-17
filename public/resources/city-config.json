@@ -1,5 +1,14 @@
 [
     {
+        "id": "adelaide",
+        "country": "AU",
+        "name": {
+            "en": "Adelaide",
+            "zh-Hans": "阿德莱德",
+            "zh-Hant": "阿德萊德"
+        }
+    },
+    {
         "id": "amsterdam",
         "country": "NL",
         "name": {
@@ -174,6 +183,15 @@
             "es": "Caracas",
             "zh-Hans": "加拉加斯",
             "zh-Hant": "卡拉卡斯"
+        }
+    },
+    {
+        "id": "cbr",
+        "country": "AU",
+        "name": {
+            "en": "Canberra",
+            "zh-Hans": "堪培拉",
+            "zh-Hant": "堪培拉"
         }
     },
     {
@@ -762,6 +780,16 @@
         }
     },
     {
+        "id": "nantes",
+        "country": "FR",
+        "name": {
+            "en": "Nantes",
+            "fr": "Nantes",
+            "zh-Hans": "南特",
+            "zh-Hant": "南特"
+        }
+    },
+    {
         "id": "nantong",
         "country": "CN",
         "name": {
@@ -872,6 +900,25 @@
             "en": "Paris",
             "zh-Hans": "巴黎",
             "zh-Hant": "巴黎"
+        }
+    },
+    {
+        "id": "perth",
+        "country": "AU",
+        "name": {
+            "en": "Perth",
+            "zh-Hans": "珀斯",
+            "zh-Hant": "珀斯"
+        }
+    },
+    {
+        "id": "pyongyang",
+        "country": "KP",
+        "name": {
+            "en": "Pyongyang",
+            "zh-Hans": "平壤",
+            "zh-Hant": "平壤",
+            "ko": "평양"
         }
     },
     {

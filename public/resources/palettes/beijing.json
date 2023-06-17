@@ -112,7 +112,7 @@
     {
         "id": "bj12",
         "colour": "#9c4f01",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 12",
             "zh-Hans": "12号线",
