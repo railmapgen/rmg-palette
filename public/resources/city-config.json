@@ -713,6 +713,15 @@
         }
     },
     {
+        "id": "melbourne",
+        "country": "AU",
+        "name": {
+            "en": "Melbourne",
+            "zh-Hans": "墨尔本",
+            "zh-Hant": "墨爾本"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
@@ -1084,6 +1093,16 @@
         }
     },
     {
+        "id": "shiraz",
+        "country": "IR",
+        "name": {
+            "en": "Shiraz",
+            "zh-Hans": "设拉子",
+            "zh-Hant": "設拉子",
+            "fa": "شیراز"
+        }
+    },
+    {
         "id": "singapore",
         "country": "SG",
         "name": {
@@ -1203,6 +1222,16 @@
         }
     },
     {
+        "id": "turin",
+        "country": "IT",
+        "name": {
+            "en": "Turin",
+            "zh-Hans": "都灵",
+            "zh-Hant": "都靈",
+            "it": "Torino"
+        }
+    },
+    {
         "id": "tyneandwear",
         "country": "GBENG",
         "name": {
@@ -1302,6 +1331,16 @@
             "en": "Xuzhou",
             "zh-Hans": "徐州",
             "zh-Hant": "徐州"
+        }
+    },
+    {
+        "id": "yekaterinburg",
+        "country": "RU",
+        "name": {
+            "en": "Yekaterinburg",
+            "zh-Hans": "叶卡捷琳堡",
+            "zh-Hant": "葉卡捷琳堡",
+            "ru": "Екатеринбургский"
         }
     },
     {
