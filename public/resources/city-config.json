@@ -608,6 +608,16 @@
         }
     },
     {
+        "id": "kyiv",
+        "country": "UA",
+        "name": {
+            "en": "Kyiv",
+            "zh-Hans": "基辅",
+            "zh-Hant": "基輔",
+            "ru": "Киев"
+        }
+    },
+    {
         "id": "lanzhou",
         "country": "CN",
         "name": {
