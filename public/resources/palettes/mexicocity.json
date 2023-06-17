@@ -5,8 +5,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 1",
-            "zh-Hans": "一号线",
-            "zh-Hant": "一號線",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線",
             "es": "Línea 1"
         }
     },
@@ -16,8 +16,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 2",
-            "zh-Hans": "二号线",
-            "zh-Hant": "二號線",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線",
             "es": "Línea 2"
         }
     },
@@ -27,8 +27,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 3",
-            "zh-Hans": "三号线",
-            "zh-Hant": "三號線",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線",
             "es": "Línea 3"
         }
     },
@@ -38,8 +38,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 4",
-            "zh-Hans": "四号线",
-            "zh-Hant": "四號線",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線",
             "es": "Línea 4"
         }
     },
@@ -49,8 +49,8 @@
         "fg": "#000",
         "name": {
             "en": "Line 5",
-            "zh-Hans": "五号线",
-            "zh-Hant": "五號線",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線",
             "es": "Línea 5"
         }
     },
@@ -60,8 +60,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 6",
-            "zh-Hans": "六号线",
-            "zh-Hant": "六號線",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線",
             "es": "Línea 6"
         }
     },
@@ -71,8 +71,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 7",
-            "zh-Hans": "七号线",
-            "zh-Hant": "七號線",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線",
             "es": "Línea 7"
         }
     },
@@ -82,8 +82,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 8",
-            "zh-Hans": "八号线",
-            "zh-Hant": "八號線",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線",
             "es": "Línea 8"
         }
     },
@@ -93,8 +93,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 9",
-            "zh-Hans": "九号线",
-            "zh-Hant": "九號線",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線",
             "es": "Línea 9"
         }
     },
@@ -137,8 +137,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 12",
-            "zh-Hans": "十二号线",
-            "zh-Hant": "十二號線",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線",
             "es": "Línea 12"
         }
     }
