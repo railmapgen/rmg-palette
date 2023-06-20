@@ -1,7 +1,7 @@
 [
     {
         "id": "g",
-        "colour": "#ff9500",
+        "colour": "#f9a328",
         "fg": "#fff",
         "name": {
             "en": "Ginza Line (G)",
@@ -12,7 +12,7 @@
     },
     {
         "id": "m",
-        "colour": "#f62e36",
+        "colour": "#ee2628",
         "fg": "#fff",
         "name": {
             "en": "Marunouchi Line (M)",
@@ -23,7 +23,7 @@
     },
     {
         "id": "h",
-        "colour": "#b5b5ac",
+        "colour": "#c7beb3",
         "fg": "#fff",
         "name": {
             "en": "Hibiya Line (H)",
@@ -34,7 +34,7 @@
     },
     {
         "id": "t",
-        "colour": "#009bbf",
+        "colour": "#00afef",
         "fg": "#fff",
         "name": {
             "en": "Tōzai Line (T)",
@@ -45,7 +45,7 @@
     },
     {
         "id": "c",
-        "colour": "#00bb85",
+        "colour": "#1bb267",
         "fg": "#fff",
         "name": {
             "en": "Chiyoda Line (C)",
@@ -56,7 +56,7 @@
     },
     {
         "id": "y",
-        "colour": "#c1a470",
+        "colour": "#d1a662",
         "fg": "#fff",
         "name": {
             "en": "Yūrakuchō Line (Y)",
@@ -67,7 +67,7 @@
     },
     {
         "id": "z",
-        "colour": "#8f76d6",
+        "colour": "#8c7dba",
         "fg": "#fff",
         "name": {
             "en": "Hanzōmon Line (Z)",
@@ -78,7 +78,7 @@
     },
     {
         "id": "n",
-        "colour": "#00ac9b",
+        "colour": "#02b69b",
         "fg": "#fff",
         "name": {
             "en": "Namboku Line (N)",
@@ -100,7 +100,7 @@
     },
     {
         "id": "a",
-        "colour": "#ec6e65",
+        "colour": "#ef463c",
         "fg": "#fff",
         "name": {
             "en": "Asakusa Line (A)",
@@ -111,7 +111,7 @@
     },
     {
         "id": "i",
-        "colour": "#006ab8",
+        "colour": "#0090bc",
         "fg": "#fff",
         "name": {
             "en": "Mita Line (I)",
@@ -122,7 +122,7 @@
     },
     {
         "id": "s",
-        "colour": "#b0bf1e",
+        "colour": "#abba41",
         "fg": "#fff",
         "name": {
             "en": "Shinjuku Line (S)",
@@ -133,7 +133,7 @@
     },
     {
         "id": "o",
-        "colour": "#ce045b",
+        "colour": "#ce1c64",
         "fg": "#fff",
         "name": {
             "en": "Ōedo Line (O)",
