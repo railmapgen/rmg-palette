@@ -722,6 +722,16 @@
         }
     },
     {
+        "id": "mexicocity",
+        "country": "MX",
+        "name": {
+            "en": "Mexico City",
+            "zh-Hans": "墨西哥城",
+            "zh-Hant": "墨西哥城",
+            "es": "Ciudad de México"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
