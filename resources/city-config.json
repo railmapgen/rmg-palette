@@ -722,6 +722,16 @@
         }
     },
     {
+        "id": "mexicocity",
+        "country": "MX",
+        "name": {
+            "en": "Mexico City",
+            "zh-Hans": "墨西哥城",
+            "zh-Hant": "墨西哥城",
+            "es": "Ciudad de México"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
@@ -759,6 +769,16 @@
             "en": "Munich",
             "zh-Hans": "慕尼黑",
             "zh-Hant": "慕尼黑"
+        }
+    },
+    {
+        "id": "nagpur",
+        "country": "IN",
+        "name": {
+            "en": "Nagpur",
+            "zh-Hans": "那格浦尔",
+            "zh-Hant": "那格浦爾",
+            "hi": "नागपुर"
         }
     },
     {
