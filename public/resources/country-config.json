@@ -339,10 +339,11 @@
         "id": "PK",
         "name": {
             "en": "Pakistan",
+            "ur": "پاکستان",
             "zh-Hans": "巴基斯坦",
             "zh-Hant": "巴基斯坦"
         },
-        "language": "en"
+        "language": "ur"
     },
     {
         "id": "PL",
