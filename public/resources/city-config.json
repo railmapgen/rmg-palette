@@ -186,6 +186,15 @@
         }
     },
     {
+        "id": "cbr",
+        "country": "AU",
+        "name": {
+            "en": "Canberra",
+            "zh-Hans": "堪培拉",
+            "zh-Hant": "堪培拉"
+        }
+    },
+    {
         "id": "changchun",
         "country": "CN",
         "name": {
@@ -599,6 +608,16 @@
         }
     },
     {
+        "id": "kyiv",
+        "country": "UA",
+        "name": {
+            "en": "Kyiv",
+            "zh-Hans": "基辅",
+            "zh-Hant": "基輔",
+            "ru": "Киев"
+        }
+    },
+    {
         "id": "lanzhou",
         "country": "CN",
         "name": {
@@ -694,6 +713,25 @@
         }
     },
     {
+        "id": "melbourne",
+        "country": "AU",
+        "name": {
+            "en": "Melbourne",
+            "zh-Hans": "墨尔本",
+            "zh-Hant": "墨爾本"
+        }
+    },
+    {
+        "id": "mexicocity",
+        "country": "MX",
+        "name": {
+            "en": "Mexico City",
+            "zh-Hans": "墨西哥城",
+            "zh-Hant": "墨西哥城",
+            "es": "Ciudad de México"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
@@ -734,6 +772,16 @@
         }
     },
     {
+        "id": "nagpur",
+        "country": "IN",
+        "name": {
+            "en": "Nagpur",
+            "zh-Hans": "那格浦尔",
+            "zh-Hant": "那格浦爾",
+            "hi": "नागपुर"
+        }
+    },
+    {
         "id": "nanchang",
         "country": "CN",
         "name": {
@@ -759,6 +807,16 @@
             "en": "Nanning",
             "zh-Hans": "南宁",
             "zh-Hant": "南寧"
+        }
+    },
+    {
+        "id": "nantes",
+        "country": "FR",
+        "name": {
+            "en": "Nantes",
+            "fr": "Nantes",
+            "zh-Hans": "南特",
+            "zh-Hant": "南特"
         }
     },
     {
@@ -828,6 +886,16 @@
         }
     },
     {
+        "id": "novosibirsk",
+        "country": "RU",
+        "name": {
+            "en": "Novosibirsk",
+            "zh-Hans": "新西伯利亚",
+            "zh-Hant": "新西伯利亞",
+            "ru": "Новосибирский"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
@@ -881,6 +949,16 @@
             "en": "Perth",
             "zh-Hans": "珀斯",
             "zh-Hant": "珀斯"
+        }
+    },
+    {
+        "id": "pyongyang",
+        "country": "KP",
+        "name": {
+            "en": "Pyongyang",
+            "zh-Hans": "平壤",
+            "zh-Hant": "平壤",
+            "ko": "평양"
         }
     },
     {
@@ -1045,6 +1123,16 @@
         }
     },
     {
+        "id": "shiraz",
+        "country": "IR",
+        "name": {
+            "en": "Shiraz",
+            "zh-Hans": "设拉子",
+            "zh-Hant": "設拉子",
+            "fa": "شیراز"
+        }
+    },
+    {
         "id": "singapore",
         "country": "SG",
         "name": {
@@ -1164,6 +1252,16 @@
         }
     },
     {
+        "id": "turin",
+        "country": "IT",
+        "name": {
+            "en": "Turin",
+            "zh-Hans": "都灵",
+            "zh-Hant": "都靈",
+            "it": "Torino"
+        }
+    },
+    {
         "id": "tyneandwear",
         "country": "GBENG",
         "name": {
@@ -1263,6 +1361,16 @@
             "en": "Xuzhou",
             "zh-Hans": "徐州",
             "zh-Hant": "徐州"
+        }
+    },
+    {
+        "id": "yekaterinburg",
+        "country": "RU",
+        "name": {
+            "en": "Yekaterinburg",
+            "zh-Hans": "叶卡捷琳堡",
+            "zh-Hant": "葉卡捷琳堡",
+            "ru": "Екатеринбургский"
         }
     },
     {

@@ -45,7 +45,7 @@
     },
     {
         "id": "lae",
-        "colour": "#5bc2e7",
+        "colour": "#fdba12",
         "fg": "#000",
         "name": {
             "en": "E Line",
@@ -63,17 +63,6 @@
             "zh-Hans": "K线",
             "zh-Hant": "K線",
             "ko": "K선"
-        }
-    },
-    {
-        "id": "lal",
-        "colour": "#fdb913",
-        "fg": "#000",
-        "name": {
-            "en": "L Line",
-            "zh-Hans": "L线",
-            "zh-Hant": "L線",
-            "ko": "L선"
         }
     },
     {
