@@ -618,6 +618,16 @@
         }
     },
     {
+        "id": "lahore",
+        "country": "PK",
+        "name": {
+            "en": "Lahore",
+            "ur": "لاہور‬‎‎",
+            "zh-Hans": "拉合尔",
+            "zh-Hant": "拉合爾"
+        }
+    },
+    {
         "id": "lanzhou",
         "country": "CN",
         "name": {
