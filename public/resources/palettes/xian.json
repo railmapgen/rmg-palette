@@ -70,16 +70,6 @@
         }
     },
     {
-        "id": "xa14",
-        "colour": "#00C1D4",
-        "fg": "#000",
-        "name": {
-            "en": "Airport Intercity Railway/Line 14",
-            "zh-Hans": "机场城际/14号线",
-            "zh-Hant": "機場城際/14號線"
-        }
-    },
-    {
         "id": "xa10",
         "colour": "#00a353",
         "fg": "#fff",
@@ -87,6 +77,16 @@
             "en": "Line 10",
             "zh-Hans": "10号线",
             "zh-Hant": "10號線"
+        }
+    },
+    {
+        "id": "xa14",
+        "colour": "#00C1D4",
+        "fg": "#000",
+        "name": {
+            "en": "Airport Intercity Railway/Line 14",
+            "zh-Hans": "机场城际/14号线",
+            "zh-Hant": "機場城際/14號線"
         }
     },
     {
