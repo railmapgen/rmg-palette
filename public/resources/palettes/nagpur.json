@@ -1,0 +1,24 @@
+[
+    {
+        "id": "aqua",
+        "colour": "#0288d1",
+        "fg": "#fff",
+        "name": {
+            "en": "Aqua Line",
+            "zh-Hans": "水线",
+            "zh-Hant": "水線",
+            "hi": "एक्वा लाइन"
+        }
+    },
+    {
+        "id": "orange",
+        "colour": "#f57c00",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橙線",
+            "hi": "ऑरेंज लाइन"
+        }
+    }
+]
