@@ -1,0 +1,13 @@
+[
+    {
+        "id": "shiraz1",
+        "colour": "#ea1d23",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線",
+            "fa": "خط ۱"
+        }
+    }
+]
