@@ -772,6 +772,17 @@
         }
     },
     {
+        "id": "moscow",
+        "country": "RU",
+        "name": {
+            "en": "Moscow",
+            "zh-Hans": "莫斯科",
+            "zh-Hant": "莫斯科",
+            "ru": "Москва",
+            "fr": "Moscou"
+        }
+    },
+    {
         "id": "munich",
         "country": "DE",
         "name": {
