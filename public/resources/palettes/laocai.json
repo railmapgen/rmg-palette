@@ -1,0 +1,12 @@
+[
+    {
+        "id": "trl",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Trial Line| Ludicium linea",
+            "zh-Hans": "试运行线",
+            "zh-Hant": "測試綫"
+        }
+    }
+]

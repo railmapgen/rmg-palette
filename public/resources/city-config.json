@@ -638,6 +638,15 @@
         }
     },
     {
+        "id": "laocai",
+        "country": "DG",
+        "name": {
+            "en": "Laocai",
+            "zh-Hans": "老蔡",
+            "zh-Hant": "老蔡"
+        }
+    },
+    {
         "id": "lima",
         "country": "PE",
         "name": {

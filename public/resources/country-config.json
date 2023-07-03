@@ -109,6 +109,15 @@
         "language": "de"
     },
     {
+        "id": "DG",
+        "name": {
+            "en": "People's Republic of Daguilandory",
+            "zh-Hans": "打鬼人民共和国",
+            "zh-Hant": "打鬼人民共和國"
+        },
+        "language": "zh-Hans"
+    },
+    {
         "id": "DK",
         "name": {
             "en": "Denmark",
