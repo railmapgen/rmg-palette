@@ -1,0 +1,1 @@
+System.register(["./index-legacy-34272581.js","./vendor-legacy-c225e39a.js"],(function(e,n){"use strict";var t;return{setters:[function(e){t=e.M},null],execute:function(){e("default",[{id:"shiraz1",colour:"#ea1d23",fg:t.white,name:{en:"Line 1","zh-Hans":"1号线","zh-Hant":"1號線",fa:"خط ۱"}}])}}}));
