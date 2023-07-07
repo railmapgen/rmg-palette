@@ -232,6 +232,16 @@
         }
     },
     {
+        "id": "chennai",
+        "country": "IN",
+        "name": {
+            "en": "Chennai",
+            "zh-Hans": "金奈",
+            "zh-Hant": "金奈",
+            "hi": "சென்னை"
+        }
+    },
+    {
         "id": "chongqing",
         "country": "CN",
         "name": {
@@ -782,6 +792,17 @@
         }
     },
     {
+        "id": "moscow",
+        "country": "RU",
+        "name": {
+            "en": "Moscow",
+            "zh-Hans": "莫斯科",
+            "zh-Hant": "莫斯科",
+            "ru": "Москва",
+            "fr": "Moscou"
+        }
+    },
+    {
         "id": "munich",
         "country": "DE",
         "name": {
@@ -1049,6 +1070,16 @@
             "ko": "로테르담",
             "zh-Hans": "鹿特丹",
             "zh-Hant": "鹿特丹"
+        }
+    },
+    {
+        "id": "samara",
+        "country": "RU",
+        "name": {
+            "en": "Samara",
+            "zh-Hans": "萨马拉",
+            "zh-Hant": "薩馬拉",
+            "ru": "Самарское"
         }
     },
     {
