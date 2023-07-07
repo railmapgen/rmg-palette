@@ -618,6 +618,26 @@
         }
     },
     {
+        "id": "kyiv",
+        "country": "UA",
+        "name": {
+            "en": "Kyiv",
+            "zh-Hans": "基辅",
+            "zh-Hant": "基輔",
+            "ru": "Киев"
+        }
+    },
+    {
+        "id": "lahore",
+        "country": "PK",
+        "name": {
+            "en": "Lahore",
+            "ur": "لاہور‬‎‎",
+            "zh-Hans": "拉合尔",
+            "zh-Hant": "拉合爾"
+        }
+    },
+    {
         "id": "lanzhou",
         "country": "CN",
         "name": {
@@ -713,6 +733,25 @@
         }
     },
     {
+        "id": "melbourne",
+        "country": "AU",
+        "name": {
+            "en": "Melbourne",
+            "zh-Hans": "墨尔本",
+            "zh-Hant": "墨爾本"
+        }
+    },
+    {
+        "id": "mexicocity",
+        "country": "MX",
+        "name": {
+            "en": "Mexico City",
+            "zh-Hans": "墨西哥城",
+            "zh-Hant": "墨西哥城",
+            "es": "Ciudad de México"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
@@ -743,6 +782,17 @@
         }
     },
     {
+        "id": "moscow",
+        "country": "RU",
+        "name": {
+            "en": "Moscow",
+            "zh-Hans": "莫斯科",
+            "zh-Hant": "莫斯科",
+            "ru": "Москва",
+            "fr": "Moscou"
+        }
+    },
+    {
         "id": "munich",
         "country": "DE",
         "name": {
@@ -750,6 +800,16 @@
             "en": "Munich",
             "zh-Hans": "慕尼黑",
             "zh-Hant": "慕尼黑"
+        }
+    },
+    {
+        "id": "nagpur",
+        "country": "IN",
+        "name": {
+            "en": "Nagpur",
+            "zh-Hans": "那格浦尔",
+            "zh-Hant": "那格浦爾",
+            "hi": "नागपुर"
         }
     },
     {
@@ -857,6 +917,16 @@
         }
     },
     {
+        "id": "novosibirsk",
+        "country": "RU",
+        "name": {
+            "en": "Novosibirsk",
+            "zh-Hans": "新西伯利亚",
+            "zh-Hant": "新西伯利亞",
+            "ru": "Новосибирский"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
@@ -892,6 +962,16 @@
             "fr": "Ottawa",
             "zh-Hans": "渥太华",
             "zh-Hant": "渥太華"
+        }
+    },
+    {
+        "id": "panamacity",
+        "country": "PA",
+        "name": {
+            "en": "Panama City",
+            "zh-Hans": "巴拿马城",
+            "zh-Hant": "巴拿馬城",
+            "es": "Ciudad de Panamá"
         }
     },
     {
@@ -980,6 +1060,16 @@
             "ko": "로테르담",
             "zh-Hans": "鹿特丹",
             "zh-Hant": "鹿特丹"
+        }
+    },
+    {
+        "id": "samara",
+        "country": "RU",
+        "name": {
+            "en": "Samara",
+            "zh-Hans": "萨马拉",
+            "zh-Hant": "薩馬拉",
+            "ru": "Самарское"
         }
     },
     {
@@ -1081,6 +1171,16 @@
         "name": {
             "en": "Shijiazhuang",
             "zh-Hans": "石家庄"
+        }
+    },
+    {
+        "id": "shiraz",
+        "country": "IR",
+        "name": {
+            "en": "Shiraz",
+            "zh-Hans": "设拉子",
+            "zh-Hant": "設拉子",
+            "fa": "شیراز"
         }
     },
     {
@@ -1203,6 +1303,16 @@
         }
     },
     {
+        "id": "turin",
+        "country": "IT",
+        "name": {
+            "en": "Turin",
+            "zh-Hans": "都灵",
+            "zh-Hant": "都靈",
+            "it": "Torino"
+        }
+    },
+    {
         "id": "tyneandwear",
         "country": "GBENG",
         "name": {
@@ -1302,6 +1412,16 @@
             "en": "Xuzhou",
             "zh-Hans": "徐州",
             "zh-Hant": "徐州"
+        }
+    },
+    {
+        "id": "yekaterinburg",
+        "country": "RU",
+        "name": {
+            "en": "Yekaterinburg",
+            "zh-Hans": "叶卡捷琳堡",
+            "zh-Hant": "葉卡捷琳堡",
+            "ru": "Екатеринбургский"
         }
     },
     {
