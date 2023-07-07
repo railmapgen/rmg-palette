@@ -687,6 +687,16 @@
         }
     },
     {
+        "id": "lucknow",
+        "country": "IN",
+        "name": {
+            "en": "Lucknow",
+            "zh-Hans": "勒克瑙",
+            "zh-Hant": "勒克瑙",
+            "hi": "लखनऊ"
+        }
+    },
+    {
         "id": "luoyang",
         "country": "CN",
         "name": {
