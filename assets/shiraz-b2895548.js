@@ -1,1 +1,0 @@
-import{M as o}from"./index-ba542d79.js";import"./vendor-9957c7a0.js";const e=[{id:"shiraz1",colour:"#ea1d23",fg:o.white,name:{en:"Line 1","zh-Hans":"1号线","zh-Hant":"1號線",fa:"خط ۱"}}];export{e as default};

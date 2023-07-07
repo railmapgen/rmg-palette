@@ -1,0 +1,13 @@
+[
+    {
+        "id": "rl",
+        "colour": "#d90f03",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線",
+            "hi": "लाल रेखा"
+        }
+    }
+]

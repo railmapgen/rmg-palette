@@ -1,0 +1,1 @@
+import{M as o}from"./index-635f3a5e.js";import"./vendor-9957c7a0.js";const n=[{id:"gl",colour:"#007a3d",fg:o.white,name:{en:"Green Line","zh-Hans":"绿线","zh-Hant":"綠線",ru:"Зеленая линия"}}];export{n as default};

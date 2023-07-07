@@ -1,0 +1,1 @@
+System.register(["./index-legacy-c63c44bd.js","./vendor-legacy-c225e39a.js"],(function(e,n){"use strict";var t;return{setters:[function(e){t=e.M},null],execute:function(){e("default",[{id:"gl",colour:"#007a3d",fg:t.white,name:{en:"Green Line","zh-Hans":"绿线","zh-Hant":"綠線",ru:"Зеленая линия"}}])}}}));

@@ -1,1 +1,0 @@
-System.register(["./index-legacy-385e1027.js","./vendor-legacy-c225e39a.js"],(function(e,n){"use strict";var t;return{setters:[function(e){t=e.M},null],execute:function(){e("default",[{id:"orange",colour:"#f66725",fg:t.white,name:{en:"Orange Line","zh-Hans":"橙线","zh-Hant":"橙線"}}])}}}));
