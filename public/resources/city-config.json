@@ -743,6 +743,16 @@
         }
     },
     {
+        "id": "marseille",
+        "country": "FR",
+        "name": {
+            "en": "Marseille",
+            "zh-Hans": "马赛",
+            "zh-Hant": "馬賽",
+            "fr": "Marseille"
+        }
+    },
+    {
         "id": "melbourne",
         "country": "AU",
         "name": {
