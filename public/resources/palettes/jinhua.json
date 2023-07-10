@@ -1,0 +1,12 @@
+[
+    {
+        "id": "jyd",
+        "colour": "#e53333",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "金义东线",
+            "zh-Hant": "金義東線",
+            "en": "Jinyidong Line"
+        }
+    }
+]
