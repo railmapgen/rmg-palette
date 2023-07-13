@@ -1,0 +1,1 @@
+import{M as o}from"./index-1830a946.js";import"./chakra-8d3b4637.js";import"./react-144d7f2e.js";const i=[{id:"2",colour:"#b31c21",fg:o.white,name:{en:"Line 2","zh-Hans":"2号线","zh-Hant":"2號線"}}];export{i as default};

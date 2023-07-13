@@ -1,1 +1,0 @@
-import{M as n}from"./index-635f3a5e.js";import"./vendor-9957c7a0.js";const a=[{id:"bl",colour:"#00a7df",fg:n.white,name:{en:"Blue Line","zh-Hans":"蓝线","zh-Hant":"藍線",hi:"ब्लू लाइन"}},{id:"gl",colour:"#5ba612",fg:n.white,name:{en:"Green Line","zh-Hans":"绿线","zh-Hant":"綠線",hi:"ग्रीन लाइन"}}];export{a as default};
