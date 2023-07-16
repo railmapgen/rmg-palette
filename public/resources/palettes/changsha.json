@@ -11,7 +11,7 @@
     },
     {
         "id": "cs2",
-        "colour": "#8DC8E8",
+        "colour": "#03b2ff",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -31,7 +31,7 @@
     },
     {
         "id": "cs4",
-        "colour": "#A51890",
+        "colour": "#974298",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "cs5",
-        "colour": "#FFD100",
+        "colour": "#fef102",
         "fg": "#000",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "cs6",
-        "colour": "#0077C8",
+        "colour": "#323ebc",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
