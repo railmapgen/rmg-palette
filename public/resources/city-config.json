@@ -251,6 +251,15 @@
         }
     },
     {
+        "id": "chuzhou",
+        "country": "CN",
+        "name": {
+            "en": "Chuzhou",
+            "zh-Hans": "滁州",
+            "zh-Hant": "滁州"
+        }
+    },
+    {
         "id": "cochabamba",
         "country": "BO",
         "name": {
