@@ -200,12 +200,23 @@
     {
         "id": "ju",
         "colour": "#f68b1f",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
-            "en": "Utsunomiya Line/Takasaki Line·Utsunomiya Line/Takasaki Line (JU)",
-            "ja": "宇都宮線・高崎線 · 東海道線・伊東線",
-            "zh-Hans": "宇都宫线・高崎线 · 东海道线・伊东线",
-            "zh-Hant": "宇都宮線・高崎線 · 東海道線・伊東線"
+            "en": "Utsunomiya Line/Takasaki Line (JU)",
+            "ja": "宇都宮線・高崎線",
+            "zh-Hans": "宇都宫线・高崎线",
+            "zh-Hant": "宇都宮線・高崎線"
+        }
+    },
+    {
+        "id": "jt",
+        "colour": "#f68b1f",
+        "fg": "#fff",
+        "name": {
+            "en": "Tōkaidō Line/Itō Line (JT)",
+            "ja": "東海道線・伊東線",
+            "zh-Hans": "东海道线・伊东线",
+            "zh-Hant": "東海道線・伊東線"
         }
     },
     {
