@@ -33,6 +33,6 @@
     },
     "type": "module",
     "dependencies": {
-        "@railmapgen/rmg-translate": "^3.0.1"
+        "@railmapgen/rmg-translate": "^3.0.2"
     }
 }

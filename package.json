@@ -13,7 +13,7 @@
         "@railmapgen/rmg-components": "^7.1.6",
         "@railmapgen/rmg-palette-resources": "file:package/dist",
         "@railmapgen/rmg-runtime": "^7.0.1",
-        "@railmapgen/rmg-translate": "^3.0.1",
+        "@railmapgen/rmg-translate": "^3.0.2",
         "@reduxjs/toolkit": "^1.9.5",
         "@vitejs/plugin-legacy": "^4.1.0",
         "ag-grid-community": "^30.0.3",
