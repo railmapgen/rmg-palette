@@ -1,7 +1,7 @@
 [
     {
         "id": "g",
-        "colour": "#ff9500",
+        "colour": "#f9a328",
         "fg": "#fff",
         "name": {
             "en": "Ginza Line (G)",
@@ -12,7 +12,7 @@
     },
     {
         "id": "m",
-        "colour": "#f62e36",
+        "colour": "#d92c2f",
         "fg": "#fff",
         "name": {
             "en": "Marunouchi Line (M)",
@@ -23,7 +23,7 @@
     },
     {
         "id": "h",
-        "colour": "#b5b5ac",
+        "colour": "#c7beb3",
         "fg": "#fff",
         "name": {
             "en": "Hibiya Line (H)",
@@ -34,7 +34,7 @@
     },
     {
         "id": "t",
-        "colour": "#009bbf",
+        "colour": "#00a4db",
         "fg": "#fff",
         "name": {
             "en": "Tōzai Line (T)",
@@ -45,7 +45,7 @@
     },
     {
         "id": "c",
-        "colour": "#00bb85",
+        "colour": "#1bb267",
         "fg": "#fff",
         "name": {
             "en": "Chiyoda Line (C)",
@@ -56,7 +56,7 @@
     },
     {
         "id": "y",
-        "colour": "#c1a470",
+        "colour": "#d1a662",
         "fg": "#fff",
         "name": {
             "en": "Yūrakuchō Line (Y)",
@@ -67,7 +67,7 @@
     },
     {
         "id": "z",
-        "colour": "#8f76d6",
+        "colour": "#8c7dba",
         "fg": "#fff",
         "name": {
             "en": "Hanzōmon Line (Z)",
@@ -78,7 +78,7 @@
     },
     {
         "id": "n",
-        "colour": "#00ac9b",
+        "colour": "#02b69b",
         "fg": "#fff",
         "name": {
             "en": "Namboku Line (N)",
@@ -100,7 +100,7 @@
     },
     {
         "id": "a",
-        "colour": "#ec6e65",
+        "colour": "#dd4231",
         "fg": "#fff",
         "name": {
             "en": "Asakusa Line (A)",
@@ -111,7 +111,7 @@
     },
     {
         "id": "i",
-        "colour": "#006ab8",
+        "colour": "#0068a5",
         "fg": "#fff",
         "name": {
             "en": "Mita Line (I)",
@@ -122,7 +122,7 @@
     },
     {
         "id": "s",
-        "colour": "#b0bf1e",
+        "colour": "#abba41",
         "fg": "#fff",
         "name": {
             "en": "Shinjuku Line (S)",
@@ -133,7 +133,7 @@
     },
     {
         "id": "o",
-        "colour": "#ce045b",
+        "colour": "#ce1c64",
         "fg": "#fff",
         "name": {
             "en": "Ōedo Line (O)",
@@ -144,8 +144,8 @@
     },
     {
         "id": "jy",
-        "colour": "#B1CB39",
-        "fg": "#fff",
+        "colour": "#7fc241",
+        "fg": "#000",
         "name": {
             "en": "Yamanote Line (JY)",
             "ja": "山手線",
@@ -155,7 +155,7 @@
     },
     {
         "id": "jk",
-        "colour": "#1DAED1",
+        "colour": "#00b2e6",
         "fg": "#fff",
         "name": {
             "en": "Keihin-Tōhoku Line/Negishi Line (JK)",
@@ -166,18 +166,18 @@
     },
     {
         "id": "jb",
-        "colour": "#F2D01F",
-        "fg": "#fff",
+        "colour": "#fed304",
+        "fg": "#000",
         "name": {
             "en": "Chūō Line/Sōbu Line (Local) (JB)",
-            "ja": "中央・総武線",
-            "zh-Hans": "中央・总武线",
-            "zh-Hant": "中央・總武線"
+            "ja": "中央線・総武線",
+            "zh-Hans": "中央线・总武线",
+            "zh-Hant": "中央線・總武線"
         }
     },
     {
         "id": "jc",
-        "colour": "#DD6935",
+        "colour": "#f15921",
         "fg": "#fff",
         "name": {
             "en": "Chūō Line (Rapid)/Chūō Line/Ōme Line/Itsukaichi Line (JC)",
@@ -188,7 +188,7 @@
     },
     {
         "id": "jo",
-        "colour": "#1069B4",
+        "colour": "#007ac0",
         "fg": "#fff",
         "name": {
             "en": "Yokosuka Line/Sōbu Line (Rapid)/Sōbu Line/Narita Line (JO)",
@@ -199,7 +199,7 @@
     },
     {
         "id": "ju",
-        "colour": "#F18E41",
+        "colour": "#f68b1f",
         "fg": "#fff",
         "name": {
             "en": "Utsunomiya Line/Takasaki Line (JU)",
@@ -210,7 +210,7 @@
     },
     {
         "id": "jt",
-        "colour": "#F0862B",
+        "colour": "#f68b1f",
         "fg": "#fff",
         "name": {
             "en": "Tōkaidō Line/Itō Line (JT)",
@@ -221,7 +221,7 @@
     },
     {
         "id": "ja",
-        "colour": "#14A676",
+        "colour": "#0ab38d",
         "fg": "#fff",
         "name": {
             "en": "Saikyō Line (JA)",
