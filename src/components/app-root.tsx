@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import WindowHeader from './window-header';
 import { RmgErrorBoundary, RmgLoader, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
 
@@ -8,7 +8,7 @@ const TicketView = lazy(() => import('./ticket-view/ticket-view'));
 
 export default function AppRoot() {
     return (
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <HashRouter>
             <RmgThemeProvider>
                 <RmgWindow>
                     <WindowHeader />
@@ -32,6 +32,6 @@ export default function AppRoot() {
                     </Routes>
                 </RmgWindow>
             </RmgThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
     );
 }

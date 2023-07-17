@@ -251,6 +251,15 @@
         }
     },
     {
+        "id": "chuzhou",
+        "country": "CN",
+        "name": {
+            "en": "Chuzhou",
+            "zh-Hans": "滁州",
+            "zh-Hant": "滁州"
+        }
+    },
+    {
         "id": "cochabamba",
         "country": "BO",
         "name": {
@@ -740,6 +749,16 @@
             "en": "Manchester",
             "zh-Hans": "曼彻斯特",
             "zh-Hant": "曼徹斯特"
+        }
+    },
+    {
+        "id": "marseille",
+        "country": "FR",
+        "name": {
+            "en": "Marseille",
+            "zh-Hans": "马赛",
+            "zh-Hant": "馬賽",
+            "fr": "Marseille"
         }
     },
     {
