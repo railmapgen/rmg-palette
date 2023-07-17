@@ -1,0 +1,1 @@
+import{M as o}from"./index-80c562ec.js";import"./chakra-ea1dcc1d.js";import"./react-1d5a4c9c.js";const a=[{id:"R1",colour:"#e9322b",fg:o.white,name:{en:"Light Rail Line 1","zh-Hans":"轻轨1号线","zh-Hant":"輕軌1號線"}}];export{a as default};

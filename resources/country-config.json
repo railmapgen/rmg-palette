@@ -458,10 +458,11 @@
         "id": "UA",
         "name": {
             "en": "Ukraine",
+            "uk": "Україна",
             "zh-Hans": "乌克兰",
             "zh-Hant": "烏克蘭"
         },
-        "language": "en"
+        "language": "uk"
     },
     {
         "id": "UN",
