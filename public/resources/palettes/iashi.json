@@ -105,7 +105,8 @@
         "name": {
             "en": "Autobu",
             "ro": "Autobuz",
-            "zh-Hans": "公交"
+            "zh-Hans": "公交",
+            "zh-Hant": "公車"
         }
     }
 ]
