@@ -103,9 +103,10 @@
         "colour": "#a82682",
         "fg": "#fff",
         "name": {
-            "en": "Autobu",
+            "en": "Autobus",
             "ro": "Autobuz",
-            "zh-Hans": "公交"
+            "zh-Hans": "公交",
+            "zh-Hant": "公車"
         }
     }
 ]
