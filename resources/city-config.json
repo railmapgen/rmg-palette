@@ -687,6 +687,15 @@
         }
     },
     {
+        "id": "littlerockcity",
+        "country": "US",
+        "name": {
+            "en": "Little Rock City",
+            "zh-Hans": "小石城",
+            "zh-Hant": "小石城"
+        }
+    },
+    {
         "id": "london",
         "country": "GBENG",
         "name": {
@@ -1102,6 +1111,15 @@
         }
     },
     {
+        "id": "saltlakecity",
+        "country": "US",
+        "name": {
+            "en": "Salt Lake City",
+            "zh-Hans": "盐湖城",
+            "zh-Hant": "鹽湖城"
+        }
+    },
+    {
         "id": "samara",
         "country": "RU",
         "name": {
@@ -1229,6 +1247,15 @@
             "en": "Singapore",
             "zh-Hans": "新加坡",
             "zh-Hant": "新加坡"
+        }
+    },
+    {
+        "id": "stlouis",
+        "country": "US",
+        "name": {
+            "en": "St. Louis",
+            "zh-Hans": "圣路易斯",
+            "zh-Hant": "聖路易斯"
         }
     },
     {
