@@ -1,0 +1,12 @@
+[
+    {
+        "id": "orange",
+        "colour": "#f66725",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橙線"
+        }
+    }
+]

@@ -66,6 +66,17 @@
         }
     },
     {
+        "id": "mu7",
+        "colour": "#cec28b",
+        "fg": "#fff",
+        "name": {
+            "en": "U7",
+            "de": "U7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
         "id": "mu9",
         "colour": "#009fe3",
         "fg": "#fff",
@@ -121,6 +132,17 @@
         }
     },
     {
+        "id": "ms5",
+        "colour": "#ffcc00",
+        "fg": "#000",
+        "name": {
+            "en": "S5",
+            "de": "S5",
+            "zh-Hans": "市域S5",
+            "zh-Hant": "市域S5"
+        }
+    },
+    {
         "id": "ms6",
         "colour": "#00975f",
         "fg": "#fff",
@@ -154,6 +176,17 @@
         }
     },
     {
+        "id": "ms10",
+        "colour": "#993333",
+        "fg": "#fff",
+        "name": {
+            "en": "S10",
+            "de": "S10",
+            "zh-Hans": "市域S10",
+            "zh-Hant": "市域S10"
+        }
+    },
+    {
         "id": "ms20",
         "colour": "#F05972",
         "fg": "#fff",
@@ -162,6 +195,17 @@
             "de": "S20",
             "zh-Hans": "市域S20（跨线运行）",
             "zh-Hant": "市域S20（跨線運行）"
+        }
+    },
+    {
+        "id": "ms27",
+        "colour": "#f4929c",
+        "fg": "#fff",
+        "name": {
+            "en": "S27",
+            "de": "S27",
+            "zh-Hans": "市域S27",
+            "zh-Hant": "市域S27"
         }
     },
     {

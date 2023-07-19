@@ -1,0 +1,24 @@
+[
+    {
+        "id": "gl",
+        "colour": "#009a47",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線",
+            "ru": "Зеленая линия"
+        }
+    },
+    {
+        "id": "rl",
+        "colour": "#dd2129",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線",
+            "ru": "Красная линия"
+        }
+    }
+]
