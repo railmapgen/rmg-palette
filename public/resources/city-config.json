@@ -1241,6 +1241,15 @@
         }
     },
     {
+        "id": "stlouis",
+        "country": "US",
+        "name": {
+            "en": "St. Louis",
+            "zh-Hans": "圣路易斯",
+            "zh-Hant": "聖路易斯"
+        }
+    },
+    {
         "id": "stockholm",
         "country": "SE",
         "name": {
