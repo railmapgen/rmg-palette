@@ -667,6 +667,16 @@
         }
     },
     {
+        "id": "liege",
+        "country": "BE",
+        "name": {
+            "en": "Liège",
+            "zh-Hans": "列日",
+            "zh-Hant": "列日",
+            "fr": "Liège"
+        }
+    },
+    {
         "id": "lima",
         "country": "PE",
         "name": {
