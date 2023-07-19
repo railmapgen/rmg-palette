@@ -1102,6 +1102,15 @@
         }
     },
     {
+        "id": "saltlakecity",
+        "country": "US",
+        "name": {
+            "en": "Salt Lake City",
+            "zh-Hans": "盐湖城",
+            "zh-Hant": "鹽湖城"
+        }
+    },
+    {
         "id": "samara",
         "country": "RU",
         "name": {
