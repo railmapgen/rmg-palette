@@ -687,6 +687,15 @@
         }
     },
     {
+        "id": "littlerockcity",
+        "country": "US",
+        "name": {
+            "en": "Little Rock City",
+            "zh-Hans": "小石城",
+            "zh-Hant": "小石城"
+        }
+    },
+    {
         "id": "london",
         "country": "GBENG",
         "name": {
