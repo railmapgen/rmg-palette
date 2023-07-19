@@ -1,7 +1,7 @@
 [
     {
         "id": "m1",
-        "colour": "#fdc41f",
+        "colour": "#F5B133",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -12,7 +12,7 @@
     },
     {
         "id": "m2",
-        "colour": "#e30613",
+        "colour": "#E53D32",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
