@@ -111,7 +111,7 @@
     },
     {
         "id": "wkt",
-        "colour": "#e0e0e0",
+        "colour": "#dddddd",
         "fg": "#fff",
         "name": {
             "en": "Lines under construction",
