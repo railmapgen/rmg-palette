@@ -13,7 +13,7 @@
     {
         "id": "nc2",
         "colour": "#ffda01",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "ko": "2호선",
