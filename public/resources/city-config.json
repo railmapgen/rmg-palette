@@ -1492,6 +1492,15 @@
         }
     },
     {
+        "id": "xiangtan",
+        "country": "CN",
+        "name": {
+            "en": "Xiangtan",
+            "zh-Hans": "湘潭",
+            "zh-Hant": "湘潭"
+        }
+    },
+    {
         "id": "xuzhou",
         "country": "CN",
         "name": {
