@@ -929,6 +929,15 @@
         }
     },
     {
+        "id": "nanyang",
+        "country": "CN",
+        "name": {
+            "en": "Nanyang",
+            "zh-Hans": "南阳",
+            "zh-Hant": "南陽"
+        }
+    },
+    {
         "id": "naples",
         "country": "IT",
         "name": {

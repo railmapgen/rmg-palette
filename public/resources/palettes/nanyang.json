@@ -1,0 +1,62 @@
+[
+    {
+        "id": "nys1",
+        "colour": "#b7192e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1线",
+            "zh-Hant": "S1線"
+        }
+    },
+    {
+        "id": "nys2",
+        "colour": "#1964d0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2",
+            "zh-Hans": "S2线",
+            "zh-Hant": "S2線"
+        }
+    },
+    {
+        "id": "nys3",
+        "colour": "#e9d425",
+        "fg": "#000",
+        "name": {
+            "en": "Line S3",
+            "zh-Hans": "S3线",
+            "zh-Hant": "S3線"
+        }
+    },
+    {
+        "id": "nyt1",
+        "colour": "#16c348",
+        "fg": "#000",
+        "name": {
+            "en": "Line T1",
+            "zh-Hans": "T1线",
+            "zh-Hant": "T1線"
+        }
+    },
+    {
+        "id": "nyt2",
+        "colour": "#331196",
+        "fg": "#fff",
+        "name": {
+            "en": "Line T2",
+            "zh-Hans": "T2线",
+            "zh-Hant": "T2線"
+        }
+    },
+    {
+        "id": "nyt3",
+        "colour": "#af4f05",
+        "fg": "#fff",
+        "name": {
+            "en": "Line T3",
+            "zh-Hans": "T3线",
+            "zh-Hant": "T3線"
+        }
+    }
+]
