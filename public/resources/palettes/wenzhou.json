@@ -27,8 +27,9 @@
         "fg": "#fff",
         "name": {
             "en": "Line S3",
+            "ko": "S3호선",
             "zh-Hans": "S3线",
-            "zh-Hant": "S3綫"
+            "zh-Hant": "S3線"
         }
     }
 ]
