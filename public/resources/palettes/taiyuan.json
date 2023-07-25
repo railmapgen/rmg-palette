@@ -1,5 +1,15 @@
 [
     {
+        "id": "1",
+        "colour": "#1b5eac",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
         "id": "2",
         "colour": "#b31c21",
         "fg": "#fff",
