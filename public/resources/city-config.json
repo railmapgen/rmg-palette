@@ -1189,6 +1189,16 @@
         }
     },
     {
+        "id": "sapporo",
+        "country": "JP",
+        "name": {
+            "en": "Sapporo",
+            "ja": "さっぽろ",
+            "zh-Hans": "札幌",
+            "zh-Hant": "札幌"
+        }
+    },
+    {
         "id": "seoul",
         "country": "KR",
         "name": {
