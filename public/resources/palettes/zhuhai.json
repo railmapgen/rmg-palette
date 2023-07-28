@@ -1,0 +1,72 @@
+[
+    {
+        "id": "zh1",
+        "colour": "#ed9c55",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "一号线",
+            "zh-Hant": "一號線"
+        }
+    },
+    {
+        "id": "zh2",
+        "colour": "#7f4080",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "二号线",
+            "zh-Hant": "二號線"
+        }
+    },
+    {
+        "id": "ztl1",
+        "colour": "#08ade9",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 1",
+            "zh-Hans": "有轨电车一号线",
+            "zh-Hant": "有軌電車一號線"
+        }
+    },
+    {
+        "id": "ztl2",
+        "colour": "#04ab53",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 2",
+            "zh-Hans": "有轨电车二号线",
+            "zh-Hant": "有軌電車二號線"
+        }
+    },
+    {
+        "id": "ZAIR",
+        "colour": "#348dc4",
+        "fg": "#fff",
+        "name": {
+            "en": "Zhuhai Airport Intercity Rail",
+            "zh-Hans": "珠机城际轨道",
+            "zh-Hant": "珠機城際軌道"
+        }
+    },
+    {
+        "id": "GZIR",
+        "colour": "#c71121",
+        "fg": "#fff",
+        "name": {
+            "en": "Guangzhou Zhuhai Intercity Rail Transit",
+            "zh-Hans": "广珠城际轨道",
+            "zh-Hant": "廣珠城際軌道"
+        }
+    },
+    {
+        "id": "MLRT",
+        "colour": "#3491c7",
+        "fg": "#fff",
+        "name": {
+            "en": "Macao LRT",
+            "zh-Hans": "澳门轻轨",
+            "zh-Hant": "澳門捷運"
+        }
+    }
+]
