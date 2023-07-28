@@ -6,7 +6,21 @@
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
+            "zh-Hant": "1號線",
+            "ja": "1号線",
+            "ko": "1호선"
+        }
+    },
+    {
+        "id": "sx2",
+        "colour": "#307fe2",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線",
+            "ko": "2호선",
+            "ja": "2号線"
         }
     }
 ]
