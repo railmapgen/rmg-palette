@@ -338,15 +338,5 @@
             "zh-Hans": "西铁线",
             "zh-Hant": "西鐵綫"
         }
-    },
-    {
-        "id": "sll",
-        "colour": "#386292",
-        "fg": "#fff",
-        "name": {
-            "en": "Stanley Line",
-            "zh-Hans": "赤柱线",
-            "zh-Hant": "赤柱綫"
-        }
     }
 ]
