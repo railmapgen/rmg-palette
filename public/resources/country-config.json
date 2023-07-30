@@ -178,6 +178,14 @@
         "language": "el"
     },
     {
+        "id": "GS",
+        "name": {
+            "zh-Hans": "幻想国",
+            "en": "Fantasy Land"
+        },
+        "language": "zh-Hans"
+    },
+    {
         "id": "HK",
         "name": {
             "en": "Hong Kong",

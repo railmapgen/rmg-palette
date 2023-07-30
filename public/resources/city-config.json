@@ -136,6 +136,14 @@
         }
     },
     {
+        "id": "bt",
+        "country": "GS",
+        "name": {
+            "zh-Hans": "文通",
+            "en": "Buntsu"
+        }
+    },
+    {
         "id": "bucharest",
         "country": "RO",
         "name": {

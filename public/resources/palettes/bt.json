@@ -1,0 +1,299 @@
+[
+    {
+        "id": "TK",
+        "colour": "#ffcc00",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "大都会線",
+            "en": "TK"
+        }
+    },
+    {
+        "id": "KK",
+        "colour": "#cc00ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "空港線",
+            "en": "KK"
+        }
+    },
+    {
+        "id": "T",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "東西線",
+            "en": "T"
+        }
+    },
+    {
+        "id": "C",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "中央線",
+            "en": "C"
+        }
+    },
+    {
+        "id": "H",
+        "colour": "#0099ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "星野線",
+            "en": "H"
+        }
+    },
+    {
+        "id": "Y",
+        "colour": "#009900",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "西谷線",
+            "en": "Y"
+        }
+    },
+    {
+        "id": "E",
+        "colour": "#6600ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "江都線",
+            "en": "E"
+        }
+    },
+    {
+        "id": "N",
+        "colour": "#cc9900",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "南北線",
+            "en": "N"
+        }
+    },
+    {
+        "id": "S",
+        "colour": "#ff99ff",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "桜川線",
+            "en": "S"
+        }
+    },
+    {
+        "id": "M",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "港城線",
+            "en": "M"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#00ccff",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "3号線",
+            "en": "Line 3"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#ff00ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "4号線",
+            "en": "Line 4"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#33cc33",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "6号線",
+            "en": "Line 6"
+        }
+    },
+    {
+        "id": "7",
+        "colour": "#9999ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "7号線",
+            "en": "Line 7"
+        }
+    },
+    {
+        "id": "9",
+        "colour": "#009999",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "9号線",
+            "en": "Line 9"
+        }
+    },
+    {
+        "id": "10",
+        "colour": "#808000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "10号線",
+            "en": "Line 10"
+        }
+    },
+    {
+        "id": "12",
+        "colour": "#663300",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "12号線",
+            "en": "Line 12"
+        }
+    },
+    {
+        "id": "ES",
+        "colour": "#0070c0",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "江中洲線",
+            "en": "ES"
+        }
+    },
+    {
+        "id": "OM",
+        "colour": "#006666",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "江北線",
+            "en": "OM"
+        }
+    },
+    {
+        "id": "R",
+        "colour": "#5f5f5f",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "リニア線",
+            "en": "R"
+        }
+    },
+    {
+        "id": "IR",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "IR",
+            "en": "IR"
+        }
+    },
+    {
+        "id": "HR",
+        "colour": "#404040",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "HR",
+            "en": "HR"
+        }
+    },
+    {
+        "id": "NR",
+        "colour": "#808080",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "NR",
+            "en": "NR"
+        }
+    },
+    {
+        "id": "N101",
+        "colour": "#33cccc",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "N101",
+            "en": "N101"
+        }
+    },
+    {
+        "id": "N102",
+        "colour": "#cccc00",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "N102",
+            "en": "N102"
+        }
+    },
+    {
+        "id": "N103",
+        "colour": "#ff99cc",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "N103",
+            "en": "N103"
+        }
+    },
+    {
+        "id": "N104",
+        "colour": "#669900",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "N104",
+            "en": "N104"
+        }
+    },
+    {
+        "id": "N105",
+        "colour": "#cc3300",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "N105",
+            "en": "N105"
+        }
+    },
+    {
+        "id": "N106",
+        "colour": "#9966ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "N106",
+            "en": "N106"
+        }
+    },
+    {
+        "id": "MD",
+        "colour": "#ff0066",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "松島電鉄",
+            "en": "MD"
+        }
+    },
+    {
+        "id": "MST",
+        "colour": "#70ad47",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "松島空港航島捷運",
+            "en": "MST"
+        }
+    },
+    {
+        "id": "KST",
+        "colour": "#8eaadb",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "関州空港航島捷運",
+            "en": "KST"
+        }
+    },
+    {
+        "id": "RD",
+        "colour": "#ffffff",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "路面電車",
+            "en": "Tram Line"
+        }
+    }
+]
