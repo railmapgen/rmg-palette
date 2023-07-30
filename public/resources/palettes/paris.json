@@ -609,5 +609,16 @@
         "name": {
             "en": "OrlyBus/RoissyBus"
         }
+    },
+    {
+        "id": "t10",
+        "colour": "#706c01",
+        "fg": "#fff",
+        "name": {
+            "en": "Tramway Line 10",
+            "fr": "Tramway Ligne 10",
+            "zh-Hans": "有轨电车T10号线",
+            "zh-Hant": "有軌電車T10號線"
+        }
     }
 ]
