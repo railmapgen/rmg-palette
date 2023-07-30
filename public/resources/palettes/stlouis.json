@@ -1,0 +1,22 @@
+[
+    {
+        "id": "rl",
+        "colour": "#e93f33",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線"
+        }
+    },
+    {
+        "id": "bl",
+        "colour": "#001f61",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "zh-Hans": "蓝线",
+            "zh-Hant": "藍線"
+        }
+    }
+]

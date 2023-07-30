@@ -98,5 +98,25 @@
             "zh-Hans": "11号线",
             "zh-Hant": "11號線"
         }
+    },
+    {
+        "id": "tram",
+        "colour": "#d8e4c0",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram",
+            "zh-Hans": "有轨电车",
+            "zh-Hant": "有軌電車"
+        }
+    },
+    {
+        "id": "wkt",
+        "colour": "#dddddd",
+        "fg": "#fff",
+        "name": {
+            "en": "Lines under construction",
+            "zh-Hans": "未开通线路",
+            "zh-Hant": "未开通線路"
+        }
     }
 ]

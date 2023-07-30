@@ -277,6 +277,16 @@
         "language": "ko"
     },
     {
+        "id": "KZ",
+        "name": {
+            "en": "Kazakhstan",
+            "zh-Hans": "哈萨克斯坦",
+            "zh-Hant": "哈薩克",
+            "kk": "Қазақстан"
+        },
+        "language": "kk"
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",
@@ -458,10 +468,11 @@
         "id": "UA",
         "name": {
             "en": "Ukraine",
+            "uk": "Україна",
             "zh-Hans": "乌克兰",
             "zh-Hant": "烏克蘭"
         },
-        "language": "en"
+        "language": "uk"
     },
     {
         "id": "UN",

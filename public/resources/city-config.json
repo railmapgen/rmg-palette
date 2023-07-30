@@ -9,6 +9,16 @@
         }
     },
     {
+        "id": "almaty",
+        "country": "KZ",
+        "name": {
+            "en": "Almaty",
+            "zh-Hans": "阿拉木图",
+            "zh-Hant": "阿拉木圖",
+            "kk": "Алматы"
+        }
+    },
+    {
         "id": "amsterdam",
         "country": "NL",
         "name": {
@@ -633,7 +643,7 @@
             "en": "Kyiv",
             "zh-Hans": "基辅",
             "zh-Hant": "基輔",
-            "ru": "Киев"
+            "uk": "Киев"
         }
     },
     {
@@ -657,6 +667,26 @@
         }
     },
     {
+        "id": "liege",
+        "country": "BE",
+        "name": {
+            "en": "Liège",
+            "zh-Hans": "列日",
+            "zh-Hant": "列日",
+            "fr": "Liège"
+        }
+    },
+    {
+        "id": "lille",
+        "country": "FR",
+        "name": {
+            "en": "Lille",
+            "zh-Hans": "里尔",
+            "zh-Hant": "里爾",
+            "fr": "Lille"
+        }
+    },
+    {
         "id": "lima",
         "country": "PE",
         "name": {
@@ -674,6 +704,15 @@
             "pt": "Lisboa",
             "zh-Hans": "里斯本",
             "zh-Hant": "里斯本"
+        }
+    },
+    {
+        "id": "littlerockcity",
+        "country": "US",
+        "name": {
+            "en": "Little Rock City",
+            "zh-Hans": "小石城",
+            "zh-Hant": "小石城"
         }
     },
     {
@@ -1092,6 +1131,15 @@
         }
     },
     {
+        "id": "saltlakecity",
+        "country": "US",
+        "name": {
+            "en": "Salt Lake City",
+            "zh-Hans": "盐湖城",
+            "zh-Hant": "鹽湖城"
+        }
+    },
+    {
         "id": "samara",
         "country": "RU",
         "name": {
@@ -1219,6 +1267,15 @@
             "en": "Singapore",
             "zh-Hans": "新加坡",
             "zh-Hant": "新加坡"
+        }
+    },
+    {
+        "id": "stlouis",
+        "country": "US",
+        "name": {
+            "en": "St. Louis",
+            "zh-Hans": "圣路易斯",
+            "zh-Hant": "聖路易斯"
         }
     },
     {

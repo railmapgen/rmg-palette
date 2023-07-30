@@ -74,7 +74,7 @@ export default function PaletteGrid() {
         } else {
             rmgRuntime.closeApp('rmg-palette-upload');
             setTimeout(() => {
-                rmgRuntime.openApp('rmg-palette-upload', '/rmg-palette/new?city=' + id);
+                rmgRuntime.openApp('rmg-palette-upload', '/rmg-palette/#/new?city=' + id);
             }, 200);
         }
         rmgRuntime.event(Events.EDIT_CITY, { city: id });
