@@ -5,9 +5,9 @@ import { populateTicket } from './ticket/ticket-slice';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 
 const openTicketByCity = async (store: RootStore) => {
-    const pathname = window.location.pathname;
-    if (pathname.endsWith('/new')) {
-        const searchParams = new URLSearchParams(window.location.search);
+    const hash = window.location.hash;
+    if (hash.startsWith('#/new')) {
+        const searchParams = new URLSearchParams(hash.slice('#/new'.length));
         const cityId: any = searchParams.get('city');
         console.log(`openTicketByCity():: searchParams city=${cityId}`);
 
@@ -19,8 +19,9 @@ const openTicketByCity = async (store: RootStore) => {
         }
 
         // clear search
-        window.history.replaceState({}, document.title, pathname);
-        rmgRuntime.updateUrl(pathname);
+        const ticketUrl = '/rmg-palette/#/new';
+        window.history.replaceState({}, document.title, ticketUrl);
+        rmgRuntime.updateUrl(ticketUrl);
     }
 };
 
