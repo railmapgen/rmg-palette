@@ -11,7 +11,7 @@
     },
     {
         "id": "sh2",
-        "colour": "#8CC220",
+        "colour": "#82bf24",
         "fg": "#000",
         "name": {
             "en": "Line 2",
@@ -305,7 +305,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "金山铁路",
-            "en": "Jinshan Railway"
+            "en": "Jinshan Railway",
+            "zh-Hant": "金山鐵路"
         }
     },
     {
