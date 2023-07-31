@@ -1,7 +1,7 @@
 [
     {
         "id": "N",
-        "colour": "#088000",
+        "colour": "#088002",
         "fg": "#fff",
         "name": {
             "en": "Nanboku Line",
@@ -23,7 +23,7 @@
     },
     {
         "id": "H",
-        "colour": "#0000ff",
+        "colour": "#0166cc",
         "fg": "#fff",
         "name": {
             "en": "Toho Line",
@@ -34,7 +34,7 @@
     },
     {
         "id": "SC",
-        "colour": "#808080",
+        "colour": "#b2b2b2",
         "fg": "#fff",
         "name": {
             "en": "Sapporo Street Car",
