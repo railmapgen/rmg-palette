@@ -117,6 +117,16 @@
         }
     },
     {
+        "id": "bordeaux",
+        "country": "FR",
+        "name": {
+            "en": "Bordeaux",
+            "zh-Hans": "波尔多",
+            "zh-Hant": "波爾多",
+            "fr": "Bordeaux"
+        }
+    },
+    {
         "id": "boston",
         "country": "US",
         "name": {
