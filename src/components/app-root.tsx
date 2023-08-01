@@ -5,6 +5,7 @@ import { RmgErrorBoundary, RmgLoader, RmgThemeProvider, RmgWindow } from '@railm
 
 const PaletteView = lazy(() => import('./palette-view/palette-view'));
 const TicketView = lazy(() => import('./ticket-view/ticket-view'));
+const PickerView = lazy(() => import('./picker-view/picker-view'));
 
 export default function AppRoot() {
     return (
@@ -18,6 +19,14 @@ export default function AppRoot() {
                             element={
                                 <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
                                     <TicketView />
+                                </RmgErrorBoundary>
+                            }
+                        />
+                        <Route
+                            path="/picker"
+                            element={
+                                <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
+                                    <PickerView />
                                 </RmgErrorBoundary>
                             }
                         />

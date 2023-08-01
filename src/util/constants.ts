@@ -1,10 +1,20 @@
 import { Translation } from '@railmapgen/rmg-translate';
+import { CityCode, ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 
 /**
  * @property {string} 0 - Chinese characters
  * @property {string} 1 - Latin characters
  */
 export type Name = [string, string];
+
+/**
+ * Colour theme of line, derived from `LineEntry`.
+ * @property 0 - city id
+ * @property 1 - line id
+ * @property 2 - background colour
+ * @property 3 - foreground colour
+ */
+export type Theme = [CityCode, string, ColourHex, MonoColour];
 
 export const GITHUB_ISSUE_PREAMBLE = '**Do not edit lines below, they are meant for bots only!!!**';
 export const getGitHubIssueDetailsBlock = (type: 'country' | 'city' | 'lines', data: any): string => {
@@ -91,6 +101,10 @@ export enum Events {
     ADD_CITY = 'ADD_CITY',
     EDIT_CITY = 'EDIT_CITY',
     RESET_TICKET = 'RESET_TICKET',
+
+    APP_CLIP_VIEW_OPENED = 'APP_CLIP_VIEW_OPENED',
+    APP_CLIP_VIEW_CLOSED = 'APP_CLIP_VIEW_CLOSED',
+    APP_CLIP_VIEW_SELECT = 'APP_CLIP_VIEW_SELECT',
 }
 
 export const DRAFT_TICKET_KEY = 'rmg-palette__draftTicket';
