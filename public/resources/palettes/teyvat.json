@@ -1,0 +1,178 @@
+[
+    {
+        "id": "l1",
+        "colour": "#980000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line1"
+        }
+    },
+    {
+        "id": "l2",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line2"
+        }
+    },
+    {
+        "id": "l3",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line3"
+        }
+    },
+    {
+        "id": "l4",
+        "colour": "#9900ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line4"
+        }
+    },
+    {
+        "id": "l5",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line5"
+        }
+    },
+    {
+        "id": "l6",
+        "colour": "#4a86e8",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line6"
+        }
+    },
+    {
+        "id": "l7",
+        "colour": "#ff00d0",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line7"
+        }
+    },
+    {
+        "id": "l8",
+        "colour": "#73ff00",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line8"
+        }
+    },
+    {
+        "id": "l9",
+        "colour": "#00e1ff",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "line9"
+        }
+    },
+    {
+        "id": "me1",
+        "colour": "#006b6b",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "mondexpress1"
+        }
+    },
+    {
+        "id": "me2",
+        "colour": "#366b36",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "mondexpress2"
+        }
+    },
+    {
+        "id": "le1",
+        "colour": "#ffff00",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "liyueexpress1"
+        }
+    },
+    {
+        "id": "le2",
+        "colour": "#b8b800",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "liyueexpress2"
+        }
+    },
+    {
+        "id": "ie1",
+        "colour": "#873691",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "Inazumaexpress1"
+        }
+    },
+    {
+        "id": "ie2",
+        "colour": "#7100bd",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "Inazumaexpress2"
+        }
+    },
+    {
+        "id": "se1",
+        "colour": "#8cff00",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "Sumeruexpress1"
+        }
+    },
+    {
+        "id": "se2",
+        "colour": "#00ff11",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "Sumeruexpress2"
+        }
+    },
+    {
+        "id": "t1",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "ICE - 1"
+        }
+    },
+    {
+        "id": "t2",
+        "colour": "#404040",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "ICE - 2"
+        }
+    },
+    {
+        "id": "t3",
+        "colour": "#808080",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "ICE - 3"
+        }
+    },
+    {
+        "id": "t4",
+        "colour": "#c0c0c0",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "ICE - 4"
+        }
+    },
+    {
+        "id": "t5",
+        "colour": "#ffffff",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "ICE - 5"
+        }
+    }
+]

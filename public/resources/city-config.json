@@ -1380,6 +1380,14 @@
         }
     },
     {
+        "id": "teyvat",
+        "country": "MU",
+        "name": {
+            "en": "Teyvat",
+            "zh-Hans": "提瓦特"
+        }
+    },
+    {
         "id": "tianjin",
         "country": "CN",
         "name": {

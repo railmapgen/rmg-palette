@@ -297,6 +297,14 @@
         "language": "zh-Hant"
     },
     {
+        "id": "MU",
+        "name": {
+            "en": "miyouni",
+            "zh-Hans": "米游宙"
+        },
+        "language": "zh-Hans"
+    },
+    {
         "id": "MX",
         "name": {
             "en": "Mexico",
