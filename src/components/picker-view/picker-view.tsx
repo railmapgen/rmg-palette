@@ -41,6 +41,9 @@ export default function PickerView() {
         styleEl.textContent = `.rmg-window__header{margin-left: unset;}`;
         document.head.appendChild(styleEl);
 
+        // post loaded event
+        channel.postMessage({ event: 'LOADED' });
+
         return () => {
             channel.close();
             document.head.removeChild(styleEl);

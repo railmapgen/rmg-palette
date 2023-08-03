@@ -104,7 +104,7 @@ export default function ColourModal(props: ColourModalProps) {
 
     return (
         <>
-            <VStack flex={1}>
+            <VStack flex={1} mx={2}>
                 <RmgLineBadge name={t('Example')} fg={fgColour} bg={bgColour} />
 
                 <Tabs isFitted colorScheme="primary" w="100%" defaultIndex={cityCode === CityCode.Other ? 1 : 0}>
@@ -128,7 +128,7 @@ export default function ColourModal(props: ColourModalProps) {
 
             <HStack p={2} justifyContent="flex-end">
                 <Button size="sm" onClick={onClose}>
-                    {t('Close')}
+                    {t('Cancel')}
                 </Button>
                 <Button size="sm" colorScheme="primary" onClick={handleSubmit} isDisabled={!isSubmitEnabled}>
                     {t('Confirm')}
