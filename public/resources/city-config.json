@@ -117,6 +117,16 @@
         }
     },
     {
+        "id": "bordeaux",
+        "country": "FR",
+        "name": {
+            "en": "Bordeaux",
+            "zh-Hans": "波尔多",
+            "zh-Hant": "波爾多",
+            "fr": "Bordeaux"
+        }
+    },
+    {
         "id": "boston",
         "country": "US",
         "name": {
@@ -1186,6 +1196,16 @@
             "pt": "São Paulo",
             "zh-Hans": "圣保罗",
             "zh-Hant": "聖保羅"
+        }
+    },
+    {
+        "id": "sapporo",
+        "country": "JP",
+        "name": {
+            "en": "Sapporo",
+            "ja": "札幌",
+            "zh-Hans": "札幌",
+            "zh-Hant": "札幌"
         }
     },
     {
