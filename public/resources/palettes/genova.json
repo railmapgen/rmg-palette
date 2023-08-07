@@ -1,0 +1,57 @@
+[
+    {
+        "id": "m",
+        "colour": "#fb0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro",
+            "zh-Hans": "地铁",
+            "zh-Hant": "地鐵",
+            "it": "Metropolitana"
+        }
+    },
+    {
+        "id": "zl",
+        "colour": "#03c504",
+        "fg": "#fff",
+        "name": {
+            "en": "Zecca-Righi Funicular Railway",
+            "zh-Hans": "泽卡-里吉缆车铁路",
+            "zh-Hant": "澤卡-里吉纜車鐵路",
+            "it": "Funicolare Zecca-Righi"
+        }
+    },
+    {
+        "id": "sa",
+        "colour": "#027800",
+        "fg": "#fff",
+        "name": {
+            "en": "Sant'Anna Funicular Railway",
+            "zh-Hans": "圣安娜缆车铁路",
+            "zh-Hant": "聖安娜纜車鐵路",
+            "it": "Funicolare Sant'Anna"
+        }
+    },
+    {
+        "id": "fpg",
+        "colour": "#eac55d",
+        "fg": "#fff",
+        "name": {
+            "en": "Principe-Granarolo Rack Railway",
+            "zh-Hans": "普林西比-格拉那罗洛齿轨铁路",
+            "zh-Hant": "普林西比-格拉那羅洛齒軌鐵路",
+            "it": "Ferrovia a Cremagliera Principe-Granarolo"
+        }
+    },
+    {
+        "id": "gc",
+        "colour": "#be05c2",
+        "fg": "#fff",
+        "name": {
+            "en": "Genova-Casella Railway",
+            "zh-Hans": "热那亚-卡塞拉铁路",
+            "zh-Hant": "熱那亞-卡塞拉鐵路",
+            "it": "Ferrovia Genova-Casella"
+        }
+    }
+]

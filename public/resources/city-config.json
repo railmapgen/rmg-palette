@@ -416,6 +416,15 @@
         }
     },
     {
+        "id": "genova",
+        "country": "IT",
+        "name": {
+            "en": "Genova",
+            "zh-Hans": "热那亚",
+            "zh-Hant": "熱那亞"
+        }
+    },
+    {
         "id": "glasgow",
         "country": "GBSCT",
         "name": {
