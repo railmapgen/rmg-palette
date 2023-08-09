@@ -138,5 +138,15 @@
             "zh-Hans": "城际铁路",
             "zh-Hant": "城際鐵路"
         }
+    },
+    {
+        "id": "csxl",
+        "colour": "#db7093",
+        "fg": "#fff",
+        "name": {
+            "en": "Xihuan line",
+            "zh-Hans": "西环线",
+            "zh-Hant": "西環線"
+        }
     }
 ]
