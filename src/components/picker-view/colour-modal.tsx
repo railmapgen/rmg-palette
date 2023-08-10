@@ -9,12 +9,13 @@ import { Theme } from '../../util/constants';
 
 interface ColourModalProps {
     defaultTheme?: Theme;
+    sessionId?: string;
     onSubmit?: (theme: Theme) => void;
     onClose: () => void;
 }
 
 export default function ColourModal(props: ColourModalProps) {
-    const { defaultTheme, onSubmit, onClose } = props;
+    const { defaultTheme, sessionId, onSubmit, onClose } = props;
 
     const { t } = useTranslation();
 
@@ -24,18 +25,18 @@ export default function ColourModal(props: ColourModalProps) {
     const [fgColour, setFgColour] = useState(defaultTheme?.[3] || MonoColour.white);
 
     useEffect(() => {
-        if (defaultTheme) {
+        if (sessionId && defaultTheme) {
             setCityCode(defaultTheme[0]);
             setLineCode(defaultTheme[1]);
             setBgColour(defaultTheme[2]);
             setFgColour(defaultTheme[3]);
         }
-    }, [defaultTheme?.toString()]);
+    }, [sessionId, defaultTheme?.toString()]);
 
     const paletteFields: RmgFieldsField[] = [
         {
             type: 'custom',
-            label: t('City theme'),
+            label: t('City'),
             component: (
                 <CityPicker
                     defaultValueId={cityCode}
@@ -50,7 +51,7 @@ export default function ColourModal(props: ColourModalProps) {
         },
         {
             type: 'custom',
-            label: t('Line theme'),
+            label: t('Line'),
             component: (
                 <ColourPicker
                     city={cityCode}
@@ -109,7 +110,7 @@ export default function ColourModal(props: ColourModalProps) {
 
                 <Tabs isFitted colorScheme="primary" w="100%" defaultIndex={cityCode === CityCode.Other ? 1 : 0}>
                     <TabList>
-                        <Tab>{t('From palette')}</Tab>
+                        <Tab>{t('Palette')}</Tab>
                         <Tab>{t('Customise')}</Tab>
                     </TabList>
 
