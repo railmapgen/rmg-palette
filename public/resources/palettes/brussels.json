@@ -427,5 +427,148 @@
             "zh-Hans": "巴士线路N18",
             "zh-Hant": "巴士線路N18"
         }
+    },
+    {
+        "id": "brs1",
+        "colour": "#035e33",
+        "fg": "#fff",
+        "name": {
+            "en": "S1",
+            "zh-Hans": "S1",
+            "zh-Hant": "S1",
+            "fr": "S1"
+        }
+    },
+    {
+        "id": "brs2",
+        "colour": "#f26021",
+        "fg": "#fff",
+        "name": {
+            "en": "S2",
+            "zh-Hans": "S2",
+            "zh-Hant": "S2",
+            "fr": "S2"
+        }
+    },
+    {
+        "id": "brs3",
+        "colour": "#202776",
+        "fg": "#fff",
+        "name": {
+            "en": "S3",
+            "zh-Hans": "S3",
+            "zh-Hant": "S3",
+            "fr": "S3"
+        }
+    },
+    {
+        "id": "brs4",
+        "colour": "#cb2027",
+        "fg": "#fff",
+        "name": {
+            "en": "S4",
+            "zh-Hans": "S4",
+            "zh-Hant": "S4",
+            "fr": "S4"
+        }
+    },
+    {
+        "id": "brs5",
+        "colour": "#fecd08",
+        "fg": "#fff",
+        "name": {
+            "en": "S5",
+            "zh-Hans": "S5",
+            "zh-Hant": "S5",
+            "fr": "S5"
+        }
+    },
+    {
+        "id": "brs6",
+        "colour": "#955f25",
+        "fg": "#fff",
+        "name": {
+            "en": "S6",
+            "zh-Hans": "S6",
+            "zh-Hant": "S6",
+            "fr": "S6"
+        }
+    },
+    {
+        "id": "brs7",
+        "colour": "#561558",
+        "fg": "#fff",
+        "name": {
+            "en": "S7",
+            "zh-Hans": "S7",
+            "zh-Hant": "S7",
+            "fr": "S7"
+        }
+    },
+    {
+        "id": "brs8",
+        "colour": "#0d95cd",
+        "fg": "#fff",
+        "name": {
+            "en": "S8",
+            "zh-Hans": "S8",
+            "zh-Hant": "S8",
+            "fr": "S8"
+        }
+    },
+    {
+        "id": "brs9",
+        "colour": "#65bc46",
+        "fg": "#fff",
+        "name": {
+            "en": "S9",
+            "zh-Hans": "S9",
+            "zh-Hant": "S9",
+            "fr": "S9"
+        }
+    },
+    {
+        "id": "brs10",
+        "colour": "#231f20",
+        "fg": "#fff",
+        "name": {
+            "en": "S10",
+            "zh-Hans": "S10",
+            "zh-Hant": "S10",
+            "fr": "S10"
+        }
+    },
+    {
+        "id": "brs19",
+        "colour": "#f174ad",
+        "fg": "#fff",
+        "name": {
+            "en": "S19",
+            "zh-Hans": "S19",
+            "zh-Hant": "S19",
+            "fr": "S19"
+        }
+    },
+    {
+        "id": "brs81",
+        "colour": "#694c9f",
+        "fg": "#fff",
+        "name": {
+            "en": "S81",
+            "zh-Hans": "S81",
+            "zh-Hant": "S81",
+            "fr": "S81"
+        }
+    },
+    {
+        "id": "brs20",
+        "colour": "#059797",
+        "fg": "#fff",
+        "name": {
+            "en": "S20",
+            "zh-Hans": "S20",
+            "zh-Hant": "S20",
+            "fr": "S20"
+        }
     }
 ]
