@@ -1,0 +1,1 @@
+import{M as o}from"./index-df985c67.js";import"./chakra-30b94965.js";import"./react-326f1873.js";const n=[{id:"to1",colour:"#feed03",fg:o.black,name:{en:"Metro Line 1","zh-Hans":"地铁1号线","zh-Hant":"捷運1號線",it:"M1"}}];export{n as default};
