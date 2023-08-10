@@ -2,19 +2,17 @@ import { RmgPage } from '@railmapgen/rmg-components';
 import ColourModal from './colour-modal';
 import { useEffect, useRef, useState } from 'react';
 import { Events, Theme } from '../../util/constants';
-import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
 export default function PickerView() {
-    const { t } = useTranslation();
-
     const [searchParams] = useSearchParams();
     const parentId = searchParams.get('parentId');
     const parentComponent = searchParams.get('parentComponent');
 
+    const [sessionId, setSessionId] = useState<string>();
     const [theme, setTheme] = useState<Theme>();
 
     const channelRef = useRef<BroadcastChannel>();
@@ -30,6 +28,7 @@ export default function PickerView() {
             const { event, data } = ev.data;
             console.log(`[${channel.name}] Received event from parent component:`, event);
             if (event === 'OPEN') {
+                setSessionId(crypto.randomUUID());
                 setTheme(data);
             }
         };
@@ -69,7 +68,7 @@ export default function PickerView() {
 
     return (
         <RmgPage>
-            <ColourModal defaultTheme={theme} onSubmit={handleSubmit} onClose={handleClose} />
+            <ColourModal defaultTheme={theme} sessionId={sessionId} onSubmit={handleSubmit} onClose={handleClose} />
         </RmgPage>
     );
 }
