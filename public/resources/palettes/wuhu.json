@@ -1,0 +1,22 @@
+[
+    {
+        "id": "wuhu1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
+        "id": "wuhu2",
+        "colour": "#007aff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    }
+]
