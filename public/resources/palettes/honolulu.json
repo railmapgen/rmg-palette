@@ -1,0 +1,42 @@
+[
+    {
+        "id": "mi",
+        "colour": "#a7045f",
+        "fg": "#fff",
+        "name": {
+            "en": "Initial Operations 2023",
+            "zh-Hans": "首通段(2023开通)",
+            "zh-Hant": "首通段(2023年開通)"
+        }
+    },
+    {
+        "id": "ma",
+        "colour": "#d75a2e",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Extension 2025",
+            "zh-Hans": "机场延伸段(2025开通)",
+            "zh-Hant": "機場延伸段(2025開通)"
+        }
+    },
+    {
+        "id": "mc",
+        "colour": "#009c57",
+        "fg": "#fff",
+        "name": {
+            "en": "City Center 2031",
+            "zh-Hans": "市中心段(2031开通)",
+            "zh-Hant": "市中心段(2031開通)"
+        }
+    },
+    {
+        "id": "mf",
+        "colour": "#acacac",
+        "fg": "#fff",
+        "name": {
+            "en": "Future Segment",
+            "zh-Hans": "未来规划段",
+            "zh-Hant": "未來規劃段"
+        }
+    }
+]
