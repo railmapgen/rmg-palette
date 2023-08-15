@@ -1,0 +1,12 @@
+[
+    {
+        "id": "S6",
+        "colour": "#c98bdb",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S6/Ningju Line",
+            "zh-Hans": "S6号线/宁句线",
+            "zh-Hant": "S6號綫/寧句綫"
+        }
+    }
+]

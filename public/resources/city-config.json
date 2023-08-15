@@ -1557,5 +1557,14 @@
             "zh-Hans": "郑州",
             "zh-Hant": "鄭州"
         }
+    },
+    {
+        "id": "zhenjiang",
+        "country": "CN",
+        "name": {
+            "en": "ZhenJiang",
+            "zh-Hans": "镇江",
+            "zh-Hant": "鎮江"
+        }
     }
 ]
