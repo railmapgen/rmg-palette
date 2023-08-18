@@ -208,5 +208,35 @@
             "zh-Hans": "坪山云巴",
             "zh-Hant": "坪山雲巴"
         }
+    },
+    {
+        "id": "sz19",
+        "colour": "#439f6c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19号线"
+        }
+    },
+    {
+        "id": "sz18",
+        "colour": "#1d8fff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18号线"
+        }
+    },
+    {
+        "id": "sz17",
+        "colour": "#027d83",
+        "fg": "#fff",
+        "name": {
+            "en": "Line17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17号线"
+        }
     }
 ]
