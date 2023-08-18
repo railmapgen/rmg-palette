@@ -1,0 +1,11 @@
+[
+    {
+        "id": "bh1",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "pt": "Linha 1"
+        }
+    }
+]

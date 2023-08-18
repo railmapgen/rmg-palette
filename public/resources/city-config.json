@@ -97,6 +97,16 @@
         }
     },
     {
+        "id": "bhz",
+        "country": "BR",
+        "name": {
+            "en": "Belo Horizonte",
+            "pt": "Belo Horizonte",
+            "zh-Hans": "贝洛奥里藏特",
+            "zh-Hant": "貝洛奧里藏特"
+        }
+    },
+    {
         "id": "bne",
         "country": "AU",
         "name": {
