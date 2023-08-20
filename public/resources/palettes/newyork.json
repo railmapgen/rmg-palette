@@ -1,7 +1,7 @@
 [
     {
         "id": "nybdfm",
-        "colour": "#ff6319",
+        "colour": "#f58220",
         "fg": "#fff",
         "name": {
             "en": "IND Sixth Avenue Line",
@@ -10,7 +10,7 @@
     },
     {
         "id": "nyace",
-        "colour": "#0039a6",
+        "colour": "#006bb6",
         "fg": "#fff",
         "name": {
             "en": "IND Eighth Avenue Line",
@@ -19,7 +19,7 @@
     },
     {
         "id": "nyl",
-        "colour": "#a7a9ac",
+        "colour": "#939598",
         "fg": "#fff",
         "name": {
             "en": "BMT Canarsie Line",
@@ -28,7 +28,7 @@
     },
     {
         "id": "nyg",
-        "colour": "#6cbe45",
+        "colour": "#7bc142",
         "fg": "#fff",
         "name": {
             "en": "IND Crosstown Line",
@@ -37,7 +37,7 @@
     },
     {
         "id": "nyjz",
-        "colour": "#996633",
+        "colour": "#b0720a",
         "fg": "#fff",
         "name": {
             "en": "BMT Nassau Street Line",
@@ -46,7 +46,7 @@
     },
     {
         "id": "nynqrw",
-        "colour": "#fccc0a",
+        "colour": "#fed41d",
         "fg": "#000",
         "name": {
             "en": "BMT Broadway Line",
@@ -55,7 +55,7 @@
     },
     {
         "id": "ny456",
-        "colour": "#00933c",
+        "colour": "#009e57",
         "fg": "#fff",
         "name": {
             "en": "IRT Lexington Avenue Line",
@@ -64,7 +64,7 @@
     },
     {
         "id": "ny123",
-        "colour": "#ee352e",
+        "colour": "#ee3a41",
         "fg": "#fff",
         "name": {
             "en": "IRT Broadway–Seventh Avenue Line",
@@ -82,7 +82,7 @@
     },
     {
         "id": "ny7",
-        "colour": "#b933ad",
+        "colour": "#9c3b96",
         "fg": "#fff",
         "name": {
             "en": "IRT Flushing Line",
@@ -91,11 +91,20 @@
     },
     {
         "id": "nys",
-        "colour": "#808183",
+        "colour": "#6c6d70",
         "fg": "#fff",
         "name": {
             "en": "Shuttles",
             "zh-Hans": "接驳线"
+        }
+    },
+    {
+        "id": "sir",
+        "colour": "#006bb6",
+        "fg": "#fff",
+        "name": {
+            "en": "Staten Island Railway",
+            "zh-Hans": "斯塔顿岛铁路"
         }
     }
 ]
