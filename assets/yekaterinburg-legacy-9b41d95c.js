@@ -1,1 +1,0 @@
-System.register(["./index-legacy-2daca0f9.js","./chakra-legacy-07fc9539.js","./react-legacy-53a5d56b.js"],(function(e,n){"use strict";var t;return{setters:[function(e){t=e.M},null,null],execute:function(){e("default",[{id:"gl",colour:"#007a3d",fg:t.white,name:{en:"Green Line","zh-Hans":"绿线","zh-Hant":"綠線",ru:"Зеленая линия"}}])}}}));
