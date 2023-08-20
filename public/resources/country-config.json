@@ -356,6 +356,15 @@
         "language": "es"
     },
     {
+        "id": "PH",
+        "name": {
+            "en": "Philippines",
+            "zh-Hans": "菲律宾",
+            "zh-Hant": "菲律賓"
+        },
+        "language": "en"
+    },
+    {
         "id": "PK",
         "name": {
             "en": "Pakistan",

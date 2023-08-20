@@ -1,0 +1,32 @@
+[
+    {
+        "id": "lrt1",
+        "colour": "#01844b",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT Line 1",
+            "zh-Hans": "LRT第1行",
+            "zh-Hant": "LRT第1行"
+        }
+    },
+    {
+        "id": "lrt2",
+        "colour": "#324a9c",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT Line 2",
+            "zh-Hans": "LRT第2行",
+            "zh-Hant": "LRT第2行"
+        }
+    },
+    {
+        "id": "mrt3",
+        "colour": "#ffcc00",
+        "fg": "#fff",
+        "name": {
+            "en": "MRT Line 3",
+            "zh-Hans": "MRT第3行",
+            "zh-Hant": "MRT第3行"
+        }
+    }
+]
