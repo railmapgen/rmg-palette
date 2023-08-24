@@ -1,1 +1,0 @@
-import{r as n}from"./react-326f1873.js";function l(t){const[o,e]=n.useState([]);return n.useEffect(()=>{if(!t){e([]);return}const s=new AbortController;return fetch(`/rmg-palette/resources/palettes/${t}.json`,{signal:s.signal}).then(r=>r.json()).then(r=>e(r)).catch(()=>e([])),()=>{s.abort()}},[t]),o}export{l as u};
