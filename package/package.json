@@ -10,7 +10,7 @@
     "description": "",
     "main": "./index.js",
     "scripts": {
-        "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/build.ts && npx tsc --project tsconfig.build.json",
+        "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/prebuild.ts && npx tsc --project tsconfig.build.json",
         "check": "node --loader ts-node/esm ./checker/check.ts",
         "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts",
         "prepare": "ts-patch install"

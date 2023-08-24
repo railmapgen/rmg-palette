@@ -2,7 +2,7 @@ import { Button, Divider, HStack, Tab, TabList, TabPanel, TabPanels, Tabs, VStac
 import React, { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
-import { CityCode, ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
 import { Theme } from '../../util/constants';
@@ -74,7 +74,7 @@ export default function ColourModal(props: ColourModalProps) {
             value: bgColour,
             placeholder: '#F3D03E',
             onChange: value => {
-                setCityCode(CityCode.Other);
+                setCityCode('other');
                 setLineCode('other');
                 setBgColour(value as ColourHex);
             },
@@ -88,7 +88,7 @@ export default function ColourModal(props: ColourModalProps) {
                 [MonoColour.black]: t('Black'),
             },
             onChange: value => {
-                setCityCode(CityCode.Other);
+                setCityCode('other');
                 setLineCode('other');
                 setFgColour(value as MonoColour);
             },
@@ -108,7 +108,7 @@ export default function ColourModal(props: ColourModalProps) {
             <VStack flex={1} mx={2}>
                 <RmgLineBadge name={t('Example')} fg={fgColour} bg={bgColour} />
 
-                <Tabs isFitted colorScheme="primary" w="100%" defaultIndex={cityCode === CityCode.Other ? 1 : 0}>
+                <Tabs isFitted colorScheme="primary" w="100%" defaultIndex={cityCode === 'other' ? 1 : 0}>
                     <TabList>
                         <Tab>{t('Palette')}</Tab>
                         <Tab>{t('Customise')}</Tab>

@@ -4,7 +4,7 @@ import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
-import { CountryCode, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { MonoColour } from '@railmapgen/rmg-palette-resources';
 
 const realStore = rootReducer.getState();
 
@@ -34,7 +34,7 @@ describe('SubmitModal', () => {
             ...realStore,
             ticket: {
                 ...realStore.ticket,
-                country: CountryCode.HK,
+                country: 'HK',
                 city: 'hongkong',
                 cityName: [
                     ['en', 'Hong Kong'],

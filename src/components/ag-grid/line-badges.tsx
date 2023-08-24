@@ -1,23 +1,11 @@
 import { HStack } from '@chakra-ui/react';
-import { CityCode, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
-import { useEffect, useState } from 'react';
+import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import { RmgLineBadge } from '@railmapgen/rmg-components';
 import useTranslatedName from '../hooks/use-translated-name';
-
-const usePalette = (cityCode?: CityCode) => {
-    const [paletteList, setPaletteList] = useState<PaletteEntry[]>([]);
-
-    useEffect(() => {
-        import(`../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${cityCode}.js`)
-            .then(module => setPaletteList(module.default))
-            .catch(() => setPaletteList([]));
-    }, [cityCode]);
-
-    return paletteList;
-};
+import usePalette from '../hooks/use-palette';
 
 interface LineBadgesProps {
-    city: CityCode;
+    city: string;
 }
 
 export default function LineBadges(props: LineBadgesProps) {

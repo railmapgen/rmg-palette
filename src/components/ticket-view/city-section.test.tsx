@@ -3,10 +3,9 @@ import CitySection from './city-section';
 import { fireEvent, screen, waitFor } from '@testing-library/react';
 import rootReducer from '../../redux';
 import { createMockRootStore } from '../../setupTests';
-import { CountryCode } from '@railmapgen/rmg-palette-resources';
 
 const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({ ...realStore, ticket: { ...realStore.ticket, country: CountryCode.CN } });
+const mockStore = createMockRootStore({ ...realStore, ticket: { ...realStore.ticket, country: 'CN' } });
 
 describe('CitySection', () => {
     afterEach(() => {
