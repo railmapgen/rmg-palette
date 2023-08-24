@@ -24,9 +24,26 @@ export const getFlagEmoji = (countryCode: string): string => {
     return String.fromCodePoint(...codePoints.map(cp => parseInt(cp, 16)));
 };
 
-export const getFlagSvg = (countryCode: string): string => {
+export const getFlagSvg = async (countryCode: string): Promise<string> => {
     const codePoints = getFlagEmojiCodePoints(countryCode);
-    return codePoints.join('-') + '.svg';
+    const filename = codePoints.join('-') + '.svg';
+
+    await ensureSvgIsCached(filename);
+
+    return filename;
+};
+
+const ensureSvgIsCached = async (filename: string) => {
+    try {
+        await readSvgFromResources(filename);
+    } catch (err) {
+        console.warn(`ensureSvgIsCached(${filename}), failed to find SVG file from resources`, err);
+        try {
+            await fetchAndSaveSvgFromOpenMoji(filename);
+        } catch (e) {
+            console.error(`ensureSvgIsCached(${filename}), failed to find SVG file from OpenMoji.org`, e);
+        }
+    }
 };
 
 export const copyFlagSvgFromResources = async (filename: string) => {

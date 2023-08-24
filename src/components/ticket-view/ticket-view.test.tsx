@@ -2,10 +2,10 @@ import { render } from '../../test-utils';
 import TicketView from './ticket-view';
 import { TicketState } from '../../redux/ticket/ticket-slice';
 import rootReducer from '../../redux';
-import { CountryCode, MonoColour } from '../../../package/lib';
 import { DRAFT_TICKET_KEY } from '../../util/constants';
 import { act, fireEvent, screen } from '@testing-library/react';
 import { createMockRootStore } from '../../setupTests';
+import { MonoColour } from '@railmapgen/rmg-palette-resources';
 
 const realStore = rootReducer.getState();
 const mockStore = createMockRootStore({ ...realStore });
@@ -13,14 +13,14 @@ const mockStore = createMockRootStore({ ...realStore });
 describe('TicketView', () => {
     const effectiveEmptyTicket: TicketState = {
         ...realStore.ticket,
-        country: CountryCode.HK,
+        country: 'HK',
         city: 'hongkong',
         lines: {},
     };
 
     const draftTicket: TicketState = {
         ...realStore.ticket,
-        country: CountryCode.HK,
+        country: 'HK',
         city: 'hongkong',
         lines: {
             'id-001': {
