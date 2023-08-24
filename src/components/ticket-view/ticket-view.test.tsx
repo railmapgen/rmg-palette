@@ -87,10 +87,11 @@ describe('TicketView', () => {
         expect(window.localStorage.getItem(DRAFT_TICKET_KEY)).toBeNull();
     });
 
-    it('Can render ticket as expected', done => {
-        render(<TicketView />);
+    it('Can render ticket as expected', () =>
+        new Promise(done => {
+            render(<TicketView />);
 
-        // no dialog pops up
-        screen.findByRole('dialog').catch(done);
-    });
+            // no dialog pops up
+            screen.findByRole('dialog').catch(done);
+        }));
 });
