@@ -1,11 +1,33 @@
-import { Button, Divider, HStack, Tab, TabList, TabPanel, TabPanels, Tabs, VStack } from '@chakra-ui/react';
+import { Button, Divider, HStack, SystemStyleObject, VStack } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import { RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
+import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
 import { Theme } from '../../util/constants';
+
+const hexValidator = (value: string): boolean => {
+    return !!value.match(/^#[0-9a-fA-F]{6}$/);
+};
+
+const styles: SystemStyleObject = {
+    flex: 1,
+    mx: 2,
+
+    '& .chakra-badge': {
+        fontSize: '1em',
+    },
+
+    '& > .chakra-stack': {
+        w: '100%',
+        p: 2,
+
+        '& > div': {
+            w: '100%',
+        },
+    },
+};
 
 interface ColourModalProps {
     defaultTheme?: Theme;
@@ -23,6 +45,7 @@ export default function ColourModal(props: ColourModalProps) {
     const [lineCode, setLineCode] = useState(defaultTheme?.[1]);
     const [bgColour, setBgColour] = useState(defaultTheme?.[2] || '#AAAAAA');
     const [fgColour, setFgColour] = useState(defaultTheme?.[3] || MonoColour.white);
+    const [colourMode, setColourMode] = useState<'text' | 'color'>('color');
 
     useEffect(() => {
         if (sessionId && defaultTheme) {
@@ -32,6 +55,16 @@ export default function ColourModal(props: ColourModalProps) {
             setFgColour(defaultTheme[3]);
         }
     }, [sessionId, defaultTheme?.toString()]);
+
+    const colourModeOptions = [
+        { label: t('Select'), value: 'color' },
+        { label: t('Key in'), value: 'text' },
+    ];
+
+    const fgOptions = [
+        { label: t('Black'), value: MonoColour.black },
+        { label: t('White'), value: MonoColour.white },
+    ];
 
     const paletteFields: RmgFieldsField[] = [
         {
@@ -68,11 +101,23 @@ export default function ColourModal(props: ColourModalProps) {
 
     const customFields: RmgFieldsField[] = [
         {
+            type: 'custom',
+            label: t('Input mode'),
+            component: (
+                <RmgButtonGroup
+                    selections={colourModeOptions}
+                    defaultValue={colourMode}
+                    onChange={value => setColourMode(value as typeof colourMode)}
+                />
+            ),
+        },
+        {
             type: 'input',
             label: t('Background colour'),
-            variant: 'color',
+            variant: colourMode,
             value: bgColour,
             placeholder: '#F3D03E',
+            validator: hexValidator,
             onChange: value => {
                 setCityCode('other');
                 setLineCode('other');
@@ -80,22 +125,23 @@ export default function ColourModal(props: ColourModalProps) {
             },
         },
         {
-            type: 'select',
+            type: 'custom',
             label: t('Foreground colour'),
-            value: fgColour,
-            options: {
-                [MonoColour.white]: t('White'),
-                [MonoColour.black]: t('Black'),
-            },
-            onChange: value => {
-                setCityCode('other');
-                setLineCode('other');
-                setFgColour(value as MonoColour);
-            },
+            component: (
+                <RmgButtonGroup
+                    selections={fgOptions}
+                    defaultValue={fgColour}
+                    onChange={value => {
+                        setCityCode('other');
+                        setLineCode('other');
+                        setFgColour(value as MonoColour);
+                    }}
+                />
+            ),
         },
     ];
 
-    const isSubmitEnabled = cityCode && lineCode && bgColour && fgColour;
+    const isSubmitEnabled = cityCode && lineCode && bgColour && fgColour && hexValidator(bgColour);
 
     const handleSubmit = () => {
         if (isSubmitEnabled) {
@@ -105,24 +151,13 @@ export default function ColourModal(props: ColourModalProps) {
 
     return (
         <>
-            <VStack flex={1} mx={2}>
+            <VStack sx={styles}>
                 <RmgLineBadge name={t('Example')} fg={fgColour} bg={bgColour} />
 
-                <Tabs isFitted colorScheme="primary" w="100%" defaultIndex={cityCode === 'other' ? 1 : 0}>
-                    <TabList>
-                        <Tab>{t('Palette')}</Tab>
-                        <Tab>{t('Customise')}</Tab>
-                    </TabList>
-
-                    <TabPanels>
-                        <TabPanel>
-                            <RmgFields fields={paletteFields} />
-                        </TabPanel>
-                        <TabPanel>
-                            <RmgFields fields={customFields} />
-                        </TabPanel>
-                    </TabPanels>
-                </Tabs>
+                <VStack>
+                    <RmgFields fields={paletteFields} />
+                    <RmgFields fields={customFields} />
+                </VStack>
             </VStack>
 
             <Divider />
