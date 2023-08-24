@@ -46,30 +46,6 @@ const ensureSvgIsCached = async (filename: string) => {
     }
 };
 
-export const copyFlagSvgFromResources = async (filename: string) => {
-    let flagSvgString = '';
-    try {
-        flagSvgString = await readSvgFromResources(filename);
-    } catch (err) {
-        console.info(
-            `copyFlagSvgFromResources():: Failed to find ${filename} from resources, falling back to OpenMoji.org`
-        );
-        try {
-            flagSvgString = await fetchAndSaveSvgFromOpenMoji(filename);
-        } catch (e) {
-            console.warn(
-                `copyFlagSvgFromResources():: Failed to find ${filename} from OpenMoji.org, countryCode=${filename}`
-            );
-        }
-    }
-
-    try {
-        await writeFile(`./dist/flags/${filename}`, flagSvgString);
-    } catch (err) {
-        console.log(`copyFlagSvgFromResources():: Failed to copy ${filename} to dist folder`);
-    }
-};
-
 const readSvgFromResources = async (filename: string) => {
     return await readFile(`../public/resources/flags/${filename}`, 'utf-8');
 };
