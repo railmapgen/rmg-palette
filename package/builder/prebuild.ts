@@ -3,9 +3,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { mkdir, readFile, writeFile } from 'fs/promises';
-import { CityEntry } from '../src';
+import { CityEntry, CountryEntry } from '../src';
 import { execSync } from 'child_process';
-import { CountryEntry } from '../lib';
 import { getFlagEmoji, getFlagSvg } from './emoji-util';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
