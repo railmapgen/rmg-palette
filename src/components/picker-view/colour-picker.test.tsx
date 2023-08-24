@@ -68,6 +68,7 @@ describe('ColourPicker', () => {
                         ]),
                 });
             } else {
+                console.warn('Unhandled fetch:', url);
                 return originalFetch(url);
             }
         });

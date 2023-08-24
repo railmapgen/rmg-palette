@@ -6,6 +6,7 @@ export default function usePalette(cityCode?: string) {
 
     useEffect(() => {
         if (!cityCode) {
+            setPaletteList([]);
             return;
         }
 
