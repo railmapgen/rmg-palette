@@ -43,12 +43,4 @@ registry=https://registry.npmjs.org/
 always-auth=true
 EOF
 
-# Check if it is a patch version
-PREV_VER=$(npm show @railmapgen/rmg-palette-resources version | head -n1)
-PATTERN='\([0-9]\+\.\)\{2\}'
-PREV_MAJ_MIN=$(echo $PREV_VER | grep --colour=never -o $PATTERN)
-CUR_MAJ_MIN=$(echo $RMG_VER | grep --colour=never -o $PATTERN)
-[ $PREV_MAJ_MIN == $CUR_MAJ_MIN ] && IS_PATCH=true || IS_PATCH=false
-echo "IS_PATCH=$IS_PATCH" >> $GITHUB_OUTPUT
-
 # going to publish package
