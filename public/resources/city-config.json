@@ -1494,6 +1494,15 @@
         }
     },
     {
+        "id": "wuhu",
+        "country": "CN",
+        "name": {
+            "en": "Wuhu",
+            "zh-Hans": "芜湖",
+            "zh-Hant": "蕪湖"
+        }
+    },
+    {
         "id": "wuxi",
         "country": "CN",
         "name": {
