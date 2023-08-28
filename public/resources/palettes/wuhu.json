@@ -1,0 +1,22 @@
+[
+    {
+        "id": "wh1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "一号线",
+            "zh-Hant": "一號線"
+        }
+    },
+    {
+        "id": "wh2",
+        "colour": "#4a86e8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "二号线",
+            "zh-Hant": "一號線"
+        }
+    }
+]
