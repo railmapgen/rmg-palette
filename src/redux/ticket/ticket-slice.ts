@@ -1,8 +1,6 @@
 import {
-    CityCode,
     CityEntry,
     ColourHex,
-    CountryCode,
     CountryEntry,
     countryList,
     MonoColour,
@@ -25,7 +23,7 @@ const initialPaletteEntry: PaletteEntryWithTranslationEntry = {
 
 export interface TicketState {
     // country
-    country?: CountryCode | 'new';
+    country?: string;
     newCountry: string;
     countryName: TranslationEntry[];
     newCountryLang?: LanguageCode;
@@ -56,7 +54,7 @@ const ticketSlice = createSlice({
     name: 'ticket',
     initialState: getInitialState(),
     reducers: {
-        setCountry: (state, action: PayloadAction<CountryCode | 'new'>) => {
+        setCountry: (state, action: PayloadAction<string>) => {
             state.country = action.payload;
             if (action.payload === 'new') {
                 state.city = 'new';
@@ -186,7 +184,7 @@ const ticketSlice = createSlice({
 
         populateTicket: (state, action: PayloadAction<{ city: CityEntry; palettes: PaletteEntry[] }>) => {
             const { city, palettes } = action.payload;
-            state.country = city.country as CountryCode;
+            state.country = city.country;
 
             state.city = city.id;
             state.cityName = Object.entries(city.name).map(([lang, name]) => [lang as LanguageCode, name]);
@@ -212,7 +210,7 @@ export const ticketSelectors = {
             return null;
         }
         return {
-            id: state.newCountry as CountryCode,
+            id: state.newCountry,
             name: Object.fromEntries(state.countryName),
             language: state.newCountryLang,
         };
@@ -220,7 +218,7 @@ export const ticketSelectors = {
 
     getCityEntry: (state: TicketState): CityEntry => {
         return {
-            id: (state.city === 'new' ? state.newCity : state.city) as CityCode,
+            id: state.city === 'new' ? state.newCity : state.city,
             country: state.country === 'new' ? state.newCountry : state.country ?? '',
             name: Object.fromEntries(state.cityName),
         };
@@ -252,7 +250,7 @@ export const ticketSelectors = {
         const result = [];
         const { country, newCountryLang, city, newCity, cityName } = state;
 
-        if (!city || city === 'new' && !newCity) {
+        if (!city || (city === 'new' && !newCity)) {
             result.push(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
         }
         //if the case is a new country has officalLanguage then get it, otherwise find the exisiting country officalLanguage - see if it is filled

@@ -1,5 +1,4 @@
 import ColourPicker from './colour-picker';
-import { CityCode } from '@railmapgen/rmg-palette-resources';
 import { act } from 'react-dom/test-utils';
 import { fireEvent, screen } from '@testing-library/react';
 import { vi } from 'vitest';
@@ -12,7 +11,7 @@ const mockCallbacks = {
 const originalFetch = global.fetch;
 const mockFetch = vi.fn();
 
-const setup = () => render(<ColourPicker city={CityCode.Hongkong} {...mockCallbacks} />);
+const setup = () => render(<ColourPicker city="hongkong" {...mockCallbacks} />);
 
 describe('ColourPicker', () => {
     afterEach(() => {
@@ -69,6 +68,7 @@ describe('ColourPicker', () => {
                         ]),
                 });
             } else {
+                console.warn('Unhandled fetch:', url);
                 return originalFetch(url);
             }
         });
@@ -141,7 +141,7 @@ describe('ColourPicker', () => {
 
         expect(screen.getByText('Tsuen Wan Line')).toBeInTheDocument();
 
-        rerender(<ColourPicker city={CityCode.Guangzhou} {...mockCallbacks} />);
+        rerender(<ColourPicker city="guangzhou" {...mockCallbacks} />);
         await act(async () => {
             await Promise.resolve();
         });

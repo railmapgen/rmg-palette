@@ -1,4 +1,6 @@
 import { LanguageCode, Translation } from '@railmapgen/rmg-translate';
+import cityConfigJson from './palettes/city-config.json';
+import countryConfigJson from './palettes/country-config.json';
 
 export enum MonoColour {
     black = '#000',
@@ -44,6 +46,7 @@ export interface CityEntry {
      * Key-value pairs of multilingual names of the city.
      */
     name: Translation;
+    lastUpdated?: number;
 }
 
 export interface CountryEntry {
@@ -59,3 +62,6 @@ export interface CountryEntry {
     name: Translation;
     language?: LanguageCode;
 }
+
+export const cityList = cityConfigJson as CityEntry[];
+export const countryList = countryConfigJson as CountryEntry[];
