@@ -551,6 +551,15 @@
         }
     },
     {
+        "id": "honolulu",
+        "country": "US",
+        "name": {
+            "en": "Honolulu",
+            "zh-Hans": "火奴鲁鲁",
+            "zh-Hant": "檀香山"
+        }
+    },
+    {
         "id": "iashi",
         "country": "RO",
         "name": {
