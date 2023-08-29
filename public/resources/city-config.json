@@ -551,6 +551,15 @@
         }
     },
     {
+        "id": "honolulu",
+        "country": "US",
+        "name": {
+            "en": "Honolulu",
+            "zh-Hans": "火奴鲁鲁",
+            "zh-Hant": "檀香山"
+        }
+    },
+    {
         "id": "iashi",
         "country": "RO",
         "name": {
@@ -1565,6 +1574,15 @@
             "en": "Zhengzhou",
             "zh-Hans": "郑州",
             "zh-Hant": "鄭州"
+        }
+    },
+    {
+        "id": "zhenjiang",
+        "country": "CN",
+        "name": {
+            "en": "Zhenjiang",
+            "zh-Hans": "镇江",
+            "zh-Hant": "鎮江"
         }
     }
 ]
