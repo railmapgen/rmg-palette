@@ -1,52 +1,68 @@
 [
     {
         "id": "spg1",
+        "colour": "#D51D2E",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "ru": "Линия 1 ",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#D51D2E"
+        }
     },
     {
         "id": "spg2",
+        "colour": "#177ECE",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "ru": "Линия 2 ",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#177ECE"
+        }
     },
     {
         "id": "spg3",
+        "colour": "#1C9A53",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "ru": "Линия 3 ",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#1C9A53"
+        }
     },
     {
         "id": "spg4",
+        "colour": "#DE710A",
+        "fg": "#fff",
         "name": {
             "en": "Line 4",
             "ru": "Линия 4 ",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
-        },
-        "colour": "#DE710A"
+        }
     },
     {
         "id": "spg5",
+        "colour": "#6E0A76",
+        "fg": "#fff",
         "name": {
             "en": "Line 5",
             "ru": "Линия 5 ",
             "zh-Hans": "5号线",
             "zh-Hant": "5號線"
-        },
-        "colour": "#6E0A76"
+        }
+    },
+    {
+        "id": "spg6",
+        "colour": "#8d5b2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號綫",
+            "ru": "Линия 6"
+        }
     }
 ]

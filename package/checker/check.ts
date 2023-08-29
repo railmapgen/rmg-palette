@@ -2,7 +2,7 @@
 
 import { readdirSync, readFileSync } from 'fs';
 import { assertEquals } from 'typia';
-import { CityEntry, CountryEntry, PaletteEntry } from './constants';
+import { CityEntry, CountryEntry, PaletteEntry } from '../src';
 
 console.log('Hi, this is the RMG bot who will validate json resources.');
 

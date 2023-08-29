@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ningju",
+        "colour": "#c98bdb",
+        "fg": "#fff",
+        "name": {
+            "en": "Nanjing-Jurong Line",
+            "zh-Hans": "宁句线",
+            "zh-Hant": "寧句綫"
+        }
+    }
+]

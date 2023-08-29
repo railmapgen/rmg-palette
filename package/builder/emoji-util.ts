@@ -24,32 +24,25 @@ export const getFlagEmoji = (countryCode: string): string => {
     return String.fromCodePoint(...codePoints.map(cp => parseInt(cp, 16)));
 };
 
-export const getFlagSvg = (countryCode: string): string => {
+export const getFlagSvg = async (countryCode: string): Promise<string> => {
     const codePoints = getFlagEmojiCodePoints(countryCode);
-    return codePoints.join('-') + '.svg';
+    const filename = codePoints.join('-') + '.svg';
+
+    await ensureSvgIsCached(filename);
+
+    return filename;
 };
 
-export const copyFlagSvgFromResources = async (filename: string) => {
-    let flagSvgString = '';
+const ensureSvgIsCached = async (filename: string) => {
     try {
-        flagSvgString = await readSvgFromResources(filename);
+        await readSvgFromResources(filename);
     } catch (err) {
-        console.info(
-            `copyFlagSvgFromResources():: Failed to find ${filename} from resources, falling back to OpenMoji.org`
-        );
+        console.warn(`ensureSvgIsCached(${filename}), failed to find SVG file from resources`, err);
         try {
-            flagSvgString = await fetchAndSaveSvgFromOpenMoji(filename);
+            await fetchAndSaveSvgFromOpenMoji(filename);
         } catch (e) {
-            console.warn(
-                `copyFlagSvgFromResources():: Failed to find ${filename} from OpenMoji.org, countryCode=${filename}`
-            );
+            console.error(`ensureSvgIsCached(${filename}), failed to find SVG file from OpenMoji.org`, e);
         }
-    }
-
-    try {
-        await writeFile(`./dist/flags/${filename}`, flagSvgString);
-    } catch (err) {
-        console.log(`copyFlagSvgFromResources():: Failed to copy ${filename} to dist folder`);
     }
 };
 
