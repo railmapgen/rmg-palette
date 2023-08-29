@@ -1,6 +1,16 @@
 [
     {
-        "id": "2",
+        "id": "ty1",
+        "colour": "#1b5eab",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
+        "id": "ty2",
         "colour": "#b31c21",
         "fg": "#fff",
         "name": {
