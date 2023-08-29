@@ -1,12 +1,12 @@
 import { RmgAutoComplete } from '@railmapgen/rmg-components';
-import { CityCode, CityEntry, cityList, countryList } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, cityList, countryList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import FlagSvgEmoji from './flag-svg-emoji';
 import { LanguageCode } from '@railmapgen/rmg-translate';
 
 interface CityPickerProps {
-    defaultValueId?: CityCode;
-    onChange?: (val: CityCode) => void;
+    defaultValueId?: string;
+    onChange?: (val: string) => void;
 }
 
 export default function CityPicker(props: CityPickerProps) {
@@ -53,9 +53,9 @@ export default function CityPicker(props: CityPickerProps) {
     };
 
     const data = cityList.slice().sort((a, b) => {
-        if (a.id === CityCode.Other) {
+        if (a.id === 'other') {
             return 1;
-        } else if (b.id === CityCode.Other) {
+        } else if (b.id === 'other') {
             return -1;
         } else {
             return displayValue(a).localeCompare(displayValue(b), i18n.languages[0]);

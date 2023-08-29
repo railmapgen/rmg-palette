@@ -1,4 +1,4 @@
-import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
+import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/app-slice';
 import { RmgFields, RmgFieldsField, RmgPageHeader } from '@railmapgen/rmg-components';
@@ -24,7 +24,7 @@ export default function PageHeader() {
         .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
         .reduce<Record<string, string>>(
             (acc, cur) => {
-                if (cur[0] === CountryCode.UN) {
+                if (cur[0] === 'UN') {
                     // exclude customise
                     return acc;
                 } else {
