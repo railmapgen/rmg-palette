@@ -58,8 +58,8 @@ export const getTicketByCityId = async (
     }
 
     try {
-        const paletteModule = await import(`../../../node_modules/@railmapgen/rmg-palette-resources/palettes/${id}.js`);
-        const { default: palettes } = paletteModule;
+        const res = await fetch(`/rmg-palette/resources/palettes/${id}.json`);
+        const palettes = await res.json();
         return { city, palettes };
     } catch (e) {
         console.error('getTicketByCityId():: unexpected errors', e);
