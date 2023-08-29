@@ -1,5 +1,5 @@
 import { Translation } from '@railmapgen/rmg-translate';
-import { CityCode, ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 
 /**
  * @property {string} 0 - Chinese characters
@@ -14,7 +14,7 @@ export type Name = [string, string];
  * @property 2 - background colour
  * @property 3 - foreground colour
  */
-export type Theme = [CityCode, string, ColourHex, MonoColour];
+export type Theme = [string, string, ColourHex, MonoColour];
 
 export const GITHUB_ISSUE_PREAMBLE = '**Do not edit lines below, they are meant for bots only!!!**';
 export const getGitHubIssueDetailsBlock = (type: 'country' | 'city' | 'lines', data: any): string => {

@@ -1,30 +1,11 @@
-import { useEffect, useState } from 'react';
 import { RmgAutoComplete, RmgLineBadge } from '@railmapgen/rmg-components';
-import { CityCode, ColourHex, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { LanguageCode } from '@railmapgen/rmg-translate';
-
-const usePalette = (cityCode?: CityCode) => {
-    const [paletteList, setPaletteList] = useState<PaletteEntry[]>([]);
-
-    useEffect(() => {
-        const controller = new AbortController();
-
-        fetch(`/rmg-palette/resources/palettes/${cityCode}.json`, { signal: controller.signal })
-            .then(res => res.json())
-            .then(data => setPaletteList(data))
-            .catch(() => setPaletteList([]));
-
-        return () => {
-            controller.abort();
-        };
-    }, [cityCode]);
-
-    return paletteList;
-};
+import usePalette from '../hooks/use-palette';
 
 interface ColourPickerProps {
-    city?: CityCode;
+    city?: string;
     defaultValueId?: string;
     onChange?: (lineCode: string, bg: ColourHex, fg: MonoColour) => void;
 }

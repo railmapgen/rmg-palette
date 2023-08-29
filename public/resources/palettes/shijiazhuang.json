@@ -5,7 +5,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 1",
-            "zh-Hans": "1号线"
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
         }
     },
     {
@@ -14,7 +15,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 2",
-            "zh-Hans": "2号线"
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
         }
     },
     {
@@ -23,7 +25,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 3",
-            "zh-Hans": "3号线"
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
         }
     }
 ]
