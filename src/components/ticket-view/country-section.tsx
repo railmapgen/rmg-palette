@@ -10,7 +10,7 @@ import {
     updateCountryName,
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
-import { CountryCode, countryList } from '@railmapgen/rmg-palette-resources';
+import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
@@ -29,7 +29,7 @@ export default function CountrySection() {
             .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
             .reduce<Record<string, string>>(
                 (acc, cur) => {
-                    if (cur[0] === CountryCode.UN) {
+                    if (cur[0] === 'UN') {
                         // exclude customise
                         return acc;
                     } else {
@@ -56,7 +56,7 @@ export default function CountrySection() {
             value: country,
             options: countryOptions,
             disabledOptions: [''],
-            onChange: value => dispatch(setCountry(value as CountryCode | 'new')),
+            onChange: value => dispatch(setCountry(value as string)),
         },
         {
             type: 'input',

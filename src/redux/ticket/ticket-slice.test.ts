@@ -7,7 +7,7 @@ import ticketReducer, {
     TicketState,
     updateCountryName,
 } from './ticket-slice';
-import { CityCode, CityEntry, CountryCode, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { TicketInvalidReasonType } from '../../util/constants';
 
 const realStore = rootReducer.getState();
@@ -66,7 +66,7 @@ describe('TicketSlice', () => {
         });
 
         it('Can validate city code as expected', () => {
-            const initialState: TicketState = { ...realStore.ticket, country: CountryCode.HK };
+            const initialState: TicketState = { ...realStore.ticket, country: 'HK' };
             expect(ticketSelectors.getCityErrors(initialState)).toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
 
             initialState.city = 'hongkong';
@@ -78,7 +78,7 @@ describe('TicketSlice', () => {
         it('Can validate line code as expected', () => {
             const initialState: TicketState = {
                 ...realStore.ticket,
-                country: CountryCode.HK,
+                country: 'HK',
                 city: 'hongkong',
                 lines: {
                     'id-001': {
@@ -112,7 +112,7 @@ describe('TicketSlice', () => {
 
     describe('TicketSlice - populate city and palettes', () => {
         const mockCityEntry: CityEntry = {
-            id: CityCode.Hongkong,
+            id: 'hongkong',
             country: 'HK',
             name: {
                 en: 'Hong Kong',
