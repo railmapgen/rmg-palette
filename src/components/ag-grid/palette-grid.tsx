@@ -1,5 +1,5 @@
 import { RmgAgGrid } from '@railmapgen/rmg-components';
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
@@ -9,11 +9,12 @@ import { MdEdit } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
-import { ColDef } from 'ag-grid-community';
+import { ColDef, SelectionChangedEvent } from 'ag-grid-community';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { getTicketByCityId } from '../../redux/ticket/util';
 import { populateTicket } from '../../redux/ticket/ticket-slice';
+import { closeSidePanel, setSidePanelCity } from '../../redux/app/app-slice';
 
 export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
@@ -23,6 +24,15 @@ export default function PaletteGrid() {
 
     const selectedCountry = useRootSelector(state => state.app.selectedCountry);
     const rowData = cityList.filter(city => city.country === selectedCountry);
+
+    const handleSelectionChanged = useCallback(({ api }: SelectionChangedEvent<CityEntry>) => {
+        const rowSelections = api.getSelectedRows().map(row => row.id);
+        if (rowSelections.length === 1) {
+            dispatch(setSidePanelCity(rowSelections[0]));
+        } else {
+            dispatch(closeSidePanel());
+        }
+    }, []);
 
     const columnDefs = useMemo<ColDef<CityEntry>[]>(
         () => [
@@ -91,7 +101,9 @@ export default function PaletteGrid() {
                 rowHeight={36}
                 suppressCellFocus={true}
                 suppressRowVirtualisation={true}
+                rowSelection="single"
                 debug={process.env.NODE_ENV !== 'production'}
+                onSelectionChanged={handleSelectionChanged}
             />
         </RmgAgGrid>
     );
