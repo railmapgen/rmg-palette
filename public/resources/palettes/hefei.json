@@ -5,7 +5,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "1号线",
-            "en": "Line 1"
+            "en": "Line 1",
+            "zh-Hant": "1號線"
         }
     },
     {
@@ -14,7 +15,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "2号线",
-            "en": "Line 2"
+            "en": "Line 2",
+            "zh-Hant": "2號線"
         }
     },
     {
@@ -23,7 +25,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "3号线",
-            "en": "Line 3"
+            "en": "Line 3",
+            "zh-Hant": "3號線"
         }
     },
     {
@@ -32,7 +35,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "4号线",
-            "en": "Line 4"
+            "en": "Line 4",
+            "zh-Hant": "4號線"
         }
     },
     {
@@ -41,7 +45,8 @@
         "fg": "#fff",
         "name": {
             "zh-Hans": "5号线",
-            "en": "Line5"
+            "en": "Line 5",
+            "zh-Hant": "5號線"
         }
     }
 ]

@@ -1,7 +1,7 @@
 [
     {
-        "id": "ty1",
-        "colour": "#1b5eab",
+        "id": "wh1",
+        "colour": "#ff0000",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -10,8 +10,8 @@
         }
     },
     {
-        "id": "ty2",
-        "colour": "#b31c21",
+        "id": "wh2",
+        "colour": "#4a86e8",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
