@@ -60,3 +60,12 @@ export interface CountryEntry {
     name: Translation;
     language?: LanguageCode;
 }
+
+/**
+ * Colour theme of line, derived from `LineEntry`.
+ * @property 0 - city id
+ * @property 1 - line id
+ * @property 2 - background colour
+ * @property 3 - foreground colour
+ */
+export type Theme = [string, string, ColourHex, MonoColour];

@@ -1,9 +1,10 @@
 import { RmgPage } from '@railmapgen/rmg-components';
 import ColourModal from './colour-modal';
 import { useEffect, useRef, useState } from 'react';
-import { Events, Theme } from '../../util/constants';
+import { Events } from '../../util/constants';
 import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Theme } from '@railmapgen/rmg-palette-resources';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
