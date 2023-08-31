@@ -1,4 +1,11 @@
-import { CityEntry, cityList, ColourHex, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import {
+    CityEntry,
+    cityList,
+    ColourHex,
+    getPalette,
+    MonoColour,
+    PaletteEntry,
+} from '@railmapgen/rmg-palette-resources';
 import { LanguageCode } from '@railmapgen/rmg-translate';
 import { TranslationInvalidReasonType } from '../../util/constants';
 
@@ -58,8 +65,7 @@ export const getTicketByCityId = async (
     }
 
     try {
-        const res = await fetch(`/rmg-palette/resources/palettes/${id}.json`);
-        const palettes = await res.json();
+        const palettes = await getPalette(id);
         return { city, palettes };
     } catch (e) {
         console.error('getTicketByCityId():: unexpected errors', e);
