@@ -1,4 +1,4 @@
-import { PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { getPalette, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { useEffect, useState } from 'react';
 
 export default function usePalette(cityCode?: string) {
@@ -12,8 +12,7 @@ export default function usePalette(cityCode?: string) {
 
         const controller = new AbortController();
 
-        fetch(`/rmg-palette/resources/palettes/${cityCode}.json`, { signal: controller.signal })
-            .then(res => res.json())
+        getPalette(cityCode, controller.signal)
             .then(data => setPaletteList(data))
             .catch(() => setPaletteList([]));
 
