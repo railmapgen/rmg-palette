@@ -9,6 +9,9 @@ export const getPalette = async (cityId: string, signal?: AbortSignal): Promise<
 
 export const updateTheme = async (oldTheme: Theme): Promise<Theme> => {
     const [cityId, lineId] = oldTheme;
+    if (cityId === 'other') {
+        return oldTheme;
+    }
 
     try {
         const palette = await getPalette(cityId);
