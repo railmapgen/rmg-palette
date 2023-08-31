@@ -2,10 +2,9 @@ import { Button, Divider, HStack, SystemStyleObject, VStack } from '@chakra-ui/r
 import React, { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
-import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
+import { ColourHex, MonoColour, Theme } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
-import { Theme } from '../../util/constants';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
