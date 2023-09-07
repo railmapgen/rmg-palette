@@ -52,7 +52,6 @@ export interface CountryEntry {
      */
     id: string; // replace me to CountryCode, builder!
     flagEmoji?: string;
-    flagSvg?: string;
     /**
      * Key-value pairs of multilingual names of the country.
      */

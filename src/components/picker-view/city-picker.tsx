@@ -1,7 +1,6 @@
 import { RmgAutoComplete } from '@railmapgen/rmg-components';
 import { CityEntry, cityList, countryList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import FlagSvgEmoji from './flag-svg-emoji';
 import { LanguageCode } from '@railmapgen/rmg-translate';
 
 interface CityPickerProps {
@@ -27,29 +26,20 @@ export default function CityPicker(props: CityPickerProps) {
     const displayHandler = (item: CityEntry) => {
         const isCensorTWFlag =
             item.country === 'TW' && ['zh-Hans', 'zh-CN'].includes(i18n.languages[0] as LanguageCode);
-        const isWindowsClient = ['Win32', 'Win64'].includes(navigator.platform);
-        // const isWindowsClient = true; // uncomment this line for Windows testing
 
         const name = i18n.languages.map(lng => item.name[lng as LanguageCode]).find(name => name !== undefined);
-        const flagSvg = countryList.find(country => country.id === item.country)?.flagSvg;
         const flagEmoji = countryList.find(country => country.id === item.country)?.flagEmoji;
 
         return (
             <>
-                {isCensorTWFlag ? (
-                    <span>🏴&nbsp;</span>
-                ) : isWindowsClient ? (
-                    <FlagSvgEmoji countryCode={item.country} svgFilename={flagSvg} />
-                ) : (
-                    <span>{flagEmoji}&nbsp;</span>
-                )}
-                {name}
+                <span className="flag-emoji">{isCensorTWFlag ? '🏴' : flagEmoji}</span>
+                <span>{name}</span>
             </>
         );
     };
 
     const predicate = (item: CityEntry, input: string): boolean => {
-        return Object.values(item.name).some(name => name.includes(input));
+        return Object.values(item.name).some(name => name.toLowerCase().includes(input.toLowerCase()));
     };
 
     const data = cityList.slice().sort((a, b) => {
