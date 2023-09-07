@@ -51,7 +51,6 @@ export interface CountryEntry {
      * ISO 3166-1 alpha-2 country code. (For cities in Britain, append BS 6879 subdivision code. )
      */
     id: string; // replace me to CountryCode, builder!
-    flagEmoji?: string;
     /**
      * Key-value pairs of multilingual names of the country.
      */
