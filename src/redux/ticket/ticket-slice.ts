@@ -24,8 +24,6 @@ const initialPaletteEntry: PaletteEntryWithTranslationEntry = {
 };
 
 export interface TicketState {
-    pantoneReady?: boolean;
-
     // country
     country?: string;
     newCountry: string;
@@ -58,10 +56,6 @@ const ticketSlice = createSlice({
     name: 'ticket',
     initialState: getInitialState(),
     reducers: {
-        setPantoneReady: (state, action: PayloadAction<boolean>) => {
-            state.pantoneReady = action.payload;
-        },
-
         setCountry: (state, action: PayloadAction<string>) => {
             state.country = action.payload;
             if (action.payload === 'new') {
@@ -300,7 +294,6 @@ export const ticketSelectors = {
 };
 
 export const {
-    setPantoneReady,
     setCountry,
     setNewCountry,
     setNewCountryLang,

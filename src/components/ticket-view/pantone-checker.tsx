@@ -3,13 +3,13 @@ import { getRGBByPantone } from '../../service/pantone-service';
 import { Text } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { useRootDispatch, useRootSelector } from '../../redux';
-import { setPantoneReady } from '../../redux/ticket/ticket-slice';
+import { setPantoneReady } from '../../redux/app/app-slice';
 
 export default function PantoneChecker() {
     const { t } = useTranslation();
     const dispatch = useRootDispatch();
 
-    const { pantoneReady } = useRootSelector(state => state.ticket);
+    const { pantoneReady } = useRootSelector(state => state.app);
 
     useEffect(() => {
         const controller = new AbortController();

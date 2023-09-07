@@ -18,7 +18,7 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
 
     const { t } = useTranslation();
 
-    const { pantoneReady } = useRootSelector(state => state.ticket);
+    const { pantoneReady } = useRootSelector(state => state.app);
 
     const [colourMode, setColourMode] = useState<'pantone' | 'hex'>(lineDetail.pantone ? 'pantone' : 'hex');
     const [pantoneInput, setPantoneInput] = useState(lineDetail.pantone ?? '');

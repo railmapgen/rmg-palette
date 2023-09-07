@@ -12,8 +12,8 @@ const initialTranslation: TranslationEntry[] = [['en', '']];
 const realStore = rootReducer.getState();
 const mockStore = createMockRootStore({
     ...realStore,
-    ticket: {
-        ...realStore.ticket,
+    app: {
+        ...realStore.app,
         pantoneReady: true,
     },
 });
