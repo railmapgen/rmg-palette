@@ -1,7 +1,7 @@
 import { RmgCard } from '@railmapgen/rmg-components';
 import { PaletteEntryWithTranslationEntry } from '../redux/ticket/util';
 import useTranslatedName from './hooks/use-translated-name';
-import { MdContentCopy, MdDelete, MdEdit } from 'react-icons/md';
+import { MdContentCopy, MdDelete, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 import { Flex, HStack, IconButton, SystemStyleObject } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import ColourEntryCard from './ticket-view/colour-entry-card';
@@ -14,6 +14,8 @@ interface LineDetailsCardProps {
     lineDetail: PaletteEntryWithTranslationEntry;
     editable?: boolean;
     onUpdate?: (updates: LineDetailUpdates) => void;
+    onMoveUp?: () => void;
+    onMoveDown?: () => void;
     onCopy?: () => void;
     onRemove?: () => void;
     onNameUpdate?: (lang: LanguageCode, name: string) => void;
@@ -22,7 +24,18 @@ interface LineDetailsCardProps {
 }
 
 export default function LineDetailCard(props: LineDetailsCardProps) {
-    const { lineDetail, editable, onUpdate, onCopy, onRemove, onNameUpdate, onLangSwitch, onNameRemove } = props;
+    const {
+        lineDetail,
+        editable,
+        onUpdate,
+        onMoveUp,
+        onMoveDown,
+        onCopy,
+        onRemove,
+        onNameUpdate,
+        onLangSwitch,
+        onNameRemove,
+    } = props;
 
     const { t } = useTranslation();
     const translateName = useTranslatedName();
@@ -58,24 +71,40 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
                         <IconButton
                             size="xs"
                             variant="ghost"
-                            aria-label={t('Edit') + ' ' + displayName}
-                            title={t('Edit') + ' ' + displayName}
+                            aria-label={t('Move up')}
+                            title={t('Move up')}
+                            icon={<MdKeyboardArrowUp />}
+                            onClick={onMoveUp}
+                        />
+                        <IconButton
+                            size="xs"
+                            variant="ghost"
+                            aria-label={t('Move down')}
+                            title={t('Move down')}
+                            icon={<MdKeyboardArrowDown />}
+                            onClick={onMoveDown}
+                        />
+                        <IconButton
+                            size="xs"
+                            variant="ghost"
+                            aria-label={t('Edit')}
+                            title={t('Edit')}
                             icon={<MdEdit />}
                             onClick={() => setEditing(prevState => !prevState)}
                         />
                         <IconButton
                             size="xs"
                             variant="ghost"
-                            aria-label={t('Copy') + ' ' + displayName}
-                            title={t('Copy') + ' ' + displayName}
+                            aria-label={t('Duplicate')}
+                            title={t('Duplicate')}
                             icon={<MdContentCopy />}
                             onClick={onCopy}
                         />
                         <IconButton
                             size="xs"
                             variant="ghost"
-                            aria-label={t('Remove') + ' ' + displayName}
-                            title={t('Remove') + ' ' + displayName}
+                            aria-label={t('Remove')}
+                            title={t('Remove')}
                             icon={<MdDelete />}
                             onClick={onRemove}
                         />

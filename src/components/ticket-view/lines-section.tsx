@@ -3,6 +3,8 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
     copyLine,
+    moveLineDown,
+    moveLineUp,
     removeLine,
     removeLineName,
     switchLineNameLang,
@@ -38,6 +40,8 @@ export default function LinesSection() {
                             lineDetail={line}
                             editable={true}
                             onUpdate={updates => dispatch(updateLineDetail({ entryId, updates }))}
+                            onMoveUp={() => dispatch(moveLineUp(entryId))}
+                            onMoveDown={() => dispatch(moveLineDown(entryId))}
                             onCopy={() => dispatch(copyLine(entryId))}
                             onRemove={() => dispatch(removeLine(entryId))}
                             onNameUpdate={(lang, name) => dispatch(updateLineName({ entryId, lang, name }))}

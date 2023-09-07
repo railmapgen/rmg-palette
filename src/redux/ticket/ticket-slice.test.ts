@@ -1,5 +1,7 @@
 import rootReducer from '../index';
 import ticketReducer, {
+    moveLineDown,
+    moveLineUp,
     populateTicket,
     removeCountryName,
     switchCountryNameLang,
@@ -170,6 +172,41 @@ describe('TicketSlice', () => {
                     colour: '#00AF41',
                 })
             );
+        });
+    });
+
+    describe('TicketSlick - move up and down', () => {
+        const initialState: TicketState = {
+            ...realStore.ticket,
+            lines: {
+                '001': { id: 'm1', nameEntity: [], colour: '#aaaaaa', fg: MonoColour.white },
+                '002': { id: 'm2', nameEntity: [], colour: '#bbbbbb', fg: MonoColour.white },
+                '003': { id: 'm3', nameEntity: [], colour: '#cccccc', fg: MonoColour.white },
+                '004': { id: 'm4', nameEntity: [], colour: '#dddddd', fg: MonoColour.white },
+            },
+        };
+
+        it('Can move up line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineUp('002'));
+            console.log(nextState.lines);
+            const keys = Object.keys(nextState.lines);
+            expect(Object.keys(nextState.lines)).toEqual(['002', '001', '003', '004']);
+        });
+
+        it('Do not move up the first line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineUp('001'));
+            expect(Object.keys(nextState.lines)).toEqual(['001', '002', '003', '004']);
+        });
+
+        it('Can move down line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineDown('002'));
+            console.log(nextState.lines);
+            expect(Object.keys(nextState.lines)).toEqual(['001', '003', '002', '004']);
+        });
+
+        it('Do not move down the last line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineDown('004'));
+            expect(Object.keys(nextState.lines)).toEqual(['001', '002', '003', '004']);
         });
     });
 });
