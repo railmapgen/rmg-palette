@@ -44,7 +44,6 @@ export interface CityEntry {
      * Key-value pairs of multilingual names of the city.
      */
     name: Translation;
-    lastUpdated?: number;
 }
 
 export interface CountryEntry {
