@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 import { mkdir, readFile, writeFile } from 'fs/promises';
 import { CityEntry, CountryEntry } from '../src';
 import { execSync } from 'child_process';
-import { getFlagEmoji, getFlagSvg } from './emoji-util';
+import { getFlagEmoji } from './emoji-util';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -57,7 +57,6 @@ const copyCountryConfig = async () => {
             return {
                 ...country,
                 flagEmoji: getFlagEmoji(country.id),
-                flagSvg: await getFlagSvg(country.id),
             };
         })
     );
