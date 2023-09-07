@@ -1,11 +1,4 @@
-import {
-    CityEntry,
-    ColourHex,
-    CountryEntry,
-    countryList,
-    MonoColour,
-    PaletteEntry,
-} from '@railmapgen/rmg-palette-resources';
+import { CityEntry, CountryEntry, countryList, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { LanguageCode, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
 import { createSlice, EntityId, PayloadAction } from '@reduxjs/toolkit';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
@@ -129,24 +122,38 @@ const ticketSlice = createSlice({
             };
         },
 
-        updateLineId: (state, action: PayloadAction<{ entryId: string; lineId: string }>) => {
-            state.lines[action.payload.entryId].id = action.payload.lineId;
+        moveLineUp: (state, action: PayloadAction<string>) => {
+            const keys = Object.keys(state.lines);
+            const entryId = action.payload;
+            const currentIndex = keys.findIndex(key => key === entryId);
+            if (currentIndex <= 0) {
+                return;
+            }
+
+            const chunk1 = keys.slice(0, currentIndex - 1);
+            const chunk2 = [entryId, keys[currentIndex - 1]];
+            const chunk3 = keys.slice(currentIndex);
+
+            state.lines = Object.fromEntries(
+                [chunk1, chunk2, chunk3].map(chunk => chunk.map(key => [key, state.lines[key]])).flat(1)
+            );
         },
 
-        updateLineBgColour: (state, action: PayloadAction<{ entryId: string; bgColour: ColourHex }>) => {
-            const { entryId, bgColour } = action.payload;
-            state.lines[entryId].colour = bgColour;
-            state.lines[entryId].pantone = undefined;
-        },
+        moveLineDown: (state, action: PayloadAction<string>) => {
+            const keys = Object.keys(state.lines);
+            const entryId = action.payload;
+            const currentIndex = keys.findIndex(key => key === entryId);
+            if (currentIndex < 0 || currentIndex >= keys.length - 1) {
+                return;
+            }
 
-        updateLinePantone: (state, action: PayloadAction<{ entryId: string; pantone: string; hex: ColourHex }>) => {
-            const { entryId, pantone, hex } = action.payload;
-            state.lines[entryId].colour = hex;
-            state.lines[entryId].pantone = pantone;
-        },
+            const chunk1 = keys.slice(0, currentIndex);
+            const chunk2 = [keys[currentIndex + 1], entryId];
+            const chunk3 = keys.slice(currentIndex + 1);
 
-        updateLineFgColour: (state, action: PayloadAction<{ entryId: string; fgColour: MonoColour }>) => {
-            state.lines[action.payload.entryId].fg = action.payload.fgColour;
+            state.lines = Object.fromEntries(
+                [chunk1, chunk2, chunk3].map(chunk => chunk.map(key => [key, state.lines[key]])).flat(1)
+            );
         },
 
         updateLineName: (state, action: PayloadAction<{ entryId: string; lang: LanguageCode; name: string }>) => {
@@ -306,10 +313,8 @@ export const {
     switchCityNameLang,
     removeCityName,
     updateLineDetail,
-    updateLineId,
-    updateLineBgColour,
-    updateLinePantone,
-    updateLineFgColour,
+    moveLineUp,
+    moveLineDown,
     updateLineName,
     switchLineNameLang,
     removeLineName,
