@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 import { mkdir, readFile, writeFile } from 'fs/promises';
 import { CityEntry, CountryEntry } from '../src';
 import { execSync } from 'child_process';
-import { getFlagEmoji } from './emoji-util';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -50,20 +49,9 @@ const copyCountryConfig = async () => {
     const countryConfigStr = await readFile(path.join(sourcePath, 'country-config.json'), 'utf-8');
     const countryConfig: CountryEntry[] = JSON.parse(countryConfigStr);
 
-    // update country config
-    const updatedCountryConfig = await Promise.all(
-        countryConfig.map(async country => {
-            console.log(`copyCountryConfig(), updating config of ${country.id}`);
-            return {
-                ...country,
-                flagEmoji: getFlagEmoji(country.id),
-            };
-        })
-    );
-
     // copy to target dir
     await mkdir(targetPath, { recursive: true });
-    await writeFile(path.join(targetPath, 'country-config.json'), JSON.stringify(updatedCountryConfig));
+    await writeFile(path.join(targetPath, 'country-config.json'), JSON.stringify(countryConfig));
 };
 
 const writePackageJson = async () => {

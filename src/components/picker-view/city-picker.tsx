@@ -1,7 +1,8 @@
 import { RmgAutoComplete } from '@railmapgen/rmg-components';
-import { CityEntry, cityList, countryList } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { LanguageCode } from '@railmapgen/rmg-translate';
+import { getFlagEmoji } from './emoji-util';
 
 interface CityPickerProps {
     defaultValueId?: string;
@@ -28,11 +29,10 @@ export default function CityPicker(props: CityPickerProps) {
             item.country === 'TW' && ['zh-Hans', 'zh-CN'].includes(i18n.languages[0] as LanguageCode);
 
         const name = i18n.languages.map(lng => item.name[lng as LanguageCode]).find(name => name !== undefined);
-        const flagEmoji = countryList.find(country => country.id === item.country)?.flagEmoji;
 
         return (
             <>
-                <span className="flag-emoji">{isCensorTWFlag ? '🏴' : flagEmoji}</span>
+                <span className="flag-emoji">{isCensorTWFlag ? '🏴' : getFlagEmoji(item.country)}</span>
                 <span>{name}</span>
             </>
         );

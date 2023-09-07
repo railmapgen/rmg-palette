@@ -40,7 +40,6 @@ vi.mock('@railmapgen/rmg-palette-resources', () => ({
             name: {
                 en: 'Scotland',
             },
-            flagEmoji: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
         },
         {
             id: 'HK',
@@ -48,14 +47,12 @@ vi.mock('@railmapgen/rmg-palette-resources', () => ({
                 en: 'Hong Kong',
                 zh: '香港',
             },
-            flagEmoji: '🇭🇰',
         },
         {
             id: 'TW',
             name: {
                 en: 'Taiwan',
             },
-            flagEmoji: '🇹🇼',
         },
     ],
 
