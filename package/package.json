@@ -20,7 +20,6 @@
     "devDependencies": {
         "@types/jsdom": "^21.1.1",
         "jsdom": "^22.0.0",
-        "node-fetch": "^3.3.1",
         "ts-node": "^10.9.1",
         "ts-patch": "^2.1.0",
         "ttypescript": "^1.5.15",
