@@ -62,7 +62,8 @@ describe('TicketView', () => {
         });
 
         const actions = mockStore.getActions();
-        expect(actions).toHaveLength(1);
+        expect(actions).toHaveLength(2);
+        expect(actions).toContainEqual(expect.objectContaining({ type: 'ticket/setPantoneReady' }));
         expect(actions).toContainEqual({
             type: 'ticket/resetTicket',
             payload: expect.objectContaining({ city: 'hongkong' }),
@@ -82,7 +83,8 @@ describe('TicketView', () => {
         });
 
         const actions = mockStore.getActions();
-        expect(actions).toHaveLength(0);
+        expect(actions).toHaveLength(1);
+        expect(actions).toContainEqual(expect.objectContaining({ type: 'ticket/setPantoneReady' }));
 
         expect(window.localStorage.getItem(DRAFT_TICKET_KEY)).toBeNull();
     });

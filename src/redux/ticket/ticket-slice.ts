@@ -11,6 +11,8 @@ import { createSlice, EntityId, PayloadAction } from '@reduxjs/toolkit';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
 import { getTranslationEntityInvalidReasons, PaletteEntryWithTranslationEntry, TranslationEntry } from './util';
 
+export type LineDetailUpdates = Partial<Omit<PaletteEntryWithTranslationEntry, 'nameEntity'>>;
+
 const initialTranslation: TranslationEntry[] = SUPPORTED_LANGUAGES.map(lang => [lang, '']);
 
 const initialPaletteEntry: PaletteEntryWithTranslationEntry = {
@@ -22,6 +24,8 @@ const initialPaletteEntry: PaletteEntryWithTranslationEntry = {
 };
 
 export interface TicketState {
+    pantoneReady?: boolean;
+
     // country
     country?: string;
     newCountry: string;
@@ -54,6 +58,10 @@ const ticketSlice = createSlice({
     name: 'ticket',
     initialState: getInitialState(),
     reducers: {
+        setPantoneReady: (state, action: PayloadAction<boolean>) => {
+            state.pantoneReady = action.payload;
+        },
+
         setCountry: (state, action: PayloadAction<string>) => {
             state.country = action.payload;
             if (action.payload === 'new') {
@@ -117,6 +125,14 @@ const ticketSlice = createSlice({
 
         removeCityName: (state, action: PayloadAction<EntityId>) => {
             state.cityName = state.cityName.filter(entry => entry[0] !== action.payload);
+        },
+
+        updateLineDetail: (state, action: PayloadAction<{ entryId: string; updates: LineDetailUpdates }>) => {
+            const { entryId, updates } = action.payload;
+            state.lines[entryId] = {
+                ...state.lines[entryId],
+                ...updates,
+            };
         },
 
         updateLineId: (state, action: PayloadAction<{ entryId: string; lineId: string }>) => {
@@ -284,6 +300,7 @@ export const ticketSelectors = {
 };
 
 export const {
+    setPantoneReady,
     setCountry,
     setNewCountry,
     setNewCountryLang,
@@ -295,6 +312,7 @@ export const {
     updateCityName,
     switchCityNameLang,
     removeCityName,
+    updateLineDetail,
     updateLineId,
     updateLineBgColour,
     updateLinePantone,
