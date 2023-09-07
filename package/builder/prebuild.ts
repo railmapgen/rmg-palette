@@ -20,21 +20,27 @@ const copyCityConfig = async () => {
     const cityConfigStr = await readFile(path.join(sourcePath, 'city-config.json'), 'utf-8');
     const cityConfig: CityEntry[] = JSON.parse(cityConfigStr);
 
-    // update city config
-    const updatedCityConfig = cityConfig.map(city => {
-        console.log(`copyCityConfig(), updating config of ${city.id}`);
-        const lastUpdated = Number(
-            execSync(`git log -1 --pretty="format:%ct" ../public/resources/palettes/${city.id}.json`).toString()
-        );
-        return {
-            ...city,
-            lastUpdated: isNaN(lastUpdated) ? undefined : lastUpdated,
-        };
-    });
+    // generate update history
+    await generateUpdateHistory(cityConfig);
 
     // copy to target dir
     await mkdir(targetPath, { recursive: true });
-    await writeFile(path.join(targetPath, 'city-config.json'), JSON.stringify(updatedCityConfig));
+    await writeFile(path.join(targetPath, 'city-config.json'), JSON.stringify(cityConfig));
+};
+
+const generateUpdateHistory = async (config: CityEntry[]) => {
+    const history = config.reduce<Record<string, number>>((acc, cur) => {
+        console.log(`generateUpdateHistory(), getting last update time of ${cur.id}`);
+        const lastCommitted = Number(
+            execSync(`git log -1 --pretty="format:%ct" ../public/resources/palettes/${cur.id}.json`).toString() + '000'
+        );
+        if (isNaN(lastCommitted)) {
+            return acc;
+        } else {
+            return { ...acc, [cur.id]: lastCommitted };
+        }
+    }, {});
+    await writeFile(`../public/resources/history.json`, JSON.stringify(history));
 };
 
 const copyCountryConfig = async () => {
