@@ -12,6 +12,7 @@ node_modules/
 build/
 dist/
 package/src/palettes/
+public/resources/history.json
 
 # misc
 .DS_Store

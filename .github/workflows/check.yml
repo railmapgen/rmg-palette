@@ -7,8 +7,6 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
-    env:
-      TS_NODE_COMPILER: ttypescript
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -19,6 +17,7 @@ jobs:
         run: |
           npm install
           npm run check
+          npm run test
           npm run build
         working-directory: ./package
 

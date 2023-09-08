@@ -40,8 +40,6 @@ vi.mock('@railmapgen/rmg-palette-resources', () => ({
             name: {
                 en: 'Scotland',
             },
-            flagEmoji: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-            flagSvg: '1F3F4-E0067-E0062-E0073-E0063-E0074-E007F.svg',
         },
         {
             id: 'HK',
@@ -49,16 +47,12 @@ vi.mock('@railmapgen/rmg-palette-resources', () => ({
                 en: 'Hong Kong',
                 zh: '香港',
             },
-            flagEmoji: '🇭🇰',
-            flagSvg: '1F1ED-1F1F0.svg',
         },
         {
             id: 'TW',
             name: {
                 en: 'Taiwan',
             },
-            flagEmoji: '🇹🇼',
-            flagSvg: '1F1F9-1F1FC.svg',
         },
     ],
 
@@ -102,23 +96,6 @@ describe('CityPicker', () => {
         expect(menuItems[0]).toHaveTextContent('爱丁堡'); // read zh-Hans field
         expect(menuItems[1]).toHaveTextContent('台北'); // read zh field
         expect(menuItems[2]).toHaveTextContent('香港'); // read zh field
-    });
-
-    it('Can render OpenMoji SVG-format emoji for Windows users as expected', async () => {
-        const platformGetter = vi.spyOn(window.navigator, 'platform', 'get');
-        platformGetter.mockReturnValue('Win64');
-
-        render(<CityPicker />);
-
-        fireEvent.focus(screen.getByRole('combobox'));
-        await screen.findByRole('dialog');
-
-        // flag svg to be displayed for 2 of the cities
-        await screen.findByAltText('Flag of GBSCT');
-        await screen.findByAltText('Flag of HK');
-
-        // TW to be censored
-        expect(screen.getAllByRole('menuitem')[1]).toHaveTextContent('🏴');
     });
 
     it('Can mount component with default city code as expected', () => {
