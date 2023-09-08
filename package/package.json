@@ -23,7 +23,6 @@
         "jsdom": "^22.1.0",
         "ts-node": "^10.9.1",
         "ts-patch": "^3.0.2",
-        "ttypescript": "^1.5.15",
         "typescript": "^5.2.2",
         "typia": "^5.0.2",
         "vitest": "^0.34.3"
