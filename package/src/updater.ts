@@ -1,6 +1,5 @@
 import { MonoColour, Theme } from './types';
-import { getPalette } from './index';
-import { cachedFetch } from './cached-fetch';
+import { cachedFetch, getPalette } from './cached-fetch';
 
 const getHistory = async (): Promise<Record<string, number>> => {
     return await cachedFetch(`/rmg-palette/resources/history.json`);

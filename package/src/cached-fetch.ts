@@ -1,3 +1,5 @@
+import { PaletteEntry } from './types';
+
 let RESPONSE_CACHE: Record<string, any> = {};
 
 export const cachedFetch = async (url: string, init?: RequestInit): Promise<any> => {
@@ -13,4 +15,8 @@ export const cachedFetch = async (url: string, init?: RequestInit): Promise<any>
 
 export const _clearCache = () => {
     RESPONSE_CACHE = {};
+};
+
+export const getPalette = async (cityId: string, signal?: AbortSignal): Promise<PaletteEntry[]> => {
+    return await cachedFetch(`/rmg-palette/resources/palettes/${cityId}.json`, { signal });
 };
