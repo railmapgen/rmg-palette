@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import SubmitModalStepError from './submit-modal-step-error';
 import SubmitModalStepJustification from './submit-modal-step-justification';
 import SubmitModalStepSubmit from './submit-modal-step-submit';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 
 interface SubmitModalProps {
     isOpen: boolean;
@@ -54,7 +55,7 @@ export default function SubmitModal(props: SubmitModalProps) {
 
     const handleCloseAfterFinish = () => {
         if (!isShowStepError && !isShowStepJustification) {
-            window.localStorage.removeItem(DRAFT_TICKET_KEY);
+            rmgRuntime.storage.remove(DRAFT_TICKET_KEY);
         }
         onClose();
     };
