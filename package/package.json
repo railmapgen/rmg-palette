@@ -12,6 +12,7 @@
     "scripts": {
         "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/prebuild.ts && npx tsc --project tsconfig.build.json",
         "check": "node --loader ts-node/esm ./checker/check.ts",
+        "test": "vitest",
         "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts",
         "prepare": "ts-patch install"
     },
@@ -24,7 +25,8 @@
         "ts-patch": "^3.0.2",
         "ttypescript": "^1.5.15",
         "typescript": "^5.2.2",
-        "typia": "^5.0.2"
+        "typia": "^5.0.2",
+        "vitest": "^0.34.3"
     },
     "exports": {
         ".": "./index.js",

@@ -1,4 +1,4 @@
-const RESPONSE_CACHE: Record<string, any> = {};
+let RESPONSE_CACHE: Record<string, any> = {};
 
 export const cachedFetch = async (url: string, init?: RequestInit): Promise<any> => {
     if (url in RESPONSE_CACHE) {
@@ -9,4 +9,8 @@ export const cachedFetch = async (url: string, init?: RequestInit): Promise<any>
     const data = await res.json();
     RESPONSE_CACHE[url] = data;
     return data;
+};
+
+export const _clearCache = () => {
+    RESPONSE_CACHE = {};
 };
