@@ -220,17 +220,6 @@
         }
     },
     {
-        "id": "bs41",
-        "colour": "#AF5937",
-        "fg": "#fff",
-        "name": {
-            "en": "Ring line (Clockwise)",
-            "de": "Ringbahn (im Uhrzeigersinn)",
-            "zh-Hans": "环线（内环）",
-            "zh-Hant": "環線（內環） "
-        }
-    },
-    {
         "id": "bm2",
         "colour": "#7ab929",
         "fg": "#fff",
@@ -459,17 +448,6 @@
             "en": "68",
             "zh-Hans": "有轨电车68",
             "zh-Hant": "有軌電車68"
-        }
-    },
-    {
-        "id": "bu7",
-        "colour": "#009BD9",
-        "fg": "#fff",
-        "name": {
-            "en": "U7",
-            "de": "U7",
-            "zh-Hans": "7号线",
-            "zh-Hant": "7號線"
         }
     }
 ]
