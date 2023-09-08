@@ -23,7 +23,7 @@ export default function TicketView() {
     const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
 
     useEffect(() => {
-        const draftTicketStr = window.localStorage.getItem(DRAFT_TICKET_KEY);
+        const draftTicketStr = rmgRuntime.storage.get(DRAFT_TICKET_KEY);
         if (draftTicketStr) {
             try {
                 const draftTicket = JSON.parse(draftTicketStr);
@@ -47,7 +47,7 @@ export default function TicketView() {
 
     const handleReset = () => {
         dispatch(resetTicket());
-        window.localStorage.removeItem(DRAFT_TICKET_KEY);
+        rmgRuntime.storage.remove(DRAFT_TICKET_KEY);
         rmgRuntime.event(Events.RESET_TICKET, {});
     };
 

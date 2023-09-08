@@ -87,7 +87,7 @@ export const initStore = async (store: RootStore) => {
                 );
             },
             effect: (action, listenerApi) => {
-                window.localStorage.setItem(DRAFT_TICKET_KEY, JSON.stringify(listenerApi.getState().ticket));
+                rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(listenerApi.getState().ticket));
             },
         })
     );

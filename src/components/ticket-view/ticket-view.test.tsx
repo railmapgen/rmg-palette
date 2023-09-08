@@ -6,6 +6,7 @@ import { DRAFT_TICKET_KEY } from '../../util/constants';
 import { act, fireEvent, screen } from '@testing-library/react';
 import { createMockRootStore } from '../../setupTests';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 
 const realStore = rootReducer.getState();
 const mockStore = createMockRootStore({ ...realStore });
@@ -32,13 +33,17 @@ describe('TicketView', () => {
         },
     };
 
+    beforeAll(async () => {
+        await rmgRuntime.ready();
+    });
+
     afterEach(() => {
         mockStore.clearActions();
-        window.localStorage.clear();
+        rmgRuntime.storage.clear();
     });
 
     it('Do not apply draft ticket if it is effectively empty', async () => {
-        window.localStorage.setItem(DRAFT_TICKET_KEY, JSON.stringify(effectiveEmptyTicket));
+        rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(effectiveEmptyTicket));
 
         render(<TicketView />, { store: mockStore });
         try {
@@ -52,7 +57,7 @@ describe('TicketView', () => {
     });
 
     it('Can apply draft ticket as expected', async () => {
-        window.localStorage.setItem(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
+        rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
 
         render(<TicketView />, { store: mockStore });
         await screen.findByRole('dialog');
@@ -69,11 +74,11 @@ describe('TicketView', () => {
             payload: expect.objectContaining({ city: 'hongkong' }),
         });
 
-        expect(window.localStorage.getItem(DRAFT_TICKET_KEY)).not.toBeNull();
+        expect(rmgRuntime.storage.get(DRAFT_TICKET_KEY)).not.toBeNull();
     });
 
     it('Can discard draft ticket as expected', async () => {
-        window.localStorage.setItem(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
+        rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
 
         render(<TicketView />, { store: mockStore });
         await screen.findByRole('dialog');
@@ -86,7 +91,7 @@ describe('TicketView', () => {
         expect(actions).toHaveLength(1);
         expect(actions).toContainEqual(expect.objectContaining({ type: 'app/setPantoneReady' }));
 
-        expect(window.localStorage.getItem(DRAFT_TICKET_KEY)).toBeNull();
+        expect(rmgRuntime.storage.get(DRAFT_TICKET_KEY)).toBeNull();
     });
 
     it('Can render ticket as expected', () =>

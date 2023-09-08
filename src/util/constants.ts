@@ -97,5 +97,5 @@ export enum Events {
     APP_CLIP_VIEW_SELECT = 'APP_CLIP_VIEW_SELECT',
 }
 
-export const DRAFT_TICKET_KEY = 'rmg-palette__draftTicket';
+export const DRAFT_TICKET_KEY = 'draftTicket';
 export const RECENTLY_USED_KEY = 'recentlyUsed';
