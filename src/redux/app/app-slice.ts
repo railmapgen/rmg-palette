@@ -1,12 +1,20 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Theme } from '@railmapgen/rmg-palette-resources';
+
+export interface PaletteUsage {
+    theme: Theme;
+    displayName?: string;
+}
 
 interface AppState {
     selectedCountry: string;
     pantoneReady?: boolean;
+    recentlyUsed: PaletteUsage[];
 }
 
 const initialState: AppState = {
     selectedCountry: '',
+    recentlyUsed: [],
 };
 
 const appSlice = createSlice({
@@ -20,8 +28,28 @@ const appSlice = createSlice({
         setPantoneReady: (state, action: PayloadAction<boolean>) => {
             state.pantoneReady = action.payload;
         },
+
+        setRecentlyUsed: (state, action: PayloadAction<PaletteUsage[]>) => {
+            state.recentlyUsed = action.payload;
+        },
+
+        addRecentlyUsed: (state, action: PayloadAction<PaletteUsage>) => {
+            const newUsage = action.payload;
+            const currentIndex = state.recentlyUsed.findIndex(
+                ({ theme }) => theme[0] === newUsage.theme[0] && theme[1] === newUsage.theme[1]
+            );
+            if (newUsage.theme[0] === 'other' || currentIndex < 0) {
+                state.recentlyUsed = [action.payload, ...state.recentlyUsed].slice(0, 10);
+            } else {
+                state.recentlyUsed = [
+                    newUsage,
+                    ...state.recentlyUsed.slice(0, currentIndex),
+                    ...state.recentlyUsed.slice(currentIndex + 1),
+                ];
+            }
+        },
     },
 });
 
-export const { setSelectedCountry, setPantoneReady } = appSlice.actions;
+export const { setSelectedCountry, setPantoneReady, setRecentlyUsed, addRecentlyUsed } = appSlice.actions;
 export default appSlice.reducer;
