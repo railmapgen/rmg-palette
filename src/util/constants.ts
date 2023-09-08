@@ -98,3 +98,4 @@ export enum Events {
 }
 
 export const DRAFT_TICKET_KEY = 'rmg-palette__draftTicket';
+export const RECENTLY_USED_KEY = 'recentlyUsed';

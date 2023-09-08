@@ -5,6 +5,8 @@ import { Events } from '../../util/constants';
 import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
+import { useRootDispatch } from '../../redux';
+import { addRecentlyUsed } from '../../redux/app/app-slice';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
@@ -12,6 +14,8 @@ export default function PickerView() {
     const [searchParams] = useSearchParams();
     const parentId = searchParams.get('parentId');
     const parentComponent = searchParams.get('parentComponent');
+
+    const dispatch = useRootDispatch();
 
     const [sessionId, setSessionId] = useState<string>();
     const [theme, setTheme] = useState<Theme>();
@@ -50,12 +54,13 @@ export default function PickerView() {
         };
     }, []);
 
-    const handleSubmit = (nextTheme: Theme) => {
+    const handleSubmit = (nextTheme: Theme, displayName?: string) => {
         console.log(`[${channelRef.current?.name}] Emitting SELECT event, theme:`, nextTheme);
         channelRef.current?.postMessage({
             event: 'SELECT',
             data: nextTheme,
         });
+        dispatch(addRecentlyUsed({ theme: nextTheme, displayName }));
         rmgRuntime.event(Events.APP_CLIP_VIEW_SELECT, { parentComponent, theme: nextTheme });
     };
 

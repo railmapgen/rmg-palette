@@ -1,10 +1,22 @@
-import { Button, Divider, HStack, SystemStyleObject, VStack } from '@chakra-ui/react';
+import {
+    Button,
+    Divider,
+    Heading,
+    HStack,
+    IconButton,
+    SystemStyleObject,
+    VStack,
+    Wrap,
+    WrapItem,
+} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
 import { ColourHex, MonoColour, Theme } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
+import { useRootSelector } from '../../redux';
+import { MdCircle } from 'react-icons/md';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
@@ -26,12 +38,16 @@ const styles: SystemStyleObject = {
             w: '100%',
         },
     },
+
+    '& h5': {
+        alignSelf: 'flex-start',
+    },
 };
 
 interface ColourModalProps {
     defaultTheme?: Theme;
     sessionId?: string;
-    onSubmit?: (theme: Theme) => void;
+    onSubmit?: (theme: Theme, displayName?: string) => void;
     onClose: () => void;
 }
 
@@ -39,6 +55,7 @@ export default function ColourModal(props: ColourModalProps) {
     const { defaultTheme, sessionId, onSubmit, onClose } = props;
 
     const { t } = useTranslation();
+    const { recentlyUsed } = useRootSelector(state => state.app);
 
     const [cityCode, setCityCode] = useState(defaultTheme?.[0]);
     const [lineCode, setLineCode] = useState(defaultTheme?.[1]);
@@ -144,8 +161,17 @@ export default function ColourModal(props: ColourModalProps) {
 
     const handleSubmit = () => {
         if (isSubmitEnabled) {
-            onSubmit?.([cityCode, lineCode, bgColour, fgColour]);
+            // FIXME
+            const displayName = `${cityCode} - ${lineCode}`;
+            onSubmit?.([cityCode, lineCode, bgColour, fgColour], displayName);
         }
+    };
+
+    const handleApply = (theme: Theme) => {
+        setCityCode(theme[0]);
+        setLineCode(theme[1]);
+        setBgColour(theme[2]);
+        setFgColour(theme[3]);
     };
 
     return (
@@ -156,6 +182,28 @@ export default function ColourModal(props: ColourModalProps) {
                 <VStack>
                     <RmgFields fields={paletteFields} />
                     <RmgFields fields={customFields} />
+                </VStack>
+
+                <VStack>
+                    <Heading as="h5" size="xs">
+                        {t('Recently used')}
+                    </Heading>
+                    <Wrap>
+                        {recentlyUsed.map(({ theme, displayName }) => (
+                            <WrapItem key={theme.join('-')}>
+                                <IconButton
+                                    size="xs"
+                                    aria-label={t('Apply')}
+                                    title={displayName}
+                                    mt="0.45px"
+                                    color={theme[3]}
+                                    bg={theme[2]}
+                                    icon={<MdCircle />}
+                                    onClick={() => handleApply(theme)}
+                                />
+                            </WrapItem>
+                        ))}
+                    </Wrap>
                 </VStack>
             </VStack>
 
