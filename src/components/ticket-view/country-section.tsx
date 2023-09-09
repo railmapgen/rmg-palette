@@ -10,7 +10,6 @@ import {
     updateCountryName,
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
-import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
@@ -21,6 +20,7 @@ export default function CountrySection() {
 
     const dispatch = useRootDispatch();
 
+    const { countryList } = useRootSelector(state => state.app);
     const { country, newCountry, countryName, newCountryLang } = useRootSelector(state => state.ticket);
 
     const countryOptions = {

@@ -29,6 +29,7 @@ export default function SubmitModal(props: SubmitModalProps) {
     const [isIgnoreErrors, setIsIgnoreErrors] = useState(false);
     const [isFinishJustification, setIsFinishJustification] = useState(false);
 
+    const { countryList } = useRootSelector(state => state.app);
     const ticket = useRootSelector(state => state.ticket);
     const countryEntry = ticketSelectors.getCountryEntry(ticket);
     const cityEntry = ticketSelectors.getCityEntry(ticket);
@@ -37,8 +38,8 @@ export default function SubmitModal(props: SubmitModalProps) {
     useEffect(() => {
         if (isOpen) {
             setCountryErrors(ticketSelectors.getCountryErrors(ticket));
-            setCityErrors(ticketSelectors.getCityErrors(ticket));
-            setLineErrors(ticketSelectors.getLineErrors(ticket));
+            setCityErrors(ticketSelectors.getCityErrors(ticket, countryList));
+            setLineErrors(ticketSelectors.getLineErrors(ticket, countryList));
         } else {
             // reset modal
             setIsIgnoreErrors(false);

@@ -6,7 +6,22 @@ import { createMockRootStore } from '../../setupTests';
 import { vi } from 'vitest';
 
 const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({ ...realStore, ticket: { ...realStore.ticket, country: 'CN' } });
+const mockStore = createMockRootStore({
+    ...realStore,
+    app: {
+        ...realStore.app,
+        cityList: [
+            {
+                id: 'guangzhou',
+                country: 'CN',
+                name: {
+                    en: 'Guangzhou',
+                },
+            },
+        ],
+    },
+    ticket: { ...realStore.ticket, country: 'CN' },
+});
 
 const originalFetch = global.fetch;
 const mockFetch = vi.fn();

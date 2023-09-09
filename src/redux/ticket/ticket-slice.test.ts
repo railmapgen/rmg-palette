@@ -9,10 +9,19 @@ import ticketReducer, {
     TicketState,
     updateCountryName,
 } from './ticket-slice';
-import { CityEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, CountryEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { TicketInvalidReasonType } from '../../util/constants';
 
 const realStore = rootReducer.getState();
+
+const countryList: CountryEntry[] = [
+    {
+        id: 'HK',
+        name: {
+            en: 'Hong Kong',
+        },
+    },
+];
 
 describe('TicketSlice', () => {
     describe('TicketSlice - multi-language name mutation', () => {
@@ -69,10 +78,12 @@ describe('TicketSlice', () => {
 
         it('Can validate city code as expected', () => {
             const initialState: TicketState = { ...realStore.ticket, country: 'HK' };
-            expect(ticketSelectors.getCityErrors(initialState)).toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getCityErrors(initialState, countryList)).toContain(
+                TicketInvalidReasonType.CITY_CODE_UNDEFINED
+            );
 
             initialState.city = 'hongkong';
-            expect(ticketSelectors.getCityErrors(initialState)).not.toContain(
+            expect(ticketSelectors.getCityErrors(initialState, countryList)).not.toContain(
                 TicketInvalidReasonType.CITY_CODE_UNDEFINED
             );
         });
@@ -91,22 +102,22 @@ describe('TicketSlice', () => {
                     },
                 },
             };
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).toContain(
                 TicketInvalidReasonType.LINE_CODE_UNDEFINED
             );
 
             initialState.lines['id-001'].id = 'twl';
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).not.toContain(
                 TicketInvalidReasonType.LINE_CODE_UNDEFINED
             );
 
             initialState.lines['id-002'] = { ...initialState.lines['id-001'] };
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).toContain(
                 TicketInvalidReasonType.LINE_CODE_DUPLICATED
             );
 
             initialState.lines['id-002'].id = 'ktl';
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).not.toContain(
                 TicketInvalidReasonType.LINE_CODE_DUPLICATED
             );
         });

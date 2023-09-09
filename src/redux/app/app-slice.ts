@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Theme } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, CountryEntry, Theme } from '@railmapgen/rmg-palette-resources';
 
 export interface PaletteUsage {
     theme: Theme;
@@ -7,12 +7,20 @@ export interface PaletteUsage {
 }
 
 interface AppState {
+    isDataLoading: boolean;
+    cityList: CityEntry[];
+    countryList: CountryEntry[];
+
     selectedCountry: string;
     pantoneReady?: boolean;
     recentlyUsed: PaletteUsage[];
 }
 
 const initialState: AppState = {
+    isDataLoading: true,
+    cityList: [],
+    countryList: [],
+
     selectedCountry: '',
     recentlyUsed: [],
 };
@@ -21,6 +29,18 @@ const appSlice = createSlice({
     name: 'app',
     initialState,
     reducers: {
+        setIsDataLoading: (state, action: PayloadAction<boolean>) => {
+            state.isDataLoading = action.payload;
+        },
+
+        setCityList: (state, action: PayloadAction<CityEntry[]>) => {
+            state.cityList = action.payload;
+        },
+
+        setCountryList: (state, action: PayloadAction<CountryEntry[]>) => {
+            state.countryList = action.payload;
+        },
+
         setSelectedCountry: (state, action: PayloadAction<string>) => {
             state.selectedCountry = action.payload;
         },
@@ -51,5 +71,13 @@ const appSlice = createSlice({
     },
 });
 
-export const { setSelectedCountry, setPantoneReady, setRecentlyUsed, addRecentlyUsed } = appSlice.actions;
+export const {
+    setIsDataLoading,
+    setCityList,
+    setCountryList,
+    setSelectedCountry,
+    setPantoneReady,
+    setRecentlyUsed,
+    addRecentlyUsed,
+} = appSlice.actions;
 export default appSlice.reducer;

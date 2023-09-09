@@ -1,4 +1,4 @@
-import { CityEntry, CountryEntry, countryList, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, CountryEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { LanguageCode, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
 import { createSlice, EntityId, PayloadAction } from '@reduxjs/toolkit';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
@@ -263,7 +263,7 @@ export const ticketSelectors = {
         return result;
     },
 
-    getCityErrors: (state: TicketState): InvalidReasonType[] => {
+    getCityErrors: (state: TicketState, countryList: CountryEntry[]): InvalidReasonType[] => {
         const result = [];
         const { country, newCountryLang, city, newCity, cityName } = state;
 
@@ -278,7 +278,7 @@ export const ticketSelectors = {
         return result;
     },
 
-    getLineErrors: (state: TicketState): Record<string, InvalidReasonType[]> => {
+    getLineErrors: (state: TicketState, countryList: CountryEntry[]): Record<string, InvalidReasonType[]> => {
         const result: Record<string, InvalidReasonType[]> = { Overall: [] };
         const { country, newCountryLang, lines } = state;
 

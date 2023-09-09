@@ -12,7 +12,6 @@ import {
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
-import { cityList } from '@railmapgen/rmg-palette-resources';
 import useTranslatedName from '../hooks/use-translated-name';
 import { getTicketByCityId } from '../../redux/ticket/util';
 
@@ -21,6 +20,7 @@ export default function CitySection() {
     const dispatch = useRootDispatch();
     const translateName = useTranslatedName();
 
+    const { cityList } = useRootSelector(state => state.app);
     const { country, city, newCity, cityName } = useRootSelector(state => state.ticket);
 
     const cityOptions: Record<string, string> = {
@@ -43,7 +43,7 @@ export default function CitySection() {
             return;
         }
 
-        const ticket = await getTicketByCityId(cityId);
+        const ticket = await getTicketByCityId(cityId, cityList);
         if (ticket) {
             dispatch(populateTicket(ticket));
         } else {

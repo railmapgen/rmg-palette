@@ -1,8 +1,9 @@
 import { RmgAutoComplete } from '@railmapgen/rmg-components';
-import { CityEntry, cityList } from '@railmapgen/rmg-palette-resources';
+import { CityEntry } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { LanguageCode } from '@railmapgen/rmg-translate';
 import { getFlagEmoji } from './emoji-util';
+import { useRootSelector } from '../../redux';
 
 interface CityPickerProps {
     defaultValueId?: string;
@@ -14,6 +15,7 @@ export default function CityPicker(props: CityPickerProps) {
 
     const { i18n } = useTranslation();
 
+    const { cityList } = useRootSelector(state => state.app);
     const currentItem = defaultValueId ? cityList.find(item => item.id === defaultValueId) : undefined;
 
     const displayValue = (item: CityEntry): string => {

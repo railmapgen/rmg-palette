@@ -22,9 +22,9 @@ export const getPalette = async (cityId: string, signal?: AbortSignal): Promise<
 };
 
 export const getCityList = async (signal?: AbortSignal): Promise<CityEntry[]> => {
-    return await cachedFetch(`/rmg-palette/resources/palettes/city-config.json`, { signal });
+    return await cachedFetch(`/rmg-palette/resources/city-config.json`, { signal });
 };
 
 export const getCountryList = async (signal?: AbortSignal): Promise<CountryEntry[]> => {
-    return await cachedFetch(`/rmg-palette/resources/palettes/country-config.json`, { signal });
+    return await cachedFetch(`/rmg-palette/resources/country-config.json`, { signal });
 };
