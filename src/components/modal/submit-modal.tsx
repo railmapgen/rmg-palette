@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import SubmitModalStepError from './submit-modal-step-error';
 import SubmitModalStepJustification from './submit-modal-step-justification';
 import SubmitModalStepSubmit from './submit-modal-step-submit';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 
 interface SubmitModalProps {
     isOpen: boolean;
@@ -28,6 +29,7 @@ export default function SubmitModal(props: SubmitModalProps) {
     const [isIgnoreErrors, setIsIgnoreErrors] = useState(false);
     const [isFinishJustification, setIsFinishJustification] = useState(false);
 
+    const { countryList } = useRootSelector(state => state.app);
     const ticket = useRootSelector(state => state.ticket);
     const countryEntry = ticketSelectors.getCountryEntry(ticket);
     const cityEntry = ticketSelectors.getCityEntry(ticket);
@@ -36,8 +38,8 @@ export default function SubmitModal(props: SubmitModalProps) {
     useEffect(() => {
         if (isOpen) {
             setCountryErrors(ticketSelectors.getCountryErrors(ticket));
-            setCityErrors(ticketSelectors.getCityErrors(ticket));
-            setLineErrors(ticketSelectors.getLineErrors(ticket));
+            setCityErrors(ticketSelectors.getCityErrors(ticket, countryList));
+            setLineErrors(ticketSelectors.getLineErrors(ticket, countryList));
         } else {
             // reset modal
             setIsIgnoreErrors(false);
@@ -54,7 +56,7 @@ export default function SubmitModal(props: SubmitModalProps) {
 
     const handleCloseAfterFinish = () => {
         if (!isShowStepError && !isShowStepJustification) {
-            window.localStorage.removeItem(DRAFT_TICKET_KEY);
+            rmgRuntime.storage.remove(DRAFT_TICKET_KEY);
         }
         onClose();
     };

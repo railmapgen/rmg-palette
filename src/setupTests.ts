@@ -35,6 +35,13 @@ global.fetch = (...args) => {
                     instance: 'localhost',
                 }),
         }) as any;
+    } else if (args[0].toString().includes('amazonaws.com')) {
+        return Promise.resolve({
+            json: () =>
+                Promise.resolve({
+                    data: { getColor: { hex: 'aaaaaa' } },
+                }),
+        });
     } else {
         return originalFetch(...args);
     }

@@ -1,7 +1,7 @@
 import {
     CityEntry,
-    cityList,
     ColourHex,
+    getCityList,
     getPalette,
     MonoColour,
     PaletteEntry,
@@ -56,11 +56,12 @@ export const getTranslationEntityInvalidReasons = (
 };
 
 export const getTicketByCityId = async (
-    id: string
+    id: string,
+    cityList?: CityEntry[]
 ): Promise<{ city: CityEntry; palettes: PaletteEntry[] } | undefined> => {
-    const city = cityList.find(entry => entry.id === id);
+    const city = (cityList ?? (await getCityList())).find(entry => entry.id === id);
     if (!city) {
-        console.error('getTicketByCityId():: invalid city ID', id);
+        console.error(`getTicketByCityId(${id}), invalid city ID`);
         return undefined;
     }
 
@@ -68,7 +69,7 @@ export const getTicketByCityId = async (
         const palettes = await getPalette(id);
         return { city, palettes };
     } catch (e) {
-        console.error('getTicketByCityId():: unexpected errors', e);
+        console.error(`getTicketByCityId(${id}), unexpected errors`, e);
         return undefined;
     }
 };

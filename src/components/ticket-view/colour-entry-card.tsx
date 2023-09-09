@@ -1,65 +1,53 @@
 import { RmgButtonGroup, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-import {
-    updateLineBgColour,
-    updateLineFgColour,
-    updateLineId,
-    updateLinePantone,
-} from '../../redux/ticket/ticket-slice';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
-import { useRootDispatch, useRootSelector } from '../../redux';
+import { useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 import { getRGBByPantone } from '../../service/pantone-service';
 import { flushSync } from 'react-dom';
+import { PaletteEntryWithTranslationEntry } from '../../redux/ticket/util';
+import { LineDetailUpdates } from '../../redux/ticket/ticket-slice';
 
 interface ColourEntryCardProps {
-    entryId: string;
-    pantoneReady?: boolean;
+    lineDetail: PaletteEntryWithTranslationEntry;
+    onUpdate: (updates: LineDetailUpdates) => void;
 }
 
 export default function ColourEntryCard(props: ColourEntryCardProps) {
-    const { entryId, pantoneReady } = props;
+    const { lineDetail, onUpdate } = props;
 
     const { t } = useTranslation();
 
-    const dispatch = useRootDispatch();
-    const lines = useRootSelector(state => state.ticket.lines);
-    const line = lines[entryId];
+    const { pantoneReady } = useRootSelector(state => state.app);
 
-    const [colourMode, setColourMode] = useState<'pantone' | 'hex'>('hex');
-    const [pantoneInput, setPantoneInput] = useState('');
+    const [colourMode, setColourMode] = useState<'pantone' | 'hex'>(lineDetail.pantone ? 'pantone' : 'hex');
+    const [pantoneInput, setPantoneInput] = useState(lineDetail.pantone ?? '');
 
     const controllerRef = useRef(new AbortController());
 
     useEffect(() => {
-        controllerRef.current.abort();
-        const line = lines[entryId];
-        if (line?.pantone) {
-            setPantoneInput(line.pantone);
-            setColourMode('pantone');
-        } else {
-            setPantoneInput('');
-            setColourMode('hex');
-        }
-    }, [entryId]);
+        return () => {
+            controllerRef.current?.abort();
+        };
+    }, []);
 
     const handlePantoneInput = async (value: string) => {
         controllerRef.current.abort();
 
-        if (!line || !pantoneReady) {
+        if (!pantoneReady) {
             return;
         }
 
         controllerRef.current = new AbortController();
         try {
             const hex = await getRGBByPantone(value, controllerRef.current.signal);
-            dispatch(updateLinePantone({ entryId, pantone: value, hex }));
+            onUpdate({ pantone: value, colour: hex });
             setPantoneInput(value);
         } catch (e) {
             flushSync(() => {
                 setPantoneInput(value);
             });
-            setPantoneInput(line.pantone ?? '');
+            setPantoneInput(lineDetail.pantone ?? '');
         }
     };
 
@@ -73,8 +61,8 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
             type: 'input',
             label: t('Line code'),
             placeholder: 'e.g. twl, gz1, sh1',
-            value: line.id,
-            onChange: value => dispatch(updateLineId({ entryId, lineId: value })),
+            value: lineDetail.id,
+            onChange: value => onUpdate({ id: value }),
             validator: value => value !== '' && !value.match(/[^a-z0-9]/),
         },
         {
@@ -93,8 +81,8 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
             type: 'input',
             label: t('Background colour'),
             variant: 'color',
-            value: line.colour,
-            onChange: value => dispatch(updateLineBgColour({ entryId, bgColour: value as ColourHex })),
+            value: lineDetail.colour,
+            onChange: value => onUpdate({ colour: value as ColourHex }),
             hidden: pantoneReady && colourMode === 'pantone',
         },
         {
@@ -108,12 +96,12 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
         {
             type: 'select',
             label: t('Foreground colour'),
-            value: line.fg,
+            value: lineDetail.fg,
             options: {
                 [MonoColour.white]: t('White'),
                 [MonoColour.black]: t('Black'),
             },
-            onChange: value => dispatch(updateLineFgColour({ entryId, fgColour: value as MonoColour })),
+            onChange: value => onUpdate({ fg: value as MonoColour }),
         },
     ];
 

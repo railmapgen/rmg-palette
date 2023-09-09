@@ -19,7 +19,7 @@ const cardRowStyles: SystemStyleObject = {
     },
 };
 
-export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
+export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     const { onUpdate, onLangSwitch, onRemove } = props;
     const entries = props.entries ?? [];
 
@@ -60,7 +60,7 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
     };
 
     return (
-        <RmgCard direction="column">
+        <>
             {entries.map(([lang, name], idx, arr) => (
                 <HStack key={idx} sx={cardRowStyles} data-testid={'entry-card-stack-' + lang}>
                     <RmgFields fields={getFields(lang as LanguageCode, name)} noLabel={idx > 0} />
@@ -89,6 +89,14 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                     )}
                 </HStack>
             ))}
+        </>
+    );
+};
+
+export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
+    return (
+        <RmgCard direction="column">
+            <MultiLangEntryCardInner {...props} />
         </RmgCard>
     );
 }

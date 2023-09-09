@@ -1,5 +1,6 @@
 @import "ag-grid-community/styles/ag-grid.css";
 @import "ag-grid-community/styles/ag-theme-alpine.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 :root {
     background-color: #FFFFFF;
@@ -36,4 +37,9 @@ div#root {
 
 * {
     box-sizing: border-box;
+}
+
+.flag-emoji {
+    font-family: 'Apple Color Emoji', 'Noto Color Emoji', -apple-system, sans-serif;
+    margin-right: 0.5rem;
 }
