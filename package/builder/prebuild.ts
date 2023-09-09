@@ -3,32 +3,20 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { mkdir, readFile, writeFile } from 'fs/promises';
-import { CityEntry, CountryEntry } from '../src';
+import { CityEntry } from '../src';
 import { execSync } from 'child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const sourcePath = path.join(__dirname, '../../public/resources');
-const targetPath = path.join(__dirname, '../src/palettes');
-const distTargetPath = path.join(__dirname, '../dist/palettes');
+const distPath = path.join(__dirname, '../dist');
 
-const copyCityConfig = async () => {
-    console.log('Copying city list...');
-
+const generateUpdateHistory = async () => {
     // read source file
     const cityConfigStr = await readFile(path.join(sourcePath, 'city-config.json'), 'utf-8');
     const cityConfig: CityEntry[] = JSON.parse(cityConfigStr);
 
-    // generate update history
-    await generateUpdateHistory(cityConfig);
-
-    // copy to target dir
-    await mkdir(targetPath, { recursive: true });
-    await writeFile(path.join(targetPath, 'city-config.json'), JSON.stringify(cityConfig));
-};
-
-const generateUpdateHistory = async (config: CityEntry[]) => {
-    const history = config.reduce<Record<string, number>>((acc, cur) => {
+    const history = cityConfig.reduce<Record<string, number>>((acc, cur) => {
         console.log(`generateUpdateHistory(), getting last update time of ${cur.id}`);
         const lastCommitted = Number(
             execSync(`git log -1 --pretty="format:%ct" ../public/resources/palettes/${cur.id}.json`).toString() + '000'
@@ -39,19 +27,7 @@ const generateUpdateHistory = async (config: CityEntry[]) => {
             return { ...acc, [cur.id]: lastCommitted };
         }
     }, {});
-    await writeFile(`../public/resources/history.json`, JSON.stringify(history));
-};
-
-const copyCountryConfig = async () => {
-    console.log('Copying country list...');
-
-    // read source file
-    const countryConfigStr = await readFile(path.join(sourcePath, 'country-config.json'), 'utf-8');
-    const countryConfig: CountryEntry[] = JSON.parse(countryConfigStr);
-
-    // copy to target dir
-    await mkdir(targetPath, { recursive: true });
-    await writeFile(path.join(targetPath, 'country-config.json'), JSON.stringify(countryConfig));
+    await writeFile(path.join(sourcePath, 'history.json'), JSON.stringify(history));
 };
 
 const writePackageJson = async () => {
@@ -61,13 +37,12 @@ const writePackageJson = async () => {
     const packageJsonStr = await readFile(path.join(__dirname, '..', 'package.json'), 'utf-8');
     const { type: _, ...others } = JSON.parse(packageJsonStr);
 
-    await mkdir(path.join(distTargetPath), { recursive: true });
-    await writeFile(path.join(distTargetPath, '..', 'package.json'), JSON.stringify(others));
+    await mkdir(path.join(distPath), { recursive: true });
+    await writeFile(path.join(distPath, 'package.json'), JSON.stringify(others));
 };
 
 const prebuild = async () => {
-    await copyCityConfig();
-    await copyCountryConfig();
+    await generateUpdateHistory();
     await writePackageJson();
 };
 

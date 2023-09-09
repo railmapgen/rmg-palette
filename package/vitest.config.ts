@@ -5,5 +5,6 @@ export default defineConfig({
         globals: true,
         root: './src/',
         environment: 'jsdom',
+        watch: false,
     },
 });
