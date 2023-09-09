@@ -4,10 +4,10 @@ import CountrySection from './country-section';
 import CitySection from './city-section';
 import LinesSection from './lines-section';
 import { resetTicket, TicketState } from '../../redux/ticket/ticket-slice';
-import { useRootDispatch } from '../../redux';
+import { useRootDispatch, useRootSelector } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
 import { useNavigate } from 'react-router-dom';
-import { RmgPage } from '@railmapgen/rmg-components';
+import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { DRAFT_TICKET_KEY, Events } from '../../util/constants';
@@ -17,6 +17,8 @@ export default function TicketView() {
     const { t } = useTranslation();
     const dispatch = useRootDispatch();
     const navigate = useNavigate();
+
+    const { isDataLoading } = useRootSelector(state => state.app);
 
     const [draftTicket, setDraftTicket] = useState<TicketState>();
     const [isUnsavedDraftModalOpen, setIsUnsavedDraftModalOpen] = useState(false);
@@ -59,6 +61,8 @@ export default function TicketView() {
                 width: { base: '100%', md: 520 },
             }}
         >
+            {isDataLoading && <RmgLoader isIndeterminate />}
+
             <Flex direction="column" flex={1} overflowY="auto">
                 <CountrySection />
                 <CitySection />

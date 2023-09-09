@@ -1,11 +1,11 @@
-import { RmgPage } from '@railmapgen/rmg-components';
+import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import ColourModal from './colour-modal';
 import { useEffect, useRef, useState } from 'react';
 import { Events } from '../../util/constants';
 import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
-import { useRootDispatch } from '../../redux';
+import { useRootDispatch, useRootSelector } from '../../redux';
 import { addRecentlyUsed } from '../../redux/app/app-slice';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
@@ -16,6 +16,7 @@ export default function PickerView() {
     const parentComponent = searchParams.get('parentComponent');
 
     const dispatch = useRootDispatch();
+    const { isDataLoading } = useRootSelector(state => state.app);
 
     const [sessionId, setSessionId] = useState<string>();
     const [theme, setTheme] = useState<Theme>();
@@ -74,6 +75,7 @@ export default function PickerView() {
 
     return (
         <RmgPage>
+            {isDataLoading && <RmgLoader isIndeterminate />}
             <ColourModal defaultTheme={theme} sessionId={sessionId} onSubmit={handleSubmit} onClose={handleClose} />
         </RmgPage>
     );
