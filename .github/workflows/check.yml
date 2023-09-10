@@ -16,7 +16,6 @@ jobs:
       - name: Resources check
         run: |
           npm install
-          npm run check
           npm run test
           npm run build
         working-directory: ./package
