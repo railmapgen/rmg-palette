@@ -121,7 +121,7 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
             </RmgCard>
 
             {editing && (
-                <Flex direction="column" my={1}>
+                <Flex direction="column" position="relative" my={1}>
                     <ColourEntryCard lineDetail={lineDetail} onUpdate={updates => onUpdate?.(updates)} />
                     <MultiLangEntryCardInner
                         entries={lineDetail.nameEntity}
