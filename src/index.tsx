@@ -8,7 +8,7 @@ import i18n from './i18n/config';
 import AppRoot from './components/app-root';
 import './index.css';
 import { Events } from './util/constants';
-import { initStore } from './redux/init';
+import { initPickerState, initStore } from './redux/init';
 import { getCityList, getCountryList } from '@railmapgen/rmg-palette-resources';
 import { setCityList, setCountryList, setIsDataLoading } from './redux/app/app-slice';
 
@@ -48,4 +48,6 @@ rmgRuntime
             console.error('Unable to load country list', e);
         }
         store.dispatch(setIsDataLoading(false));
+
+        await initPickerState(store);
     });
