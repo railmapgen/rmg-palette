@@ -41,17 +41,11 @@ export default function PickerView() {
 
         console.log(`[${channel.name}] App clip connection established, parentComponent=${parentComponent}`);
 
-        // reset window header margin
-        const styleEl = document.createElement('style');
-        styleEl.textContent = `.rmg-window__header{margin-left: unset;}`;
-        document.head.appendChild(styleEl);
-
         // post loaded event
         channel.postMessage({ event: 'LOADED' });
 
         return () => {
             channel.close();
-            document.head.removeChild(styleEl);
         };
     }, []);
 
