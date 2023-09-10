@@ -12,8 +12,7 @@
     "scripts": {
         "build": "node --loader ts-node/esm --experimental-specifier-resolution=node builder/prebuild.ts && npx tsc --project tsconfig.build.json",
         "test": "vitest",
-        "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts",
-        "prepare": "ts-patch install"
+        "issuebot": "node --loader ts-node/esm ./issuebot/issuebot.ts"
     },
     "author": "",
     "license": "GPL-3.0",
@@ -21,9 +20,7 @@
         "@types/jsdom": "^21.1.2",
         "jsdom": "^22.1.0",
         "ts-node": "^10.9.1",
-        "ts-patch": "^3.0.2",
         "typescript": "^5.2.2",
-        "typia": "^5.0.2",
         "vitest": "^0.34.3"
     },
     "exports": {
