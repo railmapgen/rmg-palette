@@ -23,7 +23,7 @@
             }
         ],
         "strictNullChecks": true,
-        "types": ["vitest/globals"]
+        "types": ["vite/client","vitest/globals"]
     },
     "include": ["builder/**/*", "checker/**/*", "issuebot/**/*", "src/**/*"]
 }
