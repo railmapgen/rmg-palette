@@ -1,5 +1,5 @@
-import { Box, Heading } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
+import { chakra, Heading } from '@chakra-ui/react';
+import { RmgFields, RmgFieldsField, RmgSectionHeader } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     clearLines,
@@ -72,20 +72,24 @@ export default function CitySection() {
     ];
 
     return (
-        <Box as="section">
-            <Heading as="h5" size="sm" mt={3} mb={2}>
-                {t('City')}
-            </Heading>
+        <section>
+            <RmgSectionHeader>
+                <Heading as="h5" size="sm">
+                    {t('City')}
+                </Heading>
+            </RmgSectionHeader>
 
-            <RmgFields fields={fields} />
-            {city === 'new' && (
-                <MultiLangEntryCard
-                    entries={cityName}
-                    onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
-                    onLangSwitch={(prevLang, nextLang) => dispatch(switchCityNameLang({ prevLang, nextLang }))}
-                    onRemove={lang => dispatch(removeCityName(lang))}
-                />
-            )}
-        </Box>
+            <chakra.div px={1}>
+                <RmgFields fields={fields} />
+                {city === 'new' && (
+                    <MultiLangEntryCard
+                        entries={cityName}
+                        onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
+                        onLangSwitch={(prevLang, nextLang) => dispatch(switchCityNameLang({ prevLang, nextLang }))}
+                        onRemove={lang => dispatch(removeCityName(lang))}
+                    />
+                )}
+            </chakra.div>
+        </section>
     );
 }

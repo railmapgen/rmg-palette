@@ -53,7 +53,15 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
                 color: lineDetail.fg,
             },
 
-            '& > div': {
+            // display name
+            '& > div:first-of-type': {
+                overflow: 'hidden',
+                textWrap: 'nowrap',
+                textOverflow: 'ellipsis',
+            },
+
+            // actions
+            '& > div:last-of-type': {
                 ml: 'auto',
             },
         }),
@@ -65,7 +73,7 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
     return (
         <RmgCard direction="column" sx={{ pb: 0 }}>
             <RmgCard sx={styles}>
-                {displayName}
+                <div>{displayName}</div>
                 {editable && (
                     <HStack spacing={0.5}>
                         <IconButton
