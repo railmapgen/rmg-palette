@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, VStack } from '@chakra-ui/react';
+import { Button, Heading, VStack } from '@chakra-ui/react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
@@ -15,6 +15,7 @@ import { MdAdd } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import PantoneChecker from './pantone-checker';
 import LineDetailCard from '../line-detail-card';
+import { RmgSectionHeader } from '@railmapgen/rmg-components';
 
 export default function LinesSection() {
     const { t } = useTranslation();
@@ -23,16 +24,16 @@ export default function LinesSection() {
     const lines = useRootSelector(state => state.ticket.lines);
 
     return (
-        <Box as="section">
-            <Flex mt={3} mb={2} alignItems="center">
+        <section>
+            <RmgSectionHeader>
                 <Heading as="h5" size="sm" mr="auto">
                     {t('Lines')}
                 </Heading>
 
                 <PantoneChecker />
-            </Flex>
+            </RmgSectionHeader>
 
-            <VStack spacing={1}>
+            <VStack spacing={1} px={1}>
                 {Object.entries(lines).map(([entryId, line]) => {
                     return (
                         <LineDetailCard
@@ -63,6 +64,6 @@ export default function LinesSection() {
                     {t('Add a line')}
                 </Button>
             </VStack>
-        </Box>
+        </section>
     );
 }
