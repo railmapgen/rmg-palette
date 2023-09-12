@@ -22,7 +22,7 @@
     {
         "id": "cs3",
         "colour": "#C0DF16",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
@@ -144,7 +144,7 @@
         "colour": "#db7093",
         "fg": "#fff",
         "name": {
-            "en": "Xihuan line",
+            "en": "Xihuan Line",
             "zh-Hans": "西环线",
             "zh-Hant": "西環線"
         }
