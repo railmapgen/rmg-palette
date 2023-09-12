@@ -55,10 +55,14 @@ const appSlice = createSlice({
 
         addRecentlyUsed: (state, action: PayloadAction<PaletteUsage>) => {
             const newUsage = action.payload;
-            const currentIndex = state.recentlyUsed.findIndex(
-                ({ theme }) => theme[0] === newUsage.theme[0] && theme[1] === newUsage.theme[1]
-            );
-            if (newUsage.theme[0] === 'other' || currentIndex < 0) {
+            const currentIndex = state.recentlyUsed.findIndex(({ theme }) => {
+                if (newUsage.theme[0] === 'other') {
+                    return theme.toString() === newUsage.theme.toString();
+                } else {
+                    return theme[0] === newUsage.theme[0] && theme[1] === newUsage.theme[1];
+                }
+            });
+            if (currentIndex < 0) {
                 state.recentlyUsed = [action.payload, ...state.recentlyUsed].slice(0, 10);
             } else {
                 state.recentlyUsed = [
@@ -67,6 +71,10 @@ const appSlice = createSlice({
                     ...state.recentlyUsed.slice(currentIndex + 1),
                 ];
             }
+        },
+
+        clearRecentlyUsed: state => {
+            state.recentlyUsed = [];
         },
     },
 });
@@ -79,5 +87,6 @@ export const {
     setPantoneReady,
     setRecentlyUsed,
     addRecentlyUsed,
+    clearRecentlyUsed,
 } = appSlice.actions;
 export default appSlice.reducer;
