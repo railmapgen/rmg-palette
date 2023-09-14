@@ -609,6 +609,16 @@
         }
     },
     {
+        "id": "jrhokkaido",
+        "country": "JP",
+        "name": {
+            "en": "JR Hokkaido",
+            "zh-Hans": "JR北海道",
+            "ja": "JR北海道",
+            "zh-Hant": "JR北海道"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
