@@ -187,17 +187,6 @@
         }
     },
     {
-        "id": "ms20",
-        "colour": "#F05972",
-        "fg": "#fff",
-        "name": {
-            "en": "S20",
-            "de": "S20",
-            "zh-Hans": "市域S20（跨线运行）",
-            "zh-Hant": "市域S20（跨線運行）"
-        }
-    },
-    {
         "id": "ms27",
         "colour": "#f4929c",
         "fg": "#fff",
@@ -209,6 +198,17 @@
         }
     },
     {
+        "id": "ms20",
+        "colour": "#F05972",
+        "fg": "#fff",
+        "name": {
+            "en": "S20",
+            "de": "S20",
+            "zh-Hans": "市域S20（跨线运行）",
+            "zh-Hant": "市域S20（跨線運行）"
+        }
+    },
+    {
         "id": "mrz",
         "colour": "#313D85",
         "fg": "#fff",
@@ -217,6 +217,17 @@
             "de": "Regionalzug",
             "zh-Hans": "市域列车",
             "zh-Hant": "市域列車"
+        }
+    },
+    {
+        "id": "mu8",
+        "colour": "#cdc6b9",
+        "fg": "#fff",
+        "name": {
+            "en": "U8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線",
+            "de": "U8"
         }
     }
 ]
