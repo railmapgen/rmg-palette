@@ -6,7 +6,7 @@ import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
-import { addRecentlyUsed } from '../../redux/app/app-slice';
+import { addRecentlyUsed, clearRecentlyUsed } from '../../redux/app/app-slice';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
@@ -67,10 +67,21 @@ export default function PickerView() {
         rmgRuntime.event(Events.APP_CLIP_VIEW_CLOSED, { parentComponent });
     };
 
+    const handleClearHistory = () => {
+        dispatch(clearRecentlyUsed());
+        rmgRuntime.event(Events.CLEAR_HISTORY, {});
+    };
+
     return (
         <RmgPage>
             {isDataLoading && <RmgLoader isIndeterminate />}
-            <ColourModal defaultTheme={theme} sessionId={sessionId} onSubmit={handleSubmit} onClose={handleClose} />
+            <ColourModal
+                defaultTheme={theme}
+                sessionId={sessionId}
+                onSubmit={handleSubmit}
+                onClose={handleClose}
+                onClearHistory={handleClearHistory}
+            />
         </RmgPage>
     );
 }

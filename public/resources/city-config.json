@@ -968,6 +968,15 @@
         }
     },
     {
+        "id": "newcastle",
+        "country": "AU",
+        "name": {
+            "en": "Newcastle",
+            "zh-Hans": "纽卡斯尔",
+            "zh-Hant": "紐卡斯爾"
+        }
+    },
+    {
         "id": "neworleans",
         "country": "US",
         "name": {

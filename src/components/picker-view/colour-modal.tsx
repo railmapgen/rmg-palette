@@ -1,11 +1,11 @@
 import {
     Button,
     Divider,
+    Flex,
     Heading,
     HStack,
     IconButton,
     SystemStyleObject,
-    VStack,
     Wrap,
     WrapItem,
 } from '@chakra-ui/react';
@@ -14,7 +14,7 @@ import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
 import { ColourHex, MonoColour, Theme } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
+import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge, RmgSectionHeader } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../../redux';
 import { MdCircle } from 'react-icons/md';
 
@@ -23,24 +23,33 @@ const hexValidator = (value: string): boolean => {
 };
 
 const styles: SystemStyleObject = {
+    flexDirection: 'column',
     flex: 1,
     mx: 2,
+    overflowX: 'hidden',
+    overflowY: 'scroll',
 
     '& .chakra-badge': {
         fontSize: '1em',
+        width: 'fit-content',
+        alignSelf: 'center',
+        m: 1,
     },
 
-    '& > .chakra-stack': {
+    '& > section:first-of-type': {
+        p: 1,
+    },
+
+    '& > section:last-of-type': {
         w: '100%',
-        p: 2,
 
-        '& > div': {
-            w: '100%',
+        '& > div:last-of-type': {
+            px: 2,
         },
-    },
 
-    '& h5': {
-        alignSelf: 'flex-start',
+        '& .rmg-section__header button': {
+            ml: 'auto',
+        },
     },
 };
 
@@ -49,10 +58,11 @@ interface ColourModalProps {
     sessionId?: string;
     onSubmit?: (theme: Theme, displayName?: string) => void;
     onClose: () => void;
+    onClearHistory: () => void;
 }
 
 export default function ColourModal(props: ColourModalProps) {
-    const { defaultTheme, sessionId, onSubmit, onClose } = props;
+    const { defaultTheme, sessionId, onSubmit, onClose, onClearHistory } = props;
 
     const { t } = useTranslation();
     const { recentlyUsed } = useRootSelector(state => state.app);
@@ -176,18 +186,25 @@ export default function ColourModal(props: ColourModalProps) {
 
     return (
         <>
-            <VStack sx={styles}>
+            <Flex sx={styles}>
                 <RmgLineBadge name={t('Example')} fg={fgColour} bg={bgColour} />
 
-                <VStack>
+                <section>
                     <RmgFields fields={paletteFields} />
                     <RmgFields fields={customFields} />
-                </VStack>
+                </section>
 
-                <VStack>
-                    <Heading as="h5" size="xs">
-                        {t('Recently used')}
-                    </Heading>
+                <section>
+                    <RmgSectionHeader>
+                        <Heading as="h5" size="xs">
+                            {t('Recently used')}
+                        </Heading>
+
+                        <Button variant="ghost" size="xs" onClick={onClearHistory}>
+                            {t('Clear')}
+                        </Button>
+                    </RmgSectionHeader>
+
                     <Wrap>
                         {recentlyUsed.map(({ theme, displayName }) => (
                             <WrapItem key={theme.join('-')}>
@@ -204,8 +221,8 @@ export default function ColourModal(props: ColourModalProps) {
                             </WrapItem>
                         ))}
                     </Wrap>
-                </VStack>
-            </VStack>
+                </section>
+            </Flex>
 
             <Divider />
 
