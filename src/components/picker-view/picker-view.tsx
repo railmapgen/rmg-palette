@@ -1,10 +1,12 @@
-import { RmgPage } from '@railmapgen/rmg-components';
+import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import ColourModal from './colour-modal';
 import { useEffect, useRef, useState } from 'react';
 import { Events } from '../../util/constants';
 import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
+import { useRootDispatch, useRootSelector } from '../../redux';
+import { addRecentlyUsed, clearRecentlyUsed } from '../../redux/app/app-slice';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
@@ -12,6 +14,9 @@ export default function PickerView() {
     const [searchParams] = useSearchParams();
     const parentId = searchParams.get('parentId');
     const parentComponent = searchParams.get('parentComponent');
+
+    const dispatch = useRootDispatch();
+    const { isDataLoading } = useRootSelector(state => state.app);
 
     const [sessionId, setSessionId] = useState<string>();
     const [theme, setTheme] = useState<Theme>();
@@ -36,26 +41,21 @@ export default function PickerView() {
 
         console.log(`[${channel.name}] App clip connection established, parentComponent=${parentComponent}`);
 
-        // reset window header margin
-        const styleEl = document.createElement('style');
-        styleEl.textContent = `.rmg-window__header{margin-left: unset;}`;
-        document.head.appendChild(styleEl);
-
         // post loaded event
         channel.postMessage({ event: 'LOADED' });
 
         return () => {
             channel.close();
-            document.head.removeChild(styleEl);
         };
     }, []);
 
-    const handleSubmit = (nextTheme: Theme) => {
+    const handleSubmit = (nextTheme: Theme, displayName?: string) => {
         console.log(`[${channelRef.current?.name}] Emitting SELECT event, theme:`, nextTheme);
         channelRef.current?.postMessage({
             event: 'SELECT',
             data: nextTheme,
         });
+        dispatch(addRecentlyUsed({ theme: nextTheme, displayName }));
         rmgRuntime.event(Events.APP_CLIP_VIEW_SELECT, { parentComponent, theme: nextTheme });
     };
 
@@ -67,9 +67,21 @@ export default function PickerView() {
         rmgRuntime.event(Events.APP_CLIP_VIEW_CLOSED, { parentComponent });
     };
 
+    const handleClearHistory = () => {
+        dispatch(clearRecentlyUsed());
+        rmgRuntime.event(Events.CLEAR_HISTORY, {});
+    };
+
     return (
         <RmgPage>
-            <ColourModal defaultTheme={theme} sessionId={sessionId} onSubmit={handleSubmit} onClose={handleClose} />
+            {isDataLoading && <RmgLoader isIndeterminate />}
+            <ColourModal
+                defaultTheme={theme}
+                sessionId={sessionId}
+                onSubmit={handleSubmit}
+                onClose={handleClose}
+                onClearHistory={handleClearHistory}
+            />
         </RmgPage>
     );
 }

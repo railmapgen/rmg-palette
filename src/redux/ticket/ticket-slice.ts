@@ -1,15 +1,10 @@
-import {
-    CityEntry,
-    ColourHex,
-    CountryEntry,
-    countryList,
-    MonoColour,
-    PaletteEntry,
-} from '@railmapgen/rmg-palette-resources';
+import { CityEntry, CountryEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { LanguageCode, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
 import { createSlice, EntityId, PayloadAction } from '@reduxjs/toolkit';
 import { InvalidReasonType, TicketInvalidReasonType } from '../../util/constants';
 import { getTranslationEntityInvalidReasons, PaletteEntryWithTranslationEntry, TranslationEntry } from './util';
+
+export type LineDetailUpdates = Partial<Omit<PaletteEntryWithTranslationEntry, 'nameEntity'>>;
 
 const initialTranslation: TranslationEntry[] = SUPPORTED_LANGUAGES.map(lang => [lang, '']);
 
@@ -119,24 +114,46 @@ const ticketSlice = createSlice({
             state.cityName = state.cityName.filter(entry => entry[0] !== action.payload);
         },
 
-        updateLineId: (state, action: PayloadAction<{ entryId: string; lineId: string }>) => {
-            state.lines[action.payload.entryId].id = action.payload.lineId;
+        updateLineDetail: (state, action: PayloadAction<{ entryId: string; updates: LineDetailUpdates }>) => {
+            const { entryId, updates } = action.payload;
+            state.lines[entryId] = {
+                ...state.lines[entryId],
+                ...updates,
+            };
         },
 
-        updateLineBgColour: (state, action: PayloadAction<{ entryId: string; bgColour: ColourHex }>) => {
-            const { entryId, bgColour } = action.payload;
-            state.lines[entryId].colour = bgColour;
-            state.lines[entryId].pantone = undefined;
+        moveLineUp: (state, action: PayloadAction<string>) => {
+            const keys = Object.keys(state.lines);
+            const entryId = action.payload;
+            const currentIndex = keys.findIndex(key => key === entryId);
+            if (currentIndex <= 0) {
+                return;
+            }
+
+            const chunk1 = keys.slice(0, currentIndex - 1);
+            const chunk2 = [entryId, keys[currentIndex - 1]];
+            const chunk3 = keys.slice(currentIndex);
+
+            state.lines = Object.fromEntries(
+                [chunk1, chunk2, chunk3].map(chunk => chunk.map(key => [key, state.lines[key]])).flat(1)
+            );
         },
 
-        updateLinePantone: (state, action: PayloadAction<{ entryId: string; pantone: string; hex: ColourHex }>) => {
-            const { entryId, pantone, hex } = action.payload;
-            state.lines[entryId].colour = hex;
-            state.lines[entryId].pantone = pantone;
-        },
+        moveLineDown: (state, action: PayloadAction<string>) => {
+            const keys = Object.keys(state.lines);
+            const entryId = action.payload;
+            const currentIndex = keys.findIndex(key => key === entryId);
+            if (currentIndex < 0 || currentIndex >= keys.length - 1) {
+                return;
+            }
 
-        updateLineFgColour: (state, action: PayloadAction<{ entryId: string; fgColour: MonoColour }>) => {
-            state.lines[action.payload.entryId].fg = action.payload.fgColour;
+            const chunk1 = keys.slice(0, currentIndex);
+            const chunk2 = [keys[currentIndex + 1], entryId];
+            const chunk3 = keys.slice(currentIndex + 1);
+
+            state.lines = Object.fromEntries(
+                [chunk1, chunk2, chunk3].map(chunk => chunk.map(key => [key, state.lines[key]])).flat(1)
+            );
         },
 
         updateLineName: (state, action: PayloadAction<{ entryId: string; lang: LanguageCode; name: string }>) => {
@@ -246,7 +263,7 @@ export const ticketSelectors = {
         return result;
     },
 
-    getCityErrors: (state: TicketState): InvalidReasonType[] => {
+    getCityErrors: (state: TicketState, countryList: CountryEntry[]): InvalidReasonType[] => {
         const result = [];
         const { country, newCountryLang, city, newCity, cityName } = state;
 
@@ -261,7 +278,7 @@ export const ticketSelectors = {
         return result;
     },
 
-    getLineErrors: (state: TicketState): Record<string, InvalidReasonType[]> => {
+    getLineErrors: (state: TicketState, countryList: CountryEntry[]): Record<string, InvalidReasonType[]> => {
         const result: Record<string, InvalidReasonType[]> = { Overall: [] };
         const { country, newCountryLang, lines } = state;
 
@@ -295,10 +312,9 @@ export const {
     updateCityName,
     switchCityNameLang,
     removeCityName,
-    updateLineId,
-    updateLineBgColour,
-    updateLinePantone,
-    updateLineFgColour,
+    updateLineDetail,
+    moveLineUp,
+    moveLineDown,
     updateLineName,
     switchLineNameLang,
     removeLineName,

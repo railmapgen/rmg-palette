@@ -1,4 +1,3 @@
-import { countryList } from '@railmapgen/rmg-palette-resources';
 import { useDispatch } from 'react-redux';
 import { setSelectedCountry } from '../redux/app/app-slice';
 import { RmgFields, RmgFieldsField, RmgPageHeader } from '@railmapgen/rmg-components';
@@ -17,7 +16,7 @@ export default function PageHeader() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    const selectedCountry = useRootSelector(state => state.app.selectedCountry);
+    const { countryList, selectedCountry } = useRootSelector(state => state.app);
 
     const countryOptions = countryList
         .map(country => [country.id, translateName(country.name)]) // translate country name

@@ -22,7 +22,8 @@
                 "transform": "typia/lib/transform"
             }
         ],
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "types": ["vite/client","vitest/globals"]
     },
-    "include": ["builder/**/*", "checker/**/*", "issuebot/**/*"]
+    "include": ["builder/**/*", "checker/**/*", "issuebot/**/*", "src/**/*"]
 }

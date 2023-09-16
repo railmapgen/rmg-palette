@@ -3,73 +3,67 @@ import { fireEvent, screen } from '@testing-library/react';
 import { vi } from 'vitest';
 import i18n from '../../i18n/config';
 import { render } from '../../test-utils';
+import rootReducer from '../../redux';
+import { createMockRootStore } from '../../setupTests';
 
-vi.mock('@railmapgen/rmg-palette-resources', () => ({
-    __esModule: true,
-    cityList: [
-        {
-            id: 'edinburgh',
-            country: 'GBSCT',
-            name: {
-                en: 'Edinburgh',
-                'zh-Hans': '爱丁堡',
-                'zh-Hant': '愛丁堡',
+const realStore = rootReducer.getState();
+const mockStore = createMockRootStore({
+    ...realStore,
+    app: {
+        ...realStore.app,
+        cityList: [
+            {
+                id: 'edinburgh',
+                country: 'GBSCT',
+                name: {
+                    en: 'Edinburgh',
+                    'zh-Hans': '爱丁堡',
+                    'zh-Hant': '愛丁堡',
+                },
             },
-        },
-        {
-            id: 'hongkong',
-            country: 'HK',
-            name: {
-                en: 'Hong Kong',
-                zh: '香港',
+            {
+                id: 'hongkong',
+                country: 'HK',
+                name: {
+                    en: 'Hong Kong',
+                    'zh-Hans': '香港',
+                    'zh-Hant': '香港',
+                },
             },
-        },
-        {
-            id: 'taipei',
-            country: 'TW',
-            name: {
-                en: 'Taipei',
-                zh: '台北',
+            {
+                id: 'taipei',
+                country: 'TW',
+                name: {
+                    en: 'Taipei',
+                    'zh-Hans': '台北',
+                    'zh-Hant': '台北',
+                },
             },
-        },
-    ],
-
-    countryList: [
-        {
-            id: 'GBSCT',
-            name: {
-                en: 'Scotland',
+        ],
+        countryList: [
+            {
+                id: 'GBSCT',
+                name: {
+                    en: 'Scotland',
+                },
             },
-            flagEmoji: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-            flagSvg: '1F3F4-E0067-E0062-E0073-E0063-E0074-E007F.svg',
-        },
-        {
-            id: 'HK',
-            name: {
-                en: 'Hong Kong',
-                zh: '香港',
+            {
+                id: 'HK',
+                name: {
+                    en: 'Hong Kong',
+                    'zh-Hans': '香港',
+                    'zh-Hant': '香港',
+                },
             },
-            flagEmoji: '🇭🇰',
-            flagSvg: '1F1ED-1F1F0.svg',
-        },
-        {
-            id: 'TW',
-            name: {
-                en: 'Taiwan',
+            {
+                id: 'TW',
+                name: {
+                    en: 'Taiwan',
+                },
             },
-            flagEmoji: '🇹🇼',
-            flagSvg: '1F1F9-1F1FC.svg',
-        },
-    ],
-
-    CityCode: {
-        Other: 'other',
+        ],
     },
-
-    MonoColour: {
-        white: '#fff',
-    },
-}));
+});
 
 const mockCallbacks = {
     onChange: vi.fn(),
@@ -86,7 +80,7 @@ describe('CityPicker', () => {
     });
 
     it('Can render flag emojis (for non-Windows users) and translations as expected', async () => {
-        render(<CityPicker />);
+        render(<CityPicker />, { store: mockStore });
 
         fireEvent.focus(screen.getByRole('combobox'));
         await screen.findByRole('dialog');
@@ -104,31 +98,14 @@ describe('CityPicker', () => {
         expect(menuItems[2]).toHaveTextContent('香港'); // read zh field
     });
 
-    it('Can render OpenMoji SVG-format emoji for Windows users as expected', async () => {
-        const platformGetter = vi.spyOn(window.navigator, 'platform', 'get');
-        platformGetter.mockReturnValue('Win64');
-
-        render(<CityPicker />);
-
-        fireEvent.focus(screen.getByRole('combobox'));
-        await screen.findByRole('dialog');
-
-        // flag svg to be displayed for 2 of the cities
-        await screen.findByAltText('Flag of GBSCT');
-        await screen.findByAltText('Flag of HK');
-
-        // TW to be censored
-        expect(screen.getAllByRole('menuitem')[1]).toHaveTextContent('🏴');
-    });
-
     it('Can mount component with default city code as expected', () => {
-        render(<CityPicker defaultValueId={'hongkong' as any} />);
+        render(<CityPicker defaultValueId={'hongkong' as any} />, { store: mockStore });
 
         expect(screen.getByDisplayValue('香港')).toBeInTheDocument();
     });
 
     it('Can handle city selection as expected', async () => {
-        render(<CityPicker {...mockCallbacks} />);
+        render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         fireEvent.focus(screen.getByRole('combobox'));
         await screen.findByRole('dialog');

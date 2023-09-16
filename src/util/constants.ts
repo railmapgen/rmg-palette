@@ -92,9 +92,12 @@ export enum Events {
     EDIT_CITY = 'EDIT_CITY',
     RESET_TICKET = 'RESET_TICKET',
 
+    CLEAR_HISTORY = 'CLEAR_HISTORY',
+
     APP_CLIP_VIEW_OPENED = 'APP_CLIP_VIEW_OPENED',
     APP_CLIP_VIEW_CLOSED = 'APP_CLIP_VIEW_CLOSED',
     APP_CLIP_VIEW_SELECT = 'APP_CLIP_VIEW_SELECT',
 }
 
-export const DRAFT_TICKET_KEY = 'rmg-palette__draftTicket';
+export const DRAFT_TICKET_KEY = 'draftTicket';
+export const RECENTLY_USED_KEY = 'recentlyUsed';

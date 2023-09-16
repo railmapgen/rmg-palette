@@ -13,6 +13,7 @@ import { DRAFT_TICKET_KEY } from '../../util/constants';
 import { useRootDispatch } from '../../redux';
 import { resetTicket, TicketState } from '../../redux/ticket/ticket-slice';
 import { useTranslation } from 'react-i18next';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 
 interface DiscardDraftModalProps {
     isOpen: boolean;
@@ -27,7 +28,7 @@ export default function UnsavedDraftModal(props: DiscardDraftModalProps) {
     const dispatch = useRootDispatch();
 
     const handleDiscard = () => {
-        window.localStorage.removeItem(DRAFT_TICKET_KEY);
+        rmgRuntime.storage.remove(DRAFT_TICKET_KEY);
         onClose();
     };
 

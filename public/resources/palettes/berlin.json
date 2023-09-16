@@ -1,193 +1,453 @@
 [
     {
         "id": "bu1",
+        "colour": "#62AD2D",
+        "fg": "#fff",
         "name": {
             "en": "U1",
             "de": "U1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#62AD2D"
+        }
     },
     {
         "id": "bu2",
+        "colour": "#E94E0F",
+        "fg": "#fff",
         "name": {
             "en": "U2",
             "de": "U2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#E94E0F"
+        }
     },
     {
         "id": "bu3",
+        "colour": "#00A092",
+        "fg": "#fff",
         "name": {
             "en": "U3",
             "de": "U3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#00A092"
+        }
     },
     {
         "id": "bu4",
+        "colour": "#FFD500",
+        "fg": "#000",
         "name": {
             "en": "U4",
             "de": "U4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
-        },
-        "colour": "#FFD500",
-        "fg": "#000"
+        }
     },
     {
         "id": "bu5",
+        "colour": "#815238",
+        "fg": "#fff",
         "name": {
             "en": "U5",
             "de": "U5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號線"
-        },
-        "colour": "#815238"
+        }
     },
     {
         "id": "bu6",
+        "colour": "#846DAA",
+        "fg": "#fff",
         "name": {
             "en": "U6",
             "de": "U6",
             "zh-Hans": "6号线",
             "zh-Hant": "6號線"
-        },
-        "colour": "#846DAA"
+        }
     },
     {
         "id": "bu7",
+        "colour": "#009BD9",
+        "fg": "#fff",
         "name": {
             "en": "U7",
             "de": "U7",
             "zh-Hans": "7号线",
             "zh-Hant": "7號線"
-        },
-        "colour": "#009BD9"
+        }
     },
     {
         "id": "bu8",
+        "colour": "#00599A",
+        "fg": "#fff",
         "name": {
             "en": "U8",
             "de": "U8",
             "zh-Hans": "8号线",
             "zh-Hant": "8號線"
-        },
-        "colour": "#00599A"
+        }
     },
     {
         "id": "bu9",
+        "colour": "#F18400",
+        "fg": "#fff",
         "name": {
             "en": "U9",
             "de": "U9",
             "zh-Hans": "9号线",
             "zh-Hant": "9號線"
-        },
-        "colour": "#F18400"
+        }
     },
     {
         "id": "bs1",
+        "colour": "#DD6CA6",
+        "fg": "#fff",
         "name": {
             "en": "S1",
             "de": "S1",
             "zh-Hans": "市域S1",
             "zh-Hant": "市域S1"
-        },
-        "colour": "#DD6CA6"
+        }
     },
     {
         "id": "bs2",
+        "colour": "#007B3D",
+        "fg": "#fff",
         "name": {
             "en": "S2",
             "de": "S2",
             "zh-Hans": "市域S2",
             "zh-Hant": "市域S2"
-        },
-        "colour": "#007B3D"
+        }
     },
     {
         "id": "bs3",
+        "colour": "#0065AE",
+        "fg": "#fff",
         "name": {
             "en": "S3",
             "de": "S3",
             "zh-Hans": "市域S3",
             "zh-Hant": "市域S3"
-        },
-        "colour": "#0065AE"
+        }
     },
     {
         "id": "bs4",
+        "colour": "#CD9C54",
+        "fg": "#fff",
         "name": {
             "en": "S4",
             "de": "S4",
             "zh-Hans": "市域S4",
             "zh-Hant": "市域S4"
-        },
-        "colour": "#CD9C54"
+        }
     },
     {
         "id": "bs5",
+        "colour": "#EE7203",
+        "fg": "#fff",
         "name": {
             "en": "S5",
             "de": "S5",
             "zh-Hans": "市域S5",
             "zh-Hant": "市域S5"
-        },
-        "colour": "#EE7203"
+        }
     },
     {
         "id": "bs7",
+        "colour": "#764D9A",
+        "fg": "#fff",
         "name": {
             "en": "S7",
             "de": "S7",
             "zh-Hans": "市域S7",
             "zh-Hant": "市域S7"
-        },
-        "colour": "#764D9A"
+        }
     },
     {
         "id": "bs8",
+        "colour": "#4FA433",
+        "fg": "#fff",
         "name": {
             "en": "S8",
             "de": "S8",
             "zh-Hans": "市域S8",
             "zh-Hant": "市域S8"
-        },
-        "colour": "#4FA433"
+        }
     },
     {
         "id": "bs9",
+        "colour": "#9B2B48",
+        "fg": "#fff",
         "name": {
             "en": "S9",
             "de": "S9",
             "zh-Hans": "市域S9",
             "zh-Hant": "市域S9"
-        },
-        "colour": "#9B2B48"
+        }
     },
     {
         "id": "bs41",
+        "colour": "#AF5937",
+        "fg": "#fff",
         "name": {
             "en": "Ring line (Clockwise)",
             "de": "Ringbahn (im Uhrzeigersinn)",
             "zh-Hans": "环线（内环）",
             "zh-Hant": "環線（內環） "
-        },
-        "colour": "#AF5937"
+        }
     },
     {
         "id": "bs42",
+        "colour": "#CB621A",
+        "fg": "#fff",
         "name": {
             "en": "Ring line (Anti-clockwise)",
             "de": "Ringbahn (gegen den Uhrzeigersinn)",
             "zh-Hans": "环线（外环）",
             "zh-Hant": "環線（外環）"
-        },
-        "colour": "#CB621A"
+        }
+    },
+    {
+        "id": "bm1",
+        "colour": "#63b9e9",
+        "fg": "#fff",
+        "name": {
+            "de": "M1",
+            "en": "M1",
+            "zh-Hans": "有轨电车M1",
+            "zh-Hant": "有軌電車M1"
+        }
+    },
+    {
+        "id": "bm2",
+        "colour": "#7ab929",
+        "fg": "#fff",
+        "name": {
+            "de": "M2",
+            "en": "M2",
+            "zh-Hans": "有轨电车M2",
+            "zh-Hant": "有軌電車M2"
+        }
+    },
+    {
+        "id": "bm4",
+        "colour": "#ca1214",
+        "fg": "#fff",
+        "name": {
+            "de": "M4",
+            "en": "M4",
+            "zh-Hans": "有轨电车M4",
+            "zh-Hant": "有軌電車M4"
+        }
+    },
+    {
+        "id": "bm5",
+        "colour": "#c8893b",
+        "fg": "#fff",
+        "name": {
+            "de": "M5",
+            "en": "M5",
+            "zh-Hans": "有轨电车M5",
+            "zh-Hant": "有軌電車M5"
+        }
+    },
+    {
+        "id": "bm6",
+        "colour": "#005695",
+        "fg": "#fff",
+        "name": {
+            "de": "M6",
+            "en": "M6",
+            "zh-Hans": "有轨电车M6",
+            "zh-Hant": "有軌電車M6"
+        }
+    },
+    {
+        "id": "bm8",
+        "colour": "#ee7203",
+        "fg": "#fff",
+        "name": {
+            "de": "M8",
+            "en": "M8",
+            "zh-Hans": "有轨电车M8",
+            "zh-Hant": "有軌電車M8"
+        }
+    },
+    {
+        "id": "bm10",
+        "colour": "#007b3d",
+        "fg": "#fff",
+        "name": {
+            "de": "M10",
+            "en": "M10",
+            "zh-Hans": "有轨电车M10",
+            "zh-Hant": "有軌電車M10"
+        }
+    },
+    {
+        "id": "bm13",
+        "colour": "#00a092",
+        "fg": "#fff",
+        "name": {
+            "de": "M13",
+            "en": "M13",
+            "zh-Hans": "有轨电车M13",
+            "zh-Hant": "有軌電車M13"
+        }
+    },
+    {
+        "id": "bm17",
+        "colour": "#a6422a",
+        "fg": "#fff",
+        "name": {
+            "de": "M17",
+            "en": "M17",
+            "zh-Hans": "有轨电车M17",
+            "zh-Hant": "有軌電車M17"
+        }
+    },
+    {
+        "id": "bsm12",
+        "colour": "#8870ab",
+        "fg": "#fff",
+        "name": {
+            "de": "12",
+            "en": "12",
+            "zh-Hans": "有轨电车12",
+            "zh-Hant": "有軌電車12"
+        }
+    },
+    {
+        "id": "bsm16",
+        "colour": "#007fab",
+        "fg": "#fff",
+        "name": {
+            "de": "16",
+            "en": "16",
+            "zh-Hans": "有轨电车16",
+            "zh-Hant": "有軌電車16"
+        }
+    },
+    {
+        "id": "bsm18",
+        "colour": "#d6ad00",
+        "fg": "#fff",
+        "name": {
+            "de": "18",
+            "en": "18",
+            "zh-Hans": "有轨电车18",
+            "zh-Hant": "有軌電車18"
+        }
+    },
+    {
+        "id": "bsm21",
+        "colour": "#bc90c1",
+        "fg": "#fff",
+        "name": {
+            "de": "21",
+            "en": "21",
+            "zh-Hans": "有轨电车21",
+            "zh-Hant": "有軌電車21"
+        }
+    },
+    {
+        "id": "bsm27",
+        "colour": "#cb621a",
+        "fg": "#fff",
+        "name": {
+            "de": "27",
+            "en": "27",
+            "zh-Hans": "有轨电车27",
+            "zh-Hant": "有軌電車27"
+        }
+    },
+    {
+        "id": "bsm37",
+        "colour": "#815238",
+        "fg": "#fff",
+        "name": {
+            "de": "37",
+            "en": "37",
+            "zh-Hans": "有轨电车37",
+            "zh-Hant": "有軌電車37"
+        }
+    },
+    {
+        "id": "bsm50",
+        "colour": "#eb9000",
+        "fg": "#fff",
+        "name": {
+            "de": "50",
+            "en": "50",
+            "zh-Hans": "有轨电车50",
+            "zh-Hant": "有軌電車50"
+        }
+    },
+    {
+        "id": "bsm60",
+        "colour": "#009bd9",
+        "fg": "#fff",
+        "name": {
+            "de": "60",
+            "en": "60",
+            "zh-Hans": "有轨电车60",
+            "zh-Hant": "有軌電車60"
+        }
+    },
+    {
+        "id": "bsm61",
+        "colour": "#e30613",
+        "fg": "#fff",
+        "name": {
+            "de": "61",
+            "en": "61",
+            "zh-Hans": "有轨电车61",
+            "zh-Hant": "有軌電車61"
+        }
+    },
+    {
+        "id": "bsm62",
+        "colour": "#00512d",
+        "fg": "#fff",
+        "name": {
+            "de": "62",
+            "en": "62",
+            "zh-Hans": "有轨电车62",
+            "zh-Hant": "有軌電車62"
+        }
+    },
+    {
+        "id": "bsm63",
+        "colour": "#ee7203",
+        "fg": "#fff",
+        "name": {
+            "de": "63",
+            "en": "63",
+            "zh-Hans": "有轨电车63",
+            "zh-Hant": "有軌電車63"
+        }
+    },
+    {
+        "id": "bsm67",
+        "colour": "#dd6ca6",
+        "fg": "#fff",
+        "name": {
+            "de": "67",
+            "en": "67",
+            "zh-Hans": "有轨电车67",
+            "zh-Hant": "有軌電車67"
+        }
+    },
+    {
+        "id": "bsm68",
+        "colour": "#65b32e",
+        "fg": "#fff",
+        "name": {
+            "de": "68",
+            "en": "68",
+            "zh-Hans": "有轨电车68",
+            "zh-Hant": "有軌電車68"
+        }
     }
 ]

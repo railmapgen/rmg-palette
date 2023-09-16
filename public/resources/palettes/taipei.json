@@ -138,5 +138,15 @@
             "zh-Hans": "台铁",
             "zh-Hant": "台鐵"
         }
+    },
+    {
+        "id": "hsr",
+        "colour": "#db5426",
+        "fg": "#fff",
+        "name": {
+            "en": "Taiwan High Speed Rail",
+            "zh-Hans": "台湾高铁",
+            "zh-Hant": "台灣高鐵"
+        }
     }
 ]

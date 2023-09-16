@@ -1,5 +1,7 @@
 import rootReducer from '../index';
 import ticketReducer, {
+    moveLineDown,
+    moveLineUp,
     populateTicket,
     removeCountryName,
     switchCountryNameLang,
@@ -7,10 +9,19 @@ import ticketReducer, {
     TicketState,
     updateCountryName,
 } from './ticket-slice';
-import { CityEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
+import { CityEntry, CountryEntry, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { TicketInvalidReasonType } from '../../util/constants';
 
 const realStore = rootReducer.getState();
+
+const countryList: CountryEntry[] = [
+    {
+        id: 'HK',
+        name: {
+            en: 'Hong Kong',
+        },
+    },
+];
 
 describe('TicketSlice', () => {
     describe('TicketSlice - multi-language name mutation', () => {
@@ -67,10 +78,12 @@ describe('TicketSlice', () => {
 
         it('Can validate city code as expected', () => {
             const initialState: TicketState = { ...realStore.ticket, country: 'HK' };
-            expect(ticketSelectors.getCityErrors(initialState)).toContain(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
+            expect(ticketSelectors.getCityErrors(initialState, countryList)).toContain(
+                TicketInvalidReasonType.CITY_CODE_UNDEFINED
+            );
 
             initialState.city = 'hongkong';
-            expect(ticketSelectors.getCityErrors(initialState)).not.toContain(
+            expect(ticketSelectors.getCityErrors(initialState, countryList)).not.toContain(
                 TicketInvalidReasonType.CITY_CODE_UNDEFINED
             );
         });
@@ -89,22 +102,22 @@ describe('TicketSlice', () => {
                     },
                 },
             };
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).toContain(
                 TicketInvalidReasonType.LINE_CODE_UNDEFINED
             );
 
             initialState.lines['id-001'].id = 'twl';
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).not.toContain(
                 TicketInvalidReasonType.LINE_CODE_UNDEFINED
             );
 
             initialState.lines['id-002'] = { ...initialState.lines['id-001'] };
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).toContain(
                 TicketInvalidReasonType.LINE_CODE_DUPLICATED
             );
 
             initialState.lines['id-002'].id = 'ktl';
-            expect(ticketSelectors.getLineErrors(initialState)['Overall']).not.toContain(
+            expect(ticketSelectors.getLineErrors(initialState, countryList)['Overall']).not.toContain(
                 TicketInvalidReasonType.LINE_CODE_DUPLICATED
             );
         });
@@ -170,6 +183,41 @@ describe('TicketSlice', () => {
                     colour: '#00AF41',
                 })
             );
+        });
+    });
+
+    describe('TicketSlick - move up and down', () => {
+        const initialState: TicketState = {
+            ...realStore.ticket,
+            lines: {
+                '001': { id: 'm1', nameEntity: [], colour: '#aaaaaa', fg: MonoColour.white },
+                '002': { id: 'm2', nameEntity: [], colour: '#bbbbbb', fg: MonoColour.white },
+                '003': { id: 'm3', nameEntity: [], colour: '#cccccc', fg: MonoColour.white },
+                '004': { id: 'm4', nameEntity: [], colour: '#dddddd', fg: MonoColour.white },
+            },
+        };
+
+        it('Can move up line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineUp('002'));
+            console.log(nextState.lines);
+            const keys = Object.keys(nextState.lines);
+            expect(Object.keys(nextState.lines)).toEqual(['002', '001', '003', '004']);
+        });
+
+        it('Do not move up the first line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineUp('001'));
+            expect(Object.keys(nextState.lines)).toEqual(['001', '002', '003', '004']);
+        });
+
+        it('Can move down line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineDown('002'));
+            console.log(nextState.lines);
+            expect(Object.keys(nextState.lines)).toEqual(['001', '003', '002', '004']);
+        });
+
+        it('Do not move down the last line entry', () => {
+            const nextState = ticketReducer(initialState, moveLineDown('004'));
+            expect(Object.keys(nextState.lines)).toEqual(['001', '002', '003', '004']);
         });
     });
 });

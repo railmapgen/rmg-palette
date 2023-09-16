@@ -1,5 +1,5 @@
-import { Box, Heading } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
+import { chakra, Heading } from '@chakra-ui/react';
+import { RmgFields, RmgFieldsField, RmgSectionHeader } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     clearLines,
@@ -12,7 +12,6 @@ import {
 } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
-import { cityList } from '@railmapgen/rmg-palette-resources';
 import useTranslatedName from '../hooks/use-translated-name';
 import { getTicketByCityId } from '../../redux/ticket/util';
 
@@ -21,6 +20,7 @@ export default function CitySection() {
     const dispatch = useRootDispatch();
     const translateName = useTranslatedName();
 
+    const { cityList } = useRootSelector(state => state.app);
     const { country, city, newCity, cityName } = useRootSelector(state => state.ticket);
 
     const cityOptions: Record<string, string> = {
@@ -43,7 +43,7 @@ export default function CitySection() {
             return;
         }
 
-        const ticket = await getTicketByCityId(cityId);
+        const ticket = await getTicketByCityId(cityId, cityList);
         if (ticket) {
             dispatch(populateTicket(ticket));
         } else {
@@ -72,20 +72,24 @@ export default function CitySection() {
     ];
 
     return (
-        <Box as="section">
-            <Heading as="h5" size="sm" mt={3} mb={2}>
-                {t('City')}
-            </Heading>
+        <section>
+            <RmgSectionHeader>
+                <Heading as="h5" size="sm">
+                    {t('City')}
+                </Heading>
+            </RmgSectionHeader>
 
-            <RmgFields fields={fields} />
-            {city === 'new' && (
-                <MultiLangEntryCard
-                    entries={cityName}
-                    onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
-                    onLangSwitch={(prevLang, nextLang) => dispatch(switchCityNameLang({ prevLang, nextLang }))}
-                    onRemove={lang => dispatch(removeCityName(lang))}
-                />
-            )}
-        </Box>
+            <chakra.div px={1}>
+                <RmgFields fields={fields} />
+                {city === 'new' && (
+                    <MultiLangEntryCard
+                        entries={cityName}
+                        onUpdate={(lang, name) => dispatch(updateCityName({ lang, name }))}
+                        onLangSwitch={(prevLang, nextLang) => dispatch(switchCityNameLang({ prevLang, nextLang }))}
+                        onRemove={lang => dispatch(removeCityName(lang))}
+                    />
+                )}
+            </chakra.div>
+        </section>
     );
 }

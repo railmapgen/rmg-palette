@@ -1,29 +1,54 @@
-import { Button, Divider, HStack, SystemStyleObject, VStack } from '@chakra-ui/react';
+import {
+    Button,
+    Divider,
+    Flex,
+    Heading,
+    HStack,
+    IconButton,
+    SystemStyleObject,
+    Wrap,
+    WrapItem,
+} from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
 import { ColourHex, MonoColour, Theme } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge } from '@railmapgen/rmg-components';
+import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge, RmgSectionHeader } from '@railmapgen/rmg-components';
+import { useRootSelector } from '../../redux';
+import { MdCircle } from 'react-icons/md';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
 };
 
 const styles: SystemStyleObject = {
+    flexDirection: 'column',
     flex: 1,
     mx: 2,
+    overflowX: 'hidden',
+    overflowY: 'scroll',
 
     '& .chakra-badge': {
         fontSize: '1em',
+        width: 'fit-content',
+        alignSelf: 'center',
+        m: 1,
     },
 
-    '& > .chakra-stack': {
-        w: '100%',
-        p: 2,
+    '& > section:first-of-type': {
+        p: 1,
+    },
 
-        '& > div': {
-            w: '100%',
+    '& > section:last-of-type': {
+        w: '100%',
+
+        '& > div:last-of-type': {
+            px: 2,
+        },
+
+        '& .rmg-section__header button': {
+            ml: 'auto',
         },
     },
 };
@@ -31,14 +56,16 @@ const styles: SystemStyleObject = {
 interface ColourModalProps {
     defaultTheme?: Theme;
     sessionId?: string;
-    onSubmit?: (theme: Theme) => void;
+    onSubmit?: (theme: Theme, displayName?: string) => void;
     onClose: () => void;
+    onClearHistory: () => void;
 }
 
 export default function ColourModal(props: ColourModalProps) {
-    const { defaultTheme, sessionId, onSubmit, onClose } = props;
+    const { defaultTheme, sessionId, onSubmit, onClose, onClearHistory } = props;
 
     const { t } = useTranslation();
+    const { recentlyUsed } = useRootSelector(state => state.app);
 
     const [cityCode, setCityCode] = useState(defaultTheme?.[0]);
     const [lineCode, setLineCode] = useState(defaultTheme?.[1]);
@@ -144,20 +171,58 @@ export default function ColourModal(props: ColourModalProps) {
 
     const handleSubmit = () => {
         if (isSubmitEnabled) {
-            onSubmit?.([cityCode, lineCode, bgColour, fgColour]);
+            // FIXME
+            const displayName = `${cityCode} - ${lineCode}`;
+            onSubmit?.([cityCode, lineCode, bgColour, fgColour], displayName);
         }
+    };
+
+    const handleApply = (theme: Theme) => {
+        setCityCode(theme[0]);
+        setLineCode(theme[1]);
+        setBgColour(theme[2]);
+        setFgColour(theme[3]);
     };
 
     return (
         <>
-            <VStack sx={styles}>
+            <Flex sx={styles}>
                 <RmgLineBadge name={t('Example')} fg={fgColour} bg={bgColour} />
 
-                <VStack>
+                <section>
                     <RmgFields fields={paletteFields} />
                     <RmgFields fields={customFields} />
-                </VStack>
-            </VStack>
+                </section>
+
+                <section>
+                    <RmgSectionHeader>
+                        <Heading as="h5" size="xs">
+                            {t('Recently used')}
+                        </Heading>
+
+                        <Button variant="ghost" size="xs" onClick={onClearHistory}>
+                            {t('Clear')}
+                        </Button>
+                    </RmgSectionHeader>
+
+                    <Wrap>
+                        {recentlyUsed.map(({ theme, displayName }) => (
+                            <WrapItem key={theme.join('-')}>
+                                <IconButton
+                                    size="xs"
+                                    aria-label={t('Apply')}
+                                    title={displayName}
+                                    mt="0.45px"
+                                    color={theme[3]}
+                                    bg={theme[2]}
+                                    icon={<MdCircle />}
+                                    onClick={() => handleApply(theme)}
+                                />
+                            </WrapItem>
+                        ))}
+                    </Wrap>
+                </section>
+            </Flex>
 
             <Divider />
 
