@@ -62,7 +62,7 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
             },
 
             // actions
-            '& > div:last-of-type': {
+            '& > div:nth-of-type(2)': {
                 ml: 'auto',
             },
         }),
