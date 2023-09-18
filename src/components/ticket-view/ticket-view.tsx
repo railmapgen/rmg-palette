@@ -55,8 +55,7 @@ export default function TicketView() {
 
     return (
         <RmgPage
-            px={2}
-            pt={2}
+            alignSelf="center"
             sx={{
                 width: { base: '100%', md: 520 },
             }}
