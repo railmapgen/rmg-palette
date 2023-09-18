@@ -9,6 +9,7 @@ import { MultiLangEntryCardInner } from './ticket-view/multi-lang-entry-card';
 import { LineDetailUpdates } from '../redux/ticket/ticket-slice';
 import { useMemo, useState } from 'react';
 import { LanguageCode } from '@railmapgen/rmg-translate';
+import ColourDetailCard from './palette-view/colour-detail-card';
 
 interface LineDetailsCardProps {
     lineDetail: PaletteEntryWithTranslationEntry;
@@ -61,7 +62,7 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
             },
 
             // actions
-            '& > div:last-of-type': {
+            '& > div:nth-of-type(2)': {
                 ml: 'auto',
             },
         }),
@@ -129,6 +130,12 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
                         onLangSwitch={(prevLang, nextLang) => onLangSwitch?.(prevLang, nextLang)}
                         onRemove={lang => onNameRemove?.(lang)}
                     />
+                </Flex>
+            )}
+
+            {!editable && (
+                <Flex direction="column" my={1}>
+                    <ColourDetailCard lineDetail={lineDetail} />
                 </Flex>
             )}
         </RmgCard>
