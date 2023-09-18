@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import WindowHeader from './window-header';
+import { PickerWindowHeader, TicketWindowHeader, WindowHeader } from './window-header';
 import { RmgErrorBoundary, RmgLoader, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
 
 const PaletteView = lazy(() => import('./palette-view/palette-view'));
@@ -12,12 +12,12 @@ export default function AppRoot() {
         <HashRouter>
             <RmgThemeProvider>
                 <RmgWindow>
-                    <WindowHeader />
                     <Routes>
                         <Route
                             path="/new"
                             element={
                                 <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
+                                    <TicketWindowHeader />
                                     <TicketView />
                                 </RmgErrorBoundary>
                             }
@@ -26,6 +26,7 @@ export default function AppRoot() {
                             path="/picker"
                             element={
                                 <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
+                                    <PickerWindowHeader />
                                     <PickerView />
                                 </RmgErrorBoundary>
                             }
@@ -34,6 +35,7 @@ export default function AppRoot() {
                             path="/"
                             element={
                                 <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
+                                    <WindowHeader />
                                     <PaletteView />
                                 </RmgErrorBoundary>
                             }

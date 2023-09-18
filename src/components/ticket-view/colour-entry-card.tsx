@@ -1,4 +1,4 @@
-import { RmgButtonGroup, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
+import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLoader } from '@railmapgen/rmg-components';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
@@ -20,8 +20,9 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
 
     const { pantoneReady } = useRootSelector(state => state.app);
 
-    const [colourMode, setColourMode] = useState<'pantone' | 'hex'>(lineDetail.pantone ? 'pantone' : 'hex');
-    const [pantoneInput, setPantoneInput] = useState(lineDetail.pantone ?? '');
+    const [pantoneInput, setPantoneInput] = useState(!!lineDetail.pantone);
+    const [pantoneCode, setPantoneCode] = useState(lineDetail.pantone ?? '');
+    const [isLoading, setIsLoading] = useState(false);
 
     const controllerRef = useRef(new AbortController());
 
@@ -31,7 +32,7 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
         };
     }, []);
 
-    const handlePantoneInput = async (value: string) => {
+    const handlePantoneCodeInput = async (value: string) => {
         controllerRef.current.abort();
 
         if (!pantoneReady) {
@@ -39,21 +40,29 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
         }
 
         controllerRef.current = new AbortController();
+        setIsLoading(true);
         try {
             const hex = await getRGBByPantone(value, controllerRef.current.signal);
             onUpdate({ pantone: value, colour: hex });
-            setPantoneInput(value);
+            setPantoneCode(value);
         } catch (e) {
             flushSync(() => {
-                setPantoneInput(value);
+                setPantoneCode(value);
             });
-            setPantoneInput(lineDetail.pantone ?? '');
+            setPantoneCode(lineDetail.pantone ?? '');
+        } finally {
+            setIsLoading(false);
         }
     };
 
     const colourModeOptions = [
-        { label: 'RGB', value: 'hex' },
-        { label: t('Pantone'), value: 'pantone' },
+        { label: t('Yes'), value: true },
+        { label: t('No'), value: false },
+    ];
+
+    const fgOptions = [
+        { label: t('Black'), value: MonoColour.black },
+        { label: t('White'), value: MonoColour.white },
     ];
 
     const fields: RmgFieldsField[] = [
@@ -66,44 +75,50 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
             validator: value => value !== '' && !value.match(/[^a-z0-9]/),
         },
         {
+            type: 'input',
+            label: t('Background colour'),
+            variant: pantoneInput ? 'text' : 'color',
+            value: lineDetail.colour,
+            onChange: value => onUpdate({ colour: value as ColourHex }),
+            isDisabled: pantoneReady && pantoneInput,
+        },
+        {
             type: 'custom',
-            label: t('Colour mode'),
+            label: t('Use Pantone'),
             component: (
                 <RmgButtonGroup
                     selections={colourModeOptions}
-                    defaultValue={colourMode}
-                    onChange={value => setColourMode(value as typeof colourMode)}
+                    defaultValue={pantoneInput}
+                    onChange={value => setPantoneInput(value)}
                 />
             ),
             hidden: !pantoneReady,
         },
         {
             type: 'input',
-            label: t('Background colour'),
-            variant: 'color',
-            value: lineDetail.colour,
-            onChange: value => onUpdate({ colour: value as ColourHex }),
-            hidden: pantoneReady && colourMode === 'pantone',
-        },
-        {
-            type: 'input',
             label: t('Pantone code'),
-            value: pantoneInput,
-            onChange: handlePantoneInput,
+            value: pantoneCode,
+            onChange: handlePantoneCodeInput,
             debouncedDelay: 1500,
-            hidden: !pantoneReady || colourMode !== 'pantone',
+            hidden: !pantoneReady || !pantoneInput,
         },
         {
-            type: 'select',
+            type: 'custom',
             label: t('Foreground colour'),
-            value: lineDetail.fg,
-            options: {
-                [MonoColour.white]: t('White'),
-                [MonoColour.black]: t('Black'),
-            },
-            onChange: value => onUpdate({ fg: value as MonoColour }),
+            component: (
+                <RmgButtonGroup
+                    selections={fgOptions}
+                    defaultValue={lineDetail.fg}
+                    onChange={value => onUpdate({ fg: value as MonoColour })}
+                />
+            ),
         },
     ];
 
-    return <RmgFields fields={fields} />;
+    return (
+        <>
+            {isLoading && <RmgLoader isIndeterminate />}
+            <RmgFields fields={fields} />
+        </>
+    );
 }

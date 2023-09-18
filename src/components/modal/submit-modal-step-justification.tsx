@@ -24,7 +24,7 @@ export default function SubmitModalStepJustification(props: SubmitModalStepJusti
             type: 'input',
             value: refLink,
             label: t('Reference link'),
-            placeholder: t('Enter a valid URL'),
+            placeholder: t('Enter a valid URL, e.g.') + ' https://en.wikipedia.org',
             onChange: onRefLinkChange,
             validator: urlValidator,
         },

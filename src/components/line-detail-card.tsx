@@ -54,7 +54,15 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
                 color: lineDetail.fg,
             },
 
-            '& > div': {
+            // display name
+            '& > div:first-of-type': {
+                overflow: 'hidden',
+                textWrap: 'nowrap',
+                textOverflow: 'ellipsis',
+            },
+
+            // actions
+            '& > div:last-of-type': {
                 ml: 'auto',
             },
         }),
@@ -66,7 +74,7 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
     return (
         <RmgCard direction="column" sx={{ pb: 0 }}>
             <RmgCard sx={styles}>
-                {displayName}
+                <div>{displayName}</div>
                 {editable && (
                     <HStack spacing={0.5}>
                         <IconButton
@@ -114,7 +122,7 @@ export default function LineDetailCard(props: LineDetailsCardProps) {
             </RmgCard>
 
             {editing && (
-                <Flex direction="column" my={1}>
+                <Flex direction="column" position="relative" my={1}>
                     <ColourEntryCard lineDetail={lineDetail} onUpdate={updates => onUpdate?.(updates)} />
                     <MultiLangEntryCardInner
                         entries={lineDetail.nameEntity}

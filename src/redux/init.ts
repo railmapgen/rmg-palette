@@ -43,7 +43,7 @@ const openTicketByCity = async (store: RootStore) => {
     }
 };
 
-const initPickerState = async (store: RootStore) => {
+export const initPickerState = async (store: RootStore) => {
     const hash = window.location.hash;
     if (hash.startsWith('#/picker')) {
         await initRecentlyUsed(store);
@@ -54,7 +54,7 @@ const initPickerState = async (store: RootStore) => {
                 predicate: (action, currentState, previousState) => {
                     const { type } = action;
                     return (
-                        type === 'app/addRecentlyUsed' &&
+                        (type === 'app/addRecentlyUsed' || type === 'app/clearRecentlyUsed') &&
                         JSON.stringify(currentState.app.recentlyUsed) !== JSON.stringify(previousState.app.recentlyUsed)
                     );
                 },
@@ -93,5 +93,4 @@ export const initStore = async (store: RootStore) => {
     );
 
     await openTicketByCity(store);
-    await initPickerState(store);
 };

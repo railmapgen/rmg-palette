@@ -1,0 +1,12 @@
+[
+    {
+        "id": "nlr",
+        "colour": "#ee343f",
+        "fg": "#fff",
+        "name": {
+            "en": "Newcastle Light Rail",
+            "zh-Hans": "纽卡斯尔轻轨",
+            "zh-Hant": "紐卡斯爾輕軌"
+        }
+    }
+]

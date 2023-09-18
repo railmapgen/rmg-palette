@@ -45,8 +45,8 @@ describe('ColourEntryCard', () => {
             );
 
             // only rgb is available
-            expect(screen.queryByRole('group', { name: 'Colour mode' })).not.toBeInTheDocument();
-            expect(screen.getByRole('group', { name: 'Background colour' })).toBeInTheDocument();
+            expect(screen.queryByRole('group', { name: 'Use Pantone' })).not.toBeInTheDocument();
+            expect(screen.getByRole('combobox', { name: 'Background colour' })).not.toBeDisabled();
             expect(screen.queryByRole('group', { name: 'Pantone code' })).not.toBeInTheDocument();
 
             rerender(
@@ -56,8 +56,8 @@ describe('ColourEntryCard', () => {
             );
 
             // colour mode switch is available
-            expect(screen.getByRole('group', { name: 'Colour mode' })).toBeInTheDocument();
-            expect(screen.queryByRole('group', { name: 'Background colour' })).not.toBeInTheDocument();
+            expect(screen.getByRole('group', { name: 'Use Pantone' })).toBeInTheDocument();
+            expect(screen.getByRole('combobox', { name: 'Background colour' })).toBeDisabled();
             expect(screen.getByRole('group', { name: 'Pantone code' })).toBeInTheDocument();
         });
     });
