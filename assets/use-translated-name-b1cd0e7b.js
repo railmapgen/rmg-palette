@@ -1,1 +1,0 @@
-import{u as t}from"./react-af516715.js";function u(){const{i18n:s}=t();return r=>{var a,o;return(o=(a=s.languages.map(n=>r[n]).find(n=>n!==void 0))!=null?a:r.en)!=null?o:"(Translation Error)"}}export{u};
