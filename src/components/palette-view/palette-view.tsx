@@ -1,7 +1,8 @@
 import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
-
+import { Flex } from '@chakra-ui/react';
 import PageHeader from '../page-header';
 import PaletteGrid from '../ag-grid/palette-grid';
+import SidePanel from './side-panel';
 import { useRootSelector } from '../../redux';
 
 export default function PaletteView() {
@@ -11,7 +12,10 @@ export default function PaletteView() {
         <RmgPage>
             {isDataLoading && <RmgLoader isIndeterminate />}
             <PageHeader />
-            <PaletteGrid />
+            <Flex flex={1} overflow="hidden" position="relative">
+                <PaletteGrid />
+                <SidePanel />
+            </Flex>
         </RmgPage>
     );
 }

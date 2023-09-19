@@ -12,6 +12,8 @@ interface AppState {
     countryList: CountryEntry[];
 
     selectedCountry: string;
+    sidePanelCity?: string;
+
     pantoneReady?: boolean;
     recentlyUsed: PaletteUsage[];
 }
@@ -43,6 +45,14 @@ const appSlice = createSlice({
 
         setSelectedCountry: (state, action: PayloadAction<string>) => {
             state.selectedCountry = action.payload;
+        },
+
+        setSidePanelCity: (state, action: PayloadAction<string>) => {
+            state.sidePanelCity = action.payload;
+        },
+
+        closeSidePanel: state => {
+            state.sidePanelCity = undefined;
         },
 
         setPantoneReady: (state, action: PayloadAction<boolean>) => {
@@ -84,6 +94,8 @@ export const {
     setCityList,
     setCountryList,
     setSelectedCountry,
+    setSidePanelCity,
+    closeSidePanel,
     setPantoneReady,
     setRecentlyUsed,
     addRecentlyUsed,
