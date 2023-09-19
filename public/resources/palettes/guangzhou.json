@@ -240,6 +240,16 @@
         }
     },
     {
+        "id": "gz24",
+        "colour": "#1fada9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
+        }
+    },
+    {
         "id": "gfl",
         "colour": "#C4D600",
         "fg": "#000",
@@ -279,6 +289,16 @@
             "en": "Huangpu Tram Line 1",
             "zh-Hans": "黄埔有轨1号线",
             "zh-Hant": "黃埔有軌1號線"
+        }
+    },
+    {
+        "id": "thp2",
+        "colour": "#f25601",
+        "fg": "#fff",
+        "name": {
+            "en": "Huangpu Tram Line 2",
+            "zh-Hans": "黄埔有轨2号线",
+            "zh-Hant": "黃埔有軌2號線"
         }
     }
 ]
