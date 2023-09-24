@@ -1,0 +1,26 @@
+[
+    {
+        "id": "sdn",
+        "colour": "#317c66",
+        "fg": "#fff",
+        "name": {
+            "en": "Namboku Line (N)",
+            "zh-Hans": "南北线（N）",
+            "zh-Hant": "南北線（N）",
+            "ja": "南北線（N）",
+            "ko": "난보쿠선（N）"
+        }
+    },
+    {
+        "id": "sdt",
+        "colour": "#00b1dd",
+        "fg": "#fff",
+        "name": {
+            "en": "Tozai Line (T)",
+            "zh-Hans": "东西线（T）",
+            "zh-Hant": "東西線（T）",
+            "ja": "東西線（T）",
+            "ko": "도자이선（T）"
+        }
+    }
+]
