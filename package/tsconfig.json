@@ -17,13 +17,11 @@
         "isolatedModules": true,
         "jsx": "react-jsx",
         "noFallthroughCasesInSwitch": true,
-        "plugins": [
-            {
-                "transform": "typia/lib/transform"
-            }
-        ],
         "strictNullChecks": true,
-        "types": ["vite/client","vitest/globals"]
+        "types": ["vite/client", "vitest/globals"]
+    },
+    "ts-node": {
+        "esm": true
     },
     "include": ["builder/**/*", "checker/**/*", "issuebot/**/*", "src/**/*"]
 }

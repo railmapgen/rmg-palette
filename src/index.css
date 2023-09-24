@@ -30,6 +30,7 @@ div#root {
     /*display: flex;*/
     height: 100%;
     width: 100%;
+    background: inherit;
     /*flex-direction: column;*/
     /*overflow: hidden;*/
     /*position: absolute;*/
