@@ -387,6 +387,15 @@
         }
     },
     {
+        "id": "expressway",
+        "country": "CN",
+        "name": {
+            "en": "Expressway",
+            "zh": "高速公路",
+            "zh-HK": "高速公路"
+        }
+    },
+    {
         "id": "foshan",
         "country": "CN",
         "name": {
