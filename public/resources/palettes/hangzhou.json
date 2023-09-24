@@ -11,7 +11,7 @@
     },
     {
         "id": "hz2",
-        "colour": "#ed6d00",
+        "colour": "#e17901",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -81,7 +81,7 @@
     },
     {
         "id": "hz9",
-        "colour": "#BE4D00",
+        "colour": "#c45b03",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
