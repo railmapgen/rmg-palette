@@ -1246,6 +1246,17 @@
         }
     },
     {
+        "id": "sendai",
+        "country": "JP",
+        "name": {
+            "en": "Sendai",
+            "zh-Hans": "仙台",
+            "zh-Hant": "仙台",
+            "ja": "仙台",
+            "ko": "센다이"
+        }
+    },
+    {
         "id": "seoul",
         "country": "KR",
         "name": {
