@@ -17,11 +17,6 @@
         "isolatedModules": true,
         "jsx": "react-jsx",
         "noFallthroughCasesInSwitch": true,
-        "plugins": [
-            {
-                "transform": "typia/lib/transform"
-            }
-        ],
         "strictNullChecks": true
     },
     "include": ["src/**/*"],

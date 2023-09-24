@@ -35,10 +35,8 @@ const writePackageJson = async () => {
 
     // read source file
     const packageJsonStr = await readFile(path.join(__dirname, '..', 'package.json'), 'utf-8');
-    const { type: _, ...others } = JSON.parse(packageJsonStr);
-
     await mkdir(path.join(distPath), { recursive: true });
-    await writeFile(path.join(distPath, 'package.json'), JSON.stringify(others));
+    await writeFile(path.join(distPath, 'package.json'), packageJsonStr);
 };
 
 const prebuild = async () => {

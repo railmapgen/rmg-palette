@@ -62,7 +62,7 @@ export default function TicketView() {
         >
             {isDataLoading && <RmgLoader isIndeterminate />}
 
-            <Flex direction="column" flex={1} overflowY="auto">
+            <Flex direction="column" flex={1} overflowY="auto" bg="inherit">
                 <CountrySection />
                 <CitySection />
                 <LinesSection />

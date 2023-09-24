@@ -15,7 +15,7 @@ import { MdAdd } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import PantoneChecker from './pantone-checker';
 import LineDetailCard from '../line-detail-card';
-import { RmgSectionHeader } from '@railmapgen/rmg-components';
+import { RmgSection, RmgSectionHeader } from '@railmapgen/rmg-components';
 
 export default function LinesSection() {
     const { t } = useTranslation();
@@ -24,7 +24,7 @@ export default function LinesSection() {
     const lines = useRootSelector(state => state.ticket.lines);
 
     return (
-        <section>
+        <RmgSection>
             <RmgSectionHeader>
                 <Heading as="h5" size="sm" mr="auto">
                     {t('Lines')}
@@ -64,6 +64,6 @@ export default function LinesSection() {
                     {t('Add a line')}
                 </Button>
             </VStack>
-        </section>
+        </RmgSection>
     );
 }

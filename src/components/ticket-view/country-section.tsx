@@ -1,5 +1,5 @@
 import { chakra, Heading } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField, RmgSectionHeader } from '@railmapgen/rmg-components';
+import { RmgFields, RmgFieldsField, RmgSection, RmgSectionHeader } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     removeCountryName,
@@ -77,7 +77,7 @@ export default function CountrySection() {
     ];
 
     return (
-        <section>
+        <RmgSection>
             <RmgSectionHeader>
                 <Heading as="h5" size="sm">
                     {t('Country/Region')}
@@ -95,6 +95,6 @@ export default function CountrySection() {
                     />
                 )}
             </chakra.div>
-        </section>
+        </RmgSection>
     );
 }
