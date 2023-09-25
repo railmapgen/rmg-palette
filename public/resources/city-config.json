@@ -609,6 +609,15 @@
         }
     },
     {
+        "id": "jinhua",
+        "country": "CN",
+        "name": {
+            "en": "Jinhua",
+            "zh-Hans": "金华",
+            "zh-Hant": "金華"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
