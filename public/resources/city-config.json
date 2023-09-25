@@ -899,6 +899,16 @@
         }
     },
     {
+        "id": "mulhouse",
+        "country": "FR",
+        "name": {
+            "en": "Mulhouse",
+            "zh-Hans": "米卢斯",
+            "zh-Hant": "米盧斯",
+            "fr": "Mulhouse"
+        }
+    },
+    {
         "id": "munich",
         "country": "DE",
         "name": {

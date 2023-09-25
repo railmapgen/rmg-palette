@@ -1,0 +1,211 @@
+[
+    {
+        "id": "ml1",
+        "colour": "#be1d2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 1",
+            "zh-Hans": "电车1号线",
+            "zh-Hant": "電車1號缐",
+            "fr": "Tramway Ligne 1"
+        }
+    },
+    {
+        "id": "ml2",
+        "colour": "#ffcc00",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 2",
+            "zh-Hans": "电车2号线",
+            "zh-Hant": "電車2號缐",
+            "fr": "Tramway Ligne 2"
+        }
+    },
+    {
+        "id": "ml3",
+        "colour": "#009641",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 3",
+            "zh-Hans": "电车3号线",
+            "zh-Hant": "電車3號缐",
+            "fr": "Tramway Ligne 3"
+        }
+    },
+    {
+        "id": "ml4",
+        "colour": "#be1d2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line C4",
+            "zh-Hans": "巴士C4号线",
+            "zh-Hant": "巴士C4號缐",
+            "fr": "Bus Ligne C4"
+        }
+    },
+    {
+        "id": "ml5",
+        "colour": "#f39200",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line C5",
+            "zh-Hans": "巴士C5号线",
+            "zh-Hant": "巴士C5號缐",
+            "fr": "Bus Ligne C5"
+        }
+    },
+    {
+        "id": "ml6",
+        "colour": "#e6007d",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line C6",
+            "zh-Hans": "巴士C6号线",
+            "zh-Hant": "巴士C6號缐",
+            "fr": "Bus Ligne C6"
+        }
+    },
+    {
+        "id": "ml7",
+        "colour": "#2dafe6",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line C7",
+            "zh-Hans": "巴士C7号线",
+            "zh-Hant": "巴士C7號缐",
+            "fr": "Bus Ligne C7"
+        }
+    },
+    {
+        "id": "ml8",
+        "colour": "#ffed00",
+        "fg": "#000",
+        "name": {
+            "en": "Bus Line 8",
+            "zh-Hans": "巴士8号线",
+            "zh-Hant": "巴士8號缐",
+            "fr": "Bus Ligne 8"
+        }
+    },
+    {
+        "id": "ml9",
+        "colour": "#009641",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 9",
+            "zh-Hans": "巴士9号线",
+            "zh-Hant": "巴士9號缐",
+            "fr": "Bus Ligne 9"
+        }
+    },
+    {
+        "id": "ml10",
+        "colour": "#8b6dae",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 10",
+            "zh-Hans": "巴士10号线",
+            "zh-Hant": "巴士10號缐",
+            "fr": "Bus Ligne 10"
+        }
+    },
+    {
+        "id": "ml11",
+        "colour": "#65452f",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 11",
+            "zh-Hans": "巴士11号线",
+            "zh-Hant": "巴士11號缐",
+            "fr": "Bus Ligne 11"
+        }
+    },
+    {
+        "id": "ml12",
+        "colour": "#f39fc5",
+        "fg": "#000",
+        "name": {
+            "en": "Bus Line 12",
+            "zh-Hans": "巴士12号线",
+            "zh-Hant": "巴士12號缐",
+            "fr": "Bus Ligne 12"
+        }
+    },
+    {
+        "id": "ml13",
+        "colour": "#aab500",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 13",
+            "zh-Hans": "巴士13号线",
+            "zh-Hant": "巴士13號缐",
+            "fr": "Bus Ligne 13"
+        }
+    },
+    {
+        "id": "ml14",
+        "colour": "#cc8253",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 14",
+            "zh-Hans": "巴士14号线",
+            "zh-Hant": "巴士14號缐",
+            "fr": "Bus Ligne 14"
+        }
+    },
+    {
+        "id": "ml15",
+        "colour": "#00a3e6",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 15",
+            "zh-Hans": "巴士15号线",
+            "zh-Hant": "巴士15號缐",
+            "fr": "Bus Ligne 15"
+        }
+    },
+    {
+        "id": "ml16",
+        "colour": "#3c3e92",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 16",
+            "zh-Hans": "巴士16号线",
+            "zh-Hant": "巴士16號缐",
+            "fr": "Bus Ligne 16"
+        }
+    },
+    {
+        "id": "ml17",
+        "colour": "#b80e92",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line 17",
+            "zh-Hans": "巴士17号线",
+            "zh-Hant": "巴士17號缐",
+            "fr": "Bus Ligne 17"
+        }
+    },
+    {
+        "id": "mltt",
+        "colour": "#afca0b",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Train",
+            "zh-Hans": "Tram Train",
+            "zh-Hant": "Tram Train",
+            "fr": "Tram Train"
+        }
+    },
+    {
+        "id": "mlil",
+        "colour": "#00628b",
+        "fg": "#fff",
+        "name": {
+            "en": "Intercity lines",
+            "zh-Hans": "城际线路",
+            "zh-Hant": "城際缐路",
+            "fr": "Lignes interurbaines"
+        }
+    }
+]
