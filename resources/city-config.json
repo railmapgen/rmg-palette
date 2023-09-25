@@ -609,6 +609,15 @@
         }
     },
     {
+        "id": "jinhua",
+        "country": "CN",
+        "name": {
+            "en": "Jinhua",
+            "zh-Hans": "金华",
+            "zh-Hant": "金華"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
@@ -1234,6 +1243,17 @@
             "ja": "札幌",
             "zh-Hans": "札幌",
             "zh-Hant": "札幌"
+        }
+    },
+    {
+        "id": "sendai",
+        "country": "JP",
+        "name": {
+            "en": "Sendai",
+            "zh-Hans": "仙台",
+            "zh-Hant": "仙台",
+            "ja": "仙台",
+            "ko": "센다이"
         }
     },
     {
