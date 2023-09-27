@@ -1,0 +1,74 @@
+[
+    {
+        "id": "h",
+        "colour": "#fab123",
+        "fg": "#fff",
+        "name": {
+            "en": "Higashiyama Line",
+            "zh-Hans": "东山线",
+            "zh-Hant": "東山線",
+            "ja": "東山線",
+            "ko": "히가시야마선"
+        }
+    },
+    {
+        "id": "m",
+        "colour": "#b074d6",
+        "fg": "#fff",
+        "name": {
+            "en": "Meijo Line",
+            "zh-Hans": "名城线",
+            "zh-Hant": "名城線",
+            "ja": "名城線",
+            "ko": "메이조선"
+        }
+    },
+    {
+        "id": "e",
+        "colour": "#b074d6",
+        "fg": "#fff",
+        "name": {
+            "en": "Meiko Line",
+            "zh-Hans": "名港线",
+            "zh-Hant": "名港線",
+            "ja": "名港線",
+            "ko": "메이코선"
+        }
+    },
+    {
+        "id": "t",
+        "colour": "#009bbf",
+        "fg": "#fff",
+        "name": {
+            "en": "Tsurumai Line",
+            "zh-Hans": "鹤舞线",
+            "zh-Hant": "鶴舞線",
+            "ja": "鶴舞線",
+            "ko": "쓰루마이선"
+        }
+    },
+    {
+        "id": "s",
+        "colour": "#c92f44",
+        "fg": "#fff",
+        "name": {
+            "en": "Sakura-dori Line",
+            "zh-Hans": "樱通线",
+            "zh-Hant": "櫻通線",
+            "ja": "桜通線",
+            "ko": "사쿠라도리선"
+        }
+    },
+    {
+        "id": "k",
+        "colour": "#fc78b4",
+        "fg": "#fff",
+        "name": {
+            "en": "Kamiiida Line",
+            "zh-Hans": "上饭田线",
+            "zh-Hant": "上飯田線",
+            "ja": "上飯田線",
+            "ko": "가미이다선"
+        }
+    }
+]

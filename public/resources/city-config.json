@@ -919,6 +919,17 @@
         }
     },
     {
+        "id": "nagoya",
+        "country": "JP",
+        "name": {
+            "en": "Nagoya",
+            "zh-Hans": "名古屋",
+            "zh-Hant": "名古屋",
+            "ja": "名古屋",
+            "ko": "나고야"
+        }
+    },
+    {
         "id": "nagpur",
         "country": "IN",
         "name": {
