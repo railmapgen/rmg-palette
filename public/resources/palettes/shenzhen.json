@@ -1,7 +1,7 @@
 [
     {
         "id": "sz1",
-        "colour": "#00B140",
+        "colour": "#00af55",
         "fg": "#fff",
         "name": {
             "en": "Line 1 (Luobao Line)",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sz2",
-        "colour": "#B94700",
+        "colour": "#895800",
         "fg": "#fff",
         "name": {
             "en": "Line 2 (Shekou Line)",
@@ -21,7 +21,7 @@
     },
     {
         "id": "sz3",
-        "colour": "#00A9E0",
+        "colour": "#00a7de",
         "fg": "#fff",
         "name": {
             "en": "Line 3 (Longgang Line)",
@@ -31,7 +31,7 @@
     },
     {
         "id": "sz4",
-        "colour": "#DA291C",
+        "colour": "#d82e0e",
         "fg": "#fff",
         "name": {
             "en": "Line 4 (Longhua Line)",
@@ -41,7 +41,7 @@
     },
     {
         "id": "sz5",
-        "colour": "#A05EB5",
+        "colour": "#9e4daa",
         "fg": "#fff",
         "name": {
             "en": "Line 5 (Huanzhong Line)",
@@ -51,22 +51,22 @@
     },
     {
         "id": "sz6",
-        "colour": "#00C7B1",
+        "colour": "#00c4b7",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
-            "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
+            "zh-Hans": "6号线（光明线）",
+            "zh-Hant": "6號線（光明線）"
         }
     },
     {
         "id": "sz6b",
-        "colour": "#168773",
+        "colour": "#007776",
         "fg": "#fff",
         "name": {
-            "en": "Line 6 branch",
-            "zh-Hans": "6号线支线",
-            "zh-Hant": "6號線支線"
+            "en": "Branch Line 6",
+            "zh-Hans": "6号线支线（福江线）",
+            "zh-Hant": "6號線支線（福江線）"
         }
     },
     {
@@ -75,103 +75,103 @@
         "fg": "#fff",
         "name": {
             "en": "Line 7",
-            "zh-Hans": "7号线",
-            "zh-Hant": "7號線"
+            "zh-Hans": "7号线（西丽线）",
+            "zh-Hant": "7號線（西麗線）"
         }
     },
     {
         "id": "sz8",
-        "colour": "#b94700",
+        "colour": "#895800",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "zh-Hans": "8号线（盐田线）",
+            "zh-Hant": "8號線（鹽田線）"
         }
     },
     {
         "id": "sz9",
-        "colour": "#7B6469",
+        "colour": "#896b70",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
-            "zh-Hans": "9号线",
-            "zh-Hant": "9號線"
+            "zh-Hans": "9号线（梅林线）",
+            "zh-Hant": "9號線（梅林線）"
         }
     },
     {
         "id": "sz10",
-        "colour": "#F8779E",
+        "colour": "#f67599",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
-            "zh-Hans": "10号线",
-            "zh-Hant": "10號線"
+            "zh-Hans": "10号线（坂田线）",
+            "zh-Hant": "10號線（坂田線）"
         }
     },
     {
         "id": "sz11",
-        "colour": "#672146",
+        "colour": "#681c3f",
         "fg": "#fff",
         "name": {
             "en": "Line 11",
-            "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "zh-Hans": "11号线（机场快线）",
+            "zh-Hant": "11號線（機場快線）"
         }
     },
     {
         "id": "sz12",
-        "colour": "#A192B2",
+        "colour": "#a291b2",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
-            "zh-Hans": "12号线",
-            "zh-Hant": "12號線"
+            "zh-Hans": "12号线（南宝线）",
+            "zh-Hant": "12號線（南寶線）"
         }
     },
     {
         "id": "sz13",
-        "colour": "#DE7C00",
+        "colour": "#da830a",
         "fg": "#fff",
         "name": {
             "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "zh-Hans": "13号线（石岩线）",
+            "zh-Hant": "13號線（石岩線）"
         }
     },
     {
         "id": "sz14",
-        "colour": "#F2C75C",
+        "colour": "#f4cb67",
         "fg": "#fff",
         "name": {
             "en": "Line 14",
-            "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
+            "zh-Hans": "14号线（东部快线）",
+            "zh-Hant": "14號線（東部快線）"
         }
     },
     {
         "id": "sz15",
-        "colour": "#84BD00",
+        "colour": "#99c517",
         "fg": "#fff",
         "name": {
             "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "zh-Hans": "15号线（前南线）",
+            "zh-Hant": "15號線（前南線）"
         }
     },
     {
         "id": "sz16",
-        "colour": "#1E22AA",
+        "colour": "#181ba5",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
-            "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "zh-Hans": "16号线（龙坪线）",
+            "zh-Hant": "16號線（龍坪線）"
         }
     },
     {
         "id": "sz20",
-        "colour": "#88DBDF",
+        "colour": "#93dbe0",
         "fg": "#fff",
         "name": {
             "en": "Line 20",
@@ -207,6 +207,176 @@
             "en": "Pingshan sky shuttlo",
             "zh-Hans": "坪山云巴",
             "zh-Hant": "坪山雲巴"
+        }
+    },
+    {
+        "id": "sz7b",
+        "colour": "#001e6a",
+        "fg": "#fff",
+        "name": {
+            "en": "Branch Line 7",
+            "zh-Hans": "7号线支线（深云线）",
+            "zh-Hant": "7號線支線（深雲線）"
+        }
+    },
+    {
+        "id": "sz17",
+        "colour": "#007d83",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线（平湖线）（规划）",
+            "zh-Hant": "17號線（平湖線）（規劃）"
+        }
+    },
+    {
+        "id": "sz18",
+        "colour": "#1e8fff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线（外环线）（规划）",
+            "zh-Hant": "18號線（外環線）（規劃）"
+        }
+    },
+    {
+        "id": "sz19",
+        "colour": "#439f6c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线（坪山线）（规划）",
+            "zh-Hant": "19號線（坪山線）（規劃）"
+        }
+    },
+    {
+        "id": "sz21",
+        "colour": "#8e6740",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线（南龙线）（规划）",
+            "zh-Hant": "21號線（南龍線）（規劃）"
+        }
+    },
+    {
+        "id": "sz21b",
+        "colour": "#65492e",
+        "fg": "#fff",
+        "name": {
+            "en": "Branch Line 21",
+            "zh-Hans": "21号线支线（规划）",
+            "zh-Hant": "21號線支線（規劃）"
+        }
+    },
+    {
+        "id": "sz22",
+        "colour": "#1b9062",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线（观澜线）（规划）",
+            "zh-Hant": "22號線（觀瀾線）（規劃）"
+        }
+    },
+    {
+        "id": "sz23",
+        "colour": "#a9624a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线（规划）",
+            "zh-Hant": "23號線（規劃）"
+        }
+    },
+    {
+        "id": "sz24",
+        "colour": "#f44f19",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线（规划）",
+            "zh-Hant": "24號線（規劃）"
+        }
+    },
+    {
+        "id": "sz25",
+        "colour": "#426ae0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线（规划）",
+            "zh-Hant": "25號線（規劃）"
+        }
+    },
+    {
+        "id": "sz26",
+        "colour": "#c82c8a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26",
+            "zh-Hans": "26号线（规划）",
+            "zh-Hant": "26號線（規劃）"
+        }
+    },
+    {
+        "id": "sz27",
+        "colour": "#3e8065",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线（规划）",
+            "zh-Hant": "27號線（規劃）"
+        }
+    },
+    {
+        "id": "sz28",
+        "colour": "#8777e7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号线（规划）",
+            "zh-Hant": "28號線（規劃）"
+        }
+    },
+    {
+        "id": "sz29",
+        "colour": "#a13049",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 29",
+            "zh-Hans": "29号线（规划）",
+            "zh-Hant": "29號線（規劃）"
+        }
+    },
+    {
+        "id": "sz30",
+        "colour": "#cb9b47",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 30",
+            "zh-Hans": "30号线（规划）",
+            "zh-Hant": "30號線（規劃）"
+        }
+    },
+    {
+        "id": "sz31",
+        "colour": "#cc7ff2",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 31",
+            "zh-Hans": "31号线（规划）",
+            "zh-Hant": "31號線（規劃）"
+        }
+    },
+    {
+        "id": "sz32",
+        "colour": "#895800",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 32",
+            "zh-Hans": "32号线（大鹏线）（规划）",
+            "zh-Hant": "32號線（大鵬線）（規劃）"
         }
     }
 ]
