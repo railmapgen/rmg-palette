@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'REPLACE ME')
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
       - run: npm ci
         working-directory: ./package
 
