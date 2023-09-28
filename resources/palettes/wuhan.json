@@ -158,5 +158,45 @@
             "zh-Hans": "21号线",
             "zh-Hant": "21號線"
         }
+    },
+    {
+        "id": "whggkg",
+        "colour": "#05aff1",
+        "fg": "#fff",
+        "name": {
+            "en": "Suspended Monorail Line",
+            "zh-Hans": "空轨旅游线",
+            "zh-Hant": "空軌旅遊線"
+        }
+    },
+    {
+        "id": "whggxdygdcl1",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Wuhan Optics Valley Modern Tram Line 1",
+            "zh-Hans": "武汉光谷现代有轨电车1号线",
+            "zh-Hant": "武漢光谷現代電車1號線"
+        }
+    },
+    {
+        "id": "whggxdygdcl2",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Wuhan Optics Valley Modern Tram Line 2",
+            "zh-Hans": "武汉光谷现代有轨电车2号线",
+            "zh-Hant": "武漢光谷現代電車2號線"
+        }
+    },
+    {
+        "id": "whggxdygdcl5",
+        "colour": "#818181",
+        "fg": "#fff",
+        "name": {
+            "en": "Wuhan Optics Valley Modern Tram Line 5 (Event Time Only)",
+            "zh-Hans": "武汉光谷现代有轨电车5号线（大型活动开行）",
+            "zh-Hant": "武漢光谷現代電車5號線（大型活動開行）"
+        }
     }
 ]
