@@ -801,5 +801,16 @@
             "zh-Hans": "千叶都市单轨电车",
             "zh-Hant": "千葉都市單軌電車"
         }
+    },
+    {
+        "id": "na",
+        "colour": "#a6a9ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Kawagoe Line",
+            "ja": "川越線",
+            "zh-Hans": "川越线",
+            "zh-Hant": "川越線"
+        }
     }
 ]
