@@ -1,95 +1,95 @@
 [
     {
         "id": "hoh",
-        "colour": "#407bbe",
+        "colour": "#066fc2",
         "fg": "#fff",
         "name": {
-            "en": "Muroran Main Line/Hakodate Main Line",
-            "zh-Hans": "室兰本线/函馆本线",
-            "ja": "室蘭本線/函館本線",
-            "zh-Hant": "室蘭本線/函館本線"
+            "en": "Muroran Line · Hakodate Line",
+            "zh-Hans": "室兰线 · 函馆线",
+            "ja": "室蘭線 · 函館線",
+            "zh-Hant": "室蘭線 · 函館線"
         }
     },
     {
         "id": "hos",
-        "colour": "#ff0000",
+        "colour": "#e50401",
         "fg": "#fff",
         "name": {
-            "en": "Hakodate Main Line",
-            "zh-Hans": "函馆本线",
-            "ja": "函館本線",
-            "zh-Hant": "函館本線"
+            "en": "Hakodate Line",
+            "zh-Hans": "函馆线",
+            "ja": "函館線",
+            "zh-Hant": "函館線"
         }
     },
     {
         "id": "hog",
-        "colour": "#00a64e",
+        "colour": "#0d9435",
         "fg": "#fff",
         "name": {
-            "en": "Sasshō Line",
-            "zh-Hans": "札沼线",
-            "ja": "札沼線",
-            "zh-Hant": "札沼線"
+            "en": "Sasshō Line (Gakuen-Toshi Line)",
+            "zh-Hans": "札沼线 (学园都市线)",
+            "ja": "札沼線 (学園都市線)",
+            "zh-Hant": "札沼線 (學圜都市線)"
         }
     },
     {
         "id": "hoap",
-        "colour": "#00b2eb",
+        "colour": "#1abeee",
         "fg": "#fff",
         "name": {
             "en": "Chitose Line",
             "zh-Hans": "千岁线",
             "ja": "千歳線",
-            "zh-Hant": "千歳線"
+            "zh-Hant": "千歲線"
         }
     },
     {
         "id": "hoa",
-        "colour": "#f7931d",
+        "colour": "#f07713",
         "fg": "#fff",
         "name": {
-            "en": "Sekihoku Main Line/Hakodate Main Line",
-            "zh-Hans": "石北本线/函馆本线",
-            "ja": "石北本線/函館本線",
-            "zh-Hant": "石北本線/函館本線"
+            "en": "Sekihoku Line · Hakodate Line",
+            "zh-Hans": "石北线 · 函馆线",
+            "ja": "石北線 · 函館線",
+            "zh-Hant": "石北線 · 函館線"
         }
     },
     {
         "id": "hok",
-        "colour": "#8cc63e",
+        "colour": "#47c55b",
         "fg": "#fff",
         "name": {
-            "en": "Sekishō Line/Nemuro Main Line",
-            "zh-Hans": "石胜线/根室本线",
-            "ja": "石勝線/根室本線",
-            "zh-Hant": "石勝線/根室本線"
+            "en": "Sekishō Line · Nemuro Line",
+            "zh-Hans": "石胜线 · 根室线",
+            "ja": "石勝線 · 根室線",
+            "zh-Hant": "石勝線 · 根室線"
         }
     },
     {
         "id": "hot",
-        "colour": "#f2969b",
+        "colour": "#ec9fcf",
         "fg": "#fff",
         "name": {
-            "en": "Nemuro Main Line",
-            "zh-Hans": "根室本线",
-            "ja": "根室本線",
-            "zh-Hant": "根室本線"
+            "en": "Nemuro Line",
+            "zh-Hans": "根室线",
+            "ja": "根室線",
+            "zh-Hant": "根室線"
         }
     },
     {
         "id": "hob",
-        "colour": "#f08abe",
+        "colour": "#e0429b",
         "fg": "#fff",
         "name": {
-            "en": "Senmō Main Line",
-            "zh-Hans": "钏网本线",
-            "ja": "釧網本線",
-            "zh-Hant": "釧網本線"
+            "en": "Senmō Line",
+            "zh-Hans": "钏网线",
+            "ja": "釧網線",
+            "zh-Hant": "釧網線"
         }
     },
     {
         "id": "hof",
-        "colour": "#aa5ea6",
+        "colour": "#9831cf",
         "fg": "#fff",
         "name": {
             "en": "Furano Line",
@@ -100,13 +100,35 @@
     },
     {
         "id": "how",
-        "colour": "#954a35",
+        "colour": "#983a4a",
         "fg": "#fff",
         "name": {
-            "en": "Sōya Main Line",
-            "zh-Hans": "宗谷本线",
-            "ja": "宗谷本線",
-            "zh-Hant": "宗谷本線"
+            "en": "Sōya Line",
+            "zh-Hans": "宗谷线",
+            "ja": "宗谷線",
+            "zh-Hant": "宗谷線"
+        }
+    },
+    {
+        "id": "hoshinkansen",
+        "colour": "#413397",
+        "fg": "#fff",
+        "name": {
+            "en": "Hokkaido Shinkansen",
+            "zh-Hans": "北海道新干线",
+            "zh-Hant": "北海道新幹線",
+            "ja": "北海道新幹線"
+        }
+    },
+    {
+        "id": "hsh",
+        "colour": "#0b4da2",
+        "fg": "#fff",
+        "name": {
+            "en": "South Hokkaido Railway",
+            "zh-Hans": "道南渔火铁道",
+            "zh-Hant": "道南漁火鐵道",
+            "ja": "道南いさりび鉄道"
         }
     }
 ]
