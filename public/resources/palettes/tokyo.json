@@ -804,13 +804,13 @@
     },
     {
         "id": "na",
-        "colour": "#a6a9ab",
+        "colour": "#a09d95",
         "fg": "#fff",
         "name": {
-            "en": "Kawagoe Line",
-            "ja": "川越線",
-            "zh-Hans": "川越线",
-            "zh-Hant": "川越線"
+            "en": "Hachiko Line",
+            "zh-Hans": "八高线",
+            "zh-Hant": "八高線",
+            "ja": "八高線"
         }
     }
 ]
