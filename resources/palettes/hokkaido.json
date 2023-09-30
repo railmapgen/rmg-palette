@@ -1,0 +1,112 @@
+[
+    {
+        "id": "hoh",
+        "colour": "#407bbe",
+        "fg": "#fff",
+        "name": {
+            "en": "Muroran Main Line/Hakodate Main Line",
+            "zh-Hans": "室兰本线/函馆本线",
+            "ja": "室蘭本線/函館本線",
+            "zh-Hant": "室蘭本線/函館本線"
+        }
+    },
+    {
+        "id": "hos",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Hakodate Main Line",
+            "zh-Hans": "函馆本线",
+            "ja": "函館本線",
+            "zh-Hant": "函館本線"
+        }
+    },
+    {
+        "id": "hog",
+        "colour": "#00a64e",
+        "fg": "#fff",
+        "name": {
+            "en": "Sasshō Line",
+            "zh-Hans": "札沼线",
+            "ja": "札沼線",
+            "zh-Hant": "札沼線"
+        }
+    },
+    {
+        "id": "hoap",
+        "colour": "#00b2eb",
+        "fg": "#fff",
+        "name": {
+            "en": "Chitose Line",
+            "zh-Hans": "千岁线",
+            "ja": "千歳線",
+            "zh-Hant": "千歳線"
+        }
+    },
+    {
+        "id": "hoa",
+        "colour": "#f7931d",
+        "fg": "#fff",
+        "name": {
+            "en": "Sekihoku Main Line/Hakodate Main Line",
+            "zh-Hans": "石北本线/函馆本线",
+            "ja": "石北本線/函館本線",
+            "zh-Hant": "石北本線/函館本線"
+        }
+    },
+    {
+        "id": "hok",
+        "colour": "#8cc63e",
+        "fg": "#fff",
+        "name": {
+            "en": "Sekishō Line/Nemuro Main Line",
+            "zh-Hans": "石胜线/根室本线",
+            "ja": "石勝線/根室本線",
+            "zh-Hant": "石勝線/根室本線"
+        }
+    },
+    {
+        "id": "hot",
+        "colour": "#f2969b",
+        "fg": "#fff",
+        "name": {
+            "en": "Nemuro Main Line",
+            "zh-Hans": "根室本线",
+            "ja": "根室本線",
+            "zh-Hant": "根室本線"
+        }
+    },
+    {
+        "id": "hob",
+        "colour": "#f08abe",
+        "fg": "#fff",
+        "name": {
+            "en": "Senmō Main Line",
+            "zh-Hans": "钏网本线",
+            "ja": "釧網本線",
+            "zh-Hant": "釧網本線"
+        }
+    },
+    {
+        "id": "hof",
+        "colour": "#aa5ea6",
+        "fg": "#fff",
+        "name": {
+            "en": "Furano Line",
+            "zh-Hans": "富良野线",
+            "ja": "富良野線",
+            "zh-Hant": "富良野線"
+        }
+    },
+    {
+        "id": "how",
+        "colour": "#954a35",
+        "fg": "#fff",
+        "name": {
+            "en": "Sōya Main Line",
+            "zh-Hans": "宗谷本线",
+            "ja": "宗谷本線",
+            "zh-Hant": "宗谷本線"
+        }
+    }
+]

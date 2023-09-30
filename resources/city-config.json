@@ -552,6 +552,16 @@
         }
     },
     {
+        "id": "hokkaido",
+        "country": "JP",
+        "name": {
+            "en": "Hokkaido",
+            "zh-Hans": "北海道",
+            "ja": "北海道",
+            "zh-Hant": "北海道"
+        }
+    },
+    {
         "id": "hongkong",
         "country": "HK",
         "name": {
