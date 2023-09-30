@@ -803,6 +803,17 @@
         }
     },
     {
+        "id": "nonavilable",
+        "colour": "#a09d95",
+        "fg": "#fff",
+        "name": {
+            "en": "Hachiko Line",
+            "zh-Hans": "八高线",
+            "zh-Hant": "八高線",
+            "ja": "八高線"
+        }
+    },
+    {
         "id": "na",
         "colour": "#a6a9ab",
         "fg": "#fff",
