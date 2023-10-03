@@ -118,5 +118,15 @@
             "zh-Hans": "19号线",
             "zh-Hant": "19號線"
         }
+    },
+    {
+        "id": "hangzhouhainingintercityrail",
+        "colour": "#0277c8",
+        "fg": "#fff",
+        "name": {
+            "en": "Hangzhou-Haining Intercity Rail",
+            "zh-Hans": "杭海城际",
+            "zh-Hant": "杭海城際"
+        }
     }
 ]
