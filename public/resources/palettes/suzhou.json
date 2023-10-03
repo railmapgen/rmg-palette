@@ -118,5 +118,35 @@
             "zh-Hans": "未开通线路",
             "zh-Hant": "未開通線路"
         }
+    },
+    {
+        "id": "szy1",
+        "colour": "#84b47d",
+        "fg": "#fff",
+        "name": {
+            "en": "SND Tram Line 1",
+            "zh-Hans": "苏州高新有轨电车1号线",
+            "zh-Hant": "蘇州高新有軌電車1號線"
+        }
+    },
+    {
+        "id": "szy2",
+        "colour": "#7a0702",
+        "fg": "#fff",
+        "name": {
+            "en": "SND Tram Line 2",
+            "zh-Hans": "苏州高新有轨电车2号线",
+            "zh-Hant": "蘇州高新有軌電車2號線"
+        }
+    },
+    {
+        "id": "szy5",
+        "colour": "#490a69",
+        "fg": "#fff",
+        "name": {
+            "en": "SND Tram Line 5",
+            "zh-Hans": "苏州高新有轨电车5号线",
+            "zh-Hant": "蘇州高新有軌電車5號線"
+        }
     }
 ]
