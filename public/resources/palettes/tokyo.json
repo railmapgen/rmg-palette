@@ -823,5 +823,16 @@
             "zh-Hans": "川越线",
             "zh-Hant": "川越線"
         }
+    },
+    {
+        "id": "tx",
+        "colour": "#003b83",
+        "fg": "#fff",
+        "name": {
+            "en": "Tsukuba Express",
+            "zh-Hans": "筑波快线",
+            "zh-Hant": "筑波快線",
+            "ja": "つくばエクスプレス"
+        }
     }
 ]
