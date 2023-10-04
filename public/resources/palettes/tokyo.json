@@ -823,5 +823,38 @@
             "zh-Hans": "川越线",
             "zh-Hant": "川越線"
         }
+    },
+    {
+        "id": "tx",
+        "colour": "#003b83",
+        "fg": "#fff",
+        "name": {
+            "en": "Tsukuba Express",
+            "zh-Hans": "筑波快线",
+            "zh-Hant": "筑波快線",
+            "ja": "つくばエクスプレス"
+        }
+    },
+    {
+        "id": "ss",
+        "colour": "#00a7bf",
+        "fg": "#fff",
+        "name": {
+            "en": "Haijima Line",
+            "zh-Hans": "拜岛线",
+            "zh-Hant": "拜島線",
+            "ja": "拝島線"
+        }
+    },
+    {
+        "id": "tj",
+        "colour": "#eca613",
+        "fg": "#fff",
+        "name": {
+            "en": "Ogose Line",
+            "zh-Hans": "越生线",
+            "zh-Hant": "越生線",
+            "ja": "越生線"
+        }
     }
 ]
