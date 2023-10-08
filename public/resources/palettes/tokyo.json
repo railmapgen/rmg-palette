@@ -856,5 +856,16 @@
             "zh-Hant": "越生線",
             "ja": "越生線"
         }
+    },
+    {
+        "id": "na",
+        "colour": "#b31c31",
+        "fg": "#fff",
+        "name": {
+            "en": "Togane Line",
+            "zh-Hans": "东金线",
+            "zh-Hant": "東金線",
+            "ja": "東金線"
+        }
     }
 ]
