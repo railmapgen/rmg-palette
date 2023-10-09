@@ -1,0 +1,137 @@
+[
+    {
+        "id": "WF",
+        "colour": "#3048e1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1 Waterfront",
+            "zh-Hant": "湖邊 1線"
+        }
+    },
+    {
+        "id": "QU",
+        "colour": "#80acff",
+        "fg": "#000",
+        "name": {
+            "en": "Line 1A Quay Tram",
+            "zh-Hant": "電車 1A線"
+        }
+    },
+    {
+        "id": "NO",
+        "colour": "#f00018",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2 North City",
+            "zh-Hant": "北都 2線"
+        }
+    },
+    {
+        "id": "SO",
+        "colour": "#ffe124",
+        "fg": "#000",
+        "name": {
+            "en": "Line 3 South City",
+            "zh-Hant": "南都 3線"
+        }
+    },
+    {
+        "id": "AA",
+        "colour": "#80e130",
+        "fg": "#000",
+        "name": {
+            "en": "Line 4 Acacia",
+            "zh-Hant": "合金歡 4線"
+        }
+    },
+    {
+        "id": "VL",
+        "colour": "#d648d6",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5 Valiance",
+            "zh-Hant": "剛毅 5線"
+        }
+    },
+    {
+        "id": "SR",
+        "colour": "#ff9648",
+        "fg": "#000",
+        "name": {
+            "en": "Line 6 Sunrise",
+            "zh-Hant": "日昇 6線"
+        }
+    },
+    {
+        "id": "TB",
+        "colour": "#48b448",
+        "fg": "#000",
+        "name": {
+            "en": "Line 7 Thistlebough",
+            "zh-Hant": "尖薊田 7線"
+        }
+    },
+    {
+        "id": "IL",
+        "colour": "#acf0ac",
+        "fg": "#000",
+        "name": {
+            "en": "Line 7A Island Shuttle",
+            "zh-Hant": "離島 7A線"
+        }
+    },
+    {
+        "id": "AE",
+        "colour": "#96e1f0",
+        "fg": "#000",
+        "name": {
+            "en": "Line 8 Airport Express",
+            "zh-Hant": "機場快線 8線"
+        }
+    },
+    {
+        "id": "NC",
+        "colour": "#ffc8f0",
+        "fg": "#000",
+        "name": {
+            "en": "Line 9 North City Circular",
+            "zh-Hant": "北都循環 9線"
+        }
+    },
+    {
+        "id": "LR",
+        "colour": "#d6b450",
+        "fg": "#000",
+        "name": {
+            "en": "Line 10 ELRIC",
+            "zh-Hant": "輕鐵 10線"
+        }
+    },
+    {
+        "id": "GC",
+        "colour": "#964818",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 11 Grove Corridor",
+            "zh-Hant": "叢林道 11線"
+        }
+    },
+    {
+        "id": "NS",
+        "colour": "#e1e1e1",
+        "fg": "#000",
+        "name": {
+            "en": "Line S1 North Suburban",
+            "zh-Hant": "北都近郊 S1線"
+        }
+    },
+    {
+        "id": "SS",
+        "colour": "#808080",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2 South Suburban",
+            "zh-Hant": "南都近郊 S2線"
+        }
+    }
+]
