@@ -455,7 +455,7 @@
         "colour": "#00A6BF",
         "fg": "#fff",
         "name": {
-            "en": "Seibu Shinjuku Line/Haijima Line(SS)",
+            "en": "Seibu Shinjuku Line/Haijima Line (SS)",
             "ja": "西武新宿線・拝島線",
             "zh-Hans": "西武新宿线・拜岛线",
             "zh-Hant": "西武新宿線・拜島線"
@@ -554,7 +554,7 @@
         "colour": "#00428E",
         "fg": "#fff",
         "name": {
-            "en": "Tōbu Tōjō Line/Ogose Line(TJ)",
+            "en": "Tōbu Tōjō Line/Ogose Line (TJ)",
             "ja": "東武東上線・越生線",
             "zh-Hans": "东武东上线・越生线",
             "zh-Hant": "東武東上線・越生線"
