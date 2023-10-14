@@ -455,10 +455,10 @@
         "colour": "#00A6BF",
         "fg": "#fff",
         "name": {
-            "en": "Seibu Shinjuku Line (SS)",
-            "ja": "西武新宿線",
-            "zh-Hans": "西武新宿线",
-            "zh-Hant": "西武新宿線"
+            "en": "Seibu Shinjuku Line/Haijima Line (SS)",
+            "ja": "西武新宿線・拝島線",
+            "zh-Hans": "西武新宿线・拜岛线",
+            "zh-Hant": "西武新宿線・拜島線"
         }
     },
     {
@@ -554,10 +554,10 @@
         "colour": "#00428E",
         "fg": "#fff",
         "name": {
-            "en": "Tōbu Tōjō Line (TJ)",
-            "ja": "東武東上線",
-            "zh-Hans": "东武东上线",
-            "zh-Hant": "東武東上線"
+            "en": "Tōbu Tōjō Line/Ogose Line (TJ)",
+            "ja": "東武東上線・越生線",
+            "zh-Hans": "东武东上线・越生线",
+            "zh-Hant": "東武東上線・越生線"
         }
     },
     {
@@ -833,28 +833,6 @@
             "zh-Hans": "筑波快线",
             "zh-Hant": "筑波快線",
             "ja": "つくばエクスプレス"
-        }
-    },
-    {
-        "id": "ss",
-        "colour": "#00a7bf",
-        "fg": "#fff",
-        "name": {
-            "en": "Haijima Line",
-            "zh-Hans": "拜岛线",
-            "zh-Hant": "拜島線",
-            "ja": "拝島線"
-        }
-    },
-    {
-        "id": "tj",
-        "colour": "#eca613",
-        "fg": "#fff",
-        "name": {
-            "en": "Ogose Line",
-            "zh-Hans": "越生线",
-            "zh-Hant": "越生線",
-            "ja": "越生線"
         }
     }
 ]
