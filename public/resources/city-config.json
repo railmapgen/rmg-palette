@@ -695,6 +695,16 @@
         }
     },
     {
+        "id": "kyoto",
+        "country": "JP",
+        "name": {
+            "en": "Kyoto",
+            "zh-Hans": "京都",
+            "zh-Hant": "京都",
+            "ja": "京都"
+        }
+    },
+    {
         "id": "lahore",
         "country": "PK",
         "name": {
