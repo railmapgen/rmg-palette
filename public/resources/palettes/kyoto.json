@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ktt",
+        "colour": "#ff4500",
+        "fg": "#fff",
+        "name": {
+            "en": "Tozai Line",
+            "zh-Hans": "东西线",
+            "zh-Hant": "東西綫",
+            "ja": "東西線"
+        }
+    },
+    {
+        "id": "ktk",
+        "colour": "#3cb371",
+        "fg": "#fff",
+        "name": {
+            "en": "Karasuma Line",
+            "zh-Hans": "鸟丸线",
+            "zh-Hant": "鳥丸綫",
+            "ja": "烏丸線"
+        }
+    }
+]
