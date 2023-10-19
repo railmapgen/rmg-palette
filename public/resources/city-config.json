@@ -49,6 +49,16 @@
         }
     },
     {
+        "id": "b",
+        "country": "ID",
+        "name": {
+            "id": "Bandung",
+            "en": "Bandung",
+            "zh-Hans": "万隆",
+            "zh-Hant": "萬隆"
+        }
+    },
+    {
         "id": "baku",
         "country": "AZ",
         "name": {
