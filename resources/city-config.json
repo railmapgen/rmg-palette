@@ -1397,6 +1397,16 @@
         }
     },
     {
+        "id": "strasbourg",
+        "country": "FR",
+        "name": {
+            "en": "Strasbourg",
+            "zh-Hans": "斯特拉斯堡",
+            "zh-Hant": "斯特拉斯堡",
+            "fr": "Strasbourg"
+        }
+    },
+    {
         "id": "suzhou",
         "country": "CN",
         "name": {

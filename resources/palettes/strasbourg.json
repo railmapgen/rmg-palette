@@ -1,0 +1,90 @@
+[
+    {
+        "id": "sta",
+        "colour": "#e41513",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line A",
+            "zh-Hans": "电车A线",
+            "zh-Hant": "電車A缐",
+            "fr": "Tram Ligne A"
+        }
+    },
+    {
+        "id": "stb",
+        "colour": "#009fe3",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line B",
+            "zh-Hans": "电车B线",
+            "zh-Hant": "電車B缐",
+            "fr": "Tram Ligne B"
+        }
+    },
+    {
+        "id": "stc",
+        "colour": "#f19200",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line C",
+            "zh-Hans": "电车C线",
+            "zh-Hant": "電車C缐",
+            "fr": "Tram Ligne C"
+        }
+    },
+    {
+        "id": "std",
+        "colour": "#009e3d",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line D",
+            "zh-Hans": "电车D线",
+            "zh-Hant": "電車D缐",
+            "fr": "Tram Ligne D"
+        }
+    },
+    {
+        "id": "ste",
+        "colour": "#9185be",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line E",
+            "zh-Hans": "电车E线",
+            "zh-Hant": "電車E缐",
+            "fr": "Tram Ligne E"
+        }
+    },
+    {
+        "id": "stf",
+        "colour": "#95c01f",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line F",
+            "zh-Hans": "电车F线",
+            "zh-Hant": "電車F缐",
+            "fr": "Tram Ligne F"
+        }
+    },
+    {
+        "id": "sbg",
+        "colour": "#294294",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line G",
+            "zh-Hans": "巴士G线",
+            "zh-Hant": "巴士G缐",
+            "fr": "Bus Ligne G"
+        }
+    },
+    {
+        "id": "sbh",
+        "colour": "#a62241",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Line H",
+            "zh-Hans": "巴士H线",
+            "zh-Hant": "巴士H缐",
+            "fr": "Bus Ligne H"
+        }
+    }
+]
