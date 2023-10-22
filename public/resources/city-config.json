@@ -1083,6 +1083,16 @@
         }
     },
     {
+        "id": "nuremberg",
+        "country": "DE",
+        "name": {
+            "en": "Nuremberg",
+            "zh-Hans": "纽伦堡",
+            "zh-Hant": "紐倫堡",
+            "de": "Nürnberg"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
