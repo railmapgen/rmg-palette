@@ -29,8 +29,10 @@ describe('Sanity', () => {
         });
     });
 
-    it.each(allCities)('Palette file of %s exists and follows type PaletteEntry[]', async cityId => {
+    it.each(allCities)('Palette file of %s exists and follows type PaletteEntry[] and no duplicates', async cityId => {
         const { default: palette } = await import(`../../public/resources/palettes/${cityId}.json`);
+
+        // type check
         palette.forEach((line: any) => {
             expect(typeof line.id).toBe('string');
             translationAssertion(line.name);
@@ -42,6 +44,9 @@ describe('Sanity', () => {
                 expect(typeof line.pantone).toBe('string');
             }
         });
+
+        // duplication check
+        expect(new Set(palette.map((line: any) => line.id)).size).toBe(palette.length);
     });
 
     it('Check country-config.json follows type CountryEntry[]', () => {
