@@ -60,4 +60,8 @@ describe('Sanity', () => {
             expect(allCountries).toContain(city.country);
         });
     });
+
+    it.each(countryList.map(country => country.id))('Check country code %s validity', countryId => {
+        expect(countryId.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)).not.toBeNull();
+    });
 });
