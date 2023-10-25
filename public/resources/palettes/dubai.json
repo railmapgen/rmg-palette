@@ -1,7 +1,7 @@
 [
     {
         "id": "dbred",
-        "colour": "#ff0000",
+        "colour": "#e4061f",
         "fg": "#fff",
         "name": {
             "en": "Red Line",
