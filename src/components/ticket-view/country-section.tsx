@@ -63,6 +63,7 @@ export default function CountrySection() {
             label: t('Country/region code'),
             placeholder: 'e.g. CN, HK, JP (ISO 3166-1 alpha-2)',
             value: newCountry,
+            validator: value => value !== '' && !!value.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/),
             onChange: value => dispatch(setNewCountry(value)),
             hidden: country !== 'new',
         },

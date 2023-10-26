@@ -357,6 +357,16 @@
         }
     },
     {
+        "id": "dubai",
+        "country": "AE",
+        "name": {
+            "en": "Dubai",
+            "zh-Hans": "迪拜",
+            "zh-Hant": "杜拜",
+            "ar": "دبي"
+        }
+    },
+    {
         "id": "dublin",
         "country": "IE",
         "name": {
@@ -692,6 +702,16 @@
             "zh-Hans": "基辅",
             "zh-Hant": "基輔",
             "uk": "Киев"
+        }
+    },
+    {
+        "id": "kyoto",
+        "country": "JP",
+        "name": {
+            "en": "Kyoto",
+            "zh-Hans": "京都",
+            "zh-Hant": "京都",
+            "ja": "京都"
         }
     },
     {
@@ -1384,6 +1404,16 @@
             "en": "Stockholm",
             "zh-Hans": "斯德哥尔摩",
             "zh-Hant": "斯德哥爾摩"
+        }
+    },
+    {
+        "id": "strasbourg",
+        "country": "FR",
+        "name": {
+            "en": "Strasbourg",
+            "zh-Hans": "斯特拉斯堡",
+            "zh-Hant": "斯特拉斯堡",
+            "fr": "Strasbourg"
         }
     },
     {
