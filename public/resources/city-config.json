@@ -357,6 +357,16 @@
         }
     },
     {
+        "id": "dubai",
+        "country": "AE",
+        "name": {
+            "en": "Dubai",
+            "zh-Hans": "迪拜",
+            "zh-Hant": "杜拜",
+            "ar": "دبي"
+        }
+    },
+    {
         "id": "dublin",
         "country": "IE",
         "name": {

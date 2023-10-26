@@ -1,5 +1,15 @@
 [
     {
+        "id": "AE",
+        "name": {
+            "en": "United Arab Emirates",
+            "zh-Hans": "阿拉伯联合酋长国",
+            "zh-Hant": "阿拉伯聯合酋長國",
+            "ar": "الإمارات العربية المتحدة"
+        },
+        "language": "ar"
+    },
+    {
         "id": "AR",
         "name": {
             "es": "Argentina",

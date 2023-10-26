@@ -1,0 +1,35 @@
+[
+    {
+        "id": "dbred",
+        "colour": "#e4061f",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線",
+            "ar": "الخط الأحمر"
+        }
+    },
+    {
+        "id": "dbgreen",
+        "colour": "#00a243",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線",
+            "ar": "الخط الأخضر"
+        }
+    },
+    {
+        "id": "dbtram",
+        "colour": "#ec6906",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line",
+            "zh-Hans": "迪拜电车",
+            "zh-Hant": "杜拜電車",
+            "ar": "ترام دبي"
+        }
+    }
+]
