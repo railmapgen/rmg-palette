@@ -485,6 +485,16 @@
         }
     },
     {
+        "id": "gwangju",
+        "country": "KR",
+        "name": {
+            "en": "Gwangju",
+            "ko": "광주",
+            "zh-Hans": "光州",
+            "zh-Hant": "光州"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
