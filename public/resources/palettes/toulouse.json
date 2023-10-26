@@ -1,0 +1,90 @@
+[
+    {
+        "id": "tma",
+        "colour": "#ec2129",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line A",
+            "zh-Hans": "地铁A线",
+            "zh-Hant": "地鐡A缐",
+            "fr": "Métro Ligne A"
+        }
+    },
+    {
+        "id": "tmb",
+        "colour": "#fecc26",
+        "fg": "#000",
+        "name": {
+            "en": "Metro Line B",
+            "zh-Hans": "地铁B线",
+            "zh-Hant": "地鐡B缐",
+            "fr": "Métro Ligne B"
+        }
+    },
+    {
+        "id": "tmc",
+        "colour": "#70c382",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line C",
+            "zh-Hans": "地铁C线",
+            "zh-Hant": "地鐡C缐",
+            "fr": "Métro Ligne C"
+        }
+    },
+    {
+        "id": "tt1",
+        "colour": "#01518b",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram T1",
+            "zh-Hans": "电车T1",
+            "zh-Hant": "電車T1",
+            "fr": "Tram T1"
+        }
+    },
+    {
+        "id": "tac",
+        "colour": "#7e4098",
+        "fg": "#fff",
+        "name": {
+            "en": "Arènes - Colomiers",
+            "zh-Hans": "Arènes - Colomiers",
+            "zh-Hant": "Arènes - Colomiers",
+            "fr": "Arènes - Colomiers"
+        }
+    },
+    {
+        "id": "ttl",
+        "colour": "#ed0277",
+        "fg": "#fff",
+        "name": {
+            "en": "Téléo",
+            "zh-Hans": "城市缆车",
+            "zh-Hant": "城市纜車",
+            "fr": "Téléo"
+        }
+    },
+    {
+        "id": "tt2",
+        "colour": "#1d99d6",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Line",
+            "zh-Hans": "机场线",
+            "zh-Hant": "機場線",
+            "fr": "Ligne Aéroport"
+        }
+    },
+    {
+        "id": "tle",
+        "colour": "#f26d36",
+        "fg": "#fff",
+        "name": {
+            "en": "Linéo",
+            "zh-Hans": "Linéo",
+            "zh-Hant": "Linéo",
+            "fr": "Linéo"
+        }
+    }
+]
