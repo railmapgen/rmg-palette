@@ -1,0 +1,409 @@
+[
+    {
+        "id": "nu1",
+        "colour": "#0165a4",
+        "fg": "#fff",
+        "name": {
+            "en": "U1",
+            "zh-Hans": "U1",
+            "zh-Hant": "U1",
+            "de": "U1"
+        }
+    },
+    {
+        "id": "nu2",
+        "colour": "#ed1c23",
+        "fg": "#fff",
+        "name": {
+            "en": "U2",
+            "zh-Hans": "U2",
+            "zh-Hant": "U2",
+            "de": "U2"
+        }
+    },
+    {
+        "id": "nu3",
+        "colour": "#21bcbc",
+        "fg": "#fff",
+        "name": {
+            "en": "U3",
+            "zh-Hans": "U3",
+            "zh-Hant": "U3",
+            "de": "U3"
+        }
+    },
+    {
+        "id": "nt4",
+        "colour": "#f3848e",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 4",
+            "zh-Hans": "电车4号线",
+            "zh-Hant": "電車4號缐",
+            "de": "Straßenbahn Linie 4"
+        }
+    },
+    {
+        "id": "nt5",
+        "colour": "#8e51a0",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 5",
+            "zh-Hans": "电车5号线",
+            "zh-Hant": "電車5號缐",
+            "de": "Straßenbahn Linie 5"
+        }
+    },
+    {
+        "id": "nt6",
+        "colour": "#fed306",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 6",
+            "zh-Hans": "电车6号线",
+            "zh-Hant": "電車6號缐",
+            "de": "Straßenbahn Linie 6"
+        }
+    },
+    {
+        "id": "nt7",
+        "colour": "#98a4d3",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 7",
+            "zh-Hans": "电车7号线",
+            "zh-Hant": "電車7號缐",
+            "de": "Straßenbahn Linie 7"
+        }
+    },
+    {
+        "id": "nt8",
+        "colour": "#00b9f1",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 8",
+            "zh-Hans": "电车8号线",
+            "zh-Hant": "電車8號缐",
+            "de": "Straßenbahn Linie 8"
+        }
+    },
+    {
+        "id": "ns",
+        "colour": "#70a26b",
+        "fg": "#fff",
+        "name": {
+            "en": "S-Bahn",
+            "zh-Hans": "S-Bahn",
+            "zh-Hant": "S-Bahn",
+            "de": "S-Bahn"
+        }
+    },
+    {
+        "id": "nr",
+        "colour": "#0ab38e",
+        "fg": "#fff",
+        "name": {
+            "de": "Regional-Express/Regional-Bahn",
+            "zh-Hans": "区域快铁/区域铁路",
+            "zh-Hant": "區域快鐵/区域鐵路",
+            "en": "Regional-Express/Regional-Train"
+        }
+    },
+    {
+        "id": "nb1",
+        "colour": "#f59c00",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 1",
+            "zh-Hans": "夜间巴士1号线",
+            "zh-Hant": "夜間巴士1號缐",
+            "en": "Night Bus Line 1"
+        }
+    },
+    {
+        "id": "nb2",
+        "colour": "#0062a4",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 2",
+            "zh-Hans": "夜间巴士2号线",
+            "zh-Hant": "夜間巴士2號缐",
+            "en": "Night Bus Line 2"
+        }
+    },
+    {
+        "id": "nb3",
+        "colour": "#e5007d",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 3",
+            "zh-Hans": "夜间巴士3号线",
+            "zh-Hant": "夜間巴士3號缐",
+            "en": "Night Bus Line 3"
+        }
+    },
+    {
+        "id": "nb4",
+        "colour": "#89b4db",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 4",
+            "zh-Hans": "夜间巴士4号线",
+            "zh-Hant": "夜間巴士4號缐",
+            "en": "Night Bus Line 4"
+        }
+    },
+    {
+        "id": "nb5",
+        "colour": "#ffcc00",
+        "fg": "#000",
+        "name": {
+            "de": "Nachtbus Linie 5",
+            "zh-Hans": "夜间巴士5号线",
+            "zh-Hant": "夜間巴士5號缐",
+            "en": "Night Bus Line 5"
+        }
+    },
+    {
+        "id": "nb6",
+        "colour": "#e3000f",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 6",
+            "zh-Hans": "夜间巴士6号线",
+            "zh-Hant": "夜間巴士6號缐",
+            "en": "Night Bus Line 6"
+        }
+    },
+    {
+        "id": "nb7",
+        "colour": "#7f465a",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 7",
+            "zh-Hans": "夜间巴士7号线",
+            "zh-Hant": "夜間巴士7號缐",
+            "en": "Night Bus Line 7"
+        }
+    },
+    {
+        "id": "nb8",
+        "colour": "#7d72a3",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 8",
+            "zh-Hans": "夜间巴士8号线",
+            "zh-Hant": "夜間巴士8號缐",
+            "en": "Night Bus Line 8"
+        }
+    },
+    {
+        "id": "nb9",
+        "colour": "#c7d300",
+        "fg": "#000",
+        "name": {
+            "de": "Nachtbus Linie 9",
+            "zh-Hans": "夜间巴士9号线",
+            "zh-Hant": "夜間巴士9號缐",
+            "en": "Night Bus Line 9"
+        }
+    },
+    {
+        "id": "nb10",
+        "colour": "#0099aa",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 10",
+            "zh-Hans": "夜间巴士10号线",
+            "zh-Hant": "夜間巴士10號缐",
+            "en": "Night Bus Line 10"
+        }
+    },
+    {
+        "id": "nb11",
+        "colour": "#95348b",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 11",
+            "zh-Hans": "夜间巴士11号线",
+            "zh-Hant": "夜間巴士11號缐",
+            "en": "Night Bus Line 11"
+        }
+    },
+    {
+        "id": "nb12",
+        "colour": "#00a75d",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 12",
+            "zh-Hans": "夜间巴士12号线",
+            "zh-Hant": "夜間巴士12號缐",
+            "en": "Night Bus Line 12"
+        }
+    },
+    {
+        "id": "nb13",
+        "colour": "#e94d0a",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 13",
+            "zh-Hans": "夜间巴士13号线",
+            "zh-Hant": "夜間巴士13號缐",
+            "en": "Night Bus Line 13"
+        }
+    },
+    {
+        "id": "nb14",
+        "colour": "#455924",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 14",
+            "zh-Hans": "夜间巴士14号线",
+            "zh-Hant": "夜間巴士14號缐",
+            "en": "Night Bus Line 14"
+        }
+    },
+    {
+        "id": "nb15",
+        "colour": "#d46aa6",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 15",
+            "zh-Hans": "夜间巴士15号线",
+            "zh-Hant": "夜間巴士15號缐",
+            "en": "Night Bus Line 15"
+        }
+    },
+    {
+        "id": "nb17",
+        "colour": "#ed694a",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 17",
+            "zh-Hans": "夜间巴士17号线",
+            "zh-Hant": "夜間巴士17號缐",
+            "en": "Night Bus Line 17"
+        }
+    },
+    {
+        "id": "nb18",
+        "colour": "#c00808",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 18",
+            "zh-Hans": "夜间巴士18号线",
+            "zh-Hant": "夜間巴士18號缐",
+            "en": "Night Bus Line 18"
+        }
+    },
+    {
+        "id": "nb20",
+        "colour": "#76b828",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 20",
+            "zh-Hans": "夜间巴士20号线",
+            "zh-Hant": "夜間巴士20號缐",
+            "en": "Night Bus Line 20"
+        }
+    },
+    {
+        "id": "nb21",
+        "colour": "#e5007d",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 21",
+            "zh-Hans": "夜间巴士21号线",
+            "zh-Hant": "夜間巴士21號缐",
+            "en": "Night Bus Line 21"
+        }
+    },
+    {
+        "id": "nb22",
+        "colour": "#a61380",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 22",
+            "zh-Hans": "夜间巴士22号线",
+            "zh-Hant": "夜間巴士22號缐",
+            "en": "Night Bus Line 22"
+        }
+    },
+    {
+        "id": "nb27",
+        "colour": "#a8005c",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 27",
+            "zh-Hans": "夜间巴士27号线",
+            "zh-Hant": "夜間巴士27號缐",
+            "en": "Night Bus Line 27"
+        }
+    },
+    {
+        "id": "nb28",
+        "colour": "#2d2476",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 28",
+            "zh-Hans": "夜间巴士28号线",
+            "zh-Hant": "夜間巴士28號缐",
+            "en": "Night Bus Line 28"
+        }
+    },
+    {
+        "id": "nb29",
+        "colour": "#c99922",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 29",
+            "zh-Hans": "夜间巴士29号线",
+            "zh-Hant": "夜間巴士29號缐",
+            "en": "Night Bus Line 29"
+        }
+    },
+    {
+        "id": "nb55",
+        "colour": "#005493",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 55",
+            "zh-Hans": "夜间巴士55号线",
+            "zh-Hant": "夜間巴士55號缐",
+            "en": "Night Bus Line 55"
+        }
+    },
+    {
+        "id": "nb59",
+        "colour": "#9c9661",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 59",
+            "zh-Hans": "夜间巴士59号线",
+            "zh-Hant": "夜間巴士59號缐",
+            "en": "Night Bus Line 59"
+        }
+    },
+    {
+        "id": "nb60",
+        "colour": "#007d53",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 60",
+            "zh-Hans": "夜间巴士60号线",
+            "zh-Hant": "夜間巴士60號缐",
+            "en": "Night Bus Line 60"
+        }
+    },
+    {
+        "id": "nb61",
+        "colour": "#a49dc5",
+        "fg": "#fff",
+        "name": {
+            "de": "Nachtbus Linie 61",
+            "zh-Hans": "夜间巴士61号线",
+            "zh-Hant": "夜間巴士61號缐",
+            "en": "Night Bus Line 61"
+        }
+    }
+]
