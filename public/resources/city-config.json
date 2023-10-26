@@ -1518,6 +1518,16 @@
         }
     },
     {
+        "id": "toulouse",
+        "country": "FR",
+        "name": {
+            "en": "Toulouse",
+            "zh-Hans": "图卢兹",
+            "fr": "Toulouse",
+            "zh-Hant": "圖盧茲"
+        }
+    },
+    {
         "id": "turin",
         "country": "IT",
         "name": {
