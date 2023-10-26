@@ -1093,6 +1093,16 @@
         }
     },
     {
+        "id": "nuremberg",
+        "country": "DE",
+        "name": {
+            "en": "Nuremberg",
+            "zh-Hans": "纽伦堡",
+            "zh-Hant": "紐倫堡",
+            "de": "Nürnberg"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
@@ -1515,6 +1525,16 @@
             "fr": "Toronto (Région du Grand Toronto et de Hamilton)",
             "zh-Hans": "多伦多（大多伦多及汉密尔顿地区）",
             "zh-Hant": "多倫多（大多倫多暨咸美頓地區）"
+        }
+    },
+    {
+        "id": "toulouse",
+        "country": "FR",
+        "name": {
+            "en": "Toulouse",
+            "zh-Hans": "图卢兹",
+            "fr": "Toulouse",
+            "zh-Hant": "圖盧茲"
         }
     },
     {

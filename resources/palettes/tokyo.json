@@ -834,5 +834,27 @@
             "zh-Hant": "筑波快線",
             "ja": "つくばエクスプレス"
         }
+    },
+    {
+        "id": "togane",
+        "colour": "#b31c31",
+        "fg": "#fff",
+        "name": {
+            "en": "Togane Line",
+            "zh-Hans": "东金线",
+            "zh-Hant": "東金線",
+            "ja": "東金線"
+        }
+    },
+    {
+        "id": "sotobo",
+        "colour": "#f21f31",
+        "fg": "#fff",
+        "name": {
+            "en": "Sotobo Line",
+            "zh-Hans": "外房线",
+            "zh-Hant": "外房線",
+            "ja": "外房線"
+        }
     }
 ]
