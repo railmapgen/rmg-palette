@@ -46,7 +46,7 @@
     {
         "id": "bu5",
         "colour": "#ff007a",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 5",
             "ko": "5호선",
