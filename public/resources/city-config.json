@@ -319,6 +319,16 @@
         }
     },
     {
+        "id": "daejeon",
+        "country": "KR",
+        "name": {
+            "en": "Daejeon(Chungcheong Province)",
+            "zh-Hans": "大田（忠清道）",
+            "zh-Hant": "大田（忠清道）",
+            "ko": "대전（충청도)"
+        }
+    },
+    {
         "id": "dalian",
         "country": "CN",
         "name": {

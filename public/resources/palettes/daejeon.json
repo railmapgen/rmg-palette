@@ -1,0 +1,35 @@
+[
+    {
+        "id": "dj1",
+        "colour": "#007448",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線",
+            "ko": "1호선"
+        }
+    },
+    {
+        "id": "dj2",
+        "colour": "#5fc0b9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線",
+            "ko": "2호선"
+        }
+    },
+    {
+        "id": "djcmr",
+        "colour": "#0054a6",
+        "fg": "#fff",
+        "name": {
+            "en": "Chungcheong Metropolitan Railroad",
+            "zh-Hans": "忠清圈 广域铁道",
+            "zh-Hant": "忠清圈 廣域鐵道",
+            "ko": "충청권 광역철도"
+        }
+    }
+]
