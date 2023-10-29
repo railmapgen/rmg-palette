@@ -338,5 +338,15 @@
             "zh-Hans": "西铁线",
             "zh-Hant": "西鐵綫"
         }
+    },
+    {
+        "id": "",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Central Rail Link",
+            "zh-Hans": "",
+            "zh-Hant": "中鐵綫"
+        }
     }
 ]
