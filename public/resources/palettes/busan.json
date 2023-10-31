@@ -2,7 +2,7 @@
     {
         "id": "bu1",
         "colour": "#f06a00",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 1",
             "ko": "1호선",
@@ -13,7 +13,7 @@
     {
         "id": "bu2",
         "colour": "#81bf48",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 2",
             "ko": "2호선",
@@ -24,7 +24,7 @@
     {
         "id": "bu3",
         "colour": "#bb8c00",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 3",
             "ko": "3호선",
@@ -35,7 +35,7 @@
     {
         "id": "bu4",
         "colour": "#217dcb",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 4",
             "ko": "4호선",
@@ -44,8 +44,19 @@
         }
     },
     {
+        "id": "bu5",
+        "colour": "#ff007a",
+        "fg": "#000",
+        "name": {
+            "en": "Line 5",
+            "ko": "5호선",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號缐"
+        }
+    },
+    {
         "id": "bugl",
-        "colour": "#8652a1",
+        "colour": "#875cac",
         "fg": "#fff",
         "name": {
             "en": "Busan–Gimhae Light Rail Transit",
@@ -56,7 +67,7 @@
     },
     {
         "id": "budh",
-        "colour": "#004ea3",
+        "colour": "#0054a6",
         "fg": "#fff",
         "name": {
             "en": "Donghae Line",
