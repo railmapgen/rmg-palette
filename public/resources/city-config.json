@@ -59,6 +59,15 @@
         }
     },
     {
+        "id": "bangalore",
+        "country": "IN",
+        "name": {
+            "en": "Bangalore",
+            "zh-Hans": "班加罗尔",
+            "zh-Hant": "班加羅爾"
+        }
+    },
+    {
         "id": "bangkok",
         "country": "TH",
         "name": {
