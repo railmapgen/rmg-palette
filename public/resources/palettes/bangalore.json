@@ -1,0 +1,22 @@
+[
+    {
+        "id": "bg",
+        "colour": "#58ba49",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "緑缐"
+        }
+    },
+    {
+        "id": "bp",
+        "colour": "#a952a0",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "紫线",
+            "zh-Hant": "紫缐"
+        }
+    }
+]
