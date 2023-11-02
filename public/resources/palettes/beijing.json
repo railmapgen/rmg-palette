@@ -62,7 +62,7 @@
     {
         "id": "bj7",
         "colour": "#f6c582",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 7",
             "zh-Hans": "7号线",
@@ -120,13 +120,23 @@
         }
     },
     {
-        "id": "bj13",
+        "id": "bj13A",
         "colour": "#f9e700",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
-            "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "en": "Line 13A",
+            "zh-Hans": "13A线",
+            "zh-Hant": "13A線"
+        }
+    },
+    {
+        "id": "bj13B",
+        "colour": "#e8bb71",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13B",
+            "zh-Hans": "13B线",
+            "zh-Hant": "13B線"
         }
     },
     {
@@ -182,7 +192,7 @@
     {
         "id": "bj22",
         "colour": "#f4c1ca",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 22 (Pinggu Line)",
             "zh-Hans": "22号线（平谷线）",
@@ -212,7 +222,7 @@
     {
         "id": "bj27cp",
         "colour": "#de82b2",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Changping Line",
             "zh-Hans": "昌平线",
