@@ -1,7 +1,7 @@
 [
     {
         "id": "hz1",
-        "colour": "#e8384a",
+        "colour": "#DF4661",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "hz2",
-        "colour": "#e17901",
+        "colour": "#f1803a",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "hz3",
-        "colour": "#ffcf23",
+        "colour": "#ffcd00",
         "fg": "#000",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "hz4",
-        "colour": "#60c04b",
+        "colour": "#6CC24A",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "hz5",
-        "colour": "#00afc8",
+        "colour": "#00AEC7",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "hz6",
-        "colour": "#0077cf",
+        "colour": "#0072CE",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "hz7",
-        "colour": "#790f8e",
+        "colour": "#87189D",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "hz8",
-        "colour": "#a80d4d",
+        "colour": "#AC145A",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -81,7 +81,7 @@
     },
     {
         "id": "hz9",
-        "colour": "#c45b03",
+        "colour": "#BE4D00",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
@@ -101,7 +101,7 @@
     },
     {
         "id": "hz16",
-        "colour": "#ffaa52",
+        "colour": "#FFB25B",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
@@ -111,12 +111,12 @@
     },
     {
         "id": "hz19",
-        "colour": "#4acbe5",
+        "colour": "#05c3de",
         "fg": "#fff",
         "name": {
-            "en": "Line 19",
-            "zh-Hans": "19号线",
-            "zh-Hant": "19號線"
+            "en": "Line 19 (Airport Express)",
+            "zh-Hans": "19号线 (机场快线)",
+            "zh-Hant": "19號線 (機場快線)"
         }
     },
     {
