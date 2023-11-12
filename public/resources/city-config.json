@@ -552,6 +552,14 @@
         }
     },
     {
+        "id": "hezhou",
+        "country": "CN",
+        "name": {
+            "en": "Hezhou",
+            "zh-Hans": "贺州"
+        }
+    },
+    {
         "id": "hiroshima",
         "country": "JP",
         "name": {
