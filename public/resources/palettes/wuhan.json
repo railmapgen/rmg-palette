@@ -150,6 +150,16 @@
         }
     },
     {
+        "id": "wh19",
+        "colour": "#08a095",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
         "id": "wh21",
         "colour": "#CF0192",
         "fg": "#fff",
