@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ta S1",
+        "colour": "#6363f2",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1线",
+            "zh-Hant": "S1線"
+        }
+    }
+]
