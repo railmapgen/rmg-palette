@@ -64,5 +64,35 @@
             "zh-Hans": "滨海快线",
             "zh-Hant": "濱海快缐"
         }
+    },
+    {
+        "id": "fzs1",
+        "colour": "#b57763",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1号线",
+            "zh-Hant": "S1號線"
+        }
+    },
+    {
+        "id": "fz8",
+        "colour": "#adcb14",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "fz3",
+        "colour": "#ff3f7b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
     }
 ]
