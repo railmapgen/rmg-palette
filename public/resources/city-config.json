@@ -524,6 +524,16 @@
         }
     },
     {
+        "id": "hannover",
+        "country": "DE",
+        "name": {
+            "en": "Hannover",
+            "zh-Hans": "汉诺威",
+            "zh-Hant": "漢諾威",
+            "de": "Hannover "
+        }
+    },
+    {
         "id": "hanoi",
         "country": "VN",
         "name": {
