@@ -4,10 +4,10 @@
         "colour": "#007ac2",
         "fg": "#fff",
         "name": {
-            "en": "Hokuriku Line/Biwako Line/JR Kyōto Line/JR Kōbe Line (Tōkaidō Line)/San-yō Line/Akō Line (A)",
-            "ja": "北陸線・琵琶湖線・ＪＲ京都線・ＪＲ神戸線（東海道線）・・山陽線・赤穂線",
-            "zh-Hans": "北陆线/琵琶湖线/JR京都线/JR神户线/山阳线/赤穗线",
-            "zh-Hant": "北陸線/琵琶湖線/JR京都線/JR神戶線/山陽線/赤穗線"
+            "en": "JR Hokuriku Line/Biwako Line/Kyōto Line/Kōbe Line (Tōkaidō Line)/San-yō Line/Akō Line (A)",
+            "ja": "JR北陸線・琵琶湖線・京都線・神戸線（東海道線）・山陽線・赤穂線",
+            "zh-Hans": "JR北陆线/琵琶湖线/京都线/神户线/山阳线/赤穗线",
+            "zh-Hant": "JR北陸線/琵琶湖線/京都線/神戶線/山陽線/赤穗線"
         }
     },
     {
@@ -15,10 +15,10 @@
         "colour": "#00b2e6",
         "fg": "#fff",
         "name": {
-            "en": "Kosei Line (B)",
-            "ja": "湖西線",
-            "zh-Hans": "湖西线",
-            "zh-Hant": "湖西線"
+            "en": "JR Kosei Line (B)",
+            "ja": "JR湖西線",
+            "zh-Hans": "JR湖西线",
+            "zh-Hant": "JR湖西線"
         }
     },
     {
@@ -26,10 +26,10 @@
         "colour": "#65b04c",
         "fg": "#fff",
         "name": {
-            "en": "Kusatsu Line (C)",
-            "ja": "草津線",
-            "zh-Hans": "草津线",
-            "zh-Hant": "草津線"
+            "en": "JR Kusatsu Line (C)",
+            "ja": "JR草津線",
+            "zh-Hans": "JR草津线",
+            "zh-Hant": "JR草津線"
         }
     },
     {
@@ -37,10 +37,10 @@
         "colour": "#ba7c31",
         "fg": "#fff",
         "name": {
-            "en": "Nara Line (D)",
-            "ja": "奈良線",
-            "zh-Hans": "奈良线",
-            "zh-Hant": "奈良線"
+            "en": "JR Nara Line (D)",
+            "ja": "JR奈良線",
+            "zh-Hans": "JR奈良线",
+            "zh-Hant": "JR奈良線"
         }
     },
     {
@@ -48,10 +48,10 @@
         "colour": "#7585c1",
         "fg": "#fff",
         "name": {
-            "en": "Sagano Line/San-in Line (E)",
-            "ja": "嵯峨野線・山陰線",
-            "zh-Hans": "嵯峨野线/山阴线",
-            "zh-Hant": "嵯峨野線/山陰線"
+            "en": "JR Sagano Line/San-in Line (E)",
+            "ja": "JR嵯峨野線・山陰線",
+            "zh-Hans": "JR嵯峨野线/山阴线",
+            "zh-Hant": "JR嵯峨野線/山陰線"
         }
     },
     {
@@ -59,10 +59,10 @@
         "colour": "#447694",
         "fg": "#fff",
         "name": {
-            "en": "Ōsaka Higashi Line (F)",
-            "ja": "おおさか東線",
-            "zh-Hans": "大阪东线",
-            "zh-Hant": "大阪東線"
+            "en": "JR Ōsaka Higashi Line (F)",
+            "ja": "JRおおさか東線",
+            "zh-Hans": "JR大阪东线",
+            "zh-Hant": "JR大阪東線"
         }
     },
     {
@@ -92,10 +92,10 @@
         "colour": "#03b08e",
         "fg": "#fff",
         "name": {
-            "en": "Kakogawa Line (I)",
-            "ja": "加古川線",
-            "zh-Hans": "加古川线",
-            "zh-Hant": "加古川線"
+            "en": "JR Kakogawa Line (I)",
+            "ja": "JR加古川線",
+            "zh-Hans": "JR加古川线",
+            "zh-Hant": "JR加古川線"
         }
     },
     {
@@ -103,10 +103,10 @@
         "colour": "#af2756",
         "fg": "#fff",
         "name": {
-            "en": "Bantan Line (J)",
-            "ja": "播但線",
-            "zh-Hans": "播但线",
-            "zh-Hant": "播但線"
+            "en": "JR Bantan Line (J)",
+            "ja": "JR播但線",
+            "zh-Hans": "JR播但线",
+            "zh-Hant": "JR播但線"
         }
     },
     {
@@ -114,10 +114,10 @@
         "colour": "#ef4b2b",
         "fg": "#fff",
         "name": {
-            "en": "Kishin Line (K)",
-            "ja": "姫新線",
-            "zh-Hans": "姬新线",
-            "zh-Hant": "姬新線"
+            "en": "JR Kishin Line (K)",
+            "ja": "JR姫新線",
+            "zh-Hans": "JR姬新线",
+            "zh-Hant": "JR姬新線"
         }
     },
     {
@@ -125,10 +125,10 @@
         "colour": "#f89c1c",
         "fg": "#000",
         "name": {
-            "en": "Maizuru Line (L)",
-            "ja": "舞鶴線",
-            "zh-Hans": "舞鹤线",
-            "zh-Hant": "舞鶴線"
+            "en": "JR Maizuru Line (L)",
+            "ja": "JR舞鶴線",
+            "zh-Hans": "JR舞鹤线",
+            "zh-Hant": "JR舞鶴線"
         }
     },
     {
@@ -136,10 +136,10 @@
         "colour": "#ee354f",
         "fg": "#fff",
         "name": {
-            "en": "Ōsaka Loop Line (O)",
-            "ja": "大阪環状線",
-            "zh-Hans": "大阪环状线",
-            "zh-Hant": "大阪環狀線"
+            "en": "JR Ōsaka Loop Line (O)",
+            "ja": "JR大阪環状線",
+            "zh-Hans": "JR大阪环状线",
+            "zh-Hant": "JR大阪環狀線"
         }
     },
     {
@@ -158,10 +158,10 @@
         "colour": "#02ad73",
         "fg": "#fff",
         "name": {
-            "en": "Yamatoji Line (Q)",
-            "ja": "大和路線",
-            "zh-Hans": "大和路线",
-            "zh-Hant": "大和路線"
+            "en": "JR Yamatoji Line (Q)",
+            "ja": "JR大和路線",
+            "zh-Hans": "JR大和路线",
+            "zh-Hant": "JR大和路線"
         }
     },
     {
@@ -169,10 +169,10 @@
         "colour": "#f89c1c",
         "fg": "#000",
         "name": {
-            "en": "Hanwa Line (R)",
-            "ja": "阪和線",
-            "zh-Hans": "阪和线",
-            "zh-Hant": "阪和線"
+            "en": "JR Hanwa Line (R)",
+            "ja": "JR阪和線・羽衣線",
+            "zh-Hans": "JR阪和线/羽衣线",
+            "zh-Hant": "JR阪和線/羽衣線"
         }
     },
     {
@@ -180,10 +180,10 @@
         "colour": "#007ac2",
         "fg": "#fff",
         "name": {
-            "en": "Kansai-airport Line (S)",
-            "ja": "関西空港線",
-            "zh-Hans": "关西机场线",
-            "zh-Hant": "關西機場線"
+            "en": "JR Kansai-airport Line (S)",
+            "ja": "JR関西空港線",
+            "zh-Hans": "JR关西机场线",
+            "zh-Hant": "JR關西機場線"
         }
     },
     {
@@ -191,10 +191,10 @@
         "colour": "#f5a2ba",
         "fg": "#000",
         "name": {
-            "en": "Wakayama Line (T)",
-            "ja": "和歌山線",
-            "zh-Hans": "和歌山线",
-            "zh-Hant": "和歌山線"
+            "en": "JR Wakayama Line (T)",
+            "ja": "JR和歌山線",
+            "zh-Hans": "JR和歌山线",
+            "zh-Hant": "JR和歌山線"
         }
     },
     {
@@ -202,10 +202,10 @@
         "colour": "#cf2232",
         "fg": "#fff",
         "name": {
-            "en": "Man-yō Mahoroba Line (Sakurai Line) (U)",
-            "ja": "万葉まほろば線（桜井線）",
-            "zh-Hans": "万叶MAHOROBA线",
-            "zh-Hant": "萬葉MAHOROBA線"
+            "en": "JR Man-yō Mahoroba Line (Sakurai Line) (U)",
+            "ja": "JR万葉まほろば線（桜井線）",
+            "zh-Hans": "JR万叶MAHOROBA线",
+            "zh-Hant": "JR萬葉MAHOROBA線"
         }
     },
     {
@@ -213,10 +213,10 @@
         "colour": "#4b3f85",
         "fg": "#fff",
         "name": {
-            "en": "Kansai Line (V)",
-            "ja": "関西線",
-            "zh-Hans": "关西线",
-            "zh-Hant": "關西線"
+            "en": "JR Kansai Line (V)",
+            "ja": "JR関西線",
+            "zh-Hans": "JR关西线",
+            "zh-Hant": "JR關西線"
         }
     },
     {
@@ -224,10 +224,21 @@
         "colour": "#00b0c1",
         "fg": "#fff",
         "name": {
-            "en": "Kinokuni Line (Kisei Line) (W)",
-            "ja": "きのくに線（紀勢線）",
-            "zh-Hans": "纪国线",
-            "zh-Hant": "紀國線"
+            "en": "JR Kinokuni Line (Kisei Line) (W)",
+            "ja": "JRきのくに線（紀勢線）",
+            "zh-Hans": "JR纪国线",
+            "zh-Hant": "JR紀國線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#0072bc",
+        "fg": "#fff",
+        "name": {
+            "en": "JR Obama Line",
+            "zh-Hans": "JR小滨线",
+            "zh-Hant": "JR小濱線",
+            "ja": "JR小浜線"
         }
     },
     {
@@ -238,7 +249,590 @@
             "en": "Tōkaidō, San-yō Shinkansen",
             "ja": "東海道・山陽新幹線",
             "zh-Hans": "东海道 · 山阳新干线",
-            "zh-Hant": "東海道 · 山陽新幹"
+            "zh-Hant": "東海道 · 山陽新幹線"
+        }
+    },
+    {
+        "id": "K",
+        "colour": "#009944",
+        "fg": "#fff",
+        "name": {
+            "en": "Kyoto Municipal Subway Karasuma Line (K)",
+            "zh-Hans": "京都市营地下铁乌丸线",
+            "zh-Hant": "京都市営地下鉄烏丸線",
+            "ja": "京都市営地下鉄烏丸線"
+        }
+    },
+    {
+        "id": "T",
+        "colour": "#e60012",
+        "fg": "#fff",
+        "name": {
+            "en": "Kyoto Municipal Subway Tōzai Line (T)",
+            "zh-Hans": "京都市营地下铁东西线",
+            "zh-Hant": "京都市営地下鉄東西線",
+            "ja": "京都市営地下鉄東西線"
+        }
+    },
+    {
+        "id": "A",
+        "colour": "#d21644",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Namba Line/Nara Line (A)",
+            "zh-Hans": "近铁难波线/近铁奈良线",
+            "zh-Hant": "近鉄難波線/近鉄奈良線",
+            "ja": "近鉄難波線・近鉄奈良線"
+        }
+    },
+    {
+        "id": "G",
+        "colour": "#d21644",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Ikoma Line (G)",
+            "zh-Hans": "近铁生驹线",
+            "zh-Hant": "近鉄生駒線",
+            "ja": "近鉄生駒線"
+        }
+    },
+    {
+        "id": "B",
+        "colour": "#f8b400",
+        "fg": "#000",
+        "name": {
+            "en": "Kintetsu Kyōto Line/Kashihara Line (B)",
+            "zh-Hans": "近铁京都线/橿原线",
+            "zh-Hant": "近鉄京都線/橿原線",
+            "ja": "近鉄京都線・橿原線"
+        }
+    },
+    {
+        "id": "H",
+        "colour": "#f8b400",
+        "fg": "#000",
+        "name": {
+            "en": "Kintetsu Tenri Line (H)",
+            "zh-Hans": "近铁天理线",
+            "zh-Hant": "近鉄天理線",
+            "ja": "近鉄天理線"
+        }
+    },
+    {
+        "id": "I",
+        "colour": "#f8b400",
+        "fg": "#000",
+        "name": {
+            "en": "Kintetsu Tawaramoto Line (I)",
+            "zh-Hans": "近铁田原本线",
+            "zh-Hant": "近鉄田原本線",
+            "ja": "近鉄田原本線"
+        }
+    },
+    {
+        "id": "C",
+        "colour": "#7bbf4b",
+        "fg": "#000",
+        "name": {
+            "en": "Kintetsu Keihanna Line (C)",
+            "zh-Hans": "近铁京阪奈线",
+            "zh-Hant": "近鉄京阪奈線",
+            "ja": "近鉄けいはんな線"
+        }
+    },
+    {
+        "id": "D",
+        "colour": "#4694d1",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Ōsaka Line (D)",
+            "zh-Hans": "近铁大阪线",
+            "zh-Hant": "近鉄大阪線",
+            "ja": "近鉄大阪線"
+        }
+    },
+    {
+        "id": "J",
+        "colour": "#4694d1",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Shigi Line (J)",
+            "zh-Hans": "近铁信贵线",
+            "zh-Hant": "近鉄信貴線",
+            "ja": "近鉄信貴線"
+        }
+    },
+    {
+        "id": "E",
+        "colour": "#153f97",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Nagoya Line (E)",
+            "zh-Hans": "近铁名古屋线",
+            "zh-Hant": "近鉄名古屋線",
+            "ja": "近鉄名古屋線"
+        }
+    },
+    {
+        "id": "K",
+        "colour": "#153f97",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Yunoyama Line (K)",
+            "zh-Hans": "近铁汤之山线",
+            "zh-Hant": "近鉄湯之山線",
+            "ja": "近鉄湯の山線"
+        }
+    },
+    {
+        "id": "L",
+        "colour": "#153f97",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Suzuka Line (L)",
+            "zh-Hans": "近铁铃鹿线",
+            "zh-Hant": "近鉄鈴鹿線",
+            "ja": "近鉄鈴鹿線"
+        }
+    },
+    {
+        "id": "F",
+        "colour": "#008e45",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Minami-Ōsaka Line/Yoshino Line (F)",
+            "zh-Hans": "近铁南大阪线/吉野线",
+            "zh-Hant": "近鉄南大阪線/吉野線",
+            "ja": "近鉄南大阪線・吉野線"
+        }
+    },
+    {
+        "id": "N",
+        "colour": "#008e45",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Dōmyōji Line (N)",
+            "zh-Hans": "近铁道明寺线",
+            "zh-Hant": "近鉄道明寺線",
+            "ja": "近鉄道明寺線"
+        }
+    },
+    {
+        "id": "O",
+        "colour": "#008e45",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Nagano Line (O)",
+            "zh-Hans": "近铁长野线",
+            "zh-Hant": "近鉄長野線",
+            "ja": "近鉄長野線"
+        }
+    },
+    {
+        "id": "P",
+        "colour": "#008e45",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Gose Line (P)",
+            "zh-Hans": "近铁御所线",
+            "zh-Hant": "近鉄御所線",
+            "ja": "近鉄御所線"
+        }
+    },
+    {
+        "id": "M",
+        "colour": "#00b3c1",
+        "fg": "#fff",
+        "name": {
+            "en": "Kintetsu Yamada Line/Toba Line/Shima Line (M)",
+            "zh-Hans": "近铁山田线/鸟羽线/志摩线",
+            "zh-Hant": "近鉄山田線/鳥羽線/志摩線",
+            "ja": "近鉄山田線・鳥羽線・志摩線"
+        }
+    },
+    {
+        "id": "HK",
+        "colour": "#0d6fb8",
+        "fg": "#fff",
+        "name": {
+            "en": "Hankyū Kobe Main Line/Kobe Kōsoku Line/Itami Line/Imazu Line/Kōyō Line (HK)",
+            "zh-Hans": "阪急神户本线/神户高速线/伊丹线/今津线/甲阳线",
+            "zh-Hant": "阪急神戸本線/神戸高速線/伊丹線/今津線/甲陽線",
+            "ja": "阪急神戸本線・神戸高速線・伊丹線・今津線・甲陽線"
+        }
+    },
+    {
+        "id": "HK",
+        "colour": "#ee7700",
+        "fg": "#fff",
+        "name": {
+            "en": "Hankyū Takarazuka Main Line/Mino-o Line (HK)",
+            "zh-Hans": "阪急宝冢本线/箕面线",
+            "zh-Hant": "阪急宝塚本線/箕面線",
+            "ja": "阪急宝塚本線・箕面線"
+        }
+    },
+    {
+        "id": "HK",
+        "colour": "#23ac38",
+        "fg": "#fff",
+        "name": {
+            "en": "Hankyū Kyōto Main Line/Senri Line/Arashiyama Line (HK)",
+            "zh-Hans": "阪急京都本线/千里线/岚山线",
+            "zh-Hant": "阪急京都本線・千里線・嵐山線",
+            "ja": "阪急京都本線/千里線/嵐山線"
+        }
+    },
+    {
+        "id": "NK",
+        "colour": "#0065af",
+        "fg": "#fff",
+        "name": {
+            "en": "Nankai Main Line/Takashinohama Line/Tanagawa Line/Kada Line/Wakayamakō Line (NK)",
+            "zh-Hans": "南海本线/高师滨线/多奈川线/加太线/和歌山港线",
+            "zh-Hant": "南海本線/高師浜線/多奈川線/加太線/和歌山港線",
+            "ja": "南海本線・高師浜線・多奈川線・加太線・和歌山港線"
+        }
+    },
+    {
+        "id": "NK",
+        "colour": "#594bac",
+        "fg": "#fff",
+        "name": {
+            "en": "Nankai Airport Line (NK)",
+            "zh-Hans": "南海空港线",
+            "zh-Hant": "南海空港線",
+            "ja": "南海空港線"
+        }
+    },
+    {
+        "id": "NK",
+        "colour": "#009a41",
+        "fg": "#fff",
+        "name": {
+            "en": "Nankai Kōya Line/Kōyasan Cable Car (NK)",
+            "zh-Hans": "南海高野线/高野山地面缆车",
+            "zh-Hant": "南海高野線/高野山地面纜車",
+            "ja": "南海高野線・高野山ケーブル"
+        }
+    },
+    {
+        "id": "SB",
+        "colour": "#a5760c",
+        "fg": "#fff",
+        "name": {
+            "en": "Semboku Rapid Raiway (SB)",
+            "zh-Hans": "泉北高速铁道线",
+            "zh-Hant": "泉北高速鉄道線",
+            "ja": "泉北高速鉄道線"
+        }
+    },
+    {
+        "id": "HS",
+        "colour": "#f5b62f",
+        "fg": "#000",
+        "name": {
+            "en": "Hanshin Main Line/Namba Line/Mukogawa Line (HS)",
+            "zh-Hans": "阪神本线/阪神难波线/阪神武库川线",
+            "zh-Hant": "阪神本線/阪神難波線/阪神武庫川線",
+            "ja": "阪神本線・阪神なんば線・阪神武庫川線"
+        }
+    },
+    {
+        "id": "KH",
+        "colour": "#1d2088",
+        "fg": "#fff",
+        "name": {
+            "en": "Keihan Main Line/Ōtō Line/Nakanoshima Line/Katano Line/Uji Line (KH)",
+            "zh-Hans": "京阪本线/鸭东线/中之岛线/交野线/宇治线",
+            "zh-Hant": "京阪本線/鴨東線/中之島線/交野線/宇治線",
+            "ja": "京阪本線・鴨東線・中之島線・交野線・宇治線"
+        }
+    },
+    {
+        "id": "OT",
+        "colour": "#70c8e0",
+        "fg": "#000",
+        "name": {
+            "en": "Keihan Ishiyama Sakamoto Line (OT)",
+            "zh-Hans": "京阪石山坂本线",
+            "zh-Hant": "京阪石山坂本線",
+            "ja": "京阪石山坂本線"
+        }
+    },
+    {
+        "id": "OT",
+        "colour": "#aace24",
+        "fg": "#000",
+        "name": {
+            "en": "Keihan Keishin Line",
+            "zh-Hans": "京阪京津线",
+            "zh-Hant": "京阪京津線",
+            "ja": "京阪京津線"
+        }
+    },
+    {
+        "id": "SY",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "San-yō Electric Railway (SY)",
+            "zh-Hans": "山阳电气铁道",
+            "zh-Hant": "山陽電気鉄道",
+            "ja": "山陽電気鉄道"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#111986",
+        "fg": "#fff",
+        "name": {
+            "en": "Ōsaka Monorail",
+            "zh-Hans": "大阪单轨电车",
+            "zh-Hant": "大阪單軌電車",
+            "ja": "大阪モノレール"
+        }
+    },
+    {
+        "id": "M",
+        "colour": "#000080",
+        "fg": "#fff",
+        "name": {
+            "en": "Kita-Ōsaka Kyūkō Line (M)",
+            "zh-Hans": "北大阪急行线",
+            "zh-Hant": "北大阪急行線",
+            "ja": "北大阪急行線"
+        }
+    },
+    {
+        "id": "P",
+        "colour": "#00ae6c",
+        "fg": "#fff",
+        "name": {
+            "en": "Port Island Line",
+            "zh-Hans": "港湾人工岛线",
+            "zh-Hant": "港灣人工島線",
+            "ja": "ポートアイランド線"
+        }
+    },
+    {
+        "id": "R",
+        "colour": "#9686bd",
+        "fg": "#fff",
+        "name": {
+            "en": "Rokkō Island Line",
+            "zh-Hans": "六甲人工岛线",
+            "zh-Hant": "六甲人工島線",
+            "ja": "六甲アイランド線"
+        }
+    },
+    {
+        "id": "OR",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Ōmi Railway Main Line/Taga Line (OR)",
+            "zh-Hans": "近江铁道本线/多贺线（彦根・多贺大社线）",
+            "zh-Hant": "近江鉄道本線/多賀線（彦根・多賀大社線）",
+            "ja": "近江鉄道本線・多賀線（彦根・多賀大社線）"
+        }
+    },
+    {
+        "id": "OR",
+        "colour": "#0070c0",
+        "fg": "#fff",
+        "name": {
+            "en": "Ōmi Railway Main Line (OR)",
+            "zh-Hans": "近江铁道本线（湖东近江路线）",
+            "zh-Hant": "近江鉄道本線（湖東近江路線）",
+            "ja": "近江鉄道本線（湖東近江路線）"
+        }
+    },
+    {
+        "id": "OR",
+        "colour": "#ffc000",
+        "fg": "#000",
+        "name": {
+            "en": "Ōmi Railway Main Line (OR)",
+            "zh-Hans": "近江铁道本线（水口・蒲生野线）",
+            "zh-Hant": "近江鉄道本線（水口・蒲生野線）",
+            "ja": "近江鉄道本線（水口・蒲生野線）"
+        }
+    },
+    {
+        "id": "OR",
+        "colour": "#00b050",
+        "fg": "#fff",
+        "name": {
+            "en": "Ōmi Railway Yōkaichi Line (OR)",
+            "zh-Hans": "近江铁道八日市线",
+            "zh-Hant": "近江鉄道八日市線",
+            "ja": "近江鉄道八日市線"
+        }
+    },
+    {
+        "id": "E",
+        "colour": "#00994d",
+        "fg": "#fff",
+        "name": {
+            "en": "Eizan Main Line (E)",
+            "zh-Hans": "叡山电铁叡山本线",
+            "zh-Hant": "叡山電鉄叡山本線",
+            "ja": "叡山電鉄叡山本線"
+        }
+    },
+    {
+        "id": "E",
+        "colour": "#d11c39",
+        "fg": "#fff",
+        "name": {
+            "en": "Kurama Line (E)",
+            "zh-Hans": "叡山电铁鞍马线",
+            "zh-Hant": "叡山電鉄鞍馬線",
+            "ja": "叡山電鉄鞍馬線"
+        }
+    },
+    {
+        "id": "A",
+        "colour": "#b8193f",
+        "fg": "#fff",
+        "name": {
+            "en": "Arashiyama Main Line (A)",
+            "zh-Hans": "京福电气铁道岚山本线",
+            "zh-Hant": "京福電気鉄道嵐山本線",
+            "ja": "京福電気鉄道嵐山本線"
+        }
+    },
+    {
+        "id": "B",
+        "colour": "#004b8d",
+        "fg": "#fff",
+        "name": {
+            "en": "Kitano Line (B)",
+            "zh-Hans": "京福电气铁道北野线",
+            "zh-Hant": "京福電気鉄道北野線",
+            "ja": "京福電気鉄道北野線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#b22222",
+        "fg": "#fff",
+        "name": {
+            "en": "Sagano Scenic Railway",
+            "zh-Hans": "嵯峨野观光线",
+            "zh-Hant": "嵯峨野観光線",
+            "ja": "嵯峨野観光線"
+        }
+    },
+    {
+        "id": "HN",
+        "colour": "#006506",
+        "fg": "#fff",
+        "name": {
+            "en": "Hankai Tramway Hankai Line (HN)",
+            "zh-Hans": "阪堺电气轨道阪堺线",
+            "zh-Hant": "阪堺電気軌道阪堺線",
+            "ja": "阪堺電気軌道阪堺線"
+        }
+    },
+    {
+        "id": "HN",
+        "colour": "#ffa500",
+        "fg": "#000",
+        "name": {
+            "en": "Hankai Tramway Uemachi Line (HN)",
+            "zh-Hans": "阪堺电气轨道上町线",
+            "zh-Hant": "阪堺電気軌道上町線",
+            "ja": "阪堺電気軌道上町線"
+        }
+    },
+    {
+        "id": "NS",
+        "colour": "#451c1d",
+        "fg": "#fff",
+        "name": {
+            "en": "Nose Electric Railway (NS)",
+            "zh-Hans": "能势电铁",
+            "zh-Hant": "能勢電鉄",
+            "ja": "能勢電鉄"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#dc143c",
+        "fg": "#fff",
+        "name": {
+            "en": "Kishigawa Line",
+            "zh-Hans": "贵志川线",
+            "zh-Hant": "貴志川線",
+            "ja": "貴志川線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#8c512f",
+        "fg": "#fff",
+        "name": {
+            "en": "Hōjō Line",
+            "zh-Hans": "北条线",
+            "zh-Hant": "北条線",
+            "ja": "北条線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#112299",
+        "fg": "#fff",
+        "name": {
+            "en": "Chizu Express",
+            "zh-Hans": "智头急行线",
+            "zh-Hant": "智頭急行線",
+            "ja": "智頭急行線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#00a779",
+        "fg": "#fff",
+        "name": {
+            "en": "Shigaraki Line",
+            "zh-Hans": "信乐线",
+            "zh-Hant": "信楽線",
+            "ja": "信楽線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#87ceeb",
+        "fg": "#fff",
+        "name": {
+            "en": "Mizuma Line",
+            "zh-Hans": "水间线",
+            "zh-Hant": "水間線",
+            "ja": "水間線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#1e5f30",
+        "fg": "#fff",
+        "name": {
+            "en": "Kishū Railway Line",
+            "zh-Hans": "纪州铁道线",
+            "zh-Hant": "紀州鉄道線",
+            "ja": "紀州鉄道線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#ea4f6f",
+        "fg": "#fff",
+        "name": {
+            "en": "Kyoto Tango Railway",
+            "zh-Hans": "京都丹后铁道",
+            "zh-Hant": "京都丹後鉄道",
+            "ja": "京都丹後鉄道"
         }
     }
 ]
