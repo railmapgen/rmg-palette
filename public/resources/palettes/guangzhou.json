@@ -1,7 +1,7 @@
 [
     {
         "id": "gz1",
-        "colour": "#F3D03E",
+        "colour": "#e7c148",
         "fg": "#000",
         "pantone": "129 C",
         "name": {
@@ -12,7 +12,7 @@
     },
     {
         "id": "gz2",
-        "colour": "#00629B",
+        "colour": "#385f87",
         "fg": "#fff",
         "pantone": "3015 C",
         "name": {
@@ -23,7 +23,7 @@
     },
     {
         "id": "gz3",
-        "colour": "#ECA154",
+        "colour": "#e4904c",
         "fg": "#fff",
         "pantone": "157 C",
         "name": {
@@ -34,7 +34,7 @@
     },
     {
         "id": "gz4",
-        "colour": "#00843D",
+        "colour": "#35753b",
         "fg": "#fff",
         "pantone": "348 C",
         "name": {
@@ -45,7 +45,7 @@
     },
     {
         "id": "gz5",
-        "colour": "#C5003E",
+        "colour": "#bc3342",
         "fg": "#fff",
         "pantone": "1935 C",
         "name": {
@@ -56,7 +56,7 @@
     },
     {
         "id": "gz6",
-        "colour": "#80225F",
+        "colour": "#6d2f48",
         "fg": "#fff",
         "pantone": "242 C",
         "name": {
@@ -67,7 +67,7 @@
     },
     {
         "id": "gz7",
-        "colour": "#97D700",
+        "colour": "#8cbd3a",
         "fg": "#fff",
         "pantone": "375 C",
         "name": {
@@ -78,7 +78,7 @@
     },
     {
         "id": "gz8",
-        "colour": "#008C95",
+        "colour": "#3a7b79",
         "fg": "#fff",
         "pantone": "321 C",
         "name": {
@@ -89,7 +89,7 @@
     },
     {
         "id": "gz9",
-        "colour": "#71CC98",
+        "colour": "#73ba89",
         "fg": "#000",
         "pantone": "346 C",
         "name": {
@@ -133,7 +133,7 @@
     },
     {
         "id": "gz13",
-        "colour": "#8E8C13",
+        "colour": "#827c35",
         "fg": "#fff",
         "pantone": "582 C",
         "name": {
@@ -144,7 +144,7 @@
     },
     {
         "id": "gz14",
-        "colour": "#81312F",
+        "colour": "#622b23",
         "fg": "#fff",
         "pantone": "181 C",
         "name": {
@@ -188,7 +188,7 @@
     },
     {
         "id": "gz18",
-        "colour": "#0047BA",
+        "colour": "#494788",
         "fg": "#fff",
         "name": {
             "en": "Line 18",
@@ -220,7 +220,7 @@
     },
     {
         "id": "gz21",
-        "colour": "#211747",
+        "colour": "#2c212e",
         "fg": "#fff",
         "pantone": "275 C",
         "name": {
@@ -231,7 +231,7 @@
     },
     {
         "id": "gz22",
-        "colour": "#CD5228",
+        "colour": "#c84c2e",
         "fg": "#fff",
         "name": {
             "en": "Line 22",
@@ -250,8 +250,19 @@
         }
     },
     {
+        "id": "apm",
+        "colour": "#43b6cf",
+        "fg": "#fff",
+        "pantone": "306 C",
+        "name": {
+            "en": "APM Line",
+            "zh-Hans": "APM线",
+            "zh-Hant": "APM線"
+        }
+    },
+    {
         "id": "gfl",
-        "colour": "#C4D600",
+        "colour": "#b2cd34",
         "fg": "#000",
         "pantone": "382 C",
         "name": {
@@ -261,32 +272,21 @@
         }
     },
     {
-        "id": "apm",
-        "colour": "#00B5E2",
-        "fg": "#fff",
-        "pantone": "306 C",
-        "name": {
-            "en": "APM Line",
-            "zh-Hans": "珠江新城旅客自动输送系统",
-            "zh-Hant": "珠江新城旅客自動輸送系統"
-        }
-    },
-    {
         "id": "thz1",
-        "colour": "#43B02A",
+        "colour": "#6cb23d",
         "fg": "#fff",
         "name": {
-            "en": "Haizhu Tram Line 1",
+            "en": "THZ1",
             "zh-Hans": "海珠有轨1号线",
             "zh-Hant": "海珠有軌1號線"
         }
     },
     {
         "id": "thp1",
-        "colour": "#D42D1B",
+        "colour": "#ac2c26",
         "fg": "#fff",
         "name": {
-            "en": "Huangpu Tram Line 1",
+            "en": "THP1",
             "zh-Hans": "黄埔有轨1号线",
             "zh-Hant": "黃埔有軌1號線"
         }
@@ -296,9 +296,19 @@
         "colour": "#f25601",
         "fg": "#fff",
         "name": {
-            "en": "Huangpu Tram Line 2",
+            "en": "THP2",
             "zh-Hans": "黄埔有轨2号线",
             "zh-Hant": "黃埔有軌2號線"
+        }
+    },
+    {
+        "id": "fsmtr",
+        "colour": "#565656",
+        "fg": "#fff",
+        "name": {
+            "en": "Foshan Metro",
+            "zh-Hans": "佛山地铁",
+            "zh-Hant": "佛山地鐵"
         }
     }
 ]
