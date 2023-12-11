@@ -1,0 +1,112 @@
+[
+    {
+        "id": "cm1",
+        "colour": "#e51836",
+        "fg": "#fff",
+        "name": {
+            "en": "M1",
+            "zh-Hans": "M1",
+            "zh-Hant": "M1",
+            "fr": "M1"
+        }
+    },
+    {
+        "id": "cm2",
+        "colour": "#8fc63e",
+        "fg": "#fff",
+        "name": {
+            "en": "M2",
+            "zh-Hans": "M2",
+            "zh-Hant": "M2",
+            "fr": "M2"
+        }
+    },
+    {
+        "id": "cm3",
+        "colour": "#faa91e",
+        "fg": "#fff",
+        "name": {
+            "en": "M3",
+            "zh-Hans": "M3",
+            "zh-Hant": "M3",
+            "fr": "M3"
+        }
+    },
+    {
+        "id": "cm4",
+        "colour": "#00aeef",
+        "fg": "#fff",
+        "name": {
+            "en": "M4",
+            "zh-Hans": "M4",
+            "zh-Hant": "M4",
+            "fr": "M4"
+        }
+    },
+    {
+        "id": "cm5",
+        "colour": "#d33595",
+        "fg": "#fff",
+        "name": {
+            "en": "M5",
+            "zh-Hans": "M5",
+            "zh-Hant": "M5",
+            "fr": "M5"
+        }
+    },
+    {
+        "id": "cs19",
+        "colour": "#f16daa",
+        "fg": "#fff",
+        "name": {
+            "en": "S19",
+            "zh-Hans": "S19",
+            "zh-Hant": "S19",
+            "fr": "S19"
+        }
+    },
+    {
+        "id": "cs61",
+        "colour": "#035e33",
+        "fg": "#fff",
+        "name": {
+            "en": "S61",
+            "zh-Hans": "S61",
+            "zh-Hant": "S61",
+            "fr": "S61"
+        }
+    },
+    {
+        "id": "cs62",
+        "colour": "#f26021",
+        "fg": "#fff",
+        "name": {
+            "en": "S62",
+            "zh-Hans": "S62",
+            "zh-Hant": "S62",
+            "fr": "S62"
+        }
+    },
+    {
+        "id": "cs63",
+        "colour": "#202776",
+        "fg": "#fff",
+        "name": {
+            "en": "S63",
+            "zh-Hans": "S63",
+            "zh-Hant": "S63",
+            "fr": "S63"
+        }
+    },
+    {
+        "id": "cs64",
+        "colour": "#cc2027",
+        "fg": "#fff",
+        "name": {
+            "en": "S64",
+            "zh-Hans": "S64",
+            "zh-Hant": "S64",
+            "fr": "S64"
+        }
+    }
+]

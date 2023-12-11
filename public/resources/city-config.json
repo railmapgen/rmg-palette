@@ -243,6 +243,16 @@
         }
     },
     {
+        "id": "charleroi",
+        "country": "BE",
+        "name": {
+            "en": "Charleroi",
+            "zh-Hans": "沙勒罗瓦",
+            "zh-Hant": "沙勒羅瓦",
+            "fr": "Charleroi"
+        }
+    },
+    {
         "id": "chengdu",
         "country": "CN",
         "name": {
