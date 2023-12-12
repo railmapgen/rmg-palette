@@ -262,6 +262,15 @@
         }
     },
     {
+        "id": "chicago",
+        "country": "US",
+        "name": {
+            "en": "Chicago",
+            "zh-Hans": "芝加哥",
+            "zh-Hant": "芝加哥"
+        }
+    },
+    {
         "id": "chongqing",
         "country": "CN",
         "name": {
