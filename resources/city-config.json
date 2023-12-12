@@ -243,6 +243,16 @@
         }
     },
     {
+        "id": "charleroi",
+        "country": "BE",
+        "name": {
+            "en": "Charleroi",
+            "zh-Hans": "沙勒罗瓦",
+            "zh-Hant": "沙勒羅瓦",
+            "fr": "Charleroi"
+        }
+    },
+    {
         "id": "chengdu",
         "country": "CN",
         "name": {
@@ -259,6 +269,15 @@
             "zh-Hans": "金奈",
             "zh-Hant": "金奈",
             "hi": "சென்னை"
+        }
+    },
+    {
+        "id": "chicago",
+        "country": "US",
+        "name": {
+            "en": "Chicago",
+            "zh-Hans": "芝加哥",
+            "zh-Hant": "芝加哥"
         }
     },
     {
@@ -521,6 +540,16 @@
             "en": "Hangzhou",
             "zh-Hans": "杭州",
             "zh-Hant": "杭州"
+        }
+    },
+    {
+        "id": "hannover",
+        "country": "DE",
+        "name": {
+            "en": "Hannover",
+            "zh-Hans": "汉诺威",
+            "zh-Hant": "漢諾威",
+            "de": "Hannover "
         }
     },
     {
