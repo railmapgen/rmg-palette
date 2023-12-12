@@ -1,0 +1,82 @@
+[
+    {
+        "id": "chgred",
+        "colour": "#c60c30",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線"
+        }
+    },
+    {
+        "id": "chgblue",
+        "colour": "#00a1de",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "zh-Hans": "蓝线",
+            "zh-Hant": "藍線"
+        }
+    },
+    {
+        "id": "chgbrown",
+        "colour": "#62361b",
+        "fg": "#fff",
+        "name": {
+            "en": "Brown Line",
+            "zh-Hans": "棕线",
+            "zh-Hant": "棕線"
+        }
+    },
+    {
+        "id": "chggreen",
+        "colour": "#009b3a",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線"
+        }
+    },
+    {
+        "id": "chgorange",
+        "colour": "#f9461c",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橘線"
+        }
+    },
+    {
+        "id": "chgpink",
+        "colour": "#e27ea6",
+        "fg": "#fff",
+        "name": {
+            "en": "Pink Line",
+            "zh-Hans": "粉线",
+            "zh-Hant": "粉線"
+        }
+    },
+    {
+        "id": "chgpurple",
+        "colour": "#522398",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "紫线",
+            "zh-Hant": "紫線"
+        }
+    },
+    {
+        "id": "chgyellow",
+        "colour": "#f9e300",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow Line",
+            "zh-Hans": "黄线",
+            "zh-Hant": "黃線"
+        }
+    }
+]
