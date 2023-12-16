@@ -1,47 +1,102 @@
 [
     {
         "id": "wx1",
+        "colour": "#EE2737",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#EE2737"
+        }
     },
     {
         "id": "wx2",
+        "colour": "#00B140",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#00B140"
+        }
     },
     {
         "id": "wx3",
+        "colour": "#00A9E0",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#00A9E0"
+        }
     },
     {
         "id": "wx4",
+        "colour": "#93328E",
+        "fg": "#fff",
         "name": {
             "en": "Line 4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
-        },
-        "colour": "#93328E"
+        }
     },
     {
         "id": "wx5",
+        "colour": "#FFB81C",
+        "fg": "#fff",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號線"
-        },
-        "colour": "#FFB81C"
+        }
+    },
+    {
+        "id": "wx6",
+        "colour": "#ef96ce",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "wx7",
+        "colour": "#582a98",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "wx8",
+        "colour": "#357962",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "wxs1",
+        "colour": "#d83e35",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1号线",
+            "zh-Hant": "S1號線"
+        }
+    },
+    {
+        "id": "wxs2",
+        "colour": "#bfbfbf",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2",
+            "zh-Hans": "S2号线",
+            "zh-Hant": "S2號線"
+        }
     }
 ]
