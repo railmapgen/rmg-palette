@@ -371,6 +371,17 @@
         }
     },
     {
+        "id": "t12",
+        "colour": "#b6134c",
+        "fg": "#fff",
+        "name": {
+            "en": "Tramway Line 12",
+            "fr": "Tramway Ligne 12",
+            "zh-Hans": "有轨电车T12号线",
+            "zh-Hant": "有軌電車T12號線"
+        }
+    },
+    {
         "id": "t13",
         "colour": "#6e491e",
         "fg": "#fff",
@@ -618,6 +629,7 @@
         "colour": "#e3051b",
         "fg": "#fff",
         "name": {
+            "fr": "OrlyBus/RoissyBus",
             "en": "OrlyBus/RoissyBus"
         }
     }
