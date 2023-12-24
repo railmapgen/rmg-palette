@@ -129,6 +129,15 @@
         "language": "da"
     },
     {
+        "id": "DZA",
+        "name": {
+            "en": "Algeria",
+            "zh-Hans": "阿尔及利亚",
+            "zh-Hant": "Algérie"
+        },
+        "language": "ar"
+    },
+    {
         "id": "EG",
         "name": {
             "en": "Egypt",

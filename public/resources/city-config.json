@@ -9,6 +9,15 @@
         }
     },
     {
+        "id": "algiers",
+        "country": "DZA",
+        "name": {
+            "en": "Algiers",
+            "zh-Hans": "阿尔及尔",
+            "zh-Hant": "阿爾及爾"
+        }
+    },
+    {
         "id": "almaty",
         "country": "KZ",
         "name": {
