@@ -1,7 +1,7 @@
 [
     {
         "id": "mos1",
-        "colour": "#c32126",
+        "colour": "#d41317",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -12,7 +12,7 @@
     },
     {
         "id": "mos2",
-        "colour": "#2f8737",
+        "colour": "#4baf51",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -23,7 +23,7 @@
     },
     {
         "id": "mos3",
-        "colour": "#0365a2",
+        "colour": "#0072ba",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -34,7 +34,7 @@
     },
     {
         "id": "mos4",
-        "colour": "#17c1f3",
+        "colour": "#1ebcef",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -45,7 +45,7 @@
     },
     {
         "id": "mos5",
-        "colour": "#7a271f",
+        "colour": "#905134",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -56,7 +56,7 @@
     },
     {
         "id": "mos6",
-        "colour": "#f57f20",
+        "colour": "#ef7d00",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -67,7 +67,7 @@
     },
     {
         "id": "mos7",
-        "colour": "#8f267c",
+        "colour": "#933f8f",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -78,7 +78,7 @@
     },
     {
         "id": "mos8",
-        "colour": "#ffd82f",
+        "colour": "#ffdd00",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -89,7 +89,7 @@
     },
     {
         "id": "mos9",
-        "colour": "#bcbdc0",
+        "colour": "#adabac",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
@@ -100,7 +100,7 @@
     },
     {
         "id": "mos10",
-        "colour": "#8dc647",
+        "colour": "#b4cc04",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -111,7 +111,7 @@
     },
     {
         "id": "mos11",
-        "colour": "#58c5c7",
+        "colour": "#88cdcf",
         "fg": "#fff",
         "name": {
             "en": "Line 11",
@@ -122,7 +122,7 @@
     },
     {
         "id": "mos12",
-        "colour": "#b8c7e6",
+        "colour": "#bac8e8",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
@@ -133,7 +133,7 @@
     },
     {
         "id": "mos13",
-        "colour": "#1773b2",
+        "colour": "#0273ba",
         "fg": "#fff",
         "name": {
             "en": "Line 13",
@@ -144,7 +144,7 @@
     },
     {
         "id": "mos14",
-        "colour": "#ad342c",
+        "colour": "#d5191d",
         "fg": "#fff",
         "name": {
             "en": "Line 14",
@@ -155,13 +155,57 @@
     },
     {
         "id": "mos15",
-        "colour": "#d789b0",
+        "colour": "#ed7cae",
         "fg": "#fff",
         "name": {
             "en": "Line 15",
             "zh-Hans": "15号线",
             "zh-Hant": "15號綫",
             "ru": "Некрасовская"
+        }
+    },
+    {
+        "id": "mosd1",
+        "colour": "#f7a600",
+        "fg": "#fff",
+        "name": {
+            "en": "D1",
+            "zh-Hans": "D1 白俄罗斯-萨维奥洛沃直径线",
+            "zh-Hant": "D1 白俄羅斯-薩維奧洛沃直徑綫",
+            "ru": "Белорусско-Савёловский диаметр"
+        }
+    },
+    {
+        "id": "mosd2",
+        "colour": "#e94282",
+        "fg": "#fff",
+        "name": {
+            "en": "D2",
+            "zh-Hans": "D2 库尔斯克-里加直径线",
+            "zh-Hant": "D2 庫爾斯克-里加直徑綫",
+            "ru": "Курско-Рижский диаметр"
+        }
+    },
+    {
+        "id": "mosd3",
+        "colour": "#e95c0e",
+        "fg": "#fff",
+        "name": {
+            "en": "D3",
+            "zh-Hans": "D3 列宁格勒-喀山直径线",
+            "zh-Hant": "D3 列寧格勒-喀山直徑綫",
+            "ru": "Ленинградско-Казанский диаметр"
+        }
+    },
+    {
+        "id": "mosd4",
+        "colour": "#4db488",
+        "fg": "#fff",
+        "name": {
+            "en": "D4",
+            "zh-Hans": "D4 基辅-高尔基直径线",
+            "zh-Hant": "D4 基輔-高爾基直徑綫",
+            "ru": "Киевско-Горьковский диаметр"
         }
     }
 ]
