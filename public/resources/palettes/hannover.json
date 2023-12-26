@@ -1,0 +1,123 @@
+[
+    {
+        "id": "ha",
+        "colour": "#0072bc",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3/7/9/13",
+            "zh-Hans": "3号线/7号线/9号线/13号线",
+            "zh-Hant": "3號缐/7號缐/9號缐/13號缐",
+            "de": "Linie 3/7/9/13"
+        }
+    },
+    {
+        "id": "hb",
+        "colour": "#faaf18",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4/5/6/11/16",
+            "zh-Hans": "4号线/5号线/6号线/11号线/16号线",
+            "zh-Hant": "4號缐/5號缐/6號缐/11號缐/16號缐",
+            "de": "Linie 4/5/6/11/16"
+        }
+    },
+    {
+        "id": "hc",
+        "colour": "#ed1845",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1/2/8/18",
+            "zh-Hans": "1号线/2号线/8号线/18号线",
+            "zh-Hant": "1號缐/2號缐/8號缐/18號缐",
+            "de": "Linie 1/2/8/18"
+        }
+    },
+    {
+        "id": "hd",
+        "colour": "#71bf44",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10/12/17",
+            "zh-Hans": "10号线/12号线/17号线",
+            "zh-Hant": "10號缐/12號缐/17號缐",
+            "de": "Linie 10/12/17"
+        }
+    },
+    {
+        "id": "hs1",
+        "colour": "#7a6cac",
+        "fg": "#fff",
+        "name": {
+            "en": "S1",
+            "zh-Hans": "S1",
+            "zh-Hant": "S1",
+            "de": "S1"
+        }
+    },
+    {
+        "id": "hs2",
+        "colour": "#00844a",
+        "fg": "#fff",
+        "name": {
+            "en": "S2",
+            "zh-Hans": "S2",
+            "zh-Hant": "S2",
+            "de": "S2"
+        }
+    },
+    {
+        "id": "hs3",
+        "colour": "#c66aaa",
+        "fg": "#fff",
+        "name": {
+            "en": "S3",
+            "zh-Hans": "S3",
+            "zh-Hant": "S3",
+            "de": "S3"
+        }
+    },
+    {
+        "id": "hs4",
+        "colour": "#962f50",
+        "fg": "#fff",
+        "name": {
+            "en": "S4",
+            "zh-Hans": "S4",
+            "zh-Hant": "S4",
+            "de": "S4"
+        }
+    },
+    {
+        "id": "hs5",
+        "colour": "#f68b1f",
+        "fg": "#fff",
+        "name": {
+            "en": "S5",
+            "zh-Hans": "S5",
+            "zh-Hant": "S5",
+            "de": "S5"
+        }
+    },
+    {
+        "id": "hs6",
+        "colour": "#015aaa",
+        "fg": "#fff",
+        "name": {
+            "en": "S6",
+            "zh-Hans": "S6",
+            "zh-Hant": "S6",
+            "de": "S6"
+        }
+    },
+    {
+        "id": "hs7",
+        "colour": "#a5ce43",
+        "fg": "#fff",
+        "name": {
+            "en": "S7",
+            "zh-Hans": "S7",
+            "zh-Hant": "S7",
+            "de": "S7"
+        }
+    }
+]
