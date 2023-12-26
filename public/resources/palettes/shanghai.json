@@ -212,7 +212,7 @@
     {
         "id": "sh23",
         "colour": "#E0815E",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 23",
             "zh-Hans": "23号线",
