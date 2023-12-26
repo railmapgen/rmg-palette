@@ -1,7 +1,7 @@
 [
     {
         "id": "lm1",
-        "colour": "#08AB5E",
+        "colour": "#509e2f",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -12,7 +12,7 @@
     },
     {
         "id": "lm2",
-        "colour": "#FFC82A",
+        "colour": "#ffb81c",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -23,7 +23,7 @@
     },
     {
         "id": "lm3",
-        "colour": "#00ACEF",
+        "colour": "#00c1d5",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -34,7 +34,7 @@
     },
     {
         "id": "lm4",
-        "colour": "#DD3539",
+        "colour": "#da291c",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -45,7 +45,7 @@
     },
     {
         "id": "lm5",
-        "colour": "#f57fb7",
+        "colour": "#f57eb6",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -56,7 +56,7 @@
     },
     {
         "id": "lm6",
-        "colour": "#8c85d8",
+        "colour": "#8b84d7",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
