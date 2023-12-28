@@ -1,34 +1,33 @@
 import { render } from '../../test-utils';
 import CitySection from './city-section';
 import { fireEvent, screen, waitFor } from '@testing-library/react';
-import rootReducer from '../../redux';
-import { createMockRootStore } from '../../setupTests';
+import rootReducer, { RootStore } from '../../redux';
+import { createTestStore } from '../../setupTests';
 import { vi } from 'vitest';
 
 const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({
-    ...realStore,
-    app: {
-        ...realStore.app,
-        cityList: [
-            {
-                id: 'guangzhou',
-                country: 'CN',
-                name: {
-                    en: 'Guangzhou',
-                },
-            },
-        ],
-    },
-    ticket: { ...realStore.ticket, country: 'CN' },
-});
+let mockStore: RootStore;
 
 const originalFetch = global.fetch;
 const mockFetch = vi.fn();
 
 describe('CitySection', () => {
-    afterEach(() => {
-        mockStore.clearActions();
+    beforeEach(() => {
+        mockStore = createTestStore({
+            app: {
+                ...realStore.app,
+                cityList: [
+                    {
+                        id: 'guangzhou',
+                        country: 'CN',
+                        name: {
+                            en: 'Guangzhou',
+                        },
+                    },
+                ],
+            },
+            ticket: { ...realStore.ticket, country: 'CN' },
+        });
         vi.clearAllMocks();
         global.fetch = originalFetch;
     });
@@ -71,20 +70,7 @@ describe('CitySection', () => {
 
         // select guangzhou
         fireEvent.change(screen.getByRole('combobox', { name: 'City' }), { target: { value: 'guangzhou' } });
-        await waitFor(() => expect(mockStore.getActions()).toHaveLength(1));
-
-        const actions = mockStore.getActions();
-        expect(actions).toContainEqual(
-            expect.objectContaining({
-                type: 'ticket/populateTicket',
-                payload: expect.objectContaining({
-                    city: expect.objectContaining({
-                        id: 'guangzhou',
-                        country: 'CN',
-                    }),
-                }),
-            })
-        );
+        await waitFor(() => expect(mockStore.getState().ticket.city).toBe('guangzhou'));
     });
 
     it('Can clear lines when adding a new city', async () => {
@@ -92,9 +78,6 @@ describe('CitySection', () => {
 
         // select new
         fireEvent.change(screen.getByRole('combobox', { name: 'City' }), { target: { value: 'new' } });
-        await waitFor(() => expect(mockStore.getActions()).toHaveLength(1));
-
-        const actions = mockStore.getActions();
-        expect(actions).toContainEqual({ type: 'ticket/setCity', payload: 'new' });
+        await waitFor(() => expect(mockStore.getState().ticket.city).toBe('new'));
     });
 });

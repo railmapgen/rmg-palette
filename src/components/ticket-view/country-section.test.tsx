@@ -1,36 +1,17 @@
-import { TestingProvider } from '../../test-utils';
+import { render } from '../../test-utils';
 import CountrySection from './country-section';
-import { render, screen } from '@testing-library/react';
-import rootReducer from '../../redux';
-import { createMockRootStore } from '../../setupTests';
-
-const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({ ...realStore });
+import { screen } from '@testing-library/react';
+import { userEvent } from '@testing-library/user-event';
 
 describe('CountrySection', () => {
-    it('Can show custom country code and name fields if add a country option is selected', () => {
-        const { rerender } = render(
-            <TestingProvider store={mockStore}>
-                <CountrySection />
-            </TestingProvider>
-        );
+    it('Can show custom country code and name fields if add a country option is selected', async () => {
+        const user = userEvent.setup();
+        render(<CountrySection />);
 
         expect(screen.queryByDisplayValue(/Add a new country/)).not.toBeInTheDocument();
         expect(screen.queryByRole('combobox', { name: 'Country code' })).not.toBeInTheDocument();
 
-        const mockStoreWithNewCountry = createMockRootStore({
-            ...realStore,
-            ticket: {
-                ...realStore.ticket,
-                country: 'new',
-            },
-        });
-
-        rerender(
-            <TestingProvider store={mockStoreWithNewCountry}>
-                <CountrySection />
-            </TestingProvider>
-        );
+        await user.selectOptions(screen.getByRole('combobox', { name: 'Country/Region' }), 'new');
 
         // 'add a country' selected
         expect(screen.getByDisplayValue(/Add a country/)).toBeInTheDocument();

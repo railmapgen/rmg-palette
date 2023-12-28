@@ -4,11 +4,10 @@ import { vi } from 'vitest';
 import i18n from '../../i18n/config';
 import { render } from '../../test-utils';
 import rootReducer from '../../redux';
-import { createMockRootStore } from '../../setupTests';
+import { createTestStore } from '../../setupTests';
 
 const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({
-    ...realStore,
+const mockStore = createTestStore({
     app: {
         ...realStore.app,
         cityList: [

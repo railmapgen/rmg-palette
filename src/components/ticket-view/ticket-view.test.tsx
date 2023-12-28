@@ -1,15 +1,15 @@
 import { render } from '../../test-utils';
 import TicketView from './ticket-view';
 import { TicketState } from '../../redux/ticket/ticket-slice';
-import rootReducer from '../../redux';
+import rootReducer, { RootStore } from '../../redux';
 import { DRAFT_TICKET_KEY } from '../../util/constants';
 import { act, fireEvent, screen } from '@testing-library/react';
-import { createMockRootStore } from '../../setupTests';
+import { createTestStore } from '../../setupTests';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 
 const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({ ...realStore });
+let mockStore: RootStore;
 
 describe('TicketView', () => {
     const effectiveEmptyTicket: TicketState = {
@@ -35,10 +35,10 @@ describe('TicketView', () => {
 
     beforeAll(async () => {
         await rmgRuntime.ready();
+        mockStore = createTestStore();
     });
 
     afterEach(() => {
-        mockStore.clearActions();
         rmgRuntime.storage.clear();
     });
 
@@ -66,20 +66,14 @@ describe('TicketView', () => {
             fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
         });
 
-        const actions = mockStore.getActions();
-        expect(actions).toHaveLength(2);
-        expect(actions).toContainEqual(expect.objectContaining({ type: 'app/setPantoneReady' }));
-        expect(actions).toContainEqual({
-            type: 'ticket/resetTicket',
-            payload: expect.objectContaining({ city: 'hongkong' }),
-        });
-
+        expect(mockStore.getState().ticket.city).toBe('hongkong');
         expect(rmgRuntime.storage.get(DRAFT_TICKET_KEY)).not.toBeNull();
     });
 
     it('Can discard draft ticket as expected', async () => {
         rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
 
+        const prevState = mockStore.getState().ticket;
         render(<TicketView />, { store: mockStore });
         await screen.findByRole('dialog');
 
@@ -87,10 +81,7 @@ describe('TicketView', () => {
             fireEvent.click(screen.getByRole('button', { name: 'Discard' }));
         });
 
-        const actions = mockStore.getActions();
-        expect(actions).toHaveLength(1);
-        expect(actions).toContainEqual(expect.objectContaining({ type: 'app/setPantoneReady' }));
-
+        expect(mockStore.getState().ticket).toEqual(prevState);
         expect(rmgRuntime.storage.get(DRAFT_TICKET_KEY)).toBeNull();
     });
 

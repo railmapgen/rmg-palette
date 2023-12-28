@@ -3,7 +3,7 @@ import { vi } from 'vitest';
 import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
-import { createMockRootStore } from '../../setupTests';
+import { createTestStore } from '../../setupTests';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 
 const realStore = rootReducer.getState();
@@ -30,8 +30,7 @@ describe('SubmitModal', () => {
     });
 
     it('Can display one click submit button if no errors', () => {
-        const mockStore = createMockRootStore({
-            ...realStore,
+        const mockStore = createTestStore({
             ticket: {
                 ...realStore.ticket,
                 country: 'HK',

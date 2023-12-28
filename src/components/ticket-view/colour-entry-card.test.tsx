@@ -1,22 +1,17 @@
-import rootReducer from '../../redux';
-import { createMockRootStore } from '../../setupTests';
+import rootReducer, { RootStore } from '../../redux';
+import { createTestStore } from '../../setupTests';
 import { PaletteEntryWithTranslationEntry, TranslationEntry } from '../../redux/ticket/util';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
-import { render, TestingProvider } from '../../test-utils';
+import { render } from '../../test-utils';
 import ColourEntryCard from './colour-entry-card';
-import { act, fireEvent, render as originalRender, screen } from '@testing-library/react';
+import { act, fireEvent, screen } from '@testing-library/react';
 import { vi } from 'vitest';
+import { setPantoneReady } from '../../redux/app/app-slice';
 
 const initialTranslation: TranslationEntry[] = [['en', '']];
 
 const realStore = rootReducer.getState();
-const mockStore = createMockRootStore({
-    ...realStore,
-    app: {
-        ...realStore.app,
-        pantoneReady: true,
-    },
-});
+let mockStore: RootStore;
 
 const mockLineDetail: PaletteEntryWithTranslationEntry = {
     id: '002',
@@ -34,26 +29,18 @@ const originalFetch = global.fetch;
 
 describe('ColourEntryCard', () => {
     describe('ColourEntryCard - rerender', () => {
-        it('Can hide pantone input if pantone service is not ready', () => {
-            const notReadyStore = createMockRootStore({
-                ...realStore,
-            });
-            const { rerender } = originalRender(
-                <TestingProvider store={notReadyStore}>
-                    <ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />
-                </TestingProvider>
-            );
+        it('Can hide pantone input if pantone service is not ready', async () => {
+            const mockStore = createTestStore();
+            render(<ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
 
             // only rgb is available
             expect(screen.queryByRole('group', { name: 'Use Pantone' })).not.toBeInTheDocument();
             expect(screen.getByRole('combobox', { name: 'Background colour' })).not.toBeDisabled();
             expect(screen.queryByRole('group', { name: 'Pantone code' })).not.toBeInTheDocument();
 
-            rerender(
-                <TestingProvider store={mockStore}>
-                    <ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />
-                </TestingProvider>
-            );
+            await act(async () => {
+                mockStore.dispatch(setPantoneReady(true));
+            });
 
             // colour mode switch is available
             expect(screen.getByRole('group', { name: 'Use Pantone' })).toBeInTheDocument();
@@ -63,6 +50,15 @@ describe('ColourEntryCard', () => {
     });
 
     describe('ColourEntryCard - Pantone input', () => {
+        beforeEach(() => {
+            mockStore = createTestStore({
+                app: {
+                    ...realStore.app,
+                    pantoneReady: true,
+                },
+            });
+        });
+
         afterEach(() => {
             global.fetch = originalFetch;
             vi.resetAllMocks();
@@ -89,6 +85,7 @@ describe('ColourEntryCard', () => {
 
         it('Do not update store if pantone colour is failed to fetch', async () => {
             global.fetch = mockFetch.mockRejectedValue('Failed to fetch');
+            const prevState = mockStore.getState().ticket;
             render(<ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
 
             vi.useFakeTimers();
@@ -98,9 +95,8 @@ describe('ColourEntryCard', () => {
             });
 
             expect(mockFetch).toBeCalledTimes(1);
-            const actions = mockStore.getActions();
-            expect(actions).toHaveLength(0);
 
+            expect(mockStore.getState().ticket).toEqual(prevState);
             expect(screen.getByRole('combobox', { name: 'Pantone code' })).toHaveValue('130 C');
         });
     });

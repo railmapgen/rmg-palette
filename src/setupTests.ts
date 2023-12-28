@@ -1,13 +1,9 @@
-import { RootState } from './redux';
-import createMockStore from 'redux-mock-store';
-import { getDefaultMiddleware, ThunkDispatch } from '@reduxjs/toolkit';
+import { createStore } from './redux';
 import { TextEncoder } from 'util';
 import { vi } from 'vitest';
 import crypto from 'node:crypto';
 
-// FIXME: any -> AnyAction?
-type DispatchExts = ThunkDispatch<RootState, void, any>;
-export const createMockRootStore = createMockStore<RootState, DispatchExts>(getDefaultMiddleware());
+export const createTestStore = createStore;
 
 class BroadcastChannel {
     postMessage() {
