@@ -1,6 +1,14 @@
 name: Build and Release
 
 on:
+  workflow_call:
+    inputs:
+      auto_deploy:
+        type: string
+        default: PRD
+      bump_version:
+        type: string
+        default: patch
   workflow_dispatch:
     inputs:
       auto_deploy:
