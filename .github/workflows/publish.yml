@@ -33,9 +33,9 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
 
-  rebuild:
-    needs: publish
-    uses: railmapgen/rmg-palette/.github/workflows/build.yml@master
-    with:
-      auto_deploy: PRD
-    secrets: inherit
+      - name: Trigger RMG Palette rebuild
+        run: |
+          curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
+            -H "Accept: application/vnd.github.everest-preview+json" \
+            -H "Content-Type: application/json" https://api.github.com/repos/railmapgen/rmg-palette/actions/workflows/build.yml/dispatches \
+            --data '{"ref": "master", "inputs": {"auto_deploy": "PRD"}}'
