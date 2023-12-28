@@ -37,5 +37,5 @@ jobs:
     needs: publish
     uses: railmapgen/rmg-palette/.github/workflows/build.yml@master
     with:
-      auth_deploy: PRD
+      auto_deploy: PRD
     secrets: inherit
