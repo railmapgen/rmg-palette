@@ -1,0 +1,1 @@
+System.register(["./index-legacy-4zKMc443.js","./react-legacy-l6OxjFzU.js"],(function(t,e){"use strict";var r,n;return{setters:[t=>{r=t.a0},t=>{n=t.r}],execute:function(){t("u",(function(t){const[e,c]=n.useState([]);return n.useEffect((()=>{if(!t)return void c([]);const e=new AbortController;return r(t,e.signal).then((t=>c(t))).catch((()=>c([]))),()=>{e.abort()}}),[t]),e}))}}}));
