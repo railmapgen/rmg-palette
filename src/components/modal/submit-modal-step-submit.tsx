@@ -14,26 +14,35 @@ import { RmgDebouncedTextarea } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import { CityEntry, CountryEntry, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import { useRef } from 'react';
-import { getGitHubIssueDetailsBlock, GITHUB_ISSUE_PREAMBLE } from '../../util/constants';
+import {
+    DATA_SOURCE_DISPLAY_TEXT,
+    DataSource,
+    getGitHubIssueDetailsBlock,
+    GITHUB_ISSUE_PREAMBLE,
+} from '../../util/constants';
+import useTranslatedName from '../hooks/use-translated-name';
 
 interface SubmitModalStepSubmitProps {
     countryEntry: CountryEntry | null;
     cityEntry: CityEntry;
     paletteList: PaletteEntry[];
+    dataSource: DataSource | '';
     refLink: string;
     justification: string;
     onPrev: () => void;
 }
 
 export default function SubmitModalStepSubmit(props: SubmitModalStepSubmitProps) {
-    const { countryEntry, cityEntry, paletteList, refLink, justification, onPrev } = props;
+    const { countryEntry, cityEntry, paletteList, dataSource, refLink, justification, onPrev } = props;
 
     const { t } = useTranslation();
+    const translateName = useTranslatedName();
 
     const linkColour = useColorModeValue('primary.500', 'primary.300');
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const issueBody = [
+        `**Data source:** ${dataSource ? translateName(DATA_SOURCE_DISPLAY_TEXT[dataSource]) : '(REPLACE ME)'}`,
         `**Reference link:** ${refLink || '(REPLACE ME)'}`,
         `**Justification:** ${justification || '(REPLACE ME)'}`,
         GITHUB_ISSUE_PREAMBLE,
