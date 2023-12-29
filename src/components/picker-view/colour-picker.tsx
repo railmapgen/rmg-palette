@@ -7,7 +7,7 @@ import usePalette from '../hooks/use-palette';
 interface ColourPickerProps {
     city?: string;
     defaultValueId?: string;
-    onChange?: (lineCode: string, bg: ColourHex, fg: MonoColour) => void;
+    onChange?: (lineCode: string, bg: ColourHex, fg: MonoColour, pantone?: string) => void;
 }
 
 export default function ColourPicker(props: ColourPickerProps) {
@@ -40,7 +40,7 @@ export default function ColourPicker(props: ColourPickerProps) {
             displayHandler={displayHandler}
             predicate={predicate}
             defaultValue={currentItem}
-            onChange={item => onChange?.(item.id, item.colour, item.fg || MonoColour.white)}
+            onChange={item => onChange?.(item.id, item.colour, item.fg || MonoColour.white, item.pantone)}
         />
     );
 }

@@ -24,7 +24,7 @@ export default function ColourDetailCard(props: ColourDetailCardProps) {
         },
         {
             type: 'output',
-            label: t('Pantone code'),
+            label: t('Pantone® code'),
             value: lineDetail.pantone,
             hidden: !lineDetail.pantone,
         },

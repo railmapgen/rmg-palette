@@ -1,12 +1,11 @@
-import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLoader } from '@railmapgen/rmg-components';
+import { RmgButtonGroup, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
-import { useEffect, useRef, useState } from 'react';
-import { getRGBByPantone } from '../../service/pantone-service';
-import { flushSync } from 'react-dom';
+import { useState } from 'react';
 import { PaletteEntryWithTranslationEntry } from '../../redux/ticket/util';
 import { LineDetailUpdates } from '../../redux/ticket/ticket-slice';
+import PantoneInput from '../common/pantone-input';
 
 interface ColourEntryCardProps {
     lineDetail: PaletteEntryWithTranslationEntry;
@@ -20,40 +19,7 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
 
     const { pantoneReady } = useRootSelector(state => state.app);
 
-    const [pantoneInput, setPantoneInput] = useState(!!lineDetail.pantone);
-    const [pantoneCode, setPantoneCode] = useState(lineDetail.pantone ?? '');
-    const [isLoading, setIsLoading] = useState(false);
-
-    const controllerRef = useRef(new AbortController());
-
-    useEffect(() => {
-        return () => {
-            controllerRef.current?.abort();
-        };
-    }, []);
-
-    const handlePantoneCodeInput = async (value: string) => {
-        controllerRef.current.abort();
-
-        if (!pantoneReady) {
-            return;
-        }
-
-        controllerRef.current = new AbortController();
-        setIsLoading(true);
-        try {
-            const hex = await getRGBByPantone(value, controllerRef.current.signal);
-            onUpdate({ pantone: value, colour: hex });
-            setPantoneCode(value);
-        } catch (e) {
-            flushSync(() => {
-                setPantoneCode(value);
-            });
-            setPantoneCode(lineDetail.pantone ?? '');
-        } finally {
-            setIsLoading(false);
-        }
-    };
+    const [inputWithPantone, setInputWithPantone] = useState(!!lineDetail.pantone);
 
     const colourModeOptions = [
         { label: t('Yes'), value: true },
@@ -77,30 +43,33 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
         {
             type: 'input',
             label: t('Background colour'),
-            variant: pantoneInput ? 'text' : 'color',
+            variant: inputWithPantone ? 'text' : 'color',
             value: lineDetail.colour,
             onChange: value => onUpdate({ colour: value as ColourHex }),
-            isDisabled: pantoneReady && pantoneInput,
+            isDisabled: pantoneReady && inputWithPantone,
         },
         {
             type: 'custom',
-            label: t('Use Pantone'),
+            label: t('Use Pantone®'),
             component: (
                 <RmgButtonGroup
                     selections={colourModeOptions}
-                    defaultValue={pantoneInput}
-                    onChange={value => setPantoneInput(value)}
+                    defaultValue={inputWithPantone}
+                    onChange={value => setInputWithPantone(value)}
                 />
             ),
             hidden: !pantoneReady,
         },
         {
-            type: 'input',
-            label: t('Pantone code'),
-            value: pantoneCode,
-            onChange: handlePantoneCodeInput,
-            debouncedDelay: 1500,
-            hidden: !pantoneReady || !pantoneInput,
+            type: 'custom',
+            label: t('Pantone® code'),
+            component: (
+                <PantoneInput
+                    value={lineDetail.pantone ?? ''}
+                    onChange={(value, hex) => onUpdate({ pantone: value, colour: hex })}
+                />
+            ),
+            hidden: !pantoneReady || !inputWithPantone,
         },
         {
             type: 'custom',
@@ -115,10 +84,5 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
         },
     ];
 
-    return (
-        <>
-            {isLoading && <RmgLoader isIndeterminate />}
-            <RmgFields fields={fields} />
-        </>
-    );
+    return <RmgFields fields={fields} />;
 }

@@ -4,7 +4,7 @@ import { RmgSidePanel, RmgSidePanelHeader } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import { closeSidePanel } from '../../redux/app/app-slice';
 import usePalette from '../hooks/use-palette';
-import LineDetailCard from '../line-detail-card';
+import LineDetailCard from '../common/line-detail-card';
 import { TranslationEntry } from '../../redux/ticket/util';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import { Button, Divider, HStack, VStack } from '@chakra-ui/react';
