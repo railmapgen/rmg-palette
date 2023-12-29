@@ -14,7 +14,7 @@ import {
 import { MdAdd } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import PantoneChecker from './pantone-checker';
-import LineDetailCard from '../line-detail-card';
+import LineDetailCard from '../common/line-detail-card';
 import { RmgSection, RmgSectionHeader } from '@railmapgen/rmg-components';
 
 export default function LinesSection() {

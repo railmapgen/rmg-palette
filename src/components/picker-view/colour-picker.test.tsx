@@ -1,152 +1,68 @@
 import ColourPicker from './colour-picker';
-import { act } from 'react-dom/test-utils';
-import { fireEvent, screen } from '@testing-library/react';
-import { vi } from 'vitest';
+import { screen, waitFor } from '@testing-library/react';
 import { render } from '../../test-utils';
+import { userEvent } from '@testing-library/user-event';
 
 const mockCallbacks = {
     onChange: vi.fn(),
 };
 
-const originalFetch = global.fetch;
-const mockFetch = vi.fn();
-
-const setup = () => render(<ColourPicker city="hongkong" {...mockCallbacks} />);
+const setup = () => render(<ColourPicker city="guangzhou" {...mockCallbacks} />);
 
 describe('ColourPicker', () => {
     afterEach(() => {
         vi.clearAllMocks();
-        global.fetch = originalFetch;
-    });
-
-    beforeEach(() => {
-        mockFetch.mockImplementation(url => {
-            if (url.includes('hongkong')) {
-                return Promise.resolve({
-                    json: () =>
-                        Promise.resolve([
-                            {
-                                id: 'twl',
-                                name: {
-                                    en: 'Tsuen Wan Line',
-                                    zh: '荃灣綫',
-                                },
-                                colour: '#E2231A',
-                            },
-                            {
-                                id: 'ktl',
-                                name: {
-                                    en: 'Kwun Tong Line',
-                                    zh: '觀塘綫',
-                                },
-                                colour: '#00AF41',
-                                fg: '#000',
-                            },
-                        ]),
-                });
-            } else if (url.includes('guangzhou')) {
-                return Promise.resolve({
-                    json: () =>
-                        Promise.resolve([
-                            {
-                                id: 'gz1',
-                                name: {
-                                    en: 'Line 1',
-                                    zh: '1号线',
-                                },
-                                colour: '#F3D03E',
-                                fg: '#000',
-                            },
-                            {
-                                id: 'gz2',
-                                name: {
-                                    en: 'Line 2',
-                                    zh: '2号线',
-                                },
-                                colour: '#00629B',
-                            },
-                        ]),
-                });
-            } else {
-                console.warn('Unhandled fetch:', url);
-                return originalFetch(url);
-            }
-        });
-        global.fetch = mockFetch;
     });
 
     it('Can render line badges inside menu item as expected', async () => {
         setup();
-        await act(async () => {
-            await Promise.resolve();
-        });
 
-        await screen.findByText('Tsuen Wan Line');
-        expect(screen.getByText('Tsuen Wan Line')).toHaveStyle({ background: '#E2231A', color: '#FFFFFF' });
-        expect(screen.getByText('Kwun Tong Line')).toHaveStyle({ background: '#00AF41', color: '#000000' });
+        const line1Option = await screen.findByText('Line 1');
+        expect(line1Option).toHaveStyle({ background: '#e7c148', color: '#000000' });
+        expect(screen.getByText('Line 2')).toHaveStyle({ background: '#385f87', color: '#FFFFFF' });
     });
 
     it('Can handle invalid city prop as expected', async () => {
+        const user = userEvent.setup();
         const { rerender } = setup();
-        await act(async () => {
-            await Promise.resolve();
-        });
 
-        fireEvent.focus(screen.getByRole('combobox'));
-        await screen.findByRole('dialog');
-
-        expect(screen.getByRole('menuitem', { name: 'Tsuen Wan Line' })).toBeInTheDocument();
+        await user.click(screen.getByRole('combobox'));
+        await screen.findByRole('menuitem', { name: 'Line 1' });
 
         rerender(<ColourPicker city={undefined} {...mockCallbacks} />);
-        await act(async () => {
-            await Promise.resolve();
-        });
 
         expect(screen.queryByRole('menuitem')).not.toBeInTheDocument();
     });
 
     it('Can search item by other languages and select item as expected', async () => {
+        const user = userEvent.setup();
         setup();
-        await act(async () => {
-            await Promise.resolve();
-        });
 
-        fireEvent.focus(screen.getByRole('combobox'));
-        await screen.findByRole('dialog');
+        const inputField = screen.getByRole('combobox');
+        await user.type(inputField, '广佛');
+        await waitFor(() => expect(screen.queryByRole('menuitem', { name: 'Line 1' })).not.toBeInTheDocument());
+        expect(screen.getByRole('menuitem', { name: 'Guangfo Line' })).toBeInTheDocument();
 
-        vi.useFakeTimers();
-        fireEvent.change(screen.getByRole('combobox'), { target: { value: '荃灣' } });
-        await act(async () => {
-            vi.advanceTimersByTime(1000);
-        });
-        expect(screen.getByRole('menuitem', { name: 'Tsuen Wan Line' })).toBeInTheDocument();
+        await user.clear(inputField);
+        await user.type(inputField, '海珠');
+        await waitFor(() => expect(screen.queryByRole('menuitem', { name: 'Guangfo Line' })).not.toBeInTheDocument());
+        const thz1Option = screen.getByRole('menuitem', { name: 'THZ1' });
+        expect(thz1Option).toBeInTheDocument();
 
-        fireEvent.change(screen.getByRole('combobox'), { target: { value: '觀塘' } });
-        await act(async () => {
-            vi.advanceTimersByTime(1000);
-        });
-        expect(screen.getByRole('menuitem', { name: 'Kwun Tong Line' })).toBeInTheDocument();
-
-        // select ktl
-        fireEvent.click(screen.getByText('Kwun Tong Line'));
+        // select THZ1
+        await user.click(thz1Option);
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
-        expect(mockCallbacks.onChange).toBeCalledWith('ktl', '#00AF41', '#000');
+        expect(mockCallbacks.onChange).toBeCalledWith('thz1', '#6cb23d', '#fff', undefined);
     });
 
     it('Can reload list of palette when city prop is changed', async () => {
         const { rerender } = setup();
-        await act(async () => {
-            await Promise.resolve();
-        });
 
-        expect(screen.getByText('Tsuen Wan Line')).toBeInTheDocument();
+        await screen.findByText('Line 1');
 
-        rerender(<ColourPicker city="guangzhou" {...mockCallbacks} />);
-        await act(async () => {
-            await Promise.resolve();
-        });
+        rerender(<ColourPicker city="hongkong" {...mockCallbacks} />);
 
-        expect(screen.getByText('Line 1')).toBeInTheDocument();
-        expect(screen.getByText('Line 2')).toBeInTheDocument();
+        await screen.findByText('Tsuen Wan Line');
+        await screen.findByText('Kwun Tong Line');
     });
 });

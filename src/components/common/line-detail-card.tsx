@@ -1,15 +1,15 @@
 import { RmgCard } from '@railmapgen/rmg-components';
-import { PaletteEntryWithTranslationEntry } from '../redux/ticket/util';
-import useTranslatedName from './hooks/use-translated-name';
+import { PaletteEntryWithTranslationEntry } from '../../redux/ticket/util';
+import useTranslatedName from '../hooks/use-translated-name';
 import { MdContentCopy, MdDelete, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 import { Flex, HStack, IconButton, SystemStyleObject } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import ColourEntryCard from './ticket-view/colour-entry-card';
-import { MultiLangEntryCardInner } from './ticket-view/multi-lang-entry-card';
-import { LineDetailUpdates } from '../redux/ticket/ticket-slice';
+import ColourEntryCard from '../ticket-view/colour-entry-card';
+import { MultiLangEntryCardInner } from '../ticket-view/multi-lang-entry-card';
+import { LineDetailUpdates } from '../../redux/ticket/ticket-slice';
 import { useMemo, useState } from 'react';
 import { LanguageCode } from '@railmapgen/rmg-translate';
-import ColourDetailCard from './palette-view/colour-detail-card';
+import ColourDetailCard from '../palette-view/colour-detail-card';
 
 interface LineDetailsCardProps {
     lineDetail: PaletteEntryWithTranslationEntry;
