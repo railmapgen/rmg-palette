@@ -12,7 +12,7 @@ export const getGitHubIssueDetailsBlock = (type: 'country' | 'city' | 'lines', d
         const details = document.createElement('details');
         details.setAttribute('repo', 'rmg-palette');
         details.setAttribute('type', type);
-        details.textContent = JSON.stringify(data, null, 4);
+        details.textContent = JSON.stringify(data);
         return details.outerHTML;
     } else {
         return '';
@@ -82,6 +82,67 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         en: 'Name in official language is missing',
         'zh-Hans': '缺少官方语言名称',
         'zh-Hant': '缺少官方語言名稱',
+    },
+};
+
+const DATA_SOURCES = [
+    'OFFICIAL_WEBSITE',
+    'SOCIAL_MEDIA',
+    'GOVERNMENT',
+    'INTERNAL',
+    'WEBSITE_SOURCE_CODE',
+    'PDF',
+    'LOSSY',
+    'WIKIPEDIA',
+    'OTHER',
+] as const;
+export type DataSource = (typeof DATA_SOURCES)[number];
+
+export const DATA_SOURCE_DISPLAY_TEXT: Record<DataSource, Translation> = {
+    OFFICIAL_WEBSITE: {
+        en: '1. Design standard published in the official website',
+        'zh-Hans': '1. 官方网站发布的设计标准',
+        'zh-Hant': '1. 官方網站發佈的設計標準',
+    },
+    SOCIAL_MEDIA: {
+        en: '2. Design standard published by the official social media',
+        'zh-Hans': '2. 官方社交媒体发布的设计标准',
+        'zh-Hant': '2. 官方社交媒體發佈的設計標準',
+    },
+    GOVERNMENT: {
+        en: '3. Code of design standard published by the government or legislature',
+        'zh-Hans': '3. 政府或立法机关公布的设计守则',
+        'zh-Hant': '3. 政府或立法機關公佈的設計守則',
+    },
+    INTERNAL: {
+        en: '4. Internal leaked source',
+        'zh-Hans': '4. 内部流出的来源',
+        'zh-Hant': '4. 內部流出的來源',
+    },
+    WEBSITE_SOURCE_CODE: {
+        en: '5. Source code of the official website',
+        'zh-Hans': '5. 官方网站的源代码',
+        'zh-Hant': '5. 官方網站的源程式碼',
+    },
+    PDF: {
+        en: '6. Colours extracted from a PDF file',
+        'zh-Hans': '6. 从 PDF 文件提取的颜色',
+        'zh-Hant': '6. 从 PDF 檔案擷取的顏色',
+    },
+    LOSSY: {
+        en: '7. Colours extracted from a lossy image (e.g. JPG)',
+        'zh-Hans': '7. 从有损压缩的图片（如 JPG）提取的颜色',
+        'zh-Hant': '7. 从有損壓縮的圖像（如 JPG）擷取的顏色',
+    },
+    WIKIPEDIA: {
+        en: '8. Wikipedia',
+        'zh-Hans': '8. 维基百科',
+        'zh-Hant': '8. 維基百科',
+    },
+    OTHER: {
+        en: '9. Others (Please indicate below)',
+        'zh-Hans': '9. 其他（请于下方注明）',
+        'zh-Hant': '9. 其他（請於下方註明）',
     },
 };
 

@@ -1,6 +1,6 @@
 import { Modal, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import { DRAFT_TICKET_KEY, InvalidReasonType } from '../../util/constants';
+import { DataSource, DRAFT_TICKET_KEY, InvalidReasonType } from '../../util/constants';
 import { useRootSelector } from '../../redux';
 import { ticketSelectors } from '../../redux/ticket/ticket-slice';
 import { useTranslation } from 'react-i18next';
@@ -23,6 +23,7 @@ export default function SubmitModal(props: SubmitModalProps) {
     const [cityErrors, setCityErrors] = useState<InvalidReasonType[]>([]);
     const [lineErrors, setLineErrors] = useState<Record<string, InvalidReasonType[]>>({});
 
+    const [dataSource, setDataSource] = useState<DataSource | ''>('');
     const [refLink, setRefLink] = useState('');
     const [justification, setJustification] = useState('');
 
@@ -43,6 +44,7 @@ export default function SubmitModal(props: SubmitModalProps) {
         } else {
             // reset modal
             setIsIgnoreErrors(false);
+            setDataSource('');
             setRefLink('');
             setJustification('');
             setIsFinishJustification(false);
@@ -80,6 +82,8 @@ export default function SubmitModal(props: SubmitModalProps) {
 
                 {isShowStepJustification && (
                     <SubmitModalStepJustification
+                        dataSource={dataSource}
+                        onDataSourceChange={setDataSource}
                         refLink={refLink}
                         onRefLinkChange={setRefLink}
                         justification={justification}
@@ -94,6 +98,7 @@ export default function SubmitModal(props: SubmitModalProps) {
                         countryEntry={countryEntry}
                         cityEntry={cityEntry}
                         paletteList={paletteList}
+                        dataSource={dataSource}
                         refLink={refLink}
                         justification={justification}
                         onPrev={() => setIsFinishJustification(false)}
