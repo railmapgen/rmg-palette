@@ -1,0 +1,14 @@
+[
+    {
+        "id": "tzs1",
+        "colour": "#2392e7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1线",
+            "zh-Hant": "S1線",
+            "ja": "S1線",
+            "ko": "S1선"
+        }
+    }
+]

@@ -1519,6 +1519,17 @@
         }
     },
     {
+        "id": "taizhou",
+        "country": "CN",
+        "name": {
+            "en": "Taizhou",
+            "zh-Hans": "台州",
+            "zh-Hant": "台州",
+            "ja": "台州",
+            "ko": "타이저우"
+        }
+    },
+    {
         "id": "taoyuan",
         "country": "TW",
         "name": {
