@@ -134,9 +134,9 @@
         "colour": "#DE7C00",
         "fg": "#fff",
         "name": {
-            "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "en": "Line 13(Shiyan Line)",
+            "zh-Hans": "13号线（石岩线）",
+            "zh-Hant": "13號線（石岩線）"
         }
     },
     {
@@ -144,9 +144,9 @@
         "colour": "#F2C75C",
         "fg": "#fff",
         "name": {
-            "en": "Line 14",
-            "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
+            "en": "Line 14(Eastern Express)",
+            "zh-Hans": "14号线（东部快线）",
+            "zh-Hant": "14號線（東部快線）"
         }
     },
     {
@@ -164,9 +164,9 @@
         "colour": "#1E22AA",
         "fg": "#fff",
         "name": {
-            "en": "Line 16",
-            "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "en": "Line 16(Longping Line)",
+            "zh-Hans": "16号线（龙坪线）",
+            "zh-Hant": "16號線（龍坪線）"
         }
     },
     {
