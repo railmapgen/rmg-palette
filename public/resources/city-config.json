@@ -1217,6 +1217,16 @@
         }
     },
     {
+        "id": "poznan",
+        "country": "PL",
+        "name": {
+            "en": "Poznan",
+            "zh-Hans": "波兹南",
+            "zh-Hant": "波茲南",
+            "pl": "Poznań"
+        }
+    },
+    {
         "id": "pyongyang",
         "country": "KP",
         "name": {

@@ -1,0 +1,200 @@
+[
+    {
+        "id": "p1",
+        "colour": "#d0006f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號缐",
+            "pl": "Linie 1"
+        }
+    },
+    {
+        "id": "p2",
+        "colour": "#72c4e7",
+        "fg": "#000",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號缐",
+            "pl": "Linie 2"
+        }
+    },
+    {
+        "id": "p3",
+        "colour": "#8e364c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號缐",
+            "pl": "Linie 3"
+        }
+    },
+    {
+        "id": "p5",
+        "colour": "#6cc24a",
+        "fg": "#000",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號缐",
+            "pl": "Linie 5"
+        }
+    },
+    {
+        "id": "p6",
+        "colour": "#009639",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號缐",
+            "pl": "Linie 6"
+        }
+    },
+    {
+        "id": "p7",
+        "colour": "#003594",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號缐",
+            "pl": "Linie 7"
+        }
+    },
+    {
+        "id": "p8",
+        "colour": "#da291c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號缐",
+            "pl": "Linie 8"
+        }
+    },
+    {
+        "id": "p9",
+        "colour": "#ff671f",
+        "fg": "#000",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號缐",
+            "pl": "Linie 9"
+        }
+    },
+    {
+        "id": "p10",
+        "colour": "#f1b434",
+        "fg": "#000",
+        "name": {
+            "en": "Line 10",
+            "zh-Hans": "10号线",
+            "zh-Hant": "10號缐",
+            "pl": "Linie 10"
+        }
+    },
+    {
+        "id": "p11",
+        "colour": "#3cdbc0",
+        "fg": "#000",
+        "name": {
+            "en": "Line 11",
+            "zh-Hans": "11号线",
+            "zh-Hant": "11號缐",
+            "pl": "Linie 11"
+        }
+    },
+    {
+        "id": "p12",
+        "colour": "#cba3d8",
+        "fg": "#000",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號缐",
+            "pl": "Linie 12"
+        }
+    },
+    {
+        "id": "p13",
+        "colour": "#ad841f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號缐",
+            "pl": "Linie 13"
+        }
+    },
+    {
+        "id": "p14",
+        "colour": "#946037",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 14",
+            "zh-Hans": "14号线",
+            "zh-Hant": "14號缐",
+            "pl": "Linie 14"
+        }
+    },
+    {
+        "id": "p15",
+        "colour": "#a2aaad",
+        "fg": "#000",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號缐",
+            "pl": "Linie 15"
+        }
+    },
+    {
+        "id": "p16",
+        "colour": "#440099",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16",
+            "zh-Hans": "16号线",
+            "zh-Hant": "16號缐",
+            "pl": "Linie 16"
+        }
+    },
+    {
+        "id": "p17",
+        "colour": "#004f71",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號缐",
+            "pl": "Linie 17"
+        }
+    },
+    {
+        "id": "p18",
+        "colour": "#fedb00",
+        "fg": "#000",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號缐",
+            "pl": "Linie 18"
+        }
+    },
+    {
+        "id": "p19",
+        "colour": "#42b699",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號缐",
+            "pl": "Linie 19"
+        }
+    }
+]
