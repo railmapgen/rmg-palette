@@ -832,6 +832,15 @@
         }
     },
     {
+        "id": "liuzhou",
+        "country": "CN",
+        "name": {
+            "en": "Liuzhou",
+            "zh-Hans": "柳州",
+            "zh-Hant": "柳州"
+        }
+    },
+    {
         "id": "london",
         "country": "GBENG",
         "name": {

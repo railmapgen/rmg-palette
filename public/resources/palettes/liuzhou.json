@@ -1,0 +1,52 @@
+[
+    {
+        "id": "lz1",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "en": "line 1",
+            "zh-Hans": "一号线",
+            "zh-Hant": "一号线"
+        }
+    },
+    {
+        "id": "lz2",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2号线"
+        }
+    },
+    {
+        "id": "lz3",
+        "colour": "#4a86e8",
+        "fg": "#fff",
+        "name": {
+            "en": "line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3号线"
+        }
+    },
+    {
+        "id": "lz4",
+        "colour": "#44ff0d",
+        "fg": "#fff",
+        "name": {
+            "en": "line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4号线"
+        }
+    },
+    {
+        "id": "lz5",
+        "colour": "#9900ff",
+        "fg": "#fff",
+        "name": {
+            "en": "line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5号线"
+        }
+    }
+]
