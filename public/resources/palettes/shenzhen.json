@@ -74,7 +74,7 @@
         "colour": "#0033A0",
         "fg": "#fff",
         "name": {
-            "en": "Line 7(Xili Line)",
+            "en": "Line 7 (Xili Line)",
             "zh-Hans": "7号线（西丽线）",
             "zh-Hant": "7號線（西麗線）"
         }
@@ -94,7 +94,7 @@
         "colour": "#7B6469",
         "fg": "#fff",
         "name": {
-            "en": "Line 9(Meilin Line)",
+            "en": "Line 9 (Meilin Line)",
             "zh-Hans": "9号线（梅林线）",
             "zh-Hant": "9號線（梅林線）"
         }
@@ -104,7 +104,7 @@
         "colour": "#F8779E",
         "fg": "#fff",
         "name": {
-            "en": "Line 10(Bantian Line)",
+            "en": "Line 10 (Bantian Line)",
             "zh-Hans": "10号线（坂田线）",
             "zh-Hant": "10號線（坂田線）"
         }
@@ -124,7 +124,7 @@
         "colour": "#A192B2",
         "fg": "#fff",
         "name": {
-            "en": "Line 12(Nanbao Line)",
+            "en": "Line 12 (Nanbao Line)",
             "zh-Hans": "12号线（南宝线）",
             "zh-Hant": "12號線（南寶線）"
         }
@@ -134,9 +134,9 @@
         "colour": "#DE7C00",
         "fg": "#fff",
         "name": {
-            "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "en": "Line 13 (Shiyan Line)",
+            "zh-Hans": "13号线（石岩线）",
+            "zh-Hant": "13號線（石岩線）"
         }
     },
     {
@@ -144,9 +144,9 @@
         "colour": "#F2C75C",
         "fg": "#fff",
         "name": {
-            "en": "Line 14",
-            "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
+            "en": "Line 14 (Eastern Express)",
+            "zh-Hans": "14号线（东部快线）",
+            "zh-Hant": "14號線（東部快線）"
         }
     },
     {
@@ -164,9 +164,9 @@
         "colour": "#1E22AA",
         "fg": "#fff",
         "name": {
-            "en": "Line 16",
-            "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "en": "Line 16 (Longping Line)",
+            "zh-Hans": "16号线（龙坪线）",
+            "zh-Hant": "16號線（龍坪線）"
         }
     },
     {
