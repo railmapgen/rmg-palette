@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { LanguageCode } from '@railmapgen/rmg-translate';
 import { getFlagEmoji } from './emoji-util';
 import { useRootSelector } from '../../redux';
+import useTranslatedName from '../hooks/use-translated-name';
 
 interface CityPickerProps {
     defaultValueId?: string;
@@ -14,53 +15,50 @@ export default function CityPicker(props: CityPickerProps) {
     const { defaultValueId, onChange } = props;
 
     const { i18n } = useTranslation();
+    const translateName = useTranslatedName();
 
     const { cityList } = useRootSelector(state => state.app);
     const currentItem = defaultValueId ? cityList.find(item => item.id === defaultValueId) : undefined;
-
-    const displayValue = (item: CityEntry): string => {
-        return (
-            i18n.languages.map(lng => item.name[lng as LanguageCode]).find(name => name !== undefined) ??
-            item.name.en ??
-            ''
-        );
-    };
 
     const displayHandler = (item: CityEntry) => {
         const isCensorTWFlag =
             item.country === 'TW' && ['zh-Hans', 'zh-CN'].includes(i18n.languages[0] as LanguageCode);
 
-        const name = i18n.languages.map(lng => item.name[lng as LanguageCode]).find(name => name !== undefined);
-
         return (
             <>
                 <span className="flag-emoji">{isCensorTWFlag ? '🏴' : getFlagEmoji(item.country)}</span>
-                <span>{name}</span>
+                <span>{translateName(item.name)}</span>
             </>
         );
     };
 
-    const predicate = (item: CityEntry, input: string): boolean => {
-        return Object.values(item.name).some(name => name.toLowerCase().includes(input.toLowerCase()));
+    const filter = (input: string, item: CityEntry): boolean => {
+        const lowerCaseInput = input.toLocaleLowerCase();
+        return (
+            item.id.toLocaleLowerCase().includes(lowerCaseInput) ||
+            Object.values(item.name).some(name => name.toLowerCase().includes(lowerCaseInput))
+        );
     };
 
-    const data = cityList.slice().sort((a, b) => {
-        if (a.id === 'other') {
-            return 1;
-        } else if (b.id === 'other') {
-            return -1;
-        } else {
-            return displayValue(a).localeCompare(displayValue(b), i18n.languages[0]);
-        }
-    });
+    const data = cityList
+        .slice()
+        .map(item => ({ ...item, value: translateName(item.name) }))
+        .sort((a, b) => {
+            if (a.id === 'other') {
+                return 1;
+            } else if (b.id === 'other') {
+                return -1;
+            } else {
+                return a.value.localeCompare(b.value, i18n.languages[0]);
+            }
+        });
 
     return (
         <RmgAutoComplete
             data={data}
-            displayValue={displayValue}
             displayHandler={displayHandler}
-            predicate={predicate}
-            defaultValue={currentItem}
+            filter={filter}
+            value={currentItem && translateName(currentItem.name)}
             onChange={item => onChange?.(item.id)}
         />
     );

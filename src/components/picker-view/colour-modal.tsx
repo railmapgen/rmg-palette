@@ -36,7 +36,7 @@ const styles: SystemStyleObject = {
     flex: 1,
     mx: 2,
     overflowX: 'hidden',
-    overflowY: 'scroll',
+    overflowY: 'auto',
 
     '& .chakra-badge': {
         fontSize: '1em',
