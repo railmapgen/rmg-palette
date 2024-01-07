@@ -3,7 +3,7 @@ import ColourModal from './colour-modal';
 import { createTestStore } from '../../setupTests';
 import rootReducer from '../../redux';
 import { userEvent } from '@testing-library/user-event';
-import { screen, waitFor } from '@testing-library/react';
+import { screen, waitFor, within } from '@testing-library/react';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 
 const mockCallbacks = {
@@ -34,7 +34,7 @@ const mockStore = createTestStore({
 });
 
 describe('ColourModal', () => {
-    it('Pantone input regression', async () => {
+    it('Pantone input end-to-end', async () => {
         const user = userEvent.setup();
         render(<ColourModal {...mockCallbacks} />, { store: mockStore });
 
@@ -52,11 +52,37 @@ describe('ColourModal', () => {
         await user.type(pantoneInput, '129 C');
         await waitFor(() => expect(pantoneInput).toBeDisabled(), { timeout: 1501 });
         await waitFor(() => expect(pantoneInput).toBeEnabled());
-        await waitFor(() => expect(screen.getByRole('combobox', { name: 'City' })).toHaveDisplayValue('Customise'));
+        await waitFor(() =>
+            expect(within(screen.getByRole('group', { name: 'City' })).getByRole('textbox')).toHaveDisplayValue(
+                'Customise'
+            )
+        );
 
         // apply history will reset colour mode
         await user.click(screen.getByRole('button', { name: 'Apply' }));
         expect(screen.getByRole('checkbox', { name: 'Select' })).toBeChecked();
         expect(screen.queryByRole('combobox', { name: 'Pantone® code' })).not.toBeInTheDocument();
+    });
+
+    it('Keyboard users end-to-end', async () => {
+        const user = userEvent.setup();
+        render(<ColourModal {...mockCallbacks} />, { store: mockStore });
+
+        await user.tab(); // focus
+        const cityInput = within(screen.getByRole('group', { name: 'City' })).getByRole('textbox');
+        expect(cityInput).toHaveFocus();
+
+        await user.keyboard('o'); // type to search
+        await user.keyboard('[ArrowDown]'); // navigate
+        await user.keyboard('[Enter]'); // select
+        expect(cityInput).toHaveDisplayValue('Customise');
+
+        await user.tab(); // focus
+        const lineInput = within(screen.getByRole('group', { name: 'Line' })).getByRole('textbox');
+        expect(lineInput).toHaveFocus();
+
+        await user.keyboard('[ArrowDown]'); // navigate
+        await user.keyboard('[Enter]'); // select
+        expect(lineInput).toHaveDisplayValue('Customise');
     });
 });

@@ -1,10 +1,10 @@
 import CityPicker from './city-picker';
-import { fireEvent, screen } from '@testing-library/react';
-import { vi } from 'vitest';
+import { screen } from '@testing-library/react';
 import i18n from '../../i18n/config';
 import { render } from '../../test-utils';
 import rootReducer from '../../redux';
 import { createTestStore } from '../../setupTests';
+import { userEvent } from '@testing-library/user-event';
 
 const realStore = rootReducer.getState();
 const mockStore = createTestStore({
@@ -79,10 +79,10 @@ describe('CityPicker', () => {
     });
 
     it('Can render flag emojis (for non-Windows users) and translations as expected', async () => {
+        const user = userEvent.setup();
         render(<CityPicker />, { store: mockStore });
 
-        fireEvent.focus(screen.getByRole('combobox'));
-        await screen.findByRole('dialog');
+        await user.click(screen.getByRole('textbox'));
 
         const menuItems = screen.getAllByRole('menuitem');
         expect(menuItems).toHaveLength(3);
@@ -104,18 +104,15 @@ describe('CityPicker', () => {
     });
 
     it('Can handle city selection as expected', async () => {
+        const user = userEvent.setup();
         render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
-        fireEvent.focus(screen.getByRole('combobox'));
-        await screen.findByRole('dialog');
-
-        fireEvent.click(screen.getByRole('menuitem', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' }));
+        await user.click(screen.getByRole('textbox'));
+        await user.click(screen.getByRole('menuitem', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' }));
 
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
         expect(mockCallbacks.onChange).toBeCalledWith('edinburgh');
 
         expect(screen.getByDisplayValue('爱丁堡')).toBeInTheDocument();
     });
-
-    // TODO: isSettled
 });
