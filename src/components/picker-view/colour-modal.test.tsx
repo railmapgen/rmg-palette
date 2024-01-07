@@ -64,7 +64,7 @@ describe('ColourModal', () => {
         expect(screen.queryByRole('combobox', { name: 'Pantone® code' })).not.toBeInTheDocument();
     });
 
-    it('Keyboard users end-to-end', async () => {
+    it('Keyboard users selecting from palette end-to-end', async () => {
         const user = userEvent.setup();
         render(<ColourModal {...mockCallbacks} />, { store: mockStore });
 
@@ -84,5 +84,8 @@ describe('ColourModal', () => {
         await user.keyboard('[ArrowDown]'); // navigate
         await user.keyboard('[Enter]'); // select
         expect(lineInput).toHaveDisplayValue('Customise');
+
+        await user.keyboard('[Enter]'); // submit
+        expect(mockCallbacks.onSubmit).toBeCalledTimes(1);
     });
 });
