@@ -108,7 +108,8 @@ describe('CityPicker', () => {
         render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
-        await user.click(screen.getByRole('menuitem', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' }));
+        const edinburghItem = await screen.findByRole('menuitem', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' });
+        await user.click(edinburghItem);
 
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
         expect(mockCallbacks.onChange).toBeCalledWith('edinburgh');
