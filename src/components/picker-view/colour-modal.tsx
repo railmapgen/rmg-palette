@@ -109,6 +109,16 @@ export default function ColourModal(props: ColourModalProps) {
         { label: t('White'), value: MonoColour.white },
     ];
 
+    const isSubmitEnabled = cityCode && lineCode && bgColour && fgColour && hexValidator(bgColour);
+
+    const handleSubmit = () => {
+        if (isSubmitEnabled) {
+            // FIXME
+            const displayName = `${cityCode} - ${lineCode}`;
+            onSubmit?.([cityCode, lineCode, bgColour, fgColour], displayName);
+        }
+    };
+
     const paletteFields: RmgFieldsField[] = [
         {
             type: 'custom',
@@ -138,6 +148,7 @@ export default function ColourModal(props: ColourModalProps) {
                         setFgColour(fg);
                         pantone && setPantoneCode(pantone);
                     }}
+                    onSubmit={handleSubmit}
                 />
             ),
         },
@@ -202,16 +213,6 @@ export default function ColourModal(props: ColourModalProps) {
             ),
         },
     ];
-
-    const isSubmitEnabled = cityCode && lineCode && bgColour && fgColour && hexValidator(bgColour);
-
-    const handleSubmit = () => {
-        if (isSubmitEnabled) {
-            // FIXME
-            const displayName = `${cityCode} - ${lineCode}`;
-            onSubmit?.([cityCode, lineCode, bgColour, fgColour], displayName);
-        }
-    };
 
     const handleApply = (theme: Theme) => {
         setCityCode(theme[0]);

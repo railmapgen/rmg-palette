@@ -7,10 +7,11 @@ interface ColourPickerProps {
     city?: string;
     defaultValueId?: string;
     onChange?: (lineCode: string, bg: ColourHex, fg: MonoColour, pantone?: string) => void;
+    onSubmit?: () => void;
 }
 
 export default function ColourPicker(props: ColourPickerProps) {
-    const { city, defaultValueId, onChange } = props;
+    const { city, defaultValueId, onChange, onSubmit } = props;
 
     const translateName = useTranslatedName();
 
@@ -39,6 +40,9 @@ export default function ColourPicker(props: ColourPickerProps) {
             filter={filter}
             value={currentItem && translateName(currentItem.name)}
             onChange={item => onChange?.(item.id, item.colour, item.fg || MonoColour.white, item.pantone)}
+            InputPropsByState={isOpen => ({
+                onKeyDown: ({ key }) => !isOpen && key === 'Enter' && onSubmit?.(),
+            })}
         />
     );
 }
