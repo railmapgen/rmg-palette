@@ -2,6 +2,13 @@ import { RmgAutoComplete, RmgLineBadge } from '@railmapgen/rmg-components';
 import { ColourHex, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import usePalette from '../hooks/use-palette';
 import useTranslatedName from '../hooks/use-translated-name';
+import { SystemStyleObject } from '@chakra-ui/react';
+
+const itemStyles: SystemStyleObject = {
+    display: 'inline-block',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+};
 
 interface ColourPickerProps {
     city?: string;
@@ -20,7 +27,15 @@ export default function ColourPicker(props: ColourPickerProps) {
     const currentItem = defaultValueId ? paletteList.find(palette => palette.id === defaultValueId) : undefined;
 
     const displayHandler = (item: PaletteEntry) => {
-        return <RmgLineBadge name={translateName(item.name)} fg={item.fg || MonoColour.white} bg={item.colour} />;
+        return (
+            <RmgLineBadge
+                name={translateName(item.name)}
+                fg={item.fg || MonoColour.white}
+                bg={item.colour}
+                title={translateName(item.name)}
+                sx={itemStyles}
+            />
+        );
     };
 
     const filter = (input: string, item: PaletteEntry): boolean => {

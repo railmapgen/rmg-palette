@@ -98,7 +98,7 @@ describe('CityPicker', () => {
     });
 
     it('Can mount component with default city code as expected', () => {
-        render(<CityPicker defaultValueId={'hongkong' as any} />, { store: mockStore });
+        render(<CityPicker defaultValueId="hongkong" />, { store: mockStore });
 
         expect(screen.getByDisplayValue('香港')).toBeInTheDocument();
     });
@@ -115,5 +115,25 @@ describe('CityPicker', () => {
         expect(mockCallbacks.onChange).toBeCalledWith('edinburgh');
 
         expect(screen.getByDisplayValue('爱丁堡')).toBeInTheDocument();
+    });
+
+    it('Can filter cities by country name', async () => {
+        const user = userEvent.setup();
+        render(<CityPicker {...mockCallbacks} />, { store: mockStore });
+
+        await user.type(screen.getByRole('textbox'), 'scot');
+        const filteredOptions = screen.getAllByRole('menuitem');
+        expect(filteredOptions).toHaveLength(1);
+        expect(filteredOptions.some(el => el.textContent?.includes('爱丁堡'))).toBeTruthy();
+    });
+
+    it('Can filter cities by country ID', async () => {
+        const user = userEvent.setup();
+        render(<CityPicker {...mockCallbacks} />, { store: mockStore });
+
+        await user.type(screen.getByRole('textbox'), 'gb');
+        const filteredOptions = screen.getAllByRole('menuitem');
+        expect(filteredOptions).toHaveLength(1);
+        expect(filteredOptions.some(el => el.textContent?.includes('爱丁堡'))).toBeTruthy();
     });
 });
