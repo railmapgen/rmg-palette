@@ -4,18 +4,6 @@ import crypto from 'node:crypto';
 
 export const createTestStore = createStore;
 
-class BroadcastChannel {
-    postMessage() {
-        // mocked
-    }
-
-    onmessage() {
-        // mocked
-    }
-}
-
-global.BroadcastChannel = BroadcastChannel as any;
-
 const originalFetch = global.fetch;
 global.fetch = vi.fn().mockImplementation((...args: any[]) => {
     if (args[0].includes('/info.json')) {
