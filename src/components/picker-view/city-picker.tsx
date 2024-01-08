@@ -17,7 +17,7 @@ export default function CityPicker(props: CityPickerProps) {
     const { i18n } = useTranslation();
     const translateName = useTranslatedName();
 
-    const { cityList } = useRootSelector(state => state.app);
+    const { countryList, cityList } = useRootSelector(state => state.app);
     const currentItem = defaultValueId ? cityList.find(item => item.id === defaultValueId) : undefined;
 
     const displayHandler = (item: CityEntry) => {
@@ -35,8 +35,12 @@ export default function CityPicker(props: CityPickerProps) {
     const filter = (input: string, item: CityEntry): boolean => {
         const lowerCaseInput = input.toLocaleLowerCase();
         return (
-            item.id.toLocaleLowerCase().includes(lowerCaseInput) ||
-            Object.values(item.name).some(name => name.toLowerCase().includes(lowerCaseInput))
+            item.id.toLocaleLowerCase().includes(lowerCaseInput) || // city id match
+            Object.values(item.name).some(name => name.toLocaleLowerCase().includes(lowerCaseInput)) || // city name match
+            item.country.toLocaleLowerCase().includes(lowerCaseInput) || // country id match
+            Object.values(countryList.find(country => item.country === country.id)?.name ?? {}).some(name =>
+                name.toLocaleLowerCase().includes(lowerCaseInput)
+            ) // country name match
         );
     };
 
