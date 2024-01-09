@@ -267,8 +267,8 @@
         "pantone": "306 C",
         "name": {
             "en": "APM Line",
-            "zh-Hans": "珠江新城旅客自动输送系统",
-            "zh-Hant": "珠江新城旅客自動輸送系統"
+            "zh-Hans": "珠江新城旅客自动输送系统（APM线）",
+            "zh-Hant": "珠江新城旅客自動輸送系統（APM線）"
         }
     },
     {
@@ -276,7 +276,7 @@
         "colour": "#43B02A",
         "fg": "#fff",
         "name": {
-            "en": "Haizhu Tram Line 1",
+            "en": "Haizhu Tram Line 1 (THZ1)",
             "zh-Hans": "海珠有轨1号线",
             "zh-Hant": "海珠有軌1號線"
         }
@@ -286,7 +286,7 @@
         "colour": "#D42D1B",
         "fg": "#fff",
         "name": {
-            "en": "Huangpu Tram Line 1",
+            "en": "Huangpu Tram Line 1 (THP1)",
             "zh-Hans": "黄埔有轨1号线",
             "zh-Hant": "黃埔有軌1號線"
         }
@@ -296,9 +296,19 @@
         "colour": "#e82583",
         "fg": "#fff",
         "name": {
-            "en": "Huangpu Tram Line 2",
+            "en": "Huangpu Tram Line 2 (THP2)",
             "zh-Hans": "黄埔有轨2号线",
             "zh-Hant": "黃埔有軌2號線"
+        }
+    },
+    {
+        "id": "fsmtr",
+        "colour": "#565656",
+        "fg": "#fff",
+        "name": {
+            "en": "Foshan Metro",
+            "zh-Hans": "佛山地铁",
+            "zh-Hant": "佛山地鐵"
         }
     }
 ]
