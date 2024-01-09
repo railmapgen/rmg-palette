@@ -19,8 +19,8 @@ describe('ColourPicker', () => {
         setup();
 
         await user.click(screen.getByRole('textbox'));
-        expect(screen.getByText('Line 1')).toHaveStyle({ background: '#e7c148', color: '#000000' });
-        expect(screen.getByText('Line 2')).toHaveStyle({ background: '#385f87', color: '#FFFFFF' });
+        expect(screen.getByText('Line 1')).toHaveStyle({ background: '#F3D03E', color: '#000000' });
+        expect(screen.getByText('Line 2')).toHaveStyle({ background: '#00629B', color: '#FFFFFF' });
     });
 
     it('Can handle invalid city prop as expected', async () => {
@@ -47,13 +47,13 @@ describe('ColourPicker', () => {
         await user.clear(inputField);
         await user.type(inputField, '海珠');
         await waitFor(() => expect(screen.queryByRole('menuitem', { name: 'Guangfo Line' })).not.toBeInTheDocument());
-        const thz1Option = screen.getByRole('menuitem', { name: 'THZ1' });
+        const thz1Option = screen.getByRole('menuitem', { name: 'THZ1 (Haizhu Tram Line 1)' });
         expect(thz1Option).toBeInTheDocument();
 
         // select THZ1
         await user.click(thz1Option);
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
-        expect(mockCallbacks.onChange).toBeCalledWith('thz1', '#6cb23d', '#fff', undefined);
+        expect(mockCallbacks.onChange).toBeCalledWith('thz1', '#43B02A', '#fff', undefined);
     });
 
     it('Can reload list of palette when city prop is changed', async () => {
