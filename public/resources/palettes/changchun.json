@@ -41,7 +41,7 @@
     },
     {
         "id": "cc5",
-        "colour": "#f8408a",
+        "colour": "#a88546",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "cc6",
-        "colour": "#df7413",
+        "colour": "#e48aa4",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "cc7",
-        "colour": "#f6cf44",
+        "colour": "#ab5797",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -81,7 +81,7 @@
     },
     {
         "id": "cc9",
-        "colour": "#a26745",
+        "colour": "#2e79ba",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
