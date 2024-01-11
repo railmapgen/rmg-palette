@@ -45,7 +45,7 @@ export default function ColourEntryCard(props: ColourEntryCardProps) {
             label: t('Background colour'),
             variant: inputWithPantone ? 'text' : 'color',
             value: lineDetail.colour,
-            onChange: value => onUpdate({ colour: value as ColourHex }),
+            onChange: value => onUpdate({ colour: value as ColourHex, pantone: undefined }),
             isDisabled: pantoneReady && inputWithPantone,
         },
         {
