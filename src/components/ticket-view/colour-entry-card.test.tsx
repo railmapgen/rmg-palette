@@ -3,9 +3,12 @@ import { PaletteEntryWithTranslationEntry, TranslationEntry } from '../../redux/
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import { render } from '../../test-utils';
 import ColourEntryCard from './colour-entry-card';
-import { act, screen } from '@testing-library/react';
-import { vi } from 'vitest';
+import { act, fireEvent, screen, waitFor } from '@testing-library/react';
 import { setPantoneReady } from '../../redux/app/app-slice';
+import { userEvent } from '@testing-library/user-event';
+import rootReducer from '../../redux';
+
+const realStore = rootReducer.getState();
 
 const initialTranslation: TranslationEntry[] = [['en', '']];
 
@@ -22,6 +25,10 @@ const mockCallbacks = {
 };
 
 describe('ColourEntryCard', () => {
+    afterEach(() => {
+        vi.clearAllMocks();
+    });
+
     it('Can hide pantone input if pantone service is not ready', async () => {
         const mockStore = createTestStore();
         render(<ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
@@ -39,5 +46,24 @@ describe('ColourEntryCard', () => {
         expect(screen.getByRole('group', { name: 'Use Pantone®' })).toBeInTheDocument();
         expect(screen.getByRole('combobox', { name: 'Background colour' })).toBeDisabled();
         expect(screen.getByRole('group', { name: 'Pantone® code' })).toBeInTheDocument();
+    });
+
+    it('Can clear pantone field when manually selecting colour', async () => {
+        const user = userEvent.setup();
+
+        const mockStore = createTestStore({
+            app: {
+                ...realStore.app,
+                pantoneReady: true,
+            },
+        });
+        render(<ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+
+        await user.click(screen.getByRole('checkbox', { name: 'No' }));
+        fireEvent.input(screen.getByLabelText('Background colour', { selector: 'input' }), {
+            target: { value: '#aaaaaa' },
+        });
+        await waitFor(() => expect(mockCallbacks.onUpdate).toBeCalledTimes(1));
+        expect(mockCallbacks.onUpdate).toBeCalledWith({ pantone: undefined, colour: '#aaaaaa' });
     });
 });
