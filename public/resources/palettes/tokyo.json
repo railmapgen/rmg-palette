@@ -330,6 +330,17 @@
         }
     },
     {
+        "id": "uen-tyo",
+        "colour": "#91268f",
+        "fg": "#fff",
+        "name": {
+            "en": "Ueno Tokyo Line",
+            "ja": "上野東京ライン",
+            "zh-Hans": "上野东京线",
+            "zh-Hant": "上野東京線"
+        }
+    },
+    {
         "id": "yb",
         "colour": "#2F56A5",
         "fg": "#fff",
