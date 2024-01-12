@@ -60,7 +60,7 @@
         }
     },
     {
-        "id": "erl",
+        "id": "eal",
         "colour": "#5db7e8",
         "fg": "#fff",
         "name": {
@@ -70,7 +70,7 @@
         }
     },
     {
-        "id": "tml",
+        "id": "mol",
         "colour": "#9c2e00",
         "fg": "#fff",
         "name": {
@@ -90,7 +90,7 @@
         }
     },
     {
-        "id": "sil",
+        "id": "sile",
         "colour": "#cad301",
         "fg": "#fff",
         "name": {
@@ -120,13 +120,13 @@
         }
     },
     {
-        "id": "lr",
+        "id": "lrl",
         "colour": "#dbb301",
         "fg": "#fff",
         "name": {
             "en": "Light Rail",
-            "zh-Hans": "轻铁 (港铁路线图)",
-            "zh-Hant": "輕鐵 (港鐵路綫圖)"
+            "zh-Hans": "轻铁",
+            "zh-Hant": "輕鐵"
         }
     },
     {
@@ -240,13 +240,23 @@
         }
     },
     {
-        "id": "kcrlr",
-        "colour": "#f48933",
+        "id": "np360",
+        "colour": "#94989A",
         "fg": "#fff",
         "name": {
-            "en": "KCR Light Rail",
-            "zh-Hans": "九广轻铁",
-            "zh-Hant": "九廣輕鐵"
+            "en": "Ngong Ping 360",
+            "zh-Hans": "昂坪360",
+            "zh-Hant": "昂坪360"
+        }
+    },
+    {
+        "id": "tramways",
+        "colour": "#007549",
+        "fg": "#fff",
+        "name": {
+            "en": "Hong Kong Tramways",
+            "zh-Hans": "香港电车",
+            "zh-Hant": "香港電車"
         }
     },
     {
@@ -300,7 +310,7 @@
         }
     },
     {
-        "id": "kcrer",
+        "id": "ealkcr",
         "colour": "#08498e",
         "fg": "#fff",
         "name": {
@@ -310,7 +320,7 @@
         }
     },
     {
-        "id": "kcrwr",
+        "id": "wrlkcr",
         "colour": "#a3238f",
         "fg": "#fff",
         "name": {
@@ -320,13 +330,23 @@
         }
     },
     {
-        "id": "mosr",
+        "id": "molkcr",
         "colour": "#761e10",
         "fg": "#fff",
         "name": {
             "en": "Ma On Shan Rail",
             "zh-Hans": "马鞍山铁路",
             "zh-Hant": "馬鞍山鐵路"
+        }
+    },
+    {
+        "id": "lrlkcr",
+        "colour": "#f48933",
+        "fg": "#fff",
+        "name": {
+            "en": "KCR Light Rail",
+            "zh-Hans": "九广轻铁",
+            "zh-Hant": "九廣輕鐵"
         }
     }
 ]
