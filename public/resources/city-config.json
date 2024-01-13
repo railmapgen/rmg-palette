@@ -415,6 +415,15 @@
         }
     },
     {
+        "id": "duck",
+        "country": "duckingcraft",
+        "name": {
+            "en": "duck",
+            "zh-Hans": "鸭子市",
+            "zh-Hant": "鸭子市"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {

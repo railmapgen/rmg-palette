@@ -129,6 +129,15 @@
         "language": "da"
     },
     {
+        "id": "duckingcraft",
+        "name": {
+            "en": "Duckingcraft",
+            "zh-Hans": "鸭子市",
+            "zh-Hant": "鸭子市"
+        },
+        "language": "zh-Hans"
+    },
+    {
         "id": "EG",
         "name": {
             "en": "Egypt",
