@@ -23,7 +23,7 @@
     },
     {
         "id": "tj3",
-        "colour": "#128bbe",
+        "colour": "#0081A6",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -44,7 +44,7 @@
     },
     {
         "id": "tj5",
-        "colour": "#fb6f14",
+        "colour": "#E35205",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
