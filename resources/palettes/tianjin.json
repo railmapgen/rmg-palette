@@ -1,8 +1,9 @@
 [
     {
         "id": "tj1",
-        "colour": "#bd0016",
+        "colour": "#CB333B",
         "fg": "#fff",
+        "pantone": "1797 C",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
@@ -11,8 +12,9 @@
     },
     {
         "id": "tj2",
-        "colour": "#ece114",
+        "colour": "#E1E000",
         "fg": "#000",
+        "pantone": "396 C",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
@@ -21,7 +23,7 @@
     },
     {
         "id": "tj3",
-        "colour": "#128bbe",
+        "colour": "#0081A6",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,8 +33,9 @@
     },
     {
         "id": "tj4",
-        "colour": "#1c7736",
+        "colour": "#007A33",
         "fg": "#fff",
+        "pantone": "356 C",
         "name": {
             "en": "Line 4",
             "zh-Hans": "4号线",
@@ -41,7 +44,7 @@
     },
     {
         "id": "tj5",
-        "colour": "#fb6f14",
+        "colour": "#E35205",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,8 +54,9 @@
     },
     {
         "id": "tj6",
-        "colour": "#9f216f",
+        "colour": "#994878",
         "fg": "#fff",
+        "pantone": "682 C",
         "name": {
             "en": "Line 6",
             "zh-Hans": "6号线",
@@ -61,8 +65,9 @@
     },
     {
         "id": "tj7",
-        "colour": "#b17833",
+        "colour": "#C6893F",
         "fg": "#fff",
+        "pantone": "7510 C",
         "name": {
             "en": "Line 7",
             "zh-Hans": "7号线",
@@ -71,8 +76,9 @@
     },
     {
         "id": "tj8",
-        "colour": "#602e7c",
+        "colour": "#84329B",
         "fg": "#fff",
+        "pantone": "2593 C",
         "name": {
             "en": "Line 8",
             "zh-Hans": "8号线",
@@ -81,8 +87,9 @@
     },
     {
         "id": "tj9",
-        "colour": "#063a91",
+        "colour": "#0047BB",
         "fg": "#fff",
+        "pantone": "2728 C",
         "name": {
             "en": "Line 9",
             "zh-Hans": "9号线",
@@ -91,8 +98,9 @@
     },
     {
         "id": "tj10",
-        "colour": "#b9cf09",
+        "colour": "#C4D600",
         "fg": "#fff",
+        "pantone": "382 C",
         "name": {
             "en": "Line 10",
             "zh-Hans": "10号线",
@@ -101,8 +109,9 @@
     },
     {
         "id": "tj11",
-        "colour": "#ed0066",
+        "colour": "#002D72",
         "fg": "#fff",
+        "pantone": "288 C",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
@@ -111,8 +120,9 @@
     },
     {
         "id": "tj12",
-        "colour": "#3b008c",
+        "colour": "#F99FC9",
         "fg": "#fff",
+        "pantone": "210 C",
         "name": {
             "en": "Line 12",
             "zh-Hans": "12号线",
@@ -121,8 +131,9 @@
     },
     {
         "id": "tj13",
-        "colour": "#def148",
+        "colour": "#FFC845",
         "fg": "#000",
+        "pantone": "1225 C",
         "name": {
             "en": "Line 13",
             "zh-Hans": "13号线",
@@ -131,8 +142,9 @@
     },
     {
         "id": "b1",
-        "colour": "#e13c4b",
+        "colour": "#E03E52",
         "fg": "#fff",
+        "pantone": "710 C",
         "name": {
             "en": "Line B1",
             "zh-Hans": "B1线",
@@ -141,8 +153,9 @@
     },
     {
         "id": "b2",
-        "colour": "#fbf053",
+        "colour": "#F3EA5D",
         "fg": "#fff",
+        "pantone": "3935 C",
         "name": {
             "en": "Line B2",
             "zh-Hans": "B2线",
@@ -151,8 +164,9 @@
     },
     {
         "id": "b3",
-        "colour": "#75c2c9",
+        "colour": "#2CCCD3",
         "fg": "#fff",
+        "pantone": "319 C",
         "name": {
             "en": "Line B3",
             "zh-Hans": "B3线",
@@ -161,8 +175,9 @@
     },
     {
         "id": "b4",
-        "colour": "#5cb35d",
+        "colour": "#6CC24A",
         "fg": "#fff",
+        "pantone": "360 C",
         "name": {
             "en": "Line B4",
             "zh-Hans": "B4线",
@@ -171,8 +186,9 @@
     },
     {
         "id": "b5",
-        "colour": "#f6ac5b",
+        "colour": "#FEAD77",
         "fg": "#fff",
+        "pantone": "7410 C",
         "name": {
             "en": "Line B5",
             "zh-Hans": "B5线",
@@ -181,8 +197,9 @@
     },
     {
         "id": "b6",
-        "colour": "#eb76bd",
+        "colour": "#B06C95",
         "fg": "#fff",
+        "pantone": "681 C",
         "name": {
             "en": "Line B6",
             "zh-Hans": "B6线",
@@ -191,8 +208,9 @@
     },
     {
         "id": "b7",
-        "colour": "#d8ad71",
+        "colour": "#B9975B",
         "fg": "#fff",
+        "pantone": "465 C",
         "name": {
             "en": "Line B7",
             "zh-Hans": "B7线",
@@ -251,8 +269,9 @@
     },
     {
         "id": "z2",
-        "colour": "#1d6b9a",
+        "colour": "#006BA6",
         "fg": "#fff",
+        "pantone": "307 C",
         "name": {
             "en": "Line Z2",
             "zh-Hans": "Z2线",
@@ -271,8 +290,9 @@
     },
     {
         "id": "z4",
-        "colour": "#9574ac",
+        "colour": "#A57FB2",
         "fg": "#fff",
+        "pantone": "521 C",
         "name": {
             "en": "Line Z4",
             "zh-Hans": "Z4线",
@@ -287,6 +307,105 @@
             "en": "TEDA Modern Guided Rail Tram",
             "zh-Hans": "导轨1号线",
             "zh-Hant": "導軌1號線"
+        }
+    },
+    {
+        "id": "tj14",
+        "colour": "#99D6EA",
+        "fg": "#fff",
+        "pantone": "2975 C",
+        "name": {
+            "en": "Line 14",
+            "zh-Hans": "14号线",
+            "zh-Hant": "14號線"
+        }
+    },
+    {
+        "id": "tj15",
+        "colour": "#6ECEB2",
+        "fg": "#fff",
+        "pantone": "338 C",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
+        "id": "jinjing",
+        "colour": "#F8B5C4",
+        "fg": "#fff",
+        "pantone": "707 C",
+        "name": {
+            "en": "Jinjing Line",
+            "zh-Hans": "津静线",
+            "zh-Hant": "津靜線"
+        }
+    },
+    {
+        "id": "jinwu",
+        "colour": "#FFC72C",
+        "fg": "#fff",
+        "pantone": "123 C",
+        "name": {
+            "en": "Jinwu Line",
+            "zh-Hans": "津武线",
+            "zh-Hant": "津武線"
+        }
+    },
+    {
+        "id": "jinning",
+        "colour": "#DECD63",
+        "fg": "#fff",
+        "pantone": "459 C",
+        "name": {
+            "en": "Jinning Line",
+            "zh-Hans": "津宁线",
+            "zh-Hant": "津寧線"
+        }
+    },
+    {
+        "id": "jinbin",
+        "colour": "#8B84D7",
+        "fg": "#fff",
+        "pantone": "2715 C",
+        "name": {
+            "en": "Jinbin Line",
+            "zh-Hans": "津滨线",
+            "zh-Hant": "津濱線"
+        }
+    },
+    {
+        "id": "jingang",
+        "colour": "#4A412A",
+        "fg": "#fff",
+        "pantone": "448 C",
+        "name": {
+            "en": "Jingang Line",
+            "zh-Hans": "津港线",
+            "zh-Hant": "津港線"
+        }
+    },
+    {
+        "id": "ningwu",
+        "colour": "#FDAA63",
+        "fg": "#fff",
+        "pantone": "714 C",
+        "name": {
+            "en": "Ningwu Connection Line",
+            "zh-Hans": "宁武联络线",
+            "zh-Hant": "甯武聯絡線"
+        }
+    },
+    {
+        "id": "shuanghu",
+        "colour": "#C66E4E",
+        "fg": "#fff",
+        "pantone": "7618 C",
+        "name": {
+            "en": "Shuanghu Connection Line",
+            "zh-Hans": "双湖联络线",
+            "zh-Hant": "雙湖聯絡線"
         }
     }
 ]
