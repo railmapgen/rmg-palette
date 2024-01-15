@@ -141,6 +141,28 @@
         }
     },
     {
+        "id": "tj14",
+        "colour": "#99D6EA",
+        "fg": "#fff",
+        "pantone": "2975 C",
+        "name": {
+            "en": "Line 14",
+            "zh-Hans": "14号线",
+            "zh-Hant": "14號線"
+        }
+    },
+    {
+        "id": "tj15",
+        "colour": "#6ECEB2",
+        "fg": "#fff",
+        "pantone": "338 C",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
         "id": "b1",
         "colour": "#E03E52",
         "fg": "#fff",
@@ -307,28 +329,6 @@
             "en": "TEDA Modern Guided Rail Tram",
             "zh-Hans": "导轨1号线",
             "zh-Hant": "導軌1號線"
-        }
-    },
-    {
-        "id": "tj14",
-        "colour": "#99D6EA",
-        "fg": "#fff",
-        "pantone": "2975 C",
-        "name": {
-            "en": "Line 14",
-            "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
-        }
-    },
-    {
-        "id": "tj15",
-        "colour": "#6ECEB2",
-        "fg": "#fff",
-        "pantone": "338 C",
-        "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
         }
     },
     {
