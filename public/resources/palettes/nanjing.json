@@ -11,7 +11,7 @@
     },
     {
         "id": "nj2",
-        "colour": "#c8003f",
+        "colour": "#a6093d",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -41,7 +41,7 @@
     },
     {
         "id": "nj5",
-        "colour": "#FDDA24",
+        "colour": "#f2da51",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "nj6",
-        "colour": "#00b2a9",
+        "colour": "#4bbbb4",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -101,7 +101,7 @@
     },
     {
         "id": "s1",
-        "colour": "#00b2a9",
+        "colour": "#4bbbb4",
         "fg": "#fff",
         "name": {
             "en": "Line S1/Airport Line",
@@ -111,7 +111,7 @@
     },
     {
         "id": "s3",
-        "colour": "#b06096",
+        "colour": "#ba84ac",
         "fg": "#fff",
         "name": {
             "en": "Line S3/Ninghe Line",
@@ -141,7 +141,7 @@
     },
     {
         "id": "s7",
-        "colour": "#e89cae",
+        "colour": "#b46b7a",
         "fg": "#fff",
         "name": {
             "en": "Line S7/Ningli Line",
@@ -151,7 +151,7 @@
     },
     {
         "id": "s8",
-        "colour": "#ea7600",
+        "colour": "#ff8000",
         "fg": "#fff",
         "name": {
             "en": "Line S8/Ningtian Line",
@@ -161,7 +161,7 @@
     },
     {
         "id": "s9",
-        "colour": "#f1b434",
+        "colour": "#ffc600",
         "fg": "#fff",
         "name": {
             "en": "Line S9/Ninggao Line",
