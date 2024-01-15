@@ -25,7 +25,6 @@
         "id": "tj3",
         "colour": "#0081A6",
         "fg": "#fff",
-        "pantone": "2391 C",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
@@ -47,7 +46,6 @@
         "id": "tj5",
         "colour": "#E35205",
         "fg": "#fff",
-        "pantone": "166 C",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
