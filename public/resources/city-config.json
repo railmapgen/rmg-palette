@@ -726,6 +726,16 @@
         }
     },
     {
+        "id": "jrtokai",
+        "country": "JP",
+        "name": {
+            "en": "Central Area (Tokai)",
+            "zh-Hans": "中部地方（东海）",
+            "ja": "中部地方（東海）",
+            "zh-Hant": "中部地方（東海）"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
