@@ -1,10 +1,10 @@
 import { RmgAutoComplete } from '@railmapgen/rmg-components';
 import { CityEntry } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import { LanguageCode } from '@railmapgen/rmg-translate';
 import { getFlagEmoji } from './emoji-util';
 import { useRootSelector } from '../../redux';
 import useTranslatedName from '../hooks/use-translated-name';
+import { censorFlag } from '../../util/censor-utils';
 
 interface CityPickerProps {
     defaultValueId?: string;
@@ -20,17 +20,12 @@ export default function CityPicker(props: CityPickerProps) {
     const { countryList, cityList } = useRootSelector(state => state.app);
     const currentItem = defaultValueId ? cityList.find(item => item.id === defaultValueId) : undefined;
 
-    const displayHandler = (item: CityEntry) => {
-        const isCensorTWFlag =
-            item.country === 'TW' && ['zh-Hans', 'zh-CN'].includes(i18n.languages[0] as LanguageCode);
-
-        return (
-            <>
-                <span className="flag-emoji">{isCensorTWFlag ? '🏴' : getFlagEmoji(item.country)}</span>
-                <span>{translateName(item.name)}</span>
-            </>
-        );
-    };
+    const displayHandler = (item: CityEntry) => (
+        <>
+            <span className="flag-emoji">{getFlagEmoji(censorFlag(item.country))}</span>
+            <span>{translateName(item.name)}</span>
+        </>
+    );
 
     const filter = (input: string, item: CityEntry): boolean => {
         const lowerCaseInput = input.toLocaleLowerCase();
