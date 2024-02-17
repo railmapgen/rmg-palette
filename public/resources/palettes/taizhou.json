@@ -1,0 +1,12 @@
+[
+    {
+        "id": "tzs1",
+        "colour": "#0c9cdc",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1线",
+            "zh-Hant": "S1綫"
+        }
+    }
+]
