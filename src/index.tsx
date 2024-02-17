@@ -11,6 +11,7 @@ import { Events } from './util/constants';
 import { initPickerState, initStore } from './redux/init';
 import { getCityList, getCountryList } from '@railmapgen/rmg-palette-resources';
 import { setCityList, setCountryList, setIsDataLoading } from './redux/app/app-slice';
+import { censorCountryList } from './util/censor-utils';
 
 let root: Root;
 
@@ -43,7 +44,7 @@ rmgRuntime
             console.error('Unable to load city list', e);
         }
         try {
-            store.dispatch(setCountryList(await getCountryList()));
+            store.dispatch(setCountryList(censorCountryList(await getCountryList())));
         } catch (e) {
             console.error('Unable to load country list', e);
         }
