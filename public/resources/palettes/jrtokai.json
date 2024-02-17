@@ -1,0 +1,101 @@
+[
+    {
+        "id": "ca",
+        "colour": "#f57615",
+        "fg": "#fff",
+        "name": {
+            "en": "Tōkaidō Main Line",
+            "zh-Hans": "东海道本线",
+            "ja": "東海道本線",
+            "zh-Hant": "東海道本線"
+        }
+    },
+    {
+        "id": "cb",
+        "colour": "#40743c",
+        "fg": "#fff",
+        "name": {
+            "en": "Gotemba Line",
+            "zh-Hans": "御殿场线",
+            "ja": "御殿場線",
+            "zh-Hant": "御殿場線"
+        }
+    },
+    {
+        "id": "cc",
+        "colour": "#6f2d98",
+        "fg": "#fff",
+        "name": {
+            "en": "Minobu Line",
+            "zh-Hans": "身延线",
+            "ja": "身延線",
+            "zh-Hant": "身延線"
+        }
+    },
+    {
+        "id": "cd",
+        "colour": "#75a2db",
+        "fg": "#fff",
+        "name": {
+            "en": "Iida Line",
+            "zh-Hans": "饭田线",
+            "ja": "飯田線",
+            "zh-Hant": "飯田線"
+        }
+    },
+    {
+        "id": "ce",
+        "colour": "#83502f",
+        "fg": "#fff",
+        "name": {
+            "en": "Taketoyo Line",
+            "zh-Hans": "武丰线",
+            "ja": "武豊線",
+            "zh-Hant": "武豐線"
+        }
+    },
+    {
+        "id": "cf",
+        "colour": "#3b6c9c",
+        "fg": "#fff",
+        "name": {
+            "en": "Chūō Main Line",
+            "zh-Hans": "中央本线",
+            "ja": "中央本線",
+            "zh-Hant": "中央本線"
+        }
+    },
+    {
+        "id": "cg",
+        "colour": "#9c1618",
+        "fg": "#fff",
+        "name": {
+            "en": "Takayama Main Line",
+            "zh-Hans": "高山本线",
+            "ja": "高山本線",
+            "zh-Hant": "高山本線"
+        }
+    },
+    {
+        "id": "ci",
+        "colour": "#bfba2f",
+        "fg": "#fff",
+        "name": {
+            "en": "Taita Line",
+            "zh-Hans": "太多线",
+            "ja": "太多線",
+            "zh-Hant": "太多線"
+        }
+    },
+    {
+        "id": "cj",
+        "colour": "#3dbc87",
+        "fg": "#fff",
+        "name": {
+            "en": "Kansai Main Line",
+            "zh-Hans": "关西本线",
+            "ja": "関西本線",
+            "zh-Hant": "關西本線"
+        }
+    }
+]
