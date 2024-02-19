@@ -59,10 +59,10 @@
         "colour": "#875cac",
         "fg": "#fff",
         "name": {
-            "en": "Busan–Gimhae Light Rail Transit",
-            "ko": "부산-김해 경전철",
-            "zh-Hans": "釜山－金海轻电铁",
-            "zh-Hant": "釜山－金海輕電鐵"
+            "en": "Busan-Gimhae LRT",
+            "ko": "부산김해경전철",
+            "zh-Hans": "釜山金海轻电铁",
+            "zh-Hant": "釜山金海輕電鐵"
         }
     },
     {
@@ -74,6 +74,17 @@
             "ko": "동해선",
             "zh-Hans": "东海线",
             "zh-Hant": "東海線"
+        }
+    },
+    {
+        "id": "ym",
+        "colour": "#a2272a",
+        "fg": "#fff",
+        "name": {
+            "en": "Yangsan Metro",
+            "zh-Hans": "梁山都市铁道",
+            "zh-Hant": "梁山都市鐵道",
+            "ko": "양산도시철도"
         }
     }
 ]
