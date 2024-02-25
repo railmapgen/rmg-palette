@@ -1,17 +1,18 @@
 [
     {
         "id": "hz1",
-        "colour": "#e8384a",
+        "colour": "#dd1c5f",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
+            "zh-Hant": "1號線",
+            "ar": ""
         }
     },
     {
         "id": "hz2",
-        "colour": "#e17901",
+        "colour": "#ec4c08",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +22,7 @@
     },
     {
         "id": "hz3",
-        "colour": "#ffcf23",
+        "colour": "#f4c201",
         "fg": "#000",
         "name": {
             "en": "Line 3",
@@ -31,7 +32,7 @@
     },
     {
         "id": "hz4",
-        "colour": "#60c04b",
+        "colour": "#54ac45",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +42,7 @@
     },
     {
         "id": "hz5",
-        "colour": "#00afc8",
+        "colour": "#0ba4b9",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +52,7 @@
     },
     {
         "id": "hz6",
-        "colour": "#0077cf",
+        "colour": "#166aad",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +62,7 @@
     },
     {
         "id": "hz7",
-        "colour": "#790f8e",
+        "colour": "#6d1c7b",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -71,7 +72,7 @@
     },
     {
         "id": "hz8",
-        "colour": "#a80d4d",
+        "colour": "#8c005d",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -81,7 +82,7 @@
     },
     {
         "id": "hz9",
-        "colour": "#c45b03",
+        "colour": "#ab3b03",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
@@ -91,7 +92,7 @@
     },
     {
         "id": "hz10",
-        "colour": "#daaa00",
+        "colour": "#cc9f0c",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -100,8 +101,28 @@
         }
     },
     {
+        "id": "hz12",
+        "colour": "#037da4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
+    },
+    {
+        "id": "hz15",
+        "colour": "#fa89a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
         "id": "hz16",
-        "colour": "#ffaa52",
+        "colour": "#f08f40",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
@@ -110,8 +131,18 @@
         }
     },
     {
+        "id": "hz18",
+        "colour": "#84d785",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
+    },
+    {
         "id": "hz19",
-        "colour": "#4acbe5",
+        "colour": "#58bfd1",
         "fg": "#fff",
         "name": {
             "en": "Line 19",
@@ -120,8 +151,8 @@
         }
     },
     {
-        "id": "hangzhouhainingintercityrail",
-        "colour": "#0077c8",
+        "id": "hzhncj",
+        "colour": "#0e4996",
         "fg": "#fff",
         "name": {
             "en": "Hangzhou-Haining Intercity Rail",
