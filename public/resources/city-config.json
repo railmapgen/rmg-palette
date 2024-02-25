@@ -1633,6 +1633,16 @@
         }
     },
     {
+        "id": "valparaiso",
+        "country": "CL",
+        "name": {
+            "en": "Valparaiso",
+            "es": "Valparaiso",
+            "zh-Hans": "瓦尔帕莱索",
+            "zh-Hant": "瓦爾帕賴索 "
+        }
+    },
+    {
         "id": "vienna",
         "country": "AT",
         "name": {
