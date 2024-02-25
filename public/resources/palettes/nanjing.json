@@ -168,5 +168,25 @@
             "zh-Hans": "S9号线/宁高线",
             "zh-Hant": "S9號線/寧高線"
         }
+    },
+    {
+        "id": "hmt1",
+        "colour": "#46f0ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Hexi Modern Tram Line 1",
+            "zh-Hans": "河西有轨电车1号线",
+            "zh-Hant": "河西有軌電車1號線"
+        }
+    },
+    {
+        "id": "qmt",
+        "colour": "#57c45b",
+        "fg": "#fff",
+        "name": {
+            "en": "Qilin Modern Tram",
+            "zh-Hans": "麒麟有轨电车",
+            "zh-Hant": "麒麟有軌電車"
+        }
     }
 ]
