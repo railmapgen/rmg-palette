@@ -474,6 +474,16 @@
         }
     },
     {
+        "id": "ghent",
+        "country": "BE",
+        "name": {
+            "en": "Ghent",
+            "zh-Hans": "根特",
+            "zh-Hant": "根特",
+            "fr": "Gand"
+        }
+    },
+    {
         "id": "glasgow",
         "country": "GBSCT",
         "name": {
