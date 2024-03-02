@@ -1,0 +1,46 @@
+[
+    {
+        "id": "mv1",
+        "colour": "#0b48fe",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線",
+            "es": "Línea 1"
+        }
+    },
+    {
+        "id": "bl",
+        "colour": "#00ff00",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus to Limache",
+            "zh-Hans": "到 利马什 的巴士",
+            "zh-Hant": "到 利馬什 的巴士",
+            "es": "Bus a Limache"
+        }
+    },
+    {
+        "id": "bq",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus to Quillota",
+            "zh-Hans": "到 基约塔 的巴士",
+            "zh-Hant": "到 基約塔 的巴士",
+            "es": "Bus a Quillota"
+        }
+    },
+    {
+        "id": "blc",
+        "colour": "#00ffff",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus to La Calera",
+            "zh-Hans": "到 拉卡莱拉 的巴士",
+            "zh-Hant": "到 拉卡萊拉 的巴士",
+            "es": "Bus a La Calera"
+        }
+    }
+]
