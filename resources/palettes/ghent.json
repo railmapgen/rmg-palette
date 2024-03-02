@@ -1,0 +1,79 @@
+[
+    {
+        "id": "gt1",
+        "colour": "#fccd2a",
+        "fg": "#000",
+        "name": {
+            "en": "T1",
+            "zh-Hans": "T1",
+            "zh-Hant": "T1",
+            "fr": "T1"
+        }
+    },
+    {
+        "id": "gt2",
+        "colour": "#1d894d",
+        "fg": "#fff",
+        "name": {
+            "en": "T2",
+            "zh-Hans": "T2",
+            "zh-Hant": "T2",
+            "fr": "T2"
+        }
+    },
+    {
+        "id": "gt3",
+        "colour": "#13a5de",
+        "fg": "#000",
+        "name": {
+            "en": "T3",
+            "zh-Hans": "T3",
+            "zh-Hant": "T3",
+            "fr": "T3"
+        }
+    },
+    {
+        "id": "gt4",
+        "colour": "#e43338",
+        "fg": "#fff",
+        "name": {
+            "en": "T4",
+            "zh-Hans": "T4",
+            "zh-Hant": "T4",
+            "fr": "T4"
+        }
+    },
+    {
+        "id": "gs51",
+        "colour": "#0c6641",
+        "fg": "#fff",
+        "name": {
+            "en": "S51",
+            "zh-Hans": "S51",
+            "zh-Hant": "S51",
+            "fr": "S51"
+        }
+    },
+    {
+        "id": "gs52",
+        "colour": "#f26836",
+        "fg": "#fff",
+        "name": {
+            "en": "S52",
+            "zh-Hans": "S52",
+            "zh-Hant": "S52",
+            "fr": "S52"
+        }
+    },
+    {
+        "id": "gs53",
+        "colour": "#363a7a",
+        "fg": "#fff",
+        "name": {
+            "en": "S53",
+            "zh-Hans": "S53",
+            "zh-Hant": "S53",
+            "fr": "S53"
+        }
+    }
+]
