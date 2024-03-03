@@ -227,6 +227,15 @@
         "language": "ga"
     },
     {
+        "id": "IL",
+        "name": {
+            "en": "Israel",
+            "zh-Hans": "以色列",
+            "zh-Hant": "以色列"
+        },
+        "language": "en"
+    },
+    {
         "id": "IN",
         "name": {
             "en": "India",
