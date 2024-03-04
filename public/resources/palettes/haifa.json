@@ -1,0 +1,12 @@
+[
+    {
+        "id": "carmelit",
+        "colour": "#ea3808",
+        "fg": "#fff",
+        "name": {
+            "en": "Carmelit",
+            "zh-Hans": "海法地铁",
+            "zh-Hant": "海法地鐵"
+        }
+    }
+]

@@ -543,6 +543,15 @@
         }
     },
     {
+        "id": "haifa",
+        "country": "IL",
+        "name": {
+            "en": "Haifa",
+            "zh-Hans": "海法",
+            "zh-Hant": "海法"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
