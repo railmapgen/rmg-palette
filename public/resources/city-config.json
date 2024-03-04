@@ -376,6 +376,16 @@
         }
     },
     {
+        "id": "doha",
+        "country": "QA",
+        "name": {
+            "en": "Doha",
+            "zh-Hans": "多哈",
+            "zh-Hant": "多哈",
+            "ar": "الدوحة"
+        }
+    },
+    {
         "id": "dongguan",
         "country": "CN",
         "name": {
