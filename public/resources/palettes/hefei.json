@@ -48,5 +48,45 @@
             "en": "Line 5",
             "zh-Hant": "5號線"
         }
+    },
+    {
+        "id": "hf6",
+        "colour": "#c99fcd",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "hf7",
+        "colour": "#f1cc40",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "hf8",
+        "colour": "#65aee3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "hfs1",
+        "colour": "#bca488",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1号线",
+            "zh-Hant": "S1號線"
+        }
     }
 ]
