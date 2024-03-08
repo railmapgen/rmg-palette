@@ -1,0 +1,72 @@
+[
+    {
+        "id": "expresswayn",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "National expressway",
+            "zh-Hans": "国家高速",
+            "zh-Hant": "國家高速"
+        }
+    },
+    {
+        "id": "expresswayp",
+        "colour": "#ffff00",
+        "fg": "#000",
+        "name": {
+            "en": "Province expressway",
+            "zh-Hans": "省级高速",
+            "zh-Hant": "省級高速"
+        }
+    },
+    {
+        "id": "expresswaynh",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "National Highway",
+            "zh-Hans": "国道",
+            "zh-Hant": "國道"
+        }
+    },
+    {
+        "id": "expresswayj",
+        "colour": "#ccff33",
+        "fg": "#000",
+        "name": {
+            "en": "Jingjinji expressway",
+            "zh-Hans": "京津冀高速",
+            "zh-Hant": "京津冀高速"
+        }
+    },
+    {
+        "id": "expresswayph",
+        "colour": "#ffff00",
+        "fg": "#000",
+        "name": {
+            "en": "Province Highway",
+            "zh-Hans": "省道",
+            "zh-Hant": "省道"
+        }
+    },
+    {
+        "id": "expresswaycr",
+        "colour": "#ffffff",
+        "fg": "#000",
+        "name": {
+            "en": "County road",
+            "zh-Hans": "县道",
+            "zh-Hant": "縣道"
+        }
+    },
+    {
+        "id": "expresswayy",
+        "colour": "#ffffff",
+        "fg": "#000",
+        "name": {
+            "en": "Country road",
+            "zh-Hans": "乡道",
+            "zh-Hant": "鄉道"
+        }
+    }
+]
