@@ -110,6 +110,16 @@
         }
     },
     {
+        "id": "s2",
+        "colour": "#93282c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2/Ningma Line",
+            "zh-Hans": "S2号线/宁马线",
+            "zh-Hant": "S2號線/寧馬線"
+        }
+    },
+    {
         "id": "s3",
         "colour": "#ba84ac",
         "fg": "#fff",
