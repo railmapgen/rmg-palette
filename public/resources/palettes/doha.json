@@ -1,0 +1,35 @@
+[
+    {
+        "id": "rl",
+        "colour": "#df2112",
+        "fg": "#fff",
+        "name": {
+            "en": "Red line",
+            "zh-Hans": " 红线",
+            "zh-Hant": "紅綫",
+            "ar": "والأحمر"
+        }
+    },
+    {
+        "id": "gl",
+        "colour": "#7ebb00",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠綫",
+            "ar": "الأخضر"
+        }
+    },
+    {
+        "id": "goldl",
+        "colour": "#ffb616",
+        "fg": "#fff",
+        "name": {
+            "en": "Gold line",
+            "zh-Hans": "金线",
+            "zh-Hant": "金綫",
+            "ar": "والذهبي"
+        }
+    }
+]

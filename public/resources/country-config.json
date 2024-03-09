@@ -396,6 +396,16 @@
         "language": "pt"
     },
     {
+        "id": "QA",
+        "name": {
+            "en": "Qatar",
+            "zh-Hans": "卡塔尔",
+            "zh-Hant": "卡達",
+            "ar": "قطر"
+        },
+        "language": "ar"
+    },
+    {
         "id": "RO",
         "name": {
             "en": "Romania",

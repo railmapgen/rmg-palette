@@ -376,6 +376,16 @@
         }
     },
     {
+        "id": "doha",
+        "country": "QA",
+        "name": {
+            "en": "Doha",
+            "zh-Hans": "多哈",
+            "zh-Hant": "多哈",
+            "ar": "الدوحة"
+        }
+    },
+    {
         "id": "dongguan",
         "country": "CN",
         "name": {
@@ -471,6 +481,16 @@
             "it": "Genova",
             "zh-Hans": "热那亚",
             "zh-Hant": "熱那亞"
+        }
+    },
+    {
+        "id": "ghent",
+        "country": "BE",
+        "name": {
+            "en": "Ghent",
+            "zh-Hans": "根特",
+            "zh-Hant": "根特",
+            "fr": "Gand"
         }
     },
     {
@@ -1526,6 +1546,15 @@
         "name": {
             "en": "Taiyuan",
             "zh-Hans": "太原"
+        }
+    },
+    {
+        "id": "taizhou",
+        "country": "CN",
+        "name": {
+            "en": "Taizhou",
+            "zh-Hans": "台州",
+            "zh-Hant": "台州"
         }
     },
     {
