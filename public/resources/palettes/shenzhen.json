@@ -61,8 +61,9 @@
     },
     {
         "id": "sz6b",
-        "colour": "#168773",
+        "colour": "#008578",
         "fg": "#fff",
+        "pantone": "3282 C",
         "name": {
             "en": "Line 6 branch",
             "zh-Hans": "6号线支线",
@@ -101,8 +102,9 @@
     },
     {
         "id": "sz10",
-        "colour": "#F8779E",
+        "colour": "#F67599",
         "fg": "#fff",
+        "pantone": "190 C",
         "name": {
             "en": "Line 10 (Bantian Line)",
             "zh-Hans": "10号线（坂田线）",
@@ -170,6 +172,28 @@
         }
     },
     {
+        "id": "sz17",
+        "colour": "#D3C0CD",
+        "fg": "#fff",
+        "pantone": "5165 C",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號線"
+        }
+    },
+    {
+        "id": "sz19",
+        "colour": "#BB16A3",
+        "fg": "#fff",
+        "pantone": "247 C",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
         "id": "sz20",
         "colour": "#88DBDF",
         "fg": "#fff",
@@ -180,6 +204,28 @@
         }
     },
     {
+        "id": "sz22",
+        "colour": "#FBE122",
+        "fg": "#fff",
+        "pantone": "107 C",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
+        "id": "sz25",
+        "colour": "#FEAD77",
+        "fg": "#fff",
+        "pantone": "7410 C",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线",
+            "zh-Hant": "25號線"
+        }
+    },
+    {
         "id": "tram",
         "colour": "#b8b8b8",
         "fg": "#fff",
@@ -187,16 +233,6 @@
             "en": "Tram",
             "zh-Hans": "有轨电车",
             "zh-Hant": "有軌電車"
-        }
-    },
-    {
-        "id": "sz8orig",
-        "colour": "#E45DBF",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 8 (Original)",
-            "zh-Hans": "8号线（原）",
-            "zh-Hant": "8號線（原）"
         }
     },
     {
