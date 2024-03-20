@@ -1586,6 +1586,15 @@
         }
     },
     {
+        "id": "telivivyafo",
+        "country": "IL",
+        "name": {
+            "en": "Tel Aviv-Yafo",
+            "zh-Hans": "特拉维夫-雅法",
+            "zh-Hant": "特拉維夫-雅法"
+        }
+    },
+    {
         "id": "tianjin",
         "country": "CN",
         "name": {
