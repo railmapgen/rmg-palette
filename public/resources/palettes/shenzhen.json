@@ -61,17 +61,17 @@
     },
     {
         "id": "sz6b",
-        "colour": "#168773",
+        "colour": "#008578",
         "fg": "#fff",
         "name": {
-            "en": "Line 6 branch",
+            "en": "Line 6 Branch",
             "zh-Hans": "6号线支线",
             "zh-Hant": "6號線支線"
         }
     },
     {
         "id": "sz7",
-        "colour": "#0033A0",
+        "colour": "#0032a0",
         "fg": "#fff",
         "name": {
             "en": "Line 7 (Xili Line)",
@@ -84,9 +84,9 @@
         "colour": "#b94700",
         "fg": "#fff",
         "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "en": "Line 8 (Yantian Line)",
+            "zh-Hans": "8号线（盐田线）",
+            "zh-Hant": "8號線（鹽田線）"
         }
     },
     {
@@ -101,7 +101,7 @@
     },
     {
         "id": "sz10",
-        "colour": "#F8779E",
+        "colour": "#f67599",
         "fg": "#fff",
         "name": {
             "en": "Line 10 (Bantian Line)",
@@ -114,9 +114,9 @@
         "colour": "#672146",
         "fg": "#fff",
         "name": {
-            "en": "Line 11",
-            "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "en": "Line 11 (Airport Line)",
+            "zh-Hans": "11号线（机场线）",
+            "zh-Hant": "11號線（機場線）"
         }
     },
     {
@@ -154,9 +154,9 @@
         "colour": "#84BD00",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "en": "Line 15 (Qiannan Line)",
+            "zh-Hans": "15号线（前南线）",
+            "zh-Hant": "15號線（前南線）"
         }
     },
     {
@@ -170,23 +170,193 @@
         }
     },
     {
+        "id": "sz17",
+        "colour": "#d3c0cd",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17 (Pinghu Line)",
+            "zh-Hans": "17号线（平湖线）",
+            "zh-Hant": "17號線（平湖線）"
+        }
+    },
+    {
+        "id": "sz18",
+        "colour": "#00558c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18 (Baoyan Line)",
+            "zh-Hans": "18号线（宝盐线）",
+            "zh-Hant": "18號線（寶鹽線）"
+        }
+    },
+    {
+        "id": "sz19",
+        "colour": "#bb16a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19 (Pingshan Line)",
+            "zh-Hans": "19号线（坪山线）",
+            "zh-Hant": "19號線（坪山線）"
+        }
+    },
+    {
         "id": "sz20",
         "colour": "#88DBDF",
         "fg": "#fff",
         "name": {
-            "en": "Line 20",
-            "zh-Hans": "20号线",
-            "zh-Hant": "20號線"
+            "en": "Line 20 (Exhibition Express)",
+            "zh-Hans": "20号线（会展快线）",
+            "zh-Hant": "20號線（會展快線）"
+        }
+    },
+    {
+        "id": "sz21",
+        "colour": "#8a391b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21 (Nanlong Line)",
+            "zh-Hans": "21号线（南龙线）",
+            "zh-Hant": "21號線（南龍線）"
+        }
+    },
+    {
+        "id": "sz22",
+        "colour": "#fbe122",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22 (Central Line)",
+            "zh-Hans": "22号线（中轴线）",
+            "zh-Hant": "22號線（中軸線）"
+        }
+    },
+    {
+        "id": "sz23",
+        "colour": "#be3a34",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23 (Pingkui Line)",
+            "zh-Hans": "23号线（坪葵线）",
+            "zh-Hant": "23號線（坪葵線）"
+        }
+    },
+    {
+        "id": "sz24",
+        "colour": "#6cace4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24 (Sungang Line)",
+            "zh-Hans": "24号线（笋岗线）",
+            "zh-Hant": "24號線（筍崗線）"
+        }
+    },
+    {
+        "id": "sz25",
+        "colour": "#fead77",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25 (Shilang Line)",
+            "zh-Hans": "25号线（石浪线）",
+            "zh-Hant": "25號線（石浪線）"
+        }
+    },
+    {
+        "id": "sz26",
+        "colour": "#9f912a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26 (Baoguang Line)",
+            "zh-Hans": "26号线（宝光线）",
+            "zh-Hant": "26號線（寶光線）"
+        }
+    },
+    {
+        "id": "sz27",
+        "colour": "#4f868e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27號線"
+        }
+    },
+    {
+        "id": "sz28",
+        "colour": "#e31c79",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28 (Xiwan Line)",
+            "zh-Hans": "28号线（西湾线）",
+            "zh-Hant": "28號線（西灣線）"
+        }
+    },
+    {
+        "id": "sz29",
+        "colour": "#91d6ac",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 29 (Nanguang Line)",
+            "zh-Hans": "29号线（南光线）",
+            "zh-Hant": "29號線（南光線）"
+        }
+    },
+    {
+        "id": "sz30",
+        "colour": "#ae8a79",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 30",
+            "zh-Hans": "30号线",
+            "zh-Hant": "30號線"
+        }
+    },
+    {
+        "id": "sz31",
+        "colour": "#614b79",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 31",
+            "zh-Hans": "31号线",
+            "zh-Hant": "31號線"
+        }
+    },
+    {
+        "id": "sz32",
+        "colour": "#744f28",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 32 (Dapeng Line)",
+            "zh-Hans": "32号线（大鹏线）",
+            "zh-Hant": "32號線（大鵬線）"
+        }
+    },
+    {
+        "id": "sz33",
+        "colour": "#7da1c4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 33 (Shenda Intercity Railway)",
+            "zh-Hans": "33号线（深大城际）",
+            "zh-Hant": "33號線（深大城際）"
         }
     },
     {
         "id": "tram",
-        "colour": "#b8b8b8",
+        "colour": "#ebd5a4",
         "fg": "#fff",
         "name": {
-            "en": "Tram",
-            "zh-Hans": "有轨电车",
-            "zh-Hant": "有軌電車"
+            "en": "Longhua Modern Tram",
+            "zh-Hans": "龙华现代有轨电车",
+            "zh-Hant": "龍華現代有軌電車"
+        }
+    },
+    {
+        "id": "szpsyb",
+        "colour": "#0a66b1",
+        "fg": "#fff",
+        "name": {
+            "en": "Pingshan sky shuttlo Line 1",
+            "zh-Hans": "坪山云巴1号线",
+            "zh-Hant": "坪山雲巴1號線"
         }
     },
     {
@@ -197,16 +367,6 @@
             "en": "Line 8 (Original)",
             "zh-Hans": "8号线（原）",
             "zh-Hant": "8號線（原）"
-        }
-    },
-    {
-        "id": "szpsyb",
-        "colour": "#1974d2",
-        "fg": "#fff",
-        "name": {
-            "en": "Pingshan sky shuttlo",
-            "zh-Hans": "坪山云巴",
-            "zh-Hant": "坪山雲巴"
         }
     }
 ]
