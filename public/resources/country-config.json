@@ -90,6 +90,16 @@
         "language": "en"
     },
     {
+        "id": "CH",
+        "name": {
+            "en": "Switzerland",
+            "zh-Hans": "瑞士",
+            "zh-Hant": "瑞士",
+            "fr": "Suisse "
+        },
+        "language": "fr"
+    },
+    {
         "id": "CL",
         "name": {
             "en": "Chile",
