@@ -4,9 +4,9 @@
         "colour": "#EE2737",
         "fg": "#fff",
         "name": {
-            "en": "Line 1-Line S1",
-            "zh-Hans": "1号线-S1线/锡澄线",
-            "zh-Hant": "1號綫-S1綫/錫澄綫"
+            "en": "Line 1/Line S1",
+            "zh-Hans": "1号线/S1线（锡澄线）",
+            "zh-Hant": "1號綫/S1綫（錫澄綫）"
         }
     },
     {
@@ -47,6 +47,36 @@
             "en": "Line 5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號綫"
+        }
+    },
+    {
+        "id": "wx6",
+        "colour": "#f1a4cd",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號綫"
+        }
+    },
+    {
+        "id": "wxs1",
+        "colour": "#b84646",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1 (Old version)",
+            "zh-Hans": "S1号线（旧版规划图）",
+            "zh-Hant": "S1號綫（舊版規劃圖）"
+        }
+    },
+    {
+        "id": "wxs2",
+        "colour": "#ccdb8c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2",
+            "zh-Hans": "S2号线",
+            "zh-Hant": "S2號綫"
         }
     }
 ]
