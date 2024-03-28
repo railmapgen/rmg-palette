@@ -140,6 +140,16 @@
         }
     },
     {
+        "id": "wh15",
+        "colour": "#5c5575",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
         "id": "wh16",
         "colour": "#CC0256",
         "fg": "#fff",
