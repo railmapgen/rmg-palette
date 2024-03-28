@@ -84,9 +84,9 @@
         "colour": "#b94700",
         "fg": "#fff",
         "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "en": "Line 8（Yantian Line）",
+            "zh-Hans": "8号线（盐田线）",
+            "zh-Hant": "8號線（鹽田線）"
         }
     },
     {
@@ -114,9 +114,9 @@
         "colour": "#672146",
         "fg": "#fff",
         "name": {
-            "en": "Line 11",
-            "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "en": "Line 11（Airport Express）",
+            "zh-Hans": "11号线（机场快线）",
+            "zh-Hant": "11號線（機場快線）"
         }
     },
     {
@@ -154,9 +154,9 @@
         "colour": "#84BD00",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "en": "Line 15（Qiannan Line）",
+            "zh-Hans": "15号线（前南线）",
+            "zh-Hant": "15號線（前南線）"
         }
     },
     {
@@ -174,9 +174,9 @@
         "colour": "#88DBDF",
         "fg": "#fff",
         "name": {
-            "en": "Line 20",
-            "zh-Hans": "20号线",
-            "zh-Hant": "20號線"
+            "en": "Line 20（Expo Express）",
+            "zh-Hans": "20号线（会展快线）",
+            "zh-Hant": "20號線（會展快線）"
         }
     },
     {
