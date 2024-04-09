@@ -1,0 +1,62 @@
+[
+    {
+        "id": "rl",
+        "colour": "#ee1d23",
+        "fg": "#fff",
+        "name": {
+            "en": "Red line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅綫"
+        }
+    },
+    {
+        "id": "gl",
+        "colour": "#2daf52",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠綫"
+        }
+    },
+    {
+        "id": "pl",
+        "colour": "#942685",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "紫线",
+            "zh-Hant": "紫綫"
+        }
+    },
+    {
+        "id": "m1",
+        "colour": "#0000fe",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M1",
+            "zh-Hans": "M1线",
+            "zh-Hant": "M1綫"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#ffa500",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M2",
+            "zh-Hans": "M2线",
+            "zh-Hant": "M2綫"
+        }
+    },
+    {
+        "id": "m3",
+        "colour": "#ffd500",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M3",
+            "zh-Hans": "M3线",
+            "zh-Hant": "M3綫"
+        }
+    }
+]
