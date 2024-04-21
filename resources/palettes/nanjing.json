@@ -42,7 +42,7 @@
     {
         "id": "nj5",
         "colour": "#f2da51",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
