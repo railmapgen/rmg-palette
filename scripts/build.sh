@@ -42,7 +42,7 @@ fi
 CI='' npm run build
 
 ### PUSH TAG AND COMMIT
-if [ "$BRANCH" = "master" ]
+if [ "$BRANCH" = "main" ]
 then
   git push --atomic origin HEAD "${APP_NAME}-${RMG_VER}"
 fi
