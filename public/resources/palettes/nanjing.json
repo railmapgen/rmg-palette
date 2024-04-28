@@ -110,6 +110,17 @@
         }
     },
     {
+        "id": "s2",
+        "colour": "#93282C",
+        "fg": "#fff",
+        "pantone": "7622 C",
+        "name": {
+            "en": "Line S2/Ningma Line",
+            "zh-Hans": "S2号线/宁马线",
+            "zh-Hant": "S2號線/寧馬線"
+        }
+    },
+    {
         "id": "s3",
         "colour": "#ba84ac",
         "fg": "#fff",
@@ -127,6 +138,17 @@
             "en": "Line S4/Ningchu Line",
             "zh-Hans": "S4号线/宁滁线",
             "zh-Hant": "S4號線/寧滁線"
+        }
+    },
+    {
+        "id": "s5",
+        "colour": "#F5DF4D",
+        "fg": "#000",
+        "pantone": "13-0647 TCX",
+        "name": {
+            "en": "Line S5/Ningyang Line",
+            "zh-Hans": "S5号线/宁扬线",
+            "zh-Hant": "S5號線/寧揚線"
         }
     },
     {
