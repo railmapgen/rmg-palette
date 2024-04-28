@@ -1007,6 +1007,15 @@
         }
     },
     {
+        "id": "mumbai",
+        "country": "IN",
+        "name": {
+            "en": "Mumbai",
+            "zh-Hans": "孟买",
+            "zh-Hant": "孟買"
+        }
+    },
+    {
         "id": "munich",
         "country": "DE",
         "name": {
