@@ -1,47 +1,52 @@
 [
     {
         "id": "wx1",
+        "colour": "#EE2737",
+        "fg": "#fff",
         "name": {
-            "en": "Line 1",
-            "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
-        },
-        "colour": "#EE2737"
+            "en": "Line 1-Line S1",
+            "zh-Hans": "1号线-S1线/锡澄线",
+            "zh-Hant": "1號綫-S1綫/錫澄綫"
+        }
     },
     {
         "id": "wx2",
+        "colour": "#00B140",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
-        },
-        "colour": "#00B140"
+            "zh-Hant": "2號綫"
+        }
     },
     {
         "id": "wx3",
+        "colour": "#00A9E0",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
-        },
-        "colour": "#00A9E0"
+            "zh-Hant": "3號綫"
+        }
     },
     {
         "id": "wx4",
+        "colour": "#93328E",
+        "fg": "#fff",
         "name": {
             "en": "Line 4",
             "zh-Hans": "4号线",
-            "zh-Hant": "4號線"
-        },
-        "colour": "#93328E"
+            "zh-Hant": "4號綫"
+        }
     },
     {
         "id": "wx5",
+        "colour": "#FFB81C",
+        "fg": "#fff",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
-            "zh-Hant": "5號線"
-        },
-        "colour": "#FFB81C"
+            "zh-Hant": "5號綫"
+        }
     }
 ]

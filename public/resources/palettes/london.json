@@ -1,136 +1,201 @@
 [
     {
         "id": "bakerloo",
+        "colour": "#B26300",
+        "fg": "#fff",
         "name": {
             "en": "Bakerloo Line",
             "zh-Hans": "贝克卢线",
             "zh-Hant": "必嘉老綫"
-        },
-        "colour": "#B26300"
+        }
     },
     {
         "id": "central",
+        "colour": "#DC241F",
+        "fg": "#fff",
         "name": {
             "en": "Central Line",
             "zh-Hans": "中央线",
             "zh-Hant": "中央綫"
-        },
-        "colour": "#DC241F"
+        }
     },
     {
         "id": "circle",
+        "colour": "#FFD329",
+        "fg": "#fff",
         "name": {
             "en": "Circle Line",
             "zh-Hant": "環綫"
-        },
-        "colour": "#FFD329"
+        }
     },
     {
         "id": "district",
+        "colour": "#007D32",
+        "fg": "#fff",
         "name": {
             "en": "District Line"
-        },
-        "colour": "#007D32"
+        }
     },
     {
         "id": "hsmithcity",
+        "colour": "#F4A9BE",
+        "fg": "#fff",
         "name": {
             "en": "Hammersmith & City Line",
             "zh-Hant": "咸默史密夫及城市綫"
-        },
-        "colour": "#F4A9BE"
+        }
     },
     {
         "id": "jubilee",
+        "colour": "#A1A5A7",
+        "fg": "#fff",
         "name": {
             "en": "Jubilee Line",
             "zh-Hans": "银禧线",
             "zh-Hant": "銀禧綫"
-        },
-        "colour": "#A1A5A7"
+        }
     },
     {
         "id": "metropolitan",
+        "colour": "#9B0058",
+        "fg": "#fff",
         "name": {
             "en": "Metropolitan Line",
             "zh-Hans": "大都会线",
             "zh-Hant": "大都會綫"
-        },
-        "colour": "#9B0058"
+        }
     },
     {
         "id": "northern",
+        "colour": "#000000",
+        "fg": "#fff",
         "name": {
             "en": "Northern Line"
-        },
-        "colour": "#000000"
+        }
     },
     {
         "id": "piccadily",
+        "colour": "#0019A8",
+        "fg": "#fff",
         "name": {
             "en": "Piccadily Line"
-        },
-        "colour": "#0019A8"
+        }
     },
     {
         "id": "victoria",
+        "colour": "#0098D8",
+        "fg": "#fff",
         "name": {
             "en": "Victoria Line",
             "zh-Hans": "维多利亚线",
             "zh-Hant": "維多利亞綫"
-        },
-        "colour": "#0098D8"
+        }
     },
     {
         "id": "waterloocity",
+        "colour": "#93CEBA",
+        "fg": "#fff",
         "name": {
             "en": "Waterloo & City Line",
             "zh-Hans": "滑铁卢及城市线",
             "zh-Hant": "窩打老及城市綫"
-        },
-        "colour": "#93CEBA"
+        }
     },
     {
         "id": "dlr",
+        "colour": "#00AFAD",
+        "fg": "#fff",
         "name": {
             "en": "Docklands Light Railway"
-        },
-        "colour": "#00AFAD"
+        }
     },
     {
         "id": "elizabeth",
+        "colour": "#9364CC",
+        "fg": "#fff",
         "name": {
             "en": "Elizabeth Line",
             "zh-Hant": "伊利沙伯綫"
-        },
-        "colour": "#9364CC"
+        }
     },
     {
         "id": "tfl",
+        "colour": "#0019A8",
+        "fg": "#fff",
         "name": {
             "en": "TfL Rail"
-        },
-        "colour": "#0019A8"
+        }
     },
     {
         "id": "overground",
+        "colour": "#EF7B10",
+        "fg": "#fff",
         "name": {
             "en": "London Overground"
-        },
-        "colour": "#EF7B10"
+        }
     },
     {
         "id": "trams",
+        "colour": "#00BD19",
+        "fg": "#fff",
         "name": {
             "en": "London Trams"
-        },
-        "colour": "#00BD19"
+        }
     },
     {
         "id": "emirates",
+        "colour": "#DC241F",
+        "fg": "#fff",
         "name": {
             "en": "Emirates Air Line"
-        },
-        "colour": "#DC241F"
+        }
+    },
+    {
+        "id": "lolib",
+        "colour": "#676767",
+        "fg": "#fff",
+        "name": {
+            "en": "Liberty Line (London Overground)"
+        }
+    },
+    {
+        "id": "lolio",
+        "colour": "#f1b41c",
+        "fg": "#fff",
+        "name": {
+            "en": "Lioness Line (London Overground)"
+        }
+    },
+    {
+        "id": "lomil",
+        "colour": "#437ec1",
+        "fg": "#fff",
+        "name": {
+            "en": "Mildmay Line (London Overground)"
+        }
+    },
+    {
+        "id": "losuf",
+        "colour": "#39b97a",
+        "fg": "#fff",
+        "name": {
+            "en": "Suffragette Line (London Overground)"
+        }
+    },
+    {
+        "id": "lowea",
+        "colour": "#972861",
+        "fg": "#fff",
+        "name": {
+            "en": "Weaver Line (London Overground)"
+        }
+    },
+    {
+        "id": "lowin",
+        "colour": "#ef4d5e",
+        "fg": "#fff",
+        "name": {
+            "en": "Windrush Line (London Overground)"
+        }
     }
 ]

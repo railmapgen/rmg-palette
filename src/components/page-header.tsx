@@ -3,7 +3,6 @@ import { setSelectedCountry } from '../redux/app/app-slice';
 import { RmgFields, RmgFieldsField, RmgPageHeader } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../redux';
 import { Button, HStack } from '@chakra-ui/react';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from './hooks/use-translated-name';
 import rmgRuntime from '@railmapgen/rmg-runtime';
@@ -14,7 +13,6 @@ export default function PageHeader() {
     const translateName = useTranslatedName();
 
     const dispatch = useDispatch();
-    const navigate = useNavigate();
 
     const { countryList, selectedCountry } = useRootSelector(state => state.app);
 
@@ -45,11 +43,7 @@ export default function PageHeader() {
     ];
 
     const handleAddCity = () => {
-        if (rmgRuntime.isStandaloneWindow()) {
-            navigate('/new');
-        } else {
-            rmgRuntime.openApp('rmg-palette-upload');
-        }
+        rmgRuntime.openApp({ appId: 'rmg-palette-upload' });
         rmgRuntime.event(Events.ADD_CITY, {});
     };
 
