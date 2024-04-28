@@ -207,6 +207,14 @@
         "language": "zh-Hant"
     },
     {
+        "id": "HR",
+        "name": {
+            "en": "Croatia",
+            "zh-Hans": "克罗地亚",
+            "zh-Hant": "克羅埃西亞"
+        }
+    },
+    {
         "id": "HU",
         "name": {
             "en": "Hungary",
