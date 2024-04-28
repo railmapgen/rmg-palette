@@ -474,6 +474,16 @@
         }
     },
     {
+        "id": "geneva",
+        "country": "CH",
+        "name": {
+            "en": "Geneva",
+            "zh-Hans": "日内瓦",
+            "zh-Hant": "日內瓦",
+            "fr": "Genève"
+        }
+    },
+    {
         "id": "genoa",
         "country": "IT",
         "name": {
@@ -1004,6 +1014,15 @@
             "zh-Hans": "米卢斯",
             "zh-Hant": "米盧斯",
             "fr": "Mulhouse"
+        }
+    },
+    {
+        "id": "mumbai",
+        "country": "IN",
+        "name": {
+            "en": "Mumbai",
+            "zh-Hans": "孟买",
+            "zh-Hant": "孟買"
         }
     },
     {
@@ -1781,6 +1800,15 @@
             "ja": "横浜",
             "zh-Hans": "横滨",
             "zh-Hant": "橫濱"
+        }
+    },
+    {
+        "id": "zagreb",
+        "country": "HR",
+        "name": {
+            "en": "Zagreb",
+            "zh-Hans": "萨格勒布",
+            "zh-Hant": "薩格勒布"
         }
     },
     {

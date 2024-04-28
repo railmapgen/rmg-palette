@@ -1,0 +1,145 @@
+[
+    {
+        "id": "gl1",
+        "colour": "#e4003a",
+        "fg": "#fff",
+        "name": {
+            "en": "L1",
+            "zh-Hans": "L1",
+            "zh-Hant": "L1",
+            "fr": "L1"
+        }
+    },
+    {
+        "id": "gl2",
+        "colour": "#0085cd",
+        "fg": "#fff",
+        "name": {
+            "en": "L2",
+            "zh-Hans": "L2",
+            "zh-Hant": "L2",
+            "fr": "L2"
+        }
+    },
+    {
+        "id": "gl3",
+        "colour": "#64b32e",
+        "fg": "#fff",
+        "name": {
+            "en": "L3",
+            "zh-Hans": "L3",
+            "zh-Hant": "L3",
+            "fr": "L3"
+        }
+    },
+    {
+        "id": "gl4",
+        "colour": "#f8b000",
+        "fg": "#fff",
+        "name": {
+            "en": "L4",
+            "zh-Hans": "L4",
+            "zh-Hant": "L4",
+            "fr": "L4"
+        }
+    },
+    {
+        "id": "gl5",
+        "colour": "#c0086f",
+        "fg": "#fff",
+        "name": {
+            "en": "L5",
+            "zh-Hans": "L5",
+            "zh-Hant": "L5",
+            "fr": "L5"
+        }
+    },
+    {
+        "id": "gl6",
+        "colour": "#009aab",
+        "fg": "#fff",
+        "name": {
+            "en": "L6",
+            "zh-Hans": "L6",
+            "zh-Hant": "L6",
+            "fr": "L6"
+        }
+    },
+    {
+        "id": "gl12",
+        "colour": "#f9a51b",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 12",
+            "zh-Hans": "有轨电车12号线",
+            "zh-Hant": "有軌電車12號線",
+            "fr": "Tramway Ligne 12"
+        }
+    },
+    {
+        "id": "gl13",
+        "colour": "#4cb849",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 13",
+            "zh-Hans": "有轨电车13号线",
+            "zh-Hant": "有軌電車13號線",
+            "fr": "Tramway Ligne 13"
+        }
+    },
+    {
+        "id": "gl14",
+        "colour": "#423a97",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 14",
+            "zh-Hans": "有轨电车14号线",
+            "zh-Hant": "有軌電車14號線",
+            "fr": "Tramway Ligne 14"
+        }
+    },
+    {
+        "id": "gl15",
+        "colour": "#8a5331",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 15",
+            "zh-Hans": "有轨电车15号线",
+            "zh-Hant": "有軌電車15號線",
+            "fr": "Tramway Ligne 15"
+        }
+    },
+    {
+        "id": "gl16",
+        "colour": "#f387b7",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 16",
+            "zh-Hans": "有轨电车16号线",
+            "zh-Hant": "有軌電車16號線",
+            "fr": "Tramway Ligne 16"
+        }
+    },
+    {
+        "id": "gl17",
+        "colour": "#41c8f4",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 17",
+            "zh-Hans": "有轨电车17号线",
+            "zh-Hant": "有軌電車17號線",
+            "fr": "Tramway Ligne 17"
+        }
+    },
+    {
+        "id": "gl18",
+        "colour": "#a153a1",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 18",
+            "zh-Hans": "有轨电车18号线",
+            "zh-Hant": "有軌電車18號線",
+            "fr": "Tramway Ligne 18"
+        }
+    }
+]
