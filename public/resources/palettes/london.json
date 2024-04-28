@@ -155,9 +155,7 @@
         "colour": "#676767",
         "fg": "#fff",
         "name": {
-            "en": "Liberty Line (London Overground)",
-            "zh-Hans": "",
-            "zh-Hant": ""
+            "en": "Liberty Line (London Overground)"
         }
     },
     {
@@ -165,9 +163,7 @@
         "colour": "#f1b41c",
         "fg": "#fff",
         "name": {
-            "en": "Lioness Line (London Overground)",
-            "zh-Hans": "",
-            "zh-Hant": ""
+            "en": "Lioness Line (London Overground)"
         }
     },
     {
@@ -175,9 +171,7 @@
         "colour": "#437ec1",
         "fg": "#fff",
         "name": {
-            "en": "Mildmay Line (London Overground)",
-            "zh-Hans": "",
-            "zh-Hant": ""
+            "en": "Mildmay Line (London Overground)"
         }
     },
     {
@@ -185,9 +179,7 @@
         "colour": "#39b97a",
         "fg": "#fff",
         "name": {
-            "en": "Suffragette Line (London Overground)",
-            "zh-Hans": "",
-            "zh-Hant": ""
+            "en": "Suffragette Line (London Overground)"
         }
     },
     {
@@ -195,9 +187,7 @@
         "colour": "#972861",
         "fg": "#fff",
         "name": {
-            "en": "Weaver Line (London Overground)",
-            "zh-Hans": "",
-            "zh-Hant": ""
+            "en": "Weaver Line (London Overground)"
         }
     },
     {
@@ -205,9 +195,7 @@
         "colour": "#ef4d5e",
         "fg": "#fff",
         "name": {
-            "en": "Windrush Line (London Overground)",
-            "zh-Hans": "",
-            "zh-Hant": ""
+            "en": "Windrush Line (London Overground)"
         }
     }
 ]
