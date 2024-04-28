@@ -42,5 +42,15 @@
             "zh-Hans": "蓝线",
             "zh-Hant": "藍線"
         }
+    },
+    {
+        "id": "rem",
+        "colour": "#85be00",
+        "fg": "#fff",
+        "name": {
+            "en": "REM",
+            "zh-Hans": "大都会快速网络",
+            "zh-Hant": "大都會快速網絡"
+        }
     }
 ]
