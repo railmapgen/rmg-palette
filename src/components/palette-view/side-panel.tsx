@@ -31,7 +31,7 @@ export default function SidePanel() {
     const handleCityEdit = async () => {
         rmgRuntime.closeApp('rmg-palette-upload');
         setTimeout(() => {
-            rmgRuntime.openApp('rmg-palette-upload', '/rmg-palette/#/new?city=' + sidePanelCity);
+            rmgRuntime.openApp({ appId: 'rmg-palette-upload', hash: '/new?city' + sidePanelCity });
         }, 200);
         rmgRuntime.event(Events.EDIT_CITY, { city: sidePanelCity });
     };

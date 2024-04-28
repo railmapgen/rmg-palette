@@ -6,7 +6,6 @@ import LinesSection from './lines-section';
 import { resetTicket, TicketState } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
-import { useNavigate } from 'react-router-dom';
 import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import rmgRuntime from '@railmapgen/rmg-runtime';
@@ -16,7 +15,6 @@ import UnsavedDraftModal from '../modal/unsaved-draft-modal';
 export default function TicketView() {
     const { t } = useTranslation();
     const dispatch = useRootDispatch();
-    const navigate = useNavigate();
 
     const { isDataLoading } = useRootSelector(state => state.app);
 
@@ -40,11 +38,7 @@ export default function TicketView() {
     }, []);
 
     const handleGoBack = () => {
-        if (rmgRuntime.isStandaloneWindow()) {
-            navigate('/');
-        } else {
-            rmgRuntime.openApp('rmg-palette');
-        }
+        rmgRuntime.openApp({ appId: 'rmg-palette' });
     };
 
     const handleReset = () => {
