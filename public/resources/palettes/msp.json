@@ -1,0 +1,82 @@
+[
+    {
+        "id": "blue",
+        "colour": "#0053a0",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "green",
+        "colour": "#008144",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "red",
+        "colour": "#ed1b2e",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "orange",
+        "colour": "#ff7300",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "gold",
+        "colour": "#ffd200",
+        "fg": "#000",
+        "name": {
+            "en": "Gold Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "purple",
+        "colour": "#6b1f7c",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "northstar",
+        "colour": "#ffd200",
+        "fg": "#000",
+        "name": {
+            "en": "Northstar Commuter Rail",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "brt",
+        "colour": "#7a8690",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT Lines",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    }
+]
