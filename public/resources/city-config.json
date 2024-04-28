@@ -1496,6 +1496,15 @@
         }
     },
     {
+        "id": "so",
+        "country": "CN",
+        "name": {
+            "en": "Suzhou",
+            "zh-Hans": "苏州",
+            "zh-Hant": "蘇州"
+        }
+    },
+    {
         "id": "stlouis",
         "country": "US",
         "name": {
