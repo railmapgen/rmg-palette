@@ -1803,6 +1803,15 @@
         }
     },
     {
+        "id": "zagreb",
+        "country": "HR",
+        "name": {
+            "en": "Zagreb",
+            "zh-Hans": "萨格勒布",
+            "zh-Hant": "薩格勒布"
+        }
+    },
+    {
         "id": "zhengzhou",
         "country": "CN",
         "name": {
