@@ -474,6 +474,16 @@
         }
     },
     {
+        "id": "geneva",
+        "country": "CH",
+        "name": {
+            "en": "Geneva",
+            "zh-Hans": "日内瓦",
+            "zh-Hant": "日內瓦",
+            "fr": "Genève"
+        }
+    },
+    {
         "id": "genoa",
         "country": "IT",
         "name": {
