@@ -128,5 +128,35 @@
             "zh-Hans": "杭海城际",
             "zh-Hant": "杭海城際"
         }
+    },
+    {
+        "id": "hz12",
+        "colour": "#047da4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
+    },
+    {
+        "id": "hz15",
+        "colour": "#fa8ba3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
+        "id": "hz18",
+        "colour": "#83d784",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
     }
 ]
