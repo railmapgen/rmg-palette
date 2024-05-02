@@ -1,6 +1,6 @@
 [
     {
-        "id": "su1",
+        "id": "s1",
         "colour": "#0052a4",
         "fg": "#fff",
         "name": {
@@ -11,7 +11,7 @@
         }
     },
     {
-        "id": "su2",
+        "id": "s2",
         "colour": "#00a84d",
         "fg": "#fff",
         "name": {
@@ -22,7 +22,7 @@
         }
     },
     {
-        "id": "su3",
+        "id": "s3",
         "colour": "#ef7c1c",
         "fg": "#fff",
         "name": {
@@ -33,7 +33,7 @@
         }
     },
     {
-        "id": "su4",
+        "id": "s4",
         "colour": "#00a4e3",
         "fg": "#fff",
         "name": {
@@ -44,7 +44,7 @@
         }
     },
     {
-        "id": "su5",
+        "id": "s5",
         "colour": "#996cac",
         "fg": "#fff",
         "name": {
@@ -55,7 +55,7 @@
         }
     },
     {
-        "id": "su6",
+        "id": "s6",
         "colour": "#cd7c2f",
         "fg": "#fff",
         "name": {
@@ -66,7 +66,7 @@
         }
     },
     {
-        "id": "su7",
+        "id": "s7",
         "colour": "#747f00",
         "fg": "#fff",
         "name": {
@@ -77,7 +77,7 @@
         }
     },
     {
-        "id": "su8",
+        "id": "s8",
         "colour": "#e6186c",
         "fg": "#fff",
         "name": {
@@ -88,7 +88,7 @@
         }
     },
     {
-        "id": "su9",
+        "id": "s9",
         "colour": "#bdb092",
         "fg": "#fff",
         "name": {
@@ -136,7 +136,7 @@
         "colour": "#77c4a3",
         "fg": "#fff",
         "name": {
-            "en": "Gyeongui–Jungang Line",
+            "en": "Gyeongui-Jungang Line",
             "ko": "경의·중앙선",
             "zh-Hans": "京义·中央线",
             "zh-Hant": "京義·中央線"
@@ -154,7 +154,7 @@
         }
     },
     {
-        "id": "a",
+        "id": "arex",
         "colour": "#0090d2",
         "fg": "#fff",
         "name": {
@@ -165,7 +165,7 @@
         }
     },
     {
-        "id": "s",
+        "id": "seo",
         "colour": "#8fc31f",
         "fg": "#fff",
         "name": {
@@ -187,7 +187,7 @@
         }
     },
     {
-        "id": "d",
+        "id": "shin",
         "colour": "#d31145",
         "fg": "#fff",
         "name": {
@@ -198,7 +198,7 @@
         }
     },
     {
-        "id": "si",
+        "id": "sil",
         "colour": "#6789ca",
         "fg": "#fff",
         "name": {
@@ -220,29 +220,29 @@
         }
     },
     {
-        "id": "g",
+        "id": "gim",
         "colour": "#ad8605",
         "fg": "#fff",
         "name": {
             "en": "Gimpo Goldline",
-            "ko": "김포도시철도",
+            "ko": "김포골드라인",
             "zh-Hans": "金浦都市铁道",
             "zh-Hant": "金浦都市鐵道"
         }
     },
     {
-        "id": "y",
-        "colour": "#509F22",
+        "id": "ye",
+        "colour": "#56ad2d",
         "fg": "#fff",
         "name": {
             "en": "Yongin Everline",
-            "ko": "에버라인",
+            "ko": "용인경전철 ",
             "zh-Hans": "龙仁轻电铁",
             "zh-Hant": "龍仁輕電鐵"
         }
     },
     {
-        "id": "u",
+        "id": "ul",
         "colour": "#fd8100",
         "fg": "#fff",
         "name": {
@@ -250,6 +250,17 @@
             "ko": "의정부경전철",
             "zh-Hans": "议政府轻电铁",
             "zh-Hant": "議政府輕電鐵"
+        }
+    },
+    {
+        "id": "im",
+        "colour": "#ffcd12",
+        "fg": "#000",
+        "name": {
+            "en": "Incheon Airport Maglev",
+            "ko": "인천공항자기부상철도",
+            "zh-Hans": "仁川机场磁悬浮线",
+            "zh-Hant": "仁川空港磁氣浮上鐵道"
         }
     },
     {
