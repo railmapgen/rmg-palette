@@ -1,0 +1,66 @@
+[
+    {
+        "id": "U1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "U1"
+        }
+    },
+    {
+        "id": "U2",
+        "colour": "#55ff55",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    },
+    {
+        "id": "U3",
+        "colour": "#5555ff",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    },
+    {
+        "id": "U4",
+        "colour": "#dcdc00",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    },
+    {
+        "id": "U5",
+        "colour": "#884422",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    },
+    {
+        "id": "U6",
+        "colour": "#aa00aa",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    },
+    {
+        "id": "U7",
+        "colour": "#ff8000",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    },
+    {
+        "id": "U8",
+        "colour": "#ff8000",
+        "fg": "#fff",
+        "name": {
+            "en": ""
+        }
+    }
+]
