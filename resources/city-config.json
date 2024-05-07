@@ -1007,6 +1007,15 @@
         }
     },
     {
+        "id": "msp",
+        "country": "US",
+        "name": {
+            "en": "Minneapolis-Saint Paul",
+            "zh-Hans": "明尼阿波利斯-圣保罗都会区",
+            "zh-Hant": "明尼阿波利斯-聖保羅都會區"
+        }
+    },
+    {
         "id": "mulhouse",
         "country": "FR",
         "name": {
