@@ -1,5 +1,5 @@
 import CityPicker from './city-picker';
-import { screen } from '@testing-library/react';
+import { screen, within } from '@testing-library/react';
 import i18n from '../../i18n/config';
 import { render } from '../../test-utils';
 import rootReducer from '../../redux';
@@ -94,7 +94,7 @@ describe('CityPicker', () => {
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = screen.getAllByRole('menuitem');
+        const menuItems = await screen.findAllByRole('menuitem');
         expect(menuItems).toHaveLength(3);
 
         expect(menuItems[0]).toHaveTextContent('🏴󠁧󠁢󠁳󠁣󠁴󠁿'); // GBSCT

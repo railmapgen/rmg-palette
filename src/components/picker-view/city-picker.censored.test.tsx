@@ -34,7 +34,7 @@ describe('CityPicker Censored', () => {
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = screen.getAllByRole('menuitem');
+        const menuItems = await screen.findAllByRole('menuitem');
         expect(menuItems.find(el => el.textContent?.includes('🇨🇳Taipei'))).toBeDefined();
         expect(menuItems.find(el => el.textContent?.includes('🇹🇼Taipei'))).toBeUndefined();
     });
