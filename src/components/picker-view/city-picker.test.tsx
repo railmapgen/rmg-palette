@@ -1,5 +1,5 @@
 import CityPicker from './city-picker';
-import { screen, within } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import i18n from '../../i18n/config';
 import { render } from '../../test-utils';
 import rootReducer from '../../redux';
