@@ -198,6 +198,15 @@
         "language": "el"
     },
     {
+        "id": "HARM",
+        "name": {
+            "en": "Coast People's Republic",
+            "zh-Hans": "海岸人民共和国",
+            "zh-Hant": "海岸人民共和國"
+        },
+        "language": "zh-Hans"
+    },
+    {
         "id": "HK",
         "name": {
             "en": "Hong Kong",

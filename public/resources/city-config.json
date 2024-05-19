@@ -611,6 +611,15 @@
         }
     },
     {
+        "id": "harmwt.241",
+        "country": "HARM",
+        "name": {
+            "en": "Wa‘tang",
+            "zh-Hans": "蛙塘市",
+            "zh-Hant": "蛙塘市"
+        }
+    },
+    {
         "id": "hefei",
         "country": "CN",
         "name": {

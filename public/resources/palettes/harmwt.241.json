@@ -1,0 +1,122 @@
+[
+    {
+        "id": "wt1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
+        "id": "wt2",
+        "colour": "#ffff00",
+        "fg": "#000",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    },
+    {
+        "id": "wt3",
+        "colour": "#3967b1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
+        "id": "wt5",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "wt7",
+        "colour": "#9900ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "wt10",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10",
+            "zh-Hans": "10号线",
+            "zh-Hant": "10號線"
+        }
+    },
+    {
+        "id": "wt15",
+        "colour": "#0fa90f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
+        "id": "wt18",
+        "colour": "#ffff85",
+        "fg": "#000",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
+    },
+    {
+        "id": "wt19",
+        "colour": "#00006b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "wt21",
+        "colour": "#4e8b2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "wt22",
+        "colour": "#699cec",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
+        "id": "wt4",
+        "colour": "#003d9e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
+        }
+    }
+]
