@@ -118,5 +118,16 @@
             "zh-Hans": "西咸智轨1号线",
             "zh-Hant": "西咸智軌1號線"
         }
+    },
+    {
+        "id": "xa8",
+        "colour": "#E6B10E",
+        "fg": "#fff",
+        "pantone": "7405 U",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
     }
 ]
