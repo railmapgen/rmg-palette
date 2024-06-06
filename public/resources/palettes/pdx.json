@@ -1,0 +1,105 @@
+[
+    {
+        "id": "maxb",
+        "colour": "#004C97",
+        "fg": "#fff",
+        "pantone": "2945 C",
+        "name": {
+            "en": "Blue Line",
+            "zh-Hans": "蓝线",
+            "zh-Hant": "藍線",
+            "es": "Línea azul",
+            "ru": "Синяя линия",
+            "vi": "Tuyến xanh lam"
+        }
+    },
+    {
+        "id": "maxr",
+        "colour": "#BF0D3E",
+        "fg": "#fff",
+        "pantone": "193 C",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線",
+            "es": "Línea roja",
+            "vi": "Tuyến đỏ",
+            "ru": "Красная линия"
+        }
+    },
+    {
+        "id": "maxy",
+        "colour": "#FFC72C",
+        "fg": "#fff",
+        "pantone": "123 C",
+        "name": {
+            "en": "Yellow Line",
+            "zh-Hans": "黄线",
+            "zh-Hant": "黃線",
+            "es": "Línea amarilla",
+            "vi": "Tuyến vàng",
+            "ru": "Жёлтая линия"
+        }
+    },
+    {
+        "id": "maxg",
+        "colour": "#00843D",
+        "fg": "#fff",
+        "pantone": "348 C",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線",
+            "es": "Línea verde",
+            "ru": "Зелёная линия",
+            "vi": "Tuyến xanh lá cây"
+        }
+    },
+    {
+        "id": "maxo",
+        "colour": "#CB6015",
+        "fg": "#fff",
+        "pantone": "159 C",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橙線",
+            "es": "Línea naranja",
+            "vi": "Tuyến cam",
+            "ru": "Оранжевая линия"
+        }
+    },
+    {
+        "id": "wes",
+        "colour": "#326295",
+        "fg": "#fff",
+        "pantone": "653 C",
+        "name": {
+            "en": "WES"
+        }
+    },
+    {
+        "id": "pscns",
+        "colour": "#7fbc42",
+        "fg": "#fff",
+        "name": {
+            "en": "NS Line"
+        }
+    },
+    {
+        "id": "psca",
+        "colour": "#d41a68",
+        "fg": "#fff",
+        "name": {
+            "en": "A Loop"
+        }
+    },
+    {
+        "id": "pscb",
+        "colour": "#452d8c",
+        "fg": "#fff",
+        "name": {
+            "en": "B Loop"
+        }
+    }
+]

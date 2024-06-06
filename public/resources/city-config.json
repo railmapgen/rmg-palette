@@ -1256,6 +1256,16 @@
         }
     },
     {
+        "id": "pdx",
+        "country": "US",
+        "name": {
+            "en": "Portland",
+            "zh-Hans": "波特兰",
+            "zh-Hant": "波特蘭",
+            "ko": "포틀랜드"
+        }
+    },
+    {
         "id": "perth",
         "country": "AU",
         "name": {
