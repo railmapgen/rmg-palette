@@ -8,7 +8,7 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
 import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
-import rmgRuntime from '@railmapgen/rmg-runtime';
+import rmgRuntime, { logger } from '@railmapgen/rmg-runtime';
 import { DRAFT_TICKET_KEY, Events } from '../../util/constants';
 import UnsavedDraftModal from '../modal/unsaved-draft-modal';
 
@@ -32,7 +32,7 @@ export default function TicketView() {
                     setIsUnsavedDraftModalOpen(true);
                 }
             } catch (e) {
-                console.error('TicketView:: unable to restore draft ticket', draftTicketStr);
+                logger.error('<TicketView/>, unable to restore draft ticket', draftTicketStr);
             }
         }
     }, []);
