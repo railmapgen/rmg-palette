@@ -46,7 +46,7 @@
     },
     {
         "id": "m1",
-        "colour": "#1d9a04",
+        "colour": "#01820B",
         "fg": "#fff",
         "name": {
             "en": "Metro Line 1",
@@ -57,7 +57,7 @@
     },
     {
         "id": "m2",
-        "colour": "#284eca",
+        "colour": "#1275AA",
         "fg": "#fff",
         "name": {
             "en": "Metro Line 2",
@@ -68,7 +68,7 @@
     },
     {
         "id": "m3",
-        "colour": "#b90702",
+        "colour": "#C9013B",
         "fg": "#fff",
         "name": {
             "en": "Metro Line 3",
@@ -79,7 +79,7 @@
     },
     {
         "id": "m4",
-        "colour": "#e6bd11",
+        "colour": "#E4AF29",
         "fg": "#fff",
         "name": {
             "en": "Metro Line 4",
