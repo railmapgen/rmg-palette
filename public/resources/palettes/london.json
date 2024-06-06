@@ -102,6 +102,14 @@
         }
     },
     {
+        "id": "emirates",
+        "colour": "#DC241F",
+        "fg": "#fff",
+        "name": {
+            "en": "Emirates Air Line"
+        }
+    },
+    {
         "id": "dlr",
         "colour": "#00AFAD",
         "fg": "#fff",
@@ -116,6 +124,16 @@
         "name": {
             "en": "Elizabeth Line",
             "zh-Hant": "伊利沙伯綫"
+        }
+    },
+    {
+        "id": "thameslink",
+        "colour": "#da4290",
+        "fg": "#fff",
+        "name": {
+            "en": "Thameslink",
+            "zh-Hans": "",
+            "zh-Hant": ""
         }
     },
     {
@@ -140,62 +158,6 @@
         "fg": "#fff",
         "name": {
             "en": "London Trams"
-        }
-    },
-    {
-        "id": "emirates",
-        "colour": "#DC241F",
-        "fg": "#fff",
-        "name": {
-            "en": "Emirates Air Line"
-        }
-    },
-    {
-        "id": "lolib",
-        "colour": "#676767",
-        "fg": "#fff",
-        "name": {
-            "en": "Liberty Line (London Overground)"
-        }
-    },
-    {
-        "id": "lolio",
-        "colour": "#f1b41c",
-        "fg": "#fff",
-        "name": {
-            "en": "Lioness Line (London Overground)"
-        }
-    },
-    {
-        "id": "lomil",
-        "colour": "#437ec1",
-        "fg": "#fff",
-        "name": {
-            "en": "Mildmay Line (London Overground)"
-        }
-    },
-    {
-        "id": "losuf",
-        "colour": "#39b97a",
-        "fg": "#fff",
-        "name": {
-            "en": "Suffragette Line (London Overground)"
-        }
-    },
-    {
-        "id": "lowea",
-        "colour": "#972861",
-        "fg": "#fff",
-        "name": {
-            "en": "Weaver Line (London Overground)"
-        }
-    },
-    {
-        "id": "lowin",
-        "colour": "#ef4d5e",
-        "fg": "#fff",
-        "name": {
-            "en": "Windrush Line (London Overground)"
         }
     }
 ]
