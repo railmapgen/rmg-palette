@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'REPLACE ME')
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
       - run: npm ci
@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH_PREFIX: "bot-"
           PULL_REQUEST_FROM_BRANCH: bot-${{ github.event.issue.number }}
-          PULL_REQUEST_BRANCH: "master"
-          PULL_REQUEST_TOKEN: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+          PULL_REQUEST_BRANCH: "main"
+          PULL_REQUEST_TOKEN: ${{ secrets.RMT_SVC }}
           PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
           PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}\n${{ steps.bot.outputs.COLOURS }}"

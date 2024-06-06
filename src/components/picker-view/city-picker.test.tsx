@@ -5,6 +5,16 @@ import { render } from '../../test-utils';
 import rootReducer from '../../redux';
 import { createTestStore } from '../../setupTests';
 import { userEvent } from '@testing-library/user-event';
+import { CountryEntry } from '@railmapgen/rmg-palette-resources';
+
+vi.mock('../../util/censor-utils', async importOriginal => {
+    const module = await importOriginal<typeof import('../../util/censor-utils')>();
+    return {
+        ...module,
+        censorCountryList: (countryList: CountryEntry[]) => countryList,
+        censorFlag: (countryCode: string) => countryCode,
+    };
+});
 
 const realStore = rootReducer.getState();
 const mockStore = createTestStore({
@@ -78,17 +88,17 @@ describe('CityPicker', () => {
         vi.resetAllMocks();
     });
 
-    it('Can render flag emojis (for non-Windows users) and translations as expected', async () => {
+    it('Can render flag emojis and translations as expected', async () => {
         const user = userEvent.setup();
         render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = screen.getAllByRole('menuitem');
+        const menuItems = await screen.findAllByRole('menuitem');
         expect(menuItems).toHaveLength(3);
 
         expect(menuItems[0]).toHaveTextContent('🏴󠁧󠁢󠁳󠁣󠁴󠁿'); // GBSCT
-        expect(menuItems[1]).toHaveTextContent('🏴'); // TW to be censored
+        expect(menuItems[1]).toHaveTextContent('🇹🇼'); // TW
         expect(menuItems[2]).toHaveTextContent('🇭🇰'); // HK
 
         // sorted by Pinyin (under zh-Hans locale)

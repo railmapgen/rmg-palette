@@ -2,7 +2,7 @@ import { addRootListener, RootStore } from './index';
 import { DRAFT_TICKET_KEY, RECENTLY_USED_KEY } from '../util/constants';
 import { getTicketByCityId } from './ticket/util';
 import { populateTicket } from './ticket/ticket-slice';
-import rmgRuntime from '@railmapgen/rmg-runtime';
+import rmgRuntime, { logger } from '@railmapgen/rmg-runtime';
 import { PaletteUsage, setRecentlyUsed } from './app/app-slice';
 import { updateTheme } from '@railmapgen/rmg-palette-resources';
 
@@ -18,7 +18,7 @@ const initRecentlyUsed = async (store: RootStore) => {
             store.dispatch(setRecentlyUsed(updatedUsage));
         }
     } catch (e) {
-        console.warn('initRecentlyUsed(), error reading usage history, initiating as empty', e);
+        logger.warn('initRecentlyUsed(), error reading usage history, initiating as empty', e);
     }
 };
 
@@ -27,7 +27,7 @@ const openTicketByCity = async (store: RootStore) => {
     if (hash.startsWith('#/new')) {
         const searchParams = new URLSearchParams(hash.slice('#/new'.length));
         const cityId: any = searchParams.get('city');
-        console.log(`openTicketByCity():: searchParams city=${cityId}`);
+        logger.info(`openTicketByCity(), searchParams city=${cityId}`);
 
         if (cityId) {
             const ticket = await getTicketByCityId(cityId);
@@ -39,7 +39,7 @@ const openTicketByCity = async (store: RootStore) => {
         // clear search
         const ticketUrl = '/rmg-palette/#/new';
         window.history.replaceState({}, document.title, ticketUrl);
-        rmgRuntime.updateUrl(ticketUrl);
+        rmgRuntime.updateAppMetadata({ hash: '/new' });
     }
 };
 

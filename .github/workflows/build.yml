@@ -28,12 +28,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
           fetch-depth: 0
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -54,3 +54,5 @@ jobs:
           dist: dist
           github_token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
           gitlab_token: ${{ secrets.GITLAB_RELEASE }}
+          gitee_token: ${{ secrets.GITEE_RELEASE }}
+          gitee_password: ${{ secrets.GITEE_PASSWORD }}

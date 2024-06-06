@@ -25,7 +25,7 @@ BRANCH=$(git branch | grep \* | cut -d ' ' -f2 | tr '/' '.')
 npm config set tag-version-prefix "${APP_NAME}-"
 
 ### BUMP VERSION
-if [ "$BRANCH" = "master" ]
+if [ "$BRANCH" = "main" ]
 then
   # build with a normal version
   npm version $BUMP_VERSION -m "${APP_NAME}-%s release" --force || { echo "Release Error"; exit 1; }
@@ -42,7 +42,7 @@ fi
 CI='' npm run build
 
 ### PUSH TAG AND COMMIT
-if [ "$BRANCH" = "master" ]
+if [ "$BRANCH" = "main" ]
 then
   git push --atomic origin HEAD "${APP_NAME}-${RMG_VER}"
 fi
