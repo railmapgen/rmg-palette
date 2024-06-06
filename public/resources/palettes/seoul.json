@@ -188,7 +188,7 @@
     },
     {
         "id": "shin",
-        "colour": "#d31145",
+        "colour": "#d4003b",
         "fg": "#fff",
         "name": {
             "en": "Shinbundang Line",
@@ -232,7 +232,7 @@
     },
     {
         "id": "ye",
-        "colour": "#56ad2d",
+        "colour": "#56ab2d",
         "fg": "#fff",
         "name": {
             "en": "Yongin Everline",
