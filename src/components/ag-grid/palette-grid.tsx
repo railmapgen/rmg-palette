@@ -4,7 +4,6 @@ import { AgGridReact } from 'ag-grid-react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { CityEntry } from '@railmapgen/rmg-palette-resources';
 import LineBadges from './line-badges';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { ColDef, SelectionChangedEvent } from 'ag-grid-community';
@@ -14,7 +13,6 @@ export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
     const translateName = useTranslatedName();
     const dispatch = useRootDispatch();
-    const navigate = useNavigate();
 
     const { cityList, selectedCountry, sidePanelCity } = useRootSelector(state => state.app);
     const rowData = cityList.filter(city => city.country === selectedCountry);

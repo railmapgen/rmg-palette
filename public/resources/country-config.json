@@ -90,6 +90,16 @@
         "language": "en"
     },
     {
+        "id": "CH",
+        "name": {
+            "en": "Switzerland",
+            "zh-Hans": "瑞士",
+            "zh-Hant": "瑞士",
+            "fr": "Suisse "
+        },
+        "language": "fr"
+    },
+    {
         "id": "CL",
         "name": {
             "en": "Chile",
@@ -197,6 +207,14 @@
         "language": "zh-Hant"
     },
     {
+        "id": "HR",
+        "name": {
+            "en": "Croatia",
+            "zh-Hans": "克罗地亚",
+            "zh-Hant": "克羅埃西亞"
+        }
+    },
+    {
         "id": "HU",
         "name": {
             "en": "Hungary",
@@ -225,6 +243,15 @@
             "zh-Hant": "愛爾蘭"
         },
         "language": "ga"
+    },
+    {
+        "id": "IL",
+        "name": {
+            "en": "Israel",
+            "zh-Hans": "以色列",
+            "zh-Hant": "以色列"
+        },
+        "language": "en"
     },
     {
         "id": "IN",
@@ -394,6 +421,16 @@
             "zh-Hant": "葡萄牙"
         },
         "language": "pt"
+    },
+    {
+        "id": "QA",
+        "name": {
+            "en": "Qatar",
+            "zh-Hans": "卡塔尔",
+            "zh-Hant": "卡達",
+            "ar": "قطر"
+        },
+        "language": "ar"
     },
     {
         "id": "RO",

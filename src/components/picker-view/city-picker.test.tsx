@@ -94,7 +94,7 @@ describe('CityPicker', () => {
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = screen.getAllByRole('menuitem');
+        const menuItems = await screen.findAllByRole('menuitem');
         expect(menuItems).toHaveLength(3);
 
         expect(menuItems[0]).toHaveTextContent('🏴󠁧󠁢󠁳󠁣󠁴󠁿'); // GBSCT

@@ -376,6 +376,16 @@
         }
     },
     {
+        "id": "doha",
+        "country": "QA",
+        "name": {
+            "en": "Doha",
+            "zh-Hans": "多哈",
+            "zh-Hant": "多哈",
+            "ar": "الدوحة"
+        }
+    },
+    {
         "id": "dongguan",
         "country": "CN",
         "name": {
@@ -461,6 +471,16 @@
             "ko": "푸저우",
             "zh-Hans": "福州",
             "zh-Hant": "福州"
+        }
+    },
+    {
+        "id": "geneva",
+        "country": "CH",
+        "name": {
+            "en": "Geneva",
+            "zh-Hans": "日内瓦",
+            "zh-Hant": "日內瓦",
+            "fr": "Genève"
         }
     },
     {
@@ -987,6 +1007,15 @@
         }
     },
     {
+        "id": "msp",
+        "country": "US",
+        "name": {
+            "en": "Minneapolis-Saint Paul",
+            "zh-Hans": "明尼阿波利斯-圣保罗都会区",
+            "zh-Hant": "明尼阿波利斯-聖保羅都會區"
+        }
+    },
+    {
         "id": "mulhouse",
         "country": "FR",
         "name": {
@@ -994,6 +1023,15 @@
             "zh-Hans": "米卢斯",
             "zh-Hant": "米盧斯",
             "fr": "Mulhouse"
+        }
+    },
+    {
+        "id": "mumbai",
+        "country": "IN",
+        "name": {
+            "en": "Mumbai",
+            "zh-Hans": "孟买",
+            "zh-Hant": "孟買"
         }
     },
     {
@@ -1215,6 +1253,16 @@
             "en": "Paris",
             "zh-Hans": "巴黎",
             "zh-Hant": "巴黎"
+        }
+    },
+    {
+        "id": "pdx",
+        "country": "US",
+        "name": {
+            "en": "Portland",
+            "zh-Hans": "波特兰",
+            "zh-Hant": "波特蘭",
+            "ko": "포틀랜드"
         }
     },
     {
@@ -1576,6 +1624,15 @@
         }
     },
     {
+        "id": "telivivyafo",
+        "country": "IL",
+        "name": {
+            "en": "Tel Aviv-Yafo",
+            "zh-Hans": "特拉维夫-雅法",
+            "zh-Hant": "特拉維夫-雅法"
+        }
+    },
+    {
         "id": "tianjin",
         "country": "CN",
         "name": {
@@ -1762,6 +1819,15 @@
             "ja": "横浜",
             "zh-Hans": "横滨",
             "zh-Hant": "橫濱"
+        }
+    },
+    {
+        "id": "zagreb",
+        "country": "HR",
+        "name": {
+            "en": "Zagreb",
+            "zh-Hans": "萨格勒布",
+            "zh-Hant": "薩格勒布"
         }
     },
     {
