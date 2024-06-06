@@ -200,7 +200,6 @@ describe('TicketSlice', () => {
         it('Can move up line entry', () => {
             const nextState = ticketReducer(initialState, moveLineUp('002'));
             console.log(nextState.lines);
-            const keys = Object.keys(nextState.lines);
             expect(Object.keys(nextState.lines)).toEqual(['002', '001', '003', '004']);
         });
 

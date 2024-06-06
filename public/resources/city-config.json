@@ -726,6 +726,16 @@
         }
     },
     {
+        "id": "jrtokai",
+        "country": "JP",
+        "name": {
+            "en": "Central Area (Tokai)",
+            "zh-Hans": "中部地方（东海）",
+            "ja": "中部地方（東海）",
+            "zh-Hant": "中部地方（東海）"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
@@ -1253,6 +1263,16 @@
             "en": "Paris",
             "zh-Hans": "巴黎",
             "zh-Hant": "巴黎"
+        }
+    },
+    {
+        "id": "pdx",
+        "country": "US",
+        "name": {
+            "en": "Portland",
+            "zh-Hans": "波特兰",
+            "zh-Hant": "波特蘭",
+            "ko": "포틀랜드"
         }
     },
     {

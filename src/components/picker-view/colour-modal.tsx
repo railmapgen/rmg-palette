@@ -115,7 +115,8 @@ export default function ColourModal(props: ColourModalProps) {
         if (isSubmitEnabled) {
             // FIXME
             const displayName = `${cityCode} - ${lineCode}`;
-            onSubmit?.([cityCode, lineCode, bgColour, fgColour], displayName);
+            const lowerCasedBgColour = bgColour.toLowerCase() as ColourHex;
+            onSubmit?.([cityCode, lineCode, lowerCasedBgColour, fgColour], displayName);
         }
     };
 
