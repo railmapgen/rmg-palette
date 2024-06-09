@@ -100,13 +100,13 @@
         }
     },
     {
-        "id": "qd11",
+        "id": "qdlg",
         "colour": "#304299",
         "fg": "#fff",
         "name": {
-            "en": "Line 11",
-            "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "en": "Oceantec Valley Line",
+            "zh-Hans": "蓝谷快线",
+            "zh-Hant": "藍穀快線"
         }
     },
     {
@@ -120,13 +120,13 @@
         }
     },
     {
-        "id": "qd13",
+        "id": "qdxha",
         "colour": "#009c86",
         "fg": "#fff",
         "name": {
-            "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "en": "The West Coast Line",
+            "zh-Hans": "西海岸快线",
+            "zh-Hant": "西海岸快線"
         }
     },
     {
