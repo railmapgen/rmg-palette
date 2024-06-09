@@ -310,5 +310,15 @@
             "zh-Hans": "佛山地铁",
             "zh-Hant": "佛山地鐵"
         }
+    },
+    {
+        "id": "gdcj",
+        "colour": "#2c569e",
+        "fg": "#fff",
+        "name": {
+            "en": "Guangdong Intercity",
+            "zh-Hans": "广东城际",
+            "zh-Hant": "廣東城際"
+        }
     }
 ]
