@@ -4,9 +4,9 @@
         "colour": "#d41317",
         "fg": "#fff",
         "name": {
-            "en": "Line 1",
-            "zh-Hans": "1号线",
-            "zh-Hant": "1號綫",
+            "en": "Sokolnicheskaya",
+            "zh-Hans": "索科利尼基线",
+            "zh-Hant": "索科利尼基線",
             "ru": "Сокольническая"
         }
     },
@@ -15,9 +15,9 @@
         "colour": "#4baf51",
         "fg": "#fff",
         "name": {
-            "en": "Line 2",
-            "zh-Hans": "2号线",
-            "zh-Hant": "2號綫",
+            "en": "Zamoskvoretskaya",
+            "zh-Hans": "莫斯科河畔线",
+            "zh-Hant": "莫斯科河畔線",
             "ru": "Замоскворецкая"
         }
     },
@@ -26,9 +26,9 @@
         "colour": "#0072ba",
         "fg": "#fff",
         "name": {
-            "en": "Line 3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號綫",
+            "en": "Arbatsko-Pokrovskaya",
+            "zh-Hans": "阿尔巴特-波克罗夫线",
+            "zh-Hant": "阿爾巴特-㡦幪線",
             "ru": "Арбатско-Покровская"
         }
     },
@@ -37,9 +37,9 @@
         "colour": "#1ebcef",
         "fg": "#fff",
         "name": {
-            "en": "Line 4",
-            "zh-Hans": "4号线",
-            "zh-Hant": "4號綫",
+            "en": "Filyovskaya",
+            "zh-Hans": "菲利线",
+            "zh-Hant": "菲利線",
             "ru": "Филёвская"
         }
     },
@@ -48,9 +48,9 @@
         "colour": "#905134",
         "fg": "#fff",
         "name": {
-            "en": "Line 5",
-            "zh-Hans": "5号线",
-            "zh-Hant": "5號綫",
+            "en": "Koltsevaya",
+            "zh-Hans": "环线",
+            "zh-Hant": "環線",
             "ru": "Кольцевая"
         }
     },
@@ -59,9 +59,9 @@
         "colour": "#ef7d00",
         "fg": "#fff",
         "name": {
-            "en": "Line 6",
-            "zh-Hans": "6号线",
-            "zh-Hant": "6號綫",
+            "en": "Kaluzhsko-Rizhskaya",
+            "zh-Hans": "卡卢加-里加线",
+            "zh-Hant": "卡盧加-裏加線",
             "ru": "Калужско-Рижская"
         }
     },
@@ -70,21 +70,21 @@
         "colour": "#933f8f",
         "fg": "#fff",
         "name": {
-            "en": "Line 7",
-            "zh-Hans": "7号线",
-            "zh-Hant": "7號綫",
+            "en": " Tagansko-Krasnopresnenskaya l",
+            "zh-Hans": "塔甘卡-红普列斯尼亚线",
+            "zh-Hant": "塔甘卡-紅普列斯尼亞線",
             "ru": "Таганско-Краснопресненская"
         }
     },
     {
         "id": "mos8",
         "colour": "#ffdd00",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號綫",
-            "ru": "Калининская"
+            "en": "Kalininsko-Solntsevskaya",
+            "zh-Hans": "加里宁-太阳线",
+            "zh-Hant": "加里寧-太陽線",
+            "ru": "Калининско-Солнцевская "
         }
     },
     {
@@ -92,9 +92,9 @@
         "colour": "#adabac",
         "fg": "#fff",
         "name": {
-            "en": "Line 9",
-            "zh-Hans": "9号线",
-            "zh-Hant": "9號綫",
+            "en": "Serpukhovsko-Timiryazevskaya ",
+            "zh-Hans": "谢尔普霍夫-季米里亚泽夫线",
+            "zh-Hant": "謝爾普霍夫-季米里亞澤夫線",
             "ru": "Серпуховско-Тимирязевская"
         }
     },
@@ -103,9 +103,9 @@
         "colour": "#b4cc04",
         "fg": "#fff",
         "name": {
-            "en": "Line 10",
-            "zh-Hans": "10号线",
-            "zh-Hant": "10號綫",
+            "en": "Lyublinsko-Dmitrovskaya ",
+            "zh-Hans": "柳布林诺-德米特罗夫线",
+            "zh-Hant": "柳布林諾-德米特羅夫線",
             "ru": "Люблинско-Дмитровская"
         }
     },
@@ -114,10 +114,10 @@
         "colour": "#88cdcf",
         "fg": "#fff",
         "name": {
-            "en": "Line 11",
-            "zh-Hans": "11号线",
-            "zh-Hant": "11號綫",
-            "ru": "Каховская"
+            "en": "Bolshaya Koltsevaya ",
+            "zh-Hans": "大环线",
+            "zh-Hant": "大環線",
+            "ru": "Большая кольцевая линия"
         }
     },
     {
@@ -125,9 +125,9 @@
         "colour": "#bac8e8",
         "fg": "#fff",
         "name": {
-            "en": "Line 12",
-            "zh-Hans": "12号线",
-            "zh-Hant": "12號綫",
+            "en": "Butovskaya ",
+            "zh-Hans": "布托沃线",
+            "zh-Hant": "布托沃線",
             "ru": "Бутовская"
         }
     },
@@ -136,9 +136,9 @@
         "colour": "#0273ba",
         "fg": "#fff",
         "name": {
-            "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號綫",
+            "en": "Moscow Monorail",
+            "zh-Hans": "莫斯科单轨",
+            "zh-Hant": "莫斯科單軌 ",
             "ru": "Московский монорельс"
         }
     },
@@ -147,9 +147,9 @@
         "colour": "#d5191d",
         "fg": "#fff",
         "name": {
-            "en": "Line 14",
-            "zh-Hans": "14号线",
-            "zh-Hant": "14號綫",
+            "en": "Moscow Central Circle",
+            "zh-Hans": "莫斯科中央环线",
+            "zh-Hant": "莫斯科中央環線",
             "ru": "Московское Центральное Кольцо"
         }
     },
@@ -158,10 +158,43 @@
         "colour": "#ed7cae",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號綫",
+            "en": "Nekrasovskaya ",
+            "zh-Hans": "内克拉索夫卡线",
+            "zh-Hant": "內克拉索夫卡線",
             "ru": "Некрасовская"
+        }
+    },
+    {
+        "id": "mos16",
+        "colour": "#02795f",
+        "fg": "#fff",
+        "name": {
+            "en": "Troitskaya ",
+            "zh-Hans": "特罗伊茨克线",
+            "zh-Hant": "特羅伊茨克線",
+            "ru": "Троицкая "
+        }
+    },
+    {
+        "id": "mos17",
+        "colour": "#27303f",
+        "fg": "#fff",
+        "name": {
+            "en": "Rublyovo-Arkhangelskaya ",
+            "zh-Hans": "鲁比廖夫-阿尔汉格尔斯克线",
+            "zh-Hant": "魯比廖夫-阿爾漢格爾斯克線",
+            "ru": "Рублёво-Архангельская "
+        }
+    },
+    {
+        "id": "mos18",
+        "colour": "#ac1753",
+        "fg": "#fff",
+        "name": {
+            "en": "Biryulyovskaya ",
+            "zh-Hans": "比留廖夫线",
+            "zh-Hant": "比留廖夫線",
+            "ru": "Бирюлёвская"
         }
     },
     {
@@ -206,6 +239,17 @@
             "zh-Hans": "D4 基辅-高尔基直径线",
             "zh-Hant": "D4 基輔-高爾基直徑綫",
             "ru": "Киевско-Горьковский диаметр"
+        }
+    },
+    {
+        "id": "mosd5",
+        "colour": "#77b729",
+        "fg": "#fff",
+        "name": {
+            "en": "D5",
+            "zh-Hans": "D5 雅罗斯拉夫-帕维列茨基直径线",
+            "zh-Hant": "D5 雅羅斯拉夫-帕維列茨基直徑線",
+            "ru": "Ярославско-Павелецкий диаметр"
         }
     }
 ]
