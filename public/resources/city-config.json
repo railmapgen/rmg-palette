@@ -1652,6 +1652,16 @@
         }
     },
     {
+        "id": "tokai",
+        "country": "JP",
+        "name": {
+            "en": "Chubu Region",
+            "zh-Hans": "中部地方（中京圈）",
+            "ja": "中部地方",
+            "zh-Hant": "中部地方"
+        }
+    },
+    {
         "id": "tokyo",
         "country": "JP",
         "name": {
