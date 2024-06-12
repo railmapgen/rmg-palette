@@ -1,0 +1,112 @@
+[
+    {
+        "id": "ca",
+        "colour": "#ff7e1c",
+        "fg": "#fff",
+        "name": {
+            "en": "Tokaido Line",
+            "zh-Hans": "东海道线",
+            "ja": " 東海道線",
+            "zh-Hant": "東海道線"
+        }
+    },
+    {
+        "id": "cb",
+        "colour": "#3d733d",
+        "fg": "#fff",
+        "name": {
+            "en": "Gotemba Line",
+            "zh-Hans": "御殿场线",
+            "ja": "御殿場線",
+            "zh-Hant": "御殿場線"
+        }
+    },
+    {
+        "id": "cc",
+        "colour": "#6b3174",
+        "fg": "#fff",
+        "name": {
+            "en": "Minobu Line",
+            "zh-Hans": "身延线",
+            "ja": "身延線",
+            "zh-Hant": "身延線"
+        }
+    },
+    {
+        "id": "cd",
+        "colour": "#719cdf",
+        "fg": "#fff",
+        "name": {
+            "en": "Iida Line",
+            "zh-Hans": "饭田线",
+            "ja": "飯田線",
+            "zh-Hant": "飯田線"
+        }
+    },
+    {
+        "id": "ce",
+        "colour": "#76432c",
+        "fg": "#fff",
+        "name": {
+            "en": "Taketoyo Line",
+            "zh-Hans": "武丰线",
+            "ja": "武豊線",
+            "zh-Hant": "武豐線"
+        }
+    },
+    {
+        "id": "cf",
+        "colour": "#406f90",
+        "fg": "#fff",
+        "name": {
+            "en": "Chūō Line",
+            "zh-Hans": "中央线",
+            "ja": "中央線",
+            "zh-Hant": "中央線"
+        }
+    },
+    {
+        "id": "cg",
+        "colour": "#a61e2b",
+        "fg": "#fff",
+        "name": {
+            "en": "Takayama Line",
+            "zh-Hans": "高山线",
+            "ja": "高山線",
+            "zh-Hant": "高山線"
+        }
+    },
+    {
+        "id": "ci",
+        "colour": "#b1a548",
+        "fg": "#fff",
+        "name": {
+            "en": "Taita Line",
+            "zh-Hans": "太多线",
+            "ja": "太多線",
+            "zh-Hant": "太多線"
+        }
+    },
+    {
+        "id": "cj",
+        "colour": "#05a88a",
+        "fg": "#fff",
+        "name": {
+            "en": "Kansai Line",
+            "zh-Hans": "关西线",
+            "ja": "関西線",
+            "zh-Hant": "關西線"
+        }
+    },
+    {
+        "id": "jhl",
+        "colour": "#ee7700",
+        "fg": "#fff",
+        "name": {
+            "en": "Johoku Line",
+            "zh-Hans": "城北线",
+            "ja": "城北線",
+            "zh-Hant": "城北線"
+        }
+    }
+]
