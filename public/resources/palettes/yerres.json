@@ -1,0 +1,13 @@
+[
+    {
+        "id": "busa",
+        "colour": "#4c89d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line A",
+            "zh-Hans": "A",
+            "zh-Hant": "A",
+            "fr": "Ligne A"
+        }
+    }
+]
