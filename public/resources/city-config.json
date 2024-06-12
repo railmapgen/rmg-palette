@@ -1813,6 +1813,16 @@
         }
     },
     {
+        "id": "yerres",
+        "country": "FR",
+        "name": {
+            "fr": "Yerres",
+            "en": "Yerres",
+            "zh-Hans": "Yerres",
+            "zh-Hant": "Yerres"
+        }
+    },
+    {
         "id": "yevpatoria",
         "country": "UA",
         "name": {
