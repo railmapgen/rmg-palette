@@ -43,5 +43,49 @@
             "es": "Cercanías 5",
             "en": "Commuter 5"
         }
+    },
+    {
+        "id": "m1",
+        "colour": "#01820B",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 1",
+            "zh-Hans": "地铁1号线",
+            "zh-Hant": "地鐡1號缐",
+            "es": "Metro Línea 1"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#1275AA",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 2",
+            "zh-Hans": "地铁2号线",
+            "zh-Hant": "地鐡2號缐",
+            "es": "Metro Línea 2"
+        }
+    },
+    {
+        "id": "m3",
+        "colour": "#C9013B",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 3",
+            "zh-Hans": "地铁3号线",
+            "zh-Hant": "地鐡3號缐",
+            "es": "Metro Línea 3"
+        }
+    },
+    {
+        "id": "m4",
+        "colour": "#E4AF29",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 4",
+            "zh-Hans": "地铁4号线",
+            "zh-Hant": "地鐡4號缐",
+            "es": "Metro Línea 4"
+        }
     }
 ]
