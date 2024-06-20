@@ -104,9 +104,9 @@
         "colour": "#304299",
         "fg": "#fff",
         "name": {
-            "en": "Oceantec Valley Line",
-            "zh-Hans": "蓝谷快线",
-            "zh-Hant": "藍穀快線"
+            "en": "Line 11 (Oceantec Valley Line)",
+            "zh-Hans": "11号线（蓝谷快线）",
+            "zh-Hant": "11號線（藍穀快線）"
         }
     },
     {
@@ -124,9 +124,9 @@
         "colour": "#009c86",
         "fg": "#fff",
         "name": {
-            "en": "The West Coast Line",
-            "zh-Hans": "西海岸快线",
-            "zh-Hant": "西海岸快線"
+            "en": "Line 13 (The West Coast Line)",
+            "zh-Hans": "13号线（西海岸快线）",
+            "zh-Hant": "13號線（西海岸快線）"
         }
     },
     {
