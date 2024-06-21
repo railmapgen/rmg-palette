@@ -119,6 +119,16 @@
         "language": "zh-Hans"
     },
     {
+        "id": "CZ",
+        "name": {
+            "en": "Czechia",
+            "zh-Hans": "捷克",
+            "de": "Tschechien",
+            "zh-Hant": "捷克"
+        },
+        "language": "de"
+    },
+    {
         "id": "DE",
         "name": {
             "en": "Germany",
