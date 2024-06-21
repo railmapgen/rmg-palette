@@ -1,0 +1,46 @@
+[
+    {
+        "id": "pra",
+        "colour": "#078243",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line A",
+            "zh-Hans": "A线",
+            "zh-Hant": "A線",
+            "de": "Linie A"
+        }
+    },
+    {
+        "id": "prb",
+        "colour": "#fad203",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line B",
+            "zh-Hans": "B线",
+            "zh-Hant": "B線",
+            "de": "Linie B"
+        }
+    },
+    {
+        "id": "prc",
+        "colour": "#d61220",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line C",
+            "zh-Hans": "C线",
+            "zh-Hant": "C線",
+            "de": "Linie C"
+        }
+    },
+    {
+        "id": "prd",
+        "colour": "#002177",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line D",
+            "zh-Hans": "D线",
+            "zh-Hant": "D線",
+            "de": "Linie D"
+        }
+    }
+]
