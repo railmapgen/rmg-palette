@@ -70,5 +70,27 @@
             "ja": "上飯田線",
             "ko": "가미이다선"
         }
+    },
+    {
+        "id": "y",
+        "colour": "#343f97",
+        "fg": "#fff",
+        "name": {
+            "en": "Aonami Line/Yutorito Line/Linimo",
+            "zh-Hans": "青波线/尤托里线/东部丘陵线",
+            "zh-Hant": "青波線/尤托裏線/東部丘陵線",
+            "ja": "あおなみ缐/ゆとりーとライソ/リニモ"
+        }
+    },
+    {
+        "id": "mk",
+        "colour": "#ff7f7f",
+        "fg": "#fff",
+        "name": {
+            "en": "Menelsu Komaki Line",
+            "zh-Hans": "名铁小牧线",
+            "zh-Hant": "名鉄小牧線",
+            "ja": "名鉄小牧線"
+        }
     }
 ]
