@@ -1,0 +1,38 @@
+[
+    {
+        "id": "sy",
+        "colour": "#13ae67",
+        "fg": "#fff",
+        "name": {
+            "en": "Seishin-Yamate Line",
+            "zh-Hans": "西神・山手线",
+            "zh-Hant": "西神・山手線",
+            "ja": "西神・山手線",
+            "ko": "세이신・야마테선"
+        }
+    },
+    {
+        "id": "sh",
+        "colour": "#c89665",
+        "fg": "#fff",
+        "name": {
+            "en": "Hokushin Line",
+            "zh-Hans": "北神线",
+            "zh-Hant": "北神線",
+            "ja": "北神線",
+            "ko": "호쿠신선"
+        }
+    },
+    {
+        "id": "k",
+        "colour": "#006ebd",
+        "fg": "#fff",
+        "name": {
+            "en": "Kaigan Line",
+            "zh-Hans": "海岸线",
+            "zh-Hant": "海岸線",
+            "ja": "海岸線",
+            "ko": "가이간선"
+        }
+    }
+]
