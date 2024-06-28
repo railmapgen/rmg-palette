@@ -774,6 +774,17 @@
         }
     },
     {
+        "id": "kobe",
+        "country": "JP",
+        "name": {
+            "en": "Kobe",
+            "zh-Hans": "神户",
+            "zh-Hant": "神户",
+            "ja": "神户",
+            "ko": "고베"
+        }
+    },
+    {
         "id": "kunming",
         "country": "CN",
         "name": {
