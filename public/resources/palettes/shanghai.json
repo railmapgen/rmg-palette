@@ -220,6 +220,16 @@
         }
     },
     {
+        "id": "sh24",
+        "colour": "#c1fdb4",
+        "fg": "#000",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
+        }
+    },
+    {
         "id": "pjl",
         "colour": "#B5B5B6",
         "fg": "#fff",
