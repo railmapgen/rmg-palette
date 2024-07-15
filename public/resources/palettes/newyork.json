@@ -1,7 +1,7 @@
 [
     {
         "id": "nybdfm",
-        "colour": "#f58220",
+        "colour": "#ff6319",
         "fg": "#fff",
         "name": {
             "en": "IND Sixth Avenue Line",
@@ -10,7 +10,7 @@
     },
     {
         "id": "nyace",
-        "colour": "#006bb6",
+        "colour": "#0039a6",
         "fg": "#fff",
         "name": {
             "en": "IND Eighth Avenue Line",
@@ -19,7 +19,7 @@
     },
     {
         "id": "nyl",
-        "colour": "#939598",
+        "colour": "#a7a9ac",
         "fg": "#fff",
         "name": {
             "en": "BMT Canarsie Line",
@@ -28,7 +28,7 @@
     },
     {
         "id": "nyg",
-        "colour": "#7bc142",
+        "colour": "#6cbe45",
         "fg": "#fff",
         "name": {
             "en": "IND Crosstown Line",
@@ -37,7 +37,7 @@
     },
     {
         "id": "nyjz",
-        "colour": "#b0720a",
+        "colour": "#996633",
         "fg": "#fff",
         "name": {
             "en": "BMT Nassau Street Line",
@@ -46,7 +46,7 @@
     },
     {
         "id": "nynqrw",
-        "colour": "#fed41d",
+        "colour": "#fccc0a",
         "fg": "#000",
         "name": {
             "en": "BMT Broadway Line",
@@ -55,7 +55,7 @@
     },
     {
         "id": "ny456",
-        "colour": "#009e57",
+        "colour": "#00933c",
         "fg": "#fff",
         "name": {
             "en": "IRT Lexington Avenue Line",
@@ -64,7 +64,7 @@
     },
     {
         "id": "ny123",
-        "colour": "#ee3a41",
+        "colour": "#ee352e",
         "fg": "#fff",
         "name": {
             "en": "IRT Broadway–Seventh Avenue Line",
@@ -82,7 +82,7 @@
     },
     {
         "id": "ny7",
-        "colour": "#9c3b96",
+        "colour": "#b933ad",
         "fg": "#fff",
         "name": {
             "en": "IRT Flushing Line",
@@ -91,7 +91,7 @@
     },
     {
         "id": "nys",
-        "colour": "#6c6d70",
+        "colour": "#808183",
         "fg": "#fff",
         "name": {
             "en": "Shuttles",
