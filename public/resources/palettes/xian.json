@@ -60,17 +60,6 @@
         }
     },
     {
-        "id": "xa8",
-        "colour": "#E6B10E",
-        "fg": "#fff",
-        "pantone": "7405 U",
-        "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
-        }
-    },
-    {
         "id": "xa9",
         "colour": "#FF9E1B",
         "fg": "#fff",
@@ -128,6 +117,16 @@
             "en": "Xixian ART Line 1",
             "zh-Hans": "西咸智轨1号线",
             "zh-Hant": "西咸智軌1號線"
+        }
+    },
+    {
+        "id": "Xagx",
+        "colour": "#5b8cdc",
+        "fg": "#fff",
+        "name": {
+            "en": "Xi'an Gaoxin Skyshuttle",
+            "zh-Hans": "西安高新云巴",
+            "zh-Hant": "西安高新雲巴"
         }
     }
 ]
