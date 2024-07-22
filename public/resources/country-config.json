@@ -373,6 +373,15 @@
         "language": "no"
     },
     {
+        "id": "NZ",
+        "name": {
+            "en": "New Zealand",
+            "zh-Hans": "新西兰",
+            "zh-Hant": "紐西蘭"
+        },
+        "language": "en"
+    },
+    {
         "id": "PA",
         "name": {
             "en": "Panama",
