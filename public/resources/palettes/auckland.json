@@ -1,0 +1,42 @@
+[
+    {
+        "id": "el",
+        "colour": "#fdba17",
+        "fg": "#000",
+        "name": {
+            "en": "Eastern Line",
+            "zh-Hans": "东线",
+            "zh-Hant": "東綫"
+        }
+    },
+    {
+        "id": "sl",
+        "colour": "#ee302a",
+        "fg": "#fff",
+        "name": {
+            "en": "Southern Line",
+            "zh-Hans": "南线",
+            "zh-Hant": "南綫"
+        }
+    },
+    {
+        "id": "wl",
+        "colour": "#9bc93e",
+        "fg": "#fff",
+        "name": {
+            "en": "Western Line",
+            "zh-Hans": "西线",
+            "zh-Hant": "西綫"
+        }
+    },
+    {
+        "id": "ol",
+        "colour": "#00aeef",
+        "fg": "#fff",
+        "name": {
+            "en": "Onehunga Line",
+            "zh-Hans": "奥尼洪加线",
+            "zh-Hant": "奧尼洪加綫"
+        }
+    }
+]
