@@ -120,23 +120,23 @@
         }
     },
     {
+        "id": "intercitytrain",
+        "colour": "#083d23",
+        "fg": "#fff",
+        "name": {
+            "en": "Changsha-Zhuzhou-Xiangtan Inter-city Train",
+            "zh-Hans": "长株潭城际（S1）",
+            "zh-Hant": "長株潭城際（S1）"
+        }
+    },
+    {
         "id": "maglev",
         "colour": "#F891A5",
         "fg": "#fff",
         "name": {
-            "en": "Maglev Express",
-            "zh-Hans": "磁浮快线",
-            "zh-Hant": "磁浮快線"
-        }
-    },
-    {
-        "id": "intercityrailway",
-        "colour": "#999999",
-        "fg": "#fff",
-        "name": {
-            "en": "Intercity Railway",
-            "zh-Hans": "城际铁路",
-            "zh-Hant": "城際鐵路"
+            "en": "S2",
+            "zh-Hans": "S2线",
+            "zh-Hant": "S2線"
         }
     },
     {
@@ -147,6 +147,16 @@
             "en": "Xihuan Line",
             "zh-Hans": "西环线",
             "zh-Hant": "西環線"
+        }
+    },
+    {
+        "id": "bus",
+        "colour": "#ec931f",
+        "fg": "#fff",
+        "name": {
+            "en": "Mango Bus",
+            "zh-Hans": "芒果巴士",
+            "zh-Hant": "芒果巴士"
         }
     }
 ]
