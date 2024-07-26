@@ -1,7 +1,7 @@
 [
     {
         "id": "el",
-        "colour": "#fdba17",
+        "colour": "#ffdc01",
         "fg": "#000",
         "name": {
             "en": "Eastern Line",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sl",
-        "colour": "#ee302a",
+        "colour": "#ee2926",
         "fg": "#fff",
         "name": {
             "en": "Southern Line",
@@ -21,7 +21,7 @@
     },
     {
         "id": "wl",
-        "colour": "#9bc93e",
+        "colour": "#97c93c",
         "fg": "#fff",
         "name": {
             "en": "Western Line",
