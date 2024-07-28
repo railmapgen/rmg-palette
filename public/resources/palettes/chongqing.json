@@ -298,9 +298,9 @@
     },
     {
         "id": "cq27",
-        "colour": "#685BC7",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "2725 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Line 27",
             "zh-Hans": "27号线",
@@ -331,9 +331,9 @@
     },
     {
         "id": "bitong",
-        "colour": "#685BC7",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "2725 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Bitong Line",
             "zh-Hans": "璧铜线",
