@@ -1,7 +1,7 @@
 [
     {
         "id": "cs1",
-        "colour": "#DA291C",
+        "colour": "#e70014",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "cs2",
-        "colour": "#8DC8E8",
+        "colour": "#00b0ec",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "cs3",
-        "colour": "#C0DF16",
+        "colour": "#abcd05",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "cs4",
-        "colour": "#A51890",
+        "colour": "#920882",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "cs5",
-        "colour": "#FFD100",
+        "colour": "#ffe114",
         "fg": "#000",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "cs6",
-        "colour": "#0077C8",
+        "colour": "#005bac",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -120,23 +120,33 @@
         }
     },
     {
-        "id": "intercitytrain",
-        "colour": "#083d23",
+        "id": "s1",
+        "colour": "#083d21",
         "fg": "#fff",
         "name": {
             "en": "Changsha-Zhuzhou-Xiangtan Inter-city Train",
-            "zh-Hans": "长株潭城际（S1）",
-            "zh-Hant": "長株潭城際（S1）"
+            "zh-Hans": "长株潭城际(S1)",
+            "zh-Hant": "長株潭城際(S1)"
         }
     },
     {
-        "id": "maglev",
-        "colour": "#F891A5",
+        "id": "s2",
+        "colour": "#ef91a1",
         "fg": "#fff",
         "name": {
-            "en": "S2",
+            "en": "Line S2",
             "zh-Hans": "S2线",
             "zh-Hant": "S2線"
+        }
+    },
+    {
+        "id": "y1",
+        "colour": "#1da692",
+        "fg": "#fff",
+        "name": {
+            "en": "Dawangshan Tourist Y1",
+            "zh-Hans": "Y1大王山旅游线",
+            "zh-Hant": "Y1大王山旅游線"
         }
     },
     {
@@ -147,16 +157,6 @@
             "en": "Xihuan Line",
             "zh-Hans": "西环线",
             "zh-Hant": "西環線"
-        }
-    },
-    {
-        "id": "bus",
-        "colour": "#ec931f",
-        "fg": "#fff",
-        "name": {
-            "en": "Mango Bus",
-            "zh-Hans": "芒果巴士",
-            "zh-Hant": "芒果巴士"
         }
     }
 ]
