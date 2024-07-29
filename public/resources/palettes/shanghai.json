@@ -181,8 +181,8 @@
     },
     {
         "id": "sh19",
-        "colour": "#40924F",
-        "fg": "#fff",
+        "colour": "#e98e69",
+        "fg": "#000",
         "name": {
             "en": "Line 19",
             "zh-Hans": "19号线",
@@ -191,7 +191,7 @@
     },
     {
         "id": "sh20",
-        "colour": "#435B9E",
+        "colour": "#28a46d",
         "fg": "#fff",
         "name": {
             "en": "Line 20",
@@ -201,7 +201,7 @@
     },
     {
         "id": "sh21",
-        "colour": "#D6C677",
+        "colour": "#eda01f",
         "fg": "#000",
         "name": {
             "en": "Line 21",
@@ -210,8 +210,18 @@
         }
     },
     {
+        "id": "sh22",
+        "colour": "#523674",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
         "id": "sh23",
-        "colour": "#E98D60",
+        "colour": "#9bcb6c",
         "fg": "#000",
         "name": {
             "en": "Line 23",
@@ -230,23 +240,13 @@
         }
     },
     {
-        "id": "chongming",
-        "colour": "#6BB392",
-        "fg": "#000",
-        "name": {
-            "en": "Chongming Line",
-            "zh-Hans": "崇明线",
-            "zh-Hant": "崇明線"
-        }
-    },
-    {
         "id": "jsr",
         "colour": "#000000",
         "fg": "#fff",
         "name": {
-            "zh-Hans": "金山铁路",
-            "en": "Jinshan Railway",
-            "zh-Hant": "金山鐵路"
+            "zh-Hans": "金山线",
+            "en": "Jinshan Line",
+            "zh-Hant": "金山線"
         }
     },
     {
@@ -254,9 +254,59 @@
         "colour": "#009090",
         "fg": "#fff",
         "name": {
-            "en": "Shanghai Maglev Train",
+            "en": "Maglev Line",
             "zh-Hans": "磁浮线",
             "zh-Hant": "磁浮線"
+        }
+    },
+    {
+        "id": "airport",
+        "colour": "#3D6B8A",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Link Line",
+            "zh-Hans": "机场联络线",
+            "zh-Hant": "機場聯絡線"
+        }
+    },
+    {
+        "id": "jiamin",
+        "colour": "#724A57",
+        "fg": "#fff",
+        "name": {
+            "en": "Jiamin Line",
+            "zh-Hans": "嘉闵线",
+            "zh-Hant": "嘉閔線"
+        }
+    },
+    {
+        "id": "nanhui",
+        "colour": "#93ABBB",
+        "fg": "#000",
+        "name": {
+            "en": "Nanhui Branch Line",
+            "zh-Hans": "南汇支线",
+            "zh-Hant": "南匯支線"
+        }
+    },
+    {
+        "id": "shifanqu",
+        "colour": "#6FB16B",
+        "fg": "#000",
+        "name": {
+            "en": "Shifanqu Line",
+            "zh-Hans": "示范区线",
+            "zh-Hant": "示範區線"
+        }
+    },
+    {
+        "id": "nanfeng",
+        "colour": "#4C6DA9",
+        "fg": "#fff",
+        "name": {
+            "en": "Nanfeng Line",
+            "zh-Hans": "南枫线",
+            "zh-Hant": "南楓線"
         }
     },
     {
@@ -317,56 +367,6 @@
             "en": "Songjiang Tram T6",
             "zh-Hans": "松江有轨电车6号线",
             "zh-Hant": "松江有軌電車6號線"
-        }
-    },
-    {
-        "id": "airport",
-        "colour": "#3D6B8A",
-        "fg": "#fff",
-        "name": {
-            "en": "Airport Link Line",
-            "zh-Hans": "机场联络线",
-            "zh-Hant": "機場聯絡線"
-        }
-    },
-    {
-        "id": "jiamin",
-        "colour": "#724A57",
-        "fg": "#fff",
-        "name": {
-            "en": "Jiamin Line",
-            "zh-Hans": "嘉闵线",
-            "zh-Hant": "嘉閔線"
-        }
-    },
-    {
-        "id": "nanhui",
-        "colour": "#93ABBB",
-        "fg": "#000",
-        "name": {
-            "en": "Nanhui Branch Line",
-            "zh-Hans": "南汇支线",
-            "zh-Hant": "南匯支線"
-        }
-    },
-    {
-        "id": "shifanqu",
-        "colour": "#6FB16B",
-        "fg": "#000",
-        "name": {
-            "en": "Shifanqu Line",
-            "zh-Hans": "示范区线",
-            "zh-Hant": "示範區線"
-        }
-    },
-    {
-        "id": "nanfeng",
-        "colour": "#4C6DA9",
-        "fg": "#fff",
-        "name": {
-            "en": "Nanfeng Line",
-            "zh-Hans": "南枫线",
-            "zh-Hant": "南楓線"
         }
     }
 ]
