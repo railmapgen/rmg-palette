@@ -170,6 +170,36 @@
         }
     },
     {
+        "id": "sz17",
+        "colour": "#dcc4cc",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號線"
+        }
+    },
+    {
+        "id": "sz18",
+        "colour": "#0b5b92",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
+    },
+    {
+        "id": "sz19",
+        "colour": "#b60197",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
         "id": "sz20",
         "colour": "#88DBDF",
         "fg": "#fff",
@@ -177,6 +207,126 @@
             "en": "Line 20",
             "zh-Hans": "20号线",
             "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "sz21",
+        "colour": "#8f6740",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "sz22",
+        "colour": "#f2e420",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
+        "id": "sz23",
+        "colour": "#ba3628",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
+        "id": "sz24",
+        "colour": "#78abde",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
+        }
+    },
+    {
+        "id": "sz25",
+        "colour": "#f4a46f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线",
+            "zh-Hant": "25號線"
+        }
+    },
+    {
+        "id": "sz26",
+        "colour": "#958d25",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26",
+            "zh-Hans": "26号线",
+            "zh-Hant": "26號線"
+        }
+    },
+    {
+        "id": "sz27",
+        "colour": "#4f8c90",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27號線"
+        }
+    },
+    {
+        "id": "sz28",
+        "colour": "#e60069",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号线",
+            "zh-Hant": "28號線"
+        }
+    },
+    {
+        "id": "sz29",
+        "colour": "#91cda9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 29",
+            "zh-Hans": "29号线",
+            "zh-Hant": "29號線"
+        }
+    },
+    {
+        "id": "sz30",
+        "colour": "#b68d7b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 30",
+            "zh-Hans": "30号线",
+            "zh-Hant": "30號線"
+        }
+    },
+    {
+        "id": "sz31",
+        "colour": "#603e74",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 31",
+            "zh-Hans": "31号线",
+            "zh-Hant": "31號線"
+        }
+    },
+    {
+        "id": "sz32",
+        "colour": "#980ca0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 32",
+            "zh-Hans": "32号线",
+            "zh-Hant": "32號線"
         }
     },
     {
