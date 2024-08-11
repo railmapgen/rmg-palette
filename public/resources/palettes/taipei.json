@@ -130,23 +130,33 @@
         }
     },
     {
-        "id": "tr",
-        "colour": "#020281",
+        "id": "v",
+        "colour": "#fabeb5",
         "fg": "#fff",
         "name": {
-            "en": "Taiwan Railways",
-            "zh-Hans": "台铁",
-            "zh-Hant": "台鐵"
+            "en": "Danhai LRT",
+            "zh-Hans": "淡海轻轨",
+            "zh-Hant": "淡海輕軌"
         }
     },
     {
-        "id": "hsr",
-        "colour": "#db5426",
+        "id": "k",
+        "colour": "#d8d0ba",
         "fg": "#fff",
         "name": {
-            "en": "Taiwan High Speed Rail",
-            "zh-Hans": "台湾高铁",
-            "zh-Hant": "台灣高鐵"
+            "en": "Ankeng LRT",
+            "zh-Hans": "安坑轻轨",
+            "zh-Hant": "安坑輕軌"
+        }
+    },
+    {
+        "id": "a",
+        "colour": "#d0c6e2",
+        "fg": "#fff",
+        "name": {
+            "en": "Taoyuan Airport MRT",
+            "zh-Hans": "桃园机场捷运",
+            "zh-Hant": "桃園機場捷運"
         }
     }
 ]
