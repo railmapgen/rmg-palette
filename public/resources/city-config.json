@@ -629,6 +629,13 @@
         }
     },
     {
+        "id": "helsinki",
+        "country": "FI",
+        "name": {
+            "en": "Helsinki"
+        }
+    },
+    {
         "id": "hiroshima",
         "country": "JP",
         "name": {
