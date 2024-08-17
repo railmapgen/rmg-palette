@@ -1218,6 +1218,15 @@
         }
     },
     {
+        "id": "nottingham",
+        "country": "GBENG",
+        "name": {
+            "en": "Nottingham",
+            "zh-Hans": "诺丁汉",
+            "zh-Hant": "諾丁漢"
+        }
+    },
+    {
         "id": "novosibirsk",
         "country": "RU",
         "name": {
