@@ -1,0 +1,11 @@
+[
+    {
+        "id": "",
+        "colour": "#00ffff",
+        "fg": "#fff",
+        "name": {
+            "en": "line1",
+            "zh-Hans": "1号线"
+        }
+    }
+]
