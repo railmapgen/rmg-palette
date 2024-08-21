@@ -1,7 +1,7 @@
 [
     {
-        "id": "kl1",
-        "colour": "#0168b3",
+        "id": "KA/C",
+        "colour": "#0000ff",
         "fg": "#fff",
         "name": {
             "en": "KTM Seremban Line",
@@ -11,8 +11,8 @@
         }
     },
     {
-        "id": "kl2",
-        "colour": "#ee2e22",
+        "id": "KB/D",
+        "colour": "#c80000",
         "fg": "#fff",
         "name": {
             "en": "KTM Port Klang Line",
@@ -22,8 +22,8 @@
         }
     },
     {
-        "id": "kl3",
-        "colour": "#f4901d",
+        "id": "AG",
+        "colour": "#ff8000",
         "fg": "#fff",
         "name": {
             "en": "LRT Ampang Line",
@@ -33,7 +33,7 @@
         }
     },
     {
-        "id": "kl4",
+        "id": "SP",
         "colour": "#8b0a02",
         "fg": "#fff",
         "name": {
@@ -44,8 +44,8 @@
         }
     },
     {
-        "id": "kl5",
-        "colour": "#ed154e",
+        "id": "KJ",
+        "colour": "#ff0000",
         "fg": "#fff",
         "name": {
             "en": "LRT Kelana Jaya Line",
@@ -55,7 +55,7 @@
         }
     },
     {
-        "id": "kl6",
+        "id": "KX",
         "colour": "#a0218c",
         "fg": "#fff",
         "name": {
@@ -66,7 +66,7 @@
         }
     },
     {
-        "id": "kl7",
+        "id": "KT",
         "colour": "#00a0b0",
         "fg": "#fff",
         "name": {
@@ -77,7 +77,7 @@
         }
     },
     {
-        "id": "kl8",
+        "id": "MR",
         "colour": "#8bc63e",
         "fg": "#fff",
         "name": {
@@ -88,7 +88,7 @@
         }
     },
     {
-        "id": "kl9",
+        "id": "KG",
         "colour": "#00843d",
         "fg": "#fff",
         "name": {
@@ -99,7 +99,7 @@
         }
     },
     {
-        "id": "kl10",
+        "id": "KS",
         "colour": "#827c00",
         "fg": "#fff",
         "name": {
@@ -110,7 +110,7 @@
         }
     },
     {
-        "id": "kl11",
+        "id": "SA",
         "colour": "#00a5e3",
         "fg": "#fff",
         "name": {
@@ -121,9 +121,9 @@
         }
     },
     {
-        "id": "kl12",
+        "id": "PY",
         "colour": "#fed105",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "MRT Putrajaya Line",
             "ms": "MRT Laluan Putrajaya",
@@ -132,7 +132,7 @@
         }
     },
     {
-        "id": "kl13",
+        "id": "CC",
         "colour": "#685BC7",
         "fg": "#fff",
         "pantone": "2725 C",
@@ -144,7 +144,7 @@
         }
     },
     {
-        "id": "klb1",
+        "id": "SB",
         "colour": "#00502e",
         "fg": "#fff",
         "name": {
