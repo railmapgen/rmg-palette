@@ -181,8 +181,8 @@
     },
     {
         "id": "sh19",
-        "colour": "#40924F",
-        "fg": "#fff",
+        "colour": "#e98e69",
+        "fg": "#000",
         "name": {
             "en": "Line 19",
             "zh-Hans": "19号线",
@@ -191,7 +191,7 @@
     },
     {
         "id": "sh20",
-        "colour": "#435B9E",
+        "colour": "#28a46d",
         "fg": "#fff",
         "name": {
             "en": "Line 20",
@@ -201,7 +201,7 @@
     },
     {
         "id": "sh21",
-        "colour": "#D6C677",
+        "colour": "#eda01f",
         "fg": "#000",
         "name": {
             "en": "Line 21",
@@ -211,7 +211,7 @@
     },
     {
         "id": "sh23",
-        "colour": "#E98D60",
+        "colour": "#9bcb6c",
         "fg": "#000",
         "name": {
             "en": "Line 23",
@@ -230,13 +230,13 @@
         }
     },
     {
-        "id": "chongming",
-        "colour": "#6BB392",
-        "fg": "#000",
+        "id": "sh22",
+        "colour": "#523674",
+        "fg": "#fff",
         "name": {
-            "en": "Chongming Line",
-            "zh-Hans": "崇明线",
-            "zh-Hant": "崇明線"
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
         }
     },
     {
