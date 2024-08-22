@@ -181,7 +181,7 @@
     },
     {
         "id": "sh19",
-        "colour": "#e98e69",
+        "colour": "#F4A570",
         "fg": "#000",
         "name": {
             "en": "Line 19",
@@ -191,7 +191,7 @@
     },
     {
         "id": "sh20",
-        "colour": "#28a46d",
+        "colour": "#009F5D",
         "fg": "#fff",
         "name": {
             "en": "Line 20",
@@ -201,7 +201,7 @@
     },
     {
         "id": "sh21",
-        "colour": "#eda01f",
+        "colour": "#EEA900",
         "fg": "#000",
         "name": {
             "en": "Line 21",
@@ -210,8 +210,18 @@
         }
     },
     {
+        "id": "sh22",
+        "colour": "#56426F",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
         "id": "sh23",
-        "colour": "#9bcb6c",
+        "colour": "#A8CC80",
         "fg": "#000",
         "name": {
             "en": "Line 23",
@@ -227,16 +237,6 @@
             "en": "Pujiang Line",
             "zh-Hans": "浦江线",
             "zh-Hant": "浦江線"
-        }
-    },
-    {
-        "id": "sh22",
-        "colour": "#523674",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 22",
-            "zh-Hans": "22号线",
-            "zh-Hant": "22號線"
         }
     },
     {
