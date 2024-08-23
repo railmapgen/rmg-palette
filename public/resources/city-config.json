@@ -1912,5 +1912,14 @@
             "zh-Hans": "镇江",
             "zh-Hant": "鎮江"
         }
+    },
+    {
+        "id": "zhongshan",
+        "country": "CN",
+        "name": {
+            "en": "Zhongshan",
+            "zh-Hans": "中山",
+            "zh-Hant": "中山"
+        }
     }
 ]
