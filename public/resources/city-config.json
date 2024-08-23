@@ -930,6 +930,15 @@
         }
     },
     {
+        "id": "lv",
+        "country": "US",
+        "name": {
+            "en": "Las Vegas",
+            "zh-Hans": "拉斯维加斯",
+            "zh-Hant": "拉斯維加斯"
+        }
+    },
+    {
         "id": "lyon",
         "country": "FR",
         "name": {
