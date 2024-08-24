@@ -40,6 +40,16 @@
         }
     },
     {
+        "id": "fs5",
+        "colour": "#018a3e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
         "id": "fs6",
         "colour": "#FFB81D",
         "fg": "#fff",
