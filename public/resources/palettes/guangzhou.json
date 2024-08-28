@@ -188,7 +188,7 @@
     },
     {
         "id": "gz18",
-        "colour": "#0047BA",
+        "colour": "#3040b6",
         "fg": "#fff",
         "name": {
             "en": "Line 18",
@@ -231,7 +231,7 @@
     },
     {
         "id": "gz22",
-        "colour": "#CD5228",
+        "colour": "#d24c1e",
         "fg": "#fff",
         "name": {
             "en": "Line 22",
@@ -273,7 +273,7 @@
     },
     {
         "id": "thz1",
-        "colour": "#43B02A",
+        "colour": "#61c013",
         "fg": "#fff",
         "name": {
             "en": "THZ1 (Haizhu Tram Line 1)",
@@ -283,7 +283,7 @@
     },
     {
         "id": "thp1",
-        "colour": "#D42D1B",
+        "colour": "#c11b20",
         "fg": "#fff",
         "name": {
             "en": "THP1 (Huangpu Tram Line 1)",
@@ -293,7 +293,7 @@
     },
     {
         "id": "thp2",
-        "colour": "#e82583",
+        "colour": "#e50083",
         "fg": "#fff",
         "name": {
             "en": "THP2 (Huangpu Tram Line 2)",
@@ -313,7 +313,7 @@
     },
     {
         "id": "gdcj",
-        "colour": "#2c569e",
+        "colour": "#255aa8",
         "fg": "#fff",
         "name": {
             "en": "Guangdong Intercity",
