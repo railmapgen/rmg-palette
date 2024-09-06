@@ -937,6 +937,15 @@
         }
     },
     {
+        "id": "lv",
+        "country": "US",
+        "name": {
+            "en": "Las Vegas",
+            "zh-Hans": "拉斯维加斯",
+            "zh-Hant": "拉斯維加斯"
+        }
+    },
+    {
         "id": "lyon",
         "country": "FR",
         "name": {
@@ -1213,6 +1222,15 @@
             "en": "Ningbo",
             "zh-Hans": "宁波",
             "zh-Hant": "寧波"
+        }
+    },
+    {
+        "id": "nottingham",
+        "country": "GBENG",
+        "name": {
+            "en": "Nottingham",
+            "zh-Hans": "诺丁汉",
+            "zh-Hant": "諾丁漢"
         }
     },
     {
