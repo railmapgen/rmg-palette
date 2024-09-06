@@ -159,6 +159,13 @@
         "language": "es"
     },
     {
+        "id": "FI",
+        "name": {
+            "en": "Finland"
+        },
+        "language": "sv"
+    },
+    {
         "id": "FR",
         "name": {
             "en": "France",
