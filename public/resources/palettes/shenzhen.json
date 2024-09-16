@@ -160,6 +160,16 @@
         }
     },
     {
+        "id": "sz17",
+        "colour": "#d3c0cd",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號線"
+        }
+    },
+    {
         "id": "sz16",
         "colour": "#1E22AA",
         "fg": "#fff",
