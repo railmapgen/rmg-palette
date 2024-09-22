@@ -48,5 +48,15 @@
             "zh-Hans": "5号线",
             "zh-Hant": "5號缐"
         }
+    },
+    {
+        "id": "nb6",
+        "colour": "#006941",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號缐"
+        }
     }
 ]
