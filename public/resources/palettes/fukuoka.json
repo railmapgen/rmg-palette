@@ -1,0 +1,38 @@
+[
+    {
+        "id": "fuk1",
+        "colour": "#ee5511",
+        "fg": "#fff",
+        "name": {
+            "en": "Kūkō Line (Airport Line)",
+            "zh-Hans": "机场线",
+            "ja": "空港線",
+            "ko": "공항선",
+            "zh-Hant": "機場線"
+        }
+    },
+    {
+        "id": "fuk2",
+        "colour": "#0077cc",
+        "fg": "#fff",
+        "name": {
+            "en": "Hakozaki Line",
+            "zh-Hans": "箱崎线",
+            "ja": "箱崎線",
+            "ko": "하코자키선",
+            "zh-Hant": "箱崎線"
+        }
+    },
+    {
+        "id": "fuk3",
+        "colour": "#00936b",
+        "fg": "#fff",
+        "name": {
+            "en": "Nanakuma Line",
+            "zh-Hans": "七隈线",
+            "ja": "七隈線",
+            "ko": "나나쿠마선",
+            "zh-Hant": "七隈線"
+        }
+    }
+]

@@ -473,6 +473,17 @@
         }
     },
     {
+        "id": "fukuoka",
+        "country": "JP",
+        "name": {
+            "en": "Fukuoka",
+            "zh-Hans": "福冈",
+            "ja": "福岡",
+            "ko": "후쿠오카",
+            "zh-Hant": "福岡"
+        }
+    },
+    {
         "id": "fuzhou",
         "country": "CN",
         "name": {
