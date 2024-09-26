@@ -1,0 +1,112 @@
+[
+    {
+        "id": "syskn",
+        "colour": "#0068b7",
+        "fg": "#fff",
+        "name": {
+            "en": "Sanyo Shinkansen",
+            "zh-Hans": "山阳新干线",
+            "zh-Hant": "山陽新幹線",
+            "ja": "さんようしんかんせん"
+        }
+    },
+    {
+        "id": "tkdshn",
+        "colour": "#ec9b44",
+        "fg": "#fff",
+        "name": {
+            "en": "Tokaido Shinkansen",
+            "zh-Hans": "东海道新干线",
+            "zh-Hant": "東海道新幹線",
+            "ja": "とうかいどうしんかんせん"
+        }
+    },
+    {
+        "id": "tkdskn",
+        "colour": "#ee6d00",
+        "fg": "#fff",
+        "name": {
+            "en": "Yamagata Shinkansen",
+            "zh-Hans": "山形新干线",
+            "zh-Hant": "山形新幹線",
+            "ja": "とうかいどうしんかんせん"
+        }
+    },
+    {
+        "id": "jetskn",
+        "colour": "#dc143c",
+        "fg": "#fff",
+        "name": {
+            "en": "Joetsu Shinkansen",
+            "zh-Hans": "上越新干线",
+            "zh-Hant": "上越新幹線",
+            "ja": "じょうえつしんかんせん"
+        }
+    },
+    {
+        "id": "aktskn",
+        "colour": "#eb449b",
+        "fg": "#fff",
+        "name": {
+            "en": "Akita Shinkansen",
+            "zh-Hans": "秋田新干线",
+            "zh-Hant": "秋田新幹線",
+            "ja": "あきたしんかんせん"
+        }
+    },
+    {
+        "id": "thkskn",
+        "colour": "#0e860e",
+        "fg": "#fff",
+        "name": {
+            "en": "Tohoku Shinkansen",
+            "zh-Hans": "东北新干线",
+            "zh-Hant": "東北新幹線",
+            "ja": "とうほくしんかんせん"
+        }
+    },
+    {
+        "id": "hkrkskn",
+        "colour": "#a5592a",
+        "fg": "#fff",
+        "name": {
+            "en": "Hokuriku Shinkansen",
+            "zh-Hans": "北陆新干线",
+            "zh-Hant": "北陸新幹線",
+            "ja": "ほくりくしんかんせん"
+        }
+    },
+    {
+        "id": "hkdskn",
+        "colour": "#44cc44",
+        "fg": "#fff",
+        "name": {
+            "en": "Hokkaido Shinkansen",
+            "zh-Hans": "北海道新干线",
+            "zh-Hant": "北海道新幹線",
+            "ja": "ほっかいどうしんかんせん"
+        }
+    },
+    {
+        "id": "nksshn",
+        "colour": "#fb1516",
+        "fg": "#fff",
+        "name": {
+            "en": "Nishikyushu Shinkansen",
+            "zh-Hans": "西九州新干线",
+            "zh-Hant": "西九州新幹線",
+            "ja": "にしきゅうしゅうしんかんせん"
+        }
+    },
+    {
+        "id": "ksshn",
+        "colour": "#e24147",
+        "fg": "#fff",
+        "name": {
+            "en": "Kyushu Shinkansen",
+            "zh-Hans": "九州新干线",
+            "zh-Hant": "九州新幹線",
+            "ja": "きゅうしゅうしんかんせん"
+        }
+    }
+]

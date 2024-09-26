@@ -1551,6 +1551,16 @@
         }
     },
     {
+        "id": "shinkansen",
+        "country": "JP",
+        "name": {
+            "en": "Shinkansen",
+            "zh-Hans": "新干线",
+            "ja": "新幹線",
+            "zh-Hant": "新幹線"
+        }
+    },
+    {
         "id": "shiraz",
         "country": "IR",
         "name": {
