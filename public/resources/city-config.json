@@ -317,6 +317,14 @@
         }
     },
     {
+        "id": "cknt",
+        "country": "IE",
+        "name": {
+            "en": "Cork Kent",
+            "ga": "Corcaigh Ceannt"
+        }
+    },
+    {
         "id": "cochabamba",
         "country": "BO",
         "name": {

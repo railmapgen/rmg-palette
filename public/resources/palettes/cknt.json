@@ -1,0 +1,22 @@
+[
+    {
+        "id": "int",
+        "colour": "#148f16",
+        "fg": "#fff",
+        "name": {
+            "en": "InterCity",
+            "zh-Hans": "                   ",
+            "zh-Hant": "                 "
+        }
+    },
+    {
+        "id": "cmu",
+        "colour": "#c0c0c0",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter",
+            "zh-Hans": "                     ",
+            "zh-Hant": "                         "
+        }
+    }
+]
