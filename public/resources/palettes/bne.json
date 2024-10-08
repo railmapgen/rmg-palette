@@ -1,7 +1,7 @@
 [
     {
         "id": "fgbn",
-        "colour": "#e31837",
+        "colour": "#ef464e",
         "fg": "#fff",
         "name": {
             "en": "Ferny Grove and Beenleigh lines",
@@ -12,7 +12,7 @@
     },
     {
         "id": "shcl",
-        "colour": "#00467f",
+        "colour": "#4f84c4",
         "fg": "#fff",
         "name": {
             "en": "Shorncliffe and Cleveland lines",
@@ -23,8 +23,8 @@
     },
     {
         "id": "bdvl",
-        "colour": "#ffc425",
-        "fg": "#fff",
+        "colour": "#fff200",
+        "fg": "#000",
         "name": {
             "en": "Airport and Gold Coast lines",
             "ko": "공항과 골드코스트",
@@ -34,7 +34,7 @@
     },
     {
         "id": "gyrw",
-        "colour": "#008752",
+        "colour": "#00aa4f",
         "fg": "#fff",
         "name": {
             "en": "Caboolture/Sunshine Coast and Ipswich/Rosewood lines",
@@ -45,7 +45,7 @@
     },
     {
         "id": "rpsp",
-        "colour": "#1578be",
+        "colour": "#4ec9f5",
         "fg": "#fff",
         "name": {
             "en": "Redcliffe Peninsula and Springfield lines",
@@ -56,24 +56,13 @@
     },
     {
         "id": "dbbr",
-        "colour": "#a54399",
+        "colour": "#bf67a9",
         "fg": "#fff",
         "name": {
             "en": "Doomben line",
             "ko": "돔 본선",
             "zh-Hans": "多姆本线",
             "zh-Hant": "多姆本線"
-        }
-    },
-    {
-        "id": "sp",
-        "colour": "#435860",
-        "fg": "#fff",
-        "name": {
-            "en": "Special event service only",
-            "ko": "특별 행사 기간에만 운영",
-            "zh-Hans": "仅特殊活动期间运营",
-            "zh-Hant": "僅特殊活動期間運營"
         }
     },
     {
@@ -89,7 +78,7 @@
     },
     {
         "id": "glks",
-        "colour": "#f9c822",
+        "colour": "#fff200",
         "fg": "#fff",
         "name": {
             "en": "G:link Tram",
