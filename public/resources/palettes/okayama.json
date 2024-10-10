@@ -1,0 +1,24 @@
+[
+    {
+        "id": "oh1",
+        "colour": "#e5330d",
+        "fg": "#fff",
+        "name": {
+            "en": "Higashiyama Line",
+            "zh-Hans": "东山线",
+            "ja": "東山線",
+            "zh-Hant": "東山線"
+        }
+    },
+    {
+        "id": "oh2",
+        "colour": "#3d7f44",
+        "fg": "#fff",
+        "name": {
+            "en": "Seikibashi Line",
+            "zh-Hans": "清辉桥线",
+            "ja": "清輝橋線",
+            "zh-Hant": "清會橋線"
+        }
+    }
+]
