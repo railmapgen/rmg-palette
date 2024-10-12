@@ -1254,6 +1254,16 @@
         }
     },
     {
+        "id": "okayama",
+        "country": "JP",
+        "name": {
+            "en": "Okayama",
+            "zh-Hans": "冈山",
+            "zh-Hant": "岡山",
+            "ja": "岡山"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
