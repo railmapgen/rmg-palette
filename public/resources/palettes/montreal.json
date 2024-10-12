@@ -52,5 +52,60 @@
             "zh-Hans": "大都会快速网络",
             "zh-Hant": "大都會快速網絡"
         }
+    },
+    {
+        "id": "e11",
+        "colour": "#f26178",
+        "fg": "#000",
+        "name": {
+            "en": "Line 11- Vaudreuil/Hudson",
+            "zh-Hans": "11-沃德勒伊-哈德孙线",
+            "zh-Hant": "11-沃德勒伊-哈德孫綫",
+            "fr": "Ligne 11- Vaudreuil/Hudson"
+        }
+    },
+    {
+        "id": "e12",
+        "colour": "#ffdf7e",
+        "fg": "#000",
+        "name": {
+            "en": "Line 12- Saint-Jérôme",
+            "zh-Hans": "12-圣热罗姆线",
+            "zh-Hant": "12-聖熱羅姆綫",
+            "fr": "Ligne 12- Saint-Jérôme"
+        }
+    },
+    {
+        "id": "e13",
+        "colour": "#9a98c8",
+        "fg": "#000",
+        "name": {
+            "en": "Line 13- Mont-Saint-Hilaire",
+            "zh-Hans": "13-圣希莱尔山线",
+            "zh-Hant": "13-聖希萊爾山綫",
+            "fr": "Ligne 13- Mont-Saint-Hilaire"
+        }
+    },
+    {
+        "id": "e14",
+        "colour": "#57b6b2",
+        "fg": "#000",
+        "name": {
+            "en": "Line 14- Candiac",
+            "zh-Hans": "14-坎迪亚克线",
+            "zh-Hant": "14-坎迪亞尅綫",
+            "fr": "Ligne 14- Candiac"
+        }
+    },
+    {
+        "id": "e15",
+        "colour": "#cc5599",
+        "fg": "#000",
+        "name": {
+            "en": "Line 15- Mascouche",
+            "zh-Hans": "15-马斯库什线",
+            "zh-Hant": "15-馬斯庫什綫",
+            "fr": "Ligne 15- Mascouche"
+        }
     }
 ]

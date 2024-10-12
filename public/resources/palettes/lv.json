@@ -1,0 +1,12 @@
+[
+    {
+        "id": "monorail",
+        "colour": "#061a6c",
+        "fg": "#fff",
+        "name": {
+            "en": "Las Vegas Monorail",
+            "zh-Hans": "拉斯维加斯单轨",
+            "zh-Hant": "拉斯維加斯單軌"
+        }
+    }
+]
