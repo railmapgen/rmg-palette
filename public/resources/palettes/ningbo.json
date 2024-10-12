@@ -1,7 +1,7 @@
 [
     {
         "id": "nb1",
-        "colour": "#1a88bd",
+        "colour": "#208fbe",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "nb2",
-        "colour": "#bd1c21",
+        "colour": "#d51519",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "nb3",
-        "colour": "#ebaf19",
+        "colour": "#f09812",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,8 +31,8 @@
     },
     {
         "id": "nb4",
-        "colour": "#7eb244",
-        "fg": "#fff",
+        "colour": "#abcc1d",
+        "fg": "#000",
         "name": {
             "en": "Line 4",
             "zh-Hans": "4号线",
@@ -41,12 +41,152 @@
     },
     {
         "id": "nb5",
-        "colour": "#4d4399",
+        "colour": "#202084",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號缐"
+        }
+    },
+    {
+        "id": "nb6",
+        "colour": "#006937",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號缐"
+        }
+    },
+    {
+        "id": "nb7",
+        "colour": "#663300",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號缐"
+        }
+    },
+    {
+        "id": "nb8",
+        "colour": "#e10080",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號缐"
+        }
+    },
+    {
+        "id": "nb9",
+        "colour": "#91477b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號缐"
+        }
+    },
+    {
+        "id": "nb10",
+        "colour": "#c38eb8",
+        "fg": "#000",
+        "name": {
+            "en": "Line 10(Ningbo-Cixi Line)",
+            "zh-Hans": "10号线（宁慈线）",
+            "zh-Hant": "10號缐（寧慈線）"
+        }
+    },
+    {
+        "id": "nb11",
+        "colour": "#9bd4e1",
+        "fg": "#000",
+        "name": {
+            "en": "Line 11(Ningbo-Yuyao Line)",
+            "zh-Hans": "11号线（宁余线）",
+            "zh-Hant": "11號線（寧餘線）"
+        }
+    },
+    {
+        "id": "nb12",
+        "colour": "#42bdca",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12(Ningbo-Xiangshan Line)",
+            "zh-Hans": "12号线（宁象线）",
+            "zh-Hant": "12號線（寧象線）"
+        }
+    },
+    {
+        "id": "nb13",
+        "colour": "#18987d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號線"
+        }
+    },
+    {
+        "id": "nb14",
+        "colour": "#a1302d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 14(Line N1)",
+            "zh-Hans": "14号线（N1线）",
+            "zh-Hant": "14號線（N1線）"
+        }
+    },
+    {
+        "id": "nb15",
+        "colour": "#b27115",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15(Line N2)",
+            "zh-Hans": "15号线（N2线）",
+            "zh-Hant": "15號線（N2線）"
+        }
+    },
+    {
+        "id": "nb16",
+        "colour": "#00606d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16(Line N3)",
+            "zh-Hans": "16号线（N3线）",
+            "zh-Hant": "16號線（N3線）"
+        }
+    },
+    {
+        "id": "nb17",
+        "colour": "#e72755",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17(Line N4)",
+            "zh-Hans": "17号线（N4线）",
+            "zh-Hant": "17號線（N4線）"
+        }
+    },
+    {
+        "id": "nb18",
+        "colour": "#fcd545",
+        "fg": "#000",
+        "name": {
+            "en": "Line 18(Line N5)",
+            "zh-Hans": "18号线（N5线）",
+            "zh-Hant": "18號線（N5線）"
+        }
+    },
+    {
+        "id": "nb19",
+        "colour": "#3ca5c4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19(Line N6)",
+            "zh-Hans": "19号线（N6线）",
+            "zh-Hant": "19號線（N6線）"
         }
     }
 ]
