@@ -1,7 +1,7 @@
 [
     {
         "id": "nb1",
-        "colour": "#1a88bd",
+        "colour": "#1590cb",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "nb2",
-        "colour": "#bd1c21",
+        "colour": "#d80e19",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "nb3",
-        "colour": "#ebaf19",
+        "colour": "#ff9800",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "nb4",
-        "colour": "#7eb244",
+        "colour": "#81ba2d",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,12 +41,62 @@
     },
     {
         "id": "nb5",
-        "colour": "#4d4399",
+        "colour": "#0a1f8f",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號缐"
+        }
+    },
+    {
+        "id": "nb6",
+        "colour": "#167f3d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號缐"
+        }
+    },
+    {
+        "id": "nb7",
+        "colour": "#7c572d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號缐"
+        }
+    },
+    {
+        "id": "nb8",
+        "colour": "#d33a94",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號缐"
+        }
+    },
+    {
+        "id": "nb10",
+        "colour": "#9a8dc3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10",
+            "zh-Hans": "10号线",
+            "zh-Hant": "10號缐"
+        }
+    },
+    {
+        "id": "nb12",
+        "colour": "#42bdca",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號缐"
         }
     }
 ]
