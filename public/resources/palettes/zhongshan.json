@@ -1,12 +1,12 @@
 [
     {
-        "id": "gz18s",
-        "colour": "#0047ba",
+        "id": "gz18",
+        "colour": "#3040b6",
         "fg": "#fff",
         "name": {
-            "en": "Guangzhou Metro Line 18 South Extension Section (Nanzhong Intercity)",
-            "zh-Hans": "广州地铁18号线南延段（南中城际）",
-            "zh-Hant": "廣州地鐵18號線南延段（南中城際）"
+            "en": "Guangzhou Line 18",
+            "zh-Hans": "广州18号线",
+            "zh-Hant": "廣州18號線"
         }
     }
 ]
