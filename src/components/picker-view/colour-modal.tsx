@@ -129,7 +129,7 @@ export default function ColourModal(props: ColourModalProps) {
                         setLineCode(line);
                         setBgColour(bg);
                         setFgColour(fg);
-                        pantone && setPantoneCode(pantone);
+                        if (pantone) setPantoneCode(pantone);
                     }}
                     onSubmit={handleSubmit}
                 />

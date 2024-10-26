@@ -31,7 +31,7 @@ export default function TicketView() {
                     setDraftTicket(draftTicket);
                     setIsUnsavedDraftModalOpen(true);
                 }
-            } catch (e) {
+            } catch {
                 logger.error('<TicketView/>, unable to restore draft ticket', draftTicketStr);
             }
         }
