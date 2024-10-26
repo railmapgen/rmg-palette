@@ -78,7 +78,7 @@
     },
     {
         "id": "br7",
-        "colour": "#fcf26f",
+        "colour": "#ece354",
         "fg": "#000",
         "name": {
             "en": "Tram Line 7",
@@ -111,7 +111,7 @@
     },
     {
         "id": "br10",
-        "colour": "#9d8eb3",
+        "colour": "#7d489c",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 10",
@@ -158,10 +158,10 @@
         "colour": "#ec4838",
         "fg": "#fff",
         "name": {
-            "en": "Bus Line 17/28/46/54/57/64",
-            "fr": "Autobus Ligne 17/28/46/54/57/64",
-            "zh-Hans": "巴士线路17/28/46/54/57/64",
-            "zh-Hant": "巴士線路17/28/46/54/57/64"
+            "en": "Bus Line 17/28/46/47/54/57/64",
+            "fr": "Autobus Ligne 17/28/46/47/54/57/64",
+            "zh-Hans": "巴士线路17/28/46/47/54/57/64",
+            "zh-Hant": "巴士線路17/28/46/47/54/57/64"
         }
     },
     {
@@ -217,6 +217,17 @@
             "fr": "Autobus Ligne 29/48/56/69",
             "zh-Hans": "巴士线路29/48/56/69",
             "zh-Hant": "巴士線路29/48/56/69"
+        }
+    },
+    {
+        "id": "br35",
+        "colour": "#316797",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 35",
+            "fr": "Tramway Ligne 35",
+            "zh-Hans": "电车35号线",
+            "zh-Hant": "電車35號線"
         }
     },
     {
