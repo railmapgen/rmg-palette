@@ -1,31 +1,14 @@
-import {
-    Button,
-    Divider,
-    Flex,
-    Heading,
-    HStack,
-    IconButton,
-    SystemStyleObject,
-    Wrap,
-    WrapItem,
-} from '@chakra-ui/react';
+import { Button, Divider, Flex, HStack, SystemStyleObject } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
 import { ColourHex, MonoColour, Theme } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import {
-    RmgButtonGroup,
-    RmgFields,
-    RmgFieldsField,
-    RmgLineBadge,
-    RmgSection,
-    RmgSectionHeader,
-} from '@railmapgen/rmg-components';
+import { RmgButtonGroup, RmgFields, RmgFieldsField, RmgLineBadge, RmgSection } from '@railmapgen/rmg-components';
 import { useRootSelector } from '../../redux';
-import { MdCircle } from 'react-icons/md';
 import PantoneChecker from '../ticket-view/pantone-checker';
 import PantoneInput from '../common/pantone-input';
+import RecentlyUsed from './recently-used';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
@@ -67,14 +50,13 @@ interface ColourModalProps {
     sessionId?: string;
     onSubmit?: (theme: Theme, displayName?: string) => void;
     onClose: () => void;
-    onClearHistory: () => void;
 }
 
 export default function ColourModal(props: ColourModalProps) {
-    const { defaultTheme, sessionId, onSubmit, onClose, onClearHistory } = props;
+    const { defaultTheme, sessionId, onSubmit, onClose } = props;
 
     const { t } = useTranslation();
-    const { recentlyUsed, pantoneReady } = useRootSelector(state => state.app);
+    const { pantoneReady } = useRootSelector(state => state.app);
 
     const [cityCode, setCityCode] = useState(defaultTheme?.[0]);
     const [lineCode, setLineCode] = useState(defaultTheme?.[1]);
@@ -234,34 +216,7 @@ export default function ColourModal(props: ColourModalProps) {
                     <RmgFields fields={customFields} />
                 </RmgSection>
 
-                <section>
-                    <RmgSectionHeader>
-                        <Heading as="h5" size="xs">
-                            {t('Recently used')}
-                        </Heading>
-
-                        <Button variant="ghost" size="xs" onClick={onClearHistory}>
-                            {t('Clear')}
-                        </Button>
-                    </RmgSectionHeader>
-
-                    <Wrap>
-                        {recentlyUsed.map(({ theme, displayName }) => (
-                            <WrapItem key={theme.join('-')}>
-                                <IconButton
-                                    size="xs"
-                                    aria-label={t('Apply')}
-                                    title={displayName}
-                                    mt="0.45px"
-                                    color={theme[3]}
-                                    bg={theme[2]}
-                                    icon={<MdCircle />}
-                                    onClick={() => handleApply(theme)}
-                                />
-                            </WrapItem>
-                        ))}
-                    </Wrap>
-                </section>
+                <RecentlyUsed onApply={handleApply} />
             </Flex>
 
             <Divider />
