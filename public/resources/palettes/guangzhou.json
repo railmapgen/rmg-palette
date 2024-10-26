@@ -111,9 +111,8 @@
     },
     {
         "id": "gz11",
-        "colour": "#470A68",
-        "fg": "#fff",
-        "pantone": "2617 C",
+        "colour": "#ffb00a",
+        "fg": "#000",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
