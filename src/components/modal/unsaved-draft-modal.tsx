@@ -33,7 +33,7 @@ export default function UnsavedDraftModal(props: DiscardDraftModalProps) {
     };
 
     const handleContinue = () => {
-        incomingState && dispatch(resetTicket(incomingState));
+        if (incomingState) dispatch(resetTicket(incomingState));
         onClose();
     };
 

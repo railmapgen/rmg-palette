@@ -85,18 +85,16 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
     },
 };
 
-const DATA_SOURCES = [
-    'OFFICIAL_WEBSITE',
-    'SOCIAL_MEDIA',
-    'GOVERNMENT',
-    'INTERNAL',
-    'WEBSITE_SOURCE_CODE',
-    'PDF',
-    'LOSSY',
-    'WIKIPEDIA',
-    'OTHER',
-] as const;
-export type DataSource = (typeof DATA_SOURCES)[number];
+export type DataSource =
+    | 'OFFICIAL_WEBSITE'
+    | 'SOCIAL_MEDIA'
+    | 'GOVERNMENT'
+    | 'INTERNAL'
+    | 'WEBSITE_SOURCE_CODE'
+    | 'PDF'
+    | 'LOSSY'
+    | 'WIKIPEDIA'
+    | 'OTHER';
 
 export const DATA_SOURCE_DISPLAY_TEXT: Record<DataSource, Translation> = {
     OFFICIAL_WEBSITE: {
