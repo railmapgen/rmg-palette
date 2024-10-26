@@ -53,7 +53,7 @@ describe('ColourPicker', () => {
         // select THZ1
         await user.click(thz1Option);
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
-        expect(mockCallbacks.onChange).toBeCalledWith('thz1', '#43B02A', '#fff', undefined);
+        expect(mockCallbacks.onChange).toBeCalledWith('thz1', '#61c013', '#fff', undefined);
     });
 
     it('Can reload list of palette when city prop is changed', async () => {

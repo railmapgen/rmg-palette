@@ -159,6 +159,13 @@
         "language": "es"
     },
     {
+        "id": "FI",
+        "name": {
+            "en": "Finland"
+        },
+        "language": "sv"
+    },
+    {
         "id": "FR",
         "name": {
             "en": "France",
@@ -371,6 +378,15 @@
             "zh-Hant": "挪威"
         },
         "language": "no"
+    },
+    {
+        "id": "NZ",
+        "name": {
+            "en": "New Zealand",
+            "zh-Hans": "新西兰",
+            "zh-Hant": "紐西蘭"
+        },
+        "language": "en"
     },
     {
         "id": "PA",
