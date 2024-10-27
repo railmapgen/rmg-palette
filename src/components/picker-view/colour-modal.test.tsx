@@ -9,7 +9,6 @@ import { MonoColour } from '@railmapgen/rmg-palette-resources';
 const mockCallbacks = {
     onClose: vi.fn(),
     onSubmit: vi.fn(),
-    onClearHistory: vi.fn(),
 };
 
 const realStore = rootReducer.getState();
@@ -59,7 +58,7 @@ describe('ColourModal', () => {
         );
 
         // apply history will reset colour mode
-        await user.click(screen.getByRole('button', { name: 'Apply' }));
+        await user.click(screen.getByRole('button', { name: /^Apply/ }));
         expect(screen.getByRole('checkbox', { name: 'Select' })).toBeChecked();
         expect(screen.queryByRole('combobox', { name: 'Pantone® code' })).not.toBeInTheDocument();
     });

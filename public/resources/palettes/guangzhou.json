@@ -111,9 +111,8 @@
     },
     {
         "id": "gz11",
-        "colour": "#470A68",
-        "fg": "#fff",
-        "pantone": "2617 C",
+        "colour": "#ffb00a",
+        "fg": "#000",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
@@ -188,7 +187,7 @@
     },
     {
         "id": "gz18",
-        "colour": "#0047BA",
+        "colour": "#3040b6",
         "fg": "#fff",
         "name": {
             "en": "Line 18",
@@ -231,7 +230,7 @@
     },
     {
         "id": "gz22",
-        "colour": "#CD5228",
+        "colour": "#d24c1e",
         "fg": "#fff",
         "name": {
             "en": "Line 22",
@@ -273,7 +272,7 @@
     },
     {
         "id": "thz1",
-        "colour": "#43B02A",
+        "colour": "#61c013",
         "fg": "#fff",
         "name": {
             "en": "THZ1 (Haizhu Tram Line 1)",
@@ -283,7 +282,7 @@
     },
     {
         "id": "thp1",
-        "colour": "#D42D1B",
+        "colour": "#c11b20",
         "fg": "#fff",
         "name": {
             "en": "THP1 (Huangpu Tram Line 1)",
@@ -293,7 +292,7 @@
     },
     {
         "id": "thp2",
-        "colour": "#e82583",
+        "colour": "#e50083",
         "fg": "#fff",
         "name": {
             "en": "THP2 (Huangpu Tram Line 2)",
@@ -309,6 +308,16 @@
             "en": "Foshan Metro",
             "zh-Hans": "佛山地铁",
             "zh-Hant": "佛山地鐵"
+        }
+    },
+    {
+        "id": "gdcj",
+        "colour": "#255aa8",
+        "fg": "#fff",
+        "name": {
+            "en": "Guangdong Intercity",
+            "zh-Hans": "广东城际",
+            "zh-Hant": "廣東城際"
         }
     }
 ]

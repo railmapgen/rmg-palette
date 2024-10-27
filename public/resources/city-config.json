@@ -49,6 +49,15 @@
         }
     },
     {
+        "id": "auckland",
+        "country": "NZ",
+        "name": {
+            "en": "Auckland",
+            "zh-Hans": "奥克兰",
+            "zh-Hant": "奧克蘭"
+        }
+    },
+    {
         "id": "baku",
         "country": "AZ",
         "name": {
@@ -620,6 +629,13 @@
         }
     },
     {
+        "id": "helsinki",
+        "country": "FI",
+        "name": {
+            "en": "Helsinki"
+        }
+    },
+    {
         "id": "hiroshima",
         "country": "JP",
         "name": {
@@ -774,6 +790,17 @@
         }
     },
     {
+        "id": "kobe",
+        "country": "JP",
+        "name": {
+            "en": "Kobe",
+            "zh-Hans": "神户",
+            "zh-Hant": "神户",
+            "ja": "神户",
+            "ko": "고베"
+        }
+    },
+    {
         "id": "kunming",
         "country": "CN",
         "name": {
@@ -907,6 +934,15 @@
             "en": "Luoyang",
             "zh-Hans": "洛阳",
             "zh-Hant": "洛陽"
+        }
+    },
+    {
+        "id": "lv",
+        "country": "US",
+        "name": {
+            "en": "Las Vegas",
+            "zh-Hans": "拉斯维加斯",
+            "zh-Hant": "拉斯維加斯"
         }
     },
     {
@@ -1189,6 +1225,15 @@
         }
     },
     {
+        "id": "nottingham",
+        "country": "GBENG",
+        "name": {
+            "en": "Nottingham",
+            "zh-Hans": "诺丁汉",
+            "zh-Hant": "諾丁漢"
+        }
+    },
+    {
         "id": "novosibirsk",
         "country": "RU",
         "name": {
@@ -1206,6 +1251,16 @@
             "zh-Hans": "纽伦堡",
             "zh-Hant": "紐倫堡",
             "de": "Nürnberg"
+        }
+    },
+    {
+        "id": "okayama",
+        "country": "JP",
+        "name": {
+            "en": "Okayama",
+            "zh-Hans": "冈山",
+            "zh-Hant": "岡山",
+            "ja": "岡山"
         }
     },
     {
@@ -1856,6 +1911,15 @@
             "en": "Zhenjiang",
             "zh-Hans": "镇江",
             "zh-Hant": "鎮江"
+        }
+    },
+    {
+        "id": "zhongshan",
+        "country": "CN",
+        "name": {
+            "en": "Zhongshan",
+            "zh-Hans": "中山",
+            "zh-Hant": "中山"
         }
     }
 ]

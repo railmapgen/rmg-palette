@@ -35,7 +35,7 @@ export default function PantoneInput(props: PantoneInputProps) {
             const hex = await getRGBByPantone(nextValue, controllerRef.current.signal);
             onChange(nextValue, hex);
             setPantoneCode(nextValue);
-        } catch (e) {
+        } catch {
             console.warn(`[rmg-palette] Unable to find Pantone colour ${nextValue}`);
             // force update and reset
             flushSync(() => {
