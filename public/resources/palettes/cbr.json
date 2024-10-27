@@ -1,12 +1,602 @@
 [
     {
-        "id": "R1",
+        "id": "crr1",
         "colour": "#e9322b",
         "fg": "#fff",
         "name": {
-            "en": "Light Rail Line 1",
-            "zh-Hans": "轻轨1号线",
-            "zh-Hant": "輕軌1號線"
+            "en": "Light Rail Line 1 (R1)",
+            "zh-Hans": "轻轨1号线（R1路）",
+            "zh-Hant": "輕軌1號線（R1路）"
+        }
+    },
+    {
+        "id": "cbr2",
+        "colour": "#f0b3d1",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R2",
+            "zh-Hans": "快速公交R2路",
+            "zh-Hant": "快速公車R2路"
+        }
+    },
+    {
+        "id": "cbr3",
+        "colour": "#fddb2a",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R3",
+            "zh-Hans": "快速公交R3路",
+            "zh-Hant": "快速公車R3路"
+        }
+    },
+    {
+        "id": "cbr4",
+        "colour": "#0098cd",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R4",
+            "zh-Hans": "快速公交R4路",
+            "zh-Hant": "快速公車R4路"
+        }
+    },
+    {
+        "id": "cbr5",
+        "colour": "#da2a91",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R5",
+            "zh-Hans": "快速公交R5路",
+            "zh-Hant": "快速公車R5路"
+        }
+    },
+    {
+        "id": "cbr6",
+        "colour": "#79bc43",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R6",
+            "zh-Hans": "快速公交R6路",
+            "zh-Hant": "快速公車R6路"
+        }
+    },
+    {
+        "id": "cbr7",
+        "colour": "#df7d26",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R7",
+            "zh-Hans": "快速公交R7路",
+            "zh-Hant": "快速公車R7路"
+        }
+    },
+    {
+        "id": "cbr8",
+        "colour": "#2e2a26",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R8",
+            "zh-Hans": "快速公交R8路",
+            "zh-Hant": "快速公車R8路"
+        }
+    },
+    {
+        "id": "cbr9",
+        "colour": "#9a9999",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R9",
+            "zh-Hans": "快速公交R9路",
+            "zh-Hant": "快速公車R9路"
+        }
+    },
+    {
+        "id": "cbr10",
+        "colour": "#aa1f2e",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT R10",
+            "zh-Hans": "快速公交R10路",
+            "zh-Hant": "快速公車R10路"
+        }
+    },
+    {
+        "id": "cb18",
+        "colour": "#c5b100",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 18",
+            "zh-Hans": "公交18路",
+            "zh-Hant": "巴士18路"
+        }
+    },
+    {
+        "id": "cc1920",
+        "colour": "#602d91",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 19/20",
+            "zh-Hans": "公交环线19/20路",
+            "zh-Hant": "巴士環路19/20路"
+        }
+    },
+    {
+        "id": "cc2122",
+        "colour": "#b29393",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 21/22",
+            "zh-Hans": "公交环线21/22路",
+            "zh-Hant": "巴士環路21/22路"
+        }
+    },
+    {
+        "id": "cb23",
+        "colour": "#00b7c3",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 23",
+            "zh-Hans": "公交23路",
+            "zh-Hant": "巴士23路"
+        }
+    },
+    {
+        "id": "cb24",
+        "colour": "#0055b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 24",
+            "zh-Hans": "公交24路",
+            "zh-Hant": "巴士24路"
+        }
+    },
+    {
+        "id": "cc2526",
+        "colour": "#6dcff6",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 25/26",
+            "zh-Hans": "公交环线25/26路",
+            "zh-Hant": "巴士環路25/26路"
+        }
+    },
+    {
+        "id": "cb27",
+        "colour": "#ec8b59",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 27",
+            "zh-Hans": "公交27路",
+            "zh-Hant": "巴士27路"
+        }
+    },
+    {
+        "id": "cb28",
+        "colour": "#ab6f5b",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 28",
+            "zh-Hans": "公交28路",
+            "zh-Hant": "巴士28路"
+        }
+    },
+    {
+        "id": "cb30",
+        "colour": "#006673",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 30",
+            "zh-Hans": "公交30路",
+            "zh-Hant": "巴士30路"
+        }
+    },
+    {
+        "id": "cb31",
+        "colour": "#0092c8",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 31",
+            "zh-Hans": "公交31路",
+            "zh-Hant": "巴士31路"
+        }
+    },
+    {
+        "id": "cb32",
+        "colour": "#f067a6",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 32",
+            "zh-Hans": "公交32路",
+            "zh-Hant": "巴士32路"
+        }
+    },
+    {
+        "id": "cc4042",
+        "colour": "#00a651",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 40/42",
+            "zh-Hans": "公交环线40/42路",
+            "zh-Hant": "巴士環路40/42路"
+        }
+    },
+    {
+        "id": "cb41",
+        "colour": "#ed1d24",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 41",
+            "zh-Hans": "公交41路",
+            "zh-Hant": "巴士41路"
+        }
+    },
+    {
+        "id": "cb43",
+        "colour": "#bc226a",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 43",
+            "zh-Hans": "公交43路",
+            "zh-Hant": "巴士43路"
+        }
+    },
+    {
+        "id": "cb44",
+        "colour": "#a5bf6a",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 44",
+            "zh-Hans": "公交44路",
+            "zh-Hant": "巴士44路"
+        }
+    },
+    {
+        "id": "cb45",
+        "colour": "#f78f1e",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 45",
+            "zh-Hans": "公交45路",
+            "zh-Hant": "巴士45路"
+        }
+    },
+    {
+        "id": "cb46",
+        "colour": "#8793b7",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 46",
+            "zh-Hans": "公交46路",
+            "zh-Hant": "巴士46路"
+        }
+    },
+    {
+        "id": "cb47",
+        "colour": "#32c5f4",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 47",
+            "zh-Hans": "公交47路",
+            "zh-Hant": "巴士47路"
+        }
+    },
+    {
+        "id": "cb50",
+        "colour": "#bda4cf",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 50",
+            "zh-Hans": "公交50路",
+            "zh-Hant": "巴士50路"
+        }
+    },
+    {
+        "id": "cb51",
+        "colour": "#984d7c",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 51",
+            "zh-Hans": "公交51路",
+            "zh-Hant": "巴士51路"
+        }
+    },
+    {
+        "id": "cb53",
+        "colour": "#f48d9f",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 53",
+            "zh-Hans": "公交53路",
+            "zh-Hant": "巴士53路"
+        }
+    },
+    {
+        "id": "cb54",
+        "colour": "#7f6d80",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 54",
+            "zh-Hans": "公交54路",
+            "zh-Hant": "巴士54路"
+        }
+    },
+    {
+        "id": "cb55",
+        "colour": "#0072bc",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 55",
+            "zh-Hans": "公交55路",
+            "zh-Hant": "巴士55路"
+        }
+    },
+    {
+        "id": "cb56",
+        "colour": "#7b68ae",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 56",
+            "zh-Hans": "公交56路",
+            "zh-Hant": "巴士56路"
+        }
+    },
+    {
+        "id": "cb57",
+        "colour": "#768ea1",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 57",
+            "zh-Hans": "公交57路",
+            "zh-Hant": "巴士57路"
+        }
+    },
+    {
+        "id": "cb58",
+        "colour": "#19325c",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 58",
+            "zh-Hans": "公交58路",
+            "zh-Hant": "巴士58路"
+        }
+    },
+    {
+        "id": "cb59",
+        "colour": "#ab6f5b",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 59",
+            "zh-Hans": "公交59路",
+            "zh-Hant": "巴士59路"
+        }
+    },
+    {
+        "id": "cc6061",
+        "colour": "#f15b4f",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 60/61",
+            "zh-Hans": "公交环线60/61路",
+            "zh-Hant": "巴士環路60/61路"
+        }
+    },
+    {
+        "id": "cb62",
+        "colour": "#6d9495",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 62",
+            "zh-Hans": "公交62路",
+            "zh-Hant": "巴士62路"
+        }
+    },
+    {
+        "id": "cb63",
+        "colour": "#b083ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 63",
+            "zh-Hans": "公交63路",
+            "zh-Hant": "巴士63路"
+        }
+    },
+    {
+        "id": "cb64",
+        "colour": "#6dcff6",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 64",
+            "zh-Hans": "公交64路",
+            "zh-Hant": "巴士64路"
+        }
+    },
+    {
+        "id": "cb65",
+        "colour": "#016c3d",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 65",
+            "zh-Hans": "公交65路",
+            "zh-Hant": "巴士65路"
+        }
+    },
+    {
+        "id": "cb66",
+        "colour": "#ec008c",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 66",
+            "zh-Hans": "公交66路",
+            "zh-Hant": "巴士66路"
+        }
+    },
+    {
+        "id": "cb70",
+        "colour": "#98a359",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 70",
+            "zh-Hans": "公交70路",
+            "zh-Hant": "巴士70路"
+        }
+    },
+    {
+        "id": "cb71",
+        "colour": "#e1a6a8",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 71",
+            "zh-Hans": "公交71路",
+            "zh-Hant": "巴士71路"
+        }
+    },
+    {
+        "id": "cb72",
+        "colour": "#d7947d",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 72",
+            "zh-Hans": "公交72路",
+            "zh-Hant": "巴士72路"
+        }
+    },
+    {
+        "id": "cb73",
+        "colour": "#00b7c3",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 73",
+            "zh-Hans": "公交73路",
+            "zh-Hant": "巴士73路"
+        }
+    },
+    {
+        "id": "cc7475",
+        "colour": "#03558b",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 74/75",
+            "zh-Hans": "公交环线74/75路",
+            "zh-Hant": "巴士環路74/75路"
+        }
+    },
+    {
+        "id": "cb76",
+        "colour": "#fcaf17",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 76",
+            "zh-Hans": "公交76路",
+            "zh-Hant": "巴士76路"
+        }
+    },
+    {
+        "id": "cb77",
+        "colour": "#adc32b",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 77",
+            "zh-Hans": "公交77路",
+            "zh-Hant": "巴士77路"
+        }
+    },
+    {
+        "id": "cb78",
+        "colour": "#ed1d24",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 78",
+            "zh-Hans": "公交78路",
+            "zh-Hant": "巴士78路"
+        }
+    },
+    {
+        "id": "cb79",
+        "colour": "#82ca9c",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 79",
+            "zh-Hans": "公交79路",
+            "zh-Hant": "巴士79路"
+        }
+    },
+    {
+        "id": "cb80",
+        "colour": "#32c5f4",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 80",
+            "zh-Hans": "公交80路",
+            "zh-Hant": "巴士80路"
+        }
+    },
+    {
+        "id": "cb81",
+        "colour": "#716150",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 81",
+            "zh-Hans": "公交81路",
+            "zh-Hant": "巴士81路"
+        }
+    },
+    {
+        "id": "cb180",
+        "colour": "#0055b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 180",
+            "zh-Hans": "公交180路",
+            "zh-Hant": "巴士180路"
+        }
+    },
+    {
+        "id": "cb181",
+        "colour": "#99bbe3",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 181",
+            "zh-Hans": "公交181路",
+            "zh-Hant": "巴士181路"
+        }
+    },
+    {
+        "id": "cb182",
+        "colour": "#6699d4",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 182",
+            "zh-Hans": "公交182路",
+            "zh-Hant": "巴士182路"
+        }
+    },
+    {
+        "id": "cb901",
+        "colour": "#c5b100",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 901",
+            "zh-Hans": "公交901路",
+            "zh-Hant": "巴士901路"
+        }
+    },
+    {
+        "id": "cb902",
+        "colour": "#743e2a",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 902",
+            "zh-Hans": "公交902路",
+            "zh-Hant": "巴士902路"
+        }
+    },
+    {
+        "id": "cb903",
+        "colour": "#0055b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus Route 903",
+            "zh-Hans": "公交903路",
+            "zh-Hant": "巴士903路"
         }
     }
 ]
