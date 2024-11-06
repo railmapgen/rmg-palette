@@ -1,0 +1,142 @@
+[
+    {
+        "id": "l1",
+        "colour": "#159bd7",
+        "fg": "#fff",
+        "name": {
+            "en": "Market–Frankford Line",
+            "zh-Hans": "市场–法兰克福线",
+            "zh-Hant": "市場-法蘭克福線"
+        }
+    },
+    {
+        "id": "b1",
+        "colour": "#f26100",
+        "fg": "#fff",
+        "name": {
+            "en": "Broad Street Line - Local",
+            "zh-Hans": "宽街线 - 本地",
+            "zh-Hant": "布羅德街線 - 本地"
+        }
+    },
+    {
+        "id": "b2",
+        "colour": "#f26100",
+        "fg": "#fff",
+        "name": {
+            "en": "Broad Street Line - Express",
+            "zh-Hans": "宽街线 - 特快",
+            "zh-Hant": "布羅德街線 - 快車"
+        }
+    },
+    {
+        "id": "b3",
+        "colour": "#f26100",
+        "fg": "#fff",
+        "name": {
+            "en": "Broad Street Line - Spur",
+            "zh-Hans": "宽街线 - 支线",
+            "zh-Hant": "布羅德街線 - 支線"
+        }
+    },
+    {
+        "id": "t1",
+        "colour": "#5a9703",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 10",
+            "zh-Hans": "有轨电车路线 10",
+            "zh-Hant": "電車路線 10"
+        }
+    },
+    {
+        "id": "t2",
+        "colour": "#5a9703",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 34",
+            "zh-Hans": "有轨电车路线 34",
+            "zh-Hant": "電車路線 34"
+        }
+    },
+    {
+        "id": "t3",
+        "colour": "#5a9703",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 13",
+            "zh-Hans": "有轨电车路线 13",
+            "zh-Hant": "電車路線 13"
+        }
+    },
+    {
+        "id": "t4",
+        "colour": "#5a9703",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 11",
+            "zh-Hans": "有轨电车路线 11",
+            "zh-Hant": "電車路線 11"
+        }
+    },
+    {
+        "id": "t5",
+        "colour": "#5a9703",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 36",
+            "zh-Hans": "有轨电车路线 36",
+            "zh-Hant": "電車路線 36"
+        }
+    },
+    {
+        "id": "g1",
+        "colour": "#fcd700",
+        "fg": "#000",
+        "name": {
+            "en": "Trolley Route 15",
+            "zh-Hans": "有轨电车路线 15",
+            "zh-Hant": "電車路線 15"
+        }
+    },
+    {
+        "id": "d1",
+        "colour": "#e6407c",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 101",
+            "zh-Hans": "有轨电车路线 101",
+            "zh-Hant": "電車路線 101"
+        }
+    },
+    {
+        "id": "d2",
+        "colour": "#e6407c",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolley Route 102",
+            "zh-Hans": "有轨电车路线 102",
+            "zh-Hant": "電車路線 102"
+        }
+    },
+    {
+        "id": "m1",
+        "colour": "#613094",
+        "fg": "#fff",
+        "name": {
+            "en": "Norristown High Speed Line",
+            "zh-Hans": "诺里斯敦高速线",
+            "zh-Hant": "諾里斯敦高速線"
+        }
+    },
+    {
+        "id": "sepa",
+        "colour": "#43647c",
+        "fg": "#fff",
+        "name": {
+            "en": "SEPTA Regional Rail",
+            "zh-Hans": "SEPTA 区域铁路",
+            "zh-Hant": "SEPTA 區域鐵路"
+        }
+    }
+]
