@@ -449,6 +449,15 @@
         "language": "ar"
     },
     {
+        "id": "RC",
+        "name": {
+            "en": "Rongchen Metro",
+            "zh-Hans": "容晨轨道交通",
+            "zh-Hant": "容晨軌道交通"
+        },
+        "language": "zh-Hans"
+    },
+    {
         "id": "RO",
         "name": {
             "en": "Romania",

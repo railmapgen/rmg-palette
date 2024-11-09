@@ -1410,6 +1410,15 @@
         }
     },
     {
+        "id": "rongchen",
+        "country": "RC",
+        "name": {
+            "en": "Rongchen",
+            "zh-Hans": "容晨",
+            "zh-Hant": "容晨"
+        }
+    },
+    {
         "id": "rotterdam",
         "country": "NL",
         "name": {
