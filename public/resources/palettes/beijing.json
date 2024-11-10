@@ -1,282 +1,332 @@
 [
     {
-        "id": "bj1",
-        "colour": "#c13931",
+        "id": "BJ-L1",
+        "colour": "#a4343a",
         "fg": "#fff",
         "name": {
-            "en": "Line 1/Batong Line",
-            "zh-Hans": "1号线/八通线",
-            "zh-Hant": "1號線/八通線"
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線",
+            "en": "Line 1"
         }
     },
     {
-        "id": "bj2",
-        "colour": "#146097",
+        "id": "BJ-BATONG",
+        "colour": "#a4343a",
         "fg": "#fff",
         "name": {
-            "en": "Line 2",
+            "zh-Hans": "八通线",
+            "zh-Hant": "八通線",
+            "en": "Batong Line"
+        }
+    },
+    {
+        "id": "BJ-L2",
+        "colour": "#004b87",
+        "fg": "#fff",
+        "name": {
             "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
+            "zh-Hant": "2號線",
+            "en": "Line 2"
         }
     },
     {
-        "id": "bj3",
-        "colour": "#d90627",
+        "id": "BJ-L3",
+        "colour": "#c8102e",
         "fg": "#fff",
         "name": {
-            "en": "Line 3",
             "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
+            "zh-Hant": "3號線",
+            "en": "Line 3"
         }
     },
     {
-        "id": "bj4",
-        "colour": "#008e9c",
+        "id": "BJ-L4",
+        "colour": "#008c95",
         "fg": "#fff",
         "name": {
-            "en": "Line 4/Daxing Line",
-            "zh-Hans": "4号线/大兴线",
-            "zh-Hant": "4號線/大興線"
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線",
+            "en": "Line 4"
         }
     },
     {
-        "id": "bj5",
-        "colour": "#a61c80",
+        "id": "BJ-DAXING",
+        "colour": "#008c95",
         "fg": "#fff",
         "name": {
-            "en": "Line 5",
+            "zh-Hans": "大兴线",
+            "zh-Hant": "大興線",
+            "en": "Daxing Line"
+        }
+    },
+    {
+        "id": "BJ-L5",
+        "colour": "#aa0061",
+        "fg": "#fff",
+        "name": {
             "zh-Hans": "5号线",
-            "zh-Hant": "5號線"
+            "zh-Hant": "5號線",
+            "en": "Line 5"
         }
     },
     {
-        "id": "bj6",
-        "colour": "#d29708",
+        "id": "BJ-L6",
+        "colour": "#b58500",
         "fg": "#fff",
         "name": {
-            "en": "Line 6",
             "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
+            "zh-Hant": "6號線",
+            "en": "Line 6"
         }
     },
     {
-        "id": "bj7",
-        "colour": "#fac671",
-        "fg": "#000",
+        "id": "BJ-L7",
+        "colour": "#ffc56e",
+        "fg": "#fff",
         "name": {
-            "en": "Line 7",
             "zh-Hans": "7号线",
-            "zh-Hant": "7號線"
+            "zh-Hant": "7號線",
+            "en": "Line 7"
         }
     },
     {
-        "id": "bj8",
-        "colour": "#009b6b",
+        "id": "BJ-L8",
+        "colour": "#009b77",
         "fg": "#fff",
         "name": {
-            "en": "Line 8",
             "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "zh-Hant": "8號線",
+            "en": "Line 8"
         }
     },
     {
-        "id": "bj9",
-        "colour": "#8ec31f",
-        "fg": "#000",
+        "id": "BJ-L9",
+        "colour": "#97d700",
+        "fg": "#fff",
         "name": {
-            "en": "Line 9",
             "zh-Hans": "9号线",
-            "zh-Hant": "9號線"
+            "zh-Hant": "9號線",
+            "en": "Line 9"
         }
     },
     {
-        "id": "bj10",
-        "colour": "#009bc0",
+        "id": "BJ-L10",
+        "colour": "#0092bc",
         "fg": "#fff",
         "name": {
-            "en": "Line 10",
             "zh-Hans": "10号线",
-            "zh-Hant": "10號線"
+            "zh-Hant": "10號線",
+            "en": "Line 10"
         }
     },
     {
-        "id": "bj11",
-        "colour": "#ed796a",
+        "id": "BJ-L11",
+        "colour": "#ff8674",
         "fg": "#fff",
         "name": {
-            "en": "Line 11",
             "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "zh-Hant": "11號線",
+            "en": "Line 11"
         }
     },
     {
-        "id": "bj12",
-        "colour": "#9c4f01",
+        "id": "BJ-L12",
+        "colour": "#9b5a1a",
         "fg": "#fff",
         "name": {
-            "en": "Line 12",
             "zh-Hans": "12号线",
-            "zh-Hant": "12號線"
+            "zh-Hant": "12號線",
+            "en": "Line 12"
         }
     },
     {
-        "id": "bj13",
-        "colour": "#f6e613",
-        "fg": "#000",
+        "id": "BJ-L13",
+        "colour": "#f4da40",
+        "fg": "#fff",
         "name": {
-            "en": "Line 13",
             "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "zh-Hant": "13號線",
+            "en": "Line 13"
         }
     },
     {
-        "id": "bj14",
-        "colour": "#d5a7a1",
-        "fg": "#000",
+        "id": "BJ-L13A",
+        "colour": "#f4da40",
+        "fg": "#fff",
         "name": {
-            "en": "Line 14",
+            "zh-Hans": "13A号线",
+            "zh-Hant": "13A號線",
+            "en": "Line 13A"
+        }
+    },
+    {
+        "id": "BJ-L13B",
+        "colour": "#e8bb71",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "13B号线",
+            "zh-Hant": "13B號線",
+            "en": "Line 13B"
+        }
+    },
+    {
+        "id": "BJ-L14",
+        "colour": "#ca9a8e",
+        "fg": "#fff",
+        "name": {
             "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
+            "zh-Hant": "14號線",
+            "en": "Line 14"
         }
     },
     {
-        "id": "bj15",
-        "colour": "#6a357e",
+        "id": "BJ-L15",
+        "colour": "#653379",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
             "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "zh-Hant": "15號線",
+            "en": "Line 15"
         }
     },
     {
-        "id": "bj16",
-        "colour": "#76a22d",
+        "id": "BJ-L16",
+        "colour": "#6ba539",
         "fg": "#fff",
         "name": {
-            "en": "Line 16",
             "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "zh-Hant": "16號線",
+            "en": "Line 16"
         }
     },
     {
-        "id": "bj17",
-        "colour": "#00A9A9",
+        "id": "BJ-L17",
+        "colour": "#00b2a9",
         "fg": "#fff",
         "name": {
-            "en": "Line 17",
             "zh-Hans": "17号线",
-            "zh-Hant": "17號線"
+            "zh-Hant": "17號線",
+            "en": "Line 17"
         }
     },
     {
-        "id": "bj19",
-        "colour": "#D6ABC1",
-        "fg": "#000",
+        "id": "BJ-L19",
+        "colour": "#dd9cdf",
+        "fg": "#fff",
         "name": {
-            "en": "Line 19",
             "zh-Hans": "19号线",
-            "zh-Hant": "19號線"
+            "zh-Hant": "19號線",
+            "en": "Line 19"
         }
     },
     {
-        "id": "bj22",
+        "id": "BJ-L22",
         "colour": "#f4c1ca",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
-            "en": "Line 22 (Pinggu Line)",
-            "zh-Hans": "22号线（平谷线）",
-            "zh-Hant": "22號線（平谷線）"
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線",
+            "en": "Line 22"
         }
     },
     {
-        "id": "bj28",
+        "id": "BJ-YIZHUANG",
+        "colour": "#d00070",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "亦庄线",
+            "zh-Hant": "亦莊線",
+            "en": "Yizhuang Line"
+        }
+    },
+    {
+        "id": "BJ-FANGSHAN",
+        "colour": "#d86018",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "房山线",
+            "zh-Hant": "房山線",
+            "en": "Fangshan Line"
+        }
+    },
+    {
+        "id": "BJ-YANFANG",
+        "colour": "#d86018",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "燕房线",
+            "zh-Hant": "燕房線",
+            "en": "Yanfang Line"
+        }
+    },
+    {
+        "id": "BJ-S1",
+        "colour": "#a45a2a",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "S1号线",
+            "zh-Hant": "S1號線",
+            "en": "Line S1"
+        }
+    },
+    {
+        "id": "BJ-CHANGPING",
+        "colour": "#d986ba",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "昌平线",
+            "zh-Hant": "昌平線",
+            "en": "Changping Line"
+        }
+    },
+    {
+        "id": "BJ-L28",
         "colour": "#476205",
         "fg": "#fff",
         "name": {
-            "en": "Line 28",
             "zh-Hans": "28号线",
-            "zh-Hant": "28號線"
+            "zh-Hant": "28號線",
+            "en": "Line 28"
         }
     },
     {
-        "id": "bj25fs",
-        "colour": "#e36022",
+        "id": "BJ-SHOUDUJICHANG",
+        "colour": "#a192b2",
         "fg": "#fff",
         "name": {
-            "en": "Fangshan Line/Yanfang Line",
-            "zh-Hans": "房山线/燕房线",
-            "zh-Hant": "房山線/燕房線"
-        }
-    },
-    {
-        "id": "bj27cp",
-        "colour": "#dd82b3",
-        "fg": "#000",
-        "name": {
-            "en": "Changping Line",
-            "zh-Hans": "昌平线",
-            "zh-Hant": "昌平線"
-        }
-    },
-    {
-        "id": "bj24yz",
-        "colour": "#e40077",
-        "fg": "#fff",
-        "name": {
-            "en": "Yizhuang Line",
-            "zh-Hans": "亦庄线",
-            "zh-Hant": "亦莊線"
-        }
-    },
-    {
-        "id": "bj26s1",
-        "colour": "#b25a21",
-        "fg": "#fff",
-        "name": {
-            "en": "Line S1",
-            "zh-Hans": "S1线",
-            "zh-Hant": "S1線"
-        }
-    },
-    {
-        "id": "btxj",
-        "colour": "#e6061a",
-        "fg": "#fff",
-        "name": {
-            "en": "Xijiao Line",
-            "zh-Hans": "西郊线",
-            "zh-Hant": "西郊線"
-        }
-    },
-    {
-        "id": "btt1",
-        "colour": "#e6061a",
-        "fg": "#fff",
-        "name": {
-            "en": "Yizhuang T1 Line",
-            "zh-Hans": "亦庄T1线",
-            "zh-Hant": "亦莊T1線"
-        }
-    },
-    {
-        "id": "bj34sj",
-        "colour": "#a39bbb",
-        "fg": "#000",
-        "name": {
-            "en": "Capital Airport Express",
             "zh-Hans": "首都机场线",
-            "zh-Hant": "首都機場線"
+            "zh-Hant": "首都機場線",
+            "en": "Capital Airport Express"
         }
     },
     {
-        "id": "bj35dj",
-        "colour": "#034ba0",
+        "id": "BJ-DAXINGJICHANG",
+        "colour": "#0047bb",
         "fg": "#fff",
         "name": {
-            "en": "Daxing Airport Express",
             "zh-Hans": "大兴机场线",
-            "zh-Hant": "大興機場線"
+            "zh-Hant": "大興機場線",
+            "en": "Daxing Airport Express"
+        }
+    },
+    {
+        "id": "BJ-TRAMXIJIAO",
+        "colour": "#d22730",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "西郊线",
+            "zh-Hant": "西郊線",
+            "en": "Tram Xijiao Line"
+        }
+    },
+    {
+        "id": "BJ-TRAMYIZHUANGT1",
+        "colour": "#d22730",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "亦庄T1线",
+            "zh-Hant": "亦莊T1線",
+            "en": "Tram Yizhuang Line T1"
         }
     }
 ]
