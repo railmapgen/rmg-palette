@@ -58,5 +58,125 @@
             "zh-Hans": "6号线",
             "zh-Hant": "6號線"
         }
+    },
+    {
+        "id": "km7",
+        "colour": "#56bd9c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "km8",
+        "colour": "#f8918e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "km9",
+        "colour": "#93d162",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "kmanning",
+        "colour": "#f9c965",
+        "fg": "#fff",
+        "name": {
+            "en": "Anning Line",
+            "zh-Hans": "安宁线",
+            "zh-Hant": "安寧線"
+        }
+    },
+    {
+        "id": "kmsongming",
+        "colour": "#ed5524",
+        "fg": "#fff",
+        "name": {
+            "en": "Songming Line",
+            "zh-Hans": "嵩明线",
+            "zh-Hant": "嵩明線"
+        }
+    },
+    {
+        "id": "kmhaikou",
+        "colour": "#b6ad9c",
+        "fg": "#fff",
+        "name": {
+            "en": "Haikou Line",
+            "zh-Hans": "海口线",
+            "zh-Hant": "海口線"
+        }
+    },
+    {
+        "id": "kmchengjiang",
+        "colour": "#c099e8",
+        "fg": "#fff",
+        "name": {
+            "en": "Chengjiang Line",
+            "zh-Hans": "澄江线",
+            "zh-Hant": "澄江線"
+        }
+    },
+    {
+        "id": "kmyiliang",
+        "colour": "#f1a8cf",
+        "fg": "#fff",
+        "name": {
+            "en": "Yiliang Line",
+            "zh-Hans": "宜良线",
+            "zh-Hant": "宜良線"
+        }
+    },
+    {
+        "id": "kmnanbei",
+        "colour": "#5fbef6",
+        "fg": "#fff",
+        "name": {
+            "en": "North-South Express",
+            "zh-Hans": "南北快线",
+            "zh-Hant": "南北快線"
+        }
+    },
+    {
+        "id": "kmjichang",
+        "colour": "#60cc9b",
+        "fg": "#fff",
+        "name": {
+            "en": "Changshui Airport Passenger Transportation System",
+            "zh-Hans": "长水机场旅客捷运系统",
+            "zh-Hant": "長水機場旅客捷運系統"
+        }
+    },
+    {
+        "id": "kmhubin",
+        "colour": "#adbecf",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Hubin Line",
+            "zh-Hans": "湖滨有轨电车",
+            "zh-Hant": "湖濱有軌電車"
+        }
+    },
+    {
+        "id": "kmmigui",
+        "colour": "#9eacdf",
+        "fg": "#fff",
+        "name": {
+            "en": "Kunming Meter-gage Railway",
+            "zh-Hans": "昆明米轨",
+            "zh-Hant": "昆明米軌"
+        }
     }
 ]
