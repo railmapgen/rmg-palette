@@ -1,7 +1,7 @@
 [
     {
-        "id": "gy1",
-        "colour": "#61b32e",
+        "id": "GY1",
+        "colour": "#63b72e",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,8 +11,8 @@
         }
     },
     {
-        "id": "gy2",
-        "colour": "#091869",
+        "id": "GY2",
+        "colour": "#0f1c6b",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -22,8 +22,8 @@
         }
     },
     {
-        "id": "gy3",
-        "colour": "#f32628",
+        "id": "GY3",
+        "colour": "#ee252b",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -33,14 +33,14 @@
         }
     },
     {
-        "id": "gys1",
-        "colour": "#972284",
+        "id": "GYS1",
+        "colour": "#962285",
         "fg": "#fff",
         "name": {
             "en": "Line S1",
-            "zh-Hans": "S1号线",
-            "zh-Hant": "S1號線",
-            "ko": "S1호선"
+            "zh-Hans": "S1线",
+            "zh-Hant": "S1線",
+            "ko": "S1선"
         }
     }
 ]
