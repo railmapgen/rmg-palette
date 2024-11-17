@@ -4,9 +4,9 @@
         "colour": "#c13931",
         "fg": "#fff",
         "name": {
-            "en": "Line 1/Batong Line",
-            "zh-Hans": "1号线/八通线",
-            "zh-Hant": "1號線/八通線"
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
         }
     },
     {
@@ -120,13 +120,23 @@
         }
     },
     {
-        "id": "bj13",
-        "colour": "#f6e613",
+        "id": "bj13a",
+        "colour": "#ffca18",
         "fg": "#000",
         "name": {
-            "en": "Line 13",
-            "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "en": "Line 13A",
+            "zh-Hans": "13A线",
+            "zh-Hant": "13A缐"
+        }
+    },
+    {
+        "id": "bj13b",
+        "colour": "#fea509",
+        "fg": "#000",
+        "name": {
+            "en": "Line 13B",
+            "zh-Hans": "13B线",
+            "zh-Hant": "13B缐"
         }
     },
     {
@@ -170,6 +180,16 @@
         }
     },
     {
+        "id": "bj18",
+        "colour": "#bb0219",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號缐"
+        }
+    },
+    {
         "id": "bj19",
         "colour": "#D6ABC1",
         "fg": "#000",
@@ -177,6 +197,26 @@
             "en": "Line 19",
             "zh-Hans": "19号线",
             "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "bj20",
+        "colour": "#004c89",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號缐"
+        }
+    },
+    {
+        "id": "bj21s6",
+        "colour": "#008a0f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21 (Line S6)",
+            "zh-Hans": "21号线（S6 新城联络线）",
+            "zh-Hant": "21號缐（S6 新城聯絡線）"
         }
     },
     {
@@ -190,8 +230,58 @@
         }
     },
     {
+        "id": "bj23",
+        "colour": "#ff1de9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號缐"
+        }
+    },
+    {
+        "id": "bj24yz",
+        "colour": "#e40077",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24 (Yizhuang Line)",
+            "zh-Hans": "24号线（亦庄线）",
+            "zh-Hant": "24號缐（亦莊線）"
+        }
+    },
+    {
+        "id": "bj25fs",
+        "colour": "#e36022",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25 (Fangshan Line/Yanfang Line)",
+            "zh-Hans": "25号线（房山线/燕房线）",
+            "zh-Hant": "25號缐（房山線/燕房線）"
+        }
+    },
+    {
+        "id": "bj26s1",
+        "colour": "#b25a21",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26 (Line S1)",
+            "zh-Hans": "26号线（S1线）",
+            "zh-Hant": "26號缐（S1線）"
+        }
+    },
+    {
+        "id": "bj27cp",
+        "colour": "#dd82b3",
+        "fg": "#000",
+        "name": {
+            "en": "Line 27 (Changping Line)",
+            "zh-Hans": "27号线（昌平线）",
+            "zh-Hant": "27號缐（昌平線）"
+        }
+    },
+    {
         "id": "bj28",
-        "colour": "#476205",
+        "colour": "#568030",
         "fg": "#fff",
         "name": {
             "en": "Line 28",
@@ -200,43 +290,133 @@
         }
     },
     {
-        "id": "bj25fs",
-        "colour": "#e36022",
-        "fg": "#fff",
-        "name": {
-            "en": "Fangshan Line/Yanfang Line",
-            "zh-Hans": "房山线/燕房线",
-            "zh-Hant": "房山線/燕房線"
-        }
-    },
-    {
-        "id": "bj27cp",
-        "colour": "#dd82b3",
+        "id": "bj29",
+        "colour": "#978372",
         "fg": "#000",
         "name": {
-            "en": "Changping Line",
-            "zh-Hans": "昌平线",
-            "zh-Hant": "昌平線"
+            "en": "Line 29",
+            "zh-Hans": "29号线",
+            "zh-Hant": "29號缐"
         }
     },
     {
-        "id": "bj24yz",
-        "colour": "#e40077",
+        "id": "bj30",
+        "colour": "#ffb4d5",
         "fg": "#fff",
         "name": {
-            "en": "Yizhuang Line",
-            "zh-Hans": "亦庄线",
-            "zh-Hant": "亦莊線"
+            "en": "Line 30",
+            "zh-Hans": "30号线",
+            "zh-Hant": "30號缐"
         }
     },
     {
-        "id": "bj26s1",
-        "colour": "#b25a21",
+        "id": "bj31",
+        "colour": "#9a0077",
         "fg": "#fff",
         "name": {
-            "en": "Line S1",
-            "zh-Hans": "S1线",
-            "zh-Hant": "S1線"
+            "en": "Line 31",
+            "zh-Hans": "31号线",
+            "zh-Hant": "31號缐"
+        }
+    },
+    {
+        "id": "bj32",
+        "colour": "#99d4cf",
+        "fg": "#000",
+        "name": {
+            "en": "Line 32",
+            "zh-Hans": "32号线",
+            "zh-Hant": "32號缐"
+        }
+    },
+    {
+        "id": "bj33",
+        "colour": "#d9e020",
+        "fg": "#000",
+        "name": {
+            "en": "Line 33",
+            "zh-Hans": "33号线",
+            "zh-Hant": "33號缐"
+        }
+    },
+    {
+        "id": "bj34sj",
+        "colour": "#a39bbb",
+        "fg": "#000",
+        "name": {
+            "en": "Line 34 (Capital Airport Express)",
+            "zh-Hans": "34号线（首都机场线）",
+            "zh-Hant": "34號缐（首都機場線）"
+        }
+    },
+    {
+        "id": "bj35dj",
+        "colour": "#034ba0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 35 (Daxing Airport Express)",
+            "zh-Hans": "35号线（大兴机场线）",
+            "zh-Hant": "35號缐（大興機場線）"
+        }
+    },
+    {
+        "id": "bj36m101",
+        "colour": "#ffb07d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 36 (Line M101)",
+            "zh-Hans": "36号线（M101线）",
+            "zh-Hant": "36號缐（M101缐）"
+        }
+    },
+    {
+        "id": "bj37m102",
+        "colour": "#663fdd",
+        "fg": "#fff",
+        "name": {
+            "en": "Line37 ( Line M102)",
+            "zh-Hans": "37号线（M102线）",
+            "zh-Hant": "37號缐（M102缐）"
+        }
+    },
+    {
+        "id": "bj38m103",
+        "colour": "#3537ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 38 (Line M103)",
+            "zh-Hans": "38号线（M103线）",
+            "zh-Hant": "38號缐（M103缐）"
+        }
+    },
+    {
+        "id": "bj39m104",
+        "colour": "#9f9fb3",
+        "fg": "#000",
+        "name": {
+            "en": "Line 39 (Line M104)",
+            "zh-Hans": "39号线（M104线）",
+            "zh-Hant": "39號缐（M104缐）"
+        }
+    },
+    {
+        "id": "bj40bt",
+        "colour": "#c13931",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 40 (Ba Tong Line)",
+            "zh-Hans": "40号线（八通线）",
+            "zh-Hant": "40號線（八通线）"
+        }
+    },
+    {
+        "id": "bj41r6",
+        "colour": "#aaffda",
+        "fg": "#000",
+        "name": {
+            "en": "Line 41 (Line R6)",
+            "zh-Hans": "41号线（R6线）",
+            "zh-Hant": "41號缐（R6缐）"
         }
     },
     {
@@ -250,7 +430,57 @@
         }
     },
     {
-        "id": "btt1",
+        "id": "bjsj",
+        "colour": "#fef304",
+        "fg": "#000",
+        "name": {
+            "en": "Capital Airport MRT Line",
+            "zh-Hans": "首都机场捷运线",
+            "zh-Hant": "首都機場捷運線"
+        }
+    },
+    {
+        "id": "btsyt1",
+        "colour": "#0178b6",
+        "fg": "#fff",
+        "name": {
+            "en": "Shunyi Ti Line",
+            "zh-Hans": "顺义T1线",
+            "zh-Hant": "順義T1缐"
+        }
+    },
+    {
+        "id": "btsyt2",
+        "colour": "#fcec2d",
+        "fg": "#000",
+        "name": {
+            "en": "Shunyi T2 Line",
+            "zh-Hans": "顺义T2线",
+            "zh-Hant": "順義T2缐"
+        }
+    },
+    {
+        "id": "btsyt3",
+        "colour": "#abe965",
+        "fg": "#fff",
+        "name": {
+            "en": "Shunyi T3 Line",
+            "zh-Hans": "顺义T3线",
+            "zh-Hant": "順義T3缐"
+        }
+    },
+    {
+        "id": "btsyt4",
+        "colour": "#e3ac53",
+        "fg": "#fff",
+        "name": {
+            "en": "Shunyi T4 Line",
+            "zh-Hans": "顺义T4线",
+            "zh-Hant": "順義T4缐"
+        }
+    },
+    {
+        "id": "btyzt1",
         "colour": "#e6061a",
         "fg": "#fff",
         "name": {
@@ -260,23 +490,173 @@
         }
     },
     {
-        "id": "bj34sj",
-        "colour": "#a39bbb",
-        "fg": "#000",
+        "id": "btyzt2",
+        "colour": "#fcb03a",
+        "fg": "#fff",
         "name": {
-            "en": "Capital Airport Express",
-            "zh-Hans": "首都机场线",
-            "zh-Hant": "首都機場線"
+            "en": "Yizhuang T2 Line",
+            "zh-Hans": "亦庄T2线",
+            "zh-Hant": "亦莊T2線"
         }
     },
     {
-        "id": "bj35dj",
-        "colour": "#034ba0",
+        "id": "btyzt3",
+        "colour": "#3eaaf7",
         "fg": "#fff",
         "name": {
-            "en": "Daxing Airport Express",
-            "zh-Hans": "大兴机场线",
-            "zh-Hant": "大興機場線"
+            "en": "Yizhuang T3 Line",
+            "zh-Hans": "亦庄T3线",
+            "zh-Hant": "亦莊T3線"
+        }
+    },
+    {
+        "id": "btyzt4",
+        "colour": "#fe7cae",
+        "fg": "#fff",
+        "name": {
+            "en": "Yizhuang T4 Line",
+            "zh-Hans": "亦庄T4线",
+            "zh-Hant": "亦莊T4線"
+        }
+    },
+    {
+        "id": "btftt1",
+        "colour": "#9c025b",
+        "fg": "#fff",
+        "name": {
+            "en": "Fengtai Hexi T1 Line",
+            "zh-Hans": "丰台河西T1线",
+            "zh-Hant": "豐臺河西T1缐"
+        }
+    },
+    {
+        "id": "btftt2",
+        "colour": "#ed1e79",
+        "fg": "#fff",
+        "name": {
+            "en": "Fengtai Hexi T2 Line",
+            "zh-Hans": "丰台河西T2线",
+            "zh-Hant": "豐臺河西T2缐"
+        }
+    },
+    {
+        "id": "byhdt1",
+        "colour": "#dc0978",
+        "fg": "#fff",
+        "name": {
+            "en": "Haidian Shanhou T1 Line",
+            "zh-Hans": "海淀山后T1线",
+            "zh-Hant": "海淀山後T1缐"
+        }
+    },
+    {
+        "id": "byhdt2",
+        "colour": "#d967ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Haidian Shanhou T2 Line",
+            "zh-Hans": "海淀山后T2线",
+            "zh-Hant": "海淀山後T2缐"
+        }
+    },
+    {
+        "id": "byhdt3",
+        "colour": "#4459ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Haidian Shanhou T3 Line",
+            "zh-Hans": "海淀山后T3线",
+            "zh-Hant": "海淀山後T3缐"
+        }
+    },
+    {
+        "id": "byhdt4",
+        "colour": "#89a100",
+        "fg": "#fff",
+        "name": {
+            "en": "Haidian Shanhou T4 Line",
+            "zh-Hans": "海淀山后T4线",
+            "zh-Hant": "海淀山後T4缐"
+        }
+    },
+    {
+        "id": "bthrt1",
+        "colour": "#ff7114",
+        "fg": "#fff",
+        "name": {
+            "en": "Huairou T1 Line",
+            "zh-Hans": "怀柔T1线",
+            "zh-Hant": "懷柔T1缐"
+        }
+    },
+    {
+        "id": "bthrt2",
+        "colour": "#7ddafd",
+        "fg": "#000",
+        "name": {
+            "en": "Huairou T2 Line",
+            "zh-Hans": "怀柔T2线",
+            "zh-Hant": "懷柔T2缐"
+        }
+    },
+    {
+        "id": "bthrt3",
+        "colour": "#7c4556",
+        "fg": "#fff",
+        "name": {
+            "en": "Huairou T3 Line",
+            "zh-Hans": "怀柔T3线",
+            "zh-Hant": "懷柔T3缐"
+        }
+    },
+    {
+        "id": "btsjst1",
+        "colour": "#3da5b4",
+        "fg": "#fff",
+        "name": {
+            "en": "Shijingshan T1 Line",
+            "zh-Hans": "石景山T1线",
+            "zh-Hant": "石景山T1缐"
+        }
+    },
+    {
+        "id": "btfst1",
+        "colour": "#e4f62e",
+        "fg": "#000",
+        "name": {
+            "en": "Fangshan T1 Line",
+            "zh-Hans": "房山T1线",
+            "zh-Hant": "房山T1缐"
+        }
+    },
+    {
+        "id": "btxhct1",
+        "colour": "#01812e",
+        "fg": "#fff",
+        "name": {
+            "en": "Xinhangcheng T1 Line",
+            "zh-Hans": "新航城T1线",
+            "zh-Hant": "新航城T1缐"
+        }
+    },
+    {
+        "id": "btxhct2",
+        "colour": "#00e0cd",
+        "fg": "#000",
+        "name": {
+            "en": "Xinhangcheng T2 Line",
+            "zh-Hans": "新航城T2线",
+            "zh-Hant": "新航城T2缐"
+        }
+    },
+    {
+        "id": "btxhct3",
+        "colour": "#948a06",
+        "fg": "#fff",
+        "name": {
+            "en": "Xinhangcheng T3 Line",
+            "zh-Hans": "新航城T3线",
+            "zh-Hant": "新航城T3缐"
         }
     }
 ]
