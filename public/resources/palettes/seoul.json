@@ -295,5 +295,27 @@
             "zh-Hant": "首都圈廣域急行鐵道C路線",
             "ko": "수도권광역급행철도C노선"
         }
+    },
+    {
+        "id": "sinansan",
+        "colour": "#f04938",
+        "fg": "#fff",
+        "name": {
+            "ko": "신안산선",
+            "en": "Sinansan Line",
+            "zh-Hant": "新安山線",
+            "zh-Hans": "新安山线"
+        }
+    },
+    {
+        "id": "dongbukline",
+        "colour": "#b21935",
+        "fg": "#fff",
+        "name": {
+            "ko": "경전철 동북선",
+            "en": "Dongbuk Line",
+            "zh-Hant": "輕電鐵 東北線",
+            "zh-Hans": "轻电铁 东北线"
+        }
     }
 ]
