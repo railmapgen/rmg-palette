@@ -9,6 +9,14 @@
         }
     },
     {
+        "id": "al",
+        "country": "CN",
+        "name": {
+            "zh-Hans": "AL",
+            "en": "AL"
+        }
+    },
+    {
         "id": "almaty",
         "country": "KZ",
         "name": {
