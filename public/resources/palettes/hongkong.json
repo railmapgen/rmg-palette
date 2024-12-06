@@ -110,16 +110,6 @@
         }
     },
     {
-        "id": "sz",
-        "colour": "#c2c4c6",
-        "fg": "#fff",
-        "name": {
-            "en": "Shenzhen Metro Network",
-            "zh-Hans": "深圳地铁网络",
-            "zh-Hant": "深圳地鐵網絡"
-        }
-    },
-    {
         "id": "lrl",
         "colour": "#dbb301",
         "fg": "#fff",
