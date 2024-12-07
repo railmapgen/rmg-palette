@@ -28,5 +28,35 @@
             "zh-Hant": "3號線",
             "zh-Hans": "3号线"
         }
+    },
+    {
+        "id": "xz4",
+        "colour": "#6fb92c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
+        }
+    },
+    {
+        "id": "xz5",
+        "colour": "#ae4283",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "xz6",
+        "colour": "#541f7f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
     }
 ]
