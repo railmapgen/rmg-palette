@@ -1,0 +1,128 @@
+[
+    {
+        "id": "1",
+        "colour": "#9c5cc3",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "1号线",
+            "en": "Line 1"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "#d30000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "2号线",
+            "en": "Line 2"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#f2f221",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "3号线",
+            "en": "Line 3"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#59d553",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "4号线",
+            "en": "Line 4"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#a12a81",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "5号线",
+            "en": "Line 5"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#3dcebd",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "6号线",
+            "en": "Line 6"
+        }
+    },
+    {
+        "id": "7",
+        "colour": "#ef2763",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "7号线",
+            "en": "Line 7"
+        }
+    },
+    {
+        "id": "10",
+        "colour": "#8e99d9",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "10号线（AL线）",
+            "en": "Line 10 (AL)"
+        }
+    },
+    {
+        "id": "11",
+        "colour": "#aaff7f",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "11号线（L1线）",
+            "en": "Line 11 (L1)"
+        }
+    },
+    {
+        "id": "12",
+        "colour": "#5af7ff",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "12号线（L2线）",
+            "en": "Line 12 (L2)"
+        }
+    },
+    {
+        "id": "13",
+        "colour": "#ff8843",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "13号线（L3线）",
+            "en": "Line 13 (L3)"
+        }
+    },
+    {
+        "id": "14",
+        "colour": "#9f61be",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "14号线（L4线）",
+            "en": "Line 14 (L4)"
+        }
+    },
+    {
+        "id": "15",
+        "colour": "#347400",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "15号线（SL线）",
+            "en": "Line 15 (SL)"
+        }
+    },
+    {
+        "id": "20",
+        "colour": "#aa7893",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "20号线（AH线）",
+            "en": "Line 20 (AH)"
+        }
+    }
+]
