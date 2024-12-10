@@ -70,6 +70,16 @@
         }
     },
     {
+        "id": "nj8",
+        "colour": "#ebbb1d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
         "id": "nj9",
         "colour": "#fa4616",
         "fg": "#fff",
@@ -97,6 +107,36 @@
             "en": "Line 11",
             "zh-Hans": "11号线",
             "zh-Hant": "11號線"
+        }
+    },
+    {
+        "id": "nj12",
+        "colour": "#c77a2f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
+    },
+    {
+        "id": "nj13",
+        "colour": "#007653",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號線"
+        }
+    },
+    {
+        "id": "nj16",
+        "colour": "#f07e1b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16",
+            "zh-Hans": "16号线",
+            "zh-Hant": "16號線"
         }
     },
     {
