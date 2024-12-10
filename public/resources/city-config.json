@@ -242,6 +242,15 @@
         }
     },
     {
+        "id": "changning",
+        "country": "CA",
+        "name": {
+            "en": "Chang Ning",
+            "zh-Hans": "长宁",
+            "zh-Hant": "長寧"
+        }
+    },
+    {
         "id": "changsha",
         "country": "CN",
         "name": {

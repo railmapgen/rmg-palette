@@ -1,0 +1,312 @@
+[
+    {
+        "id": "sh",
+        "colour": "#e60014",
+        "fg": "#fff",
+        "name": {
+            "en": "Shenhua line",
+            "zh-Hans": "莘华线",
+            "zh-Hant": "莘華線"
+        }
+    },
+    {
+        "id": "cen",
+        "colour": "#319795",
+        "fg": "#fff",
+        "name": {
+            "en": "Central Line",
+            "zh-Hans": "中央线",
+            "zh-Hant": "中央線"
+        }
+    },
+    {
+        "id": "zzl",
+        "colour": "#fddf1c",
+        "fg": "#fff",
+        "name": {
+            "en": "Zhazhou Loop LIne",
+            "zh-Hans": "札洲环线",
+            "zh-Hant": "札洲環線"
+        }
+    },
+    {
+        "id": "hx",
+        "colour": "#f8779e",
+        "fg": "#fff",
+        "name": {
+            "en": "Haixin line",
+            "zh-Hans": "海心线",
+            "zh-Hant": "海心線"
+        }
+    },
+    {
+        "id": "qw",
+        "colour": "#00ad14",
+        "fg": "#fff",
+        "name": {
+            "en": "Qianwan Line",
+            "zh-Hans": "浅湾线",
+            "zh-Hant": "淺灣線"
+        }
+    },
+    {
+        "id": "wsh",
+        "colour": "#940000",
+        "fg": "#fff",
+        "name": {
+            "en": "West Shenhua Line",
+            "zh-Hans": "西莘华线",
+            "zh-Hant": "西莘華線"
+        }
+    },
+    {
+        "id": "olo",
+        "colour": "#4d0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Out Loop Line",
+            "zh-Hans": "外环线",
+            "zh-Hant": "外環線"
+        }
+    },
+    {
+        "id": "wc",
+        "colour": "#006ec2",
+        "fg": "#fff",
+        "name": {
+            "en": "West Coast Line",
+            "zh-Hans": "西海岸线",
+            "zh-Hant": "西海岸線"
+        }
+    },
+    {
+        "id": "oly",
+        "colour": "#ff9900",
+        "fg": "#fff",
+        "name": {
+            "en": "Olympic Line",
+            "zh-Hans": "奥运线",
+            "zh-Hant": "奧運線"
+        }
+    },
+    {
+        "id": "west",
+        "colour": "#ff006f",
+        "fg": "#fff",
+        "name": {
+            "en": "West Zone Line",
+            "zh-Hans": "西区线",
+            "zh-Hant": "西區線"
+        }
+    },
+    {
+        "id": "msh",
+        "colour": "#3761a5",
+        "fg": "#fff",
+        "name": {
+            "en": "Middle Shenhua LIne",
+            "zh-Hans": "中莘华线",
+            "zh-Hant": "中莘華線"
+        }
+    },
+    {
+        "id": "zx",
+        "colour": "#f2b0c7",
+        "fg": "#fff",
+        "name": {
+            "en": "Zhangxi Line",
+            "zh-Hans": "漳溪线",
+            "zh-Hant": "漳溪綫"
+        }
+    },
+    {
+        "id": "nor",
+        "colour": "#f5d047",
+        "fg": "#000",
+        "name": {
+            "en": "North LIne",
+            "zh-Hans": "北线",
+            "zh-Hant": "北線"
+        }
+    },
+    {
+        "id": "pl",
+        "colour": "#009411",
+        "fg": "#fff",
+        "name": {
+            "en": "Pingliu LIne",
+            "zh-Hans": "坪流线",
+            "zh-Hant": "坪流線"
+        }
+    },
+    {
+        "id": "jt",
+        "colour": "#fa5700",
+        "fg": "#000",
+        "name": {
+            "en": "Jiatang Line",
+            "zh-Hans": "佳塘线",
+            "zh-Hant": "佳塘綫"
+        }
+    },
+    {
+        "id": "qz",
+        "colour": "#ffd080",
+        "fg": "#fff",
+        "name": {
+            "en": "Qinzhou Line",
+            "zh-Hans": "琴洲线",
+            "zh-Hant": "琴洲綫"
+        }
+    },
+    {
+        "id": "psg",
+        "colour": "#00a9e8",
+        "fg": "#fff",
+        "name": {
+            "en": "Pushigang Line",
+            "zh-Hans": "潽石岗线",
+            "zh-Hant": "迨石崗線"
+        }
+    },
+    {
+        "id": "ee",
+        "colour": "#f3ba59",
+        "fg": "#fff",
+        "name": {
+            "en": "Eastern Express",
+            "zh-Hans": "东部快线",
+            "zh-Hant": "東部快線"
+        }
+    },
+    {
+        "id": "dg",
+        "colour": "#006102",
+        "fg": "#fff",
+        "name": {
+            "en": "Degang Line",
+            "zh-Hans": "德岗线",
+            "zh-Hant": "德崗線"
+        }
+    },
+    {
+        "id": "ez",
+        "colour": "#fce14c",
+        "fg": "#000",
+        "name": {
+            "en": "East Zone Line",
+            "zh-Hans": "东区线",
+            "zh-Hant": "東區綫"
+        }
+    },
+    {
+        "id": "nsh",
+        "colour": "#82f3f3",
+        "fg": "#000",
+        "name": {
+            "en": "North Shenhua Line",
+            "zh-Hans": "北莘华线",
+            "zh-Hant": "北莘華線"
+        }
+    },
+    {
+        "id": "jg",
+        "colour": "#ffb442",
+        "fg": "#fff",
+        "name": {
+            "en": "Jiagang Line",
+            "zh-Hans": "嘉岗线",
+            "zh-Hant": "嘉崗線"
+        }
+    },
+    {
+        "id": "ssh",
+        "colour": "#7d55d1",
+        "fg": "#fff",
+        "name": {
+            "en": "South Shenhua Line",
+            "zh-Hans": "南莘华线",
+            "zh-Hant": "南莘華線"
+        }
+    },
+    {
+        "id": "hx",
+        "colour": "#ff0066",
+        "fg": "#fff",
+        "name": {
+            "en": "Fo Sim Line",
+            "zh-Hans": "火心线",
+            "zh-Hant": "火心線"
+        }
+    },
+    {
+        "id": "og",
+        "colour": "#ef3434",
+        "fg": "#fff",
+        "name": {
+            "en": "Ougang Line",
+            "zh-Hans": "鸥岗线",
+            "zh-Hant": "鷗崗線"
+        }
+    },
+    {
+        "id": "slo",
+        "colour": "#4a86e8",
+        "fg": "#fff",
+        "name": {
+            "en": "South Coast Line",
+            "zh-Hans": "南海岸线",
+            "zh-Hant": "南海岸線"
+        }
+    },
+    {
+        "id": "msh",
+        "colour": "#b3ff75",
+        "fg": "#000",
+        "name": {
+            "en": "Middle Shenhua LIne",
+            "zh-Hans": "中莘华线",
+            "zh-Hant": "中莘華線"
+        }
+    },
+    {
+        "id": "jg",
+        "colour": "#008a55",
+        "fg": "#fff",
+        "name": {
+            "en": "Jungang Line",
+            "zh-Hans": "君岗线",
+            "zh-Hant": "君崗線"
+        }
+    },
+    {
+        "id": "yg",
+        "colour": "#d10049",
+        "fg": "#fff",
+        "name": {
+            "en": "Yanggang Line",
+            "zh-Hans": "扬岗线",
+            "zh-Hant": "揚崗線"
+        }
+    },
+    {
+        "id": "qjl",
+        "colour": "#ff5900",
+        "fg": "#fff",
+        "name": {
+            "en": "Qujiang Loop Line",
+            "zh-Hans": "瞿江环线",
+            "zh-Hant": "瞿江環綫"
+        }
+    },
+    {
+        "id": "snh",
+        "colour": "#00c291",
+        "fg": "#fff",
+        "name": {
+            "en": "South Nanhua ine",
+            "zh-Hans": "上南华线",
+            "zh-Hant": "上南華線"
+        }
+    }
+]
