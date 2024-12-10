@@ -1,7 +1,7 @@
 [
     {
         "id": "fs1",
-        "colour": "#C4D600",
+        "colour": "#bbd501",
         "fg": "#000",
         "name": {
             "en": "Guangfo Line",
@@ -11,7 +11,7 @@
     },
     {
         "id": "fs2",
-        "colour": "#F5333F",
+        "colour": "#f6112e",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "fs3",
-        "colour": "#002F87",
+        "colour": "#002da0",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -81,7 +81,7 @@
     },
     {
         "id": "tnh1",
-        "colour": "#5EB3E4",
+        "colour": "#60b5e5",
         "fg": "#fff",
         "name": {
             "en": "Nanhai Tram Line 1",
