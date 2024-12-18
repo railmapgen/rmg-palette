@@ -1921,5 +1921,15 @@
             "zh-Hans": "中山",
             "zh-Hant": "中山"
         }
+    },
+    {
+        "id": "zurich",
+        "country": "CH",
+        "name": {
+            "en": "Zurich",
+            "zh-Hans": "苏黎世",
+            "zh-Hant": "蘇黎世",
+            "de": "Zürich"
+        }
     }
 ]
