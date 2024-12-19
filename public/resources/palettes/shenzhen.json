@@ -142,7 +142,7 @@
     {
         "id": "sz14",
         "colour": "#F2C75C",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 14 (Eastern Express)",
             "zh-Hans": "14号线（东部快线）",
@@ -154,9 +154,9 @@
         "colour": "#84BD00",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "en": "Line 15 (Qiannan Line)",
+            "zh-Hans": "15号线（前南线）",
+            "zh-Hant": "15號線（前南線）"
         }
     },
     {
@@ -170,13 +170,93 @@
         }
     },
     {
+        "id": "sz17",
+        "colour": "#dbc4cc",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17 (Pinghu Line)",
+            "zh-Hans": "17号线（平湖线）",
+            "zh-Hant": "17號線（平湖線）"
+        }
+    },
+    {
+        "id": "sz18",
+        "colour": "#0c5b93",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18 (Baoyan Line)",
+            "zh-Hans": "18号线（宝盐线）",
+            "zh-Hant": "18號線（寶鹽線）"
+        }
+    },
+    {
+        "id": "sz19",
+        "colour": "#b40093",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
         "id": "sz20",
         "colour": "#88DBDF",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 20",
             "zh-Hans": "20号线",
             "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "sz22",
+        "colour": "#f6e228",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22 (Guanlan Line)",
+            "zh-Hans": "22号线（观澜线）",
+            "zh-Hant": "22號線（觀瀾線）"
+        }
+    },
+    {
+        "id": "sz25",
+        "colour": "#ffaa70",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线",
+            "zh-Hant": "25號線"
+        }
+    },
+    {
+        "id": "sz27",
+        "colour": "#598e94",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27號線"
+        }
+    },
+    {
+        "id": "sz29",
+        "colour": "#91d6aa",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 29",
+            "zh-Hans": "29号线",
+            "zh-Hant": "29號線"
+        }
+    },
+    {
+        "id": "sz32",
+        "colour": "#6b4b1c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 32",
+            "zh-Hans": "32号线",
+            "zh-Hant": "32號線"
         }
     },
     {
