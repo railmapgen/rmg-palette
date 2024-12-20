@@ -185,5 +185,38 @@
             "zh-Hant": "利馬特輕鐵20號線",
             "de": "Limmattalbahn 20"
         }
+    },
+    {
+        "id": "f23",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Funicular Rigiblick",
+            "zh-Hans": "瑞吉布里克缆车",
+            "zh-Hant": "瑞吉布里克纜車",
+            "de": "Seilbahn Rigiblick"
+        }
+    },
+    {
+        "id": "f24",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Polybahn",
+            "zh-Hans": "理工缆车",
+            "zh-Hant": "理工纜車",
+            "de": "Polybahn"
+        }
+    },
+    {
+        "id": "f25",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Dolderbahn",
+            "zh-Hans": "多尔德缆车",
+            "zh-Hant": "多爾德纜車",
+            "de": "Dolderbahn"
+        }
     }
 ]
