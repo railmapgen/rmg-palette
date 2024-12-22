@@ -28,5 +28,15 @@
             "zh-Hant": "3號線",
             "zh-Hans": "3号线"
         }
+    },
+    {
+        "id": "xz6",
+        "colour": "#6a00ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
     }
 ]
