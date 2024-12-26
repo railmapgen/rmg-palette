@@ -1,145 +1,101 @@
 [
     {
-        "id": "r1",
-        "colour": "#ff8301",
-        "fg": "#fff",
+        "id": "UC",
+        "colour": "#ff9400",
+        "fg": "#000",
         "name": {
-            "en": "Line 1",
-            "pt": "Linha 1",
-            "zh-Hans": "1号线",
-            "zh-Hant": "1號缐"
+            "en": "Uruguai Circular Line",
+            "zh-Hans": "乌拉圭环线",
+            "zh-Hant": "烏拉圭環線",
+            "pt": "Linha Circular Uruguai"
         }
     },
     {
-        "id": "r2",
-        "colour": "#bad02f",
+        "id": "PD",
+        "colour": "#00a86b",
         "fg": "#fff",
         "name": {
-            "en": "Line 2",
-            "pt": "Linha 2",
-            "zh-Hans": "2号线",
-            "zh-Hant": "2號缐"
+            "en": "Pavuna-Dumont Line",
+            "zh-Hans": "帕武纳-杜蒙特线",
+            "zh-Hant": "帕武納-杜蒙特線",
+            "pt": "Linha Pavuna-Dumont"
         }
     },
     {
-        "id": "r3",
-        "colour": "#3e4095",
+        "id": "IG",
+        "colour": "#1d5dcc",
         "fg": "#fff",
         "name": {
-            "en": "Line 3",
-            "pt": "Linha 3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號缐"
+            "en": "Itaboraí-Gamboa Line",
+            "zh-Hans": "伊塔博拉伊-甘博奥线",
+            "zh-Hant": "伊塔博拉伊-甘博奧線",
+            "pt": "Linha Itaboraí-Gamboa"
         }
     },
     {
-        "id": "r4",
-        "colour": "#ffc400",
-        "fg": "#fff",
+        "id": "RS",
+        "colour": "#e9b90e",
+        "fg": "#000",
         "name": {
-            "en": "Line 4",
-            "pt": "Linha 4",
-            "zh-Hans": "4号线",
-            "zh-Hant": "4號缐"
+            "en": "Bandeirante-Saúde Line",
+            "zh-Hans": "班代兰特斯-健康线",
+            "zh-Hant": "班代蘭特斯-健康線",
+            "pt": "Linha Bandeirante-Saúde"
         }
     },
     {
-        "id": "rb",
-        "colour": "#552381",
+        "id": "BC",
+        "colour": "#ad283f",
         "fg": "#fff",
         "name": {
-            "en": "Belford Roxo",
-            "pt": "Belford Roxo"
+            "en": "Bangu-Praça da Candelária Line",
+            "zh-Hans": "班古-烛光广场线",
+            "zh-Hant": "班古-燭光廣場線",
+            "pt": "Linha Bangu-Candelária"
         }
     },
     {
-        "id": "rd",
-        "colour": "#c31432",
+        "id": "AG",
+        "colour": "#93959b",
         "fg": "#fff",
         "name": {
-            "en": "Deodoro",
-            "pt": "Deodoro"
+            "en": "Aeroporto-Glória Line",
+            "zh-Hans": "机场-格洛丽亚线",
+            "zh-Hant": "機場-格洛麗亞線",
+            "pt": "Linha Aeroporto-Glória"
         }
     },
     {
-        "id": "rs",
-        "colour": "#e27d0b",
+        "id": "PA",
+        "colour": "#ed69bc",
         "fg": "#fff",
         "name": {
-            "en": "Saracuruna",
-            "pt": "Saracuruna"
+            "en": "Penha-Alvorada Line",
+            "zh-Hans": "彭哈-黎明联络线",
+            "zh-Hant": "彭哈-黎明聯絡線",
+            "pt": "Linha Penha-Alvorada"
         }
     },
     {
-        "id": "rsc",
-        "colour": "#62a830",
+        "id": "NI",
+        "colour": "#6c045b",
         "fg": "#fff",
         "name": {
-            "en": "Santa Cruz",
-            "pt": "Santa Cruz"
+            "en": "Niterói Lightrail",
+            "zh-Hans": "尼泰罗伊轻轨",
+            "zh-Hant": "尼泰羅伊輕軌",
+            "pt": "Niterói Lightrail"
         }
     },
     {
-        "id": "rj",
-        "colour": "#00a0de",
+        "id": "GP",
+        "colour": "#178591",
         "fg": "#fff",
         "name": {
-            "en": "Japeri",
-            "pt": "Japeri"
-        }
-    },
-    {
-        "id": "rg",
-        "colour": "#fed100",
-        "fg": "#fff",
-        "name": {
-            "en": "Guapimirim",
-            "pt": "Guapimirim"
-        }
-    },
-    {
-        "id": "rp",
-        "colour": "#93c0e8",
-        "fg": "#fff",
-        "name": {
-            "en": "Paracambi",
-            "pt": "Paracambi"
-        }
-    },
-    {
-        "id": "rv",
-        "colour": "#c7b101",
-        "fg": "#fff",
-        "name": {
-            "en": "Vila Inhomirim",
-            "pt": "Vila Inhomirim"
-        }
-    },
-    {
-        "id": "rbte",
-        "colour": "#049fe5",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT TransOeste",
-            "pt": "BRT TransOeste"
-        }
-    },
-    {
-        "id": "rbtc",
-        "colour": "#f9811a",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT TransCarioca",
-            "pt": "BRT TransCarioca"
-        }
-    },
-    {
-        "id": "rbto",
-        "colour": "#01a54e",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT TransOlimpica",
-            "pt": "BRT TransOlimpica"
+            "en": "GIG People mover",
+            "zh-Hans": "加利昂国际机场旅客捷运",
+            "zh-Hant": "加利昂國際機場旅客捷運",
+            "pt": "GIG Transportadora de Pessoas"
         }
     }
 ]
