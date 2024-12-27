@@ -1,35 +1,145 @@
 [
     {
-        "id": "ws1",
-        "colour": "#0056b7",
+        "id": "wsm1",
+        "colour": "#2f5da1",
         "fg": "#fff",
         "name": {
             "en": "M1",
             "pl": "M1",
-            "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
+            "zh-Hans": "地铁M1号线",
+            "zh-Hant": "地鐵M1號線"
         }
     },
     {
-        "id": "ws2",
-        "colour": "#c7102c",
+        "id": "wsm2",
+        "colour": "#c82c3d",
         "fg": "#fff",
         "name": {
             "en": "M2",
             "pl": "M2",
-            "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
+            "zh-Hans": "地铁M2号线",
+            "zh-Hant": "地鐵M2號線"
         }
     },
     {
-        "id": "ws3",
-        "colour": "#009700",
+        "id": "wsm3",
+        "colour": "#46aa4c",
         "fg": "#fff",
         "name": {
             "en": "M3",
             "pl": "M3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
+            "zh-Hans": "地铁M3号线",
+            "zh-Hant": "地鐵M3號線"
+        }
+    },
+    {
+        "id": "wsm4",
+        "colour": "#f7b44f",
+        "fg": "#fff",
+        "name": {
+            "en": "M4",
+            "pl": "M4",
+            "zh-Hans": "地铁M4号线",
+            "zh-Hant": "地鐵M4號線"
+        }
+    },
+    {
+        "id": "wsm5",
+        "colour": "#6e309b",
+        "fg": "#fff",
+        "name": {
+            "en": "M5",
+            "pl": "M5",
+            "zh-Hans": "地铁M5号线",
+            "zh-Hant": "地鐵M5號線"
+        }
+    },
+    {
+        "id": "wss1",
+        "colour": "#c2201e",
+        "fg": "#fff",
+        "name": {
+            "en": "S1",
+            "pl": "S1",
+            "zh-Hans": "S1快速城轨线",
+            "zh-Hant": "S1快速城軌線"
+        }
+    },
+    {
+        "id": "wss2",
+        "colour": "#1c96e6",
+        "fg": "#fff",
+        "name": {
+            "en": "S2",
+            "pl": "S2",
+            "zh-Hans": "S2快速城轨线",
+            "zh-Hant": "S2快速城軌線"
+        }
+    },
+    {
+        "id": "wss3",
+        "colour": "#f5bd3c",
+        "fg": "#fff",
+        "name": {
+            "en": "S3",
+            "pl": "S3",
+            "zh-Hans": "S3快速城轨线",
+            "zh-Hant": "S3快速城軌線"
+        }
+    },
+    {
+        "id": "wss4",
+        "colour": "#337b2d",
+        "fg": "#fff",
+        "name": {
+            "en": "S4",
+            "pl": "S4",
+            "zh-Hans": "S4快速城轨线",
+            "zh-Hant": "S4快速城軌線"
+        }
+    },
+    {
+        "id": "wss40",
+        "colour": "#73ac51",
+        "fg": "#fff",
+        "name": {
+            "en": "S40",
+            "pl": "S40",
+            "zh-Hans": "S40快速城轨线",
+            "zh-Hant": "S40快速城軌線"
+        }
+    },
+    {
+        "id": "wsa1",
+        "colour": "#07497f",
+        "fg": "#fff",
+        "name": {
+            "en": "A1",
+            "pl": "A1",
+            "zh-Hans": "市郊铁路A1线",
+            "zh-Hant": "市郊鐵路A1線"
+        }
+    },
+    {
+        "id": "wsa12",
+        "colour": "#07497f",
+        "fg": "#fff",
+        "name": {
+            "en": "A12",
+            "pl": "A12",
+            "zh-Hans": "市郊铁路A12线",
+            "zh-Hant": "市郊鐵路A12線"
+        }
+    },
+    {
+        "id": "wst",
+        "colour": "#eb292c",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram lines",
+            "pl": "Linie tramwajowe",
+            "zh-Hans": "有轨电车线路",
+            "zh-Hant": "有軌電車線路"
         }
     }
 ]
