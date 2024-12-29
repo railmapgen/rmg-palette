@@ -1792,6 +1792,15 @@
         }
     },
     {
+        "id": "vancouver",
+        "country": "CA",
+        "name": {
+            "en": "Vancouver",
+            "fr": "Vancouver",
+            "zh-Hant": "溫哥華"
+        }
+    },
+    {
         "id": "vienna",
         "country": "AT",
         "name": {
