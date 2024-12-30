@@ -1698,6 +1698,15 @@
         }
     },
     {
+        "id": "thailand",
+        "country": "TH",
+        "name": {
+            "en": "Bangkok",
+            "zh-Hans": "曼谷",
+            "zh-Hant": "曼谷"
+        }
+    },
+    {
         "id": "tianjin",
         "country": "CN",
         "name": {
