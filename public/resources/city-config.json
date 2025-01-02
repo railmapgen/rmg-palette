@@ -908,6 +908,16 @@
         }
     },
     {
+        "id": "longzhi",
+        "country": "CN",
+        "name": {
+            "zh": "龙志(自设)",
+            "zh-Hans": "龙志(自设)",
+            "zh-Hant": "龍志(自設)",
+            "en": "Longzhi"
+        }
+    },
+    {
         "id": "losangeles",
         "country": "US",
         "name": {
