@@ -341,7 +341,7 @@
     },
     {
         "id": "airport",
-        "colour": "#236890",
+        "colour": "#969696",
         "fg": "#fff",
         "name": {
             "en": "Airport Link Line",
