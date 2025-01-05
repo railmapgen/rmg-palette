@@ -1608,6 +1608,16 @@
         }
     },
     {
+        "id": "surabaya",
+        "country": "ID",
+        "name": {
+            "en": "Surabaya",
+            "zh-Hans": "泗水",
+            "zh-Hant": "泗水",
+            "id": "Surabaya"
+        }
+    },
+    {
         "id": "suzhou",
         "country": "CN",
         "name": {
