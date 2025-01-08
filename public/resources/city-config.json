@@ -346,6 +346,16 @@
         }
     },
     {
+        "id": "cork",
+        "country": "IE",
+        "name": {
+            "en": "Cork",
+            "zh-Hans": "科克",
+            "zh-Hant": "科克",
+            "ga": "Corcaigh"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {
@@ -1920,6 +1930,16 @@
             "en": "Zhongshan",
             "zh-Hans": "中山",
             "zh-Hant": "中山"
+        }
+    },
+    {
+        "id": "zurich",
+        "country": "CH",
+        "name": {
+            "en": "Zurich",
+            "zh-Hans": "苏黎世",
+            "zh-Hant": "蘇黎世",
+            "de": "Zürich"
         }
     }
 ]

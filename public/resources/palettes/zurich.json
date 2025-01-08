@@ -1,0 +1,222 @@
+[
+    {
+        "id": "t2",
+        "colour": "#e3000a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 2",
+            "zh-Hans": "有轨电车2号线",
+            "zh-Hant": "有軌電車2號線",
+            "de": "Tram Linie 2"
+        }
+    },
+    {
+        "id": "t3",
+        "colour": "#009d3a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 3",
+            "zh-Hans": "有轨电车3号线",
+            "zh-Hant": "有軌電車3號線",
+            "de": "Tram Linie 3"
+        }
+    },
+    {
+        "id": "t4",
+        "colour": "#4a3a90",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 4",
+            "zh-Hans": "有轨电车4号线",
+            "zh-Hant": "有軌電車4號線",
+            "de": "Tram Linie 4"
+        }
+    },
+    {
+        "id": "t5",
+        "colour": "#945a25",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 5",
+            "zh-Hans": "有轨电车5号线",
+            "zh-Hant": "有軌電車5號線",
+            "de": "Tram Linie 5"
+        }
+    },
+    {
+        "id": "t6",
+        "colour": "#dda043",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 6",
+            "zh-Hans": "有轨电车6号线",
+            "zh-Hant": "有軌電車6號線",
+            "de": "Tram Linie 6"
+        }
+    },
+    {
+        "id": "t7",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 7",
+            "zh-Hans": "有轨电车7号线",
+            "zh-Hant": "有軌電車7號線",
+            "de": "Tram Linie 7"
+        }
+    },
+    {
+        "id": "t8",
+        "colour": "#afca00",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 8",
+            "zh-Hans": "有轨电车8号线",
+            "zh-Hant": "有軌電車8號線",
+            "de": "Tram Linie 8"
+        }
+    },
+    {
+        "id": "t9",
+        "colour": "#4a3a90",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 9",
+            "zh-Hans": "有轨电车9号线",
+            "zh-Hant": "有軌電車9號線",
+            "de": "Tram Linie 9"
+        }
+    },
+    {
+        "id": "t10",
+        "colour": "#e82d8a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 10",
+            "zh-Hans": "有轨电车10号线",
+            "zh-Hant": "有軌電車10號線",
+            "de": "Tram Linie 3"
+        }
+    },
+    {
+        "id": "t11",
+        "colour": "#009d3a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 11",
+            "zh-Hans": "有轨电车11号线",
+            "zh-Hant": "有軌電車11號線",
+            "de": "Tram Linie 11"
+        }
+    },
+    {
+        "id": "t12",
+        "colour": "#8ad1e5",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 12",
+            "zh-Hans": "有轨电车12号线",
+            "zh-Hant": "有軌電車12號線",
+            "de": "Tram Linie 12"
+        }
+    },
+    {
+        "id": "t13",
+        "colour": "#ffd500",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 13",
+            "zh-Hans": "有轨电车13号线",
+            "zh-Hant": "有軌電車13號線",
+            "de": "Tram Linie 13"
+        }
+    },
+    {
+        "id": "t14",
+        "colour": "#039ee3",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 14",
+            "zh-Hans": "有轨电车14号线",
+            "zh-Hant": "有軌電車14號線",
+            "de": "Tram Linie 14"
+        }
+    },
+    {
+        "id": "t15",
+        "colour": "#e3000a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 15",
+            "zh-Hans": "有轨电车15号线",
+            "zh-Hant": "有軌電車15號線",
+            "de": "Tram Linie 15"
+        }
+    },
+    {
+        "id": "t17",
+        "colour": "#a21a65",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 17",
+            "zh-Hans": "有轨电车17号线",
+            "zh-Hant": "有軌電車17號線",
+            "de": "Tram Linie 17"
+        }
+    },
+    {
+        "id": "s18",
+        "colour": "#d8242a",
+        "fg": "#fff",
+        "name": {
+            "en": "Forch Railway S18",
+            "zh-Hans": "福希铁路S18号线",
+            "zh-Hant": "福希鐵路S18號線",
+            "de": "Forchbahn S18"
+        }
+    },
+    {
+        "id": "t20",
+        "colour": "#a21a65",
+        "fg": "#fff",
+        "name": {
+            "en": "Limmattal Light Rail Line 20",
+            "zh-Hans": "利马特轻铁20号线",
+            "zh-Hant": "利馬特輕鐵20號線",
+            "de": "Limmattalbahn 20"
+        }
+    },
+    {
+        "id": "f23",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Funicular Rigiblick",
+            "zh-Hans": "瑞吉布里克缆车",
+            "zh-Hant": "瑞吉布里克纜車",
+            "de": "Seilbahn Rigiblick"
+        }
+    },
+    {
+        "id": "f24",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Polybahn",
+            "zh-Hans": "理工缆车",
+            "zh-Hant": "理工纜車",
+            "de": "Polybahn"
+        }
+    },
+    {
+        "id": "f25",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Dolderbahn",
+            "zh-Hans": "多尔德缆车",
+            "zh-Hant": "多爾德纜車",
+            "de": "Dolderbahn"
+        }
+    }
+]

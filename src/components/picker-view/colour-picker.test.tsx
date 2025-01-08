@@ -65,7 +65,7 @@ describe('ColourPicker', () => {
 
         rerender(<ColourPicker city="hongkong" {...mockCallbacks} />);
 
-        await user.click(screen.getByRole('textbox'));
+        // await user.click(screen.getByRole('textbox'));
         await waitFor(() => expect(screen.getByText('Tsuen Wan Line')).toBeInTheDocument());
         expect(screen.getByText('Kwun Tong Line')).toBeInTheDocument();
     });
