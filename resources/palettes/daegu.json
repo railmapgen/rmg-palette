@@ -1,32 +1,46 @@
 [
     {
         "id": "d1",
+        "colour": "#d93f5c",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "ko": "1호선 ",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#D50F4D"
+        }
     },
     {
         "id": "d2",
+        "colour": "#00aa80",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "ko": "2호선 ",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#21A37F"
+        }
     },
     {
         "id": "d3",
+        "colour": "#ffb11e",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "ko": "3호선 ",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#F0C01E"
+        }
+    },
+    {
+        "id": "dg",
+        "colour": "#0054a6",
+        "fg": "#fff",
+        "name": {
+            "en": "Daegyeong Line",
+            "zh-Hans": "大庆线",
+            "zh-Hant": "大慶線",
+            "ko": "대경선"
+        }
     }
 ]
