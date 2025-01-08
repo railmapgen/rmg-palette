@@ -346,6 +346,16 @@
         }
     },
     {
+        "id": "cork",
+        "country": "IE",
+        "name": {
+            "en": "Cork",
+            "zh-Hans": "科克",
+            "zh-Hant": "科克",
+            "ga": "Corcaigh"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {
