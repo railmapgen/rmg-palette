@@ -1350,6 +1350,15 @@
         }
     },
     {
+        "id": "philidelphia",
+        "country": "US",
+        "name": {
+            "en": "SEPTA",
+            "zh-Hans": "SEPTA",
+            "zh-Hant": "SEPTA"
+        }
+    },
+    {
         "id": "poznan",
         "country": "PL",
         "name": {
