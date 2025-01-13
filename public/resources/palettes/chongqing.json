@@ -201,7 +201,7 @@
     },
     {
         "id": "cq27",
-        "colour": "#685bc7",
+        "colour": "#0057b8",
         "fg": "#fff",
         "name": {
             "en": "Line 27",
@@ -211,7 +211,7 @@
     },
     {
         "id": "jiangtiao",
-        "colour": "#0077c8",
+        "colour": "#0057b8",
         "fg": "#fff",
         "name": {
             "en": "Jiangtiao Line",
@@ -227,6 +227,96 @@
             "en": "Bitong Line",
             "zh-Hans": "璧铜线",
             "zh-Hant": "璧銅線"
+        }
+    },
+    {
+        "id": "cq19",
+        "colour": "#0057b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "cq20",
+        "colour": "#0057b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "cq21",
+        "colour": "#008c95",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "cq26",
+        "colour": "#0057b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26",
+            "zh-Hans": "26号线",
+            "zh-Hant": "26號線"
+        }
+    },
+    {
+        "id": "cq28",
+        "colour": "#009b98",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号线",
+            "zh-Hant": "28號線"
+        }
+    },
+    {
+        "id": "cq29",
+        "colour": "#0057b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 29",
+            "zh-Hans": "29号线",
+            "zh-Hant": "29號線"
+        }
+    },
+    {
+        "id": "guobo",
+        "colour": "#f67599",
+        "fg": "#fff",
+        "name": {
+            "en": "Guobo Line",
+            "zh-Hans": "国博线",
+            "zh-Hant": "國博線"
+        }
+    },
+    {
+        "id": "konggang",
+        "colour": "#003da5",
+        "fg": "#fff",
+        "name": {
+            "en": "Konggang Line",
+            "zh-Hans": "空港线",
+            "zh-Hant": "空港線"
+        }
+    },
+    {
+        "id": "yongchuan",
+        "colour": "#0057b8",
+        "fg": "#fff",
+        "name": {
+            "en": "Yongchuan Line",
+            "zh-Hans": "永川线",
+            "zh-Hant": "永川線"
         }
     }
 ]
