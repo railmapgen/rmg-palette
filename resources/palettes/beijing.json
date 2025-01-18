@@ -1,9 +1,8 @@
 [
     {
         "id": "bj1",
-        "colour": "#A4343A",
+        "colour": "#c23a30",
         "fg": "#fff",
-        "pantone": "1807 C",
         "name": {
             "en": "Line 1/Batong Line",
             "zh-Hans": "1号线/八通线",
@@ -12,9 +11,8 @@
     },
     {
         "id": "bj2",
-        "colour": "#004B87",
+        "colour": "#006098",
         "fg": "#fff",
-        "pantone": "301 C",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
@@ -23,9 +21,8 @@
     },
     {
         "id": "bj3",
-        "colour": "#C8102E",
+        "colour": "#ce093d",
         "fg": "#fff",
-        "pantone": "186 C",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
@@ -34,9 +31,8 @@
     },
     {
         "id": "bj4",
-        "colour": "#008C95",
+        "colour": "#008e9c",
         "fg": "#fff",
-        "pantone": "321 C",
         "name": {
             "en": "Line 4/Daxing Line",
             "zh-Hans": "4号线/大兴线",
@@ -45,9 +41,8 @@
     },
     {
         "id": "bj5",
-        "colour": "#AA0061",
+        "colour": "#a6217f",
         "fg": "#fff",
-        "pantone": "227 C",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
@@ -56,9 +51,8 @@
     },
     {
         "id": "bj6",
-        "colour": "#B58500",
+        "colour": "#d29700",
         "fg": "#fff",
-        "pantone": "125 C",
         "name": {
             "en": "Line 6",
             "zh-Hans": "6号线",
@@ -67,9 +61,8 @@
     },
     {
         "id": "bj7",
-        "colour": "#FFC56E",
+        "colour": "#f6c582",
         "fg": "#000",
-        "pantone": "1355 C",
         "name": {
             "en": "Line 7",
             "zh-Hans": "7号线",
@@ -78,9 +71,8 @@
     },
     {
         "id": "bj8",
-        "colour": "#009B77",
+        "colour": "#009b6b",
         "fg": "#fff",
-        "pantone": "3278 C",
         "name": {
             "en": "Line 8",
             "zh-Hans": "8号线",
@@ -89,9 +81,8 @@
     },
     {
         "id": "bj9",
-        "colour": "#97D700",
+        "colour": "#8fc31f",
         "fg": "#000",
-        "pantone": "375 C",
         "name": {
             "en": "Line 9",
             "zh-Hans": "9号线",
@@ -100,9 +91,8 @@
     },
     {
         "id": "bj10",
-        "colour": "#0092BC",
+        "colour": "#009bc0",
         "fg": "#fff",
-        "pantone": "313 C",
         "name": {
             "en": "Line 10",
             "zh-Hans": "10号线",
@@ -111,9 +101,8 @@
     },
     {
         "id": "bj11",
-        "colour": "#FF8674",
+        "colour": "#ed796b",
         "fg": "#fff",
-        "pantone": "170 C",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
@@ -122,9 +111,8 @@
     },
     {
         "id": "bj12",
-        "colour": "#9B5A1A",
+        "colour": "#bd6f16",
         "fg": "#fff",
-        "pantone": "154 C",
         "name": {
             "en": "Line 12",
             "zh-Hans": "12号线",
@@ -133,9 +121,8 @@
     },
     {
         "id": "bj13",
-        "colour": "#F4DA40",
+        "colour": "#f9e700",
         "fg": "#000",
-        "pantone": "7404 C",
         "name": {
             "en": "Line 13",
             "zh-Hans": "13号线",
@@ -144,9 +131,8 @@
     },
     {
         "id": "bj14",
-        "colour": "#CA9A8E",
+        "colour": "#d5a7a1",
         "fg": "#000",
-        "pantone": "7612 C",
         "name": {
             "en": "Line 14",
             "zh-Hans": "14号线",
@@ -155,9 +141,8 @@
     },
     {
         "id": "bj15",
-        "colour": "#653379",
+        "colour": "#5b2c68",
         "fg": "#fff",
-        "pantone": "7664 C",
         "name": {
             "en": "Line 15",
             "zh-Hans": "15号线",
@@ -166,9 +151,8 @@
     },
     {
         "id": "bj16",
-        "colour": "#6BA539",
+        "colour": "#76a32e",
         "fg": "#fff",
-        "pantone": "7737 C",
         "name": {
             "en": "Line 16",
             "zh-Hans": "16号线",
@@ -177,9 +161,8 @@
     },
     {
         "id": "bj17",
-        "colour": "#00B2A9",
+        "colour": "#00a9a9",
         "fg": "#fff",
-        "pantone": "326 C",
         "name": {
             "en": "Line 17",
             "zh-Hans": "17号线",
@@ -188,9 +171,8 @@
     },
     {
         "id": "bj19",
-        "colour": "#DD9CDF",
+        "colour": "#d6abc1",
         "fg": "#000",
-        "pantone": "251 C",
         "name": {
             "en": "Line 19",
             "zh-Hans": "19号线",
@@ -209,9 +191,8 @@
     },
     {
         "id": "bj24yz",
-        "colour": "#D00070",
+        "colour": "#e40077",
         "fg": "#fff",
-        "pantone": "226 C",
         "name": {
             "en": "Yizhuang Line",
             "zh-Hans": "亦庄线",
@@ -220,9 +201,8 @@
     },
     {
         "id": "bj25fs",
-        "colour": "#D86018",
+        "colour": "#e46022",
         "fg": "#fff",
-        "pantone": "1595 C",
         "name": {
             "en": "Fangshan Line/Yanfang Line",
             "zh-Hans": "房山线/燕房线",
@@ -231,9 +211,8 @@
     },
     {
         "id": "bj26s1",
-        "colour": "#A45A2A",
+        "colour": "#b35a20",
         "fg": "#fff",
-        "pantone": "470 C",
         "name": {
             "en": "Line S1",
             "zh-Hans": "S1线",
@@ -242,9 +221,8 @@
     },
     {
         "id": "bj27cp",
-        "colour": "#D986BA",
+        "colour": "#de82b2",
         "fg": "#000",
-        "pantone": "673 C",
         "name": {
             "en": "Changping Line",
             "zh-Hans": "昌平线",
@@ -263,9 +241,8 @@
     },
     {
         "id": "btxj",
-        "colour": "#D22730",
+        "colour": "#e50619",
         "fg": "#fff",
-        "pantone": "1795 C",
         "name": {
             "en": "Xijiao Line",
             "zh-Hans": "西郊线",
@@ -274,9 +251,8 @@
     },
     {
         "id": "btt1",
-        "colour": "#D22730",
+        "colour": "#e5061b",
         "fg": "#fff",
-        "pantone": "1795 C",
         "name": {
             "en": "Yizhuang T1 Line",
             "zh-Hans": "亦庄T1线",
@@ -285,9 +261,8 @@
     },
     {
         "id": "bj34sj",
-        "colour": "#A192B2",
+        "colour": "#a29bbb",
         "fg": "#000",
-        "pantone": "666 C",
         "name": {
             "en": "Capital Airport Express",
             "zh-Hans": "首都机场线",
@@ -296,9 +271,8 @@
     },
     {
         "id": "bj35dj",
-        "colour": "#0047BB",
+        "colour": "#004a9f",
         "fg": "#fff",
-        "pantone": "2728 C",
         "name": {
             "en": "Daxing Airport Express",
             "zh-Hans": "大兴机场线",
