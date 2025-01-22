@@ -1388,6 +1388,14 @@
         }
     },
     {
+        "id": "rennes",
+        "country": "FR",
+        "name": {
+            "fr": "Rennes",
+            "en": "Rennes"
+        }
+    },
+    {
         "id": "rheinruhr",
         "country": "DE",
         "name": {
