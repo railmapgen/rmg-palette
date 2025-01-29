@@ -2,6 +2,8 @@
 @import "ag-grid-community/styles/ag-theme-alpine.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
+@import '@mantine/core/styles.css';
+
 :root {
     background-color: #FFFFFF;
 }
