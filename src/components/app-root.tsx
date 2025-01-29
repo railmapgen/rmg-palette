@@ -1,9 +1,10 @@
-import { lazy } from 'react';
+import { lazy, PropsWithChildren, useEffect } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { PickerWindowHeader, TicketWindowHeader, WindowHeader } from './window-header';
 import { RmgErrorBoundary, RmgLoader, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
-import { createTheme, Flex, MantineProvider } from '@mantine/core';
+import { createTheme, LoadingOverlay, MantineProvider, useMantineColorScheme } from '@mantine/core';
 import RMWindow from './common/rm-window';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 
 const PaletteView = lazy(() => import('./palette-view/palette-view'));
 const TicketView = lazy(() => import('./ticket-view/ticket-view'));
@@ -12,6 +13,19 @@ const PickerView = lazy(() => import('./picker-view/picker-view'));
 const theme = createTheme({
     primaryColor: 'cyan',
 });
+
+const colourMode = rmgRuntime.getColourMode();
+const MantineProviderInner = ({ children }: PropsWithChildren) => {
+    const { setColorScheme } = useMantineColorScheme();
+
+    useEffect(() => {
+        rmgRuntime.onColourModeChange(mode => {
+            setColorScheme(mode === 'system' ? 'auto' : mode);
+        });
+    }, [setColorScheme]);
+
+    return children;
+};
 
 export default function AppRoot() {
     return (
@@ -46,13 +60,18 @@ export default function AppRoot() {
                 <Route
                     path="/"
                     element={
-                        <MantineProvider theme={theme}>
-                            <RMWindow>
-                                <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
-                                    <WindowHeader />
-                                    <PaletteView />
-                                </RmgErrorBoundary>
-                            </RMWindow>
+                        <MantineProvider
+                            theme={theme}
+                            defaultColorScheme={colourMode === 'system' ? 'auto' : colourMode}
+                        >
+                            <MantineProviderInner>
+                                <RMWindow>
+                                    <RmgErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
+                                        <WindowHeader />
+                                        <PaletteView />
+                                    </RmgErrorBoundary>
+                                </RMWindow>
+                            </MantineProviderInner>
                         </MantineProvider>
                     }
                 />
