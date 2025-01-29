@@ -249,6 +249,16 @@
         }
     },
     {
+        "id": "gz28",
+        "colour": "#d81b60",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号线",
+            "zh-Hant": "28號線"
+        }
+    },
+    {
         "id": "gfl",
         "colour": "#C4D600",
         "fg": "#000",
