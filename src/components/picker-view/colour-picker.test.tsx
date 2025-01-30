@@ -39,6 +39,7 @@ describe('ColourPicker', () => {
 
         rerender(<ColourPicker city={undefined} {...mockCallbacks} />);
 
+        expect(screen.getByRole('textbox', { name: 'Line' })).toBeDisabled();
         expect(screen.queryByRole('option')).not.toBeInTheDocument();
     });
 

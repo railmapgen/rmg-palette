@@ -1,3 +1,4 @@
+import classes from './colour-modal.module.css';
 import { useEffect, useState } from 'react';
 import CityPicker from './city-picker';
 import ColourPicker from './colour-picker';
@@ -9,6 +10,7 @@ import RecentlyUsed from './recently-used';
 import { Badge, Button, ColorInput, Divider, Flex, Group, SegmentedControl, Stack, Text } from '@mantine/core';
 import PantoneInputMantine from '../common/pantone-input-mantine';
 import RMPageBody from '../common/rm-page-body';
+import RMPageFooter from '../common/rm-page-footer';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
@@ -81,7 +83,7 @@ export default function ColourModal(props: ColourModalProps) {
     return (
         <>
             <RMPageBody>
-                <Stack p={8} align="center" w="100%" style={{ overflowY: 'auto' }}>
+                <Stack className={classes.body}>
                     <Flex>
                         <Badge size="xl" radius="sm" color={bgColour} style={{ color: fgColour }}>
                             {t('Example')}
@@ -114,7 +116,7 @@ export default function ColourModal(props: ColourModalProps) {
                     <PantoneChecker hidden={true} />
                     <Group w="100%" align="flex-end" grow>
                         <Flex direction="column">
-                            <Text size="sm" fw={500} mt={3}>
+                            <Text size="sm" className={classes['segmented-control-label']}>
                                 {t('Input mode')}
                             </Text>
                             <SegmentedControl
@@ -147,7 +149,7 @@ export default function ColourModal(props: ColourModalProps) {
                             />
                         )}
                         <Flex direction="column">
-                            <Text size="sm" fw={500} mt={3}>
+                            <Text size="sm" className={classes['segmented-control-label']}>
                                 {t('Foreground colour')}
                             </Text>
                             <SegmentedControl
@@ -168,7 +170,7 @@ export default function ColourModal(props: ColourModalProps) {
 
             <Divider />
 
-            <Flex p={8}>
+            <RMPageFooter>
                 <Group ml="auto" gap="sm">
                     <Button variant="default" size="sm" onClick={onClose}>
                         {t('Cancel')}
@@ -177,7 +179,7 @@ export default function ColourModal(props: ColourModalProps) {
                         {t('Confirm')}
                     </Button>
                 </Group>
-            </Flex>
+            </RMPageFooter>
         </>
     );
 }

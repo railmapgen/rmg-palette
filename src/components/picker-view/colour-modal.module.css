@@ -1,0 +1,11 @@
+.body {
+    padding: 8px;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.segmented-control-label {
+    font-weight: 500;
+    margin-top: 3px;
+}
