@@ -1,6 +1,4 @@
-import { RmgSectionHeader } from '@railmapgen/rmg-components';
-import { Button, ButtonGroup, Heading, IconButton, Wrap, WrapItem } from '@chakra-ui/react';
-import { MdCircle, MdDelete } from 'react-icons/md';
+import { MdClose } from 'react-icons/md';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import { clearRecentlyUsed, removeRecentlyUsedItem } from '../../redux/app/app-slice';
@@ -8,6 +6,7 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useState } from 'react';
+import { Button, ColorSwatch, Flex, Group, Title } from '@mantine/core';
 
 type RecentlyUsedProps = {
     onApply: (theme: Theme) => void;
@@ -20,6 +19,7 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
     const { recentlyUsed } = useRootSelector(state => state.app);
 
     const [isClearing, setIsClearing] = useState(false);
+    const verb = isClearing ? t('Remove') : t('Apply');
 
     const handleRemoveItem = (index: number) => {
         dispatch(removeRecentlyUsedItem(index));
@@ -32,61 +32,46 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
     };
 
     return (
-        <section>
-            <RmgSectionHeader>
-                <Heading as="h5" size="xs">
+        <Flex component="section" direction="column" w="100%">
+            <Flex>
+                <Title order={2} size="h4">
                     {t('Recently used')}
-                </Heading>
-
-                {isClearing ? (
-                    <>
-                        <Button variant="ghost" size="xs" onClick={handleClearHistory}>
-                            {t('Clear all')}
+                </Title>
+                <Group gap="xs" ml="auto">
+                    {isClearing ? (
+                        <>
+                            <Button variant="default" size="xs" onClick={handleClearHistory}>
+                                {t('Clear all')}
+                            </Button>
+                            <Button size="xs" onClick={() => setIsClearing(false)}>
+                                {t('Done')}
+                            </Button>
+                        </>
+                    ) : (
+                        <Button variant="default" size="xs" onClick={() => setIsClearing(true)}>
+                            {t('Clear')}
                         </Button>
-                        <Button
-                            colorScheme="primary"
-                            size="xs"
-                            onClick={() => setIsClearing(false)}
-                            sx={{ ml: '1 !important' }}
+                    )}
+                </Group>
+            </Flex>
+
+            <Group gap="xs" mt={8}>
+                {recentlyUsed.map(({ theme, displayName }, idx) => {
+                    return (
+                        <ColorSwatch
+                            key={theme.join('-')}
+                            component="button"
+                            color={theme[2]}
+                            style={{ color: theme[3], fontWeight: 'bold', cursor: 'pointer' }}
+                            aria-label={verb + ' ' + displayName}
+                            title={verb + ' ' + displayName}
+                            onClick={() => (isClearing ? handleRemoveItem(idx) : onApply(theme))}
                         >
-                            {t('Done')}
-                        </Button>
-                    </>
-                ) : (
-                    <Button variant="ghost" size="xs" onClick={() => setIsClearing(true)}>
-                        {t('Clear')}
-                    </Button>
-                )}
-            </RmgSectionHeader>
-
-            <Wrap>
-                {recentlyUsed.map(({ theme, displayName }, idx) => (
-                    <WrapItem key={theme.join('-')}>
-                        <ButtonGroup size="xs" isAttached>
-                            <IconButton
-                                size="xs"
-                                aria-label={t('Apply') + ' ' + displayName}
-                                title={displayName}
-                                mt="0.45px"
-                                color={theme[3]}
-                                bg={theme[2]}
-                                icon={<MdCircle />}
-                                onClick={() => onApply(theme)}
-                            />
-                            {isClearing && (
-                                <IconButton
-                                    variant="outline"
-                                    aria-label={t('Remove') + ' ' + displayName}
-                                    title={t('Remove') + ' ' + displayName}
-                                    mt="0.45px"
-                                    icon={<MdDelete />}
-                                    onClick={() => handleRemoveItem(idx)}
-                                />
-                            )}
-                        </ButtonGroup>
-                    </WrapItem>
-                ))}
-            </Wrap>
-        </section>
+                            {isClearing ? <MdClose /> : 'Aa'}
+                        </ColorSwatch>
+                    );
+                })}
+            </Group>
+        </Flex>
     );
 }

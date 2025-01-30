@@ -47,14 +47,19 @@ export default function AppRoot() {
                 <Route
                     path="/picker"
                     element={
-                        <RmgThemeProvider>
-                            <RmgWindow>
-                                <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
-                                    <PickerWindowHeader />
-                                    <PickerView />
-                                </RmgErrorBoundary>
-                            </RmgWindow>
-                        </RmgThemeProvider>
+                        <MantineProvider
+                            theme={theme}
+                            defaultColorScheme={colourMode === 'system' ? 'auto' : colourMode}
+                        >
+                            <MantineProviderInner>
+                                <RMWindow>
+                                    <RmgErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
+                                        <PickerWindowHeader />
+                                        <PickerView />
+                                    </RmgErrorBoundary>
+                                </RMWindow>
+                            </MantineProviderInner>
+                        </MantineProvider>
                     }
                 />
                 <Route

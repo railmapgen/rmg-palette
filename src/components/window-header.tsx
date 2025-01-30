@@ -40,10 +40,8 @@ export const PickerWindowHeader = () => {
     const { t } = useTranslation();
 
     return (
-        <RmgWindowHeader isAppClipHeader>
-            <Heading as="h4" size="md">
-                {t('Palette') + ' - ' + t('Picker')}
-            </Heading>
-        </RmgWindowHeader>
+        <RMWindowHeader isAppClipHeader>
+            <Title>{t('Palette') + ' - ' + t('Picker')}</Title>
+        </RMWindowHeader>
     );
 };
