@@ -68,6 +68,7 @@ export default function ColourPicker(props: ColourPickerProps) {
             onDropdownOpen={() => setIsDropdownOpen(true)}
             onDropdownClose={() => setIsDropdownOpen(false)}
             onKeyDown={({ key }) => !isDropdownOpen && key === 'Enter' && onSubmit?.()}
+            disabled={!city}
         />
     );
 }
