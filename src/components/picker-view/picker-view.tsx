@@ -1,4 +1,3 @@
-import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import ColourModal from './colour-modal';
 import { useEffect, useRef, useState } from 'react';
 import { Events } from '../../util/constants';
@@ -7,6 +6,8 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { addRecentlyUsed } from '../../redux/app/app-slice';
+import RMPage from '../common/rm-page';
+import { LoadingOverlay } from '@mantine/core';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
@@ -68,9 +69,9 @@ export default function PickerView() {
     };
 
     return (
-        <RmgPage>
-            {isDataLoading && <RmgLoader isIndeterminate />}
+        <RMPage>
+            <LoadingOverlay visible={isDataLoading} />
             <ColourModal defaultTheme={theme} sessionId={sessionId} onSubmit={handleSubmit} onClose={handleClose} />
-        </RmgPage>
+        </RMPage>
     );
 }

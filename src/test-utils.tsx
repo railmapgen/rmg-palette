@@ -7,6 +7,7 @@ import { createTestStore } from './setupTests';
 import { MemoryRouter } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n/config';
+import { MantineProvider } from '@mantine/core';
 
 interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
     store: Store;
@@ -33,6 +34,14 @@ export const TestingProvider = (props: TestingProviderProps) => {
     );
 };
 
+export const MantineTestingProvider = ({ children, store }: TestingProviderProps) => {
+    return (
+        <TestingProvider store={store}>
+            <MantineProvider>{children}</MantineProvider>
+        </TestingProvider>
+    );
+};
+
 const customRender = (ui: ReactElement, { store, ...renderOptions } = initialOptions) => {
     return render(ui, {
         wrapper: props => <TestingProvider store={store} {...props} />,
@@ -40,4 +49,11 @@ const customRender = (ui: ReactElement, { store, ...renderOptions } = initialOpt
     });
 };
 
-export { customRender as render };
+const customMantineRender = (ui: ReactElement, { store, ...renderOptions } = initialOptions) => {
+    return render(ui, {
+        wrapper: props => <MantineTestingProvider store={store} {...props} />,
+        ...renderOptions,
+    });
+};
+
+export { customRender as render, customMantineRender as mantineRender };
