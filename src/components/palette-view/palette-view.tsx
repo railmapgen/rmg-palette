@@ -3,7 +3,7 @@ import { useRootSelector } from '../../redux';
 import CityList from './city-list';
 import RMPage from '../common/rm-page';
 import { LoadingOverlay } from '@mantine/core';
-import RMPageBody from '../common/rm-page-body';
+import { RMPageBody } from '../common/rm-page';
 import { useTranslation } from 'react-i18next';
 
 export default function PaletteView() {

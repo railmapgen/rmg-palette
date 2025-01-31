@@ -1,4 +1,4 @@
-import { render } from '../../test-utils';
+import { mantineRender } from '../../test-utils';
 import TicketView from './ticket-view';
 import { TicketState } from '../../redux/ticket/ticket-slice';
 import rootReducer, { RootStore } from '../../redux';
@@ -45,7 +45,7 @@ describe('TicketView', () => {
     it('Do not apply draft ticket if it is effectively empty', async () => {
         rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(effectiveEmptyTicket));
 
-        render(<TicketView />, { store: mockStore });
+        mantineRender(<TicketView />, { store: mockStore });
         try {
             await screen.findByRole('dialog');
             throw new Error('promise not expected to be resolved');
@@ -59,7 +59,7 @@ describe('TicketView', () => {
     it('Can apply draft ticket as expected', async () => {
         rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
 
-        render(<TicketView />, { store: mockStore });
+        mantineRender(<TicketView />, { store: mockStore });
         await screen.findByRole('dialog');
 
         await act(async () => {
@@ -74,7 +74,7 @@ describe('TicketView', () => {
         rmgRuntime.storage.set(DRAFT_TICKET_KEY, JSON.stringify(draftTicket));
 
         const prevState = mockStore.getState().ticket;
-        render(<TicketView />, { store: mockStore });
+        mantineRender(<TicketView />, { store: mockStore });
         await screen.findByRole('dialog');
 
         await act(async () => {
@@ -87,7 +87,7 @@ describe('TicketView', () => {
 
     it('Can render ticket as expected', () =>
         new Promise(done => {
-            render(<TicketView />);
+            mantineRender(<TicketView />);
 
             // no dialog pops up
             screen.findByRole('dialog').catch(done);

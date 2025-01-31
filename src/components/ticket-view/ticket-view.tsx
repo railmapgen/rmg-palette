@@ -1,4 +1,3 @@
-import { Button, Flex, HStack } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import CountrySection from './country-section';
 import CitySection from './city-section';
@@ -6,11 +5,12 @@ import LinesSection from './lines-section';
 import { resetTicket, TicketState } from '../../redux/ticket/ticket-slice';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import SubmitModal from '../modal/submit-modal';
-import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import rmgRuntime, { logger } from '@railmapgen/rmg-runtime';
 import { DRAFT_TICKET_KEY, Events } from '../../util/constants';
 import UnsavedDraftModal from '../modal/unsaved-draft-modal';
+import { Button, Divider, Group, LoadingOverlay } from '@mantine/core';
+import RMPage, { RMPageBody, RMPageFooter } from '../common/rm-page';
 
 export default function TicketView() {
     const { t } = useTranslation();
@@ -48,34 +48,29 @@ export default function TicketView() {
     };
 
     return (
-        <RmgPage
-            alignSelf="center"
-            sx={{
-                width: { base: '100%', md: 520 },
-            }}
-        >
-            {isDataLoading && <RmgLoader isIndeterminate />}
+        <RMPage w={{ base: '100%', sm: 600 }} style={{ alignSelf: 'center' }}>
+            <LoadingOverlay visible={isDataLoading} />
 
-            <Flex direction="column" flex={1} overflowY="auto" bg="inherit">
+            <RMPageBody direction="column" style={{ overflowY: 'auto' }}>
                 <CountrySection />
                 <CitySection />
                 <LinesSection />
-            </Flex>
+            </RMPageBody>
 
-            <Flex my={2}>
-                <Button size="sm" onClick={handleGoBack}>
-                    {t('Go back')}
-                </Button>
+            <Divider />
 
-                <HStack ml="auto">
-                    <Button size="sm" variant="outline" onClick={handleReset}>
+            <RMPageFooter>
+                <Group flex={1} gap="sm">
+                    <Button variant="default" onClick={handleGoBack}>
+                        {t('Go back')}
+                    </Button>
+
+                    <Button variant="default" ml="auto" onClick={handleReset}>
                         {t('Reset')}
                     </Button>
-                    <Button size="sm" colorScheme="primary" onClick={() => setIsSubmitModalOpen(true)}>
-                        {t('Submit')}
-                    </Button>
-                </HStack>
-            </Flex>
+                    <Button onClick={() => setIsSubmitModalOpen(true)}>{t('Submit')}</Button>
+                </Group>
+            </RMPageFooter>
 
             <UnsavedDraftModal
                 isOpen={isUnsavedDraftModalOpen}
@@ -83,6 +78,6 @@ export default function TicketView() {
                 incomingState={draftTicket}
             />
             <SubmitModal isOpen={isSubmitModalOpen} onClose={() => setIsSubmitModalOpen(false)} />
-        </RmgPage>
+        </RMPage>
     );
 }

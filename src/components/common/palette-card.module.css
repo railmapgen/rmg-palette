@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.editable .card-section span {
+    text-align: start;
+}
+
 .output {
     flex-direction: column;
     flex: 1
@@ -22,4 +26,19 @@
 
 .output span:first-of-type {
     font-weight: bold;
+}
+
+.segmented-control-label {
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.editable-group {
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.editable-group > div {
+    flex: 1;
+    min-width: 150px;
 }

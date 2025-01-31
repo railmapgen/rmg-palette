@@ -1,12 +1,12 @@
 import { createTestStore } from '../../setupTests';
 import { PaletteEntryWithTranslationEntry, TranslationEntry } from '../../redux/ticket/util';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
-import { render } from '../../test-utils';
-import ColourEntryCard from './colour-entry-card';
+import { mantineRender } from '../../test-utils';
 import { act, fireEvent, screen, waitFor } from '@testing-library/react';
 import { setPantoneReady } from '../../redux/app/app-slice';
 import { userEvent } from '@testing-library/user-event';
 import rootReducer from '../../redux';
+import EditablePaletteCard from './editable-palette-card';
 
 const realStore = rootReducer.getState();
 
@@ -24,43 +24,45 @@ const mockCallbacks = {
     onUpdate: vi.fn(),
 };
 
-describe('ColourEntryCard', () => {
+describe('EditablePaletteCard', () => {
+    const user = userEvent.setup();
+
     afterEach(() => {
         vi.clearAllMocks();
     });
 
     it('Can hide pantone input if pantone service is not ready', async () => {
         const mockStore = createTestStore();
-        render(<ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+        mantineRender(<EditablePaletteCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+        await user.click(screen.getByRole('button', { name: 'Edit' }));
 
         // only rgb is available
-        expect(screen.queryByRole('group', { name: 'Use Pantone®' })).not.toBeInTheDocument();
-        expect(screen.getByRole('combobox', { name: 'Background colour' })).not.toBeDisabled();
-        expect(screen.queryByRole('group', { name: 'Pantone® code' })).not.toBeInTheDocument();
+        expect(screen.queryByRole('switch', { name: 'Use Pantone®' })).not.toBeInTheDocument();
+        expect(screen.getByRole('textbox', { name: 'Background colour' })).not.toBeDisabled();
+        expect(screen.queryByRole('textbox', { name: 'Pantone® code' })).not.toBeInTheDocument();
 
         await act(async () => {
             mockStore.dispatch(setPantoneReady(true));
         });
 
         // colour mode switch is available
-        expect(screen.getByRole('group', { name: 'Use Pantone®' })).toBeInTheDocument();
-        expect(screen.getByRole('combobox', { name: 'Background colour' })).toBeDisabled();
-        expect(screen.getByRole('group', { name: 'Pantone® code' })).toBeInTheDocument();
+        expect(screen.getByRole('switch', { name: 'Use Pantone®' })).toBeInTheDocument();
+        expect(screen.getByRole('textbox', { name: 'Background colour' })).toBeDisabled();
+        expect(screen.getByRole('textbox', { name: 'Pantone® code' })).toBeInTheDocument();
     });
 
     it('Can clear pantone field when manually selecting colour', async () => {
-        const user = userEvent.setup();
-
         const mockStore = createTestStore({
             app: {
                 ...realStore.app,
                 pantoneReady: true,
             },
         });
-        render(<ColourEntryCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+        mantineRender(<EditablePaletteCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+        await user.click(screen.getByRole('button', { name: 'Edit' }));
 
-        await user.click(screen.getByRole('checkbox', { name: 'No' }));
-        fireEvent.input(screen.getByLabelText('Background colour', { selector: 'input' }), {
+        await user.click(screen.getByRole('switch', { name: 'Use Pantone®' }));
+        fireEvent.input(screen.getByRole('textbox', { name: 'Background colour' }), {
             target: { value: '#aaaaaa' },
         });
         await waitFor(() => expect(mockCallbacks.onUpdate).toBeCalledTimes(1));

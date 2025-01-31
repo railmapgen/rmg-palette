@@ -9,11 +9,5 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background-color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-    .control {
-        background-color: var(--mantine-color-body);
-    }
+    background-color: var(--mantine-color-body);
 }

@@ -6,7 +6,8 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useState } from 'react';
-import { Button, ColorSwatch, Flex, Group, Title } from '@mantine/core';
+import { Button, ColorSwatch, Group, Title } from '@mantine/core';
+import RMSection, { RMSectionBody, RMSectionHeader } from '../common/rm-section';
 
 type RecentlyUsedProps = {
     onApply: (theme: Theme) => void;
@@ -32,8 +33,8 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
     };
 
     return (
-        <Flex component="section" direction="column" w="100%">
-            <Flex>
+        <RMSection w="100%">
+            <RMSectionHeader>
                 <Title order={2} size="h4">
                     {t('Recently used')}
                 </Title>
@@ -53,25 +54,27 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
                         </Button>
                     )}
                 </Group>
-            </Flex>
+            </RMSectionHeader>
 
-            <Group gap="xs" mt={8}>
-                {recentlyUsed.map(({ theme, displayName }, idx) => {
-                    return (
-                        <ColorSwatch
-                            key={theme.join('-')}
-                            component="button"
-                            color={theme[2]}
-                            style={{ color: theme[3], fontWeight: 'bold', cursor: 'pointer' }}
-                            aria-label={verb + ' ' + displayName}
-                            title={verb + ' ' + displayName}
-                            onClick={() => (isClearing ? handleRemoveItem(idx) : onApply(theme))}
-                        >
-                            {isClearing ? <MdClose /> : 'Aa'}
-                        </ColorSwatch>
-                    );
-                })}
-            </Group>
-        </Flex>
+            <RMSectionBody>
+                <Group gap="xs" p="xs">
+                    {recentlyUsed.map(({ theme, displayName }, idx) => {
+                        return (
+                            <ColorSwatch
+                                key={theme.join('-')}
+                                component="button"
+                                color={theme[2]}
+                                style={{ color: theme[3], fontWeight: 'bold', cursor: 'pointer' }}
+                                aria-label={verb + ' ' + displayName}
+                                title={verb + ' ' + displayName}
+                                onClick={() => (isClearing ? handleRemoveItem(idx) : onApply(theme))}
+                            >
+                                {isClearing ? <MdClose /> : 'Aa'}
+                            </ColorSwatch>
+                        );
+                    })}
+                </Group>
+            </RMSectionBody>
+        </RMSection>
     );
 }

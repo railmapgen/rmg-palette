@@ -33,7 +33,7 @@ export interface TicketState {
 }
 
 const getInitialState = (): TicketState => ({
-    country: undefined,
+    country: '',
     newCountry: '',
     newCountryLang: undefined,
     countryName: initialTranslation,

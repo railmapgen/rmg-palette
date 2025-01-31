@@ -1,10 +1,10 @@
 import { lazy, PropsWithChildren, useEffect } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { PickerWindowHeader, TicketWindowHeader, WindowHeader } from './window-header';
-import { RmgErrorBoundary, RmgLoader, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
 import { createTheme, LoadingOverlay, MantineProvider, useMantineColorScheme } from '@mantine/core';
 import RMWindow from './common/rm-window';
 import rmgRuntime from '@railmapgen/rmg-runtime';
+import RMErrorBoundary from './common/rm-error-boundary';
 
 const PaletteView = lazy(() => import('./palette-view/palette-view'));
 const TicketView = lazy(() => import('./ticket-view/ticket-view'));
@@ -30,57 +30,41 @@ const MantineProviderInner = ({ children }: PropsWithChildren) => {
 export default function AppRoot() {
     return (
         <HashRouter>
-            <Routes>
-                <Route
-                    path="/new"
-                    element={
-                        <RmgThemeProvider>
-                            <RmgWindow>
-                                <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
-                                    <TicketWindowHeader />
-                                    <TicketView />
-                                </RmgErrorBoundary>
-                            </RmgWindow>
-                        </RmgThemeProvider>
-                    }
-                />
-                <Route
-                    path="/picker"
-                    element={
-                        <MantineProvider
-                            theme={theme}
-                            defaultColorScheme={colourMode === 'system' ? 'auto' : colourMode}
-                        >
-                            <MantineProviderInner>
-                                <RMWindow>
-                                    <RmgErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
+            <MantineProvider theme={theme} defaultColorScheme={colourMode === 'system' ? 'auto' : colourMode}>
+                <MantineProviderInner>
+                    <RMWindow>
+                        <Routes>
+                            <Route
+                                path="/new"
+                                element={
+                                    <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
+                                        <TicketWindowHeader />
+                                        <TicketView />
+                                    </RMErrorBoundary>
+                                }
+                            />
+                            <Route
+                                path="/picker"
+                                element={
+                                    <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
                                         <PickerWindowHeader />
                                         <PickerView />
-                                    </RmgErrorBoundary>
-                                </RMWindow>
-                            </MantineProviderInner>
-                        </MantineProvider>
-                    }
-                />
-                <Route
-                    path="/"
-                    element={
-                        <MantineProvider
-                            theme={theme}
-                            defaultColorScheme={colourMode === 'system' ? 'auto' : colourMode}
-                        >
-                            <MantineProviderInner>
-                                <RMWindow>
-                                    <RmgErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
+                                    </RMErrorBoundary>
+                                }
+                            />
+                            <Route
+                                path="/"
+                                element={
+                                    <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
                                         <WindowHeader />
                                         <PaletteView />
-                                    </RmgErrorBoundary>
-                                </RMWindow>
-                            </MantineProviderInner>
-                        </MantineProvider>
-                    }
-                />
-            </Routes>
+                                    </RMErrorBoundary>
+                                }
+                            />
+                        </Routes>
+                    </RMWindow>
+                </MantineProviderInner>
+            </MantineProvider>
         </HashRouter>
     );
 }
