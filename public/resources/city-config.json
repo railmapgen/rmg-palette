@@ -49,6 +49,15 @@
         }
     },
     {
+        "id": "auckland",
+        "country": "NZ",
+        "name": {
+            "en": "Auckland",
+            "zh-Hans": "奥克兰",
+            "zh-Hant": "奧克蘭"
+        }
+    },
+    {
         "id": "baku",
         "country": "AZ",
         "name": {
@@ -337,6 +346,16 @@
         }
     },
     {
+        "id": "cork",
+        "country": "IE",
+        "name": {
+            "en": "Cork",
+            "zh-Hans": "科克",
+            "zh-Hant": "科克",
+            "ga": "Corcaigh"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {
@@ -617,6 +636,13 @@
             "zh-Hans": "合肥",
             "zh-Hant": "合肥",
             "en": "Hefei"
+        }
+    },
+    {
+        "id": "helsinki",
+        "country": "FI",
+        "name": {
+            "en": "Helsinki"
         }
     },
     {
@@ -921,6 +947,15 @@
         }
     },
     {
+        "id": "lv",
+        "country": "US",
+        "name": {
+            "en": "Las Vegas",
+            "zh-Hans": "拉斯维加斯",
+            "zh-Hant": "拉斯維加斯"
+        }
+    },
+    {
         "id": "lyon",
         "country": "FR",
         "name": {
@@ -1200,6 +1235,15 @@
         }
     },
     {
+        "id": "nottingham",
+        "country": "GBENG",
+        "name": {
+            "en": "Nottingham",
+            "zh-Hans": "诺丁汉",
+            "zh-Hant": "諾丁漢"
+        }
+    },
+    {
         "id": "novosibirsk",
         "country": "RU",
         "name": {
@@ -1217,6 +1261,16 @@
             "zh-Hans": "纽伦堡",
             "zh-Hant": "紐倫堡",
             "de": "Nürnberg"
+        }
+    },
+    {
+        "id": "okayama",
+        "country": "JP",
+        "name": {
+            "en": "Okayama",
+            "zh-Hans": "冈山",
+            "zh-Hant": "岡山",
+            "ja": "岡山"
         }
     },
     {
@@ -1293,6 +1347,15 @@
             "en": "Perth",
             "zh-Hans": "珀斯",
             "zh-Hant": "珀斯"
+        }
+    },
+    {
+        "id": "philidelphia",
+        "country": "US",
+        "name": {
+            "en": "SEPTA",
+            "zh-Hans": "SEPTA",
+            "zh-Hant": "SEPTA"
         }
     },
     {
@@ -1867,6 +1930,25 @@
             "en": "Zhenjiang",
             "zh-Hans": "镇江",
             "zh-Hant": "鎮江"
+        }
+    },
+    {
+        "id": "zhongshan",
+        "country": "CN",
+        "name": {
+            "en": "Zhongshan",
+            "zh-Hans": "中山",
+            "zh-Hant": "中山"
+        }
+    },
+    {
+        "id": "zurich",
+        "country": "CH",
+        "name": {
+            "en": "Zurich",
+            "zh-Hans": "苏黎世",
+            "zh-Hant": "蘇黎世",
+            "de": "Zürich"
         }
     }
 ]
