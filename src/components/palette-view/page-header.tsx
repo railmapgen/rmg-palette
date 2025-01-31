@@ -6,7 +6,7 @@ import useTranslatedName from '../hooks/use-translated-name';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { Button, NativeSelect } from '@mantine/core';
-import RMPageHeader from '../common/rm-page-header';
+import { RMPageHeader } from '../common/rm-page';
 
 export default function PageHeader() {
     const { t, i18n } = useTranslation();

@@ -1,4 +1,3 @@
-import { Button, Heading, VStack } from '@chakra-ui/react';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import {
     addLine,
@@ -14,8 +13,10 @@ import {
 import { MdAdd } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import PantoneChecker from './pantone-checker';
-import LineDetailCard from '../common/line-detail-card';
-import { RmgSection, RmgSectionHeader } from '@railmapgen/rmg-components';
+import EditablePaletteCard from './editable-palette-card';
+import { Button, Stack, Title } from '@mantine/core';
+import { useCallback, useRef } from 'react';
+import RMSection, { RMSectionHeader } from '../common/rm-section';
 
 export default function LinesSection() {
     const { t } = useTranslation();
@@ -23,47 +24,56 @@ export default function LinesSection() {
 
     const lines = useRootSelector(state => state.ticket.lines);
 
+    const stackRef = useRef<HTMLDivElement>(null);
+
+    const scrollToBottom = useCallback(() => {
+        setTimeout(() => {
+            stackRef.current?.lastElementChild?.scrollIntoView({ behavior: 'smooth' });
+        }, 0);
+    }, [stackRef.current]);
+
+    const handleCopy = (entryId: string) => {
+        dispatch(copyLine(entryId));
+        scrollToBottom();
+    };
+
+    const handleAdd = () => {
+        dispatch(addLine());
+        scrollToBottom();
+    };
+
     return (
-        <RmgSection>
-            <RmgSectionHeader>
-                <Heading as="h5" size="sm" mr="auto">
+        <RMSection>
+            <RMSectionHeader>
+                <Title order={2} size="h4">
                     {t('Lines')}
-                </Heading>
+                </Title>
 
-                <PantoneChecker />
-            </RmgSectionHeader>
+                <PantoneChecker ml="auto" />
+            </RMSectionHeader>
 
-            <VStack spacing={1} px={1}>
-                {Object.entries(lines).map(([entryId, line]) => {
-                    return (
-                        <LineDetailCard
-                            key={entryId}
-                            lineDetail={line}
-                            editable={true}
-                            onUpdate={updates => dispatch(updateLineDetail({ entryId, updates }))}
-                            onMoveUp={() => dispatch(moveLineUp(entryId))}
-                            onMoveDown={() => dispatch(moveLineDown(entryId))}
-                            onCopy={() => dispatch(copyLine(entryId))}
-                            onRemove={() => dispatch(removeLine(entryId))}
-                            onNameUpdate={(lang, name) => dispatch(updateLineName({ entryId, lang, name }))}
-                            onLangSwitch={(prevLang, nextLang) =>
-                                dispatch(switchLineNameLang({ entryId, prevLang, nextLang }))
-                            }
-                            onNameRemove={lang => dispatch(removeLineName({ entryId, lang }))}
-                        />
-                    );
-                })}
+            <Stack ref={stackRef} px={8} py={4} gap="xs">
+                {Object.entries(lines).map(([entryId, line]) => (
+                    <EditablePaletteCard
+                        key={entryId}
+                        lineDetail={line}
+                        onUpdate={updates => dispatch(updateLineDetail({ entryId, updates }))}
+                        onMoveUp={() => dispatch(moveLineUp(entryId))}
+                        onMoveDown={() => dispatch(moveLineDown(entryId))}
+                        onCopy={() => handleCopy(entryId)}
+                        onRemove={() => dispatch(removeLine(entryId))}
+                        onNameUpdate={(lang, name) => dispatch(updateLineName({ entryId, lang, name }))}
+                        onLangSwitch={(prevLang, nextLang) =>
+                            dispatch(switchLineNameLang({ entryId, prevLang, nextLang }))
+                        }
+                        onNameRemove={lang => dispatch(removeLineName({ entryId, lang }))}
+                    />
+                ))}
 
-                <Button
-                    size="xs"
-                    variant="ghost"
-                    leftIcon={<MdAdd />}
-                    ml="auto !important"
-                    onClick={() => dispatch(addLine())}
-                >
+                <Button size="xs" variant="outline" leftSection={<MdAdd />} ml="auto" onClick={handleAdd}>
                     {t('Add a line')}
                 </Button>
-            </VStack>
-        </RmgSection>
+            </Stack>
+        </RMSection>
     );
 }

@@ -1,8 +1,10 @@
-import { RmgDebouncedInput } from '@railmapgen/rmg-components';
 import { ColourHex } from '@railmapgen/rmg-palette-resources';
 import { getRGBByPantone } from '../../service/pantone-service';
-import { useEffect, useRef, useState } from 'react';
+import { ChangeEvent, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
+import { Loader, TextInput } from '@mantine/core';
+import { useTranslation } from 'react-i18next';
+import { useDebouncedCallback } from '@mantine/hooks';
 
 interface PantoneInputProps {
     value: string;
@@ -11,6 +13,8 @@ interface PantoneInputProps {
 
 export default function PantoneInput(props: PantoneInputProps) {
     const { value, onChange } = props;
+
+    const { t } = useTranslation();
 
     const [pantoneCode, setPantoneCode] = useState(value);
     const [isLoading, setIsLoading] = useState(false);
@@ -26,7 +30,7 @@ export default function PantoneInput(props: PantoneInputProps) {
         setPantoneCode(value);
     }, [value]);
 
-    const handlePantoneCodeInput = async (nextValue: string) => {
+    const handleSearch = useDebouncedCallback(async (nextValue: string) => {
         controllerRef.current.abort();
 
         controllerRef.current = new AbortController();
@@ -45,14 +49,20 @@ export default function PantoneInput(props: PantoneInputProps) {
         } finally {
             setIsLoading(false);
         }
+    }, 1500);
+
+    const handleInput = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
+        setPantoneCode(value);
+        handleSearch(value);
     };
 
     return (
-        <RmgDebouncedInput
-            defaultValue={pantoneCode}
-            onDebouncedChange={handlePantoneCodeInput}
-            delay={1500}
-            isDisabled={isLoading}
+        <TextInput
+            label={t('Pantone® code')}
+            value={pantoneCode}
+            onChange={handleInput}
+            rightSection={isLoading && <Loader size={20} />}
+            disabled={isLoading}
         />
     );
 }

@@ -1,5 +1,4 @@
-import { render } from '../../test-utils';
-import { vi } from 'vitest';
+import { mantineRender } from '../../test-utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { screen, within } from '@testing-library/react';
 import { TranslationEntry } from '../../redux/ticket/util';
@@ -16,24 +15,16 @@ const mockCallbacks = {
 };
 
 describe('MultiLangEntryCard', () => {
-    it('Can hide label name of fields that does not belong to entry 1', () => {
-        render(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
+    it('Has accessible name of fields', () => {
+        mantineRender(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
 
         const stack1 = screen.getByTestId('entry-card-stack-en');
-        const stack1Fields = within(stack1).getAllByRole('combobox');
-        expect(stack1Fields).toHaveLength(2);
-        expect(stack1Fields[0]).toHaveAccessibleName('Language');
-        expect(stack1Fields[1]).toHaveAccessibleName('Name');
-
-        const stack2 = screen.getByTestId('entry-card-stack-zh-Hant');
-        const stack2Fields = within(stack2).getAllByRole('combobox');
-        expect(stack2Fields).toHaveLength(2);
-        expect(stack2Fields[0]).toHaveAccessibleName('');
-        expect(stack2Fields[1]).toHaveAccessibleName('');
+        expect(within(stack1).getByRole('combobox', { name: 'Language' })).toBeInTheDocument();
+        expect(within(stack1).getByRole('textbox', { name: 'Name' })).toBeInTheDocument();
     });
 
     it('Can display add button at the last entry', () => {
-        render(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
+        mantineRender(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
 
         const stack1 = screen.getByTestId('entry-card-stack-en');
         expect(

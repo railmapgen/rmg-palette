@@ -8,9 +8,8 @@ import { useRootSelector } from '../../redux';
 import PantoneChecker from '../ticket-view/pantone-checker';
 import RecentlyUsed from './recently-used';
 import { Badge, Button, ColorInput, Divider, Flex, Group, SegmentedControl, Stack, Text } from '@mantine/core';
-import PantoneInputMantine from '../common/pantone-input-mantine';
-import RMPageBody from '../common/rm-page-body';
-import RMPageFooter from '../common/rm-page-footer';
+import PantoneInput from '../common/pantone-input';
+import { RMPageBody, RMPageFooter } from '../common/rm-page';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
@@ -113,7 +112,7 @@ export default function ColourModal(props: ColourModalProps) {
                         />
                     </Group>
 
-                    <PantoneChecker hidden={true} />
+                    <PantoneChecker display="none" />
                     <Group w="100%" align="flex-end" grow>
                         <Flex direction="column">
                             <Text size="sm" className={classes['segmented-control-label']}>
@@ -126,7 +125,7 @@ export default function ColourModal(props: ColourModalProps) {
                             />
                         </Flex>
                         {colourMode === 'pantone' && (
-                            <PantoneInputMantine
+                            <PantoneInput
                                 value={pantoneCode}
                                 onChange={(value, hex) => {
                                     setCityCode('other');
