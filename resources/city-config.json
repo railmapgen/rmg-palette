@@ -1388,6 +1388,14 @@
         }
     },
     {
+        "id": "rennes",
+        "country": "FR",
+        "name": {
+            "fr": "Rennes",
+            "en": "Rennes"
+        }
+    },
+    {
         "id": "rheinruhr",
         "country": "DE",
         "name": {
@@ -1781,6 +1789,15 @@
             "en": "Urumqi",
             "zh-Hans": "乌鲁木齐",
             "zh-Hant": "烏魯木齊"
+        }
+    },
+    {
+        "id": "vancouver",
+        "country": "CA",
+        "name": {
+            "en": "Vancouver",
+            "fr": "Vancouver",
+            "zh-Hant": "溫哥華"
         }
     },
     {
