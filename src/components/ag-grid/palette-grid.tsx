@@ -6,8 +6,27 @@ import { CityEntry } from '@railmapgen/rmg-palette-resources';
 import LineBadges from './line-badges';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
-import { ColDef, SelectionChangedEvent } from 'ag-grid-community';
+import {
+    AllCommunityModule,
+    ColDef,
+    ModuleRegistry,
+    provideGlobalGridOptions,
+    RowSelectionOptions,
+    SelectionChangedEvent,
+} from 'ag-grid-community';
 import { closeSidePanel, setSidePanelCity } from '../../redux/app/app-slice';
+
+// Register all community features
+ModuleRegistry.registerModules([AllCommunityModule]);
+
+// Mark all grids as using legacy themes
+provideGlobalGridOptions({ theme: 'legacy' });
+
+const rowSelection: RowSelectionOptions = {
+    mode: 'singleRow',
+    checkboxes: false,
+    enableClickSelection: true,
+};
 
 export default function PaletteGrid() {
     const { t, i18n } = useTranslation();
@@ -72,7 +91,7 @@ export default function PaletteGrid() {
                 rowHeight={36}
                 suppressCellFocus={true}
                 suppressRowVirtualisation={true}
-                rowSelection="single"
+                rowSelection={rowSelection}
                 debug={process.env.NODE_ENV !== 'production'}
                 onSelectionChanged={handleSelectionChanged}
             />
