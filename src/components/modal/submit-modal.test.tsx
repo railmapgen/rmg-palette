@@ -1,4 +1,4 @@
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';
@@ -13,7 +13,7 @@ const mockCallbacks = {
 
 describe('SubmitModal', () => {
     it('Can list out errors as expected', () => {
-        mantineRender(<SubmitModal isOpen={true} {...mockCallbacks} />);
+        render(<SubmitModal isOpen={true} {...mockCallbacks} />);
 
         // errors are listed out
         expect(screen.getByRole('list', { name: 'List of country errors' })).toBeInTheDocument();
@@ -53,7 +53,7 @@ describe('SubmitModal', () => {
                 },
             },
         });
-        mantineRender(<SubmitModal isOpen={true} {...mockCallbacks} />, { store: mockStore });
+        render(<SubmitModal isOpen={true} {...mockCallbacks} />, { store: mockStore });
 
         // errors are not listed out
         expect(screen.queryByRole('list', { name: 'List of country errors' })).not.toBeInTheDocument();

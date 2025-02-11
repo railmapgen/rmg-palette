@@ -1,10 +1,11 @@
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import ColourModal from './colour-modal';
 import { createTestStore } from '../../setupTests';
 import rootReducer from '../../redux';
 import { userEvent } from '@testing-library/user-event';
 import { screen, waitFor } from '@testing-library/react';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
+import { expect } from 'vitest';
 
 const mockCallbacks = {
     onClose: vi.fn(),
@@ -36,7 +37,7 @@ describe('ColourModal', () => {
     const user = userEvent.setup();
 
     it('Pantone input end-to-end', async () => {
-        mantineRender(<ColourModal {...mockCallbacks} />, { store: mockStore });
+        render(<ColourModal {...mockCallbacks} />, { store: mockStore });
 
         // by default pantone input is hidden
         expect(screen.getByRole('radio', { name: 'RGB' })).toBeChecked();
@@ -61,7 +62,7 @@ describe('ColourModal', () => {
     });
 
     it('Keyboard users selecting from palette end-to-end', async () => {
-        mantineRender(<ColourModal {...mockCallbacks} />, { store: mockStore });
+        render(<ColourModal {...mockCallbacks} />, { store: mockStore });
 
         await user.tab(); // focus
         const cityInput = screen.getByRole('textbox', { name: 'City' });

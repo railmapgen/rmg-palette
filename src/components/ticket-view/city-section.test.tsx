@@ -1,4 +1,4 @@
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import CitySection from './city-section';
 import { screen, waitFor } from '@testing-library/react';
 import rootReducer, { RootStore } from '../../redux';
@@ -68,7 +68,7 @@ describe('CitySection', () => {
     });
 
     it('Can populate ticket when selecting an existing city', async () => {
-        mantineRender(<CitySection />, { store: mockStore });
+        render(<CitySection />, { store: mockStore });
 
         // select guangzhou
         await user.selectOptions(screen.getByRole('combobox', { name: 'City' }), 'Guangzhou');
@@ -76,7 +76,7 @@ describe('CitySection', () => {
     });
 
     it('Can clear lines when adding a new city', async () => {
-        mantineRender(<CitySection />, { store: mockStore });
+        render(<CitySection />, { store: mockStore });
 
         // select new
         await user.selectOptions(screen.getByRole('combobox', { name: 'City' }), 'Add a city...');

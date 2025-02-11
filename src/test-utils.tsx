@@ -28,17 +28,11 @@ export const TestingProvider = (props: TestingProviderProps) => {
     return (
         <I18nextProvider i18n={i18n}>
             <Provider store={store}>
-                <MemoryRouter>{children}</MemoryRouter>
+                <MemoryRouter>
+                    <MantineProvider>{children}</MantineProvider>
+                </MemoryRouter>
             </Provider>
         </I18nextProvider>
-    );
-};
-
-export const MantineTestingProvider = ({ children, store }: TestingProviderProps) => {
-    return (
-        <TestingProvider store={store}>
-            <MantineProvider>{children}</MantineProvider>
-        </TestingProvider>
     );
 };
 
@@ -49,11 +43,4 @@ const customRender = (ui: ReactElement, { store, ...renderOptions } = initialOpt
     });
 };
 
-const customMantineRender = (ui: ReactElement, { store, ...renderOptions } = initialOptions) => {
-    return render(ui, {
-        wrapper: props => <MantineTestingProvider store={store} {...props} />,
-        ...renderOptions,
-    });
-};
-
-export { customRender as render, customMantineRender as mantineRender };
+export { customRender as render };

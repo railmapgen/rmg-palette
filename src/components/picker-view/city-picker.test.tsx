@@ -1,7 +1,7 @@
 import CityPicker from './city-picker';
 import { screen } from '@testing-library/react';
 import i18n from '../../i18n/config';
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import rootReducer from '../../redux';
 import { createTestStore } from '../../setupTests';
 import { userEvent } from '@testing-library/user-event';
@@ -91,7 +91,7 @@ describe('CityPicker', () => {
     });
 
     it('Can render flag emojis and translations as expected', async () => {
-        mantineRender(<CityPicker />, { store: mockStore });
+        render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 
@@ -109,13 +109,13 @@ describe('CityPicker', () => {
     });
 
     it('Can mount component with default city code as expected', () => {
-        mantineRender(<CityPicker defaultValueId="hongkong" />, { store: mockStore });
+        render(<CityPicker defaultValueId="hongkong" />, { store: mockStore });
 
         expect(screen.getByDisplayValue('香港')).toBeInTheDocument();
     });
 
     it('Can handle city selection as expected', async () => {
-        mantineRender(<CityPicker {...mockCallbacks} />, { store: mockStore });
+        render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
         const edinburghItem = await screen.findByRole('option', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' });
@@ -126,7 +126,7 @@ describe('CityPicker', () => {
     });
 
     it('Can filter cities by country name', async () => {
-        mantineRender(<CityPicker {...mockCallbacks} />, { store: mockStore });
+        render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.type(screen.getByRole('textbox'), 'scot');
         const filteredOptions = screen.getAllByRole('option');
@@ -135,7 +135,7 @@ describe('CityPicker', () => {
     });
 
     it('Can filter cities by country ID', async () => {
-        mantineRender(<CityPicker {...mockCallbacks} />, { store: mockStore });
+        render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.type(screen.getByRole('textbox'), 'gb');
         const filteredOptions = screen.getAllByRole('option');

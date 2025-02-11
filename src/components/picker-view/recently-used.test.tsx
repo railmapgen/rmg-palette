@@ -1,7 +1,7 @@
 import rootReducer from '../../redux';
 import { createTestStore } from '../../setupTests';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import RecentlyUsed from './recently-used';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
@@ -26,7 +26,7 @@ describe('RecentlyUsed', () => {
     const user = userEvent.setup();
 
     it('#1113 Support removing single item', async () => {
-        mantineRender(<RecentlyUsed {...mockCallbacks} />, { store: testStore });
+        render(<RecentlyUsed {...mockCallbacks} />, { store: testStore });
         expect(screen.getAllByRole('button', { name: /^Apply/ })).toHaveLength(3);
 
         // enter clearing mode

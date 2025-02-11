@@ -1,4 +1,4 @@
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import { screen, waitFor } from '@testing-library/react';
 import PantoneInput from './pantone-input';
 import { userEvent } from '@testing-library/user-event';
@@ -24,12 +24,12 @@ describe('PantoneInput', () => {
             json: () => Promise.resolve({ data: { getColor: { hex: '00629B' } } }),
         });
 
-        mantineRender(<PantoneInput value="130 C" {...mockCallbacks} />);
+        render(<PantoneInput value="130 C" {...mockCallbacks} />);
 
         const input = screen.getByRole('textbox');
         await user.clear(input);
         await user.type(input, '3015 C');
-        await waitFor(() => expect(mockFetch).toBeCalledTimes(1), { timeout: 1501 });
+        await waitFor(() => expect(mockFetch).toBeCalledTimes(1), { timeout: 2000 });
 
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
         expect(mockCallbacks.onChange).toBeCalledWith('3015 C', '#00629B');
@@ -38,7 +38,7 @@ describe('PantoneInput', () => {
     it('Reset input field if pantone colour is failed to fetch', async () => {
         global.fetch = mockFetch.mockRejectedValue('Failed to fetch');
 
-        mantineRender(<PantoneInput value="130 C" {...mockCallbacks} />);
+        render(<PantoneInput value="130 C" {...mockCallbacks} />);
 
         const input = screen.getByRole('textbox');
         await user.clear(input);

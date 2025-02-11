@@ -1,5 +1,5 @@
 import { userEvent } from '@testing-library/user-event';
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import CityPicker from './city-picker';
 import { screen } from '@testing-library/react';
 import cityList from '../../../public/resources/city-config.json';
@@ -31,7 +31,7 @@ describe('CityPicker Censored', () => {
     const user = userEvent.setup();
 
     it('Can censor Taiwan flag emojis as expected', async () => {
-        mantineRender(<CityPicker />, { store: mockStore });
+        render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 

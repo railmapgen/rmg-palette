@@ -1,7 +1,7 @@
 import { createTestStore } from '../../setupTests';
 import { PaletteEntryWithTranslationEntry, TranslationEntry } from '../../redux/ticket/util';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import { act, fireEvent, screen, waitFor } from '@testing-library/react';
 import { setPantoneReady } from '../../redux/app/app-slice';
 import { userEvent } from '@testing-library/user-event';
@@ -33,7 +33,7 @@ describe('EditablePaletteCard', () => {
 
     it('Can hide pantone input if pantone service is not ready', async () => {
         const mockStore = createTestStore();
-        mantineRender(<EditablePaletteCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+        render(<EditablePaletteCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
         await user.click(screen.getByRole('button', { name: 'Edit' }));
 
         // only rgb is available
@@ -58,7 +58,7 @@ describe('EditablePaletteCard', () => {
                 pantoneReady: true,
             },
         });
-        mantineRender(<EditablePaletteCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
+        render(<EditablePaletteCard lineDetail={mockLineDetail} {...mockCallbacks} />, { store: mockStore });
         await user.click(screen.getByRole('button', { name: 'Edit' }));
 
         await user.click(screen.getByRole('switch', { name: 'Use Pantone®' }));
