@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import { Group, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
-import RMSection, { RMSectionHeader } from '../common/rm-section';
+import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();

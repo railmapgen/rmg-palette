@@ -1,16 +1,5 @@
 import classes from '../common/palette-card.module.css';
-import {
-    ActionIcon,
-    Card,
-    ColorInput,
-    Flex,
-    Group,
-    SegmentedControl,
-    Stack,
-    Switch,
-    Text,
-    TextInput,
-} from '@mantine/core';
+import { ActionIcon, Card, ColorInput, Group, Stack, Switch, Text, TextInput } from '@mantine/core';
 import useTranslatedName from '../hooks/use-translated-name';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
@@ -22,6 +11,7 @@ import { useRef, useState } from 'react';
 import PantoneInput from '../common/pantone-input';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdContentCopy, MdDelete, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import { RMLabelledSegmentedControl } from '@railmapgen/mantine-components';
 
 type EditablePaletteCardProps = {
     lineDetail: PaletteEntryWithTranslationEntry;
@@ -166,16 +156,13 @@ export default function EditablePaletteCard({
                                 onChange={(value, hex) => onUpdate?.({ pantone: value, colour: hex })}
                             />
                         )}
-                        <Flex direction="column">
-                            <Text size="sm" className={classes['segmented-control-label']}>
-                                {t('Foreground colour')}
-                            </Text>
-                            <SegmentedControl
-                                data={fgOptions}
-                                value={lineDetail.fg}
-                                onChange={value => onUpdate?.({ fg: value as MonoColour })}
-                            />
-                        </Flex>
+                        <RMLabelledSegmentedControl
+                            size="sm"
+                            label={t('Foreground colour')}
+                            data={fgOptions}
+                            value={lineDetail.fg}
+                            onChange={value => onUpdate?.({ fg: value as MonoColour })}
+                        />
                     </Group>
                     <MultiLangEntryCard
                         entries={lineDetail.nameEntity}

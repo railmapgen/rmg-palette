@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { getTicketByCityId } from '../../redux/ticket/util';
 import { Group, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
-import RMSection, { RMSectionHeader } from '../common/rm-section';
+import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function CitySection() {
     const { t, i18n } = useTranslation();

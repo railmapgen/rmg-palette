@@ -1,9 +1,8 @@
 import PageHeader from './page-header';
 import { useRootSelector } from '../../redux';
 import CityList from './city-list';
-import RMPage from '../common/rm-page';
+import { RMPage, RMPageBody } from '@railmapgen/mantine-components';
 import { LoadingOverlay } from '@mantine/core';
-import { RMPageBody } from '../common/rm-page';
 import { useTranslation } from 'react-i18next';
 
 export default function PaletteView() {

@@ -1,8 +1,9 @@
 import { createStore } from './redux';
 import { TextEncoder } from 'util';
 import crypto from 'node:crypto';
-import ResizeObserverPolyfill from 'resize-observer-polyfill';
+import { setupTest } from '@railmapgen/mantine-components/utils';
 
+setupTest();
 export const createTestStore = createStore;
 
 const originalFetch = global.fetch;
@@ -43,5 +44,5 @@ global.window.matchMedia = query => ({
 
 global.TextEncoder = TextEncoder;
 vi.stubGlobal('crypto', crypto);
-vi.stubGlobal('ResizeObserver', ResizeObserverPolyfill);
+// vi.stubGlobal('ResizeObserver', ResizeObserverPolyfill);
 Element.prototype.scrollIntoView = vi.fn();

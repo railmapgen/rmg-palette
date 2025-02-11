@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import RMWindowHeader from './common/rm-window-header';
 import { Title } from '@mantine/core';
-import RMEnvBadge from './common/rm-env-badge';
+import { RMEnvBadge, RMWindowHeader } from '@railmapgen/mantine-components';
 
 export const WindowHeader = () => {
     const { t } = useTranslation();
