@@ -1,0 +1,1 @@
+System.register(["./react-legacy-Bkm4g_oU.js"],(function(e,n){"use strict";var t;return{setters:[e=>{t=e.l}],execute:function(){e("u",(function(){const{i18n:e}=t();return n=>e.languages.map((e=>n[e])).find((e=>void 0!==e))??n.en??"(Translation Error)"}))}}}));

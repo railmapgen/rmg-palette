@@ -1,1 +1,0 @@
-import{a2 as n}from"./index-bxdi3UkM.js";import{a}from"./react-gETzansC.js";function c(t){const[o,e]=a.useState([]);return a.useEffect(()=>{if(!t){e([]);return}const r=new AbortController;return n(t,r.signal).then(s=>e(s)).catch(()=>e([])),()=>{r.abort()}},[t]),o}export{c as u};
