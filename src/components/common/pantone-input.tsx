@@ -2,17 +2,17 @@ import { ColourHex } from '@railmapgen/rmg-palette-resources';
 import { getRGBByPantone } from '../../service/pantone-service';
 import { ChangeEvent, useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
-import { Loader, TextInput } from '@mantine/core';
+import { Loader, TextInput, TextInputProps } from '@mantine/core';
 import { useTranslation } from 'react-i18next';
 import { useDebouncedCallback } from '@mantine/hooks';
 
-interface PantoneInputProps {
+interface PantoneInputProps extends Omit<TextInputProps, 'onChange'> {
     value: string;
     onChange: (value: string, hex: ColourHex) => void;
 }
 
 export default function PantoneInput(props: PantoneInputProps) {
-    const { value, onChange } = props;
+    const { value, onChange, ...others } = props;
 
     const { t } = useTranslation();
 
@@ -63,6 +63,7 @@ export default function PantoneInput(props: PantoneInputProps) {
             onChange={handleInput}
             rightSection={isLoading && <Loader size={20} />}
             disabled={isLoading}
+            {...others}
         />
     );
 }

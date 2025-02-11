@@ -28,11 +28,6 @@
     font-weight: bold;
 }
 
-.segmented-control-label {
-    font-weight: 500;
-    margin-top: 3px;
-}
-
 .editable-group {
     flex-wrap: wrap;
     align-items: flex-start;

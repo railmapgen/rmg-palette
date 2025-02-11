@@ -7,9 +7,9 @@ import { useTranslation } from 'react-i18next';
 import { useRootSelector } from '../../redux';
 import PantoneChecker from '../ticket-view/pantone-checker';
 import RecentlyUsed from './recently-used';
-import { Badge, Button, ColorInput, Divider, Flex, Group, SegmentedControl, Stack, Text } from '@mantine/core';
+import { Badge, Button, ColorInput, Divider, Flex, Group, Stack } from '@mantine/core';
 import PantoneInput from '../common/pantone-input';
-import { RMPageBody, RMPageFooter } from '../common/rm-page';
+import { RMLabelledSegmentedControl, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
@@ -113,17 +113,14 @@ export default function ColourModal(props: ColourModalProps) {
                     </Group>
 
                     <PantoneChecker display="none" />
-                    <Group w="100%" align="flex-end" grow>
-                        <Flex direction="column">
-                            <Text size="sm" className={classes['segmented-control-label']}>
-                                {t('Input mode')}
-                            </Text>
-                            <SegmentedControl
-                                data={colourModeOptions}
-                                value={colourMode}
-                                onChange={value => setColourMode(value as typeof colourMode)}
-                            />
-                        </Flex>
+                    <Group w="100%" className={classes['custom-input-group']}>
+                        <RMLabelledSegmentedControl
+                            size="sm"
+                            label={t('Input mode')}
+                            data={colourModeOptions}
+                            value={colourMode}
+                            onChange={value => setColourMode(value as typeof colourMode)}
+                        />
                         {colourMode === 'pantone' && (
                             <PantoneInput
                                 value={pantoneCode}
@@ -147,20 +144,17 @@ export default function ColourModal(props: ColourModalProps) {
                                 }}
                             />
                         )}
-                        <Flex direction="column">
-                            <Text size="sm" className={classes['segmented-control-label']}>
-                                {t('Foreground colour')}
-                            </Text>
-                            <SegmentedControl
-                                data={fgOptions}
-                                value={fgColour}
-                                onChange={value => {
-                                    setCityCode('other');
-                                    setLineCode('other');
-                                    setFgColour(value as MonoColour);
-                                }}
-                            />
-                        </Flex>
+                        <RMLabelledSegmentedControl
+                            size="sm"
+                            label={t('Foreground colour')}
+                            data={fgOptions}
+                            value={fgColour}
+                            onChange={value => {
+                                setCityCode('other');
+                                setLineCode('other');
+                                setFgColour(value as MonoColour);
+                            }}
+                        />
                     </Group>
 
                     <RecentlyUsed onApply={handleApply} />

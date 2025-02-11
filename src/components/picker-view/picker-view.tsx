@@ -6,7 +6,7 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { addRecentlyUsed } from '../../redux/app/app-slice';
-import RMPage from '../common/rm-page';
+import { RMPage } from '@railmapgen/mantine-components';
 import { LoadingOverlay } from '@mantine/core';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';

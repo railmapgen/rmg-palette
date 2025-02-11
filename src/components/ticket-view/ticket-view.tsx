@@ -10,7 +10,7 @@ import rmgRuntime, { logger } from '@railmapgen/rmg-runtime';
 import { DRAFT_TICKET_KEY, Events } from '../../util/constants';
 import UnsavedDraftModal from '../modal/unsaved-draft-modal';
 import { Button, Divider, Group, LoadingOverlay } from '@mantine/core';
-import RMPage, { RMPageBody, RMPageFooter } from '../common/rm-page';
+import { RMPage, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
 
 export default function TicketView() {
     const { t } = useTranslation();

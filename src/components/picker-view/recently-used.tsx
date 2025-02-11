@@ -6,8 +6,8 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useState } from 'react';
-import { Button, ColorSwatch, Group, Title } from '@mantine/core';
-import RMSection, { RMSectionBody, RMSectionHeader } from '../common/rm-section';
+import { Button, Group, Title } from '@mantine/core';
+import { RMSection, RMSectionBody, RMSectionHeader, RMThemeButton } from '@railmapgen/mantine-components';
 
 type RecentlyUsedProps = {
     onApply: (theme: Theme) => void;
@@ -58,21 +58,18 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
 
             <RMSectionBody>
                 <Group gap="xs" p="xs">
-                    {recentlyUsed.map(({ theme, displayName }, idx) => {
-                        return (
-                            <ColorSwatch
-                                key={theme.join('-')}
-                                component="button"
-                                color={theme[2]}
-                                style={{ color: theme[3], fontWeight: 'bold', cursor: 'pointer' }}
-                                aria-label={verb + ' ' + displayName}
-                                title={verb + ' ' + displayName}
-                                onClick={() => (isClearing ? handleRemoveItem(idx) : onApply(theme))}
-                            >
-                                {isClearing ? <MdClose /> : 'Aa'}
-                            </ColorSwatch>
-                        );
-                    })}
+                    {recentlyUsed.map(({ theme, displayName }, idx) => (
+                        <RMThemeButton
+                            key={theme.join('-')}
+                            bg={theme[2]}
+                            fg={theme[3]}
+                            aria-label={verb + ' ' + displayName}
+                            title={verb + ' ' + displayName}
+                            onClick={() => (isClearing ? handleRemoveItem(idx) : onApply(theme))}
+                        >
+                            {isClearing ? <MdClose /> : 'Aa'}
+                        </RMThemeButton>
+                    ))}
                 </Group>
             </RMSectionBody>
         </RMSection>

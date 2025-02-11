@@ -5,7 +5,11 @@
     overflow-y: auto;
 }
 
-.segmented-control-label {
-    font-weight: 500;
-    margin-top: 3px;
+.custom-input-group {
+    flex-wrap: wrap;
+}
+
+.custom-input-group > div {
+    flex: 1;
+    min-width: 130px;
 }

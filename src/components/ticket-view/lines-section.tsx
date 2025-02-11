@@ -16,7 +16,7 @@ import PantoneChecker from './pantone-checker';
 import EditablePaletteCard from './editable-palette-card';
 import { Button, Stack, Title } from '@mantine/core';
 import { useCallback, useRef } from 'react';
-import RMSection, { RMSectionHeader } from '../common/rm-section';
+import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function LinesSection() {
     const { t } = useTranslation();
