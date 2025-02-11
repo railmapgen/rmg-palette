@@ -51,7 +51,7 @@ export default function TicketView() {
         <RMPage w={{ base: '100%', sm: 600 }} style={{ alignSelf: 'center' }}>
             <LoadingOverlay visible={isDataLoading} />
 
-            <RMPageBody direction="column" style={{ overflowY: 'auto' }}>
+            <RMPageBody direction="column" px="xs" style={{ overflowY: 'auto' }}>
                 <CountrySection />
                 <CitySection />
                 <LinesSection />

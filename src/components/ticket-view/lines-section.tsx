@@ -52,7 +52,7 @@ export default function LinesSection() {
                 <PantoneChecker ml="auto" />
             </RMSectionHeader>
 
-            <Stack ref={stackRef} px={8} py={4} gap="xs">
+            <Stack ref={stackRef} py={4} gap="xs">
                 {Object.entries(lines).map(([entryId, line]) => (
                     <EditablePaletteCard
                         key={entryId}
