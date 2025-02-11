@@ -45,7 +45,7 @@ export default function CountrySection() {
                 </Title>
             </RMSectionHeader>
 
-            <Stack px={8} py={4} gap="xs">
+            <Stack py={4} gap="xs">
                 <Group align="flex-start" grow>
                     <NativeSelect
                         label={t('Country/Region')}
