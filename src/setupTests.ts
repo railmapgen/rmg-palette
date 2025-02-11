@@ -16,10 +16,15 @@ global.fetch = vi.fn().mockImplementation((...args: any[]) => {
         }) as any;
     } else if (args[0].includes('amazonaws.com')) {
         return Promise.resolve({
-            json: () =>
-                Promise.resolve({
-                    data: { getColor: { hex: 'aaaaaa' } },
-                }),
+            json: () => {
+                return new Promise(resolve => {
+                    setTimeout(() => {
+                        resolve({
+                            data: { getColor: { hex: 'aaaaaa' } },
+                        });
+                    }, 200);
+                });
+            },
         });
     } else if (args[0].includes('resources/palettes')) {
         const file = args[0].split('/').at(-1);

@@ -1,4 +1,4 @@
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import CountrySection from './country-section';
 import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
@@ -7,7 +7,7 @@ describe('CountrySection', () => {
     const user = userEvent.setup();
 
     it('Can show custom country code and name fields if add a country option is selected', async () => {
-        mantineRender(<CountrySection />);
+        render(<CountrySection />);
 
         const countrySelect = screen.getByRole('combobox', { name: 'Country/Region' });
         expect(countrySelect).toHaveDisplayValue('Please select...');

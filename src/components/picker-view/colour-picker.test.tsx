@@ -1,13 +1,13 @@
 import ColourPicker from './colour-picker';
 import { screen, waitFor } from '@testing-library/react';
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import { userEvent } from '@testing-library/user-event';
 
 const mockCallbacks = {
     onChange: vi.fn(),
 };
 
-const setup = () => mantineRender(<ColourPicker city="guangzhou" {...mockCallbacks} />);
+const setup = () => render(<ColourPicker city="guangzhou" {...mockCallbacks} />);
 
 describe('ColourPicker', () => {
     const user = userEvent.setup();

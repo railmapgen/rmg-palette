@@ -22,7 +22,7 @@ export default function PickerView() {
     const [sessionId, setSessionId] = useState<string>();
     const [theme, setTheme] = useState<Theme>();
 
-    const channelRef = useRef<BroadcastChannel>();
+    const channelRef = useRef<BroadcastChannel>(null);
 
     useEffect(() => {
         // channel that talks to parent (RMP import modal, RMG Templates upload modal)

@@ -1,4 +1,4 @@
-import { mantineRender } from '../../test-utils';
+import { render } from '../../test-utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { screen, within } from '@testing-library/react';
 import { TranslationEntry } from '../../redux/ticket/util';
@@ -16,7 +16,7 @@ const mockCallbacks = {
 
 describe('MultiLangEntryCard', () => {
     it('Has accessible name of fields', () => {
-        mantineRender(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
+        render(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
 
         const stack1 = screen.getByTestId('entry-card-stack-en');
         expect(within(stack1).getByRole('combobox', { name: 'Language' })).toBeInTheDocument();
@@ -24,7 +24,7 @@ describe('MultiLangEntryCard', () => {
     });
 
     it('Can display add button at the last entry', () => {
-        mantineRender(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
+        render(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
 
         const stack1 = screen.getByTestId('entry-card-stack-en');
         expect(
