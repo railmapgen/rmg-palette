@@ -130,6 +130,36 @@
         }
     },
     {
+        "id": "v",
+        "colour": "#fabeb5",
+        "fg": "#fff",
+        "name": {
+            "en": "Danhai LRT",
+            "zh-Hans": "淡海轻轨",
+            "zh-Hant": "淡海輕軌"
+        }
+    },
+    {
+        "id": "k",
+        "colour": "#d8d0ba",
+        "fg": "#fff",
+        "name": {
+            "en": "Ankeng LRT",
+            "zh-Hans": "安坑轻轨",
+            "zh-Hant": "安坑輕軌"
+        }
+    },
+    {
+        "id": "a",
+        "colour": "#d0c6e2",
+        "fg": "#fff",
+        "name": {
+            "en": "Taoyuan Airport MRT",
+            "zh-Hans": "桃园机场捷运",
+            "zh-Hant": "桃園機場捷運"
+        }
+    },
+    {
         "id": "tr",
         "colour": "#020281",
         "fg": "#fff",
