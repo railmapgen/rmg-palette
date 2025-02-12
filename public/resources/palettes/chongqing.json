@@ -38,9 +38,9 @@
         "fg": "#fff",
         "pantone": "293 C",
         "name": {
-            "en": "Line 3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
+            "en": "Line 3/Konggang Line",
+            "zh-Hans": "3号线/空港线",
+            "zh-Hant": "3號線/空港線"
         }
     },
     {
@@ -71,9 +71,9 @@
         "fg": "#fff",
         "pantone": "190 C",
         "name": {
-            "en": "Line 6",
-            "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
+            "en": "Line 6/International Expo Line",
+            "zh-Hans": "6号线/国博线",
+            "zh-Hant": "6號線/國博線"
         }
     },
     {
@@ -216,7 +216,7 @@
         "name": {
             "en": "Line 19",
             "zh-Hans": "19号线",
-            "zh-Hant": "19号綫"
+            "zh-Hant": "19號線"
         }
     },
     {
@@ -227,7 +227,7 @@
         "name": {
             "en": "Line 20",
             "zh-Hans": "20号线",
-            "zh-Hant": "20号綫"
+            "zh-Hant": "20號線"
         }
     },
     {
@@ -238,7 +238,7 @@
         "name": {
             "en": "Line 21",
             "zh-Hans": "21号线",
-            "zh-Hant": "21号綫"
+            "zh-Hant": "21號線"
         }
     },
     {
@@ -249,7 +249,7 @@
         "name": {
             "en": "Line 22",
             "zh-Hans": "22号线",
-            "zh-Hant": "22号綫"
+            "zh-Hant": "22號線"
         }
     },
     {
@@ -260,7 +260,7 @@
         "name": {
             "en": "Line 23",
             "zh-Hans": "23号线",
-            "zh-Hant": "23号綫"
+            "zh-Hant": "23號線"
         }
     },
     {
@@ -282,7 +282,7 @@
         "name": {
             "en": "Line 25",
             "zh-Hans": "25号线",
-            "zh-Hant": "25号缐"
+            "zh-Hant": "25號線"
         }
     },
     {
@@ -293,7 +293,7 @@
         "name": {
             "en": "Line 26",
             "zh-Hans": "26号线",
-            "zh-Hant": "Line 26"
+            "zh-Hant": "26號線"
         }
     },
     {
@@ -319,6 +319,17 @@
         }
     },
     {
+        "id": "cq29",
+        "colour": "#FF585D",
+        "fg": "#fff",
+        "pantone": "178 C",
+        "name": {
+            "en": "Line 29",
+            "zh-Hans": "29号线",
+            "zh-Hant": "29號線"
+        }
+    },
+    {
         "id": "jiangtiao",
         "colour": "#0057B7",
         "fg": "#fff",
@@ -338,6 +349,50 @@
             "en": "Bitong Line",
             "zh-Hans": "璧铜线",
             "zh-Hant": "璧銅線"
+        }
+    },
+    {
+        "id": "yongchuan",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Yongchuan Line",
+            "zh-Hans": "永川线",
+            "zh-Hant": "永川線"
+        }
+    },
+    {
+        "id": "nanchuan",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Nanchuan Line",
+            "zh-Hans": "南川线",
+            "zh-Hant": "南川線"
+        }
+    },
+    {
+        "id": "qiwan",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Qiwan Line",
+            "zh-Hans": "綦万线",
+            "zh-Hant": "綦萬線"
+        }
+    },
+    {
+        "id": "dazu",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Dazu Line",
+            "zh-Hans": "大足线",
+            "zh-Hant": "大足線"
         }
     }
 ]
