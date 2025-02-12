@@ -1,6 +1,6 @@
-@import "ag-grid-community/styles/ag-grid.css";
-@import "ag-grid-community/styles/ag-theme-alpine.css";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+@import '@mantine/core/styles.css';
+@import '@railmapgen/mantine-components/styles.css';
 
 :root {
     background-color: #FFFFFF;
@@ -8,7 +8,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        background-color: #1A202C;
+        background-color: #242424;
         color: white;
     }
 }

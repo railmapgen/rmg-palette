@@ -1,7 +1,8 @@
+import classes from './submit-modal.module.css';
 import { INVALID_REASON, InvalidReasonType } from '../../util/constants';
-import { Button, Heading, HStack, ListItem, ModalBody, ModalFooter, Text, UnorderedList } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
+import { Button, Group, List, Stack, Text, Title } from '@mantine/core';
 
 interface SubmitModalStepErrorProps {
     countryErrors: InvalidReasonType[];
@@ -19,65 +20,63 @@ export default function SubmitModalStepError(props: SubmitModalStepErrorProps) {
 
     return (
         <>
-            <ModalBody>
+            <Stack gap="xs" className={classes['step-body']}>
                 <Text>
                     {t('Your inputs contain the following errors. Please consider fixing it before submitting.')}
                 </Text>
 
                 {countryErrors.length > 0 && (
                     <>
-                        <Heading as="h5" size="sm" my={2}>
+                        <Title order={3} size="h5">
                             {t('Country/Region')}
-                        </Heading>
-                        <UnorderedList aria-label="List of country errors">
+                        </Title>
+                        <List size="sm" withPadding aria-label="List of country errors">
                             {countryErrors.map((e, i) => (
-                                <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
+                                <List.Item key={i}>{translateName(INVALID_REASON[e])}</List.Item>
                             ))}
-                        </UnorderedList>
+                        </List>
                     </>
                 )}
 
                 {cityErrors.length > 0 && (
                     <>
-                        <Heading as="h5" size="sm" my={2}>
+                        <Title order={3} size="h5">
                             {t('City')}
-                        </Heading>
-                        <UnorderedList aria-label="List of city errors">
+                        </Title>
+                        <List size="sm" withPadding aria-label="List of city errors">
                             {cityErrors.map((e, i) => (
-                                <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
+                                <List.Item key={i}>{translateName(INVALID_REASON[e])}</List.Item>
                             ))}
-                        </UnorderedList>
+                        </List>
                     </>
                 )}
 
                 {Object.values(lineErrors).flat().length > 0 && (
                     <>
-                        <Heading as="h5" size="sm" my={2}>
+                        <Title order={3} size="h5">
                             {t('Lines')}
-                        </Heading>
-                        <UnorderedList aria-label="List of line errors">
+                        </Title>
+                        <List size="sm" withPadding aria-label="List of line errors">
                             {Object.entries(lineErrors).map(([item, errors]) => (
-                                <ListItem key={item}>
+                                <List.Item key={item}>
                                     {item}
-                                    <UnorderedList>
+                                    <List size="sm" withPadding>
                                         {errors.map((e, i) => (
-                                            <ListItem key={i}>{translateName(INVALID_REASON[e])}</ListItem>
+                                            <List.Item key={i}>{translateName(INVALID_REASON[e])}</List.Item>
                                         ))}
-                                    </UnorderedList>
-                                </ListItem>
+                                    </List>
+                                </List.Item>
                             ))}
-                        </UnorderedList>
+                        </List>
                     </>
                 )}
-            </ModalBody>
-            <ModalFooter>
-                <HStack>
-                    <Button onClick={onIgnore}>{t('Submit anyway')}</Button>
-                    <Button colorScheme="primary" onClick={onClose}>
-                        {t('Go back')}
-                    </Button>
-                </HStack>
-            </ModalFooter>
+            </Stack>
+            <Group gap="sm" pt="xs">
+                <Button variant="default" ml="auto" onClick={onClose}>
+                    {t('Go back')}
+                </Button>
+                <Button onClick={onIgnore}>{t('Submit anyway')}</Button>
+            </Group>
         </>
     );
 }

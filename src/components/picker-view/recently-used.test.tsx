@@ -34,7 +34,7 @@ describe('RecentlyUsed', () => {
 
         // remove single
         await user.click(screen.getByRole('button', { name: 'Remove Line 2' }));
-        expect(screen.getAllByRole('button', { name: /^Apply/ })).toHaveLength(2);
+        expect(screen.getAllByRole('button', { name: /^Remove/ })).toHaveLength(2);
         {
             const nextRecentlyUsed = testStore.getState().app.recentlyUsed;
             expect(nextRecentlyUsed).toHaveLength(2);

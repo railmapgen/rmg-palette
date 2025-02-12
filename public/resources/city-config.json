@@ -346,6 +346,16 @@
         }
     },
     {
+        "id": "cork",
+        "country": "IE",
+        "name": {
+            "en": "Cork",
+            "zh-Hans": "科克",
+            "zh-Hant": "科克",
+            "ga": "Corcaigh"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {
@@ -1340,6 +1350,15 @@
         }
     },
     {
+        "id": "philidelphia",
+        "country": "US",
+        "name": {
+            "en": "SEPTA",
+            "zh-Hans": "SEPTA",
+            "zh-Hant": "SEPTA"
+        }
+    },
+    {
         "id": "poznan",
         "country": "PL",
         "name": {
@@ -1366,6 +1385,14 @@
             "en": "Qingdao",
             "zh-Hans": "青岛",
             "zh-Hant": "青島"
+        }
+    },
+    {
+        "id": "rennes",
+        "country": "FR",
+        "name": {
+            "fr": "Rennes",
+            "en": "Rennes"
         }
     },
     {
@@ -1765,6 +1792,15 @@
         }
     },
     {
+        "id": "vancouver",
+        "country": "CA",
+        "name": {
+            "en": "Vancouver",
+            "fr": "Vancouver",
+            "zh-Hant": "溫哥華"
+        }
+    },
+    {
         "id": "vienna",
         "country": "AT",
         "name": {
@@ -1920,6 +1956,16 @@
             "en": "Zhongshan",
             "zh-Hans": "中山",
             "zh-Hant": "中山"
+        }
+    },
+    {
+        "id": "zurich",
+        "country": "CH",
+        "name": {
+            "en": "Zurich",
+            "zh-Hans": "苏黎世",
+            "zh-Hant": "蘇黎世",
+            "de": "Zürich"
         }
     }
 ]

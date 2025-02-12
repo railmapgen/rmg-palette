@@ -1,7 +1,7 @@
-import { Heading } from '@chakra-ui/react';
-import { RmgEnvBadge, RmgWindowHeader } from '@railmapgen/rmg-components';
 import { useTranslation } from 'react-i18next';
 import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Title } from '@mantine/core';
+import { RMEnvBadge, RMWindowHeader } from '@railmapgen/mantine-components';
 
 export const WindowHeader = () => {
     const { t } = useTranslation();
@@ -10,12 +10,10 @@ export const WindowHeader = () => {
     const appVersion = rmgRuntime.getAppVersion();
 
     return (
-        <RmgWindowHeader>
-            <Heading as="h4" size="md">
-                {t('Palette')}
-            </Heading>
-            <RmgEnvBadge environment={environment} version={appVersion} />
-        </RmgWindowHeader>
+        <RMWindowHeader>
+            <Title>{t('Palette')}</Title>
+            <RMEnvBadge env={environment} ver={appVersion} ml={5} />
+        </RMWindowHeader>
     );
 };
 
@@ -26,12 +24,10 @@ export const TicketWindowHeader = () => {
     const appVersion = rmgRuntime.getAppVersion();
 
     return (
-        <RmgWindowHeader>
-            <Heading as="h4" size="md">
-                {t('Palette') + ' - ' + t('Upload')}
-            </Heading>
-            <RmgEnvBadge environment={environment} version={appVersion} />
-        </RmgWindowHeader>
+        <RMWindowHeader>
+            <Title>{t('Palette') + ' - ' + t('Upload')}</Title>
+            <RMEnvBadge env={environment} ver={appVersion} ml={5} />
+        </RMWindowHeader>
     );
 };
 
@@ -39,10 +35,8 @@ export const PickerWindowHeader = () => {
     const { t } = useTranslation();
 
     return (
-        <RmgWindowHeader isAppClipHeader>
-            <Heading as="h4" size="md">
-                {t('Palette') + ' - ' + t('Picker')}
-            </Heading>
-        </RmgWindowHeader>
+        <RMWindowHeader isAppClipHeader>
+            <Title>{t('Palette') + ' - ' + t('Picker')}</Title>
+        </RMWindowHeader>
     );
 };
