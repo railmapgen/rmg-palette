@@ -1,6 +1,6 @@
 [
     {
-        "id": "taoyuanairport",
+        "id": "a",
         "colour": "#8246af",
         "fg": "#fff",
         "name": {
@@ -30,7 +30,7 @@
         }
     },
     {
-        "id": "br",
+        "id": "brh",
         "colour": "#824729",
         "fg": "#fff",
         "name": {
@@ -40,13 +40,23 @@
         }
     },
     {
-        "id": "lb",
-        "colour": "#00549d",
+        "id": "ge",
+        "colour": "#006a40",
         "fg": "#fff",
         "name": {
-            "en": "Sanying Line Taoyuan Section",
-            "zh-Hans": "三莺线桃园段",
-            "zh-Hant": "三鶯線桃園段"
+            "en": "Green Line to Zhongli",
+            "zh-Hans": "绿线延伸中坜",
+            "zh-Hant": "綠線延伸中壢"
+        }
+    },
+    {
+        "id": "lb",
+        "colour": "#00559e",
+        "fg": "#fff",
+        "name": {
+            "en": "Sanying Line to Bade",
+            "zh-Hans": "三莺线延伸八德",
+            "zh-Hant": "三鶯線延伸八德"
         }
     }
 ]
