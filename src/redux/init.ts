@@ -54,7 +54,9 @@ export const initPickerState = async (store: RootStore) => {
                 predicate: (action, currentState, previousState) => {
                     const { type } = action;
                     return (
-                        (type === 'app/addRecentlyUsed' || type === 'app/clearRecentlyUsed') &&
+                        (type === 'app/addRecentlyUsed' ||
+                            type === 'app/removeRecentlyUsedItem' ||
+                            type === 'app/clearRecentlyUsed') &&
                         JSON.stringify(currentState.app.recentlyUsed) !== JSON.stringify(previousState.app.recentlyUsed)
                     );
                 },

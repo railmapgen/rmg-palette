@@ -1,0 +1,152 @@
+[
+    {
+        "id": "m1",
+        "colour": "#ff6319",
+        "fg": "#fff",
+        "name": {
+            "en": "M1",
+            "zh-Hans": "地铁1号线",
+            "zh-Hant": "地鐡1號缐"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#ff6319",
+        "fg": "#fff",
+        "name": {
+            "en": "M2",
+            "zh-Hans": "地铁2号线",
+            "zh-Hant": "地鐡2號缐"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#963281",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter trains",
+            "zh-Hans": "赫尔辛基通勤铁路",
+            "zh-Hant": "赫爾辛基通勤鐵路"
+        }
+    },
+    {
+        "id": "t1",
+        "colour": "#00b4e5",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 1",
+            "zh-Hans": "有轨电车1号线",
+            "zh-Hant": "有軌電車1號缐"
+        }
+    },
+    {
+        "id": "t2",
+        "colour": "#65b32e",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 2",
+            "zh-Hans": "有轨电车2号线",
+            "zh-Hant": "有軌電車2號缐"
+        }
+    },
+    {
+        "id": "t3",
+        "colour": "#007ec7",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 3",
+            "zh-Hans": "有轨电车3号线",
+            "zh-Hant": "有軌電車3號缐"
+        }
+    },
+    {
+        "id": "t4",
+        "colour": "#e61657",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 4",
+            "zh-Hans": "有轨电车4号线",
+            "zh-Hant": "有軌電車4號缐"
+        }
+    },
+    {
+        "id": "t5",
+        "colour": "#7a6f6f",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 5",
+            "zh-Hans": "有轨电车5号线",
+            "zh-Hant": "有軌電車5號缐"
+        }
+    },
+    {
+        "id": "t6",
+        "colour": "#009757",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 6",
+            "zh-Hans": "有轨电车6号线",
+            "zh-Hant": "有軌電車6號缐"
+        }
+    },
+    {
+        "id": "t7",
+        "colour": "#d5007f",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 7",
+            "zh-Hans": "有轨电车7号线",
+            "zh-Hant": "有軌電車7號缐"
+        }
+    },
+    {
+        "id": "t8",
+        "colour": "#7f5ca3",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 8",
+            "zh-Hans": "有轨电车8号线",
+            "zh-Hant": "有軌電車8號缐"
+        }
+    },
+    {
+        "id": "t9",
+        "colour": "#f19ec4",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 9",
+            "zh-Hans": "有轨电车9号线",
+            "zh-Hant": "有軌電車9號缐"
+        }
+    },
+    {
+        "id": "t10",
+        "colour": "#fbb800",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 10",
+            "zh-Hans": "有轨电车10号线",
+            "zh-Hant": "有軌電車10號缐"
+        }
+    },
+    {
+        "id": "t13",
+        "colour": "#ffdd00",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 13",
+            "zh-Hans": "有轨电车13号线",
+            "zh-Hant": "有軌電車13號缐"
+        }
+    },
+    {
+        "id": "t15",
+        "colour": "#00a1a5",
+        "fg": "#fff",
+        "name": {
+            "en": "Light rail Line 15",
+            "zh-Hans": "轻铁15号线",
+            "zh-Hant": "輕鐡15號缐"
+        }
+    }
+]

@@ -1,5 +1,4 @@
 import { render } from '../../test-utils';
-import { vi } from 'vitest';
 import SubmitModal from './submit-modal';
 import { fireEvent, screen } from '@testing-library/react';
 import rootReducer from '../../redux';

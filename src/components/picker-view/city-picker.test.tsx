@@ -79,6 +79,8 @@ const mockCallbacks = {
 };
 
 describe('CityPicker', () => {
+    const user = userEvent.setup();
+
     beforeEach(() => {
         i18n.changeLanguage('zh-Hans');
     });
@@ -89,22 +91,21 @@ describe('CityPicker', () => {
     });
 
     it('Can render flag emojis and translations as expected', async () => {
-        const user = userEvent.setup();
         render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = await screen.findAllByRole('menuitem');
-        expect(menuItems).toHaveLength(3);
+        const options = await screen.findAllByRole('option');
+        expect(options).toHaveLength(3);
 
-        expect(menuItems[0]).toHaveTextContent('🏴󠁧󠁢󠁳󠁣󠁴󠁿'); // GBSCT
-        expect(menuItems[1]).toHaveTextContent('🇹🇼'); // TW
-        expect(menuItems[2]).toHaveTextContent('🇭🇰'); // HK
+        expect(options[0]).toHaveTextContent('🏴󠁧󠁢󠁳󠁣󠁴󠁿'); // GBSCT
+        expect(options[1]).toHaveTextContent('🇹🇼'); // TW
+        expect(options[2]).toHaveTextContent('🇭🇰'); // HK
 
         // sorted by Pinyin (under zh-Hans locale)
-        expect(menuItems[0]).toHaveTextContent('爱丁堡'); // read zh-Hans field
-        expect(menuItems[1]).toHaveTextContent('台北'); // read zh field
-        expect(menuItems[2]).toHaveTextContent('香港'); // read zh field
+        expect(options[0]).toHaveTextContent('爱丁堡'); // read zh-Hans field
+        expect(options[1]).toHaveTextContent('台北'); // read zh field
+        expect(options[2]).toHaveTextContent('香港'); // read zh field
     });
 
     it('Can mount component with default city code as expected', () => {
@@ -114,35 +115,30 @@ describe('CityPicker', () => {
     });
 
     it('Can handle city selection as expected', async () => {
-        const user = userEvent.setup();
         render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
-        const edinburghItem = await screen.findByRole('menuitem', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' });
+        const edinburghItem = await screen.findByRole('option', { name: '🏴󠁧󠁢󠁳󠁣󠁴󠁿 爱丁堡' });
         await user.click(edinburghItem);
 
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
         expect(mockCallbacks.onChange).toBeCalledWith('edinburgh');
-
-        expect(screen.getByDisplayValue('爱丁堡')).toBeInTheDocument();
     });
 
     it('Can filter cities by country name', async () => {
-        const user = userEvent.setup();
         render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.type(screen.getByRole('textbox'), 'scot');
-        const filteredOptions = screen.getAllByRole('menuitem');
+        const filteredOptions = screen.getAllByRole('option');
         expect(filteredOptions).toHaveLength(1);
         expect(filteredOptions.some(el => el.textContent?.includes('爱丁堡'))).toBeTruthy();
     });
 
     it('Can filter cities by country ID', async () => {
-        const user = userEvent.setup();
         render(<CityPicker {...mockCallbacks} />, { store: mockStore });
 
         await user.type(screen.getByRole('textbox'), 'gb');
-        const filteredOptions = screen.getAllByRole('menuitem');
+        const filteredOptions = screen.getAllByRole('option');
         expect(filteredOptions).toHaveLength(1);
         expect(filteredOptions.some(el => el.textContent?.includes('爱丁堡'))).toBeTruthy();
     });
