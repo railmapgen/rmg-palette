@@ -50,7 +50,7 @@ export default function SubmitModalStepSubmit(props: SubmitModalStepSubmitProps)
     const manualSearchParams = new URLSearchParams({
         template: 'new-palettes-request.md',
         labels: 'resources',
-        title: cityEntry?.name?.en ?? '[CITY]',
+        title: 'Resources: New palettes of ' + cityEntry?.name?.en,
     });
 
     const handleCopy = async () => {
