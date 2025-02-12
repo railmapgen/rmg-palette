@@ -83,6 +83,13 @@ const appSlice = createSlice({
             }
         },
 
+        removeRecentlyUsedItem: (state, action: PayloadAction<number>) => {
+            const index = action.payload;
+            if (index < state.recentlyUsed.length) {
+                state.recentlyUsed = state.recentlyUsed.toSpliced(index, 1);
+            }
+        },
+
         clearRecentlyUsed: state => {
             state.recentlyUsed = [];
         },
@@ -99,6 +106,7 @@ export const {
     setPantoneReady,
     setRecentlyUsed,
     addRecentlyUsed,
+    removeRecentlyUsedItem,
     clearRecentlyUsed,
 } = appSlice.actions;
 export default appSlice.reducer;

@@ -1,5 +1,3 @@
-import { chakra, Heading } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField, RmgSection, RmgSectionHeader } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     removeCountryName,
@@ -13,6 +11,8 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
+import { Group, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
+import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();
@@ -23,70 +23,61 @@ export default function CountrySection() {
     const { countryList } = useRootSelector(state => state.app);
     const { country, newCountry, countryName, newCountryLang } = useRootSelector(state => state.ticket);
 
-    const countryOptions = {
+    const countryOptions = [
+        { value: '', label: t('Please select...'), disabled: true },
         ...countryList
-            .map(country => [country.id, translateName(country.name)]) // translate country name
-            .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
-            .reduce<Record<string, string>>(
-                (acc, cur) => {
-                    if (cur[0] === 'UN') {
-                        // exclude customise
-                        return acc;
-                    } else {
-                        return { ...acc, [cur[0]]: cur[1] };
-                    }
-                },
-                { '': t('Please select...') }
-            ), // associate to obj
-        new: t('Add a country/region...'),
-    };
-
-    const languageOptions = Object.entries(LANGUAGE_NAMES).reduce(
-        (acc, cur) => ({
-            ...acc,
-            [cur[0]]: translateName(cur[1]),
-        }),
-        {} as Record<LanguageCode, string>
-    );
-
-    const fields: RmgFieldsField[] = [
-        {
-            type: 'select',
-            label: t('Country/Region'),
-            value: country,
-            options: countryOptions,
-            disabledOptions: [''],
-            onChange: value => dispatch(setCountry(value as string)),
-        },
-        {
-            type: 'input',
-            label: t('Country/region code'),
-            placeholder: 'e.g. CN, HK, JP (ISO 3166-1 alpha-2)',
-            value: newCountry,
-            validator: value => value !== '' && !!value.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/),
-            onChange: value => dispatch(setNewCountry(value)),
-            hidden: country !== 'new',
-        },
-        {
-            type: 'select',
-            label: t('Official language'),
-            value: newCountryLang,
-            options: languageOptions,
-            onChange: value => dispatch(setNewCountryLang(value ? (value as LanguageCode) : undefined)),
-            hidden: country !== 'new',
-        },
+            .filter(country => country.id !== 'UN')
+            .map(country => ({ value: country.id, label: translateName(country.name) })) // translate country name
+            .toSorted((a, b) => a.label.localeCompare(b.label, i18n.languages[0])), // sort
+        { value: 'new', label: t('Add a country/region...') },
     ];
 
-    return (
-        <RmgSection>
-            <RmgSectionHeader>
-                <Heading as="h5" size="sm">
-                    {t('Country/Region')}
-                </Heading>
-            </RmgSectionHeader>
+    const languageOptions = Object.entries(LANGUAGE_NAMES).map(([lang, name]) => ({
+        value: lang,
+        label: translateName(name),
+    }));
 
-            <chakra.div px={1}>
-                <RmgFields fields={fields} />
+    return (
+        <RMSection>
+            <RMSectionHeader>
+                <Title order={2} size="h4">
+                    {t('Country/Region')}
+                </Title>
+            </RMSectionHeader>
+
+            <Stack py={4} gap="xs">
+                <Group align="flex-start" grow>
+                    <NativeSelect
+                        label={t('Country/Region')}
+                        value={country}
+                        onChange={({ currentTarget: { value } }) => dispatch(setCountry(value))}
+                        data={countryOptions}
+                    />
+                    {country === 'new' && (
+                        <TextInput
+                            label={t('Country/region code')}
+                            placeholder="e.g. CN, HK, JP (ISO 3166-1 alpha-2)"
+                            value={newCountry}
+                            onChange={({ currentTarget: { value } }) => dispatch(setNewCountry(value))}
+                            error={
+                                newCountry && !newCountry.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)
+                                    ? t('Country code should be in the format of ISO 3166-1 alpha-2')
+                                    : undefined
+                            }
+                        />
+                    )}
+                    {country === 'new' && (
+                        <NativeSelect
+                            label={t('Official language')}
+                            value={newCountryLang}
+                            onChange={({ currentTarget: { value } }) =>
+                                dispatch(setNewCountryLang(value ? (value as LanguageCode) : undefined))
+                            }
+                            data={languageOptions}
+                        />
+                    )}
+                </Group>
+
                 {country === 'new' && (
                     <MultiLangEntryCard
                         entries={countryName}
@@ -95,7 +86,7 @@ export default function CountrySection() {
                         onRemove={lang => dispatch(removeCountryName(lang))}
                     />
                 )}
-            </chakra.div>
-        </RmgSection>
+            </Stack>
+        </RMSection>
     );
 }

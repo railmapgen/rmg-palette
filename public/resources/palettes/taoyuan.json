@@ -38,5 +38,15 @@
             "zh-Hans": "棕线",
             "zh-Hant": "棕線"
         }
+    },
+    {
+        "id": "lb",
+        "colour": "#00549d",
+        "fg": "#fff",
+        "name": {
+            "en": "Sanying Line Taoyuan Section",
+            "zh-Hans": "三莺线桃园段",
+            "zh-Hant": "三鶯線桃園段"
+        }
     }
 ]

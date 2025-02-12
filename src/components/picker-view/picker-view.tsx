@@ -1,4 +1,3 @@
-import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
 import ColourModal from './colour-modal';
 import { useEffect, useRef, useState } from 'react';
 import { Events } from '../../util/constants';
@@ -6,7 +5,9 @@ import { useSearchParams } from 'react-router-dom';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useRootDispatch, useRootSelector } from '../../redux';
-import { addRecentlyUsed, clearRecentlyUsed } from '../../redux/app/app-slice';
+import { addRecentlyUsed } from '../../redux/app/app-slice';
+import { RMPage } from '@railmapgen/mantine-components';
+import { LoadingOverlay } from '@mantine/core';
 
 const CHANNEL_PREFIX = 'rmg-palette-bridge--';
 
@@ -21,7 +22,7 @@ export default function PickerView() {
     const [sessionId, setSessionId] = useState<string>();
     const [theme, setTheme] = useState<Theme>();
 
-    const channelRef = useRef<BroadcastChannel>();
+    const channelRef = useRef<BroadcastChannel>(null);
 
     useEffect(() => {
         // channel that talks to parent (RMP import modal, RMG Templates upload modal)
@@ -67,21 +68,10 @@ export default function PickerView() {
         rmgRuntime.event(Events.APP_CLIP_VIEW_CLOSED, { parentComponent });
     };
 
-    const handleClearHistory = () => {
-        dispatch(clearRecentlyUsed());
-        rmgRuntime.event(Events.CLEAR_HISTORY, {});
-    };
-
     return (
-        <RmgPage>
-            {isDataLoading && <RmgLoader isIndeterminate />}
-            <ColourModal
-                defaultTheme={theme}
-                sessionId={sessionId}
-                onSubmit={handleSubmit}
-                onClose={handleClose}
-                onClearHistory={handleClearHistory}
-            />
-        </RmgPage>
+        <RMPage>
+            <LoadingOverlay visible={isDataLoading} />
+            <ColourModal defaultTheme={theme} sessionId={sessionId} onSubmit={handleSubmit} onClose={handleClose} />
+        </RMPage>
     );
 }
