@@ -38,9 +38,20 @@
         "fg": "#fff",
         "pantone": "293 C",
         "name": {
-            "en": "Line 3/Konggang Line",
-            "zh-Hans": "3号线/空港线",
-            "zh-Hant": "3號線/空港線"
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
+        "id": "konggang",
+        "colour": "#003DA5",
+        "fg": "#fff",
+        "pantone": "293 C",
+        "name": {
+            "en": "Konggang Line",
+            "zh-Hans": "空港线",
+            "zh-Hant": "空港線"
         }
     },
     {
@@ -50,8 +61,8 @@
         "pantone": "7413 C",
         "name": {
             "en": "Line 4",
-            "zh-Hant": "4號線",
-            "zh-Hans": "4号线"
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
         }
     },
     {
@@ -71,9 +82,20 @@
         "fg": "#fff",
         "pantone": "190 C",
         "name": {
-            "en": "Line 6/International Expo Line",
-            "zh-Hans": "6号线/国博线",
-            "zh-Hant": "6號線/國博線"
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "expo",
+        "colour": "#F67599",
+        "fg": "#fff",
+        "pantone": "190 C",
+        "name": {
+            "en": "International Expo Line",
+            "zh-Hans": "国博线",
+            "zh-Hant": "國博線"
         }
     },
     {
@@ -134,7 +156,7 @@
     {
         "id": "cq12",
         "colour": "#D2D755",
-        "fg": "#000",
+        "fg": "#fff",
         "pantone": "584 C",
         "name": {
             "en": "Line 12",
