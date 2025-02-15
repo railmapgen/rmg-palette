@@ -543,6 +543,16 @@
         }
     },
     {
+        "id": "grenoble",
+        "country": "FR",
+        "name": {
+            "en": "Grenoble",
+            "zh-Hans": "格勒诺布尔",
+            "fr": "Grenoble",
+            "zh-Hant": "格勒諾布爾"
+        }
+    },
+    {
         "id": "guadalajara",
         "country": "MX",
         "name": {
