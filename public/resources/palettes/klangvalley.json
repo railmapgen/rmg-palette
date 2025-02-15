@@ -1,8 +1,9 @@
 [
     {
         "id": "kl1",
-        "colour": "#0168b3",
+        "colour": "#0032A0",
         "fg": "#fff",
+        "pantone": "286 C",
         "name": {
             "en": "KTM Seremban Line",
             "ms": "KTM Laluan Seremban",
@@ -12,8 +13,9 @@
     },
     {
         "id": "kl2",
-        "colour": "#ee2e22",
+        "colour": "#D22730",
         "fg": "#fff",
+        "pantone": "1795 C",
         "name": {
             "en": "KTM Port Klang Line",
             "ms": "KTM Laluan Port Klang",
@@ -23,8 +25,9 @@
     },
     {
         "id": "kl3",
-        "colour": "#f4901d",
+        "colour": "#E57200",
         "fg": "#fff",
+        "pantone": "152 C",
         "name": {
             "en": "LRT Ampang Line",
             "ms": "LRT Laluan Ampang",
@@ -34,8 +37,9 @@
     },
     {
         "id": "kl4",
-        "colour": "#8b0a02",
+        "colour": "#76232F",
         "fg": "#fff",
+        "pantone": "188 C",
         "name": {
             "en": "LRT Sri Petaling Line",
             "ms": "LRT Laluan Sri Petaling",
@@ -45,8 +49,9 @@
     },
     {
         "id": "kl5",
-        "colour": "#ed154e",
+        "colour": "#D50032",
         "fg": "#fff",
+        "pantone": "199 C",
         "name": {
             "en": "LRT Kelana Jaya Line",
             "ms": "LRT Laluan Kelana Jaya",
@@ -56,8 +61,9 @@
     },
     {
         "id": "kl6",
-        "colour": "#a0218c",
+        "colour": "#93328E",
         "fg": "#fff",
+        "pantone": "513 C",
         "name": {
             "en": "ERL KLIA Ekspres Line",
             "ms": "ERL Laluan KLIA Ekspres",
@@ -67,8 +73,9 @@
     },
     {
         "id": "kl7",
-        "colour": "#00a0b0",
+        "colour": "#00A7B5",
         "fg": "#fff",
+        "pantone": "7710 C",
         "name": {
             "en": "ERL KLIA Transit Line",
             "ms": "ERL Laluan KLIA Transit",
@@ -78,8 +85,9 @@
     },
     {
         "id": "kl8",
-        "colour": "#8bc63e",
+        "colour": "#84BD00",
         "fg": "#fff",
+        "pantone": "376 C",
         "name": {
             "en": "KL Monorail Line",
             "ms": "Laluan Monorel KL",
@@ -89,8 +97,9 @@
     },
     {
         "id": "kl9",
-        "colour": "#00843d",
+        "colour": "#007A33",
         "fg": "#fff",
+        "pantone": "356 C",
         "name": {
             "en": "MRT Sungai Buloh-Kajang Line",
             "ms": "MRT Laluan Sungai Buloh-Kajang",
@@ -100,8 +109,9 @@
     },
     {
         "id": "kl10",
-        "colour": "#827c00",
+        "colour": "#996017",
         "fg": "#fff",
+        "pantone": "1395 C",
         "name": {
             "en": "KTM Skypark Line",
             "ms": "KTM Laluan Skypark",
@@ -111,8 +121,9 @@
     },
     {
         "id": "kl11",
-        "colour": "#00a5e3",
+        "colour": "#41B6E6",
         "fg": "#fff",
+        "pantone": "298 C",
         "name": {
             "en": "LRT Shah Alam Line",
             "ms": "LRT Laluan Shah Alam",
@@ -122,8 +133,9 @@
     },
     {
         "id": "kl12",
-        "colour": "#fed105",
+        "colour": "#FFCD00",
         "fg": "#fff",
+        "pantone": "116 C",
         "name": {
             "en": "MRT Putrajaya Line",
             "ms": "MRT Laluan Putrajaya",
@@ -145,8 +157,9 @@
     },
     {
         "id": "klb1",
-        "colour": "#00502e",
+        "colour": "#154734",
         "fg": "#fff",
+        "pantone": "3435 C",
         "name": {
             "en": "BRT Sunway Line",
             "ms": "BRT Laluan Sunway",

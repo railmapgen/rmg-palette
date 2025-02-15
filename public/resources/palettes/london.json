@@ -151,6 +151,14 @@
         }
     },
     {
+        "id": "ifs",
+        "colour": "#734fa0",
+        "fg": "#fff",
+        "name": {
+            "en": "IFS Cloud Cable Car"
+        }
+    },
+    {
         "id": "lolib",
         "colour": "#676767",
         "fg": "#fff",

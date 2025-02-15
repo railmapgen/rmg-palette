@@ -33,7 +33,7 @@ export interface TicketState {
 }
 
 const getInitialState = (): TicketState => ({
-    country: undefined,
+    country: '',
     newCountry: '',
     newCountryLang: undefined,
     countryName: initialTranslation,
@@ -236,7 +236,7 @@ export const ticketSelectors = {
     getCityEntry: (state: TicketState): CityEntry => {
         return {
             id: state.city === 'new' ? state.newCity : state.city,
-            country: state.country === 'new' ? state.newCountry : state.country ?? '',
+            country: state.country === 'new' ? state.newCountry : (state.country ?? ''),
             name: Object.fromEntries(state.cityName),
         };
     },

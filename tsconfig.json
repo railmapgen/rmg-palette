@@ -20,7 +20,8 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "noFallthroughCasesInSwitch": true,
-        "types": ["vitest/globals"]
+        "types": ["vitest/globals"],
+        "plugins": [{ "name": "typescript-plugin-css-modules" }]
     },
     "include": [
         "src"
