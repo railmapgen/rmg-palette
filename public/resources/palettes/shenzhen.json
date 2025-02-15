@@ -180,6 +180,36 @@
         }
     },
     {
+        "id": "sz22",
+        "colour": "#f5e425",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22号線"
+        }
+    },
+    {
+        "id": "sz25",
+        "colour": "#ffa970",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线",
+            "zh-Hant": "25号線"
+        }
+    },
+    {
+        "id": "sz27",
+        "colour": "#598e94",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27号線"
+        }
+    },
+    {
         "id": "tram",
         "colour": "#b8b8b8",
         "fg": "#fff",
@@ -204,7 +234,7 @@
         "colour": "#1974d2",
         "fg": "#fff",
         "name": {
-            "en": "Pingshan sky shuttlo",
+            "en": "Pingshan SkyShuttle",
             "zh-Hans": "坪山云巴",
             "zh-Hant": "坪山雲巴"
         }

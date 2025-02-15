@@ -1,0 +1,30 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    /*height: 100%;*/
+    overflow: hidden;
+}
+
+.stepper-root {
+    display: flex;
+    flex-direction: column;
+    /*height: 100%;*/
+    overflow: hidden;
+}
+
+.stepper-content {
+    display: flex;
+    flex-direction: column;
+    /*height: 100%;*/
+    overflow: hidden;
+}
+
+.step-body {
+    overflow-y: auto;
+}
