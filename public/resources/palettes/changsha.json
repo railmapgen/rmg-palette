@@ -158,5 +158,15 @@
             "zh-Hans": "西环线",
             "zh-Hant": "西環線"
         }
+    },
+    {
+        "id": "bus",
+        "colour": "#ec931f",
+        "fg": "#fff",
+        "name": {
+            "en": "Mango Bus",
+            "zh-Hans": "芒果巴士",
+            "zh-Hant": "芒果巴士"
+        }
     }
 ]
