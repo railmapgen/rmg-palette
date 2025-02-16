@@ -1,110 +1,12 @@
 [
     {
-        "id": "nybdfm",
-        "colour": "#ff6319",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Sixth Avenue Line",
-            "zh-Hans": "IND第六大道线"
-        }
-    },
-    {
-        "id": "nyace",
-        "colour": "#0039a6",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Eighth Avenue Line",
-            "zh-Hans": "IND第八大道线"
-        }
-    },
-    {
-        "id": "nyl",
-        "colour": "#a7a9ac",
-        "fg": "#fff",
-        "name": {
-            "en": "BMT Canarsie Line",
-            "zh-Hans": "BMT卡纳西线"
-        }
-    },
-    {
-        "id": "nyg",
-        "colour": "#6cbe45",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Crosstown Line",
-            "zh-Hans": "IND跨城线"
-        }
-    },
-    {
-        "id": "nyjz",
-        "colour": "#996633",
-        "fg": "#fff",
-        "name": {
-            "en": "BMT Nassau Street Line",
-            "zh-Hans": "BMT纳苏街线"
-        }
-    },
-    {
-        "id": "nynqrw",
-        "colour": "#fccc0a",
-        "fg": "#000",
-        "name": {
-            "en": "BMT Broadway Line",
-            "zh-Hans": "BMT百老汇线"
-        }
-    },
-    {
         "id": "ny456",
-        "colour": "#00933c",
+        "colour": "#008f1a",
         "fg": "#fff",
         "name": {
-            "en": "IRT Lexington Avenue Line",
-            "zh-Hans": "IRT莱辛顿大道线"
-        }
-    },
-    {
-        "id": "ny123",
-        "colour": "#ee352e",
-        "fg": "#fff",
-        "name": {
-            "en": "IRT Broadway–Seventh Avenue Line",
-            "zh-Hans": "IRT百老汇-第七大道线"
-        }
-    },
-    {
-        "id": "nyt",
-        "colour": "#00add0",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Second Avenue Line",
-            "zh-Hans": "IND第二大道线"
-        }
-    },
-    {
-        "id": "ny7",
-        "colour": "#b933ad",
-        "fg": "#fff",
-        "name": {
-            "en": "IRT Flushing Line",
-            "zh-Hans": "IRT法拉盛线"
-        }
-    },
-    {
-        "id": "nys",
-        "colour": "#808183",
-        "fg": "#fff",
-        "name": {
-            "en": "Shuttles",
-            "zh-Hans": "接驳线"
-        }
-    },
-    {
-        "id": "sir",
-        "colour": "#006bb6",
-        "fg": "#fff",
-        "name": {
-            "en": "Staten Island Railway",
-            "zh-Hans": "斯塔顿岛铁路"
+            "en": "Lexington Avenue Local/Pelham Bay Park Express",
+            "zh-Hans": "纽约地铁6号线/莱辛顿大道慢车/佩勒姆湾公园快车",
+            "zh-Hant": "紐約地鐵6號線/萊辛頓大道慢車/佩勒姆灣公園快車"
         }
     }
 ]
