@@ -4,21 +4,20 @@ import { screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 
 describe('CountrySection', () => {
+    const user = userEvent.setup();
+
     it('Can show custom country code and name fields if add a country option is selected', async () => {
-        const user = userEvent.setup();
         render(<CountrySection />);
 
-        expect(screen.queryByDisplayValue(/Add a new country/)).not.toBeInTheDocument();
-        expect(screen.queryByRole('combobox', { name: 'Country code' })).not.toBeInTheDocument();
+        const countrySelect = screen.getByRole('combobox', { name: 'Country/Region' });
+        expect(countrySelect).toHaveDisplayValue('Please select...');
+        expect(screen.queryAllByRole('textbox')).toHaveLength(0);
 
-        await user.selectOptions(screen.getByRole('combobox', { name: 'Country/Region' }), 'new');
-
-        // 'add a country' selected
-        expect(screen.getByDisplayValue(/Add a country/)).toBeInTheDocument();
+        await user.selectOptions(countrySelect, 'Add a country/region...');
 
         // custom country code and multi-language name input exists
-        expect(screen.getByRole('combobox', { name: 'Country/region code' })).toBeInTheDocument();
-        expect(screen.getByRole('combobox', { name: 'Language' })).toBeInTheDocument();
-        expect(screen.getByRole('combobox', { name: 'Name' })).toBeInTheDocument();
+        expect(screen.getByRole('textbox', { name: 'Country/region code' })).toBeInTheDocument();
+        expect(screen.getAllByRole('combobox', { name: 'Language' }).length).toBeGreaterThan(0);
+        expect(screen.getAllByRole('textbox', { name: 'Name' }).length).toBeGreaterThan(0);
     });
 });
