@@ -10,7 +10,7 @@
         "@mantine/core": "^7.16.3",
         "@mantine/hooks": "^7.16.3",
         "@railmapgen/mantine-components": "^0.1.12",
-        "@railmapgen/rmg-palette-resources": "file:package/dist",
+        "@railmapgen/rmg-palette-resources": "file:package",
         "@railmapgen/rmg-runtime": "^11.0.0",
         "@railmapgen/rmg-translate": "^3.2.3",
         "@reduxjs/toolkit": "^2.5.1",
