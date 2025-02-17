@@ -7,7 +7,6 @@
             "zh-Hant": "阿拉伯聯合酋長國",
             "ar": "الإمارات العربية المتحدة"
         },
-        "language": "ar",
         "languages": ["ar"]
     },
     {
@@ -18,7 +17,6 @@
             "zh-Hant": "阿根廷",
             "en": "Argentina"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -29,7 +27,6 @@
             "zh-Hans": "奥地利",
             "zh-Hant": "奧地利"
         },
-        "language": "de",
         "languages": ["de"]
     },
     {
@@ -40,7 +37,6 @@
             "zh-Hans": "澳大利亚",
             "zh-Hant": "澳大利亞"
         },
-        "language": "en",
         "languages": ["en"]
     },
     {
@@ -51,7 +47,6 @@
             "zh-Hans": "阿塞拜疆",
             "zh-Hant": "阿塞拜疆"
         },
-        "language": "az",
         "languages": ["az"]
     },
     {
@@ -64,7 +59,6 @@
             "zh-Hans": "比利时",
             "zh-Hant": "比利時"
         },
-        "language": "fr",
         "languages": ["nl", "fr", "de"]
     },
     {
@@ -75,7 +69,6 @@
             "zh-Hant": "玻利維亞",
             "es": "Bolivia"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -86,7 +79,6 @@
             "zh-Hans": "巴西",
             "zh-Hant": "巴西"
         },
-        "language": "pt",
         "languages": ["pt"]
     },
     {
@@ -97,7 +89,6 @@
             "zh-Hans": "加拿大",
             "zh-Hant": "加拿大"
         },
-        "language": "en",
         "languages": ["en", "fr"]
     },
     {
@@ -111,7 +102,6 @@
             "zh-Hans": "瑞士",
             "zh-Hant": "瑞士"
         },
-        "language": "fr",
         "languages": ["de", "fr", "it", "rm"]
     },
     {
@@ -122,7 +112,6 @@
             "zh-Hans": "智利",
             "zh-Hant": "智利"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -132,7 +121,6 @@
             "zh-Hans": "中国",
             "zh-Hant": "中國"
         },
-        "language": "zh-Hans",
         "languages": ["zh-Hans"]
     },
     {
@@ -143,7 +131,6 @@
             "zh-Hans": "德国",
             "zh-Hant": "德國"
         },
-        "language": "de",
         "languages": ["de"]
     },
     {
@@ -154,7 +141,6 @@
             "zh-Hans": "丹麦",
             "zh-Hant": "丹麥"
         },
-        "language": "da",
         "languages": ["da"]
     },
     {
@@ -165,7 +151,6 @@
             "zh-Hans": "埃及",
             "zh-Hant": "埃及"
         },
-        "language": "ar",
         "languages": ["ar"]
     },
     {
@@ -176,7 +161,6 @@
             "zh-Hans": "西班牙",
             "zh-Hant": "西班牙"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -188,7 +172,6 @@
             "zh-Hans": "芬兰",
             "zh-Hant": "芬蘭"
         },
-        "language": "sv",
         "languages": ["fi", "sv"]
     },
     {
@@ -199,7 +182,6 @@
             "zh-Hans": "法国",
             "zh-Hant": "法國"
         },
-        "language": "fr",
         "languages": ["fr"]
     },
     {
@@ -209,7 +191,6 @@
             "zh-Hans": "英格兰",
             "zh-Hant": "英格蘭"
         },
-        "language": "en",
         "languages": ["en"]
     },
     {
@@ -220,7 +201,6 @@
             "zh-Hans": "苏格兰",
             "zh-Hant": "蘇格蘭"
         },
-        "language": "en",
         "languages": ["en", "gd"]
     },
     {
@@ -231,7 +211,6 @@
             "zh-Hans": "希腊",
             "zh-Hant": "希臘"
         },
-        "language": "el",
         "languages": ["el"]
     },
     {
@@ -241,7 +220,6 @@
             "zh-Hans": "香港",
             "zh-Hant": "香港"
         },
-        "language": "zh-Hant",
         "languages": ["zh-Hant", "en"]
     },
     {
@@ -252,7 +230,6 @@
             "zh-Hans": "克罗地亚",
             "zh-Hant": "克羅埃西亞"
         },
-        "language": "hr",
         "languages": ["hr"]
     },
     {
@@ -263,7 +240,6 @@
             "zh-Hans": "匈牙利",
             "zh-Hant": "匈牙利"
         },
-        "language": "hu",
         "languages": ["hu"]
     },
     {
@@ -274,7 +250,6 @@
             "zh-Hans": "印度尼西亚",
             "zh-Hant": "印度尼西亞"
         },
-        "language": "id",
         "languages": ["id"]
     },
     {
@@ -285,7 +260,6 @@
             "zh-Hans": "爱尔兰",
             "zh-Hant": "愛爾蘭"
         },
-        "language": "ga",
         "languages": ["ga", "en"]
     },
     {
@@ -296,7 +270,6 @@
             "zh-Hans": "以色列",
             "zh-Hant": "以色列"
         },
-        "language": "he",
         "languages": ["he"]
     },
     {
@@ -307,7 +280,6 @@
             "zh-Hans": "印度",
             "zh-Hant": "印度"
         },
-        "language": "hi",
         "languages": ["hi", "en"]
     },
     {
@@ -318,7 +290,6 @@
             "zh-Hans": "伊朗",
             "zh-Hant": "伊朗"
         },
-        "language": "fa",
         "languages": ["fa"]
     },
     {
@@ -329,7 +300,6 @@
             "zh-Hans": "意大利",
             "zh-Hant": "意大利"
         },
-        "language": "it",
         "languages": ["it"]
     },
     {
@@ -340,7 +310,6 @@
             "zh-Hans": "日本",
             "zh-Hant": "日本"
         },
-        "language": "ja",
         "languages": ["ja"]
     },
     {
@@ -351,7 +320,6 @@
             "zh-Hant": "北韓",
             "ko": "조선민주주의인민공화국"
         },
-        "language": "ko",
         "languages": ["ko"]
     },
     {
@@ -362,7 +330,6 @@
             "zh-Hans": "韩国",
             "zh-Hant": "南韓"
         },
-        "language": "ko",
         "languages": ["ko"]
     },
     {
@@ -373,7 +340,6 @@
             "zh-Hant": "哈薩克",
             "kk": "Қазақстан"
         },
-        "language": "kk",
         "languages": ["kk"]
     },
     {
@@ -384,7 +350,6 @@
             "zh-Hans": "澳门",
             "zh-Hant": "澳門"
         },
-        "language": "zh-Hant",
         "languages": ["zh-Hant", "pt"]
     },
     {
@@ -395,7 +360,6 @@
             "zh-Hans": "墨西哥",
             "zh-Hant": "墨西哥"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -406,7 +370,6 @@
             "zh-Hans": "马来西亚",
             "zh-Hant": "馬來西亞"
         },
-        "language": "ms",
         "languages": ["ms"]
     },
     {
@@ -417,7 +380,6 @@
             "zh-Hans": "荷兰",
             "zh-Hant": "荷蘭"
         },
-        "language": "nl",
         "languages": ["nl"]
     },
     {
@@ -428,7 +390,6 @@
             "zh-Hans": "挪威",
             "zh-Hant": "挪威"
         },
-        "language": "no",
         "languages": ["no"]
     },
     {
@@ -439,7 +400,6 @@
             "zh-Hans": "新西兰",
             "zh-Hant": "紐西蘭"
         },
-        "language": "en",
         "languages": ["en", "mi"]
     },
     {
@@ -450,7 +410,6 @@
             "zh-Hant": "巴拿馬",
             "es": "Panamá"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -461,7 +420,6 @@
             "zh-Hans": "秘鲁",
             "zh-Hant": "秘魯"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -472,7 +430,6 @@
             "zh-Hans": "巴基斯坦",
             "zh-Hant": "巴基斯坦"
         },
-        "language": "ur",
         "languages": ["ur"]
     },
     {
@@ -483,7 +440,6 @@
             "zh-Hans": "波兰",
             "zh-Hant": "波蘭"
         },
-        "language": "pl",
         "languages": ["pl"]
     },
     {
@@ -494,7 +450,6 @@
             "zh-Hans": "葡萄牙",
             "zh-Hant": "葡萄牙"
         },
-        "language": "pt",
         "languages": ["pt"]
     },
     {
@@ -505,7 +460,6 @@
             "zh-Hant": "卡達",
             "ar": "قطر"
         },
-        "language": "ar",
         "languages": ["ar"]
     },
     {
@@ -516,7 +470,6 @@
             "zh-Hans": "罗马尼亚",
             "zh-Hant": "羅馬尼亞"
         },
-        "language": "ro",
         "languages": ["ro"]
     },
     {
@@ -527,7 +480,6 @@
             "zh-Hans": "俄罗斯",
             "zh-Hant": "俄羅斯"
         },
-        "language": "ru",
         "languages": ["ru"]
     },
     {
@@ -538,7 +490,6 @@
             "zh-Hans": "沙特阿拉伯",
             "zh-Hant": "沙地阿拉伯"
         },
-        "language": "ar",
         "languages": ["ar"]
     },
     {
@@ -549,7 +500,6 @@
             "zh-Hans": "瑞典",
             "zh-Hant": "瑞典"
         },
-        "language": "sv",
         "languages": ["sv"]
     },
     {
@@ -561,7 +511,6 @@
             "zh-Hans": "新加坡",
             "zh-Hant": "新加坡"
         },
-        "language": "en",
         "languages": ["en", "ms", "zh-Hans", "ta"]
     },
     {
@@ -572,7 +521,6 @@
             "zh-Hans": "泰国",
             "zh-Hant": "泰國"
         },
-        "language": "th",
         "languages": ["th"]
     },
     {
@@ -583,7 +531,6 @@
             "zh-Hans": "土耳其",
             "zh-Hant": "土耳其"
         },
-        "language": "tr",
         "languages": ["tr"]
     },
     {
@@ -593,7 +540,6 @@
             "zh-Hans": "台湾",
             "zh-Hant": "台灣"
         },
-        "language": "zh-Hant",
         "languages": ["zh-Hant"]
     },
     {
@@ -604,7 +550,6 @@
             "zh-Hans": "乌克兰",
             "zh-Hant": "烏克蘭"
         },
-        "language": "uk",
         "languages": ["uk"]
     },
     {
@@ -614,7 +559,6 @@
             "zh-Hans": "自定义",
             "zh-Hant": "自訂"
         },
-        "language": "en",
         "languages": ["en"]
     },
     {
@@ -624,7 +568,6 @@
             "zh-Hans": "美国",
             "zh-Hant": "美國"
         },
-        "language": "en",
         "languages": ["en"]
     },
     {
@@ -635,7 +578,6 @@
             "zh-Hans": "乌兹别克斯坦",
             "zh-Hant": "烏茲別克斯坦"
         },
-        "language": "uz",
         "languages": ["uz"]
     },
     {
@@ -646,7 +588,6 @@
             "zh-Hans": "委内瑞拉",
             "zh-Hant": "委内瑞拉"
         },
-        "language": "es",
         "languages": ["es"]
     },
     {
@@ -657,7 +598,6 @@
             "zh-Hans": "越南",
             "zh-Hant": "越南"
         },
-        "language": "vi",
         "languages": ["vi"]
     }
 ]

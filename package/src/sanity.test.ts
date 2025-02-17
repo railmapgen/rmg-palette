@@ -54,16 +54,10 @@ describe('Sanity', () => {
             expect(typeof country.id).toBe('string');
             translationAssertion(country.name);
 
-            expect(typeof country.language).toBe('string');
-            expect(LANGUAGE_NAMES).toHaveProperty(country.language);
-
-            if (country.languages) {
-                expect(Array.isArray(country.languages)).toBeTruthy();
-                expect(country.languages).toContain(country.language);
-                country.languages.forEach(language => {
-                    expect(LANGUAGE_NAMES).toHaveProperty(language);
-                });
-            }
+            expect(Array.isArray(country.languages)).toBeTruthy();
+            country.languages.forEach(language => {
+                expect(LANGUAGE_NAMES).toHaveProperty(language);
+            });
         });
     });
 
