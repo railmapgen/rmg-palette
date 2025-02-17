@@ -19,7 +19,7 @@ describe('MultiLangEntryCard', () => {
         render(<MultiLangEntryCard entries={mockEntries} {...mockCallbacks} />);
 
         const stack1 = screen.getByTestId('entry-card-stack-en');
-        expect(within(stack1).getByRole('combobox', { name: 'Language' })).toBeInTheDocument();
+        expect(within(stack1).getByRole('textbox', { name: 'Language' })).toBeInTheDocument();
         expect(within(stack1).getByRole('textbox', { name: 'Name' })).toBeInTheDocument();
     });
 

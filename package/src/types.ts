@@ -55,8 +55,8 @@ export interface CountryEntry {
      * Key-value pairs of multilingual names of the country.
      */
     name: Translation;
-    language: LanguageCode;
-    languages?: LanguageCode[];
+    language?: LanguageCode;
+    languages: LanguageCode[];
 }
 
 /**

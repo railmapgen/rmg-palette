@@ -1,0 +1,8 @@
+.row {
+    flex-wrap: wrap;
+}
+
+.row > * {
+    flex: 1;
+    min-width: 130px;
+}

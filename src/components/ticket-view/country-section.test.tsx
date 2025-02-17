@@ -17,7 +17,7 @@ describe('CountrySection', () => {
 
         // custom country code and multi-language name input exists
         expect(screen.getByRole('textbox', { name: 'Country/region code' })).toBeInTheDocument();
-        expect(screen.getAllByRole('combobox', { name: 'Language' }).length).toBeGreaterThan(0);
+        expect(screen.getAllByRole('textbox', { name: 'Language' }).length).toBeGreaterThan(0);
         expect(screen.getAllByRole('textbox', { name: 'Name' }).length).toBeGreaterThan(0);
     });
 });
