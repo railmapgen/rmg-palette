@@ -5,6 +5,7 @@ import { PaletteEntry } from '../../../package/src';
 import useTranslatedName from '../hooks/use-translated-name';
 import { MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
+import { useRootSelector } from '../../redux';
 
 type PaletteCardProps = {
     line: PaletteEntry;
@@ -12,16 +13,18 @@ type PaletteCardProps = {
 
 export default function PaletteCard({ line }: PaletteCardProps) {
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName, otherOfficialNames } = useTranslatedName();
+
+    const { countryList, selectedCountry } = useRootSelector(state => state.app);
+    const country = countryList.find(({ id }) => id === selectedCountry);
 
     const fgColour = line.fg === MonoColour.black ? 'black' : 'white';
 
     return (
-        <Card key={line.id} p="sm" withBorder>
-            <Card.Section bg={line.colour} p="sm" className={classes['card-section']}>
-                <Text span style={{ color: fgColour }}>
-                    {translateName(line.name)}
-                </Text>
+        <Card key={line.id} className={classes.card} withBorder>
+            <Card.Section bg={line.colour} className={classes['card-section']} style={{ color: fgColour }}>
+                <Text span>{translateName(line.name)}</Text>
+                <Text span>{otherOfficialNames(line.name, country?.languages)}</Text>
             </Card.Section>
 
             <Group gap="xs" mt="sm">

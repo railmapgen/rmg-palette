@@ -31,7 +31,7 @@ export default function SubmitModalStepJustification(props: SubmitModalStepJusti
     } = props;
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const dataSourceOptions = [
         { value: '', label: t('Please select...'), disabled: true },

@@ -2,7 +2,7 @@ import classes from './city-list.module.css';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { useRootSelector } from '../../redux';
-import { Accordion, ActionIcon, Center } from '@mantine/core';
+import { Accordion, ActionIcon, Center, Text } from '@mantine/core';
 import PaletteCards from './palette-cards';
 import { MdEdit } from 'react-icons/md';
 import rmgRuntime from '@railmapgen/rmg-runtime';
@@ -10,9 +10,10 @@ import { Events } from '../../util/constants';
 
 export default function CityList() {
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName, otherOfficialNames } = useTranslatedName();
 
-    const { cityList, selectedCountry } = useRootSelector(state => state.app);
+    const { cityList, countryList, selectedCountry } = useRootSelector(state => state.app);
+    const country = countryList.find(({ id }) => id === selectedCountry);
     const cities = cityList.filter(city => city.country === selectedCountry);
 
     const handleCityEdit = async (cityCode: string) => {
@@ -28,7 +29,12 @@ export default function CityList() {
             {cities.map(city => (
                 <Accordion.Item key={city.id} value={city.id}>
                     <Center className={classes.control}>
-                        <Accordion.Control>{translateName(city.name)}</Accordion.Control>
+                        <Accordion.Control>
+                            {translateName(city.name)}
+                            <Text span className={classes['official-names']}>
+                                {otherOfficialNames(city.name, country?.languages)}
+                            </Text>
+                        </Accordion.Control>
                         <ActionIcon
                             variant="default"
                             ml="xs"

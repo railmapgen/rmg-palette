@@ -17,7 +17,7 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     const entries = props.entries ?? [];
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const languageOptions = Object.entries(LANGUAGE_NAMES).map(([lang, name]) => ({
         value: lang,

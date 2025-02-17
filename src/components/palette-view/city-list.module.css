@@ -11,3 +11,10 @@
     z-index: 1;
     background-color: var(--mantine-color-body);
 }
+
+.official-names {
+    font-style: italic;
+    font-size: var(--mantine-font-size-sm);
+    color: var(--mantine-color-dimmed);
+    margin-left: var(--mantine-spacing-xs);
+}
