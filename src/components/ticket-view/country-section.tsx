@@ -1,9 +1,10 @@
+import classes from './country-section.module.css';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     removeCountryName,
     setCountry,
     setNewCountry,
-    setNewCountryLang,
+    setNewCountryLangs,
     switchCountryNameLang,
     updateCountryName,
 } from '../../redux/ticket/ticket-slice';
@@ -11,7 +12,7 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
-import { Group, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
+import { Group, MultiSelect, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
 import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function CountrySection() {
@@ -21,7 +22,7 @@ export default function CountrySection() {
     const dispatch = useRootDispatch();
 
     const { countryList } = useRootSelector(state => state.app);
-    const { country, newCountry, countryName, newCountryLang } = useRootSelector(state => state.ticket);
+    const { country, newCountry, countryName, newCountryLangs } = useRootSelector(state => state.ticket);
 
     const countryOptions = [
         { value: '', label: t('Please select...'), disabled: true },
@@ -46,7 +47,7 @@ export default function CountrySection() {
             </RMSectionHeader>
 
             <Stack py={4} gap="xs">
-                <Group align="flex-start" grow>
+                <Group className={classes.row}>
                     <NativeSelect
                         label={t('Country/Region')}
                         value={country}
@@ -67,13 +68,12 @@ export default function CountrySection() {
                         />
                     )}
                     {country === 'new' && (
-                        <NativeSelect
+                        <MultiSelect
                             label={t('Official language')}
-                            value={newCountryLang}
-                            onChange={({ currentTarget: { value } }) =>
-                                dispatch(setNewCountryLang(value as LanguageCode))
-                            }
+                            value={newCountryLangs}
+                            onChange={value => dispatch(setNewCountryLangs(value as LanguageCode[]))}
                             data={languageOptions}
+                            searchable
                         />
                     )}
                 </Group>

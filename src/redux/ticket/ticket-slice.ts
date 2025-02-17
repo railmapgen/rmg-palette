@@ -21,7 +21,7 @@ export interface TicketState {
     country?: string;
     newCountry: string;
     countryName: TranslationEntry[];
-    newCountryLang: LanguageCode;
+    newCountryLangs: LanguageCode[];
 
     // city
     city: string;
@@ -35,7 +35,7 @@ export interface TicketState {
 const getInitialState = (): TicketState => ({
     country: '',
     newCountry: '',
-    newCountryLang: 'en',
+    newCountryLangs: [],
     countryName: initialTranslation,
 
     city: '',
@@ -61,8 +61,8 @@ const ticketSlice = createSlice({
             state.newCountry = action.payload;
         },
 
-        setNewCountryLang: (state, action: PayloadAction<LanguageCode>) => {
-            state.newCountryLang = action.payload;
+        setNewCountryLangs: (state, action: PayloadAction<LanguageCode[]>) => {
+            state.newCountryLangs = action.payload;
         },
 
         updateCountryName: (state, action: PayloadAction<{ lang: LanguageCode; name: string }>) => {
@@ -229,7 +229,7 @@ export const ticketSelectors = {
         return {
             id: state.newCountry,
             name: Object.fromEntries(state.countryName),
-            language: state.newCountryLang,
+            languages: state.newCountryLangs,
         };
     },
 
@@ -250,14 +250,17 @@ export const ticketSelectors = {
 
     getCountryErrors: (state: TicketState): InvalidReasonType[] => {
         const result = [];
-        const { country, newCountry, newCountryLang, countryName } = state;
+        const { country, newCountry, newCountryLangs, countryName } = state;
 
         if (!country || (country === 'new' && !newCountry)) {
             result.push(TicketInvalidReasonType.COUNTRY_CODE_UNDEFINED);
         }
 
         if (country === 'new') {
-            result.push(...getTranslationEntityInvalidReasons(countryName, newCountryLang));
+            if (!newCountryLangs.length) {
+                result.push(TicketInvalidReasonType.OFFICIAL_LANGUAGES_EMPTY);
+            }
+            result.push(...getTranslationEntityInvalidReasons(countryName, newCountryLangs));
         }
 
         return result;
@@ -265,22 +268,24 @@ export const ticketSelectors = {
 
     getCityErrors: (state: TicketState, countryList: CountryEntry[]): InvalidReasonType[] => {
         const result = [];
-        const { country, newCountryLang, city, newCity, cityName } = state;
+        const { country, newCountryLangs, city, newCity, cityName } = state;
+        const countryConfig = countryList.find(config => config.id === country);
 
         if (!city || (city === 'new' && !newCity)) {
             result.push(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
         }
         //if the case is a new country has officalLanguage then get it, otherwise find the exisiting country officalLanguage - see if it is filled
-        const officialLanguage =
-            country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
-        result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguage));
-
+        if (countryConfig) {
+            const officialLanguages = country === 'new' ? newCountryLangs : countryConfig.languages;
+            result.push(...getTranslationEntityInvalidReasons(cityName, officialLanguages));
+        }
         return result;
     },
 
     getLineErrors: (state: TicketState, countryList: CountryEntry[]): Record<string, InvalidReasonType[]> => {
         const result: Record<string, InvalidReasonType[]> = { Overall: [] };
-        const { country, newCountryLang, lines } = state;
+        const { country, newCountryLangs, lines } = state;
+        const countryConfig = countryList.find(config => config.id === country);
 
         if (Object.values(lines).some(line => line.id === '')) {
             result['Overall'].push(TicketInvalidReasonType.LINE_CODE_UNDEFINED);
@@ -290,11 +295,12 @@ export const ticketSelectors = {
             result['Overall'].push(TicketInvalidReasonType.LINE_CODE_DUPLICATED);
         }
 
-        const officialLanguage =
-            country === 'new' ? newCountryLang : countryList.find(config => config.id === country)?.language;
-        Object.values(lines).forEach(line => {
-            result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity, officialLanguage);
-        });
+        if (countryConfig) {
+            const officialLanguages = country === 'new' ? newCountryLangs : countryConfig.languages;
+            Object.values(lines).forEach(line => {
+                result['Line ' + line.id] = getTranslationEntityInvalidReasons(line.nameEntity, officialLanguages);
+            });
+        }
 
         return result;
     },
@@ -303,7 +309,7 @@ export const ticketSelectors = {
 export const {
     setCountry,
     setNewCountry,
-    setNewCountryLang,
+    setNewCountryLangs,
     updateCountryName,
     switchCountryNameLang,
     removeCountryName,
