@@ -55,6 +55,7 @@ const mockStore = createTestStore({
                 name: {
                     en: 'Scotland',
                 },
+                language: 'en',
             },
             {
                 id: 'HK',
@@ -63,12 +64,14 @@ const mockStore = createTestStore({
                     'zh-Hans': '香港',
                     'zh-Hant': '香港',
                 },
+                language: 'zh-Hant',
             },
             {
                 id: 'TW',
                 name: {
                     en: 'Taiwan',
                 },
+                language: 'zh-Hant',
             },
         ],
     },

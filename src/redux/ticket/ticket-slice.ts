@@ -21,7 +21,7 @@ export interface TicketState {
     country?: string;
     newCountry: string;
     countryName: TranslationEntry[];
-    newCountryLang?: LanguageCode;
+    newCountryLang: LanguageCode;
 
     // city
     city: string;
@@ -35,7 +35,7 @@ export interface TicketState {
 const getInitialState = (): TicketState => ({
     country: '',
     newCountry: '',
-    newCountryLang: undefined,
+    newCountryLang: 'en',
     countryName: initialTranslation,
 
     city: '',
@@ -61,7 +61,7 @@ const ticketSlice = createSlice({
             state.newCountry = action.payload;
         },
 
-        setNewCountryLang: (state, action: PayloadAction<LanguageCode | undefined>) => {
+        setNewCountryLang: (state, action: PayloadAction<LanguageCode>) => {
             state.newCountryLang = action.payload;
         },
 
