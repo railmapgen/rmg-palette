@@ -10,7 +10,7 @@ import { useRootSelector } from '../../redux';
 import { useRef, useState } from 'react';
 import PantoneInput from '../common/pantone-input';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { MdContentCopy, MdDelete, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import { MdContentCopy, MdDeleteOutline, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 import { RMLabelledSegmentedControl } from '@railmapgen/mantine-components';
 
 type EditablePaletteCardProps = {
@@ -119,7 +119,7 @@ export default function EditablePaletteCard({
                         title={t('Remove')}
                         onClick={onRemove}
                     >
-                        <MdDelete />
+                        <MdDeleteOutline />
                     </ActionIcon>
                 </Group>
             </Card.Section>

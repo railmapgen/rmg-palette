@@ -51,6 +51,7 @@ const ticketSlice = createSlice({
     reducers: {
         setCountry: (state, action: PayloadAction<string>) => {
             state.country = action.payload;
+            state.city = '';
             if (action.payload === 'new') {
                 state.city = 'new';
                 state.lines = getInitialState().lines;
@@ -267,9 +268,14 @@ export const ticketSelectors = {
     },
 
     getCityErrors: (state: TicketState, countryList: CountryEntry[]): InvalidReasonType[] => {
-        const result = [];
+        const result: InvalidReasonType[] = [];
         const { country, newCountryLangs, city, newCity, cityName } = state;
         const countryConfig = countryList.find(config => config.id === country);
+
+        if (city && city !== 'new') {
+            // It's not the submitters' fault if they're using an existing city
+            return result;
+        }
 
         if (!city || (city === 'new' && !newCity)) {
             result.push(TicketInvalidReasonType.CITY_CODE_UNDEFINED);
