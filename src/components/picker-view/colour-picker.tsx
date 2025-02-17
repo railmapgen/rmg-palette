@@ -16,7 +16,7 @@ export default function ColourPicker(props: ColourPickerProps) {
     const { city, defaultValueId, onChange, onSubmit } = props;
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const paletteList = usePalette(city);

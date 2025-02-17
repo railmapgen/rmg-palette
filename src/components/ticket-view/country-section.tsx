@@ -18,7 +18,7 @@ import { useEffect } from 'react';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const dispatch = useRootDispatch();
 

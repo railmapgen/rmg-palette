@@ -18,7 +18,7 @@ import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 export default function CitySection() {
     const { t, i18n } = useTranslation();
     const dispatch = useRootDispatch();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const { cityList } = useRootSelector(state => state.app);
     const { country, city, newCity, cityName } = useRootSelector(state => state.ticket);

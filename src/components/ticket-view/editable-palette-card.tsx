@@ -37,7 +37,7 @@ export default function EditablePaletteCard({
     onLangSwitch,
 }: EditablePaletteCardProps) {
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const { pantoneReady } = useRootSelector(state => state.app);
     const [inputWithPantone, setInputWithPantone] = useState(!!lineDetail.pantone);
@@ -64,8 +64,8 @@ export default function EditablePaletteCard({
     const fgColour = lineDetail.fg === MonoColour.black ? 'black' : 'white';
 
     return (
-        <Card ref={cardRef} className={classes.editable} p="sm" withBorder>
-            <Card.Section bg={lineDetail.colour} p="sm" className={classes['card-section']}>
+        <Card ref={cardRef} className={classes.editable} withBorder>
+            <Card.Section bg={lineDetail.colour} className={classes['card-section']}>
                 <Text span style={{ color: fgColour }}>
                     {translateName(Object.fromEntries(lineDetail.nameEntity))}
                 </Text>

@@ -16,7 +16,7 @@ export default function CityPicker(props: CityPickerProps) {
     const { defaultValueId, onChange } = props;
 
     const { t, i18n } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const { countryList, cityList } = useRootSelector(state => state.app);
     const cityMap = cityList.reduce<Record<string, CityEntry>>((acc, cur) => ({ ...acc, [cur.id]: cur }), {});
