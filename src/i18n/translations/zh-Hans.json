@@ -13,7 +13,6 @@
     "Country/region code": "国家/地区代码",
     "Data source": "数据来源",
     "Discard": "丟弃",
-    "Done": "完成",
     "Do you want to continue with your last unsaved ticket?": "您想继续编辑上次未储存的草稿吗？",
     "Duplicate": "复制",
     "Edit city": "编辑城市",
@@ -29,8 +28,6 @@
     "Lines": "线路",
     "Move down": "向下移动",
     "Move up": "向上移动",
-    "Multi-languages": "多语言",
-    "No": "否",
     "Official language":"官方语言",
     "Pantone®": "潘通®",
     "Pantone® code": "潘通®代码",
@@ -49,6 +46,5 @@
     "Unsaved draft": "未储存的草稿",
     "Use Pantone®": "使用潘通®",
     "Validate": "验证",
-    "Yes": "是",
     "Your inputs contain the following errors. Please consider fixing it before submitting.": "您的输入存在以下问题，请考虑在提交前修正他們。"
 }
