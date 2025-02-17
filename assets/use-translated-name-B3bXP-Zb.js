@@ -1,1 +1,0 @@
-import{l as t}from"./react-BFtFWddK.js";function i(){const{i18n:s}=t();return r=>{var a,o;return(o=(a=s.languages.map(n=>r[n]).find(n=>n!==void 0))!=null?a:r.en)!=null?o:"(Translation Error)"}}export{i as u};
