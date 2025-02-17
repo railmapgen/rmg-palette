@@ -1,4 +1,4 @@
-import { MdAdd, MdDelete } from 'react-icons/md';
+import { MdAdd, MdDeleteOutline } from 'react-icons/md';
 import { TranslationEntry } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
@@ -77,7 +77,7 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
                                 onClick={() => onRemove(lang as LanguageCode)}
                                 ml={4}
                             >
-                                <MdDelete />
+                                <MdDeleteOutline />
                             </ActionIcon>
                         )}
                     </Flex>

@@ -11,7 +11,7 @@ describe('CountrySection', () => {
 
         const countrySelect = screen.getByRole('combobox', { name: 'Country/Region' });
         expect(countrySelect).toHaveDisplayValue('Please select...');
-        expect(screen.queryAllByRole('textbox')).toHaveLength(0);
+        expect(screen.getAllByRole('textbox')).toHaveLength(2);
 
         await user.selectOptions(countrySelect, 'Add a country/region...');
 

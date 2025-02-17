@@ -1,5 +1,6 @@
 .row {
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .row > * {

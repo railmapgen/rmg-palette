@@ -14,6 +14,7 @@ import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import { Group, MultiSelect, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
 import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
+import { useEffect } from 'react';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();
@@ -23,6 +24,16 @@ export default function CountrySection() {
 
     const { countryList } = useRootSelector(state => state.app);
     const { country, newCountry, countryName, newCountryLangs } = useRootSelector(state => state.ticket);
+
+    useEffect(() => {
+        if (country && country !== 'new') {
+            const config = countryList.find(c => c.id === country);
+            if (config) {
+                dispatch(setNewCountry(country));
+                dispatch(setNewCountryLangs(config.languages));
+            }
+        }
+    }, [country]);
 
     const countryOptions = [
         { value: '', label: t('Please select...'), disabled: true },
@@ -54,28 +65,26 @@ export default function CountrySection() {
                         onChange={({ currentTarget: { value } }) => dispatch(setCountry(value))}
                         data={countryOptions}
                     />
-                    {country === 'new' && (
-                        <TextInput
-                            label={t('Country/region code')}
-                            placeholder="e.g. CN, HK, JP (ISO 3166-1 alpha-2)"
-                            value={newCountry}
-                            onChange={({ currentTarget: { value } }) => dispatch(setNewCountry(value))}
-                            error={
-                                newCountry && !newCountry.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)
-                                    ? t('Country code should be in the format of ISO 3166-1 alpha-2')
-                                    : undefined
-                            }
-                        />
-                    )}
-                    {country === 'new' && (
-                        <MultiSelect
-                            label={t('Official language')}
-                            value={newCountryLangs}
-                            onChange={value => dispatch(setNewCountryLangs(value as LanguageCode[]))}
-                            data={languageOptions}
-                            searchable
-                        />
-                    )}
+                    <TextInput
+                        label={t('Country/region code')}
+                        placeholder="e.g. CN, HK, JP (ISO 3166-1 alpha-2)"
+                        value={newCountry}
+                        onChange={({ currentTarget: { value } }) => dispatch(setNewCountry(value))}
+                        error={
+                            newCountry && !newCountry.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)
+                                ? t('Country code should be in the format of ISO 3166-1 alpha-2')
+                                : undefined
+                        }
+                        disabled={country !== 'new'}
+                    />
+                    <MultiSelect
+                        label={t('Official language')}
+                        value={newCountryLangs}
+                        onChange={value => dispatch(setNewCountryLangs(value as LanguageCode[]))}
+                        data={languageOptions}
+                        searchable
+                        disabled={country !== 'new'}
+                    />
                 </Group>
 
                 {country === 'new' && (
