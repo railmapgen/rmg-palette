@@ -7,7 +7,7 @@ import PaletteCards from './palette-cards';
 import { MdEdit } from 'react-icons/md';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 export default function CityList() {
     const { t } = useTranslation();
@@ -18,10 +18,6 @@ export default function CityList() {
     const cities = cityList.filter(city => city.country === selectedCountry);
 
     const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
-
-    useEffect(() => {
-        itemRefs.current = {};
-    }, [selectedCountry]);
 
     const handleCitySelect = (id: string | null) => {
         if (id) {
@@ -41,37 +37,40 @@ export default function CityList() {
 
     return (
         <Accordion chevronPosition="left" classNames={{ root: classes.root }} onChange={handleCitySelect}>
-            {cities.map(city => (
-                <Accordion.Item
-                    key={city.id}
-                    ref={current => {
-                        itemRefs.current[city.id] = current;
-                    }}
-                    value={city.id}
-                >
-                    <Center className={classes.control}>
-                        <Accordion.Control>
-                            {translateName(city.name)}
-                            <Text span className={classes['official-names']}>
-                                {otherOfficialNames(city.name, country?.languages)}
-                            </Text>
-                        </Accordion.Control>
-                        <ActionIcon
-                            variant="default"
-                            ml="xs"
-                            mr="md"
-                            aria-label={t('Edit')}
-                            title={t('Edit')}
-                            onClick={() => handleCityEdit(city.id)}
-                        >
-                            <MdEdit />
-                        </ActionIcon>
-                    </Center>
-                    <Accordion.Panel>
-                        <PaletteCards cityCode={city.id} />
-                    </Accordion.Panel>
-                </Accordion.Item>
-            ))}
+            {cities.map(city => {
+                itemRefs.current = {};
+                return (
+                    <Accordion.Item
+                        key={city.id}
+                        ref={current => {
+                            itemRefs.current[city.id] = current;
+                        }}
+                        value={city.id}
+                    >
+                        <Center className={classes.control}>
+                            <Accordion.Control>
+                                {translateName(city.name)}
+                                <Text span className={classes['official-names']}>
+                                    {otherOfficialNames(city.name, country?.languages)}
+                                </Text>
+                            </Accordion.Control>
+                            <ActionIcon
+                                variant="default"
+                                ml="xs"
+                                mr="md"
+                                aria-label={t('Edit')}
+                                title={t('Edit')}
+                                onClick={() => handleCityEdit(city.id)}
+                            >
+                                <MdEdit />
+                            </ActionIcon>
+                        </Center>
+                        <Accordion.Panel>
+                            <PaletteCards cityCode={city.id} />
+                        </Accordion.Panel>
+                    </Accordion.Item>
+                );
+            })}
         </Accordion>
     );
 }
