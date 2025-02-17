@@ -16,7 +16,7 @@
     "author": "",
     "license": "GPL-3.0",
     "dependencies": {
-        "@railmapgen/rmg-translate": "^3.3.1"
+        "@railmapgen/rmg-translate": "^3.3.2"
     },
     "devDependencies": {
         "@types/jsdom": "^21.1.7",
