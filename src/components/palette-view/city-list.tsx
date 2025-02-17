@@ -7,6 +7,7 @@ import PaletteCards from './palette-cards';
 import { MdEdit } from 'react-icons/md';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
+import { useEffect, useRef } from 'react';
 
 export default function CityList() {
     const { t } = useTranslation();
@@ -15,6 +16,20 @@ export default function CityList() {
     const { cityList, countryList, selectedCountry } = useRootSelector(state => state.app);
     const country = countryList.find(({ id }) => id === selectedCountry);
     const cities = cityList.filter(city => city.country === selectedCountry);
+
+    const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+    useEffect(() => {
+        itemRefs.current = {};
+    }, [selectedCountry]);
+
+    const handleCitySelect = (id: string | null) => {
+        if (id) {
+            setTimeout(() => {
+                itemRefs.current[id]?.scrollIntoView({ behavior: 'smooth' });
+            }, 200);
+        }
+    };
 
     const handleCityEdit = async (cityCode: string) => {
         rmgRuntime.closeApp('rmg-palette-upload');
@@ -25,9 +40,15 @@ export default function CityList() {
     };
 
     return (
-        <Accordion chevronPosition="left" classNames={{ root: classes.root }}>
+        <Accordion chevronPosition="left" classNames={{ root: classes.root }} onChange={handleCitySelect}>
             {cities.map(city => (
-                <Accordion.Item key={city.id} value={city.id}>
+                <Accordion.Item
+                    key={city.id}
+                    ref={current => {
+                        itemRefs.current[city.id] = current;
+                    }}
+                    value={city.id}
+                >
                     <Center className={classes.control}>
                         <Accordion.Control>
                             {translateName(city.name)}
