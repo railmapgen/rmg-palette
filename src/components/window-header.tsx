@@ -12,7 +12,7 @@ export const WindowHeader = () => {
     return (
         <RMWindowHeader>
             <Title>{t('Palette')}</Title>
-            <RMEnvBadge env={environment} ver={appVersion} ml={5} />
+            <RMEnvBadge env={environment} ver={appVersion} />
         </RMWindowHeader>
     );
 };
@@ -26,7 +26,7 @@ export const TicketWindowHeader = () => {
     return (
         <RMWindowHeader>
             <Title>{t('Palette') + ' - ' + t('Upload')}</Title>
-            <RMEnvBadge env={environment} ver={appVersion} ml={5} />
+            <RMEnvBadge env={environment} ver={appVersion} />
         </RMWindowHeader>
     );
 };

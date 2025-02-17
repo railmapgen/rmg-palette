@@ -71,7 +71,7 @@ export default function CountrySection() {
                             label={t('Official language')}
                             value={newCountryLang}
                             onChange={({ currentTarget: { value } }) =>
-                                dispatch(setNewCountryLang(value ? (value as LanguageCode) : undefined))
+                                dispatch(setNewCountryLang(value as LanguageCode))
                             }
                             data={languageOptions}
                         />
