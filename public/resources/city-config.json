@@ -1969,6 +1969,15 @@
         }
     },
     {
+        "id": "zunyi",
+        "country": "CN",
+        "name": {
+            "en": "zunyi",
+            "zh-Hans": "遵义",
+            "zh-Hant": "遵義"
+        }
+    },
+    {
         "id": "zurich",
         "country": "CH",
         "name": {
