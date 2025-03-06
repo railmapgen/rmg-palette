@@ -136,12 +136,22 @@ export default function EditablePaletteCard({
                                 lineDetail.id?.match(/[^a-z0-9]/) ? t('Line code should be alphanumeric') : undefined
                             }
                         />
-                        <ColorInput
-                            label={t('Background colour')}
-                            value={lineDetail.colour}
-                            onChange={value => onUpdate?.({ colour: value as ColourHex })}
-                            disabled={pantoneReady && inputWithPantone}
-                        />
+                        {window.EyeDropper ? (
+                            <ColorInput
+                                label={t('Background colour')}
+                                value={lineDetail.colour}
+                                onChange={value => onUpdate?.({ colour: value as ColourHex })}
+                                disabled={pantoneReady && inputWithPantone}
+                            />
+                        ) : (
+                            <TextInput
+                                type="color"
+                                label={t('Background colour')}
+                                value={lineDetail.colour}
+                                onChange={({ currentTarget: { value } }) => onUpdate?.({ colour: value as ColourHex })}
+                                disabled={pantoneReady && inputWithPantone}
+                            />
+                        )}
                         {pantoneReady && (
                             <Switch
                                 label={t('Use Pantone®')}

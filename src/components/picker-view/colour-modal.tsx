@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { useRootSelector } from '../../redux';
 import PantoneChecker from '../ticket-view/pantone-checker';
 import RecentlyUsed from './recently-used';
-import { Badge, Button, ColorInput, Divider, Flex, Group, Stack } from '@mantine/core';
+import { Badge, Button, ColorInput, Divider, Flex, Group, Stack, TextInput } from '@mantine/core';
 import PantoneInput from '../common/pantone-input';
 import { RMLabelledSegmentedControl, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
 
@@ -132,18 +132,31 @@ export default function ColourModal(props: ColourModalProps) {
                                 }}
                             />
                         )}
-                        {colourMode !== 'pantone' && (
-                            <ColorInput
-                                label={t('Background colour')}
-                                value={bgColour}
-                                onChange={value => {
-                                    setCityCode('other');
-                                    setLineCode('other');
-                                    setBgColour(value as ColourHex);
-                                    resetPantoneInput();
-                                }}
-                            />
-                        )}
+                        {colourMode !== 'pantone' &&
+                            (window.EyeDropper ? (
+                                <ColorInput
+                                    label={t('Background colour')}
+                                    value={bgColour}
+                                    onChange={value => {
+                                        setCityCode('other');
+                                        setLineCode('other');
+                                        setBgColour(value as ColourHex);
+                                        resetPantoneInput();
+                                    }}
+                                />
+                            ) : (
+                                <TextInput
+                                    type="color"
+                                    label={t('Background colour')}
+                                    value={bgColour}
+                                    onChange={({ currentTarget: { value } }) => {
+                                        setCityCode('other');
+                                        setLineCode('other');
+                                        setBgColour(value as ColourHex);
+                                        resetPantoneInput();
+                                    }}
+                                />
+                            ))}
                         <RMLabelledSegmentedControl
                             size="sm"
                             label={t('Foreground colour')}

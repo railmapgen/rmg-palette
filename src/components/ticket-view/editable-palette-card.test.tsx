@@ -38,7 +38,7 @@ describe('EditablePaletteCard', () => {
 
         // only rgb is available
         expect(screen.queryByRole('switch', { name: 'Use Pantone®' })).not.toBeInTheDocument();
-        expect(screen.getByRole('textbox', { name: 'Background colour' })).not.toBeDisabled();
+        expect(screen.getByLabelText('Background colour')).not.toBeDisabled();
         expect(screen.queryByRole('textbox', { name: 'Pantone® code' })).not.toBeInTheDocument();
 
         await act(async () => {
@@ -47,7 +47,7 @@ describe('EditablePaletteCard', () => {
 
         // colour mode switch is available
         expect(screen.getByRole('switch', { name: 'Use Pantone®' })).toBeInTheDocument();
-        expect(screen.getByRole('textbox', { name: 'Background colour' })).toBeDisabled();
+        expect(screen.getByLabelText('Background colour')).toBeDisabled();
         expect(screen.getByRole('textbox', { name: 'Pantone® code' })).toBeInTheDocument();
     });
 
@@ -62,7 +62,7 @@ describe('EditablePaletteCard', () => {
         await user.click(screen.getByRole('button', { name: 'Edit' }));
 
         await user.click(screen.getByRole('switch', { name: 'Use Pantone®' }));
-        fireEvent.input(screen.getByRole('textbox', { name: 'Background colour' }), {
+        fireEvent.input(screen.getByLabelText('Background colour'), {
             target: { value: '#aaaaaa' },
         });
         await waitFor(() => expect(mockCallbacks.onUpdate).toBeCalledTimes(1));
