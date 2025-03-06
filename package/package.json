@@ -16,15 +16,15 @@
     "author": "",
     "license": "GPL-3.0",
     "dependencies": {
-        "@railmapgen/rmg-translate": "^3.3.2"
+        "@railmapgen/rmg-translate": "^3.4.1"
     },
     "devDependencies": {
         "@types/jsdom": "^21.1.7",
         "jsdom": "^26.0.0",
         "ts-node": "^10.9.2",
-        "typescript": "^5.7.3",
-        "unbuild": "^3.3.1",
-        "vitest": "^3.0.5"
+        "typescript": "^5.8.2",
+        "unbuild": "^3.5.0",
+        "vitest": "^3.0.7"
     },
     "main": "./dist/index.mjs",
     "types": "./dist/index.d.ts",

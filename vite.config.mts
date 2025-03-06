@@ -18,8 +18,15 @@ export default defineConfig({
         rollupOptions: {
             output: {
                 manualChunks: {
-                    react: ['react', 'react-dom', 'react-router-dom', '@reduxjs/toolkit', 'react-redux', 'react-i18next'],
-                    mantine: ['@mantine/core', '@mantine/hooks'],
+                    react: [
+                        'react',
+                        'react-dom',
+                        'react-router-dom',
+                        '@reduxjs/toolkit',
+                        'react-redux',
+                        'react-i18next',
+                    ],
+                    mantine: ['@mantine/core', '@mantine/hooks', '@railmapgen/mantine-components'],
                 },
             },
         },
