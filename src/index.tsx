@@ -52,3 +52,9 @@ rmgRuntime
 
         await initPickerState(store);
     });
+
+declare global {
+    interface Window {
+        EyeDropper: any;
+    }
+}
