@@ -15,8 +15,8 @@
         "fg": "#fff",
         "name": {
             "en": "T2 - Inner West & Leppington Line",
-            "zh-Hans": "T2 - 中西部与雷平顿线",
-            "zh-Hant": "T2 - 中西部與雷平頓線"
+            "zh-Hans": "T2 - 内西区与雷平顿线",
+            "zh-Hant": "T2 - 内西區與雷平頓線"
         }
     },
     {
@@ -24,9 +24,9 @@
         "colour": "#f37021",
         "fg": "#fff",
         "name": {
-            "en": "T3 - Bankstown Line",
-            "zh-Hans": "T3 - 班克斯顿线",
-            "zh-Hant": "T3 - 班克斯敦線"
+            "en": "T3 - Liverpool & Inner West Line",
+            "zh-Hans": "T3 - 利物浦与内西区线",
+            "zh-Hant": "T3 - 利物浦與内西區線"
         }
     },
     {
@@ -47,6 +47,16 @@
             "en": "T5 - Cumberland Line",
             "zh-Hans": "T5 - 坎伯兰线",
             "zh-Hant": "T5 - 坎伯蘭線"
+        }
+    },
+    {
+        "id": "syd6",
+        "colour": "#7d3f21",
+        "fg": "#fff",
+        "name": {
+            "en": "T6 - Lidcombe & Bankstown Line",
+            "zh-Hans": "T6 - 利德科姆和班克斯敦线",
+            "zh-Hant": "T6 - 利德科姆和班克斯敦線"
         }
     },
     {
@@ -74,9 +84,9 @@
         "colour": "#d11f2f",
         "fg": "#fff",
         "name": {
-            "en": "T9 - Northern Line test",
-            "zh-Hans": "T9 - 北部线（测试中）",
-            "zh-Hant": "T9 - 北線測試"
+            "en": "T9 - Northern Line",
+            "zh-Hans": "T9 - 北部线",
+            "zh-Hant": "T9 - 北線"
         }
     },
     {
