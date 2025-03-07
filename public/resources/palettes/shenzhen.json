@@ -1,62 +1,62 @@
 [
     {
-        "id": "sz1",
+        "id": "sz1lb",
         "colour": "#00B140",
         "fg": "#fff",
         "name": {
             "en": "Line 1 (Luobao Line)",
             "zh-Hans": "1号线（罗宝线）",
-            "zh-Hant": "1號線（羅寶線）"
+            "zh-Hant": "1號線（羅寶綫）"
         }
     },
     {
-        "id": "sz2",
+        "id": "sz2sk",
         "colour": "#B94700",
         "fg": "#fff",
         "name": {
             "en": "Line 2 (Shekou Line)",
             "zh-Hans": "2号线（蛇口线）",
-            "zh-Hant": "2號線（蛇口線）"
+            "zh-Hant": "2號線（蛇口綫）"
         }
     },
     {
-        "id": "sz3",
+        "id": "sz3lg",
         "colour": "#00A9E0",
         "fg": "#fff",
         "name": {
             "en": "Line 3 (Longgang Line)",
             "zh-Hans": "3号线（龙岗线）",
-            "zh-Hant": "3號線（龍崗線）"
+            "zh-Hant": "3號線（龍崗綫）"
         }
     },
     {
-        "id": "sz4",
+        "id": "sz4lh",
         "colour": "#DA291C",
         "fg": "#fff",
         "name": {
             "en": "Line 4 (Longhua Line)",
             "zh-Hans": "4号线（龙华线）",
-            "zh-Hant": "4號線（龍華線）"
+            "zh-Hant": "4號線（龍華綫）"
         }
     },
     {
-        "id": "sz5",
+        "id": "sz5hz",
         "colour": "#A05EB5",
         "fg": "#fff",
         "name": {
             "en": "Line 5 (Huanzhong Line)",
             "zh-Hans": "5号线（环中线）",
-            "zh-Hant": "5號線（環中線）"
+            "zh-Hant": "5號線（環中綫）"
         }
     },
     {
-        "id": "sz6",
+        "id": "sz6gm",
         "colour": "#00C7B1",
         "fg": "#fff",
         "name": {
             "en": "Line 6（Guangming Line)",
             "zh-Hans": "6号线（光明线）",
-            "zh-Hant": "6號線（光明線）"
+            "zh-Hant": "6號線（光明綫）"
         }
     },
     {
@@ -66,47 +66,47 @@
         "name": {
             "en": "Branch Line 6",
             "zh-Hans": "6号线支线",
-            "zh-Hant": "6號線支線"
+            "zh-Hant": "6號線支綫"
         }
     },
     {
-        "id": "sz7",
+        "id": "sz7xl",
         "colour": "#0033A0",
         "fg": "#fff",
         "name": {
             "en": "Line 7 (Xili Line)",
             "zh-Hans": "7号线（西丽线）",
-            "zh-Hant": "7號線（西麗線）"
+            "zh-Hant": "7號線（西麗綫）"
         }
     },
     {
-        "id": "sz8",
+        "id": "sz8yt",
         "colour": "#b94700",
         "fg": "#fff",
         "name": {
-            "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "en": "Line 8 (Yantian Line)",
+            "zh-Hans": "8号线（盐田线）",
+            "zh-Hant": "8號線（鹽田綫）"
         }
     },
     {
-        "id": "sz9",
+        "id": "sz9ml",
         "colour": "#7B6469",
         "fg": "#fff",
         "name": {
             "en": "Line 9 (Meilin Line)",
             "zh-Hans": "9号线（梅林线）",
-            "zh-Hant": "9號線（梅林線）"
+            "zh-Hant": "9號線（梅林綫）"
         }
     },
     {
-        "id": "sz10",
+        "id": "sz10bt",
         "colour": "#F8779E",
         "fg": "#fff",
         "name": {
             "en": "Line 10 (Bantian Line)",
             "zh-Hans": "10号线（坂田线）",
-            "zh-Hant": "10號線（坂田線）"
+            "zh-Hant": "10號線（坂田綫）"
         }
     },
     {
@@ -115,8 +115,8 @@
         "fg": "#fff",
         "name": {
             "en": "Line 11",
-            "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "zh-Hans": "11号线（机场线）",
+            "zh-Hant": "11號線（機場綫）"
         }
     },
     {
@@ -126,47 +126,47 @@
         "name": {
             "en": "Line 12 (Nanbao Line)",
             "zh-Hans": "12号线（南宝线）",
-            "zh-Hant": "12號線（南寶線）"
+            "zh-Hant": "12號線（南寶綫）"
         }
     },
     {
-        "id": "sz13",
+        "id": "sz13sy",
         "colour": "#DE7C00",
         "fg": "#fff",
         "name": {
             "en": "Line 13 (Shiyan Line)",
             "zh-Hans": "13号线（石岩线）",
-            "zh-Hant": "13號線（石岩線）"
+            "zh-Hant": "13號線（石岩綫）"
         }
     },
     {
-        "id": "sz14",
+        "id": "sz14ee",
         "colour": "#F2C75C",
         "fg": "#fff",
         "name": {
             "en": "Line 14 (Eastern Express)",
             "zh-Hans": "14号线（东部快线）",
-            "zh-Hant": "14號線（東部快線）"
+            "zh-Hant": "14號線（東部快綫）"
         }
     },
     {
-        "id": "sz15",
+        "id": "sz15qhcl",
         "colour": "#84BD00",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "en": "Line 15 (Qianhai Circle Line)",
+            "zh-Hans": "15号线（前海环线）",
+            "zh-Hant": "15號線（前海環綫）"
         }
     },
     {
-        "id": "sz16",
+        "id": "sz16lp",
         "colour": "#1E22AA",
         "fg": "#fff",
         "name": {
             "en": "Line 16 (Longping Line)",
             "zh-Hans": "16号线（龙坪线）",
-            "zh-Hant": "16號線（龍坪線）"
+            "zh-Hant": "16號線（龍坪綫）"
         }
     },
     {
@@ -176,17 +176,17 @@
         "name": {
             "en": "Line 20",
             "zh-Hans": "20号线",
-            "zh-Hant": "20號線"
+            "zh-Hant": "20號綫"
         }
     },
     {
-        "id": "sz22",
+        "id": "sz22zz",
         "colour": "#f5e425",
         "fg": "#fff",
         "name": {
-            "en": "Line 22",
-            "zh-Hans": "22号线",
-            "zh-Hant": "22号線"
+            "en": "Line 22 (Zhongzhou Line)",
+            "zh-Hans": "22号线（中轴线）",
+            "zh-Hant": "22号綫（中軸綫）"
         }
     },
     {
@@ -196,7 +196,7 @@
         "name": {
             "en": "Line 25",
             "zh-Hans": "25号线",
-            "zh-Hant": "25号線"
+            "zh-Hant": "25号綫"
         }
     },
     {
@@ -206,7 +206,7 @@
         "name": {
             "en": "Line 27",
             "zh-Hans": "27号线",
-            "zh-Hant": "27号線"
+            "zh-Hant": "27号綫"
         }
     },
     {
