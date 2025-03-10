@@ -154,6 +154,16 @@
         }
     },
     {
+        "id": "bremen",
+        "country": "DE",
+        "name": {
+            "en": "Bremen",
+            "de": "Bremen",
+            "zh-Hans": "不来梅",
+            "zh-Hant": "不來梅"
+        }
+    },
+    {
         "id": "brussels",
         "country": "BE",
         "name": {
