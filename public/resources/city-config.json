@@ -105,6 +105,16 @@
         }
     },
     {
+        "id": "belfast",
+        "country": "GB",
+        "name": {
+            "en": "Belfast",
+            "zh-Hans": "贝尔法斯特",
+            "zh-Hant": "貝爾法斯特",
+            "ga": "Béal Feirste"
+        }
+    },
+    {
         "id": "berlin",
         "country": "DE",
         "name": {
