@@ -10,6 +10,7 @@
         <base href="./" />
         <link rel="apple-touch-icon" href='/logo192.png' />
         <link rel="manifest" href='/manifest.json' />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" />
         <style>
             @keyframes animation-spinner {
                 0% {transform: rotate(0deg)}
@@ -38,6 +39,11 @@
             <div class="spinner"></div>
         </div>
 
+        <script>
+            if (!crypto.randomUUID) {
+                crypto.randomUUID = () => Math.random().toString(36).slice(2);
+            }
+        </script>
         <script type="module" src="src/index.tsx"></script>
     </body>
 </html>
