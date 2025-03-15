@@ -1,42 +1,42 @@
 [
     {
-        "id": "expo",
-        "colour": "#015dab",
+        "id": "EXP",
+        "colour": "#005dab",
         "fg": "#fff",
         "name": {
             "en": "Expo Line",
-            "zh-Hans": "博览线",
-            "zh-Hant": "博覽線"
+            "fr": "Ligne Expo",
+            "zh-Hant": "世博綫"
         }
     },
     {
-        "id": "millennium",
-        "colour": "#fed206",
-        "fg": "#000",
+        "id": "MLN",
+        "colour": "#ffd204",
+        "fg": "#fff",
         "name": {
             "en": "Millennium Line",
-            "zh-Hans": "千禧线",
-            "zh-Hant": "千禧線"
+            "fr": "Ligne Millénaire",
+            "zh-Hant": "千禧綫"
         }
     },
     {
-        "id": "canada",
-        "colour": "#009bc8",
+        "id": "CAN",
+        "colour": "#009bc9",
         "fg": "#fff",
         "name": {
             "en": "Canada Line",
-            "zh-Hans": "加拿大线",
-            "zh-Hant": "加拿大線"
+            "fr": "Ligne Canada",
+            "zh-Hant": "加拿大綫"
         }
     },
     {
-        "id": "wce",
-        "colour": "#85209b",
+        "id": "WCE",
+        "colour": "#79288c",
         "fg": "#fff",
         "name": {
             "en": "West Coast Express",
-            "zh-Hans": "西岸快车",
-            "zh-Hant": "西岸快車"
+            "fr": "Express Côte-Ouest",
+            "zh-Hant": "西岸快綫"
         }
     },
     {
