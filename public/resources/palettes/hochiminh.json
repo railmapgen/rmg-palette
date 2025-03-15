@@ -1,92 +1,112 @@
 [
     {
         "id": "hcm1",
+        "colour": "#0079b8",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "vi": "Tuyến số 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#117FC2"
+        }
     },
     {
         "id": "hcm2",
+        "colour": "#cc205f",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "vi": "Tuyến số 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#E91D26"
+        }
     },
     {
         "id": "hcm3",
+        "colour": "#fb7d37",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "vi": "Tuyến số 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#ED5D2D"
+        }
     },
     {
         "id": "hcm4",
+        "colour": "#97cf6f",
+        "fg": "#fff",
         "name": {
             "en": "Line 4",
             "vi": "Tuyến số 4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
-        },
-        "colour": "#3AB34B"
+        }
     },
     {
         "id": "hcm5",
+        "colour": "#e690bb",
+        "fg": "#fff",
         "name": {
             "en": "Line 5",
             "vi": "Tuyến số 5",
             "zh-Hans": "5号线",
             "zh-Hant": "5號線"
-        },
-        "colour": "#BE1C7C"
+        }
     },
     {
         "id": "hcm6",
+        "colour": "#ba7a20",
+        "fg": "#fff",
         "name": {
             "en": "Line 6",
             "vi": "Tuyến số 6",
             "zh-Hans": "6号线",
             "zh-Hant": "6號線"
-        },
-        "colour": "#A67E5F"
+        }
     },
     {
-        "id": "hcmt1",
+        "id": "hcm7",
+        "colour": "#53c5e0",
+        "fg": "#fff",
         "name": {
-            "en": "Line T1",
-            "vi": "Tuyến số T1",
-            "zh-Hans": "T1号线",
-            "zh-Hant": "T1號線"
-        },
-        "colour": "#894798"
+            "en": "Line 7",
+            "vi": "Tuyến số 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
     },
     {
-        "id": "hcmm2",
+        "id": "hcm8",
+        "colour": "#6566a9",
+        "fg": "#fff",
         "name": {
-            "en": "Line M2",
-            "vi": "Tuyến số M2",
-            "zh-Hans": "M2号线",
-            "zh-Hant": "M2號線"
-        },
-        "colour": "#949391"
+            "en": "Line 8",
+            "vi": "Tuyến số 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
     },
     {
-        "id": "hcmm3",
+        "id": "hcm9",
+        "colour": "#d26b96",
+        "fg": "#fff",
         "name": {
-            "en": "Line M3",
-            "vi": "Tuyến số M3",
-            "zh-Hans": "M3号线",
-            "zh-Hant": "M3號線"
-        },
-        "colour": "#79C6DB"
+            "en": "Line 9",
+            "vi": "Tuyến số 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "hcm10",
+        "colour": "#6a926d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10",
+            "zh-Hans": "10号线",
+            "zh-Hant": "10號線",
+            "vi": "Tuyến số 10"
+        }
     }
 ]

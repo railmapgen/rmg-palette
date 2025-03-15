@@ -21,6 +21,7 @@ export const getGitHubIssueDetailsBlock = (type: 'country' | 'city' | 'lines', d
 
 export enum TicketInvalidReasonType {
     COUNTRY_CODE_UNDEFINED = 'COUNTRY_CODE_UNDEFINED',
+    OFFICIAL_LANGUAGES_EMPTY = 'OFFICIAL_LANGUAGES_EMPTY',
     CITY_CODE_UNDEFINED = 'CITY_CODE_UNDEFINED',
     LINE_CODE_UNDEFINED = 'LINE_CODE_UNDEFINED',
     LINE_CODE_DUPLICATED = 'LINE_CODE_DUPLICATED',
@@ -41,6 +42,11 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         en: 'Country/region code is missing',
         'zh-Hans': '缺少国家/地区代码',
         'zh-Hant': '缺少國家/地區代碼',
+    },
+    OFFICIAL_LANGUAGES_EMPTY: {
+        en: 'Official languages are missing',
+        'zh-Hans': '缺少官方语言',
+        'zh-Hant': '缺少官方語言',
     },
     CITY_CODE_UNDEFINED: {
         en: 'City code is missing',
@@ -79,24 +85,22 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hant': '包含重複的語言',
     },
     OFFICIAL_LANGUAGE_UNDEFINED: {
-        en: 'Name in official language is missing',
+        en: 'Name in official languages is missing',
         'zh-Hans': '缺少官方语言名称',
         'zh-Hant': '缺少官方語言名稱',
     },
 };
 
-const DATA_SOURCES = [
-    'OFFICIAL_WEBSITE',
-    'SOCIAL_MEDIA',
-    'GOVERNMENT',
-    'INTERNAL',
-    'WEBSITE_SOURCE_CODE',
-    'PDF',
-    'LOSSY',
-    'WIKIPEDIA',
-    'OTHER',
-] as const;
-export type DataSource = (typeof DATA_SOURCES)[number];
+export type DataSource =
+    | 'OFFICIAL_WEBSITE'
+    | 'SOCIAL_MEDIA'
+    | 'GOVERNMENT'
+    | 'INTERNAL'
+    | 'WEBSITE_SOURCE_CODE'
+    | 'PDF'
+    | 'LOSSY'
+    | 'WIKIPEDIA'
+    | 'OTHER';
 
 export const DATA_SOURCE_DISPLAY_TEXT: Record<DataSource, Translation> = {
     OFFICIAL_WEBSITE: {
@@ -153,6 +157,7 @@ export enum Events {
     EDIT_CITY = 'EDIT_CITY',
     RESET_TICKET = 'RESET_TICKET',
 
+    REMOVE_HISTORY_ITEM = 'REMOVE_HISTORY_ITEM',
     CLEAR_HISTORY = 'CLEAR_HISTORY',
 
     APP_CLIP_VIEW_OPENED = 'APP_CLIP_VIEW_OPENED',

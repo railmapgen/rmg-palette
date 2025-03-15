@@ -1,10 +1,9 @@
-import { RmgCard, RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
-import { Box, HStack, IconButton, SystemStyleObject } from '@chakra-ui/react';
-import { MdAdd, MdDelete } from 'react-icons/md';
+import { MdAdd, MdDeleteOutline } from 'react-icons/md';
 import { TranslationEntry } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import useTranslatedName from '../hooks/use-translated-name';
+import { ActionIcon, Box, Fieldset, Flex, Group, Select, TextInput } from '@mantine/core';
 
 interface MultiLangEntryCardProps {
     entries?: TranslationEntry[];
@@ -13,44 +12,18 @@ interface MultiLangEntryCardProps {
     onRemove: (lang: LanguageCode) => void;
 }
 
-const cardRowStyles: SystemStyleObject = {
-    '& > div:first-of-type': {
-        flex: 1,
-    },
-};
-
 export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     const { onUpdate, onLangSwitch, onRemove } = props;
     const entries = props.entries ?? [];
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
-    const getFields = (lang: LanguageCode, name: string): RmgFieldsField[] => {
-        return [
-            {
-                type: 'select',
-                label: t('Language'),
-                value: lang,
-                options: Object.entries(LANGUAGE_NAMES).reduce(
-                    (acc, cur) => ({
-                        ...acc,
-                        [cur[0]]: translateName(cur[1]),
-                    }),
-                    {} as Record<LanguageCode, string>
-                ),
-                disabledOptions: entries.filter(entry => entry[0] !== lang).map(entry => entry[0]),
-                onChange: value => onLangSwitch(lang, value as LanguageCode),
-            },
-            {
-                type: 'input',
-                label: t('Name'),
-                value: name,
-                onChange: value => onUpdate(lang, value),
-                validator: value => !!value,
-            },
-        ];
-    };
+    const languageOptions = Object.entries(LANGUAGE_NAMES).map(([lang, name]) => ({
+        value: lang,
+        label: translateName(name),
+        disabled: entries.some(entry => entry[0] === lang),
+    }));
 
     const handleAddEntry = () => {
         const nextLang = Object.keys(LANGUAGE_NAMES).filter(
@@ -60,43 +33,60 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     };
 
     return (
-        <>
+        <Fieldset legend={t('Multi-languages')}>
             {entries.map(([lang, name], idx, arr) => (
-                <HStack key={idx} sx={cardRowStyles} data-testid={'entry-card-stack-' + lang}>
-                    <RmgFields fields={getFields(lang as LanguageCode, name)} noLabel={idx > 0} />
-                    {idx === arr.length - 1 ? (
-                        <IconButton
-                            size="sm"
-                            variant="ghost"
-                            aria-label={t('Add a name in another language')}
-                            title={t('Add a name in another language')}
-                            onClick={handleAddEntry}
-                            icon={<MdAdd />}
+                <Flex key={idx} pt={4} align="center" data-testid={'entry-card-stack-' + lang}>
+                    <Group gap="xs" flex={1} grow>
+                        <Select
+                            size="xs"
+                            aria-label={t('Language')}
+                            value={lang}
+                            onChange={value => onLangSwitch(lang, value as LanguageCode)}
+                            data={languageOptions}
+                            searchable
                         />
-                    ) : (
-                        <Box minW={8} />
-                    )}
+                        <TextInput
+                            size="xs"
+                            aria-label={t('Name')}
+                            placeholder={t('Enter name')}
+                            value={name}
+                            onChange={({ currentTarget: { value } }) => onUpdate(lang, value)}
+                        />
+                    </Group>
+                    <Flex ml={8} wrap="nowrap">
+                        {idx === arr.length - 1 ? (
+                            <ActionIcon
+                                size="sm"
+                                variant="filled"
+                                aria-label={t('Add a name in another language')}
+                                title={t('Add a name in another language')}
+                                onClick={handleAddEntry}
+                            >
+                                <MdAdd />
+                            </ActionIcon>
+                        ) : (
+                            <Box w={22} />
+                        )}
 
-                    {arr.length > 1 && (
-                        <IconButton
-                            size="sm"
-                            variant="ghost"
-                            aria-label={t('Remove this name')}
-                            title={t('Remove this name')}
-                            onClick={() => onRemove(lang as LanguageCode)}
-                            icon={<MdDelete />}
-                        />
-                    )}
-                </HStack>
+                        {arr.length > 1 && (
+                            <ActionIcon
+                                size="sm"
+                                variant="outline"
+                                aria-label={t('Remove this name')}
+                                title={t('Remove this name')}
+                                onClick={() => onRemove(lang as LanguageCode)}
+                                ml={4}
+                            >
+                                <MdDeleteOutline />
+                            </ActionIcon>
+                        )}
+                    </Flex>
+                </Flex>
             ))}
-        </>
+        </Fieldset>
     );
 };
 
 export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
-    return (
-        <RmgCard direction="column">
-            <MultiLangEntryCardInner {...props} />
-        </RmgCard>
-    );
+    return <MultiLangEntryCardInner {...props} />;
 }

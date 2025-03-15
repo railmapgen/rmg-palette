@@ -4,12 +4,13 @@
         <meta charset="utf-8" />
         <link rel="icon" href='/favicon.ico' />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="description" content="Rail Map Toolkit - Palette" />
         <base href="./" />
         <link rel="apple-touch-icon" href='/logo192.png' />
         <link rel="manifest" href='/manifest.json' />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" />
         <style>
             @keyframes animation-spinner {
                 0% {transform: rotate(0deg)}
@@ -38,6 +39,11 @@
             <div class="spinner"></div>
         </div>
 
+        <script>
+            if (!crypto.randomUUID) {
+                crypto.randomUUID = () => Math.random().toString(36).slice(2);
+            }
+        </script>
         <script type="module" src="src/index.tsx"></script>
     </body>
 </html>

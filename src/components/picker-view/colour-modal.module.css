@@ -1,0 +1,15 @@
+.body {
+    padding: 8px;
+    align-items: center;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.custom-input-group {
+    flex-wrap: wrap;
+}
+
+.custom-input-group > div {
+    flex: 1;
+    min-width: 130px;
+}

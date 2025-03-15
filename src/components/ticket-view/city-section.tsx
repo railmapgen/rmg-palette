@@ -1,5 +1,3 @@
-import { chakra, Heading } from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField, RmgSection, RmgSectionHeader } from '@railmapgen/rmg-components';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     clearLines,
@@ -14,28 +12,29 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { getTicketByCityId } from '../../redux/ticket/util';
+import { Group, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
+import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function CitySection() {
     const { t, i18n } = useTranslation();
     const dispatch = useRootDispatch();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const { cityList } = useRootSelector(state => state.app);
     const { country, city, newCity, cityName } = useRootSelector(state => state.ticket);
 
-    const cityOptions: Record<string, string> = {
+    const cityOptions = [
+        { value: '', label: t('Please select...'), disabled: true },
         ...cityList
             .filter(entry => entry.country === country)
-            .map(entry => [entry.id, translateName(entry.name)])
-            .sort((a, b) => a[1].localeCompare(b[1], i18n.languages[0])) // sort
-            .reduce(
-                (acc, cur) => {
-                    return { ...acc, [cur[0]]: cur[1] };
-                },
-                { '': t('Please select...') }
-            ),
-        new: t('Add a city') + '...',
-    };
+            .map(entry => ({
+                value: entry.id,
+                label: translateName(entry.name),
+            }))
+            .toSorted((a, b) => a.label.localeCompare(b.label, i18n.languages[0])), // sort
+
+        { value: 'new', label: t('Add a city') + '...' },
+    ];
 
     const handleSelectCity = async (cityId: string) => {
         if (cityId === 'new') {
@@ -51,36 +50,37 @@ export default function CitySection() {
         }
     };
 
-    const fields: RmgFieldsField[] = [
-        {
-            type: 'select',
-            label: t('City'),
-            value: city,
-            options: cityOptions,
-            disabledOptions: [''],
-            onChange: value => handleSelectCity(value as string),
-        },
-        {
-            type: 'input',
-            label: t('City code'),
-            placeholder: 'e.g. hongkong, guangzhou, shanghai',
-            value: newCity,
-            onChange: value => dispatch(setNewCity(value)),
-            validator: value => value !== '' && !value.match(/[^a-z]/),
-            hidden: city !== 'new',
-        },
-    ];
-
     return (
-        <RmgSection>
-            <RmgSectionHeader>
-                <Heading as="h5" size="sm">
+        <RMSection>
+            <RMSectionHeader>
+                <Title order={2} size="h4">
                     {t('City')}
-                </Heading>
-            </RmgSectionHeader>
+                </Title>
+            </RMSectionHeader>
 
-            <chakra.div px={1}>
-                <RmgFields fields={fields} />
+            <Stack py={4} gap="xs">
+                <Group align="flex-start" grow>
+                    <NativeSelect
+                        label={t('City')}
+                        value={city}
+                        onChange={({ currentTarget: { value } }) => handleSelectCity(value)}
+                        data={cityOptions}
+                    />
+                    {city === 'new' && (
+                        <TextInput
+                            label={t('City code')}
+                            placeholder="e.g. hongkong, guangzhou, shanghai"
+                            value={newCity}
+                            onChange={({ currentTarget: { value } }) => dispatch(setNewCity(value))}
+                            error={
+                                newCity && newCity.match(/[^a-z]/)
+                                    ? 'City code should contain lower case letters only'
+                                    : undefined
+                            }
+                        />
+                    )}
+                </Group>
+
                 {city === 'new' && (
                     <MultiLangEntryCard
                         entries={cityName}
@@ -89,7 +89,7 @@ export default function CitySection() {
                         onRemove={lang => dispatch(removeCityName(lang))}
                     />
                 )}
-            </chakra.div>
-        </RmgSection>
+            </Stack>
+        </RMSection>
     );
 }

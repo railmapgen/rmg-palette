@@ -38,9 +38,9 @@
         "fg": "#fff",
         "pantone": "293 C",
         "name": {
-            "en": "Line 3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
+            "en": "Line 3/Konggang Line",
+            "zh-Hans": "3号线/空港线",
+            "zh-Hant": "3號線/空港線"
         }
     },
     {
@@ -50,8 +50,8 @@
         "pantone": "7413 C",
         "name": {
             "en": "Line 4",
-            "zh-Hans": "4号线",
-            "zh-Hant": "4號線"
+            "zh-Hant": "4號線",
+            "zh-Hans": "4号线"
         }
     },
     {
@@ -71,9 +71,9 @@
         "fg": "#fff",
         "pantone": "190 C",
         "name": {
-            "en": "Line 6",
-            "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
+            "en": "Line 6/International Expo Line",
+            "zh-Hans": "6号线/国博线",
+            "zh-Hant": "6號線/國博線"
         }
     },
     {
@@ -134,7 +134,7 @@
     {
         "id": "cq12",
         "colour": "#D2D755",
-        "fg": "#fff",
+        "fg": "#000",
         "pantone": "584 C",
         "name": {
             "en": "Line 12",
@@ -199,9 +199,9 @@
     },
     {
         "id": "cq18",
-        "colour": "#2AD2C9",
+        "colour": "#2CD5C4",
         "fg": "#fff",
-        "pantone": "3252 C",
+        "pantone": "3255 C",
         "name": {
             "en": "Line 18",
             "zh-Hans": "18号线",
@@ -210,9 +210,9 @@
     },
     {
         "id": "cq19",
-        "colour": "#BC204B",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "7636 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Line 19",
             "zh-Hans": "19号线",
@@ -221,9 +221,9 @@
     },
     {
         "id": "cq20",
-        "colour": "#E31C79",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "213 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Line 20",
             "zh-Hans": "20号线",
@@ -232,9 +232,9 @@
     },
     {
         "id": "cq21",
-        "colour": "#007FA3",
+        "colour": "#309B42",
         "fg": "#fff",
-        "pantone": "314 C",
+        "pantone": "7739 C",
         "name": {
             "en": "Line 21",
             "zh-Hans": "21号线",
@@ -243,9 +243,9 @@
     },
     {
         "id": "cq22",
-        "colour": "#003D4C",
+        "colour": "#2F6F7A",
         "fg": "#fff",
-        "pantone": "548 C",
+        "pantone": "2214 C",
         "name": {
             "en": "Line 22",
             "zh-Hans": "22号线",
@@ -254,9 +254,9 @@
     },
     {
         "id": "cq23",
-        "colour": "#E35205",
+        "colour": "#93C90F",
         "fg": "#fff",
-        "pantone": "166 C",
+        "pantone": "2292 C",
         "name": {
             "en": "Line 23",
             "zh-Hans": "23号线",
@@ -276,9 +276,9 @@
     },
     {
         "id": "cq25",
-        "colour": "#00685E",
+        "colour": "#8A75D1",
         "fg": "#fff",
-        "pantone": "329 C",
+        "pantone": "2101 C",
         "name": {
             "en": "Line 25",
             "zh-Hans": "25号线",
@@ -287,9 +287,9 @@
     },
     {
         "id": "cq26",
-        "colour": "#00C389",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "3395 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Line 26",
             "zh-Hans": "26号线",
@@ -298,9 +298,9 @@
     },
     {
         "id": "cq27",
-        "colour": "#685BC7",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "2725 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Line 27",
             "zh-Hans": "27号线",
@@ -309,9 +309,9 @@
     },
     {
         "id": "cq28",
-        "colour": "#007398",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "7468 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Line 28",
             "zh-Hans": "28号线",
@@ -319,10 +319,21 @@
         }
     },
     {
-        "id": "jiangtiao",
-        "colour": "#0077C8",
+        "id": "cq29",
+        "colour": "#FF585D",
         "fg": "#fff",
-        "pantone": "3005 C",
+        "pantone": "178 C",
+        "name": {
+            "en": "Line 29",
+            "zh-Hans": "29号线",
+            "zh-Hant": "29號線"
+        }
+    },
+    {
+        "id": "jiangtiao",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
         "name": {
             "en": "Jiangtiao Line",
             "zh-Hans": "江跳线",
@@ -331,13 +342,57 @@
     },
     {
         "id": "bitong",
-        "colour": "#685BC7",
+        "colour": "#0057B7",
         "fg": "#fff",
-        "pantone": "2725 C",
+        "pantone": "2935 C",
         "name": {
             "en": "Bitong Line",
             "zh-Hans": "璧铜线",
             "zh-Hant": "璧銅線"
+        }
+    },
+    {
+        "id": "yongchuan",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Yongchuan Line",
+            "zh-Hans": "永川线",
+            "zh-Hant": "永川線"
+        }
+    },
+    {
+        "id": "nanchuan",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Nanchuan Line",
+            "zh-Hans": "南川线",
+            "zh-Hant": "南川線"
+        }
+    },
+    {
+        "id": "qiwan",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Qiwan Line",
+            "zh-Hans": "綦万线",
+            "zh-Hant": "綦萬線"
+        }
+    },
+    {
+        "id": "dazu",
+        "colour": "#0057B7",
+        "fg": "#fff",
+        "pantone": "2935 C",
+        "name": {
+            "en": "Dazu Line",
+            "zh-Hans": "大足线",
+            "zh-Hant": "大足線"
         }
     }
 ]

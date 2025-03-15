@@ -31,7 +31,7 @@
     },
     {
         "id": "sh4",
-        "colour": "#461D84",
+        "colour": "#461d84",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -181,7 +181,7 @@
     },
     {
         "id": "sh19",
-        "colour": "#F6AF74",
+        "colour": "#f5ab78",
         "fg": "#000",
         "name": {
             "en": "Line 19",
@@ -191,7 +191,7 @@
     },
     {
         "id": "sh20",
-        "colour": "#009f5d",
+        "colour": "#009f65",
         "fg": "#fff",
         "name": {
             "en": "Line 20",
@@ -201,7 +201,7 @@
     },
     {
         "id": "sh21",
-        "colour": "#eea900",
+        "colour": "#f7af00",
         "fg": "#000",
         "name": {
             "en": "Line 21",
@@ -211,7 +211,7 @@
     },
     {
         "id": "sh22",
-        "colour": "#56426f",
+        "colour": "#5f376f",
         "fg": "#fff",
         "name": {
             "en": "Line 22",
@@ -221,12 +221,32 @@
     },
     {
         "id": "sh23",
-        "colour": "#a8cc80",
+        "colour": "#b0d478",
         "fg": "#000",
         "name": {
             "en": "Line 23",
             "zh-Hans": "23号线",
             "zh-Hant": "23號線"
+        }
+    },
+    {
+        "id": "sh26",
+        "colour": "#5f67a9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26",
+            "zh-Hans": "26号线",
+            "zh-Hant": "26號線"
+        }
+    },
+    {
+        "id": "sh27",
+        "colour": "#43a5a0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "27号线",
+            "zh-Hant": "27號線"
         }
     },
     {
@@ -251,7 +271,7 @@
     },
     {
         "id": "maglev",
-        "colour": "#009090",
+        "colour": "#008b9a",
         "fg": "#fff",
         "name": {
             "en": "Shanghai Maglev Train",
@@ -321,12 +341,12 @@
     },
     {
         "id": "airport",
-        "colour": "#3D6B8A",
+        "colour": "#236890",
         "fg": "#fff",
         "name": {
             "en": "Airport Link Line",
-            "zh-Hans": "机场联络线",
-            "zh-Hant": "機場聯絡線"
+            "zh-Hans": "市域机场线",
+            "zh-Hant": "市域機場線"
         }
     },
     {

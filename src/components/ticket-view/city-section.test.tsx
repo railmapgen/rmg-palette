@@ -1,9 +1,9 @@
 import { render } from '../../test-utils';
 import CitySection from './city-section';
-import { fireEvent, screen, waitFor } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import rootReducer, { RootStore } from '../../redux';
 import { createTestStore } from '../../setupTests';
-import { vi } from 'vitest';
+import { userEvent } from '@testing-library/user-event';
 
 const realStore = rootReducer.getState();
 let mockStore: RootStore;
@@ -12,6 +12,8 @@ const originalFetch = global.fetch;
 const mockFetch = vi.fn();
 
 describe('CitySection', () => {
+    const user = userEvent.setup();
+
     beforeEach(() => {
         mockStore = createTestStore({
             app: {
@@ -69,7 +71,7 @@ describe('CitySection', () => {
         render(<CitySection />, { store: mockStore });
 
         // select guangzhou
-        fireEvent.change(screen.getByRole('combobox', { name: 'City' }), { target: { value: 'guangzhou' } });
+        await user.selectOptions(screen.getByRole('combobox', { name: 'City' }), 'Guangzhou');
         await waitFor(() => expect(mockStore.getState().ticket.city).toBe('guangzhou'));
     });
 
@@ -77,7 +79,7 @@ describe('CitySection', () => {
         render(<CitySection />, { store: mockStore });
 
         // select new
-        fireEvent.change(screen.getByRole('combobox', { name: 'City' }), { target: { value: 'new' } });
+        await user.selectOptions(screen.getByRole('combobox', { name: 'City' }), 'Add a city...');
         await waitFor(() => expect(mockStore.getState().ticket.city).toBe('new'));
     });
 });

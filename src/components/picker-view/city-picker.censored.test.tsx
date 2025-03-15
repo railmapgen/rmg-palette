@@ -28,13 +28,14 @@ const mockStore = createTestStore({
 });
 
 describe('CityPicker Censored', () => {
+    const user = userEvent.setup();
+
     it('Can censor Taiwan flag emojis as expected', async () => {
-        const user = userEvent.setup();
         render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = await screen.findAllByRole('menuitem');
+        const menuItems = await screen.findAllByRole('option');
         expect(menuItems.find(el => el.textContent?.includes('🇨🇳Taipei'))).toBeDefined();
         expect(menuItems.find(el => el.textContent?.includes('🇹🇼Taipei'))).toBeUndefined();
     });

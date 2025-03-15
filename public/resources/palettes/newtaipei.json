@@ -44,9 +44,9 @@
         "colour": "#e5007f",
         "fg": "#fff",
         "name": {
-            "en": "Wugu-Taishan LRT",
-            "zh-Hans": "五股泰山轻轨",
-            "zh-Hant": "五股泰山輕軌"
+            "en": "Wugu-Taishan-Banqiao LRT",
+            "zh-Hans": "五股泰山板桥轻轨",
+            "zh-Hant": "五股泰山板橋輕軌"
         }
     },
     {
@@ -54,19 +54,29 @@
         "colour": "#f6c2d8",
         "fg": "#fff",
         "name": {
-            "en": "Taishan-Banqiao LRT",
-            "zh-Hans": "泰山板桥轻轨",
-            "zh-Hant": "泰山板橋輕軌"
+            "en": "Linkou LRT/Zhonghe-Guangfu Line",
+            "zh-Hans": "林口轻轨/中和光复线",
+            "zh-Hant": "林口輕軌/中和光復線"
         }
     },
     {
         "id": "y",
         "colour": "#ffd500",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Circular Line",
             "zh-Hans": "环状线",
             "zh-Hant": "環狀線"
+        }
+    },
+    {
+        "id": "sb",
+        "colour": "#25aae1",
+        "fg": "#fff",
+        "name": {
+            "en": "Xizhi-Donghu MRT/Keelung MRT",
+            "zh-Hans": "汐东捷运/基隆捷运",
+            "zh-Hant": "汐東捷運/基隆捷運"
         }
     }
 ]
