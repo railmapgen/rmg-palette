@@ -1,42 +1,72 @@
 [
     {
-        "id": "EXP",
-        "colour": "#005dab",
+        "id": "expo",
+        "colour": "#015dab",
         "fg": "#fff",
         "name": {
             "en": "Expo Line",
-            "fr": "Ligne Expo",
-            "zh-Hant": "世博綫"
+            "zh-Hans": "博览线",
+            "zh-Hant": "博覽線"
         }
     },
     {
-        "id": "MLN",
-        "colour": "#ffd204",
-        "fg": "#fff",
+        "id": "millennium",
+        "colour": "#fed206",
+        "fg": "#000",
         "name": {
             "en": "Millennium Line",
-            "fr": "Ligne Millénaire",
-            "zh-Hant": "千禧綫"
+            "zh-Hans": "千禧线",
+            "zh-Hant": "千禧線"
         }
     },
     {
-        "id": "CAN",
-        "colour": "#009bc9",
+        "id": "canada",
+        "colour": "#009bc8",
         "fg": "#fff",
         "name": {
             "en": "Canada Line",
-            "fr": "Ligne Canada",
-            "zh-Hant": "加拿大綫"
+            "zh-Hans": "加拿大线",
+            "zh-Hant": "加拿大線"
         }
     },
     {
-        "id": "WCE",
-        "colour": "#79288c",
+        "id": "wce",
+        "colour": "#85209b",
         "fg": "#fff",
         "name": {
             "en": "West Coast Express",
-            "fr": "Express Côte-Ouest",
-            "zh-Hant": "西岸快綫"
+            "zh-Hans": "西岸快车",
+            "zh-Hant": "西岸快車"
+        }
+    },
+    {
+        "id": "rapidbus",
+        "colour": "#00a049",
+        "fg": "#fff",
+        "name": {
+            "en": "RapidBus",
+            "zh-Hans": "快速巴士线",
+            "zh-Hant": "快速巴士線"
+        }
+    },
+    {
+        "id": "99b",
+        "colour": "#f47a22",
+        "fg": "#fff",
+        "name": {
+            "en": "99 B-Line",
+            "zh-Hans": "99号线",
+            "zh-Hant": "99號線"
+        }
+    },
+    {
+        "id": "seabus",
+        "colour": "#887269",
+        "fg": "#fff",
+        "name": {
+            "en": "SeaBus",
+            "zh-Hans": "海上巴士",
+            "zh-Hant": "海上巴士"
         }
     }
 ]
