@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
           registry-url: 'https://registry.npmjs.org'
 
@@ -28,8 +28,7 @@ jobs:
 
       - name: Publish to npm
         run: |
-          cd ./package/dist
-          npm publish
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
 
@@ -38,4 +37,4 @@ jobs:
           curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
             -H "Accept: application/vnd.github.everest-preview+json" \
             -H "Content-Type: application/json" https://api.github.com/repos/railmapgen/rmg-palette/actions/workflows/build.yml/dispatches \
-            --data '{"ref": "master", "inputs": {"auto_deploy": "PRD"}}'
+            --data '{"ref": "main", "inputs": {"auto_deploy": "PRD"}}'

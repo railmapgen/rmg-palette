@@ -2,14 +2,13 @@
 
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { mkdir, readFile, writeFile } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 import { CityEntry } from '../src';
 import { execSync } from 'child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const sourcePath = path.join(__dirname, '../../public/resources');
-const distPath = path.join(__dirname, '../dist');
 
 const generateUpdateHistory = async () => {
     // read source file
@@ -30,18 +29,4 @@ const generateUpdateHistory = async () => {
     await writeFile(path.join(sourcePath, 'history.json'), JSON.stringify(history));
 };
 
-const writePackageJson = async () => {
-    console.log('Writing package.json for dist...');
-
-    // read source file
-    const packageJsonStr = await readFile(path.join(__dirname, '..', 'package.json'), 'utf-8');
-    await mkdir(path.join(distPath), { recursive: true });
-    await writeFile(path.join(distPath, 'package.json'), packageJsonStr);
-};
-
-const prebuild = async () => {
-    await generateUpdateHistory();
-    await writePackageJson();
-};
-
-prebuild().then();
+generateUpdateHistory().then();

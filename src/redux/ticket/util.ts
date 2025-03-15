@@ -21,7 +21,7 @@ export interface PaletteEntryWithTranslationEntry {
 
 export const getTranslationEntityInvalidReasons = (
     entities: TranslationEntry[],
-    officialLanguage?: LanguageCode
+    officialLanguages: LanguageCode[]
 ): TranslationInvalidReasonType[] => {
     const result = [];
 
@@ -48,7 +48,7 @@ export const getTranslationEntityInvalidReasons = (
     }
 
     // Official Language
-    if (officialLanguage && entities.every(entity => entity[0] !== officialLanguage)) {
+    if (officialLanguages.some(language => entities.every(entity => entity[0] !== language))) {
         result.push(TranslationInvalidReasonType.OFFICIAL_LANGUAGE_UNDEFINED);
     }
 

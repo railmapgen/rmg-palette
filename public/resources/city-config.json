@@ -105,6 +105,16 @@
         }
     },
     {
+        "id": "belfast",
+        "country": "GB",
+        "name": {
+            "en": "Belfast",
+            "zh-Hans": "贝尔法斯特",
+            "zh-Hant": "貝爾法斯特",
+            "ga": "Béal Feirste"
+        }
+    },
+    {
         "id": "berlin",
         "country": "DE",
         "name": {
@@ -346,6 +356,16 @@
         }
     },
     {
+        "id": "cork",
+        "country": "IE",
+        "name": {
+            "en": "Cork",
+            "zh-Hans": "科克",
+            "zh-Hant": "科克",
+            "ga": "Corcaigh"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {
@@ -473,6 +493,17 @@
         }
     },
     {
+        "id": "fukuoka",
+        "country": "JP",
+        "name": {
+            "en": "Fukuoka",
+            "zh-Hans": "福冈",
+            "ja": "福岡",
+            "ko": "후쿠오카",
+            "zh-Hant": "福岡"
+        }
+    },
+    {
         "id": "fuzhou",
         "country": "CN",
         "name": {
@@ -530,6 +561,16 @@
             "es": "Göteborg",
             "zh-Hans": "哥德堡",
             "zh-Hant": "哥德堡"
+        }
+    },
+    {
+        "id": "grenoble",
+        "country": "FR",
+        "name": {
+            "en": "Grenoble",
+            "zh-Hans": "格勒诺布尔",
+            "fr": "Grenoble",
+            "zh-Hant": "格勒諾布爾"
         }
     },
     {
@@ -1340,6 +1381,15 @@
         }
     },
     {
+        "id": "philidelphia",
+        "country": "US",
+        "name": {
+            "en": "SEPTA",
+            "zh-Hans": "SEPTA",
+            "zh-Hant": "SEPTA"
+        }
+    },
+    {
         "id": "poznan",
         "country": "PL",
         "name": {
@@ -1366,6 +1416,14 @@
             "en": "Qingdao",
             "zh-Hans": "青岛",
             "zh-Hant": "青島"
+        }
+    },
+    {
+        "id": "rennes",
+        "country": "FR",
+        "name": {
+            "fr": "Rennes",
+            "en": "Rennes"
         }
     },
     {
@@ -1765,6 +1823,15 @@
         }
     },
     {
+        "id": "vancouver",
+        "country": "CA",
+        "name": {
+            "en": "Vancouver",
+            "fr": "Vancouver",
+            "zh-Hant": "溫哥華"
+        }
+    },
+    {
         "id": "vienna",
         "country": "AT",
         "name": {
@@ -1920,6 +1987,16 @@
             "en": "Zhongshan",
             "zh-Hans": "中山",
             "zh-Hant": "中山"
+        }
+    },
+    {
+        "id": "zurich",
+        "country": "CH",
+        "name": {
+            "en": "Zurich",
+            "zh-Hans": "苏黎世",
+            "zh-Hant": "蘇黎世",
+            "de": "Zürich"
         }
     }
 ]

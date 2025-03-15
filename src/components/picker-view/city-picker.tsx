@@ -1,10 +1,11 @@
-import { RmgAutoComplete } from '@railmapgen/rmg-components';
 import { CityEntry } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
 import { getFlagEmoji } from './emoji-util';
 import { useRootSelector } from '../../redux';
 import useTranslatedName from '../hooks/use-translated-name';
 import { censorFlag } from '../../util/censor-utils';
+import { ComboboxItem, OptionsFilter, Select, SelectProps } from '@mantine/core';
+import { CountryEntry } from '../../../package/src';
 
 interface CityPickerProps {
     defaultValueId?: string;
@@ -14,51 +15,64 @@ interface CityPickerProps {
 export default function CityPicker(props: CityPickerProps) {
     const { defaultValueId, onChange } = props;
 
-    const { i18n } = useTranslation();
-    const translateName = useTranslatedName();
+    const { t, i18n } = useTranslation();
+    const { translateName } = useTranslatedName();
 
     const { countryList, cityList } = useRootSelector(state => state.app);
-    const currentItem = defaultValueId ? cityList.find(item => item.id === defaultValueId) : undefined;
+    const cityMap = cityList.reduce<Record<string, CityEntry>>((acc, cur) => ({ ...acc, [cur.id]: cur }), {});
+    const countryMap = countryList.reduce<Record<string, CountryEntry>>((acc, cur) => ({ ...acc, [cur.id]: cur }), {});
 
-    const displayHandler = (item: CityEntry) => (
-        <>
-            <span className="flag-emoji">{getFlagEmoji(censorFlag(item.country))}</span>
-            <span>{translateName(item.name)}</span>
-        </>
-    );
+    const defaultValue = defaultValueId && defaultValueId in cityMap ? defaultValueId : null;
 
-    const filter = (input: string, item: CityEntry): boolean => {
-        const lowerCaseInput = input.toLocaleLowerCase();
+    const renderOption: SelectProps['renderOption'] = ({ option }) => {
+        const city = cityMap[option.value];
         return (
-            item.id.toLocaleLowerCase().includes(lowerCaseInput) || // city id match
-            Object.values(item.name).some(name => name.toLocaleLowerCase().includes(lowerCaseInput)) || // city name match
-            item.country.toLocaleLowerCase().includes(lowerCaseInput) || // country id match
-            Object.values(countryList.find(country => item.country === country.id)?.name ?? {}).some(name =>
-                name.toLocaleLowerCase().includes(lowerCaseInput)
-            ) // country name match
+            city && (
+                <>
+                    <span className="flag-emoji">{getFlagEmoji(censorFlag(city.country))}</span>
+                    <span>{translateName(city.name)}</span>
+                </>
+            )
         );
     };
 
+    const filter: OptionsFilter = ({ options, search }) => {
+        const lowerCaseInput = search.toLocaleLowerCase();
+        return (options as ComboboxItem[]).filter(option => {
+            const city = cityMap[option.value];
+            return (
+                city &&
+                (city.id.toLocaleLowerCase().includes(lowerCaseInput) || // city id match
+                    Object.values(city.name).some(name => name.toLocaleLowerCase().includes(lowerCaseInput)) || // city name match
+                    city.country.toLocaleLowerCase().includes(lowerCaseInput) || // country id match
+                    Object.values(countryMap[city.country]?.name ?? {}).some(name =>
+                        name.toLocaleLowerCase().includes(lowerCaseInput)
+                    )) // country name match
+            );
+        });
+    };
+
     const data = cityList
-        .slice()
-        .map(item => ({ ...item, value: translateName(item.name) }))
+        .map(item => ({ value: item.id, label: translateName(item.name) }))
         .sort((a, b) => {
-            if (a.id === 'other') {
+            if (a.value === 'other') {
                 return 1;
-            } else if (b.id === 'other') {
+            } else if (b.value === 'other') {
                 return -1;
             } else {
-                return a.value.localeCompare(b.value, i18n.languages[0]);
+                return a.label.localeCompare(b.label, i18n.languages[0]);
             }
         });
 
     return (
-        <RmgAutoComplete
+        <Select
+            label={t('City')}
             data={data}
-            displayHandler={displayHandler}
+            value={defaultValue}
+            onChange={value => value && onChange?.(value)}
+            renderOption={renderOption}
+            searchable
             filter={filter}
-            value={currentItem && translateName(currentItem.name)}
-            onChange={item => onChange?.(item.id)}
         />
     );
 }
