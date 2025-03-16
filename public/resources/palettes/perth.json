@@ -68,5 +68,45 @@
             "zh-Hans": "艾伦布鲁克线",
             "zh-Hant": "艾倫布魯克線"
         }
+    },
+    {
+        "id": "waaus",
+        "colour": "#614b79",
+        "fg": "#fff",
+        "name": {
+            "en": "Australind",
+            "zh-Hans": "澳大利恩",
+            "zh-Hant": "澳大利恩"
+        }
+    },
+    {
+        "id": "wapros",
+        "colour": "#f2a900",
+        "fg": "#fff",
+        "name": {
+            "en": "Prospector",
+            "zh-Hans": "探矿者",
+            "zh-Hant": "探礦者"
+        }
+    },
+    {
+        "id": "waml",
+        "colour": "#8f993e",
+        "fg": "#fff",
+        "name": {
+            "en": "MerredinLink",
+            "zh-Hans": "梅里登联络线",
+            "zh-Hant": "梅里登連接線"
+        }
+    },
+    {
+        "id": "waal",
+        "colour": "#8f993e",
+        "fg": "#fff",
+        "name": {
+            "en": "AvonLink",
+            "zh-Hans": "雅芳联络线",
+            "zh-Hant": "雅芳連接線"
+        }
     }
 ]
