@@ -1,38 +1,102 @@
 [
     {
         "id": "jn1",
+        "colour": "#BE1FA1",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#BE1FA1"
+        }
     },
     {
         "id": "jn2",
+        "colour": "#FFB620",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#FFB620"
+        }
     },
     {
         "id": "jn3",
+        "colour": "#0073CE",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#0073CE"
+        }
     },
     {
         "id": "jn4",
+        "colour": "#229719",
+        "fg": "#fff",
         "name": {
             "en": "Line 4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
-        },
-        "colour": "#229719"
+        }
+    },
+    {
+        "id": "jn5",
+        "colour": "#b6ccd9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "jn6",
+        "colour": "#5fbef5",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "jn7",
+        "colour": "#ff6445",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "jn8",
+        "colour": "#892cab",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "jn9",
+        "colour": "#bd9140",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "jnt1",
+        "colour": "#e31e1e",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 1",
+            "zh-Hans": "有轨电车1号线",
+            "zh-Hant": "有軌電車1號線"
+        }
     }
 ]
