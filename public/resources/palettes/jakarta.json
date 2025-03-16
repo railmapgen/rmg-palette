@@ -64,14 +64,6 @@
         }
     },
     {
-        "id": "jb8a",
-        "colour": "#84276e",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT8A"
-        }
-    },
-    {
         "id": "jb9",
         "colour": "#449d9b",
         "fg": "#fff",
@@ -112,6 +104,14 @@
         }
     },
     {
+        "id": "jb14",
+        "colour": "#f18935",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT14"
+        }
+    },
+    {
         "id": "jm",
         "colour": "#cd224c",
         "fg": "#fff",
@@ -122,21 +122,55 @@
         }
     },
     {
+        "id": "jtb",
+        "colour": "#efc318",
+        "fg": "#fff",
+        "name": {
+            "en": "MRT East-West Line",
+            "zh-Hans": "地铁东西线",
+            "zh-Hant": "地鐵東西缐"
+        }
+    },
+    {
         "id": "js",
         "colour": "#ff5e24",
         "fg": "#fff",
         "name": {
-            "en": "LRT Line 1",
-            "zh-Hans": "轻轨一号线",
-            "zh-Hant": "輕鐵一號線"
+            "en": "LRT Southern Line",
+            "zh-Hans": "轻轨南线",
+            "zh-Hant": "輕鐵南線"
+        }
+    },
+    {
+        "id": "jbk",
+        "colour": "#006838",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT Jabodebek Bekasi Line"
+        }
+    },
+    {
+        "id": "jcb",
+        "colour": "#21409a",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT Jabodebek Cibubur Line"
         }
     },
     {
         "id": "jb",
+        "colour": "#ee202c",
+        "fg": "#fff",
+        "name": {
+            "en": "Bogor Line"
+        }
+    },
+    {
+        "id": "jc",
         "colour": "#23bcff",
         "fg": "#fff",
         "name": {
-            "en": "Cikarang Line"
+            "en": "Cikarang Loop Line"
         }
     },
     {
@@ -148,35 +182,11 @@
         }
     },
     {
-        "id": "jl",
-        "colour": "#ffb014",
-        "fg": "#fff",
-        "name": {
-            "en": "Loop Line"
-        }
-    },
-    {
-        "id": "jc",
-        "colour": "#ee202c",
-        "fg": "#fff",
-        "name": {
-            "en": "Central Line"
-        }
-    },
-    {
         "id": "jt",
         "colour": "#c65e2b",
         "fg": "#fff",
         "name": {
             "en": "Tangerang Line"
-        }
-    },
-    {
-        "id": "ja",
-        "colour": "#292467",
-        "fg": "#fff",
-        "name": {
-            "en": "Airport Railway Soekarno-Hatta Line"
         }
     },
     {
@@ -188,19 +198,11 @@
         }
     },
     {
-        "id": "jbk",
-        "colour": "#b3dbc0",
+        "id": "ja",
+        "colour": "#292467",
         "fg": "#fff",
         "name": {
-            "en": "LRT Jabodebek Bekasi Line"
-        }
-    },
-    {
-        "id": "jcb",
-        "colour": "#cfd7ee",
-        "fg": "#fff",
-        "name": {
-            "en": "LRT Jabodebek Cibubur Line"
+            "en": "Airport Railway Soekarno-Hatta Line"
         }
     },
     {
