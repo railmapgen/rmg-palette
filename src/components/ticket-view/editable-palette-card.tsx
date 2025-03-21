@@ -1,5 +1,5 @@
 import classes from '../common/palette-card.module.css';
-import { ActionIcon, Card, ColorInput, Group, Stack, Switch, Text, TextInput } from '@mantine/core';
+import { ActionIcon, Card, Group, Stack, Switch, Text, TextInput } from '@mantine/core';
 import useTranslatedName from '../hooks/use-translated-name';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
@@ -12,6 +12,7 @@ import PantoneInput from '../common/pantone-input';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import { MdContentCopy, MdDeleteOutline, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 import { RMLabelledSegmentedControl } from '@railmapgen/mantine-components';
+import CompatibleColourInput from '../common/compatible-colour-input';
 
 type EditablePaletteCardProps = {
     lineDetail: PaletteEntryWithTranslationEntry;
@@ -136,22 +137,12 @@ export default function EditablePaletteCard({
                                 lineDetail.id?.match(/[^a-z0-9]/) ? t('Line code should be alphanumeric') : undefined
                             }
                         />
-                        {window.EyeDropper ? (
-                            <ColorInput
-                                label={t('Background colour')}
-                                value={lineDetail.colour}
-                                onChange={value => onUpdate?.({ colour: value as ColourHex })}
-                                disabled={pantoneReady && inputWithPantone}
-                            />
-                        ) : (
-                            <TextInput
-                                type="color"
-                                label={t('Background colour')}
-                                value={lineDetail.colour}
-                                onChange={({ currentTarget: { value } }) => onUpdate?.({ colour: value as ColourHex })}
-                                disabled={pantoneReady && inputWithPantone}
-                            />
-                        )}
+                        <CompatibleColourInput
+                            label={t('Background colour')}
+                            value={lineDetail.colour}
+                            onChange={value => onUpdate?.({ colour: value as ColourHex })}
+                            disabled={pantoneReady && inputWithPantone}
+                        />
                         {pantoneReady && (
                             <Switch
                                 label={t('Use Pantone®')}

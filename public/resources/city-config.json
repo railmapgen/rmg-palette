@@ -105,6 +105,16 @@
         }
     },
     {
+        "id": "belfast",
+        "country": "GB",
+        "name": {
+            "en": "Belfast",
+            "zh-Hans": "贝尔法斯特",
+            "zh-Hant": "貝爾法斯特",
+            "ga": "Béal Feirste"
+        }
+    },
+    {
         "id": "berlin",
         "country": "DE",
         "name": {
@@ -490,6 +500,17 @@
             "en": "Frankfurt am Main",
             "zh-Hans": "美茵河畔法兰克福",
             "zh-Hant": "美茵河畔法蘭克福"
+        }
+    },
+    {
+        "id": "fukuoka",
+        "country": "JP",
+        "name": {
+            "en": "Fukuoka",
+            "zh-Hans": "福冈",
+            "ja": "福岡",
+            "ko": "후쿠오카",
+            "zh-Hant": "福岡"
         }
     },
     {
