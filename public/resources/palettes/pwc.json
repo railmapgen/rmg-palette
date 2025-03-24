@@ -1,0 +1,218 @@
+[
+    {
+        "id": "51",
+        "colour": "#179a43",
+        "fg": "#fff",
+        "name": {
+            "en": "Dumfries OmniRide Local"
+        }
+    },
+    {
+        "id": "52",
+        "colour": "#88c946",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 1 OmniRide Local"
+        }
+    },
+    {
+        "id": "53",
+        "colour": "#ff5a88",
+        "fg": "#fff",
+        "name": {
+            "en": "Dumfries OmniRide Connector"
+        }
+    },
+    {
+        "id": "60",
+        "colour": "#b21b0f",
+        "fg": "#fff",
+        "name": {
+            "en": "Manassas Metro Express"
+        }
+    },
+    {
+        "id": "65",
+        "colour": "#fda42b",
+        "fg": "#fff",
+        "name": {
+            "en": "Manassas OmniRide Local North"
+        }
+    },
+    {
+        "id": "67",
+        "colour": "#e02c4d",
+        "fg": "#fff",
+        "name": {
+            "en": "Manassas OmniRide Local South"
+        }
+    },
+    {
+        "id": "91",
+        "colour": "#00a7e3",
+        "fg": "#fff",
+        "name": {
+            "en": "Dale City OmniRide Local"
+        }
+    },
+    {
+        "id": "92",
+        "colour": "#fc5cac",
+        "fg": "#fff",
+        "name": {
+            "en": "Lake Ridge OmniRide Local"
+        }
+    },
+    {
+        "id": "93",
+        "colour": "#c12d98",
+        "fg": "#fff",
+        "name": {
+            "en": "Woodbridge OmniRide Local"
+        }
+    },
+    {
+        "id": "94",
+        "colour": "#0d2e98",
+        "fg": "#fff",
+        "name": {
+            "en": "Lake Ridge OmniRide Connector"
+        }
+    },
+    {
+        "id": "95",
+        "colour": "#009395",
+        "fg": "#fff",
+        "name": {
+            "en": "Prince William Metro Express"
+        }
+    },
+    {
+        "id": "96",
+        "colour": "#444aa7",
+        "fg": "#fff",
+        "name": {
+            "en": "East-West Express"
+        }
+    },
+    {
+        "id": "541",
+        "colour": "#8b5623",
+        "fg": "#fff",
+        "name": {
+            "en": "Stafford–Washington (State Dept.) OmniRide Express"
+        }
+    },
+    {
+        "id": "563",
+        "colour": "#0161ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Woodbridge–Navy Yard OmniRide Express"
+        }
+    },
+    {
+        "id": "611",
+        "colour": "#faaf18",
+        "fg": "#fff",
+        "name": {
+            "en": "Gainesville–Washington OmniRide Express"
+        }
+    },
+    {
+        "id": "612",
+        "colour": "#faaf18",
+        "fg": "#fff",
+        "name": {
+            "en": "Gainesville–Pentagon/Navy Yard OmniRide Express"
+        }
+    },
+    {
+        "id": "618",
+        "colour": "#faaf18",
+        "fg": "#fff",
+        "name": {
+            "en": "Gainesville–Dulles/Herndon/Reston OmniRide Express"
+        }
+    },
+    {
+        "id": "622",
+        "colour": "#f58220",
+        "fg": "#fff",
+        "name": {
+            "en": "Haymarket–Rosslyn/Ballston OmniRide Express"
+        }
+    },
+    {
+        "id": "923",
+        "colour": "#8a8c8f",
+        "fg": "#fff",
+        "name": {
+            "en": "Spotsylvania–Navy Yard OmniRide Express"
+        }
+    },
+    {
+        "id": "932",
+        "colour": "#8a8c8f",
+        "fg": "#fff",
+        "name": {
+            "en": "Falmouth–Pentagon/Rosslyn/Ballston/State Dept. OmniRide Express"
+        }
+    },
+    {
+        "id": "942",
+        "colour": "#8b5623",
+        "fg": "#fff",
+        "name": {
+            "en": "Stafford–Pentagon OmniRide Express"
+        }
+    },
+    {
+        "id": "943",
+        "colour": "#8b5623",
+        "fg": "#fff",
+        "name": {
+            "en": "Stafford–Washington (L’Enfant Plaza) OmniRide Express"
+        }
+    },
+    {
+        "id": "952",
+        "colour": "#4cb848",
+        "fg": "#fff",
+        "name": {
+            "en": "Montclair–Pentagon OmniRide Express"
+        }
+    },
+    {
+        "id": "953",
+        "colour": "#4cb848",
+        "fg": "#fff",
+        "name": {
+            "en": "Montclair–Washington OmniRide Express"
+        }
+    },
+    {
+        "id": "971",
+        "colour": "#0161ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Dale City–Washington OmniRide Express"
+        }
+    },
+    {
+        "id": "972",
+        "colour": "#0161ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Dale City Pentagon/Rosslyn/Ballston/Crystal City OmniRide Express"
+        }
+    },
+    {
+        "id": "981",
+        "colour": "#ed028c",
+        "fg": "#fff",
+        "name": {
+            "en": "Lake Ridge–Pentagon/Washington OmniRide Express"
+        }
+    }
+]
