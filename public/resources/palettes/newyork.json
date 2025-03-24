@@ -1,106 +1,232 @@
 [
     {
-        "id": "nybdfm",
-        "colour": "#ff6319",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Sixth Avenue Line",
-            "zh-Hans": "IND第六大道线"
-        }
-    },
-    {
-        "id": "nyace",
-        "colour": "#0039a6",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Eighth Avenue Line",
-            "zh-Hans": "IND第八大道线"
-        }
-    },
-    {
-        "id": "nyl",
-        "colour": "#a7a9ac",
-        "fg": "#fff",
-        "name": {
-            "en": "BMT Canarsie Line",
-            "zh-Hans": "BMT卡纳西线"
-        }
-    },
-    {
-        "id": "nyg",
-        "colour": "#6cbe45",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Crosstown Line",
-            "zh-Hans": "IND跨城线"
-        }
-    },
-    {
-        "id": "nyjz",
-        "colour": "#996633",
-        "fg": "#fff",
-        "name": {
-            "en": "BMT Nassau Street Line",
-            "zh-Hans": "BMT纳苏街线"
-        }
-    },
-    {
-        "id": "nynqrw",
-        "colour": "#fccc0a",
-        "fg": "#000",
-        "name": {
-            "en": "BMT Broadway Line",
-            "zh-Hans": "BMT百老汇线"
-        }
-    },
-    {
-        "id": "ny456",
-        "colour": "#00933c",
-        "fg": "#fff",
-        "name": {
-            "en": "IRT Lexington Avenue Line",
-            "zh-Hans": "IRT莱辛顿大道线"
-        }
-    },
-    {
-        "id": "ny123",
+        "id": "1",
         "colour": "#ee352e",
         "fg": "#fff",
         "name": {
-            "en": "IRT Broadway–Seventh Avenue Line",
-            "zh-Hans": "IRT百老汇-第七大道线"
+            "en": "1 train",
+            "zh-Hans": "1 趟列车"
         }
     },
     {
-        "id": "nyt",
-        "colour": "#00add0",
+        "id": "2",
+        "colour": "#ee352e",
         "fg": "#fff",
         "name": {
-            "en": "IND Second Avenue Line",
-            "zh-Hans": "IND第二大道线"
+            "en": "2 train",
+            "zh-Hans": "2 号列车"
         }
     },
     {
-        "id": "ny7",
+        "id": "3",
+        "colour": "#ee352e",
+        "fg": "#fff",
+        "name": {
+            "en": "3 train",
+            "zh-Hans": "3号线"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#00933c",
+        "fg": "#fff",
+        "name": {
+            "en": "4 train",
+            "zh-Hans": "4号线"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#00933c",
+        "fg": "#fff",
+        "name": {
+            "en": "5 train",
+            "zh-Hans": "5号列车"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#00933c",
+        "fg": "#fff",
+        "name": {
+            "en": "6 train",
+            "zh-Hans": "6 号列车"
+        }
+    },
+    {
+        "id": "7",
         "colour": "#b933ad",
         "fg": "#fff",
         "name": {
-            "en": "IRT Flushing Line",
-            "zh-Hans": "IRT法拉盛线"
+            "en": "7 train",
+            "zh-Hans": "7 号线"
         }
     },
     {
-        "id": "nys",
+        "id": "a",
+        "colour": "#0039a6",
+        "fg": "#fff",
+        "name": {
+            "en": "A train",
+            "zh-Hans": "A 号列车"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#0039a6",
+        "fg": "#fff",
+        "name": {
+            "en": "C train",
+            "zh-Hans": "C 号列车"
+        }
+    },
+    {
+        "id": "e",
+        "colour": "#0039a6",
+        "fg": "#fff",
+        "name": {
+            "en": "E train",
+            "zh-Hans": "E 号列车"
+        }
+    },
+    {
+        "id": "b",
+        "colour": "#ff6319",
+        "fg": "#fff",
+        "name": {
+            "en": "B train",
+            "zh-Hans": "B 号列车"
+        }
+    },
+    {
+        "id": "d",
+        "colour": "#ff6319",
+        "fg": "#fff",
+        "name": {
+            "en": "D train",
+            "zh-Hans": "D 列车"
+        }
+    },
+    {
+        "id": "f",
+        "colour": "#ff6319",
+        "fg": "#fff",
+        "name": {
+            "en": "F train",
+            "zh-Hans": "F 列车"
+        }
+    },
+    {
+        "id": "m",
+        "colour": "#ff6319",
+        "fg": "#fff",
+        "name": {
+            "en": "M train",
+            "zh-Hans": "M 号列车"
+        }
+    },
+    {
+        "id": "g",
+        "colour": "#6cbe45",
+        "fg": "#fff",
+        "name": {
+            "en": "G train",
+            "zh-Hans": "G 列车"
+        }
+    },
+    {
+        "id": "j",
+        "colour": "#996633",
+        "fg": "#fff",
+        "name": {
+            "en": "J train",
+            "zh-Hans": "J 列车"
+        }
+    },
+    {
+        "id": "z",
+        "colour": "#996633",
+        "fg": "#fff",
+        "name": {
+            "en": "Z train",
+            "zh-Hans": "Z 列车"
+        }
+    },
+    {
+        "id": "l",
+        "colour": "#a7a9ac",
+        "fg": "#fff",
+        "name": {
+            "en": "L train",
+            "zh-Hans": "L 列车"
+        }
+    },
+    {
+        "id": "n",
+        "colour": "#fccc0a",
+        "fg": "#000",
+        "name": {
+            "en": "N train",
+            "zh-Hans": "N 列车"
+        }
+    },
+    {
+        "id": "q",
+        "colour": "#fccc0a",
+        "fg": "#000",
+        "name": {
+            "en": "Q train",
+            "zh-Hans": "Q 列车"
+        }
+    },
+    {
+        "id": "r",
+        "colour": "#fccc0a",
+        "fg": "#000",
+        "name": {
+            "en": "R train",
+            "zh-Hans": "R 列车"
+        }
+    },
+    {
+        "id": "w",
+        "colour": "#fccc0a",
+        "fg": "#000",
+        "name": {
+            "en": "W train",
+            "zh-Hans": "W 列车"
+        }
+    },
+    {
+        "id": "s",
         "colour": "#808183",
         "fg": "#fff",
         "name": {
-            "en": "Shuttles",
-            "zh-Hans": "接驳线"
+            "en": "42 St Shuttle (Manhattan)",
+            "zh-Hans": "42 街班车（曼哈顿）"
+        }
+    },
+    {
+        "id": "sf",
+        "colour": "#808183",
+        "fg": "#fff",
+        "name": {
+            "en": "Franklin Shuttle (Brooklyn)",
+            "zh-Hans": "富兰克林班车（布鲁克林）"
+        }
+    },
+    {
+        "id": "sr",
+        "colour": "#808183",
+        "fg": "#fff",
+        "name": {
+            "en": "Rockaway Shuttle (Queens)",
+            "zh-Hans": "洛克威班车（皇后区）"
         }
     },
     {
         "id": "sir",
-        "colour": "#006bb6",
+        "colour": "#0078C6",
         "fg": "#fff",
         "name": {
             "en": "Staten Island Railway",
