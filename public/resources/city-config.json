@@ -822,6 +822,14 @@
         }
     },
     {
+        "id": "kekslingen",
+        "country": "DE",
+        "name": {
+            "de": "Kekslingen",
+            "en": "Kekslingen"
+        }
+    },
+    {
         "id": "kharkiv",
         "country": "UA",
         "name": {
