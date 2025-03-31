@@ -2,18 +2,11 @@
 
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import legacy from '@vitejs/plugin-legacy';
 
 // https://vitejs.dev/config
 export default defineConfig({
     base: '/rmg-palette/',
-    plugins: [
-        react(),
-        legacy({
-            targets: ['defaults', '>0.2%', 'not dead'],
-            modernPolyfills: true,
-        }),
-    ],
+    plugins: [react()],
     build: {
         rollupOptions: {
             output: {
