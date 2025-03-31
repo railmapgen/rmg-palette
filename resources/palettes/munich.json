@@ -77,6 +77,17 @@
         }
     },
     {
+        "id": "mu8",
+        "colour": "#cdc6b9",
+        "fg": "#fff",
+        "name": {
+            "en": "U8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線",
+            "de": "U8"
+        }
+    },
+    {
         "id": "mu9",
         "colour": "#009fe3",
         "fg": "#fff",
@@ -132,9 +143,20 @@
         }
     },
     {
-        "id": "ms5",
+        "id": "ms05",
         "colour": "#ffcc00",
         "fg": "#000",
+        "name": {
+            "en": "S5 (Former Colour)",
+            "de": "S5 (Ehemalige Farbe)",
+            "zh-Hans": "市域S5（旧版颜色）",
+            "zh-Hant": "市域S5（舊版顔色）"
+        }
+    },
+    {
+        "id": "ms5",
+        "colour": "#00517F",
+        "fg": "#fff",
         "name": {
             "en": "S5",
             "de": "S5",
@@ -217,17 +239,6 @@
             "de": "Regionalzug",
             "zh-Hans": "市域列车",
             "zh-Hant": "市域列車"
-        }
-    },
-    {
-        "id": "mu8",
-        "colour": "#cdc6b9",
-        "fg": "#fff",
-        "name": {
-            "en": "U8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線",
-            "de": "U8"
         }
     }
 ]
