@@ -170,6 +170,16 @@
         }
     },
     {
+        "id": "wh23",
+        "colour": "#00a1e9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
         "id": "whggkg",
         "colour": "#05aff1",
         "fg": "#fff",
