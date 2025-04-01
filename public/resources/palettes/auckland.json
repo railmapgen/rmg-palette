@@ -1,7 +1,7 @@
 [
     {
         "id": "el",
-        "colour": "#FCB918",
+        "colour": "#E9B64B",
         "fg": "#000",
         "name": {
             "en": "Eastern Line",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sl",
-        "colour": "#EE2B29",
+        "colour": "#C84139",
         "fg": "#fff",
         "name": {
             "en": "Southern Line",
@@ -21,7 +21,7 @@
     },
     {
         "id": "wl",
-        "colour": "#9AC93D",
+        "colour": "#9CC156",
         "fg": "#fff",
         "name": {
             "en": "Western Line",
@@ -31,7 +31,7 @@
     },
     {
         "id": "ol",
-        "colour": "#00AEEF",
+        "colour": "#10A1D5",
         "fg": "#fff",
         "name": {
             "en": "Onehunga Line",
