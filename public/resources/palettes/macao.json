@@ -1,7 +1,7 @@
 [
     {
         "id": "taipa",
-        "colour": "#A4D65E",
+        "colour": "#A6D652",
         "fg": "#fff",
         "name": {
             "en": "Taipa Line",
@@ -12,7 +12,7 @@
     },
     {
         "id": "seacpaivan",
-        "colour": "#9900ff",
+        "colour": "#8B65C3",
         "fg": "#fff",
         "name": {
             "pt": "Linha Seac Pai Van",
@@ -23,7 +23,7 @@
     },
     {
         "id": "hengqin",
-        "colour": "#d30000",
+        "colour": "#BD273A",
         "fg": "#fff",
         "name": {
             "pt": "Linha de Hengqin",
