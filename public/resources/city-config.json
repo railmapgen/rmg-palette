@@ -1410,6 +1410,15 @@
         }
     },
     {
+        "id": "px",
+        "country": "PX",
+        "name": {
+            "en": "Peixin",
+            "zh-Hans": "培新",
+            "zh-Hant": "培新"
+        }
+    },
+    {
         "id": "pyongyang",
         "country": "KP",
         "name": {
