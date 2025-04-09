@@ -1607,6 +1607,15 @@
         }
     },
     {
+        "id": "seattle",
+        "country": "US",
+        "name": {
+            "en": "Seattle",
+            "zh-Hans": "西雅图",
+            "zh-Hant": "西雅圖"
+        }
+    },
+    {
         "id": "sendai",
         "country": "JP",
         "name": {
