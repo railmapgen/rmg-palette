@@ -1034,6 +1034,13 @@
         }
     },
     {
+        "id": "manila",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
+        }
+    },
+    {
         "id": "marseille",
         "country": "FR",
         "name": {
