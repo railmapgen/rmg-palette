@@ -533,6 +533,15 @@
         ]
     },
     {
+        "id": "PH",
+        "name": {
+            "en": "Philippines"
+        },
+        "languages": [
+            "en"
+        ]
+    },
+    {
         "id": "PK",
         "name": {
             "en": "Pakistan",
