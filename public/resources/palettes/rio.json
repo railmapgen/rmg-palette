@@ -12,7 +12,7 @@
     },
     {
         "id": "r2",
-        "colour": "#bad02f",
+        "colour": "#10c215",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -41,6 +41,15 @@
             "pt": "Linha 4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號缐"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#0db4ba",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "pt": "Linha 5"
         }
     },
     {
@@ -140,6 +149,15 @@
         "name": {
             "en": "BRT TransOlimpica",
             "pt": "BRT TransOlimpica"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#850000",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT TransBrasil",
+            "pt": "BRT TransBrasil"
         }
     }
 ]
