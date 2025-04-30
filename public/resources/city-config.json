@@ -623,6 +623,14 @@
         }
     },
     {
+        "id": "gzm",
+        "country": "PL",
+        "name": {
+            "en": "Metropolis GZM",
+            "pl": "Górnośląsko-Zagłębiowska Metropolia"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
