@@ -1,0 +1,83 @@
+[
+    {
+        "id": "wil",
+        "colour": "#00ff00",
+        "fg": "#fff",
+        "name": {
+            "en": "West Island Line",
+            "zh-Hant": "西島綫"
+        }
+    },
+    {
+        "id": "nil",
+        "colour": "#c5dd13",
+        "fg": "#fff",
+        "name": {
+            "en": "North Island Line",
+            "zh-Hant": "北島綫"
+        }
+    },
+    {
+        "id": "tll",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "en": "TangLing Line",
+            "zh-Hant": "東陵島綫"
+        }
+    },
+    {
+        "id": "oil",
+        "colour": "#E3002B",
+        "fg": "#fff",
+        "name": {
+            "en": "Old Town Line",
+            "zh-Hant": "古城綫"
+        }
+    },
+    {
+        "id": "otsl",
+        "colour": "#ff00ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Old Town Second Line",
+            "zh-Hant": "古城二綫"
+        }
+    },
+    {
+        "id": "stkl",
+        "colour": "#ff6a00",
+        "fg": "#fff",
+        "name": {
+            "en": "Sha Tau Kwok Line",
+            "zh-Hant": "沙頭角綫"
+        }
+    },
+    {
+        "id": "apl",
+        "colour": "#00ffb3",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport",
+            "zh-Hant": "機場綫"
+        }
+    },
+    {
+        "id": "pl",
+        "colour": "#858585",
+        "fg": "#fff",
+        "name": {
+            "en": "Planning Line",
+            "zh-Hant": "規劃綫"
+        }
+    },
+    {
+        "id": "yxll",
+        "colour": "#ff008c",
+        "fg": "#fff",
+        "name": {
+            "en": "Yu Sying Ling Line",
+            "zh-Hant": "玉星嶺綫"
+        }
+    }
+]

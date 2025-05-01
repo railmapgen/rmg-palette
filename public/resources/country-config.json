@@ -748,5 +748,17 @@
         "languages": [
             "vi"
         ]
+    },
+    {
+        "id": "XZ",
+        "name": {
+            "en": "XiZhou",
+            "zh-Hant": "西州",
+            "zh-Hans": "西州"
+        },
+        "languages": [
+            "zh-Hant",
+            "en"
+        ]
     }
 ]
