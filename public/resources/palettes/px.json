@@ -1,0 +1,152 @@
+[
+    {
+        "id": "px1",
+        "colour": "#E61E25",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "环线（1号线）",
+            "zh-Hant": "環線（一號線）"
+        }
+    },
+    {
+        "id": "px2",
+        "colour": "#0168D3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    },
+    {
+        "id": "px3",
+        "colour": "#00843D",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
+        "id": "px4",
+        "colour": "#F79727",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
+        }
+    },
+    {
+        "id": "px5",
+        "colour": "#C1D72F",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號線"
+        }
+    },
+    {
+        "id": "px6",
+        "colour": "#C99FCD",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "px7",
+        "colour": "#F1CC40",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "px8",
+        "colour": "#65AEE3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "px9",
+        "colour": "#93ceba",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "px10",
+        "colour": "#873e97",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10/Western Suburbs Line",
+            "zh-Hans": "10号线/西郊线",
+            "zh-Hant": "10號線/西郊線"
+        }
+    },
+    {
+        "id": "px11",
+        "colour": "#ef426f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 11 / Express Train",
+            "zh-Hans": "11号线/列车快线",
+            "zh-Hant": "11號線/列車快線"
+        }
+    },
+    {
+        "id": "px12",
+        "colour": "#8b84d7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12/Southwest Regional Line",
+            "zh-Hans": "12号线/西南区域线",
+            "zh-Hant": "12號線/西南區域線"
+        }
+    },
+    {
+        "id": "px13",
+        "colour": "#4db488",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13/River shoreline",
+            "zh-Hans": "13号线/河岸线",
+            "zh-Hant": "13號線/河岸線"
+        }
+    },
+    {
+        "id": "px14",
+        "colour": "#9b0058",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 14/Southern Suburbs Line",
+            "zh-Hans": "14号线/南郊线",
+            "zh-Hant": "14號線/南郊線"
+        }
+    },
+    {
+        "id": "pxs1",
+        "colour": "#BCA488",
+        "fg": "#fff",
+        "name": {
+            "en": "S1 Express",
+            "zh-Hans": "S1快线",
+            "zh-Hant": "S1快線"
+        }
+    }
+]
