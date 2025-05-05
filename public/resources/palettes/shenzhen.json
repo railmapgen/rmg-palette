@@ -154,9 +154,9 @@
         "colour": "#84BD00",
         "fg": "#fff",
         "name": {
-            "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "en": "Line 15 (Qiannan Line)",
+            "zh-Hans": "15号线（前南线）",
+            "zh-Hant": "15號線（前南線）"
         }
     },
     {
@@ -170,13 +170,83 @@
         }
     },
     {
+        "id": "sz19",
+        "colour": "#a82194",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "zh-Hans": "19号线",
+            "zh-Hant": "19號線"
+        }
+    },
+    {
         "id": "sz20",
         "colour": "#88DBDF",
         "fg": "#fff",
         "name": {
-            "en": "Line 20",
-            "zh-Hans": "20号线",
-            "zh-Hant": "20號線"
+            "en": "Line 20 (Exhibition Express)",
+            "zh-Hans": "20号线（会展快线）",
+            "zh-Hant": "20號線（會展快線）"
+        }
+    },
+    {
+        "id": "sz22",
+        "colour": "#efe430",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22 (Central Line/Guanlan Line)",
+            "zh-Hans": "22号线（中轴线/观澜线）",
+            "zh-Hant": "22號線（中軸線/觀瀾線）"
+        }
+    },
+    {
+        "id": "sz33",
+        "colour": "#bdd6cb",
+        "fg": "#fff",
+        "name": {
+            "en": "SZIA-DYW ICR (Line 33)",
+            "zh-Hans": "深大城际（33号线）",
+            "zh-Hant": "深大城際（33號線）"
+        }
+    },
+    {
+        "id": "shcj",
+        "colour": "#d6c9b0",
+        "fg": "#fff",
+        "name": {
+            "en": "SZ-HZ ICR",
+            "zh-Hans": "深惠城际",
+            "zh-Hant": "深惠城際"
+        }
+    },
+    {
+        "id": "dpzx",
+        "colour": "#255897",
+        "fg": "#fff",
+        "name": {
+            "en": "SZ-HZ ICR Dapeng Branch",
+            "zh-Hans": "深惠城际大鹏支线",
+            "zh-Hant": "深惠城際大鵬支線"
+        }
+    },
+    {
+        "id": "sscjjq",
+        "colour": "#b6d5e8",
+        "fg": "#fff",
+        "name": {
+            "en": "GZ-DG-SZ ICR Shenzhen Airport to Qianhaiwan Section",
+            "zh-Hans": "穗莞深城际机前段",
+            "zh-Hant": "穗莞深城際機前段"
+        }
+    },
+    {
+        "id": "sscjqhd",
+        "colour": "#255897",
+        "fg": "#fff",
+        "name": {
+            "en": "GZ-DG-SZ ICR Qianhaiwan to Huanggang Checkpoint Section",
+            "zh-Hans": "穗莞深城际前皇段",
+            "zh-Hant": "穗莞深城際前皇段"
         }
     },
     {
@@ -220,16 +290,6 @@
         }
     },
     {
-        "id": "sz8orig",
-        "colour": "#E45DBF",
-        "fg": "#fff",
-        "name": {
-            "en": "Line 8 (Original)",
-            "zh-Hans": "8号线（原）",
-            "zh-Hant": "8號線（原）"
-        }
-    },
-    {
         "id": "szpsyb",
         "colour": "#1974d2",
         "fg": "#fff",
@@ -237,6 +297,16 @@
             "en": "Pingshan SkyShuttle",
             "zh-Hans": "坪山云巴",
             "zh-Hant": "坪山雲巴"
+        }
+    },
+    {
+        "id": "sz8orig",
+        "colour": "#E45DBF",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8 (Original)",
+            "zh-Hans": "8号线（原）",
+            "zh-Hant": "8號線（原）"
         }
     }
 ]
