@@ -1871,6 +1871,13 @@
         }
     },
     {
+        "id": "wellington",
+        "country": "NZ",
+        "name": {
+            "en": "Wellington"
+        }
+    },
+    {
         "id": "wenzhou",
         "country": "CN",
         "name": {
