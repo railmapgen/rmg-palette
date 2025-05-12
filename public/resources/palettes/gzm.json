@@ -1,0 +1,245 @@
+[
+    {
+        "id": "0",
+        "colour": "#61b87c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 0",
+            "pl": "Linia 0"
+        }
+    },
+    {
+        "id": "1",
+        "colour": "#8ac0cb",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "pl": "Linia 1"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "#61878e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "pl": "Linia 2"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#bbdcbf",
+        "fg": "#000",
+        "name": {
+            "en": "Line 3",
+            "pl": "Linia 3"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#8ac0cb",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "pl": "Linia 4"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#61878e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "pl": "Linia 5"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#ffd500",
+        "fg": "#000",
+        "name": {
+            "en": "Line 6",
+            "pl": "Linia 6"
+        }
+    },
+    {
+        "id": "7",
+        "colour": "#ec655f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "pl": "Linia 7"
+        }
+    },
+    {
+        "id": "9",
+        "colour": "#f6b2b5",
+        "fg": "#000",
+        "name": {
+            "en": "Line 9",
+            "pl": "Linia 9"
+        }
+    },
+    {
+        "id": "11",
+        "colour": "#e0ca9a",
+        "fg": "#000",
+        "name": {
+            "en": "Line 11",
+            "pl": "Linia 11"
+        }
+    },
+    {
+        "id": "13",
+        "colour": "#537bbd",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "pl": "Linia 13"
+        }
+    },
+    {
+        "id": "14",
+        "colour": "#f3943e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 14",
+            "pl": "Linia 14"
+        }
+    },
+    {
+        "id": "15",
+        "colour": "#ec655f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "pl": "Linia 15"
+        }
+    },
+    {
+        "id": "16",
+        "colour": "#95c0e8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16",
+            "pl": "Linia 16"
+        }
+    },
+    {
+        "id": "17",
+        "colour": "#b8423a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "pl": "Linia 17"
+        }
+    },
+    {
+        "id": "19",
+        "colour": "#61b87c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 19",
+            "pl": "Linia 19"
+        }
+    },
+    {
+        "id": "20",
+        "colour": "#ec655f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "pl": "Linia 20"
+        }
+    },
+    {
+        "id": "21",
+        "colour": "#8871b1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "Linia 21"
+        }
+    },
+    {
+        "id": "22",
+        "colour": "#8871b1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "Linia 22"
+        }
+    },
+    {
+        "id": "24",
+        "colour": "#d1b8d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "Linia 24"
+        }
+    },
+    {
+        "id": "26",
+        "colour": "#f3943e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 26",
+            "pl": "Linia 26"
+        }
+    },
+    {
+        "id": "27",
+        "colour": "#d1b8d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 27",
+            "zh-Hans": "Linia 27"
+        }
+    },
+    {
+        "id": "28",
+        "colour": "#8871b1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "Linia 28"
+        }
+    },
+    {
+        "id": "30",
+        "colour": "#61878e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 30",
+            "pl": "Linia 30"
+        }
+    },
+    {
+        "id": "34",
+        "colour": "#f3943e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 34",
+            "pl": "Linia 34"
+        }
+    },
+    {
+        "id": "38",
+        "colour": "#ec655f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 38",
+            "pl": "Linia 38"
+        }
+    },
+    {
+        "id": "46",
+        "colour": "#95c0e8",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 46",
+            "pl": "Linia 46"
+        }
+    }
+]

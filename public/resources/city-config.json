@@ -623,6 +623,14 @@
         }
     },
     {
+        "id": "gzm",
+        "country": "PL",
+        "name": {
+            "en": "Metropolis GZM",
+            "pl": "Górnośląsko-Zagłębiowska Metropolia"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
@@ -1031,6 +1039,13 @@
             "en": "Manchester",
             "zh-Hans": "曼彻斯特",
             "zh-Hant": "曼徹斯特"
+        }
+    },
+    {
+        "id": "manila",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
         }
     },
     {
