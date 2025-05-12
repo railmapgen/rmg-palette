@@ -909,6 +909,16 @@
         }
     },
     {
+        "id": "lapaz",
+        "country": "BO",
+        "name": {
+            "en": "La Paz",
+            "zh-Hans": "拉巴斯",
+            "zh-Hant": "拉巴斯",
+            "es": "La Paz"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
