@@ -1,0 +1,112 @@
+[
+    {
+        "id": "roja",
+        "colour": "#DF0422",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅綫",
+            "es": "Línea Roja"
+        }
+    },
+    {
+        "id": "amarilla",
+        "colour": "#E6C026",
+        "fg": "#fff",
+        "name": {
+            "en": "Yellow Line",
+            "zh-Hans": "黄线",
+            "zh-Hant": "黃綫",
+            "es": "Línea Amarilla"
+        }
+    },
+    {
+        "id": "verde",
+        "colour": "#389D2E",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "緑綫",
+            "es": "Línea Verde"
+        }
+    },
+    {
+        "id": "azul",
+        "colour": "#002D85",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "zh-Hans": "蓝线",
+            "zh-Hant": "藍綫",
+            "es": "Línea Azul"
+        }
+    },
+    {
+        "id": "naranja",
+        "colour": "#F4A400",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橙綫",
+            "es": "Línea Naranja"
+        }
+    },
+    {
+        "id": "blanca",
+        "colour": "#FFFFFF",
+        "fg": "#000",
+        "name": {
+            "en": "White Line",
+            "zh-Hans": "白线",
+            "zh-Hant": "白綫",
+            "es": "Línea Blanca"
+        }
+    },
+    {
+        "id": "celeste",
+        "colour": "#4A9DD4",
+        "fg": "#fff",
+        "name": {
+            "en": "Sky Blue Line",
+            "zh-Hans": "天蓝线",
+            "zh-Hant": "天藍綫",
+            "es": "Línea Celeste"
+        }
+    },
+    {
+        "id": "morada",
+        "colour": "#813D90",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "紫线",
+            "zh-Hant": "紫綫",
+            "es": "Línea Morada"
+        }
+    },
+    {
+        "id": "cafe",
+        "colour": "#756959",
+        "fg": "#fff",
+        "name": {
+            "en": "Brown Line",
+            "zh-Hans": "棕线",
+            "zh-Hant": "棕綫",
+            "es": "Línea Café"
+        }
+    },
+    {
+        "id": "plateada",
+        "colour": "#8A888D",
+        "fg": "#fff",
+        "name": {
+            "en": "Silver Line",
+            "zh-Hans": "银线",
+            "zh-Hant": "銀綫",
+            "es": "Línea Plateada"
+        }
+    }
+]
