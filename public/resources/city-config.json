@@ -623,6 +623,14 @@
         }
     },
     {
+        "id": "gzm",
+        "country": "PL",
+        "name": {
+            "en": "Metropolis GZM",
+            "pl": "Górnośląsko-Zagłębiowska Metropolia"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
@@ -1041,6 +1049,13 @@
             "en": "Manchester",
             "zh-Hans": "曼彻斯特",
             "zh-Hant": "曼徹斯特"
+        }
+    },
+    {
+        "id": "manila",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
         }
     },
     {
@@ -1878,6 +1893,13 @@
             "en": "Washington DC",
             "zh-Hans": "华盛顿特区",
             "zh-Hant": "華盛頓特區"
+        }
+    },
+    {
+        "id": "wellington",
+        "country": "NZ",
+        "name": {
+            "en": "Wellington"
         }
     },
     {
