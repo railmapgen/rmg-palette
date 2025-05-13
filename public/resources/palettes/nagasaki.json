@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1",
+        "colour": "#0076b0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "ja": "1号系統",
+            "zh-Hans": "1号系统",
+            "zh-Hant": "1號系統"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "ffffff",
+        "fg": "#000",
+        "name": {
+            "en": "Line 2",
+            "ja": "2号系統",
+            "zh-Hans": "2号系统",
+            "zh-Hant": "2號系統"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#d8232a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "ja": "3号系統",
+            "zh-Hans": "3号系统",
+            "zh-Hant": "3號系統"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#f9c523",
+        "fg": "#000",
+        "name": {
+            "en": "Line 4",
+            "ja": "4号系統",
+            "zh-Hans": "4号系统",
+            "zh-Hant": "4號系統"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#6cb644",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "ja": "5号系統",
+            "zh-Hans": "5号系统",
+            "zh-Hant": "5號系統"
+        }
+    }
+]

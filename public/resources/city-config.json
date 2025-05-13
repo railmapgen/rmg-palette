@@ -1167,6 +1167,16 @@
         }
     },
     {
+        "id": "nagasaki",
+        "country": "JP",
+        "name": {
+            "en": "Nagasaki",
+            "ja": "長崎",
+            "zh-Hans": "长崎",
+            "zh-Hant": "長崎"
+        }
+    },
+    {
         "id": "nagoya",
         "country": "JP",
         "name": {
