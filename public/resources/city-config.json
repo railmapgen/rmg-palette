@@ -773,6 +773,14 @@
         }
     },
     {
+        "id": "izmir",
+        "country": "TR",
+        "name": {
+            "en": "Izmir",
+            "tr": "İzmir"
+        }
+    },
+    {
         "id": "jakarta",
         "country": "ID",
         "name": {
