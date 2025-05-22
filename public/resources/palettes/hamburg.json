@@ -81,5 +81,14 @@
             "zh-Hant": "AKN鉄路",
             "zh-Hans": "AKN铁路"
         }
+    },
+    {
+        "id": "hs5",
+        "colour": "#87CEEB",
+        "fg": "#fff",
+        "name": {
+            "de": "S5",
+            "en": "S5"
+        }
     }
 ]
