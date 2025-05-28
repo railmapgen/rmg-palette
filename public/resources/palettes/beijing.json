@@ -130,6 +130,26 @@
         }
     },
     {
+        "id": "bj13a",
+        "colour": "#f6e613",
+        "fg": "#000",
+        "name": {
+            "en": "Line 13A",
+            "zh-Hans": "13A线",
+            "zh-Hant": "13A線"
+        }
+    },
+    {
+        "id": "bj13b",
+        "colour": "#e8bb71",
+        "fg": "#000",
+        "name": {
+            "en": "Line 13B",
+            "zh-Hans": "13B线",
+            "zh-Hant": "13B線"
+        }
+    },
+    {
         "id": "bj14",
         "colour": "#d5a7a1",
         "fg": "#000",
@@ -177,6 +197,16 @@
             "en": "Line 19",
             "zh-Hans": "19号线",
             "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "bj21s6",
+        "colour": "#1a7558",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21/Line S6",
+            "zh-Hans": "21号线/S6线",
+            "zh-Hant": "21號線/S6線"
         }
     },
     {
@@ -277,6 +307,16 @@
             "en": "Daxing Airport Express",
             "zh-Hans": "大兴机场线",
             "zh-Hant": "大興機場線"
+        }
+    },
+    {
+        "id": "bjs7",
+        "colour": "#2a83e4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S7",
+            "zh-Hans": "S7线",
+            "zh-Hant": "S7線"
         }
     }
 ]
