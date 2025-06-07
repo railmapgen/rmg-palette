@@ -1,0 +1,26 @@
+[
+    {
+        "id": "l1",
+        "colour": "#00ff08",
+        "fg": "#fff",
+        "name": {
+            "en": "ION LINE"
+        }
+    },
+    {
+        "id": "l2",
+        "colour": "#0099ff",
+        "fg": "#fff",
+        "name": {
+            "en": "SAPPHIRE LINE"
+        }
+    },
+    {
+        "id": "l3",
+        "colour": "#e600ff",
+        "fg": "#fff",
+        "name": {
+            "en": "ONYX LINE"
+        }
+    }
+]
