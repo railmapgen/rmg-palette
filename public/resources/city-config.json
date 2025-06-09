@@ -1196,6 +1196,16 @@
         }
     },
     {
+        "id": "naha",
+        "country": "JP",
+        "name": {
+            "en": "Naha",
+            "zh-Hans": "那霸",
+            "zh-Hant": "那霸",
+            "ja": "那覇"
+        }
+    },
+    {
         "id": "nanchang",
         "country": "CN",
         "name": {
