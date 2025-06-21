@@ -405,6 +405,14 @@
         }
     },
     {
+        "id": "dallas",
+        "country": "US",
+        "name": {
+            "en": "Dallas",
+            "es": "Dallas"
+        }
+    },
+    {
         "id": "delhi",
         "country": "IN",
         "name": {
