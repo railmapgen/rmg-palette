@@ -27,6 +27,7 @@ jobs:
         id: prepublish
 
       - name: Publish to npm
+        working-directory: ./package
         run: |
           npm publish --access public
         env:

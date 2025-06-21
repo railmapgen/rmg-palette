@@ -405,6 +405,14 @@
         }
     },
     {
+        "id": "dallas",
+        "country": "US",
+        "name": {
+            "en": "Dallas",
+            "es": "Dallas"
+        }
+    },
+    {
         "id": "delhi",
         "country": "IN",
         "name": {
@@ -623,6 +631,14 @@
         }
     },
     {
+        "id": "gzm",
+        "country": "PL",
+        "name": {
+            "en": "Metropolis GZM",
+            "pl": "Górnośląsko-Zagłębiowska Metropolia"
+        }
+    },
+    {
         "id": "hamburg",
         "country": "DE",
         "name": {
@@ -765,6 +781,14 @@
         }
     },
     {
+        "id": "izmir",
+        "country": "TR",
+        "name": {
+            "en": "Izmir",
+            "tr": "İzmir"
+        }
+    },
+    {
         "id": "jakarta",
         "country": "ID",
         "name": {
@@ -901,6 +925,16 @@
         }
     },
     {
+        "id": "lapaz",
+        "country": "BO",
+        "name": {
+            "en": "La Paz",
+            "zh-Hans": "拉巴斯",
+            "zh-Hant": "拉巴斯",
+            "es": "La Paz"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
@@ -1034,6 +1068,13 @@
         }
     },
     {
+        "id": "manila",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
+        }
+    },
+    {
         "id": "marseille",
         "country": "FR",
         "name": {
@@ -1160,6 +1201,16 @@
             "zh-Hans": "那格浦尔",
             "zh-Hant": "那格浦爾",
             "hi": "नागपुर"
+        }
+    },
+    {
+        "id": "naha",
+        "country": "JP",
+        "name": {
+            "en": "Naha",
+            "zh-Hans": "那霸",
+            "zh-Hant": "那霸",
+            "ja": "那覇"
         }
     },
     {
@@ -1877,6 +1928,13 @@
             "en": "Washington DC",
             "zh-Hans": "华盛顿特区",
             "zh-Hant": "華盛頓特區"
+        }
+    },
+    {
+        "id": "wellington",
+        "country": "NZ",
+        "name": {
+            "en": "Wellington"
         }
     },
     {
