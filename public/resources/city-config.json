@@ -405,6 +405,14 @@
         }
     },
     {
+        "id": "dallas",
+        "country": "US",
+        "name": {
+            "en": "Dallas",
+            "es": "Dallas"
+        }
+    },
+    {
         "id": "delhi",
         "country": "IN",
         "name": {
@@ -1193,6 +1201,16 @@
             "zh-Hans": "那格浦尔",
             "zh-Hant": "那格浦爾",
             "hi": "नागपुर"
+        }
+    },
+    {
+        "id": "naha",
+        "country": "JP",
+        "name": {
+            "en": "Naha",
+            "zh-Hans": "那霸",
+            "zh-Hant": "那霸",
+            "ja": "那覇"
         }
     },
     {
