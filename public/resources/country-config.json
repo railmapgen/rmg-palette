@@ -626,6 +626,15 @@
         ]
     },
     {
+        "id": "SC",
+        "name": {
+            "en": "Stepford"
+        },
+        "languages": [
+            "en"
+        ]
+    },
+    {
         "id": "SE",
         "name": {
             "en": "Sweden",
