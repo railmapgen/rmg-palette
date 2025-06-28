@@ -1480,6 +1480,15 @@
         }
     },
     {
+        "id": "qingyuan",
+        "country": "CN",
+        "name": {
+            "en": "Qingyuan",
+            "zh-Hans": "清远",
+            "zh-Hant": "清遠"
+        }
+    },
+    {
         "id": "rennes",
         "country": "FR",
         "name": {
