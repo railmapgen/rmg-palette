@@ -1,0 +1,22 @@
+[
+    {
+        "id": "gdigq",
+        "colour": "#255aa8",
+        "fg": "#fff",
+        "name": {
+            "en": "Guangzhou-Qingyuan Intercity",
+            "zh-Hans": "广清城际",
+            "zh-Hant": "廣清城際"
+        }
+    },
+    {
+        "id": "qymt",
+        "colour": "#6ec6f8",
+        "fg": "#fff",
+        "name": {
+            "en": "Qingyuan Maglev Tourist Line",
+            "zh-Hans": "磁浮旅游专线",
+            "zh-Hant": "磁浮旅遊專線"
+        }
+    }
+]
