@@ -234,6 +234,14 @@
         }
     },
     {
+        "id": "calgary",
+        "country": "CA",
+        "name": {
+            "en": "Calgary",
+            "fr": "Calgary"
+        }
+    },
+    {
         "id": "caracas",
         "country": "VE",
         "name": {
