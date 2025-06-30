@@ -22,7 +22,7 @@
     {
         "id": "hz3",
         "colour": "#ffcf23",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
@@ -100,6 +100,66 @@
         }
     },
     {
+        "id": "hdicr",
+        "colour": "#a58b2c",
+        "fg": "#fff",
+        "name": {
+            "en": "Hangzhou-Deqing Intercity Rail",
+            "zh-Hans": "杭德城际",
+            "zh-Hant": "杭德城際"
+        }
+    },
+    {
+        "id": "hz11",
+        "colour": "#5a863e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 11",
+            "zh-Hans": "11号线",
+            "zh-Hant": "11號線"
+        }
+    },
+    {
+        "id": "hz12",
+        "colour": "#367ba0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
+    },
+    {
+        "id": "hz13",
+        "colour": "#234c7c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號線"
+        }
+    },
+    {
+        "id": "hz14",
+        "colour": "#623a71",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 14",
+            "zh-Hans": "14号线",
+            "zh-Hant": "14號線"
+        }
+    },
+    {
+        "id": "hz15",
+        "colour": "#eb8ea1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
         "id": "hz16",
         "colour": "#ffaa52",
         "fg": "#fff",
@@ -110,6 +170,26 @@
         }
     },
     {
+        "id": "hz17",
+        "colour": "#f1e687",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號線"
+        }
+    },
+    {
+        "id": "hz18",
+        "colour": "#97d970",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
+    },
+    {
         "id": "hz19",
         "colour": "#4acbe5",
         "fg": "#fff",
@@ -117,6 +197,56 @@
             "en": "Line 19",
             "zh-Hans": "19号线",
             "zh-Hant": "19號線"
+        }
+    },
+    {
+        "id": "hz20",
+        "colour": "#5db3ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "hz21",
+        "colour": "#ac77be",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "hz22",
+        "colour": "#eb562e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號線"
+        }
+    },
+    {
+        "id": "hz23",
+        "colour": "#f4ba46",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 23",
+            "zh-Hans": "23号线",
+            "zh-Hant": "23號線"
+        }
+    },
+    {
+        "id": "hz24",
+        "colour": "#d0db46",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
         }
     },
     {
