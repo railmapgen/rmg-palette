@@ -405,6 +405,14 @@
         }
     },
     {
+        "id": "dallas",
+        "country": "US",
+        "name": {
+            "en": "Dallas",
+            "es": "Dallas"
+        }
+    },
+    {
         "id": "delhi",
         "country": "IN",
         "name": {
@@ -770,6 +778,14 @@
             "tr": "İstanbul",
             "zh-Hans": "伊斯坦布尔",
             "zh-Hant": "伊斯坦堡"
+        }
+    },
+    {
+        "id": "izmir",
+        "country": "TR",
+        "name": {
+            "en": "Izmir",
+            "tr": "İzmir"
         }
     },
     {
@@ -1198,6 +1214,16 @@
         }
     },
     {
+        "id": "naha",
+        "country": "JP",
+        "name": {
+            "en": "Naha",
+            "zh-Hans": "那霸",
+            "zh-Hant": "那霸",
+            "ja": "那覇"
+        }
+    },
+    {
         "id": "nanchang",
         "country": "CN",
         "name": {
@@ -1588,6 +1614,15 @@
             "ja": "札幌",
             "zh-Hans": "札幌",
             "zh-Hant": "札幌"
+        }
+    },
+    {
+        "id": "seattle",
+        "country": "US",
+        "name": {
+            "en": "Seattle",
+            "zh-Hans": "西雅图",
+            "zh-Hant": "西雅圖"
         }
     },
     {

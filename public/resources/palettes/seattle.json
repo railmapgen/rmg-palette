@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "colour": "#37AF4A",
+        "fg": "#fff",
+        "name": {
+            "en": "Link 1 Line",
+            "zh-Hans": "Link 1号线",
+            "zh-Hant": "Link 1號線"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "#00a0dd",
+        "fg": "#fff",
+        "name": {
+            "en": "Link 2 Line",
+            "zh-Hans": "Link 2号线",
+            "zh-Hant": "Link 2號線"
+        }
+    },
+    {
+        "id": "t",
+        "colour": "#ef8c20",
+        "fg": "#000",
+        "name": {
+            "en": "Link T Line",
+            "zh-Hans": "Link T号线",
+            "zh-Hant": "Link T號線"
+        }
+    },
+    {
+        "id": "n",
+        "colour": "#98b6d5",
+        "fg": "#000",
+        "name": {
+            "en": "Sounder N Line",
+            "zh-Hans": "Sounder N号线",
+            "zh-Hant": "Sounder N號線"
+        }
+    },
+    {
+        "id": "s",
+        "colour": "#98b6d5",
+        "fg": "#000",
+        "name": {
+            "en": "Sounder S Line",
+            "zh-Hans": "Sounder S号线",
+            "zh-Hant": "Sounder S號線"
+        }
+    },
+    {
+        "id": "steb",
+        "colour": "#2b376e",
+        "fg": "#fff",
+        "name": {
+            "en": "ST Express bus",
+            "zh-Hans": "ST 快车",
+            "zh-Hant": "ST 快車"
+        }
+    }
+]
