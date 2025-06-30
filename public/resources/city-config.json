@@ -1,5 +1,15 @@
 [
     {
+        "id": "",
+        "country": "CN",
+        "name": {
+            "en": "Tokyo (Greater Tokyo Area)",
+            "ja": "東京（首都圏）",
+            "zh-Hans": "东京（首都圈）",
+            "zh-Hant": "東京（首都圈）"
+        }
+    },
+    {
         "id": "adelaide",
         "country": "AU",
         "name": {
