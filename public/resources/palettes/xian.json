@@ -129,5 +129,15 @@
             "zh-Hans": "西咸智轨1号线",
             "zh-Hant": "西咸智軌1號線"
         }
+    },
+    {
+        "id": "xa15",
+        "colour": "#9be13f",
+        "fg": "#fff",
+        "name": {
+            "en": "line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號缐"
+        }
     }
 ]
