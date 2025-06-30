@@ -16,11 +16,35 @@
         }
     },
     {
+        "id": "jb2a",
+        "colour": "#4fa9de",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT2A"
+        }
+    },
+    {
         "id": "jb3",
         "colour": "#fbc821",
         "fg": "#000",
         "name": {
             "en": "BRT3"
+        }
+    },
+    {
+        "id": "jb3f",
+        "colour": "#b39233",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT3F"
+        }
+    },
+    {
+        "id": "jb3h",
+        "colour": "#97692d",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT3H"
         }
     },
     {
@@ -32,11 +56,35 @@
         }
     },
     {
+        "id": "jb4d",
+        "colour": "#e38ab8",
+        "fg": "#000",
+        "name": {
+            "en": "BRT4D"
+        }
+    },
+    {
         "id": "jb5",
         "colour": "#cd6329",
         "fg": "#fff",
         "name": {
             "en": "BRT5"
+        }
+    },
+    {
+        "id": "jb5c",
+        "colour": "#9cd2c5",
+        "fg": "#000",
+        "name": {
+            "en": "BRT5C"
+        }
+    },
+    {
+        "id": "jb5d",
+        "colour": "#f19121",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT5D"
         }
     },
     {
@@ -48,11 +96,43 @@
         }
     },
     {
+        "id": "jb6a",
+        "colour": "#74c38a",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT6A"
+        }
+    },
+    {
+        "id": "jb6b",
+        "colour": "#98c175",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT6B"
+        }
+    },
+    {
+        "id": "jb6v",
+        "colour": "#3b907d",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT6V"
+        }
+    },
+    {
         "id": "jb7",
         "colour": "#e82760",
         "fg": "#fff",
         "name": {
             "en": "BRT7"
+        }
+    },
+    {
+        "id": "jb7f",
+        "colour": "#ff326b",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT7F"
         }
     },
     {
@@ -80,11 +160,51 @@
         }
     },
     {
+        "id": "jb9a",
+        "colour": "#8d9f3c",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT9A"
+        }
+    },
+    {
+        "id": "jb9c",
+        "colour": "#3a9f67",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT9C"
+        }
+    },
+    {
+        "id": "jb9n",
+        "colour": "#783d3f",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT9N"
+        }
+    },
+    {
         "id": "jb10",
         "colour": "#932727",
         "fg": "#fff",
         "name": {
             "en": "BRT10"
+        }
+    },
+    {
+        "id": "jb10d",
+        "colour": "#9c3337",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT10D"
+        }
+    },
+    {
+        "id": "jb10h",
+        "colour": "#9c050a",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT10H"
         }
     },
     {
@@ -112,6 +232,30 @@
         }
     },
     {
+        "id": "jb13b",
+        "colour": "#972489",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT13B"
+        }
+    },
+    {
+        "id": "jbl13e",
+        "colour": "#751c86",
+        "fg": "#fff",
+        "name": {
+            "en": "BRTL13E"
+        }
+    },
+    {
+        "id": "jb14",
+        "colour": "#ff7f00",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT14"
+        }
+    },
+    {
         "id": "jm",
         "colour": "#cd224c",
         "fg": "#fff",
@@ -132,7 +276,7 @@
         }
     },
     {
-        "id": "jb",
+        "id": "jc",
         "colour": "#23bcff",
         "fg": "#fff",
         "name": {
@@ -156,11 +300,11 @@
         }
     },
     {
-        "id": "jc",
+        "id": "jb",
         "colour": "#ee202c",
         "fg": "#fff",
         "name": {
-            "en": "Central Line"
+            "en": "Bogor Line"
         }
     },
     {
@@ -189,7 +333,7 @@
     },
     {
         "id": "jbk",
-        "colour": "#b3dbc0",
+        "colour": "#106d35",
         "fg": "#fff",
         "name": {
             "en": "LRT Jabodebek Bekasi Line"
@@ -197,7 +341,7 @@
     },
     {
         "id": "jcb",
-        "colour": "#cfd7ee",
+        "colour": "#283f9b",
         "fg": "#fff",
         "name": {
             "en": "LRT Jabodebek Cibubur Line"
