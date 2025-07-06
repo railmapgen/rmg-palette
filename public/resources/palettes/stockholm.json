@@ -1,90 +1,110 @@
 [
     {
         "id": "tblue",
+        "colour": "#008BD0",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 10/11",
             "sv": "Tunnelbana Linje 10/11"
-        },
-        "colour": "#008BD0"
+        }
     },
     {
         "id": "tred",
+        "colour": "#DF0515",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 13/14",
             "sv": "Tunnelbana Linje 13/14"
-        },
-        "colour": "#DF0515"
+        }
     },
     {
         "id": "tgreen",
+        "colour": "#00A84D",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 17/18/19",
             "sv": "Tunnelbana Linje 17/18/19"
-        },
-        "colour": "#00A84D"
+        }
     },
     {
         "id": "pt",
+        "colour": "#EA609E",
+        "fg": "#fff",
         "name": {
             "en": "Commuter Rail",
             "sv": "Pendeltåg"
-        },
-        "colour": "#EA609E"
+        }
     },
     {
         "id": "s7",
+        "colour": "#8E9287",
+        "fg": "#fff",
         "name": {
             "en": "Tram Line 7",
             "sv": "Spårvagn Linje 7"
-        },
-        "colour": "#8E9287"
+        }
     },
     {
         "id": "s12",
+        "colour": "#748CA6",
+        "fg": "#fff",
         "name": {
             "en": "Tram Line 12",
             "sv": "Spårvagn Linje 12"
-        },
-        "colour": "#748CA6"
+        }
     },
     {
         "id": "s21",
+        "colour": "#B8641E",
+        "fg": "#fff",
         "name": {
             "en": "Tram Line 21",
             "sv": "Spårvagn Linje 21"
-        },
-        "colour": "#B8641E"
+        }
     },
     {
         "id": "s22",
+        "colour": "#E38700",
+        "fg": "#fff",
         "name": {
             "en": "Tram Line 22",
             "sv": "Spårvagn Linje 22"
-        },
-        "colour": "#E38700"
+        }
+    },
+    {
+        "id": "t30",
+        "colour": "#FF9900",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 30/31",
+            "sv": "Tvärbanan 30/31"
+        }
     },
     {
         "id": "l25",
+        "colour": "#009FA8",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Line 25/26",
             "sv": "Lokalbana Linje 25/26"
-        },
-        "colour": "#009FA8"
+        }
     },
     {
         "id": "l27",
+        "colour": "#A6559D",
+        "fg": "#fff",
         "name": {
             "en": "Light Rail Line 27/28/29",
             "sv": "Lokalbana Linje 27/28/29"
-        },
-        "colour": "#A6559D"
+        }
     },
     {
         "id": "pb",
+        "colour": "#009FE3",
+        "fg": "#fff",
         "name": {
             "en": "Commuter Ferry",
             "sv": "Pendelbåt"
-        },
-        "colour": "#009FE3"
+        }
     }
 ]
