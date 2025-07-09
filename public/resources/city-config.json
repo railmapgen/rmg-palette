@@ -262,6 +262,15 @@
         }
     },
     {
+        "id": "changhua",
+        "country": "TW",
+        "name": {
+            "en": "Changhua",
+            "zh-Hans": "彰化",
+            "zh-Hant": "彰化"
+        }
+    },
+    {
         "id": "changsha",
         "country": "CN",
         "name": {
