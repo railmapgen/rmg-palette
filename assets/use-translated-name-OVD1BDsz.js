@@ -1,1 +1,0 @@
-import{l as d}from"./react-DXyAvNqt.js";function u(){const{i18n:n}=d(),s=e=>n.languages.map(t=>e[t]).find(t=>t!==void 0)??e.en??"(Translation Error)";return{translateName:s,otherOfficialNames:(e,t)=>{const l=s(e);return(t==null?void 0:t.filter(r=>r!==n.language).map(r=>e[r]).filter(r=>!!r&&l!==r).reduce((r,o)=>r.includes(o)?r:[...r,o],[]).join("/"))??""}}}export{u};
