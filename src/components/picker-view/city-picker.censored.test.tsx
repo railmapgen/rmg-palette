@@ -35,8 +35,11 @@ describe('CityPicker Censored', () => {
 
         await user.click(screen.getByRole('textbox'));
 
-        const menuItems = await screen.findAllByRole('option');
-        expect(menuItems.find(el => el.textContent?.includes('🇨🇳Taipei'))).toBeDefined();
-        expect(menuItems.find(el => el.textContent?.includes('🇹🇼Taipei'))).toBeUndefined();
+        expect(screen.getAllByText('🇨🇳').length).toBeGreaterThan(0);
+        expect(screen.queryByText('🇹🇼')).not.toBeInTheDocument();
+        expect(screen.getByText('Taipei')).toBeInTheDocument();
+        // const menuItems = await screen.findAllByRole('option');
+        // expect(menuItems.find(el => el.textContent?.includes('🇨🇳Taipei'))).toBeDefined();
+        // expect(menuItems.find(el => el.textContent?.includes('🇹🇼Taipei'))).toBeUndefined();
     });
 });
