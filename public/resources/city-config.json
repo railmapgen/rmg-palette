@@ -855,6 +855,16 @@
         }
     },
     {
+        "id": "kintetsu",
+        "country": "JP",
+        "name": {
+            "ja": "近畿鉄道（近鉄）",
+            "zh-Hans": "近畿铁路（近铁）",
+            "zh-Hant": "近畿鐵路（近鐵）",
+            "en": "Kintetsu"
+        }
+    },
+    {
         "id": "klangvalley",
         "country": "MY",
         "name": {

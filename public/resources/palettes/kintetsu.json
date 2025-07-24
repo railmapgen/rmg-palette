@@ -1,0 +1,200 @@
+[
+    {
+        "id": "kta",
+        "colour": "#c22047",
+        "fg": "#fff",
+        "name": {
+            "en": "Nara Line/Namba Line",
+            "zh-Hans": "奈良线·难波线",
+            "zh-Hant": "奈良線·難波線",
+            "ja": "奈良線・難波線"
+        }
+    },
+    {
+        "id": "ktb",
+        "colour": "#e7a61a",
+        "fg": "#fff",
+        "name": {
+            "en": "Kyoto Line/Kashihara Line",
+            "zh-Hans": "京都线·橿原线",
+            "zh-Hant": "京都線·橿原線",
+            "ja": "京都線・橿原線"
+        }
+    },
+    {
+        "id": "ktc",
+        "colour": "#65c03a",
+        "fg": "#fff",
+        "name": {
+            "en": "Keihanna Line",
+            "zh-Hans": "京阪奈线",
+            "zh-Hant": "京阪奈線",
+            "ja": "けいはんな線"
+        }
+    },
+    {
+        "id": "ktd",
+        "colour": "#2e89d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Osaka Line",
+            "zh-Hans": "大阪线",
+            "zh-Hant": "大阪線",
+            "ja": "大阪線"
+        }
+    },
+    {
+        "id": "kte",
+        "colour": "#1b3db0",
+        "fg": "#fff",
+        "name": {
+            "en": "Nagoya Line",
+            "zh-Hans": "名古屋线",
+            "zh-Hant": "名古屋線",
+            "ja": "名古屋線"
+        }
+    },
+    {
+        "id": "ktf",
+        "colour": "#008446",
+        "fg": "#fff",
+        "name": {
+            "en": "Minami Osaka Line/Yoshino Line",
+            "zh-Hans": "南大阪线·吉野线",
+            "zh-Hant": "南大阪線·吉野線",
+            "ja": "南大阪線・吉野線"
+        }
+    },
+    {
+        "id": "ktg",
+        "colour": "#c22047",
+        "fg": "#fff",
+        "name": {
+            "en": "Ikoma Line",
+            "zh-Hans": "生驹线",
+            "zh-Hant": "生駒線",
+            "ja": "生駒線"
+        }
+    },
+    {
+        "id": "kth",
+        "colour": "#e7a61a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tenri Line",
+            "zh-Hans": "天理线",
+            "zh-Hant": "天理線",
+            "ja": "天理線"
+        }
+    },
+    {
+        "id": "kti",
+        "colour": "#e7a61a",
+        "fg": "#fff",
+        "name": {
+            "en": "Tawaramoto Line",
+            "zh-Hans": "田原本线",
+            "zh-Hant": "田原本線",
+            "ja": "田原本線"
+        }
+    },
+    {
+        "id": "ktj",
+        "colour": "#2e89d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Shigi Line",
+            "zh-Hans": "信贵线",
+            "zh-Hant": "信貴線",
+            "ja": "信貴線"
+        }
+    },
+    {
+        "id": "ktk",
+        "colour": "#1b3db0",
+        "fg": "#fff",
+        "name": {
+            "en": "Yunoyama Line",
+            "zh-Hans": "汤之山线",
+            "zh-Hant": "湯之山線",
+            "ja": "湯の山線"
+        }
+    },
+    {
+        "id": "ktl",
+        "colour": "#1b3db0",
+        "fg": "#fff",
+        "name": {
+            "en": "Suzuka Line",
+            "zh-Hans": "铃鹿线",
+            "zh-Hant": "鈴鹿線",
+            "ja": "鈴鹿線"
+        }
+    },
+    {
+        "id": "ktm",
+        "colour": "#00b1bb",
+        "fg": "#fff",
+        "name": {
+            "en": "Yamada Line/Toba Line/Shima Line",
+            "zh-Hans": "山田线·鸟羽线·志摩线",
+            "zh-Hant": "山田線·鳥羽線·志摩線",
+            "ja": "山田線・鳥羽線・志摩線"
+        }
+    },
+    {
+        "id": "ktn",
+        "colour": "#008446",
+        "fg": "#fff",
+        "name": {
+            "en": "Domyoji Line",
+            "zh-Hans": "道明寺线",
+            "zh-Hant": "道明寺線",
+            "ja": "道明寺線"
+        }
+    },
+    {
+        "id": "kto",
+        "colour": "#008446",
+        "fg": "#fff",
+        "name": {
+            "en": "Nagano Line",
+            "zh-Hans": "长野线",
+            "zh-Hant": "長野線",
+            "ja": "長野線"
+        }
+    },
+    {
+        "id": "ktp",
+        "colour": "#008446",
+        "fg": "#fff",
+        "name": {
+            "en": "Gose Line",
+            "zh-Hans": "御所线",
+            "zh-Hant": "御所線",
+            "ja": "御所線"
+        }
+    },
+    {
+        "id": "kty",
+        "colour": "#b1865b",
+        "fg": "#fff",
+        "name": {
+            "en": "Ikoma Cable Line",
+            "zh-Hans": "生驹钢索线",
+            "zh-Hant": "生駒鋼索線",
+            "ja": "生駒鋼索線"
+        }
+    },
+    {
+        "id": "ktz",
+        "colour": "#b1865b",
+        "fg": "#fff",
+        "name": {
+            "en": "Nishi-Shigi Cable Line",
+            "zh-Hans": "西信贵钢索线",
+            "zh-Hant": "西信貴鋼索線",
+            "ja": "西信貴鋼索線"
+        }
+    }
+]
