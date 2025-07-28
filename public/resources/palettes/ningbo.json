@@ -101,7 +101,7 @@
     },
     {
         "id": "nb11",
-        "colour": "#c8bf40",
+        "colour": "#9FD6D6",
         "fg": "#fff",
         "name": {
             "en": "Line 11",
@@ -117,6 +117,66 @@
             "en": "Line 12",
             "zh-Hans": "12号线",
             "zh-Hant": "12號缐"
+        }
+    },
+    {
+        "id": "nb13",
+        "colour": "#00AB91",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號線"
+        }
+    },
+    {
+        "id": "nbn1",
+        "colour": "#A84A18",
+        "fg": "#fff",
+        "name": {
+            "en": "Line N1",
+            "zh-Hans": "N1线",
+            "zh-Hant": "N1線"
+        }
+    },
+    {
+        "id": "nbn2",
+        "colour": "#917833",
+        "fg": "#fff",
+        "name": {
+            "en": "Line N2",
+            "zh-Hans": "N2线",
+            "zh-Hant": "N2線"
+        }
+    },
+    {
+        "id": "nbn3",
+        "colour": "#36786D",
+        "fg": "#fff",
+        "name": {
+            "en": "Line N3",
+            "zh-Hans": "N3线",
+            "zh-Hant": "N3線"
+        }
+    },
+    {
+        "id": "nbn4",
+        "colour": "#F22253",
+        "fg": "#fff",
+        "name": {
+            "en": "Line N4",
+            "zh-Hans": "N4线",
+            "zh-Hant": "N4線"
+        }
+    },
+    {
+        "id": "nbsr",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Ningbo Suburban",
+            "zh-Hans": "城郊铁路",
+            "zh-Hant": "城郊鐵路"
         }
     }
 ]
