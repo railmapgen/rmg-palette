@@ -4,9 +4,9 @@
         "colour": "#8246af",
         "fg": "#fff",
         "name": {
-            "en": "Taoyuan Airport MRT",
-            "zh-Hans": "桃园机场捷运",
-            "zh-Hant": "桃園機場捷運"
+            "en": "Purple Line (Taoyuan Airport MRT)",
+            "zh-Hans": "紫线（桃园机场捷运）",
+            "zh-Hant": "紫線（桃園機場捷運）"
         }
     },
     {
@@ -30,7 +30,7 @@
         }
     },
     {
-        "id": "brh",
+        "id": "br",
         "colour": "#824729",
         "fg": "#fff",
         "name": {
@@ -40,13 +40,23 @@
         }
     },
     {
-        "id": "ge",
+        "id": "g",
         "colour": "#006a40",
         "fg": "#fff",
         "name": {
             "en": "Green Line to Zhongli",
             "zh-Hans": "绿线延伸中坜",
             "zh-Hant": "綠線延伸中壢"
+        }
+    },
+    {
+        "id": "ga",
+        "colour": "#006a40",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line to Daxi",
+            "zh-Hans": "绿线延伸大溪",
+            "zh-Hant": "綠線延伸大溪"
         }
     },
     {
@@ -57,6 +67,56 @@
             "en": "Sanying Line to Bade",
             "zh-Hans": "三莺线延伸八德",
             "zh-Hant": "三鶯線延伸八德"
+        }
+    },
+    {
+        "id": "s",
+        "colour": "#c0c0c0",
+        "fg": "#000",
+        "name": {
+            "en": "Silver Line (Linkou-Guishan Line)",
+            "zh-Hans": "银线（林口龟山线）",
+            "zh-Hant": "銀線（林口龜山線）"
+        }
+    },
+    {
+        "id": "lbr",
+        "colour": "#bdb76b",
+        "fg": "#000",
+        "name": {
+            "en": "Light Brown Line (Taoyuan-Luzhu-Guanyin Line)",
+            "zh-Hans": "浅棕线（桃园芦竹观音线）",
+            "zh-Hant": "淺棕線（桃園蘆竹觀音線）"
+        }
+    },
+    {
+        "id": "lg",
+        "colour": "#7cfc00",
+        "fg": "#000",
+        "name": {
+            "en": "Light Green Line (Neili-Songwu-Yangmei Line)",
+            "zh-Hans": "浅绿线（内坜宋屋杨梅线）",
+            "zh-Hant": "淺綠線（內壢宋屋楊梅線）"
+        }
+    },
+    {
+        "id": "y",
+        "colour": "#ff0",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow Line (Zhongli-Xinwu Line)",
+            "zh-Hans": "黄线（中坜新屋线）",
+            "zh-Hant": "黃線（中壢新屋線）"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#0ff",
+        "fg": "#000",
+        "name": {
+            "en": "Cyan Line (Taoyua-Qingpu Line)",
+            "zh-Hans": "青线（桃园青埔线）",
+            "zh-Hant": "青線（桃園青埔線）"
         }
     }
 ]
