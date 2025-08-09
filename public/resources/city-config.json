@@ -935,6 +935,15 @@
         }
     },
     {
+        "id": "lausanne",
+        "country": "CH",
+        "name": {
+            "en": "Lausanne",
+            "zh-Hans": "洛桑",
+            "fr": "Lausanne"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {

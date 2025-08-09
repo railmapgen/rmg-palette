@@ -1,0 +1,383 @@
+[
+    {
+        "id": "m1",
+        "colour": "#f71eb2",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M1",
+            "zh-Hans": "地铁M1线",
+            "fr": "Ligne M1"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#f71eb2",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M2",
+            "zh-Hans": "地铁M2线",
+            "fr": "Ligne M2"
+        }
+    },
+    {
+        "id": "leb",
+        "colour": "#008c13",
+        "fg": "#fff",
+        "name": {
+            "en": "LEB Rail",
+            "zh-Hans": "LEB铁路",
+            "fr": "Chemin de fer Lausanne-Echallen-Bercher"
+        }
+    },
+    {
+        "id": "1",
+        "colour": "#ff5454",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 1",
+            "fr": "Bus 1"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "#ffbd52",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 2",
+            "fr": "Bus 2"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#999999",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 3",
+            "fr": "Bus 3"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#05a300",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 4",
+            "fr": "Bus 4"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#33b8f5",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 6",
+            "fr": "Bus 6"
+        }
+    },
+    {
+        "id": "7",
+        "colour": "#251fa1",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 7",
+            "fr": "Bus 7"
+        }
+    },
+    {
+        "id": "8",
+        "colour": "#a856b0",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 8",
+            "fr": "Bus 8"
+        }
+    },
+    {
+        "id": "9",
+        "colour": "#ad0a9d",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 9",
+            "fr": "Bus 9"
+        }
+    },
+    {
+        "id": "13",
+        "colour": "#428a78",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 13",
+            "fr": "Bus 13"
+        }
+    },
+    {
+        "id": "16",
+        "colour": "#bdc429",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 16",
+            "fr": "Bus 16"
+        }
+    },
+    {
+        "id": "17",
+        "colour": "#ff4040",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 17",
+            "fr": "Bus 17"
+        }
+    },
+    {
+        "id": "18",
+        "colour": "#61d2ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 18",
+            "fr": "Bus 18"
+        }
+    },
+    {
+        "id": "19",
+        "colour": "#5670d1",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 19",
+            "fr": "Bus 19"
+        }
+    },
+    {
+        "id": "20",
+        "colour": "#c97757",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 20",
+            "fr": "Bus 20"
+        }
+    },
+    {
+        "id": "21",
+        "colour": "#c447a1",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 21",
+            "fr": "Bus 21"
+        }
+    },
+    {
+        "id": "24",
+        "colour": "#58ad91",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 24",
+            "fr": "Bus 24"
+        }
+    },
+    {
+        "id": "25",
+        "colour": "#3c6fc2",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 25",
+            "fr": "Bus 25"
+        }
+    },
+    {
+        "id": "31",
+        "colour": "#4a98c2",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 31",
+            "fr": "Bus 31"
+        }
+    },
+    {
+        "id": "32",
+        "colour": "#b680bd",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 32",
+            "fr": "Bus 32"
+        }
+    },
+    {
+        "id": "33",
+        "colour": "#3d6b37",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 33",
+            "fr": "Bus 33"
+        }
+    },
+    {
+        "id": "35",
+        "colour": "#fcb747",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 35",
+            "fr": "Bus 35"
+        }
+    },
+    {
+        "id": "36",
+        "colour": "#b4c5cf",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 36",
+            "fr": "Bus 36"
+        }
+    },
+    {
+        "id": "38",
+        "colour": "#b07131",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 38",
+            "fr": "Bus 38"
+        }
+    },
+    {
+        "id": "41",
+        "colour": "#ba22a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 41",
+            "fr": "Bus 41"
+        }
+    },
+    {
+        "id": "42",
+        "colour": "#e094be",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 42",
+            "fr": "Bus 42"
+        }
+    },
+    {
+        "id": "44",
+        "colour": "#ff9778",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 44",
+            "fr": "Bus 44"
+        }
+    },
+    {
+        "id": "45",
+        "colour": "#0e8c71",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 45",
+            "fr": "Bus 45"
+        }
+    },
+    {
+        "id": "46",
+        "colour": "#a6a63f",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 46",
+            "fr": "Bus 46"
+        }
+    },
+    {
+        "id": "47",
+        "colour": "#c7985b",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 47",
+            "fr": "Bus 47"
+        }
+    },
+    {
+        "id": "48",
+        "colour": "#8499d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 48",
+            "fr": "Bus 48"
+        }
+    },
+    {
+        "id": "49",
+        "colour": "#d396d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 49",
+            "fr": "Bus 49"
+        }
+    },
+    {
+        "id": "54",
+        "colour": "#a35e3e",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 54",
+            "zh-Hant": "Bus 54"
+        }
+    },
+    {
+        "id": "56",
+        "colour": "#2b2bb5",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 56",
+            "zh-Hant": "Bus 56"
+        }
+    },
+    {
+        "id": "58",
+        "colour": "#00bacf",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 58",
+            "fr": "Bus 58"
+        }
+    },
+    {
+        "id": "60",
+        "colour": "#83de52",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 60",
+            "fr": "Bus 60"
+        }
+    },
+    {
+        "id": "64",
+        "colour": "#b30000",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 64",
+            "fr": "Bus 64"
+        }
+    },
+    {
+        "id": "68",
+        "colour": "#694bab",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 68",
+            "fr": "Bus 68"
+        }
+    },
+    {
+        "id": "69",
+        "colour": "#b1a3cc",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 69",
+            "fr": "Bus 69"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#f2b28d",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 81/82",
+            "fr": ""
+        }
+    }
+]
