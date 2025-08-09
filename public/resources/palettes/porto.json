@@ -1,0 +1,62 @@
+[
+    {
+        "id": "a",
+        "colour": "#47b9ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line A",
+            "zh-Hans": "A线",
+            "pt": "Linha A"
+        }
+    },
+    {
+        "id": "b",
+        "colour": "#e64040",
+        "fg": "#fff",
+        "name": {
+            "en": "Line B",
+            "zh-Hans": "B线",
+            "pt": "Linha B"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#95d627",
+        "fg": "#fff",
+        "name": {
+            "en": "Line C",
+            "zh-Hans": "C线",
+            "pt": "Linha C"
+        }
+    },
+    {
+        "id": "d",
+        "colour": "#fcc703",
+        "fg": "#fff",
+        "name": {
+            "en": "Line D",
+            "zh-Hans": "D线",
+            "pt": "Linha D"
+        }
+    },
+    {
+        "id": "e",
+        "colour": "#9240cf",
+        "fg": "#fff",
+        "name": {
+            "en": "Line E",
+            "zh-Hans": "E线",
+            "pt": "Linha E"
+        }
+    },
+    {
+        "id": "f",
+        "colour": "#ff8a33",
+        "fg": "#fff",
+        "name": {
+            "en": "Line F",
+            "zh-Hans": "F线",
+            "pt": "Linha F"
+        }
+    }
+]
