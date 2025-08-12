@@ -42,7 +42,7 @@
     {
         "id": "xa5",
         "colour": "#A6E35F",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
@@ -62,11 +62,11 @@
     {
         "id": "xa8",
         "colour": "#E6B10E",
-        "fg": "#fff",
+        "fg": "#000",
         "pantone": "7405 U",
         "name": {
             "en": "Line 8",
-            "zh-Hans": "8号线",
+            "zh-Hans": "8号（环）线",
             "zh-Hant": "8號線"
         }
     },
@@ -83,11 +83,21 @@
     {
         "id": "xa10",
         "colour": "#00a353",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 10",
             "zh-Hans": "10号线",
             "zh-Hant": "10號線"
+        }
+    },
+    {
+        "id": "xa16",
+        "colour": "#ee805f",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 16",
+            "zh-Hans": "16号线",
+            "zh-Hant": "16號線"
         }
     },
     {
@@ -101,13 +111,14 @@
         }
     },
     {
-        "id": "xa16",
-        "colour": "#ee805f",
-        "fg": "#fff",
+        "id": "15",
+        "colour": "#E06287",
+        "fg": "#000",
+        "pantone": "7423 C",
         "name": {
-            "en": "Line 16",
-            "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
         }
     },
     {
