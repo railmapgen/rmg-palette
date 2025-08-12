@@ -1770,6 +1770,15 @@
         }
     },
     {
+        "id": "tainan",
+        "country": "TW",
+        "name": {
+            "en": "Tainan",
+            "zh-Hans": "台南",
+            "zh-Hant": "台南"
+        }
+    },
+    {
         "id": "taipei",
         "country": "TW",
         "name": {
