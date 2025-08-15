@@ -942,6 +942,15 @@
         }
     },
     {
+        "id": "lianyungang",
+        "country": "CN",
+        "name": {
+            "en": "Lianyungang",
+            "zh-Hans": "连云港",
+            "zh-Hant": "連雲港"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
