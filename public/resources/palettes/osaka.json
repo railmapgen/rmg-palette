@@ -1,119 +1,110 @@
 [
     {
-        "id": "m",
-        "colour": "#df2f27",
+        "id": "jra",
+        "colour": "#0071c1",
         "fg": "#fff",
         "name": {
-            "en": "Midosuji Line (M)",
-            "ja": "御堂筋線",
-            "zh-Hans": "御堂筋线",
-            "zh-Hant": "御堂筋線"
+            "en": "JR Kyōto Line",
+            "zh-Hans": "JR 京都线"
         }
     },
     {
-        "id": "t",
-        "colour": "#a72f92",
+        "id": "jra",
+        "colour": "#0071c1",
         "fg": "#fff",
         "name": {
-            "en": "Tanimachi Line (T)",
-            "ja": "谷町線",
-            "zh-Hans": "谷町线",
-            "zh-Hant": "谷町線"
+            "en": "JR Kōbe Line",
+            "zh-Hans": "JR 神户线"
         }
     },
     {
-        "id": "y",
-        "colour": "#007bc2",
+        "id": "jrf",
+        "colour": "#337293",
         "fg": "#fff",
         "name": {
-            "en": "Yotsubashi Line (Y)",
-            "ja": "四つ橋線",
-            "zh-Hans": "四桥线",
-            "zh-Hant": "四橋線"
+            "en": "JR Ōsaka Higashi Line",
+            "zh-Hans": "JR 大阪东线"
         }
     },
     {
-        "id": "c",
-        "colour": "#1ab04b",
+        "id": "jrg",
+        "colour": "#fcc702",
         "fg": "#fff",
         "name": {
-            "en": "Chuo Line (C)",
-            "ja": "中央線",
-            "zh-Hans": "中央线",
-            "zh-Hant": "中央線"
+            "en": "JR Takarazuka Line",
+            "zh-Hans": "JR 宝塚线"
         }
     },
     {
-        "id": "s",
-        "colour": "#f178ae",
+        "id": "jrh",
+        "colour": "#e92f83",
         "fg": "#fff",
         "name": {
-            "en": "Sennichimae Line (S)",
-            "ja": "千日前線",
-            "zh-Hans": "千日前线",
-            "zh-Hant": "千日前線"
+            "en": "JR Tōzai Line",
+            "zh-Hans": "JR 东西线"
         }
     },
     {
-        "id": "k",
-        "colour": "#b14a30",
+        "id": "jrh",
+        "colour": "#e92f83",
         "fg": "#fff",
         "name": {
-            "en": "Sakaisuji Line (K)",
-            "ja": "堺筋線",
-            "zh-Hans": "堺筋线",
-            "zh-Hant": "堺筋線"
+            "en": "JR Gakkentoshi Line (Katamachi Line)",
+            "zh-Hans": "JR 学研都市线 （片町线）"
         }
     },
     {
-        "id": "n",
-        "colour": "#b8d432",
-        "fg": "#000",
-        "name": {
-            "en": "Nagahori Tsurumi-ryokuchi Line (N)",
-            "ja": "長堀鶴見緑地線",
-            "zh-Hans": "长堀鹤见绿地线",
-            "zh-Hant": "長堀鶴見綠地線"
-        }
-    },
-    {
-        "id": "i",
-        "colour": "#f89a1c",
-        "fg": "#000",
-        "name": {
-            "en": "Imazatosuji Line (I)",
-            "ja": "今里筋線",
-            "zh-Hans": "今里筋线",
-            "zh-Hant": "今里筋線"
-        }
-    },
-    {
-        "id": "p",
-        "colour": "#00b2e6",
+        "id": "jro",
+        "colour": "#e72943",
         "fg": "#fff",
         "name": {
-            "en": "New Tram (P)",
-            "ja": "ニュートラム",
-            "zh-Hans": "新电车",
-            "zh-Hant": "新電車"
+            "en": "JR Ōsaka Loop Line",
+            "zh-Hans": "JR 大阪环状线"
         }
     },
     {
-        "id": "brt1",
-        "colour": "#F39800",
+        "id": "jrp",
+        "colour": "#093190",
         "fg": "#fff",
         "name": {
-            "en": "BRT 1",
-            "ja": "長居ルート（BRT 1）"
+            "en": "JR Yumesaki Line (Sakurajima Line)",
+            "zh-Hans": "JR 梦咲线（樱岛线）"
         }
     },
     {
-        "id": "brt2",
-        "colour": "#EA5514",
+        "id": "jrq",
+        "colour": "#00a269",
         "fg": "#fff",
         "name": {
-            "en": "BRT 2",
-            "ja": "あべの橋ルート（BRT 2）"
+            "en": "Yamatoji Line",
+            "zh-Hans": "大和路线"
+        }
+    },
+    {
+        "id": "jrr",
+        "colour": "#faa000",
+        "fg": "#fff",
+        "name": {
+            "en": "Hanwa Line",
+            "zh-Hans": "阪和线"
+        }
+    },
+    {
+        "id": "jrr",
+        "colour": "#968f7f",
+        "fg": "#fff",
+        "name": {
+            "en": "Hagoromo Line (Hanwa Branch Line)",
+            "zh-Hans": "羽衣线（阪和支线）"
+        }
+    },
+    {
+        "id": "jrs",
+        "colour": "#0071c1",
+        "fg": "#fff",
+        "name": {
+            "en": "Kansai-airport Line",
+            "zh-Hans": "关西机场线"
         }
     }
 ]
