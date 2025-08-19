@@ -2009,6 +2009,15 @@
         }
     },
     {
+        "id": "xianyang",
+        "country": "CN",
+        "name": {
+            "en": "Xianyang",
+            "zh-Hans": "咸阳",
+            "zh-Hant": "咸陽"
+        }
+    },
+    {
         "id": "xuzhou",
         "country": "CN",
         "name": {
