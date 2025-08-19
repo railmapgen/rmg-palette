@@ -2009,6 +2009,15 @@
         }
     },
     {
+        "id": "xiangxi",
+        "country": "CN",
+        "name": {
+            "en": "Xiangxi Tujia and Miao Autonomous Prefecture",
+            "zh-Hans": "湘西土家族苗族自治州",
+            "zh-Hant": "湘西土家族苗族自治州"
+        }
+    },
+    {
         "id": "xuzhou",
         "country": "CN",
         "name": {
