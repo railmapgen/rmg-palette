@@ -1,119 +1,132 @@
 [
     {
         "id": "m",
-        "colour": "#df2f27",
+        "colour": "#DB260A",
         "fg": "#fff",
         "name": {
-            "en": "Midosuji Line (M)",
+            "en": "Midosuji Line",
             "ja": "御堂筋線",
             "zh-Hans": "御堂筋线",
-            "zh-Hant": "御堂筋線"
+            "zh-Hant": "御堂筋線",
+            "ko": "미도스지선",
+            "th": "สายมิโดซุจิ"
         }
     },
     {
         "id": "t",
-        "colour": "#a72f92",
+        "colour": "#AA1B86",
         "fg": "#fff",
         "name": {
-            "en": "Tanimachi Line (T)",
+            "en": "Tanimachi Line",
             "ja": "谷町線",
             "zh-Hans": "谷町线",
-            "zh-Hant": "谷町線"
+            "zh-Hant": "谷町線",
+            "ko": "다니마치선",
+            "th": "สายทานิมาจิ"
         }
     },
     {
         "id": "y",
-        "colour": "#007bc2",
+        "colour": "#0073BD",
         "fg": "#fff",
         "name": {
-            "en": "Yotsubashi Line (Y)",
+            "en": "Yotsubashi Line",
             "ja": "四つ橋線",
             "zh-Hans": "四桥线",
-            "zh-Hant": "四橋線"
+            "zh-Hant": "四橋線",
+            "ko": "요쓰바시선",
+            "th": "สายยตสึบาชิ"
         }
     },
     {
         "id": "c",
-        "colour": "#1ab04b",
+        "colour": "#00A53C",
         "fg": "#fff",
         "name": {
-            "en": "Chuo Line (C)",
+            "en": "Chuo Line",
             "ja": "中央線",
             "zh-Hans": "中央线",
-            "zh-Hant": "中央線"
+            "zh-Hant": "中央線",
+            "ko": "주오선",
+            "th": "สายชูโอ"
         }
     },
     {
         "id": "s",
-        "colour": "#f178ae",
+        "colour": "#EB74A8",
         "fg": "#fff",
         "name": {
-            "en": "Sennichimae Line (S)",
+            "en": "Sennichimae Line",
             "ja": "千日前線",
             "zh-Hans": "千日前线",
-            "zh-Hant": "千日前線"
+            "zh-Hant": "千日前線",
+            "ko": "센니치마에선",
+            "th": "สายเซ็นนิจิมาเอะ"
         }
     },
     {
         "id": "k",
-        "colour": "#b14a30",
+        "colour": "#B24321",
         "fg": "#fff",
         "name": {
-            "en": "Sakaisuji Line (K)",
+            "en": "Sakaisuji Line",
             "ja": "堺筋線",
             "zh-Hans": "堺筋线",
-            "zh-Hant": "堺筋線"
+            "zh-Hant": "堺筋線",
+            "ko": "사카이스지선",
+            "th": "สายซาไกซุจิ"
         }
     },
     {
         "id": "n",
-        "colour": "#b8d432",
+        "colour": "#BBD300",
         "fg": "#000",
         "name": {
-            "en": "Nagahori Tsurumi-ryokuchi Line (N)",
+            "en": "Nagahori Tsurumi-ryokuchi Line",
             "ja": "長堀鶴見緑地線",
             "zh-Hans": "长堀鹤见绿地线",
-            "zh-Hant": "長堀鶴見綠地線"
+            "zh-Hant": "長堀鶴見綠地線",
+            "ko": "나가호리쓰루미료쿠치선",
+            "th": "สายนากาโฮริสึรุมิเรียวคุจิ"
         }
     },
     {
         "id": "i",
-        "colour": "#f89a1c",
+        "colour": "#F49F00",
         "fg": "#000",
         "name": {
-            "en": "Imazatosuji Line (I)",
+            "en": "Imazatosuji Line",
             "ja": "今里筋線",
             "zh-Hans": "今里筋线",
-            "zh-Hant": "今里筋線"
+            "zh-Hant": "今里筋線",
+            "ko": "이마자토스지선",
+            "th": "สายอิมาซาโตซุจิ"
         }
     },
     {
         "id": "p",
-        "colour": "#00b2e6",
+        "colour": "#00A6E2",
         "fg": "#fff",
         "name": {
-            "en": "New Tram (P)",
+            "en": "New Tram",
             "ja": "ニュートラム",
             "zh-Hans": "新电车",
-            "zh-Hant": "新電車"
+            "zh-Hant": "新電車",
+            "ko": "뉴트램",
+            "th": "นิวแทร็ม"
         }
     },
     {
-        "id": "brt1",
-        "colour": "#F39800",
-        "fg": "#fff",
+        "id": "brt",
+        "colour": "#EF6C00",
+        "fg": "#000",
         "name": {
-            "en": "BRT 1",
-            "ja": "長居ルート（BRT 1）"
-        }
-    },
-    {
-        "id": "brt2",
-        "colour": "#EA5514",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT 2",
-            "ja": "あべの橋ルート（BRT 2）"
+            "ja": "いまざとライナー（BRT）",
+            "en": "Imazato Liner (BRT)",
+            "zh-Hans": "今里Liner(BRT)",
+            "zh-Hant": "今里Liner(BRT)",
+            "ko": "이마자토 라이너(BRT)",
+            "th": "อิมาโตะไลเนอร์ (BRT)"
         }
     }
 ]
