@@ -176,6 +176,50 @@
         }
     },
     {
+        "id": "m15",
+        "colour": "#A90036",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 15",
+            "fr": "Métro Ligne 15",
+            "zh-Hans": "地铁15号线",
+            "zh-Hant": "地鐵15號線"
+        }
+    },
+    {
+        "id": "m16",
+        "colour": "#ED8FAC",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 16",
+            "fr": "Métro Ligne 16",
+            "zh-Hans": "地铁16号线",
+            "zh-Hant": "地鐵16號線"
+        }
+    },
+    {
+        "id": "m17",
+        "colour": "#CBC00A",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 17",
+            "fr": "Métro Ligne 17",
+            "zh-Hans": "地铁17号线",
+            "zh-Hant": "地鐵17號線"
+        }
+    },
+    {
+        "id": "m18",
+        "colour": "#15997C",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line 18",
+            "fr": "Métro Ligne 18",
+            "zh-Hans": "地铁18号线",
+            "zh-Hant": "地鐵18號線"
+        }
+    },
+    {
         "id": "orv",
         "colour": "#FFCD0D",
         "fg": "#fff",
