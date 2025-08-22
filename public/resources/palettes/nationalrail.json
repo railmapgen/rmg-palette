@@ -1,0 +1,235 @@
+[
+    {
+        "id": "le",
+        "colour": "#d70428",
+        "fg": "#fff",
+        "name": {
+            "en": "Greater Anglia"
+        }
+    },
+    {
+        "id": "legrey",
+        "colour": "#6b717a",
+        "fg": "#fff",
+        "name": {
+            "en": "Greater Anglia (Grey)"
+        }
+    },
+    {
+        "id": "sr",
+        "colour": "#1e467d",
+        "fg": "#fff",
+        "name": {
+            "en": "ScotRail",
+            "gd": "Rèile na h-Alba"
+        }
+    },
+    {
+        "id": "vt",
+        "colour": "#004354",
+        "fg": "#fff",
+        "name": {
+            "en": "Aventi West Coast"
+        }
+    },
+    {
+        "id": "cc",
+        "colour": "#b7007c",
+        "fg": "#fff",
+        "name": {
+            "en": "c2c"
+        }
+    },
+    {
+        "id": "cs",
+        "colour": "#1d2e35",
+        "fg": "#fff",
+        "name": {
+            "en": "Caledonian Sleeper"
+        }
+    },
+    {
+        "id": "ch",
+        "colour": "#00bfff",
+        "fg": "#fff",
+        "name": {
+            "en": "Chiltern Railway"
+        }
+    },
+    {
+        "id": "xc",
+        "colour": "#660f21",
+        "fg": "#fff",
+        "name": {
+            "en": "CrossCountry"
+        }
+    },
+    {
+        "id": "xcred",
+        "colour": "#ca123f",
+        "fg": "#fff",
+        "name": {
+            "en": "CrossCountry (Red)"
+        }
+    },
+    {
+        "id": "em",
+        "colour": "#713563",
+        "fg": "#fff",
+        "name": {
+            "en": "East Midlands Railway"
+        }
+    },
+    {
+        "id": "gw",
+        "colour": "#0a493e",
+        "fg": "#fff",
+        "name": {
+            "en": "Great Western Railway"
+        }
+    },
+    {
+        "id": "ht",
+        "colour": "#de005c",
+        "fg": "#fff",
+        "name": {
+            "en": "Hull Trains"
+        }
+    },
+    {
+        "id": "tl",
+        "colour": "#ff5aa4",
+        "fg": "#fff",
+        "name": {
+            "en": "Thameslink"
+        }
+    },
+    {
+        "id": "hx",
+        "colour": "#532e63",
+        "fg": "#fff",
+        "name": {
+            "en": "Heathrow Express"
+        }
+    },
+    {
+        "id": "aw",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Transport for Wales"
+        }
+    },
+    {
+        "id": "ln",
+        "colour": "#00bf6f",
+        "fg": "#fff",
+        "name": {
+            "en": "London Northwestern Railway"
+        }
+    },
+    {
+        "id": "gr",
+        "colour": "#ce132e",
+        "fg": "#fff",
+        "name": {
+            "en": "London North Eastern Railway"
+        }
+    },
+    {
+        "id": "nt",
+        "colour": "#0f0d78",
+        "fg": "#fff",
+        "name": {
+            "en": "Northern"
+        }
+    },
+    {
+        "id": "sn",
+        "colour": "#8cc63e",
+        "fg": "#fff",
+        "name": {
+            "en": "Southern"
+        }
+    },
+    {
+        "id": "se",
+        "colour": "#389cff",
+        "fg": "#fff",
+        "name": {
+            "en": "Southeastern"
+        }
+    },
+    {
+        "id": "sw",
+        "colour": "#24398c",
+        "fg": "#fff",
+        "name": {
+            "en": "South Western Railway"
+        }
+    },
+    {
+        "id": "tp",
+        "colour": "#09a4ec",
+        "fg": "#fff",
+        "name": {
+            "en": "TransPennine Express"
+        }
+    },
+    {
+        "id": "wm",
+        "colour": "#ff8300",
+        "fg": "#fff",
+        "name": {
+            "en": "West Midlands Railway"
+        }
+    },
+    {
+        "id": "ld",
+        "colour": "#2b6ef5",
+        "fg": "#fff",
+        "name": {
+            "en": "Lumo"
+        }
+    },
+    {
+        "id": "lo",
+        "colour": "#e87722",
+        "fg": "#fff",
+        "name": {
+            "en": "London Overground"
+        }
+    },
+    {
+        "id": "xr",
+        "colour": "#6950a1",
+        "fg": "#fff",
+        "name": {
+            "en": "Elizabeth Line (Crossrail)"
+        }
+    },
+    {
+        "id": "me",
+        "colour": "#fff200",
+        "fg": "#000",
+        "name": {
+            "en": "Merseyrail"
+        }
+    },
+    {
+        "id": "gc",
+        "colour": "#f08300",
+        "fg": "#fff",
+        "name": {
+            "en": "Grand Central"
+        }
+    },
+    {
+        "id": "gn",
+        "colour": "#43165c",
+        "fg": "#fff",
+        "name": {
+            "en": "Grand Northern"
+        }
+    }
+]
