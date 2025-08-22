@@ -240,6 +240,16 @@
         }
     },
     {
+        "id": "bj18",
+        "colour": "#4b4b89",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线（13A线）",
+            "zh-Hant": "18號線"
+        }
+    },
+    {
         "id": "btxj",
         "colour": "#e50619",
         "fg": "#fff",
@@ -277,6 +287,26 @@
             "en": "Daxing Airport Express",
             "zh-Hans": "大兴机场线",
             "zh-Hant": "大興機場線"
+        }
+    },
+    {
+        "id": "bjhm",
+        "colour": "#f65275",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S5",
+            "zh-Hans": "怀密线",
+            "zh-Hant": "懷密線"
+        }
+    },
+    {
+        "id": "bjsj",
+        "colour": "#11385b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1、S2、S6",
+            "zh-Hans": "城市副中心线、S2线、通密线",
+            "zh-Hant": "城市副中心線、S2線、通密線"
         }
     }
 ]
