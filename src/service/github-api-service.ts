@@ -12,7 +12,7 @@ export type GitHubIssue = {
     title: string;
     labels: GitHubIssueLabel[];
     created_at: string;
-    body: string;
+    body: string | null;
 };
 
 type PaginatedCallback<T, R> = (page: number, ...args: T[]) => Promise<R[]>;
@@ -46,7 +46,7 @@ const getAllOpenIssues = async () => {
     const issues = await getAllPages(getOpenIssuesByPage);
     return issues
         .filter(issue => !issue.labels.some(label => ['hold', 'need fixing'].includes(label.name)))
-        .filter(issue => !issue.body.includes('REPLACE ME'))
+        .filter(issue => !issue.body?.includes('REPLACE ME'))
         .sort((a, b) => a.number - b.number);
 };
 
