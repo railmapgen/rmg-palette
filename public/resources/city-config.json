@@ -1078,7 +1078,10 @@
         "id": "manila",
         "country": "PH",
         "name": {
-            "en": "Manila"
+            "en": "Manila",
+            "fil": "Maynila",
+            "zh-Hans": "马尼拉",
+            "zh-Hant": "馬尼拉"
         }
     },
     {
