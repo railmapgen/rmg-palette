@@ -78,5 +78,26 @@
             "zh-Hans": "深绿线（高铁新市线）",
             "zh-Hant": "深綠線（高鐵新市線）"
         }
+    },
+    {
+        "id": "tra",
+        "colour": "#0211bb",
+        "fg": "#fff",
+        "name": {
+            "en": "Taiwan Railway",
+            "zh-Hans": "台湾铁路",
+            "zh-Hant": "台灣鐵路"
+        }
+    },
+    {
+        "id": "hsr",
+        "colour": "#db5426",
+        "fg": "#fff",
+        "name": {
+            "en": "Taiwan High Speed Rail",
+            "zh-Hans": "台湾高铁",
+            "zh-Hant": "台灣高鐵",
+            "ja": "台湾新幹線"
+        }
     }
 ]
