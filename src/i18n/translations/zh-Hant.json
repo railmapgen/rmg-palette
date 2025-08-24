@@ -19,6 +19,7 @@
     "Enter a valid URL, e.g.": "輸入有效的URL，如",
     "Enter name": "輸入名稱",
     "Example": "範例",
+    "Find more details in": "詳情請參閱",
     "If the button below doesn't work for you, please follow the instructions below:": "若你無法使用下面的按鈕，請按下方的指引開啟 Issue：",
     "Input mode": "輸入方式",
     "Justify": "證明",
@@ -38,12 +39,15 @@
     "Recently used": "最近使用",
     "Reference link": "参考連結",
     "Remove this name": "移除此名稱",
+    "Review guidelines": "審核指引",
     "Select": "選擇",
     "Select a country or region to begin.": "選取一个國家或地區以開始。",
     "Submit anyway": "繼續提交",
     "Submit palettes": "提交調色盤",
     "Unsaved draft": "未儲存的草稿",
+    "Uploaded templates pending for review": "等候審核的已上載調色盤",
     "Use Pantone®": "使用 Pantone®",
     "Validate": "驗證",
+    "You can now earn points for redeeming subscriptions by reviewing templates uploaded by others.": "即日起，你可以透過審核他人上載的調色盤賺取積分以兌換訂閱啦。",
     "Your inputs contain the following errors. Please consider fixing it before submitting.": "你的輸入存在以下問題，請考慮於提交前修正他們。"
 }

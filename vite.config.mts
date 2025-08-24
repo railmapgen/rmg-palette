@@ -1,7 +1,6 @@
-/// <reference types="vitest/config" />
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { coverageConfigDefaults } from 'vitest/config';
 
 // https://vitejs.dev/config
 export default defineConfig({
@@ -29,11 +28,11 @@ export default defineConfig({
         root: './src/',
         environment: 'jsdom',
         setupFiles: './setupTests.ts',
-        server: {
-            deps: {
-                fallbackCJS: false,
-            },
-        },
         watch: false,
+        coverage: {
+            provider: 'v8',
+            exclude: coverageConfigDefaults.exclude,
+            skipFull: true,
+        },
     },
 });
