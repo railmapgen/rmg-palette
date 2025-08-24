@@ -1,0 +1,42 @@
+[
+    {
+        "id": "jvl",
+        "colour": "#42c3dc",
+        "fg": "#fff",
+        "name": {
+            "en": "Johnsonville"
+        }
+    },
+    {
+        "id": "kpl",
+        "colour": "#d4d110",
+        "fg": "#fff",
+        "name": {
+            "en": "Kapitit"
+        }
+    },
+    {
+        "id": "mel",
+        "colour": "#f48a30",
+        "fg": "#fff",
+        "name": {
+            "en": "Melling"
+        }
+    },
+    {
+        "id": "hvl",
+        "colour": "#f48a30",
+        "fg": "#fff",
+        "name": {
+            "en": "Hutt Valley"
+        }
+    },
+    {
+        "id": "wrl",
+        "colour": "#feca0a",
+        "fg": "#fff",
+        "name": {
+            "en": "Wairarapa"
+        }
+    }
+]

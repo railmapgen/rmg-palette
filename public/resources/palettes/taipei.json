@@ -82,11 +82,11 @@
     {
         "id": "lg",
         "colour": "#a1d884",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Wanda-Zhonghe-Shulin Line (LG)",
-            "zh-Hans": "万大-中和-树林线",
-            "zh-Hant": "萬大-中和-樹林線"
+            "zh-Hans": "万大中和树林线",
+            "zh-Hant": "萬大中和樹林線"
         }
     },
     {
