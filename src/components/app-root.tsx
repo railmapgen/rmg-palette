@@ -17,8 +17,6 @@ export default function AppRoot() {
                         <Route
                             path="/new"
                             element={
-                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                                // @ts-ignore
                                 <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
                                     <TicketWindowHeader />
                                     <TicketView />
@@ -28,8 +26,6 @@ export default function AppRoot() {
                         <Route
                             path="/picker"
                             element={
-                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                                // @ts-ignore
                                 <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
                                     <PickerWindowHeader />
                                     <PickerView />
@@ -39,8 +35,6 @@ export default function AppRoot() {
                         <Route
                             path="/"
                             element={
-                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-                                // @ts-ignore
                                 <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
                                     <WindowHeader />
                                     <PaletteView />

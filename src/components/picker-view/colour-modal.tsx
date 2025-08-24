@@ -7,9 +7,10 @@ import { useTranslation } from 'react-i18next';
 import { useRootSelector } from '../../redux';
 import PantoneChecker from '../ticket-view/pantone-checker';
 import RecentlyUsed from './recently-used';
-import { Badge, Button, ColorInput, Divider, Flex, Group, Stack } from '@mantine/core';
+import { Badge, Button, Divider, Flex, Group, Stack } from '@mantine/core';
 import PantoneInput from '../common/pantone-input';
 import { RMLabelledSegmentedControl, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
+import CompatibleColourInput from '../common/compatible-colour-input';
 
 const hexValidator = (value: string): boolean => {
     return !!value.match(/^#[0-9a-fA-F]{6}$/);
@@ -133,7 +134,7 @@ export default function ColourModal(props: ColourModalProps) {
                             />
                         )}
                         {colourMode !== 'pantone' && (
-                            <ColorInput
+                            <CompatibleColourInput
                                 label={t('Background colour')}
                                 value={bgColour}
                                 onChange={value => {
@@ -144,6 +145,7 @@ export default function ColourModal(props: ColourModalProps) {
                                 }}
                             />
                         )}
+
                         <RMLabelledSegmentedControl
                             size="sm"
                             label={t('Foreground colour')}

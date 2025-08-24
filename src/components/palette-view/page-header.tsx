@@ -10,7 +10,7 @@ import { RMPageHeader } from '@railmapgen/mantine-components';
 
 export default function PageHeader() {
     const { t, i18n } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const dispatch = useDispatch();
 

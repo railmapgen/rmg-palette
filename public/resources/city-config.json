@@ -105,6 +105,16 @@
         }
     },
     {
+        "id": "belfast",
+        "country": "GB",
+        "name": {
+            "en": "Belfast",
+            "zh-Hans": "贝尔法斯特",
+            "zh-Hant": "貝爾法斯特",
+            "ga": "Béal Feirste"
+        }
+    },
+    {
         "id": "berlin",
         "country": "DE",
         "name": {
@@ -112,6 +122,13 @@
             "en": "Berlin",
             "zh-Hans": "柏林",
             "zh-Hant": "柏林"
+        }
+    },
+    {
+        "id": "bham",
+        "country": "GBENG",
+        "name": {
+            "en": "Birmingham"
         }
     },
     {
@@ -151,6 +168,16 @@
             "en": "Boston",
             "zh-Hans": "波士顿",
             "zh-Hant": "波士頓"
+        }
+    },
+    {
+        "id": "bremen",
+        "country": "DE",
+        "name": {
+            "en": "Bremen",
+            "de": "Bremen",
+            "zh-Hans": "不来梅",
+            "zh-Hant": "不來梅"
         }
     },
     {
@@ -385,6 +412,14 @@
         }
     },
     {
+        "id": "dallas",
+        "country": "US",
+        "name": {
+            "en": "Dallas",
+            "es": "Dallas"
+        }
+    },
+    {
         "id": "delhi",
         "country": "IN",
         "name": {
@@ -483,6 +518,17 @@
         }
     },
     {
+        "id": "fukuoka",
+        "country": "JP",
+        "name": {
+            "en": "Fukuoka",
+            "zh-Hans": "福冈",
+            "ja": "福岡",
+            "ko": "후쿠오카",
+            "zh-Hant": "福岡"
+        }
+    },
+    {
         "id": "fuzhou",
         "country": "CN",
         "name": {
@@ -543,6 +589,16 @@
         }
     },
     {
+        "id": "grenoble",
+        "country": "FR",
+        "name": {
+            "en": "Grenoble",
+            "zh-Hans": "格勒诺布尔",
+            "fr": "Grenoble",
+            "zh-Hant": "格勒諾布爾"
+        }
+    },
+    {
         "id": "guadalajara",
         "country": "MX",
         "name": {
@@ -579,6 +635,14 @@
             "ko": "광주",
             "zh-Hans": "光州",
             "zh-Hant": "光州"
+        }
+    },
+    {
+        "id": "gzm",
+        "country": "PL",
+        "name": {
+            "en": "Metropolis GZM",
+            "pl": "Górnośląsko-Zagłębiowska Metropolia"
         }
     },
     {
@@ -724,6 +788,14 @@
         }
     },
     {
+        "id": "izmir",
+        "country": "TR",
+        "name": {
+            "en": "Izmir",
+            "tr": "İzmir"
+        }
+    },
+    {
         "id": "jakarta",
         "country": "ID",
         "name": {
@@ -860,6 +932,16 @@
         }
     },
     {
+        "id": "lapaz",
+        "country": "BO",
+        "name": {
+            "en": "La Paz",
+            "zh-Hans": "拉巴斯",
+            "zh-Hant": "拉巴斯",
+            "es": "La Paz"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
@@ -993,6 +1075,16 @@
         }
     },
     {
+        "id": "manila",
+        "country": "PH",
+        "name": {
+            "en": "Manila",
+            "fil": "Maynila",
+            "zh-Hans": "马尼拉",
+            "zh-Hant": "馬尼拉"
+        }
+    },
+    {
         "id": "marseille",
         "country": "FR",
         "name": {
@@ -1119,6 +1211,16 @@
             "zh-Hans": "那格浦尔",
             "zh-Hant": "那格浦爾",
             "hi": "नागपुर"
+        }
+    },
+    {
+        "id": "naha",
+        "country": "JP",
+        "name": {
+            "en": "Naha",
+            "zh-Hans": "那霸",
+            "zh-Hant": "那霸",
+            "ja": "那覇"
         }
     },
     {
@@ -1515,6 +1617,15 @@
         }
     },
     {
+        "id": "seattle",
+        "country": "US",
+        "name": {
+            "en": "Seattle",
+            "zh-Hans": "西雅图",
+            "zh-Hant": "西雅圖"
+        }
+    },
+    {
         "id": "sendai",
         "country": "JP",
         "name": {
@@ -1659,6 +1770,15 @@
             "en": "Taichung",
             "zh-Hans": "台中",
             "zh-Hant": "台中"
+        }
+    },
+    {
+        "id": "tainan",
+        "country": "TW",
+        "name": {
+            "en": "Tainan",
+            "zh-Hans": "台南",
+            "zh-Hant": "台南"
         }
     },
     {
@@ -1827,6 +1947,13 @@
             "en": "Washington DC",
             "zh-Hans": "华盛顿特区",
             "zh-Hant": "華盛頓特區"
+        }
+    },
+    {
+        "id": "wellington",
+        "country": "NZ",
+        "name": {
+            "en": "Wellington"
         }
     },
     {

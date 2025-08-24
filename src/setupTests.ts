@@ -1,5 +1,4 @@
 import { createStore } from './redux';
-import { TextEncoder } from 'util';
 import crypto from 'node:crypto';
 import { setupTest } from '@railmapgen/mantine-components/utils';
 
@@ -26,6 +25,10 @@ global.fetch = vi.fn().mockImplementation((...args: any[]) => {
                 });
             },
         });
+    } else if (args[0].includes('/rmg-palette/issues')) {
+        return Promise.resolve({
+            json: async () => [],
+        });
     } else if (args[0].includes('resources/palettes')) {
         const file = args[0].split('/').at(-1);
         return Promise.resolve({
@@ -36,18 +39,4 @@ global.fetch = vi.fn().mockImplementation((...args: any[]) => {
     }
 });
 
-global.window.matchMedia = query => ({
-    matches: false,
-    media: query,
-    onchange: null,
-    addListener: vi.fn(), // deprecated
-    removeListener: vi.fn(), // deprecated
-    addEventListener: vi.fn(),
-    removeEventListener: vi.fn(),
-    dispatchEvent: vi.fn(),
-});
-
-global.TextEncoder = TextEncoder;
 vi.stubGlobal('crypto', crypto);
-// vi.stubGlobal('ResizeObserver', ResizeObserverPolyfill);
-Element.prototype.scrollIntoView = vi.fn();

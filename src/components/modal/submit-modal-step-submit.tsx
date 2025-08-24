@@ -26,7 +26,7 @@ export default function SubmitModalStepSubmit(props: SubmitModalStepSubmitProps)
     const { countryEntry, cityEntry, paletteList, dataSource, refLink, justification, onPrev } = props;
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 

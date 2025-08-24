@@ -1,9 +1,9 @@
-import { MdAdd, MdDelete } from 'react-icons/md';
+import { MdAdd, MdDeleteOutline } from 'react-icons/md';
 import { TranslationEntry } from '../../redux/ticket/util';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import useTranslatedName from '../hooks/use-translated-name';
-import { ActionIcon, Box, Fieldset, Flex, Group, NativeSelect, TextInput } from '@mantine/core';
+import { ActionIcon, Box, Fieldset, Flex, Group, Select, TextInput } from '@mantine/core';
 
 interface MultiLangEntryCardProps {
     entries?: TranslationEntry[];
@@ -17,7 +17,7 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     const entries = props.entries ?? [];
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const languageOptions = Object.entries(LANGUAGE_NAMES).map(([lang, name]) => ({
         value: lang,
@@ -37,12 +37,13 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
             {entries.map(([lang, name], idx, arr) => (
                 <Flex key={idx} pt={4} align="center" data-testid={'entry-card-stack-' + lang}>
                     <Group gap="xs" flex={1} grow>
-                        <NativeSelect
+                        <Select
                             size="xs"
                             aria-label={t('Language')}
                             value={lang}
-                            onChange={({ currentTarget: { value } }) => onLangSwitch(lang, value as LanguageCode)}
+                            onChange={value => onLangSwitch(lang, value as LanguageCode)}
                             data={languageOptions}
+                            searchable
                         />
                         <TextInput
                             size="xs"
@@ -76,7 +77,7 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
                                 onClick={() => onRemove(lang as LanguageCode)}
                                 ml={4}
                             >
-                                <MdDelete />
+                                <MdDeleteOutline />
                             </ActionIcon>
                         )}
                     </Flex>

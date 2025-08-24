@@ -1,5 +1,5 @@
 import classes from '../common/palette-card.module.css';
-import { ActionIcon, Card, ColorInput, Group, Stack, Switch, Text, TextInput } from '@mantine/core';
+import { ActionIcon, Card, Group, Stack, Switch, Text, TextInput } from '@mantine/core';
 import useTranslatedName from '../hooks/use-translated-name';
 import { ColourHex, MonoColour } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
@@ -10,8 +10,9 @@ import { useRootSelector } from '../../redux';
 import { useRef, useState } from 'react';
 import PantoneInput from '../common/pantone-input';
 import MultiLangEntryCard from './multi-lang-entry-card';
-import { MdContentCopy, MdDelete, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
+import { MdContentCopy, MdDeleteOutline, MdEdit, MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 import { RMLabelledSegmentedControl } from '@railmapgen/mantine-components';
+import CompatibleColourInput from '../common/compatible-colour-input';
 
 type EditablePaletteCardProps = {
     lineDetail: PaletteEntryWithTranslationEntry;
@@ -37,7 +38,7 @@ export default function EditablePaletteCard({
     onLangSwitch,
 }: EditablePaletteCardProps) {
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const { pantoneReady } = useRootSelector(state => state.app);
     const [inputWithPantone, setInputWithPantone] = useState(!!lineDetail.pantone);
@@ -64,8 +65,8 @@ export default function EditablePaletteCard({
     const fgColour = lineDetail.fg === MonoColour.black ? 'black' : 'white';
 
     return (
-        <Card ref={cardRef} className={classes.editable} p="sm" withBorder>
-            <Card.Section bg={lineDetail.colour} p="sm" className={classes['card-section']}>
+        <Card ref={cardRef} className={classes.editable} withBorder>
+            <Card.Section bg={lineDetail.colour} className={classes['card-section']}>
                 <Text span style={{ color: fgColour }}>
                     {translateName(Object.fromEntries(lineDetail.nameEntity))}
                 </Text>
@@ -119,7 +120,7 @@ export default function EditablePaletteCard({
                         title={t('Remove')}
                         onClick={onRemove}
                     >
-                        <MdDelete />
+                        <MdDeleteOutline />
                     </ActionIcon>
                 </Group>
             </Card.Section>
@@ -136,7 +137,7 @@ export default function EditablePaletteCard({
                                 lineDetail.id?.match(/[^a-z0-9]/) ? t('Line code should be alphanumeric') : undefined
                             }
                         />
-                        <ColorInput
+                        <CompatibleColourInput
                             label={t('Background colour')}
                             value={lineDetail.colour}
                             onChange={value => onUpdate?.({ colour: value as ColourHex })}

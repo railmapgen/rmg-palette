@@ -1,9 +1,10 @@
+import classes from './country-section.module.css';
 import MultiLangEntryCard from './multi-lang-entry-card';
 import {
     removeCountryName,
     setCountry,
     setNewCountry,
-    setNewCountryLang,
+    setNewCountryLangs,
     switchCountryNameLang,
     updateCountryName,
 } from '../../redux/ticket/ticket-slice';
@@ -11,17 +12,28 @@ import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import useTranslatedName from '../hooks/use-translated-name';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
-import { Group, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
+import { Group, MultiSelect, NativeSelect, Stack, TextInput, Title } from '@mantine/core';
 import { RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
+import { useEffect } from 'react';
 
 export default function CountrySection() {
     const { t, i18n } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     const dispatch = useRootDispatch();
 
     const { countryList } = useRootSelector(state => state.app);
-    const { country, newCountry, countryName, newCountryLang } = useRootSelector(state => state.ticket);
+    const { country, newCountry, countryName, newCountryLangs } = useRootSelector(state => state.ticket);
+
+    useEffect(() => {
+        if (country && country !== 'new') {
+            const config = countryList.find(c => c.id === country);
+            if (config) {
+                dispatch(setNewCountry(country));
+                dispatch(setNewCountryLangs(config.languages));
+            }
+        }
+    }, [country]);
 
     const countryOptions = [
         { value: '', label: t('Please select...'), disabled: true },
@@ -46,36 +58,33 @@ export default function CountrySection() {
             </RMSectionHeader>
 
             <Stack py={4} gap="xs">
-                <Group align="flex-start" grow>
+                <Group className={classes.row}>
                     <NativeSelect
                         label={t('Country/Region')}
                         value={country}
                         onChange={({ currentTarget: { value } }) => dispatch(setCountry(value))}
                         data={countryOptions}
                     />
-                    {country === 'new' && (
-                        <TextInput
-                            label={t('Country/region code')}
-                            placeholder="e.g. CN, HK, JP (ISO 3166-1 alpha-2)"
-                            value={newCountry}
-                            onChange={({ currentTarget: { value } }) => dispatch(setNewCountry(value))}
-                            error={
-                                newCountry && !newCountry.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)
-                                    ? t('Country code should be in the format of ISO 3166-1 alpha-2')
-                                    : undefined
-                            }
-                        />
-                    )}
-                    {country === 'new' && (
-                        <NativeSelect
-                            label={t('Official language')}
-                            value={newCountryLang}
-                            onChange={({ currentTarget: { value } }) =>
-                                dispatch(setNewCountryLang(value ? (value as LanguageCode) : undefined))
-                            }
-                            data={languageOptions}
-                        />
-                    )}
+                    <TextInput
+                        label={t('Country/region code')}
+                        placeholder="e.g. CN, HK, JP (ISO 3166-1 alpha-2)"
+                        value={newCountry}
+                        onChange={({ currentTarget: { value } }) => dispatch(setNewCountry(value))}
+                        error={
+                            newCountry && !newCountry.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)
+                                ? t('Country code should be in the format of ISO 3166-1 alpha-2')
+                                : undefined
+                        }
+                        disabled={country !== 'new'}
+                    />
+                    <MultiSelect
+                        label={t('Official language')}
+                        value={newCountryLangs}
+                        onChange={value => dispatch(setNewCountryLangs(value as LanguageCode[]))}
+                        data={languageOptions}
+                        searchable
+                        disabled={country !== 'new'}
+                    />
                 </Group>
 
                 {country === 'new' && (

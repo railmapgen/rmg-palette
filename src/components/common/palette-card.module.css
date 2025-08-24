@@ -1,17 +1,34 @@
+.card, .editable {
+    padding: var(--mantine-spacing-sm);
+    box-shadow: var(--mantine-shadow-sm);
+}
+
 .card-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: var(--mantine-spacing-sm);
 }
 
-.card-section span {
+:not(.editable) > .card-section {
+    flex-direction: column;
+}
+
+.card-section span:first-of-type {
     font-size: 16px;
     font-weight: bold;
     line-height: 20px;
     text-align: center;
 }
 
-.editable .card-section span {
+.card-section span:nth-of-type(2) {
+    font-size: var(--mantine-font-size-sm);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+
+.editable .card-section span:first-of-type {
     text-align: start;
 }
 

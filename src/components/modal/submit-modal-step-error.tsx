@@ -16,7 +16,7 @@ export default function SubmitModalStepError(props: SubmitModalStepErrorProps) {
     const { countryErrors, cityErrors, lineErrors, onIgnore, onClose } = props;
 
     const { t } = useTranslation();
-    const translateName = useTranslatedName();
+    const { translateName } = useTranslatedName();
 
     return (
         <>

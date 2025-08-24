@@ -6,28 +6,34 @@
         "url": "https://github.com/railmapgen/rmg-palette.git",
         "directory": "package"
     },
-    "version": "2.2.5",
+    "version": "3.0.1",
     "description": "",
-    "main": "./index.js",
     "scripts": {
-        "build": "node --loader ts-node/esm builder/prebuild.mts && npx tsc --project tsconfig.build.json",
+        "build": "node --loader ts-node/esm builder/prebuild.mts && unbuild",
         "test": "vitest",
         "issuebot": "node --loader ts-node/esm issuebot/issuebot.mts"
     },
     "author": "",
     "license": "GPL-3.0",
+    "dependencies": {
+        "@railmapgen/rmg-translate": "^3.4.3"
+    },
     "devDependencies": {
         "@types/jsdom": "^21.1.7",
-        "jsdom": "^26.0.0",
+        "jsdom": "^26.1.0",
         "ts-node": "^10.9.2",
-        "typescript": "^5.7.3",
-        "vitest": "^3.0.5"
+        "typescript": "^5.9.2",
+        "unbuild": "^3.6.1",
+        "vitest": "^3.2.4"
     },
+    "main": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
     "exports": {
-        ".": "./index.js",
-        "./": "./"
+        ".": {
+            "import": "./dist/index.mjs"
+        }
     },
-    "dependencies": {
-        "@railmapgen/rmg-translate": "^3.2.3"
-    }
+    "files": [
+        "dist"
+    ]
 }

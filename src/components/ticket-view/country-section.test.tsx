@@ -11,13 +11,13 @@ describe('CountrySection', () => {
 
         const countrySelect = screen.getByRole('combobox', { name: 'Country/Region' });
         expect(countrySelect).toHaveDisplayValue('Please select...');
-        expect(screen.queryAllByRole('textbox')).toHaveLength(0);
+        expect(screen.getAllByRole('textbox')).toHaveLength(2);
 
         await user.selectOptions(countrySelect, 'Add a country/region...');
 
         // custom country code and multi-language name input exists
         expect(screen.getByRole('textbox', { name: 'Country/region code' })).toBeInTheDocument();
-        expect(screen.getAllByRole('combobox', { name: 'Language' }).length).toBeGreaterThan(0);
+        expect(screen.getAllByRole('textbox', { name: 'Language' }).length).toBeGreaterThan(0);
         expect(screen.getAllByRole('textbox', { name: 'Name' }).length).toBeGreaterThan(0);
     });
 });
