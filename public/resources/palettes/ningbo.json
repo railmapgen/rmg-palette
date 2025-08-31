@@ -1,7 +1,7 @@
 [
     {
         "id": "nb1",
-        "colour": "#1590ca",
+        "colour": "#148fcb",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "nb2",
-        "colour": "#d60e19",
+        "colour": "#d90b18",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "nb3",
-        "colour": "#f39800",
+        "colour": "#ecb01c",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "nb4",
-        "colour": "#abcd03",
+        "colour": "#71a427",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "nb5",
-        "colour": "#1d2088",
+        "colour": "#0c2091",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -61,7 +61,7 @@
     },
     {
         "id": "nb7",
-        "colour": "#7c572d",
+        "colour": "#855723",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "nb8",
-        "colour": "#d33a94",
+        "colour": "#cd146b",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
