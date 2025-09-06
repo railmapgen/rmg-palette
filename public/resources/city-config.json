@@ -498,6 +498,14 @@
         }
     },
     {
+        "id": "edmonton",
+        "country": "CA",
+        "name": {
+            "en": "Edmonton",
+            "fr": "Edmonton"
+        }
+    },
+    {
         "id": "eskisehir",
         "country": "TR",
         "name": {
