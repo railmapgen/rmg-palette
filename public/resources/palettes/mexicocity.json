@@ -99,6 +99,17 @@
         }
     },
     {
+        "id": "l12",
+        "colour": "#b49c4e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線",
+            "es": "Línea 12"
+        }
+    },
+    {
         "id": "la",
         "colour": "#8f248e",
         "fg": "#fff",
@@ -132,14 +143,14 @@
         }
     },
     {
-        "id": "l12",
-        "colour": "#b49c4e",
+        "id": "tb",
+        "colour": "#0057B8",
         "fg": "#fff",
         "name": {
-            "en": "Line 12",
-            "zh-Hans": "12号线",
-            "zh-Hant": "12號線",
-            "es": "Línea 12"
+            "en": "Trolleybus",
+            "zh-Hans": "无轨电车",
+            "zh-Hant": "無軌電車",
+            "es": "Trolebús"
         }
     }
 ]
