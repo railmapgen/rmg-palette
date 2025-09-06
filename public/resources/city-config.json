@@ -125,6 +125,13 @@
         }
     },
     {
+        "id": "bham",
+        "country": "GBENG",
+        "name": {
+            "en": "Birmingham"
+        }
+    },
+    {
         "id": "bne",
         "country": "AU",
         "name": {
@@ -259,6 +266,15 @@
             "en": "Changchun",
             "zh-Hans": "长春",
             "zh-Hant": "長春"
+        }
+    },
+    {
+        "id": "changhua",
+        "country": "TW",
+        "name": {
+            "en": "Changhua",
+            "zh-Hans": "彰化",
+            "zh-Hant": "彰化"
         }
     },
     {
@@ -402,6 +418,14 @@
             "en": "Dalian",
             "zh-Hans": "大连",
             "zh-Hant": "大連"
+        }
+    },
+    {
+        "id": "dallas",
+        "country": "US",
+        "name": {
+            "en": "Dallas",
+            "es": "Dallas"
         }
     },
     {
@@ -1071,7 +1095,10 @@
         "id": "manila",
         "country": "PH",
         "name": {
-            "en": "Manila"
+            "en": "Manila",
+            "fil": "Maynila",
+            "zh-Hans": "马尼拉",
+            "zh-Hant": "馬尼拉"
         }
     },
     {
@@ -1201,6 +1228,16 @@
             "zh-Hans": "那格浦尔",
             "zh-Hant": "那格浦爾",
             "hi": "नागपुर"
+        }
+    },
+    {
+        "id": "naha",
+        "country": "JP",
+        "name": {
+            "en": "Naha",
+            "zh-Hans": "那霸",
+            "zh-Hant": "那霸",
+            "ja": "那覇"
         }
     },
     {
@@ -1597,6 +1634,15 @@
         }
     },
     {
+        "id": "seattle",
+        "country": "US",
+        "name": {
+            "en": "Seattle",
+            "zh-Hans": "西雅图",
+            "zh-Hant": "西雅圖"
+        }
+    },
+    {
         "id": "sendai",
         "country": "JP",
         "name": {
@@ -1741,6 +1787,15 @@
             "en": "Taichung",
             "zh-Hans": "台中",
             "zh-Hant": "台中"
+        }
+    },
+    {
+        "id": "tainan",
+        "country": "TW",
+        "name": {
+            "en": "Tainan",
+            "zh-Hans": "台南",
+            "zh-Hant": "台南"
         }
     },
     {
