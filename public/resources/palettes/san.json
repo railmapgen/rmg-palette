@@ -1,0 +1,101 @@
+[
+    {
+        "id": "blu",
+        "colour": "#005cb9",
+        "fg": "#fff",
+        "name": {
+            "en": "UC San Diego Blue Line",
+            "zh-Hans": "藍線",
+            "zh-Hant": "藍線",
+            "ar": "Línea Azul"
+        }
+    },
+    {
+        "id": "grn",
+        "colour": "#04aa4f",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線",
+            "es": "Línea Verde"
+        }
+    },
+    {
+        "id": "org",
+        "colour": "#f6821e",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙線",
+            "zh-Hant": "橙線",
+            "es": "Línea Naranja"
+        }
+    },
+    {
+        "id": "cop",
+        "colour": "#b06433",
+        "fg": "#fff",
+        "name": {
+            "en": "Copper Line",
+            "zh-Hans": "铜线",
+            "zh-Hant": "銅線",
+            "es": "Línea Cobre"
+        }
+    },
+    {
+        "id": "sil",
+        "colour": "#949599",
+        "fg": "#fff",
+        "name": {
+            "en": "Silver Line",
+            "zh-Hans": "银线",
+            "zh-Hant": "銀線",
+            "es": "Línea Plata"
+        }
+    },
+    {
+        "id": "spe",
+        "colour": "#f63319",
+        "fg": "#fff",
+        "name": {
+            "en": "Special Event Line",
+            "zh-Hans": "特别活动专线",
+            "zh-Hant": "特別活動專線",
+            "ar": "Línea de Eventos Especiales"
+        }
+    },
+    {
+        "id": "pur",
+        "colour": "#d3b6e9",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "紫线",
+            "zh-Hant": "紫線",
+            "es": "Línea Púrpura"
+        }
+    },
+    {
+        "id": "coaster",
+        "colour": "#008c99",
+        "fg": "#fff",
+        "name": {
+            "en": "COASTER",
+            "zh-Hans": "海岸號",
+            "zh-Hant": "海岸號",
+            "es": "COASTER"
+        }
+    },
+    {
+        "id": "sprinter",
+        "colour": "#1c3f94",
+        "fg": "#fff",
+        "name": {
+            "en": "SPRINTER",
+            "zh-Hans": "疾速号",
+            "zh-Hant": "疾速號",
+            "es": "SPRINTER"
+        }
+    }
+]

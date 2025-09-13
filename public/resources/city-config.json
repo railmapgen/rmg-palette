@@ -1585,6 +1585,15 @@
         }
     },
     {
+        "id": "san",
+        "country": "US",
+        "name": {
+            "en": "San Diego",
+            "zh-Hans": "聖地牙哥",
+            "zh-Hant": "圣迭戈"
+        }
+    },
+    {
         "id": "sanfrancisco",
         "country": "US",
         "name": {
