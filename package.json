@@ -56,5 +56,5 @@
         "postinstall": "cd ./package && npm i",
         "preview": "vite preview"
     },
-    "version": "1.0.33"
+    "version": "1.0.34"
 }
