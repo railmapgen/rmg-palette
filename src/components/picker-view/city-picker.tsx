@@ -4,6 +4,7 @@ import { useRootSelector } from '../../redux';
 import useTranslatedName from '../hooks/use-translated-name';
 import { ComboboxItem, OptionsFilter, Select, SelectProps } from '@mantine/core';
 import { CountryEntry } from '../../../package/src';
+import classes from './city-picker.module.css';
 
 interface CityPickerProps {
     defaultValueId?: string;
@@ -30,7 +31,7 @@ export default function CityPicker(props: CityPickerProps) {
             country && (
                 <div>
                     <div>{translateName(city.name)}</div>
-                    <div style={{ color: '#666', fontSize: '0.875rem' }}>{translateName(country.name)}</div>
+                    <div className={classes.countryName}>{translateName(country.name)}</div>
                 </div>
             )
         );
