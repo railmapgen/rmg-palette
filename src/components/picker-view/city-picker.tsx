@@ -1,9 +1,7 @@
 import { CityEntry } from '@railmapgen/rmg-palette-resources';
 import { useTranslation } from 'react-i18next';
-import { getFlagEmoji } from './emoji-util';
 import { useRootSelector } from '../../redux';
 import useTranslatedName from '../hooks/use-translated-name';
-import { censorFlag } from '../../util/censor-utils';
 import { ComboboxItem, OptionsFilter, Select, SelectProps } from '@mantine/core';
 import { CountryEntry } from '../../../package/src';
 
@@ -26,12 +24,14 @@ export default function CityPicker(props: CityPickerProps) {
 
     const renderOption: SelectProps['renderOption'] = ({ option }) => {
         const city = cityMap[option.value];
+        const country = city ? countryMap[city.country] : null;
         return (
-            city && (
-                <>
-                    <span className="flag-emoji">{getFlagEmoji(censorFlag(city.country))}</span>
-                    <span>{translateName(city.name)}</span>
-                </>
+            city &&
+            country && (
+                <div>
+                    <div>{translateName(city.name)}</div>
+                    <div style={{ color: '#666', fontSize: '0.875rem' }}>{translateName(country.name)}</div>
+                </div>
             )
         );
     };

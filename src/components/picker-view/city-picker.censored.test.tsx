@@ -30,14 +30,18 @@ const mockStore = createTestStore({
 describe('CityPicker Censored', () => {
     const user = userEvent.setup();
 
-    it('Can censor Taiwan flag emojis as expected', async () => {
+    it('Shows uncensored country names as expected', async () => {
         render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 
-        expect(screen.getAllByText('🇨🇳').length).toBeGreaterThan(0);
+        // Verify that no flag emojis are shown
+        expect(screen.queryAllByText('🇨🇳')).toHaveLength(0);
         expect(screen.queryByText('🇹🇼')).not.toBeInTheDocument();
+
+        // Verify that Taiwan country name is NOT censored to China anymore
         expect(screen.getByText('Taipei')).toBeInTheDocument();
+        expect(screen.getAllByText('Taiwan, China').length).toBeGreaterThan(0); // This should show the censored name from the country list
         // const menuItems = await screen.findAllByRole('option');
         // expect(menuItems.find(el => el.textContent?.includes('🇨🇳Taipei'))).toBeDefined();
         // expect(menuItems.find(el => el.textContent?.includes('🇹🇼Taipei'))).toBeUndefined();
