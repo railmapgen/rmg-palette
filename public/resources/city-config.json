@@ -929,6 +929,16 @@
         }
     },
     {
+        "id": "kyushu",
+        "country": "JP",
+        "name": {
+            "en": "Kyushu Area",
+            "ja": "九州地方",
+            "zh-Hans": "九州地方",
+            "zh-Hant": "九州地方"
+        }
+    },
+    {
         "id": "lahore",
         "country": "PK",
         "name": {
