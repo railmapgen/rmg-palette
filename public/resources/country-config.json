@@ -435,6 +435,15 @@
         ]
     },
     {
+        "id": "ML",
+        "name": {
+            "en": "Meowland"
+        },
+        "languages": [
+            "en"
+        ]
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",
@@ -541,7 +550,8 @@
             "zh-Hant": "菲律賓"
         },
         "languages": [
-            "fil", "en"
+            "fil",
+            "en"
         ]
     },
     {
