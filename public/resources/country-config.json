@@ -145,9 +145,9 @@
     {
         "id": "CN",
         "name": {
-            "en": "China",
-            "zh-Hans": "中国",
-            "zh-Hant": "中國"
+            "en": "China mainland",
+            "zh-Hans": "中国大陆",
+            "zh-Hant": "中國大陸"
         },
         "languages": [
             "zh-Hans"
