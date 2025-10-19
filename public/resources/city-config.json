@@ -125,6 +125,13 @@
         }
     },
     {
+        "id": "bham",
+        "country": "GBENG",
+        "name": {
+            "en": "Birmingham"
+        }
+    },
+    {
         "id": "bne",
         "country": "AU",
         "name": {
@@ -259,6 +266,15 @@
             "en": "Changchun",
             "zh-Hans": "长春",
             "zh-Hant": "長春"
+        }
+    },
+    {
+        "id": "changhua",
+        "country": "TW",
+        "name": {
+            "en": "Changhua",
+            "zh-Hans": "彰化",
+            "zh-Hant": "彰化"
         }
     },
     {
@@ -479,6 +495,14 @@
             "ga": "Dùn Èideann",
             "zh-Hans": "爱丁堡",
             "zh-Hant": "愛丁堡"
+        }
+    },
+    {
+        "id": "edmonton",
+        "country": "CA",
+        "name": {
+            "en": "Edmonton",
+            "fr": "Edmonton"
         }
     },
     {
@@ -1071,7 +1095,10 @@
         "id": "manila",
         "country": "PH",
         "name": {
-            "en": "Manila"
+            "en": "Manila",
+            "fil": "Maynila",
+            "zh-Hans": "马尼拉",
+            "zh-Hant": "馬尼拉"
         }
     },
     {
@@ -1760,6 +1787,15 @@
             "en": "Taichung",
             "zh-Hans": "台中",
             "zh-Hant": "台中"
+        }
+    },
+    {
+        "id": "tainan",
+        "country": "TW",
+        "name": {
+            "en": "Tainan",
+            "zh-Hans": "台南",
+            "zh-Hant": "台南"
         }
     },
     {

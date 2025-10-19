@@ -145,9 +145,9 @@
     {
         "id": "CN",
         "name": {
-            "en": "China",
-            "zh-Hans": "中国",
-            "zh-Hant": "中國"
+            "en": "China mainland",
+            "zh-Hans": "中国大陆",
+            "zh-Hant": "中國大陸"
         },
         "languages": [
             "zh-Hans"
@@ -535,10 +535,13 @@
     {
         "id": "PH",
         "name": {
-            "en": "Philippines"
+            "en": "Philippines",
+            "fil": "Pilipinas",
+            "zh-Hans": "菲律宾",
+            "zh-Hant": "菲律賓"
         },
         "languages": [
-            "en"
+            "fil", "en"
         ]
     },
     {
@@ -728,7 +731,7 @@
             "en": "Uzbekistan",
             "uz": "O'zbekiston",
             "zh-Hans": "乌兹别克斯坦",
-            "zh-Hant": "烏茲別克斯坦"
+            "zh-Hant": "烏茲別克"
         },
         "languages": [
             "uz"
@@ -740,7 +743,7 @@
             "en": "Venezuela",
             "es": "Venezuela",
             "zh-Hans": "委内瑞拉",
-            "zh-Hant": "委内瑞拉"
+            "zh-Hant": "委內瑞拉"
         },
         "languages": [
             "es"
