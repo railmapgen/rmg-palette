@@ -1735,6 +1735,15 @@
         }
     },
     {
+        "id": "stepford",
+        "country": "GBENG",
+        "name": {
+            "en": "Stepford",
+            "zh-Hans": "Stepford/斯黛浦福德",
+            "zh-Hant": "Stepford/斯黛浦福德"
+        }
+    },
+    {
         "id": "stlouis",
         "country": "US",
         "name": {
