@@ -154,7 +154,7 @@
         }
     },
     {
-        "id": "arex",
+        "id": "a",
         "colour": "#0090d2",
         "fg": "#fff",
         "name": {
@@ -165,7 +165,7 @@
         }
     },
     {
-        "id": "seo",
+        "id": "s",
         "colour": "#8fc31f",
         "fg": "#fff",
         "name": {
@@ -187,7 +187,7 @@
         }
     },
     {
-        "id": "shin",
+        "id": "d",
         "colour": "#d4003b",
         "fg": "#fff",
         "name": {
@@ -195,6 +195,28 @@
             "ko": "신분당선",
             "zh-Hans": "新盆唐线",
             "zh-Hant": "新盆唐線"
+        }
+    },
+    {
+        "id": "sa",
+        "colour": "#F04938",
+        "fg": "#fff",
+        "name": {
+            "en": "Sinansan Line",
+            "ko": "신안산선",
+            "zh-Hans": "新安山线",
+            "zh-Hant": "新安山線"
+        }
+    },
+    {
+        "id": "di",
+        "colour": "#4D8A7D",
+        "fg": "#fff",
+        "name": {
+            "en": "Dongtan-Indeogwon Line",
+            "ko": "동탄인덕원선",
+            "zh-Hans": "东滩仁德院线",
+            "zh-Hant": "東灘仁德院線"
         }
     },
     {
@@ -231,7 +253,29 @@
         }
     },
     {
-        "id": "ye",
+        "id": "n",
+        "colour": "#941e34",
+        "fg": "#fff",
+        "name": {
+            "en": "Dongbuk Line",
+            "ko": "동북선",
+            "zh-Hans": "东北线",
+            "zh-Hant": "東北線"
+        }
+    },
+    {
+        "id": "w",
+        "colour": "#787878",
+        "fg": "#fff",
+        "name": {
+            "en": "Wirye Line",
+            "ko": "위례선",
+            "zh-Hans": "尉礼线",
+            "zh-Hant": "慰禮線"
+        }
+    },
+    {
+        "id": "y",
         "colour": "#56ab2d",
         "fg": "#fff",
         "name": {
@@ -242,7 +286,7 @@
         }
     },
     {
-        "id": "ul",
+        "id": "u",
         "colour": "#fd8100",
         "fg": "#fff",
         "name": {
@@ -250,17 +294,6 @@
             "ko": "의정부경전철",
             "zh-Hans": "议政府轻电铁",
             "zh-Hant": "議政府輕電鐵"
-        }
-    },
-    {
-        "id": "im",
-        "colour": "#ffcd12",
-        "fg": "#000",
-        "name": {
-            "en": "Incheon Airport Maglev",
-            "ko": "인천공항자기부상철도",
-            "zh-Hans": "仁川机场磁悬浮线",
-            "zh-Hant": "仁川空港磁氣浮上鐵道"
         }
     },
     {
@@ -294,6 +327,28 @@
             "zh-Hans": "GTX-C",
             "zh-Hant": "首都圈廣域急行鐵道C路線",
             "ko": "수도권광역급행철도C노선"
+        }
+    },
+    {
+        "id": "gtxd",
+        "colour": "#cb2182",
+        "fg": "#fff",
+        "name": {
+            "en": "GTX Line D",
+            "zh-Hans": "GTX-D",
+            "zh-Hant": "首都圈廣域急行鐵道D路線",
+            "ko": "수도권광역급행철도D노선"
+        }
+    },
+    {
+        "id": "im",
+        "colour": "#ffcd12",
+        "fg": "#000",
+        "name": {
+            "en": "Incheon Airport Maglev",
+            "ko": "인천공항자기부상철도",
+            "zh-Hans": "仁川机场磁悬浮线",
+            "zh-Hant": "仁川空港磁氣浮上鐵道"
         }
     }
 ]
