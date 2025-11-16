@@ -21,11 +21,11 @@ describe('ColourPicker', () => {
         setup();
 
         await user.click(screen.getByRole('textbox'));
-        expect(screen.getByRole('option', { name: 'Line 1' })).toHaveStyle({
+        expect(screen.getByText('Line 1').closest('.mantine-Badge-root')).toHaveStyle({
             background: '#F3D03E',
             color: '#000000',
         });
-        expect(screen.getByRole('option', { name: 'Line 2' })).toHaveStyle({
+        expect(screen.getByText('Line 2').closest('.mantine-Badge-root')).toHaveStyle({
             background: '#00629B',
             color: '#FFFFFF',
         });
