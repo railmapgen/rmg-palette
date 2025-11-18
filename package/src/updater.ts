@@ -1,8 +1,8 @@
 import { MonoColour, Theme } from './types';
-import { cachedFetch, getPalette } from './cached-fetch';
+import { cachedFetchBinary, getPalette } from './cached-fetch';
 
 const getHistory = async (): Promise<Record<string, number>> => {
-    return await cachedFetch(`/rmg-palette/resources/history.json`);
+    return await cachedFetchBinary(`/rmg-palette/resources/history.msgpack`);
 };
 
 export const isUpdateRequired = async (cityId: string, since: number): Promise<boolean> => {

@@ -12,6 +12,7 @@ coverage/
 build/
 dist/
 public/resources/history.json
+*.msgpack
 
 # misc
 .DS_Store
