@@ -1,4 +1,4 @@
-import { CityEntry, CountryEntry, PaletteEntry } from './types';
+import type { CityEntry, CountryEntry, PaletteEntry } from './types';
 import { decode } from '@msgpack/msgpack';
 
 let RESPONSE_CACHE: Record<string, any> = {};
@@ -39,5 +39,5 @@ export const getCityList = async (signal?: AbortSignal): Promise<CityEntry[]> =>
 };
 
 export const getCountryList = async (signal?: AbortSignal): Promise<CountryEntry[]> => {
-    return await cachedFetch(`/rmg-palette/resources/country-config.json`, { signal });
+    return await cachedFetchBinary(`/rmg-palette/resources/country-config.msgpack`, { signal });
 };

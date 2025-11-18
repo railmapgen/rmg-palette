@@ -3,7 +3,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { readFile, writeFile } from 'fs/promises';
-import type { CityEntry } from '../src';
+import type { CityEntry, CountryEntry } from '../src';
 import { execSync } from 'child_process';
 import { encode } from '@msgpack/msgpack';
 
@@ -11,12 +11,18 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const sourcePath = path.join(__dirname, '../../public/resources');
 
-const generateUpdateHistory = async () => {
-    // read and encode source file
+const run = async () => {
+    // read and encode city config
     const cityConfigStr = await readFile(path.join(sourcePath, 'city-config.json'), 'utf-8');
     const cityConfig: CityEntry[] = JSON.parse(cityConfigStr);
     await writeFile(path.join(sourcePath, 'city-config.msgpack'), encode(cityConfig));
 
+    // read and encode country config
+    const countryConfigStr = await readFile(path.join(sourcePath, 'country-config.json'), 'utf-8');
+    const countryConfig: CountryEntry[] = JSON.parse(countryConfigStr);
+    await writeFile(path.join(sourcePath, 'country-config.msgpack'), encode(countryConfig));
+
+    // generate history
     const history = cityConfig.reduce<Record<string, number>>((acc, cur) => {
         console.log(`generateUpdateHistory(), getting last update time of ${cur.id}`);
         const lastCommitted = Number(
@@ -32,4 +38,4 @@ const generateUpdateHistory = async () => {
     await writeFile(path.join(sourcePath, 'history.msgpack'), encode(history));
 };
 
-generateUpdateHistory().then();
+run().then();
