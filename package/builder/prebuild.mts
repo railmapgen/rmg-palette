@@ -17,7 +17,14 @@ const run = async () => {
     const cityConfig: CityEntry[] = JSON.parse(cityConfigStr);
     await writeFile(
         path.join(sourcePath, 'city-config.msgpack'),
-        encode(cityConfig.map(city => [city.id, city.country, city.name]))
+        encode(
+            cityConfig.map(({ id, country, name: { en, 'zh-Hans': chs, 'zh-Hant': cht, ...otherNames } }) => [
+                id,
+                country,
+                [en, chs, cht],
+                otherNames,
+            ])
+        )
     );
 
     // read and encode country config
