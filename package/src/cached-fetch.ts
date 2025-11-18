@@ -35,7 +35,12 @@ export const getPalette = async (cityId: string, signal?: AbortSignal): Promise<
 };
 
 export const getCityList = async (signal?: AbortSignal): Promise<CityEntry[]> => {
-    return await cachedFetchBinary(`/rmg-palette/resources/city-config.msgpack`, { signal });
+    const data = await cachedFetchBinary(`/rmg-palette/resources/city-config.msgpack`, { signal });
+    return data.map(([id, country, name]: [CityEntry['id'], CityEntry['name'], CityEntry['country']]) => ({
+        id,
+        country,
+        name,
+    }));
 };
 
 export const getCountryList = async (signal?: AbortSignal): Promise<CountryEntry[]> => {
