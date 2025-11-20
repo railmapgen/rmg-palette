@@ -1,0 +1,110 @@
+[
+    {
+        "id": "m1",
+        "colour": "#e91e63",
+        "fg": "#fff",
+        "name": {
+            "en": "Subway line M1",
+            "fr": "Métro ligne M1"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#e91e63",
+        "fg": "#fff",
+        "name": {
+            "en": "Subway line M1",
+            "fr": "Métro ligne M1"
+        }
+    },
+    {
+        "id": "s1",
+        "colour": "#ffbb00",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R1",
+            "fr": "Ligne RER R1"
+        }
+    },
+    {
+        "id": "s2",
+        "colour": "#eb0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R2",
+            "fr": "Ligne RER R2"
+        }
+    },
+    {
+        "id": "s3",
+        "colour": "#1c377a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R3",
+            "fr": "Ligne RER R3"
+        }
+    },
+    {
+        "id": "s4",
+        "colour": "#00b0f0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R4",
+            "fr": "Ligne RER R4"
+        }
+    },
+    {
+        "id": "s5",
+        "colour": "#176326",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R5",
+            "fr": "Ligne RER R5"
+        }
+    },
+    {
+        "id": "s6",
+        "colour": "#00af50",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R6",
+            "fr": "Ligne RER R6"
+        }
+    },
+    {
+        "id": "s7",
+        "colour": "#ffc800",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R7",
+            "fr": "Ligne RER R7"
+        }
+    },
+    {
+        "id": "s8",
+        "colour": "#8270ae",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R8",
+            "zh-Hant": "Ligne RER R8"
+        }
+    },
+    {
+        "id": "s9",
+        "colour": "#c7387a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line RER R9",
+            "fr": "Line RER R9"
+        }
+    },
+    {
+        "id": "s20",
+        "colour": "#639e4c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line LEB R20",
+            "fr": "Ligne LEB R20"
+        }
+    }
+]
