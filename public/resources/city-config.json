@@ -9,6 +9,15 @@
         }
     },
     {
+        "id": "algiers",
+        "country": "DZ",
+        "name": {
+            "en": "Algiers",
+            "ar": "الجزائر العاصمة",
+            "fr": "Alger"
+        }
+    },
+    {
         "id": "almaty",
         "country": "KZ",
         "name": {
