@@ -178,6 +178,19 @@
         ]
     },
     {
+        "id": "DZ",
+        "name": {
+            "en": "Algeria",
+            "ar": "الجزائر",
+            "fr": "Algérie"
+        },
+        "languages": [
+            "ar",
+            "fr",
+            "en"
+        ]
+    },
+    {
         "id": "EG",
         "name": {
             "en": "Egypt",
@@ -541,7 +554,8 @@
             "zh-Hant": "菲律賓"
         },
         "languages": [
-            "fil", "en"
+            "fil",
+            "en"
         ]
     },
     {
