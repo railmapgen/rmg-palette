@@ -1929,6 +1929,14 @@
         }
     },
     {
+        "id": "valparaiso",
+        "country": "CL",
+        "name": {
+            "es": "Valparaíso",
+            "en": "Valparaíso"
+        }
+    },
+    {
         "id": "vancouver",
         "country": "CA",
         "name": {
