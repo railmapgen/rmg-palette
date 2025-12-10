@@ -1,1 +1,0 @@
-import{m as o}from"./react-CtSoIzA_.js";function u(){const{i18n:a}=o(),t=e=>a.languages.map(n=>e[n]).find(n=>n!==void 0)??e.en??"(Translation Error)";return{translateName:t,otherOfficialNames:(e,n)=>{const i=t(e);return n?.filter(r=>r!==a.language).map(r=>e[r]).filter(r=>!!r&&i!==r).reduce((r,s)=>r.includes(s)?r:[...r,s],[]).join("/")??""}}}export{u};
