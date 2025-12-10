@@ -20,10 +20,10 @@
     },
     "devDependencies": {
         "@types/jsdom": "^27.0.0",
-        "jsdom": "^27.2.0",
+        "jsdom": "^27.3.0",
         "typescript": "^5.9.3",
         "unbuild": "^3.6.1",
-        "vitest": "^4.0.9"
+        "vitest": "^4.0.15"
     },
     "main": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
