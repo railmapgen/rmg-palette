@@ -348,5 +348,15 @@
             "zh-Hans": "九广轻铁",
             "zh-Hant": "九廣輕鐵"
         }
+    },
+    {
+        "id": "lr751p",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Light Rail Route 751P",
+            "zh-Hans": "轻铁751P线",
+            "zh-Hant": "輕鐵751P綫"
+        }
     }
 ]
