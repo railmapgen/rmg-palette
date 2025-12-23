@@ -1,38 +1,102 @@
 [
     {
         "id": "jn1",
+        "colour": "#BE1FA1",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#BE1FA1"
+        }
     },
     {
         "id": "jn2",
+        "colour": "#FFB620",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#FFB620"
+        }
     },
     {
         "id": "jn3",
+        "colour": "#0073CE",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#0073CE"
+        }
     },
     {
         "id": "jn4",
+        "colour": "#229719",
+        "fg": "#fff",
         "name": {
             "en": "Line 4",
             "zh-Hans": "4号线",
             "zh-Hant": "4號線"
-        },
-        "colour": "#229719"
+        }
+    },
+    {
+        "id": "jn6",
+        "colour": "#2abaee",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "jn7",
+        "colour": "#f02c30",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "jn8",
+        "colour": "#5e3791",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "jn9",
+        "colour": "#f4a42b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
+        "id": "jnjy",
+        "colour": "#5dc5bf",
+        "fg": "#fff",
+        "name": {
+            "en": "JIYANG Line",
+            "zh-Hans": "济阳线",
+            "zh-Hant": "濟陽線"
+        }
+    },
+    {
+        "id": "jns1",
+        "colour": "#0094dd",
+        "fg": "#fff",
+        "name": {
+            "en": "SkyShuttle Line 1",
+            "zh-Hans": "云巴1号线",
+            "zh-Hant": "雲巴1號線"
+        }
     }
 ]
