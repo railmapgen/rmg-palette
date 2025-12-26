@@ -170,6 +170,16 @@
         }
     },
     {
+        "id": "bj18",
+        "colour": "#8B72D4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號線"
+        }
+    },
+    {
         "id": "bj19",
         "colour": "#d6abc1",
         "fg": "#000",
