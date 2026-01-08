@@ -535,6 +535,14 @@
         }
     },
     {
+        "id": "freiburg",
+        "country": "DE",
+        "name": {
+            "en": "Freiburg",
+            "de": "Freiburg"
+        }
+    },
+    {
         "id": "fukuoka",
         "country": "JP",
         "name": {
