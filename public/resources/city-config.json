@@ -1634,6 +1634,13 @@
         }
     },
     {
+        "id": "scr",
+        "country": "SC",
+        "name": {
+            "en": ""
+        }
+    },
+    {
         "id": "seattle",
         "country": "US",
         "name": {
