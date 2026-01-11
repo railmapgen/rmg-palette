@@ -541,7 +541,8 @@
             "zh-Hant": "菲律賓"
         },
         "languages": [
-            "fil", "en"
+            "fil",
+            "en"
         ]
     },
     {
@@ -626,6 +627,15 @@
         },
         "languages": [
             "ar"
+        ]
+    },
+    {
+        "id": "SC",
+        "name": {
+            "en": "Stepford County"
+        },
+        "languages": [
+            "en"
         ]
     },
     {
