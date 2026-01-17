@@ -1763,6 +1763,16 @@
         }
     },
     {
+        "id": "stuttgart",
+        "country": "DE",
+        "name": {
+            "en": "Stuttgart",
+            "de": "Stuttgart",
+            "zh-Hant": "斯圖加特",
+            "zh-Hans": "斯图加特"
+        }
+    },
+    {
         "id": "suzhou",
         "country": "CN",
         "name": {
