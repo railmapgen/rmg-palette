@@ -959,6 +959,16 @@
         }
     },
     {
+        "id": "lausanne",
+        "country": "CH",
+        "name": {
+            "fr": "Lausanne",
+            "de": "Lausanne",
+            "it": "Losanna",
+            "rm": "Losanna"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
