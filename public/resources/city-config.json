@@ -1478,6 +1478,15 @@
         }
     },
     {
+        "id": "porto",
+        "country": "PT",
+        "name": {
+            "en": "Porto",
+            "zh-Hans": "波尔图",
+            "pt": "Porto"
+        }
+    },
+    {
         "id": "poznan",
         "country": "PL",
         "name": {
