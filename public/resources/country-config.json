@@ -581,6 +581,17 @@
         ]
     },
     {
+        "id": "PX",
+        "name": {
+            "en": "Peixin",
+            "zh-Hans": "培新"
+        },
+        "languages": [
+            "zh-Hans",
+            "en"
+        ]
+    },
+    {
         "id": "QA",
         "name": {
             "en": "Qatar",
