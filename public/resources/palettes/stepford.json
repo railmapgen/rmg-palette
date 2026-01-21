@@ -1,0 +1,250 @@
+[
+    {
+        "id": "",
+        "colour": "#69b7d3",
+        "fg": "#fff",
+        "name": {
+            "en": "Whitefield Connect"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#4c6981",
+        "fg": "#fff",
+        "name": {
+            "en": "Morganstown Connect"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#009fe0",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Connect"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#7ba5cd",
+        "fg": "#fff",
+        "name": {
+            "en": "Leighton Connect"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#145d97",
+        "fg": "#fff",
+        "name": {
+            "en": "Regional One"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#243769",
+        "fg": "#fff",
+        "name": {
+            "en": "Regional Two"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#80adc2",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford UFC Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#384656",
+        "fg": "#fff",
+        "name": {
+            "en": "Benton Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#e62a2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Barton Loop"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#f46161",
+        "fg": "#fff",
+        "name": {
+            "en": "Morgastown Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#af2733",
+        "fg": "#fff",
+        "name": {
+            "en": "Willowfield Shuttle"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#4d5e68",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#828fa9",
+        "fg": "#fff",
+        "name": {
+            "en": "Esterfield Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#28485f",
+        "fg": "#fff",
+        "name": {
+            "en": "Waterline North"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#47607c",
+        "fg": "#fff",
+        "name": {
+            "en": "Waterline South"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#0d4a52",
+        "fg": "#fff",
+        "name": {
+            "en": "Morgastown Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#9ca2a7",
+        "fg": "#fff",
+        "name": {
+            "en": "Suburban Line"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#e6a072",
+        "fg": "#fff",
+        "name": {
+            "en": "Speed Link"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#dc7c14",
+        "fg": "#fff",
+        "name": {
+            "en": "Terminal Loop Link"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#b3b2b3",
+        "fg": "#fff",
+        "name": {
+            "en": "Terminal 1&2 Link"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#7c7f7c",
+        "fg": "#fff",
+        "name": {
+            "en": "Terminal 3&3 Link"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#7c7f7c",
+        "fg": "#fff",
+        "name": {
+            "en": "Leighton Link"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#e17b14",
+        "fg": "#fff",
+        "name": {
+            "en": "Airlink Shuttle"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#9992a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Newry Shuttle"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#a2a3cd",
+        "fg": "#fff",
+        "name": {
+            "en": "Newry Express"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#fda4bd",
+        "fg": "#fff",
+        "name": {
+            "en": "Leighton Express"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#ff0082",
+        "fg": "#fff",
+        "name": {
+            "en": "Llyn via Benton"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#c2bace",
+        "fg": "#fff",
+        "name": {
+            "en": "Benton Express"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#64668e",
+        "fg": "#fff",
+        "name": {
+            "en": "Llyn via Morgastown"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#36335f",
+        "fg": "#fff",
+        "name": {
+            "en": "Westwyvern Express"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#36335f",
+        "fg": "#fff",
+        "name": {
+            "en": "Rayleigh Bay Express"
+        }
+    }
+]
