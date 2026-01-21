@@ -1,13 +1,24 @@
 [
     {
+        "id": "shinkansen",
+        "colour": "#233f97",
+        "fg": "#fff",
+        "name": {
+            "en": "Tōkaidō, San-yō Shinkansen",
+            "ja": "東海道・山陽新幹線",
+            "zh-Hans": "东海道・山阳新干线",
+            "zh-Hant": "東海道・山陽新幹線"
+        }
+    },
+    {
         "id": "a",
         "colour": "#007ac2",
         "fg": "#fff",
         "name": {
-            "en": "Hokuriku Line/Biwako Line/JR Kyōto Line/JR Kōbe Line (Tōkaidō Line)/San-yō Line/Akō Line (A)",
-            "ja": "北陸線・琵琶湖線・ＪＲ京都線・ＪＲ神戸線（東海道線）・・山陽線・赤穂線",
-            "zh-Hans": "北陆线/琵琶湖线/JR京都线/JR神户线/山阳线/赤穗线",
-            "zh-Hant": "北陸線/琵琶湖線/JR京都線/JR神戶線/山陽線/赤穗線"
+            "en": "Hokuriku Main Line/Biwako Line/JR Kyōto Line/JR Kōbe Line/San'yō Main Line/Akō Line (A)",
+            "ja": "北陸線・琵琶湖線・JR京都線・JR神戸線（東海道本線）・山陽線・赤穂線",
+            "zh-Hans": "北陆线・琵琶湖线・JR京都线・JR神户线・山阳线・赤穗线",
+            "zh-Hant": "北陸線・琵琶湖線・JR京都線・JR神戶線・山陽線・赤穗線"
         }
     },
     {
@@ -48,10 +59,10 @@
         "colour": "#7585c1",
         "fg": "#fff",
         "name": {
-            "en": "Sagano Line/San-in Line (E)",
+            "en": "Sagano Line/San'in Main Line (E)",
             "ja": "嵯峨野線・山陰線",
-            "zh-Hans": "嵯峨野线/山阴线",
-            "zh-Hant": "嵯峨野線/山陰線"
+            "zh-Hans": "嵯峨野线・山阴线",
+            "zh-Hant": "嵯峨野線・山陰線"
         }
     },
     {
@@ -59,7 +70,7 @@
         "colour": "#447694",
         "fg": "#fff",
         "name": {
-            "en": "Ōsaka Higashi Line (F)",
+            "en": "Osaka Higashi Line (F)",
             "ja": "おおさか東線",
             "zh-Hans": "大阪东线",
             "zh-Hant": "大阪東線"
@@ -71,9 +82,9 @@
         "fg": "#000",
         "name": {
             "en": "JR Takarazuka Line/Fukuchiyama Line (G)",
-            "ja": "ＪＲ宝塚線・福知山線",
-            "zh-Hans": "JR宝冢线/福知山线",
-            "zh-Hant": "JR寶塚線/福知山線"
+            "ja": "JR宝塚線・福知山線",
+            "zh-Hans": "JR宝冢线・福知山线",
+            "zh-Hant": "JR寶塚線・福知山線"
         }
     },
     {
@@ -82,9 +93,9 @@
         "fg": "#fff",
         "name": {
             "en": "JR Tōzai Line/Gakkentoshi Line (Katamachi Line) (H)",
-            "ja": "ＪＲ東西線・学研都市線（片町線）",
-            "zh-Hans": "JR东西线/学研都市线",
-            "zh-Hant": "JR東西線/學研都市線"
+            "ja": "JR東西線・学研都市線（片町線）",
+            "zh-Hans": "JR东西线・学研都市线",
+            "zh-Hant": "JR東西線・學研都市線"
         }
     },
     {
@@ -148,7 +159,7 @@
         "fg": "#fff",
         "name": {
             "en": "JR Yumesaki Line (Sakurajima Line) (P)",
-            "ja": "ＪＲゆめ咲線（桜島線）",
+            "ja": "JRゆめ咲線（桜島線）",
             "zh-Hans": "JR梦咲线",
             "zh-Hant": "JR夢咲線"
         }
@@ -228,17 +239,6 @@
             "ja": "きのくに線（紀勢線）",
             "zh-Hans": "纪国线",
             "zh-Hant": "紀國線"
-        }
-    },
-    {
-        "id": "shinkansen",
-        "colour": "#233f97",
-        "fg": "#fff",
-        "name": {
-            "en": "Tōkaidō, San-yō Shinkansen",
-            "ja": "東海道・山陽新幹線",
-            "zh-Hans": "东海道 · 山阳新干线",
-            "zh-Hant": "東海道 · 山陽新幹"
         }
     }
 ]
