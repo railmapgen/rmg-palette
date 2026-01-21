@@ -170,6 +170,16 @@
         }
     },
     {
+        "id": "wh34",
+        "colour": "#EA9847",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 34",
+            "zh-Hans": "34号线",
+            "zh-Hant": "34號線"
+        }
+    },
+    {
         "id": "whggkg",
         "colour": "#05aff1",
         "fg": "#fff",
