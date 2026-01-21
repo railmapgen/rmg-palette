@@ -1,5 +1,12 @@
 [
     {
+        "id": "",
+        "country": "NO",
+        "name": {
+            "en": "Trolberg"
+        }
+    },
+    {
         "id": "adelaide",
         "country": "AU",
         "name": {
