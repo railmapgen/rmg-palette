@@ -6,7 +6,8 @@
         "name": {
             "en": "M1",
             "zh-Hans": "地铁1号线",
-            "zh-Hant": "地鐵1號線"
+            "zh-Hant": "地鐵1號線",
+            "da": "Linje M1"
         }
     },
     {
@@ -16,7 +17,8 @@
         "name": {
             "en": "M2",
             "zh-Hans": "地铁2号线",
-            "zh-Hant": "地鐵2號線"
+            "zh-Hant": "地鐵2號線",
+            "da": "Linje M2"
         }
     },
     {
@@ -24,9 +26,10 @@
         "colour": "#ee1d23",
         "fg": "#fff",
         "name": {
-            "en": "M3/Cityringen",
-            "zh-Hans": "地铁3号线/环状线",
-            "zh-Hant": "地鐵3號線/環狀線"
+            "en": "M3",
+            "zh-Hans": "地铁3号线",
+            "zh-Hant": "地鐵3號線",
+            "da": "Linje M3"
         }
     },
     {
@@ -36,7 +39,8 @@
         "name": {
             "en": "M4",
             "zh-Hans": "地铁4号线",
-            "zh-Hant": "地鐵4號線"
+            "zh-Hant": "地鐵4號線",
+            "da": "Linje M4"
         }
     },
     {
@@ -46,7 +50,8 @@
         "name": {
             "en": "S-train Line A",
             "zh-Hans": "通勤铁路A线",
-            "zh-Hant": "通勤鐵路A線"
+            "zh-Hant": "通勤鐵路A線",
+            "da": "Linje A"
         }
     },
     {
@@ -56,7 +61,8 @@
         "name": {
             "en": "S-train Line B",
             "zh-Hans": "通勤铁路B线",
-            "zh-Hant": "通勤鐵路B線"
+            "zh-Hant": "通勤鐵路B線",
+            "da": "Linje B"
         }
     },
     {
@@ -66,7 +72,8 @@
         "name": {
             "en": "S-train Line Bx",
             "zh-Hans": "通勤铁路Bx线",
-            "zh-Hant": "通勤鐵路Bx線"
+            "zh-Hant": "通勤鐵路Bx線",
+            "da": "Linje Bx"
         }
     },
     {
@@ -76,7 +83,8 @@
         "name": {
             "en": "S-train Line C",
             "zh-Hans": "通勤铁路C线",
-            "zh-Hant": "通勤鐵路C線"
+            "zh-Hant": "通勤鐵路C線",
+            "da": "Linje C"
         }
     },
     {
@@ -86,7 +94,8 @@
         "name": {
             "en": "S-train Line E",
             "zh-Hans": "通勤铁路E线",
-            "zh-Hant": "通勤鐵路E線"
+            "zh-Hant": "通勤鐵路E線",
+            "da": "Linje E"
         }
     },
     {
@@ -96,17 +105,19 @@
         "name": {
             "en": "S-train Line F",
             "zh-Hans": "通勤铁路F线",
-            "zh-Hant": "通勤鐵路F線"
+            "zh-Hant": "通勤鐵路F線",
+            "da": "Linje F"
         }
     },
     {
         "id": "khh",
-        "colour": "#e74011",
+        "colour": "#e73e11",
         "fg": "#fff",
         "name": {
             "en": "S-train Line H",
             "zh-Hans": "通勤铁路H线",
-            "zh-Hant": "通勤鐵路H線"
+            "zh-Hant": "通勤鐵路H線",
+            "da": "Linje H"
         }
     }
 ]
