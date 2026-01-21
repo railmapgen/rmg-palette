@@ -100,6 +100,26 @@
         }
     },
     {
+        "id": "hz12",
+        "colour": "#008c95",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12 号线",
+            "zh-Hant": "12 號線"
+        }
+    },
+    {
+        "id": "hz15",
+        "colour": "#F67599",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15 号线",
+            "zh-Hant": "15 號線"
+        }
+    },
+    {
         "id": "hz16",
         "colour": "#ffaa52",
         "fg": "#fff",
@@ -107,6 +127,16 @@
             "en": "Line 16",
             "zh-Hans": "16号线",
             "zh-Hant": "16號線"
+        }
+    },
+    {
+        "id": "hz18",
+        "colour": "#97d700",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18 号线",
+            "zh-Hant": "18 號線"
         }
     },
     {
@@ -127,6 +157,16 @@
             "en": "Hangzhou-Haining Intercity Rail",
             "zh-Hans": "杭海城际",
             "zh-Hant": "杭海城際"
+        }
+    },
+    {
+        "id": "hangzhoudeqingintercityrail",
+        "colour": "#AA8A00",
+        "fg": "#fff",
+        "name": {
+            "en": "Hangzhou-Deqing Intercity Rail",
+            "zh-Hans": "杭德城际",
+            "zh-Hant": "杭德城際"
         }
     }
 ]
