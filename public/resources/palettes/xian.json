@@ -3,6 +3,7 @@
         "id": "xa1",
         "colour": "#0077C8",
         "fg": "#fff",
+        "pantone": "3005 C",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
@@ -42,7 +43,7 @@
     {
         "id": "xa5",
         "colour": "#A6E35F",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
@@ -60,9 +61,20 @@
         }
     },
     {
+        "id": "xa7",
+        "colour": "#934054",
+        "fg": "#fff",
+        "pantone": "7640 C",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
         "id": "xa8",
         "colour": "#E6B10E",
-        "fg": "#fff",
+        "fg": "#000",
         "pantone": "7405 U",
         "name": {
             "en": "Line 8",
@@ -83,11 +95,33 @@
     {
         "id": "xa10",
         "colour": "#00a353",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 10",
             "zh-Hans": "10号线",
             "zh-Hant": "10號線"
+        }
+    },
+    {
+        "id": "xa11",
+        "colour": "#D57800",
+        "fg": "#fff",
+        "pantone": "1385 C",
+        "name": {
+            "en": "Line 11",
+            "zh-Hans": "11号线",
+            "zh-Hant": "11號線"
+        }
+    },
+    {
+        "id": "xa12",
+        "colour": "#343839",
+        "fg": "#fff",
+        "pantone": "1385 C",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
         }
     },
     {
@@ -101,6 +135,17 @@
         }
     },
     {
+        "id": "xa15",
+        "colour": "#E06287",
+        "fg": "#fff",
+        "pantone": "7423 C",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號線"
+        }
+    },
+    {
         "id": "xa16",
         "colour": "#ee805f",
         "fg": "#fff",
@@ -108,6 +153,28 @@
             "en": "Line 16",
             "zh-Hans": "16号线",
             "zh-Hant": "16號線"
+        }
+    },
+    {
+        "id": "xa17",
+        "colour": "#4D5F80",
+        "fg": "#fff",
+        "pantone": "2374 C",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "富平（阎良）至咸阳机场铁路/17号线",
+            "zh-Hant": "17號線"
+        }
+    },
+    {
+        "id": "xa21",
+        "colour": "#5c745e",
+        "fg": "#fff",
+        "pantone": "1385 C",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號線"
         }
     },
     {
@@ -128,6 +195,16 @@
             "en": "Xixian ART Line 1",
             "zh-Hans": "西咸智轨1号线",
             "zh-Hant": "西咸智軌1號線"
+        }
+    },
+    {
+        "id": "xayb",
+        "colour": "#019ed5",
+        "fg": "#fff",
+        "name": {
+            "en": "Xi'an SkyShuttle",
+            "zh-Hans": "西安云巴",
+            "zh-Hant": "西安雲巴"
         }
     }
 ]
