@@ -959,6 +959,13 @@
         }
     },
     {
+        "id": "lausanne",
+        "country": "CH",
+        "name": {
+            "en": "Lausanne"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
