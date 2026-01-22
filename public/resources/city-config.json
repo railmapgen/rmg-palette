@@ -959,6 +959,16 @@
         }
     },
     {
+        "id": "lapazelalto",
+        "country": "BO",
+        "name": {
+            "en": "La Paz-El Alto",
+            "es": "La Paz-El Alto",
+            "zh-Hans": "拉巴斯-埃爾阿爾托",
+            "zh-Hant": "拉巴斯-埃爾阿爾托"
+        }
+    },
+    {
         "id": "liege",
         "country": "BE",
         "name": {
