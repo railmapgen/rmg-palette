@@ -68,6 +68,15 @@
         }
     },
     {
+        "id": "baltimore",
+        "country": "US",
+        "name": {
+            "en": "Baltimore",
+            "zh-Hans": "巴尔的摩",
+            "zh-Hant": "巴爾的摩"
+        }
+    },
+    {
         "id": "bangalore",
         "country": "IN",
         "name": {

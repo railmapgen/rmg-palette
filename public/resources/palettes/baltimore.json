@@ -1,0 +1,72 @@
+[
+    {
+        "id": "p",
+        "colour": "#c61f3f",
+        "fg": "#fff",
+        "name": {
+            "en": "MARC Penn Line",
+            "zh-Hans": "MARC宾夕法尼亚线",
+            "zh-Hant": "MARC Penn線"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#f0592a",
+        "fg": "#fff",
+        "name": {
+            "en": "MARC Camden Line",
+            "zh-Hans": "MARC卡姆登线",
+            "zh-Hant": "MARC卡姆登線"
+        }
+    },
+    {
+        "id": "b",
+        "colour": "#ecaa20",
+        "fg": "#fff",
+        "name": {
+            "en": "MARC Brunswick Line",
+            "zh-Hans": "MARC布伦瑞克线",
+            "zh-Hant": "MARC 布倫瑞克線"
+        }
+    },
+    {
+        "id": "m",
+        "colour": "#00a54f",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Subwaylink",
+            "zh-Hans": "地铁连接线",
+            "zh-Hant": "捷運"
+        }
+    },
+    {
+        "id": "l1",
+        "colour": "#00aeef",
+        "fg": "#fff",
+        "name": {
+            "en": "Light Rail - BWI Airport",
+            "zh-Hans": "轻轨 - BWI机场",
+            "zh-Hant": "輕軌 - 巴爾的摩/華盛頓國際機場"
+        }
+    },
+    {
+        "id": "l2",
+        "colour": "#ffde00",
+        "fg": "#000",
+        "name": {
+            "en": "Light Rail - Glen Burnie",
+            "zh-Hans": "轻轨 - 格伦伯尼",
+            "zh-Hant": "輕軌 - 格倫伯尼"
+        }
+    },
+    {
+        "id": "ls",
+        "colour": "#df1d42",
+        "fg": "#fff",
+        "name": {
+            "en": "Light Rail - Penn Station",
+            "zh-Hans": "轻轨 - 宾夕法尼亚车站",
+            "zh-Hant": "輕軌 - 賓州車站"
+        }
+    }
+]
