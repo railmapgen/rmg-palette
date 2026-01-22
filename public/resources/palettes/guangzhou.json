@@ -111,8 +111,9 @@
     },
     {
         "id": "gz11",
-        "colour": "#ffb00a",
-        "fg": "#000",
+        "colour": "#DEA900",
+        "fg": "#fff",
+        "pantone": "130 C",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
@@ -187,7 +188,7 @@
     },
     {
         "id": "gz18",
-        "colour": "#3040b6",
+        "colour": "#0047BA",
         "fg": "#fff",
         "name": {
             "en": "Line 18",
@@ -230,7 +231,7 @@
     },
     {
         "id": "gz22",
-        "colour": "#d24c1e",
+        "colour": "#CD5228",
         "fg": "#fff",
         "name": {
             "en": "Line 22",
@@ -272,7 +273,7 @@
     },
     {
         "id": "thz1",
-        "colour": "#61c013",
+        "colour": "#43B02A",
         "fg": "#fff",
         "name": {
             "en": "THZ1 (Haizhu Tram Line 1)",
@@ -282,7 +283,7 @@
     },
     {
         "id": "thp1",
-        "colour": "#c11b20",
+        "colour": "#D42D1B",
         "fg": "#fff",
         "name": {
             "en": "THP1 (Huangpu Tram Line 1)",
@@ -292,7 +293,7 @@
     },
     {
         "id": "thp2",
-        "colour": "#e50083",
+        "colour": "#e82583",
         "fg": "#fff",
         "name": {
             "en": "THP2 (Huangpu Tram Line 2)",
@@ -312,7 +313,7 @@
     },
     {
         "id": "gdcj",
-        "colour": "#255aa8",
+        "colour": "#2c569e",
         "fg": "#fff",
         "name": {
             "en": "Guangdong Intercity",
