@@ -60,6 +60,16 @@
         }
     },
     {
+        "id": "xa7",
+        "colour": "#934055",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號綫"
+        }
+    },
+    {
         "id": "xa8",
         "colour": "#E6B10E",
         "fg": "#fff",
@@ -91,13 +101,53 @@
         }
     },
     {
+        "id": "xa11",
+        "colour": "#ce7811",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 11",
+            "zh-Hans": "11号线",
+            "zh-Hant": "11號綫"
+        }
+    },
+    {
+        "id": "xa12",
+        "colour": "#343839",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號綫"
+        }
+    },
+    {
+        "id": "xa13",
+        "colour": "#967326",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號綫"
+        }
+    },
+    {
         "id": "xa14",
         "colour": "#00C1D4",
-        "fg": "#000",
+        "fg": "#fff",
         "name": {
             "en": "Airport Intercity Railway/Line 14",
             "zh-Hans": "机场城际/14号线",
             "zh-Hant": "機場城際/14號線"
+        }
+    },
+    {
+        "id": "xa15",
+        "colour": "#ff638c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號綫"
         }
     },
     {
@@ -108,6 +158,56 @@
             "en": "Line 16",
             "zh-Hans": "16号线",
             "zh-Hant": "16號線"
+        }
+    },
+    {
+        "id": "xa17",
+        "colour": "#485c7c",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號綫"
+        }
+    },
+    {
+        "id": "xa18",
+        "colour": "#7bbade",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 18",
+            "zh-Hans": "18号线",
+            "zh-Hant": "18號綫"
+        }
+    },
+    {
+        "id": "xz20",
+        "colour": "#005d6b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號綫"
+        }
+    },
+    {
+        "id": "xa21",
+        "colour": "#5c745e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 21",
+            "zh-Hans": "21号线",
+            "zh-Hant": "21號綫"
+        }
+    },
+    {
+        "id": "xa22",
+        "colour": "#eb97b1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 22",
+            "zh-Hans": "22号线",
+            "zh-Hant": "22號綫"
         }
     },
     {
