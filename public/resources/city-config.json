@@ -448,6 +448,15 @@
         }
     },
     {
+        "id": "denver",
+        "country": "US",
+        "name": {
+            "en": "Denver",
+            "zh-Hans": "丹佛",
+            "zh-Hant": "丹佛"
+        }
+    },
+    {
         "id": "doha",
         "country": "QA",
         "name": {
