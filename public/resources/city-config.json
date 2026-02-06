@@ -1140,6 +1140,15 @@
         }
     },
     {
+        "id": "miami",
+        "country": "US",
+        "name": {
+            "en": "Miami",
+            "zh-Hans": "迈阿密",
+            "zh-Hant": "邁阿密"
+        }
+    },
+    {
         "id": "milan",
         "country": "IT",
         "name": {
