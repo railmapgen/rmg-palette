@@ -1487,6 +1487,15 @@
         }
     },
     {
+        "id": "pittsburgh",
+        "country": "US",
+        "name": {
+            "en": "Pittsburgh",
+            "zh-Hans": "匹兹堡",
+            "zh-Hant": "匹茲堡"
+        }
+    },
+    {
         "id": "poznan",
         "country": "PL",
         "name": {
