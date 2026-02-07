@@ -448,6 +448,18 @@
         ]
     },
     {
+        "id": "MC",
+        "name": {
+            "fr": "Monaco",
+            "en": "Monaco",
+            "zh-Hans": "摩纳哥",
+            "zh-Hant": "摩納哥"
+        },
+        "languages": [
+            "fr"
+        ]
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",

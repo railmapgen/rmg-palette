@@ -1150,6 +1150,13 @@
         }
     },
     {
+        "id": "monaco",
+        "country": "MC",
+        "name": {
+            "fr": ""
+        }
+    },
+    {
         "id": "monterrey",
         "country": "MX",
         "name": {

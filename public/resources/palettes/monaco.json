@@ -1,0 +1,119 @@
+[
+    {
+        "id": "ligne1",
+        "colour": "#4c90cd",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne2",
+        "colour": "#f78f4b",
+        "fg": "#000",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne3",
+        "colour": "#bb4a9b",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne4",
+        "colour": "#008c5a",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne5",
+        "colour": "#8d6539",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne5b",
+        "colour": "#cec92a",
+        "fg": "#000",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne6",
+        "colour": "#00b397",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne6b",
+        "colour": "#b80b4b",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne7",
+        "colour": "#ffcd02",
+        "fg": "#000",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne8",
+        "colour": "#87d3df",
+        "fg": "#000",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne9",
+        "colour": "#77c696",
+        "fg": "#000",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne10",
+        "colour": "#662c91",
+        "fg": "#fff",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    },
+    {
+        "id": "ligne11",
+        "colour": "#e0b03b",
+        "fg": "#000",
+        "name": {
+            "fr": "",
+            "en": ""
+        }
+    }
+]
