@@ -21,7 +21,7 @@
     },
     {
         "id": "bj3",
-        "colour": "#ce093d",
+        "colour": "#e60033",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "bj4",
-        "colour": "#008e9c",
+        "colour": "#008C95",
         "fg": "#fff",
         "name": {
             "en": "Line 4/Daxing Line",
@@ -41,7 +41,7 @@
     },
     {
         "id": "bj5",
-        "colour": "#a6217f",
+        "colour": "#AA0061",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "bj6",
-        "colour": "#d29700",
+        "colour": "#B58500",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "bj7",
-        "colour": "#f6c582",
+        "colour": "#FEC76D",
         "fg": "#000",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "bj8",
-        "colour": "#009b6b",
+        "colour": "#169A6B",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -81,7 +81,7 @@
     },
     {
         "id": "bj9",
-        "colour": "#8fc31f",
+        "colour": "#8FC31F",
         "fg": "#000",
         "name": {
             "en": "Line 9",
@@ -91,7 +91,7 @@
     },
     {
         "id": "bj10",
-        "colour": "#009bc0",
+        "colour": "#0084B5",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -101,7 +101,7 @@
     },
     {
         "id": "bj11",
-        "colour": "#ed796b",
+        "colour": "#F79782",
         "fg": "#fff",
         "name": {
             "en": "Line 11",
@@ -111,7 +111,7 @@
     },
     {
         "id": "bj12",
-        "colour": "#bd6f16",
+        "colour": "#64B5E6",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
@@ -121,7 +121,7 @@
     },
     {
         "id": "bj13",
-        "colour": "#f9e700",
+        "colour": "#F8E533",
         "fg": "#000",
         "name": {
             "en": "Line 13",
@@ -131,7 +131,7 @@
     },
     {
         "id": "bj14",
-        "colour": "#d5a7a1",
+        "colour": "#E1B1A7",
         "fg": "#000",
         "name": {
             "en": "Line 14",
@@ -141,7 +141,7 @@
     },
     {
         "id": "bj15",
-        "colour": "#5b2c68",
+        "colour": "#80459F",
         "fg": "#fff",
         "name": {
             "en": "Line 15",
@@ -151,7 +151,7 @@
     },
     {
         "id": "bj16",
-        "colour": "#76a32e",
+        "colour": "#77A237",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
@@ -161,7 +161,7 @@
     },
     {
         "id": "bj17",
-        "colour": "#00a9a9",
+        "colour": "#01A9AA",
         "fg": "#fff",
         "name": {
             "en": "Line 17",
@@ -171,7 +171,7 @@
     },
     {
         "id": "bj18",
-        "colour": "#776cb1",
+        "colour": "#565294",
         "fg": "#fff",
         "name": {
             "en": "Line 18",
@@ -181,7 +181,7 @@
     },
     {
         "id": "bj19",
-        "colour": "#d6abc1",
+        "colour": "#CF9DC2",
         "fg": "#000",
         "name": {
             "en": "Line 19",
@@ -191,7 +191,7 @@
     },
     {
         "id": "bj22",
-        "colour": "#f4c1ca",
+        "colour": "#F4C1CA",
         "fg": "#000",
         "name": {
             "en": "Line 22 (Pinggu Line)",
@@ -221,7 +221,7 @@
     },
     {
         "id": "bj26s1",
-        "colour": "#b35a20",
+        "colour": "#945124",
         "fg": "#fff",
         "name": {
             "en": "Line S1",
@@ -231,7 +231,7 @@
     },
     {
         "id": "bj27cp",
-        "colour": "#de82b2",
+        "colour": "#d20082",
         "fg": "#000",
         "name": {
             "en": "Changping Line",
@@ -251,7 +251,7 @@
     },
     {
         "id": "btxj",
-        "colour": "#e50619",
+        "colour": "#D92121",
         "fg": "#fff",
         "name": {
             "en": "Xijiao Line",
@@ -261,7 +261,7 @@
     },
     {
         "id": "btt1",
-        "colour": "#e5061b",
+        "colour": "#e6081B",
         "fg": "#fff",
         "name": {
             "en": "Yizhuang T1 Line",
@@ -271,7 +271,7 @@
     },
     {
         "id": "bj34sj",
-        "colour": "#a29bbb",
+        "colour": "#a192B2",
         "fg": "#000",
         "name": {
             "en": "Capital Airport Express",
@@ -281,7 +281,7 @@
     },
     {
         "id": "bj35dj",
-        "colour": "#004a9f",
+        "colour": "#0049A5",
         "fg": "#fff",
         "name": {
             "en": "Daxing Airport Express",
