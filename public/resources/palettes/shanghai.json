@@ -31,7 +31,7 @@
     },
     {
         "id": "sh4",
-        "colour": "#461d84",
+        "colour": "#461D84",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -181,7 +181,7 @@
     },
     {
         "id": "sh19",
-        "colour": "#f5ab78",
+        "colour": "#F5AB78",
         "fg": "#000",
         "name": {
             "en": "Line 19",
@@ -191,7 +191,7 @@
     },
     {
         "id": "sh20",
-        "colour": "#009f65",
+        "colour": "#009F65",
         "fg": "#fff",
         "name": {
             "en": "Line 20",
@@ -201,7 +201,7 @@
     },
     {
         "id": "sh21",
-        "colour": "#f7af00",
+        "colour": "#F7AF00",
         "fg": "#000",
         "name": {
             "en": "Line 21",
@@ -211,7 +211,7 @@
     },
     {
         "id": "sh22",
-        "colour": "#5f376f",
+        "colour": "#5F376F",
         "fg": "#fff",
         "name": {
             "en": "Line 22",
@@ -221,7 +221,7 @@
     },
     {
         "id": "sh23",
-        "colour": "#b0d478",
+        "colour": "#B0D478",
         "fg": "#000",
         "name": {
             "en": "Line 23",
@@ -230,8 +230,28 @@
         }
     },
     {
+        "id": "sh24",
+        "colour": "#8F5824",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 24",
+            "zh-Hans": "24号线",
+            "zh-Hant": "24號線"
+        }
+    },
+    {
+        "id": "sh25",
+        "colour": "#81A380",
+        "fg": "#000",
+        "name": {
+            "en": "Line 25",
+            "zh-Hans": "25号线",
+            "zh-Hant": "25號線"
+        }
+    },
+    {
         "id": "sh26",
-        "colour": "#5f67a9",
+        "colour": "#0B318F",
         "fg": "#fff",
         "name": {
             "en": "Line 26",
@@ -241,8 +261,8 @@
     },
     {
         "id": "sh27",
-        "colour": "#43a5a0",
-        "fg": "#fff",
+        "colour": "#8C96C9",
+        "fg": "#000",
         "name": {
             "en": "Line 27",
             "zh-Hans": "27号线",
@@ -354,7 +374,7 @@
         "colour": "#724A57",
         "fg": "#fff",
         "name": {
-            "en": "Jiamin Line",
+            "en": "Jia-Min Line",
             "zh-Hans": "嘉闵线",
             "zh-Hant": "嘉閔線"
         }
@@ -364,9 +384,9 @@
         "colour": "#93ABBB",
         "fg": "#000",
         "name": {
-            "en": "Nanhui Branch Line",
-            "zh-Hans": "南汇支线",
-            "zh-Hant": "南匯支線"
+            "en": "Nanhui Line",
+            "zh-Hans": "南汇线",
+            "zh-Hant": "南匯線"
         }
     },
     {
@@ -374,7 +394,7 @@
         "colour": "#6FB16B",
         "fg": "#000",
         "name": {
-            "en": "Shifanqu Line",
+            "en": "Demostration Zone Line",
             "zh-Hans": "示范区线",
             "zh-Hant": "示範區線"
         }
