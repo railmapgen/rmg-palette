@@ -850,6 +850,16 @@
         }
     },
     {
+        "id": "jrtohokunagano",
+        "country": "JP",
+        "name": {
+            "en": "JR Lines of Tohoku And Nagano Area",
+            "zh-Hans": "JR东日本（东北/长野地区）",
+            "ja": "JR東日本（東北・長野地区）",
+            "zh-Hant": "JR東日本（東北/長野地區）"
+        }
+    },
+    {
         "id": "jrtokai",
         "country": "JP",
         "name": {

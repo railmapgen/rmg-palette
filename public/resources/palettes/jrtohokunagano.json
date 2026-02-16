@@ -1,0 +1,552 @@
+[
+    {
+        "id": "tohokushinkansen",
+        "colour": "#008001",
+        "fg": "#fff",
+        "name": {
+            "en": "Tohoku Shinkansen",
+            "zh-Hans": "东北新干线",
+            "ja": "東北新幹線",
+            "zh-Hant": "東北新幹線"
+        }
+    },
+    {
+        "id": "joetsushinkansen",
+        "colour": "#f68d78",
+        "fg": "#fff",
+        "name": {
+            "en": "Joetsu Shinkansen",
+            "zh-Hans": "上越新干线",
+            "ja": "上越新幹線",
+            "zh-Hant": "上越新幹線"
+        }
+    },
+    {
+        "id": "hokurikushinkansen",
+        "colour": "#6a3d98",
+        "fg": "#fff",
+        "name": {
+            "en": "Hokuriku Shinkansen",
+            "zh-Hans": "北陆新干线",
+            "ja": "北陸新幹線",
+            "zh-Hant": "北陸新幹線"
+        }
+    },
+    {
+        "id": "yamagatashinkansen",
+        "colour": "#f36221",
+        "fg": "#000",
+        "name": {
+            "en": "Yamagata Shinkansen",
+            "zh-Hans": "山形新干线",
+            "ja": "山形新幹線",
+            "zh-Hant": "山形新幹線"
+        }
+    },
+    {
+        "id": "akitashinkansen",
+        "colour": "#ed4399",
+        "fg": "#fff",
+        "name": {
+            "en": "Akita Shinkansen",
+            "zh-Hans": "秋田新干线",
+            "ja": "秋田新幹線",
+            "zh-Hant": "秋田新幹線"
+        }
+    },
+    {
+        "id": "hokkaidoshinkansen",
+        "colour": "#03c13d",
+        "fg": "#000",
+        "name": {
+            "en": "Hokkaido Shinkansen",
+            "zh-Hans": "北海道新干线",
+            "ja": "北海道新幹線",
+            "zh-Hant": "北海道新幹線"
+        }
+    },
+    {
+        "id": "tohoku",
+        "colour": "#3cb371",
+        "fg": "#fff",
+        "name": {
+            "en": "Tohoku Main Line",
+            "zh-Hans": "东北本线",
+            "ja": "東北本線",
+            "zh-Hant": "東北本線"
+        }
+    },
+    {
+        "id": "jj",
+        "colour": "#3233ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Joban Line",
+            "zh-Hans": "常磐线",
+            "ja": "常磐線",
+            "zh-Hant": "常磐線"
+        }
+    },
+    {
+        "id": "mito",
+        "colour": "#3233ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Mito Line",
+            "zh-Hans": "水户线",
+            "ja": "水戸線",
+            "zh-Hant": "水戶線"
+        }
+    },
+    {
+        "id": "nikko",
+        "colour": "#880122",
+        "fg": "#fff",
+        "name": {
+            "en": "Nikko Line",
+            "zh-Hans": "日光线",
+            "ja": "日光線",
+            "zh-Hant": "日光線"
+        }
+    },
+    {
+        "id": "karasuyama",
+        "colour": "#339967",
+        "fg": "#fff",
+        "name": {
+            "en": "Karasuyama Line",
+            "zh-Hans": "乌山线",
+            "ja": "烏山線",
+            "zh-Hant": "烏山線"
+        }
+    },
+    {
+        "id": "ryomo",
+        "colour": "#ffd401",
+        "fg": "#000",
+        "name": {
+            "en": "Ryomo Line",
+            "zh-Hans": "两毛线",
+            "ja": "両毛線",
+            "zh-Hant": "兩毛線"
+        }
+    },
+    {
+        "id": "joetsu",
+        "colour": "#00b3e6",
+        "fg": "#fff",
+        "name": {
+            "en": "Joetsu Line",
+            "zh-Hans": "上越线",
+            "ja": "上越線",
+            "zh-Hant": "上越線"
+        }
+    },
+    {
+        "id": "agatsuma",
+        "colour": "#0f5475",
+        "fg": "#fff",
+        "name": {
+            "en": "Agatsuma Line",
+            "zh-Hans": "吾妻线",
+            "ja": "吾妻線",
+            "zh-Hant": "吾妻線"
+        }
+    },
+    {
+        "id": "shinetsu",
+        "colour": "#9acd32",
+        "fg": "#000",
+        "name": {
+            "en": "Shinetsu Line (Takasaki to Yokokawa)",
+            "zh-Hans": "信越线（高崎至横川）",
+            "ja": "信越線（高崎～横川）",
+            "zh-Hant": "信越線（高崎至橫川）"
+        }
+    },
+    {
+        "id": "se",
+        "colour": "#00b1dd",
+        "fg": "#fff",
+        "name": {
+            "en": "Shinetsu Main Line (Shinonoi to Nagano)",
+            "zh-Hans": "信越本线（篠之井至长野）",
+            "ja": "信越本線（篠ノ井～長野）",
+            "zh-Hant": "信越本線（篠之井至長野）"
+        }
+    },
+    {
+        "id": "shinetsumain",
+        "colour": "#00b3e6",
+        "fg": "#fff",
+        "name": {
+            "en": "Shinetsu Main Line (Naoetsu to Niigata)",
+            "zh-Hans": "信越本线（直江津至新潟）",
+            "ja": "信越本線（直江津～新潟）",
+            "zh-Hant": "信越本線（直江津至新潟）"
+        }
+    },
+    {
+        "id": "co",
+        "colour": "#0074bf",
+        "fg": "#fff",
+        "name": {
+            "en": "Chuo Main Line",
+            "zh-Hans": "中央本线",
+            "ja": "中央本線",
+            "zh-Hant": "中央本線"
+        }
+    },
+    {
+        "id": "sn",
+        "colour": "#d66a29",
+        "fg": "#fff",
+        "name": {
+            "en": "Shinonoi Line",
+            "zh-Hans": "篠之井线",
+            "ja": "篠ノ井線",
+            "zh-Hant": "篠之井線"
+        }
+    },
+    {
+        "id": "oitoline",
+        "colour": "#a683a1",
+        "fg": "#fff",
+        "name": {
+            "en": "Oito Line",
+            "zh-Hans": "大糸线",
+            "ja": "大糸線",
+            "zh-Hant": "大糸線"
+        }
+    },
+    {
+        "id": "koumi",
+        "colour": "#41934b",
+        "fg": "#fff",
+        "name": {
+            "en": "Koumi Line",
+            "zh-Hans": "小海线",
+            "ja": "小海線",
+            "zh-Hant": "小海線"
+        }
+    },
+    {
+        "id": "iiyama",
+        "colour": "#7bc24a",
+        "fg": "#000",
+        "name": {
+            "en": "Iiyama Line",
+            "zh-Hans": "饭山线",
+            "ja": "飯山線",
+            "zh-Hant": "飯山線"
+        }
+    },
+    {
+        "id": "echigo",
+        "colour": "#40934d",
+        "fg": "#fff",
+        "name": {
+            "en": "Echigo Line",
+            "zh-Hans": "越后线",
+            "ja": "越後線",
+            "zh-Hant": "越後線"
+        }
+    },
+    {
+        "id": "yahiko",
+        "colour": "#92278f",
+        "fg": "#fff",
+        "name": {
+            "en": "Yahiko Line",
+            "zh-Hans": "弥彦线",
+            "ja": "弥彦線",
+            "zh-Hant": "彌彥線"
+        }
+    },
+    {
+        "id": "uetsu",
+        "colour": "#17c0e9",
+        "fg": "#fff",
+        "name": {
+            "en": "Uetsu Main Line",
+            "zh-Hans": "羽越本线",
+            "ja": "羽越本線",
+            "zh-Hant": "羽越本線"
+        }
+    },
+    {
+        "id": "hakushin",
+        "colour": "#f387b8",
+        "fg": "#000",
+        "name": {
+            "en": "Hakushin Line",
+            "zh-Hans": "白新线",
+            "ja": "白新線",
+            "zh-Hant": "白新線"
+        }
+    },
+    {
+        "id": "yonesaka",
+        "colour": "#9d7eb9",
+        "fg": "#fff",
+        "name": {
+            "en": "Yonesaka Line",
+            "zh-Hans": "米坂线",
+            "ja": "米坂線",
+            "zh-Hant": "米坂線"
+        }
+    },
+    {
+        "id": "banetsueast",
+        "colour": "#c71585",
+        "fg": "#fff",
+        "name": {
+            "en": "Banetsu East Line",
+            "zh-Hans": "磐越东线",
+            "ja": "磐越東線",
+            "zh-Hant": "磐越東線"
+        }
+    },
+    {
+        "id": "banetsuwest",
+        "colour": "#cb7b36",
+        "fg": "#000",
+        "name": {
+            "en": "Banetsu West Line",
+            "zh-Hans": "磐越西线",
+            "ja": "磐越西線",
+            "zh-Hant": "磐越西線"
+        }
+    },
+    {
+        "id": "tadami",
+        "colour": "#008dd2",
+        "fg": "#fff",
+        "name": {
+            "en": "Tadami Line",
+            "zh-Hans": "只见线",
+            "ja": "只見線",
+            "zh-Hant": "只見線"
+        }
+    },
+    {
+        "id": "ouyamagata",
+        "colour": "#ee7b28",
+        "fg": "#000",
+        "name": {
+            "en": "Ou Main Line (Yamagata Line)",
+            "zh-Hans": "奥羽本线（山形线）",
+            "ja": "奥羽本線（山形線含む）",
+            "zh-Hant": "奧羽本線（山形線）"
+        }
+    },
+    {
+        "id": "senseki",
+        "colour": "#00aaef",
+        "fg": "#fff",
+        "name": {
+            "en": "Senseki Line",
+            "zh-Hans": "仙石线",
+            "ja": "仙石線",
+            "zh-Hant": "仙石線"
+        }
+    },
+    {
+        "id": "senzan",
+        "colour": "#72bc49",
+        "fg": "#000",
+        "name": {
+            "en": "Senzan Line",
+            "zh-Hans": "仙山线",
+            "ja": "仙山線",
+            "zh-Hant": "仙山線"
+        }
+    },
+    {
+        "id": "aterazawa",
+        "colour": "#0073be",
+        "fg": "#fff",
+        "name": {
+            "en": "Aterazawa Line",
+            "zh-Hans": "左泽线",
+            "ja": "左沢線",
+            "zh-Hant": "左澤線"
+        }
+    },
+    {
+        "id": "ishinomaki",
+        "colour": "#ec77a4",
+        "fg": "#000",
+        "name": {
+            "en": "Ishinomaki Line",
+            "zh-Hans": "石卷线",
+            "ja": "石巻線",
+            "zh-Hant": "石卷線"
+        }
+    },
+    {
+        "id": "kesennuma",
+        "colour": "#3b459c",
+        "fg": "#fff",
+        "name": {
+            "en": "Kesennuma Line",
+            "zh-Hans": "气仙沼线",
+            "ja": "気仙沼線",
+            "zh-Hant": "氣仙沼線"
+        }
+    },
+    {
+        "id": "ofunato",
+        "colour": "#f18e43",
+        "fg": "#000",
+        "name": {
+            "en": "Ofunato Line",
+            "zh-Hans": "大船渡线",
+            "ja": "大船渡線",
+            "zh-Hant": "大船渡線"
+        }
+    },
+    {
+        "id": "brt",
+        "colour": "#e70012",
+        "fg": "#fff",
+        "name": {
+            "en": "Kesennuma Line/Ofunato Line BRT",
+            "zh-Hans": "气仙沼线・大船渡线BRT",
+            "ja": "気仙沼線・大船渡線BRT",
+            "zh-Hant": "氣仙沼線・大船渡線BRT"
+        }
+    },
+    {
+        "id": "rikuueast",
+        "colour": "#888888",
+        "fg": "#fff",
+        "name": {
+            "en": "Rikuu East Line",
+            "zh-Hans": "陆羽东线",
+            "ja": "陸羽東線",
+            "zh-Hant": "陸羽東線"
+        }
+    },
+    {
+        "id": "rikuuwest",
+        "colour": "#6fbf7e",
+        "fg": "#000",
+        "name": {
+            "en": "Rikuu West Line",
+            "zh-Hans": "陆羽西线",
+            "ja": "陸羽西線",
+            "zh-Hant": "陸羽西線"
+        }
+    },
+    {
+        "id": "kitakami",
+        "colour": "#841a72",
+        "fg": "#fff",
+        "name": {
+            "en": "Kitakami Line",
+            "zh-Hans": "北上线",
+            "ja": "北上線",
+            "zh-Hant": "北上線"
+        }
+    },
+    {
+        "id": "kamaishi",
+        "colour": "#0073be",
+        "fg": "#fff",
+        "name": {
+            "en": "Kamaishi Line",
+            "zh-Hans": "釜石线",
+            "ja": "釜石線",
+            "zh-Hant": "釜石線"
+        }
+    },
+    {
+        "id": "tazawako",
+        "colour": "#9c72b0",
+        "fg": "#000",
+        "name": {
+            "en": "Tazawako Line",
+            "zh-Hans": "田泽湖线",
+            "ja": "田沢湖線",
+            "zh-Hant": "田澤湖線"
+        }
+    },
+    {
+        "id": "yamada",
+        "colour": "#cd7a1e",
+        "fg": "#000",
+        "name": {
+            "en": "Yamada Line",
+            "zh-Hans": "山田线",
+            "ja": "山田線",
+            "zh-Hant": "山田線"
+        }
+    },
+    {
+        "id": "oga",
+        "colour": "#37823f",
+        "fg": "#fff",
+        "name": {
+            "en": "Oga Line",
+            "zh-Hans": "男鹿线",
+            "ja": "男鹿線",
+            "zh-Hant": "男鹿線"
+        }
+    },
+    {
+        "id": "gono",
+        "colour": "#0c7aad",
+        "fg": "#fff",
+        "name": {
+            "en": "Gono Line",
+            "zh-Hans": "五能线",
+            "ja": "五能線",
+            "zh-Hant": "五能線"
+        }
+    },
+    {
+        "id": "hanawa",
+        "colour": "#ab1e2f",
+        "fg": "#fff",
+        "name": {
+            "en": "Hanawa Line",
+            "zh-Hans": "花轮线",
+            "ja": "花輪線",
+            "zh-Hant": "花輪線"
+        }
+    },
+    {
+        "id": "hachinohe",
+        "colour": "#e93921",
+        "fg": "#fff",
+        "name": {
+            "en": "Hachinohe Line",
+            "zh-Hans": "八户线",
+            "ja": "八戸線",
+            "zh-Hant": "八戶線"
+        }
+    },
+    {
+        "id": "ominato",
+        "colour": "#f0aa28",
+        "fg": "#000",
+        "name": {
+            "en": "Ominato Line",
+            "zh-Hans": "大凑线",
+            "ja": "大湊線",
+            "zh-Hant": "大湊線"
+        }
+    },
+    {
+        "id": "tsugaru",
+        "colour": "#16a2c5",
+        "fg": "#fff",
+        "name": {
+            "en": "Tsugaru Line",
+            "zh-Hans": "津轻线",
+            "ja": "津軽線",
+            "zh-Hant": "津輕線"
+        }
+    }
+]
