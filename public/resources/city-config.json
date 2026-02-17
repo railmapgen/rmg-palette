@@ -860,6 +860,14 @@
         }
     },
     {
+        "id": "kanis",
+        "country": "AB",
+        "name": {
+            "en": "Kanis",
+            "ar": "كانيس"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
