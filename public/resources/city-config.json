@@ -260,6 +260,13 @@
         }
     },
     {
+        "id": "cardiff",
+        "country": "GBENG",
+        "name": {
+            "en": "Cardiff"
+        }
+    },
+    {
         "id": "cbr",
         "country": "AU",
         "name": {
