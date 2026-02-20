@@ -91,7 +91,7 @@
     },
     {
         "id": "wh10",
-        "colour": "#8C3626",
+        "colour": "#8272A9",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -160,13 +160,33 @@
         }
     },
     {
-        "id": "wh21",
+        "id": "wh20",
+        "colour": "#7FC2E5",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 20",
+            "zh-Hans": "20号线",
+            "zh-Hant": "20號線"
+        }
+    },
+    {
+        "id": "whYangluo",
         "colour": "#CF0192",
         "fg": "#fff",
         "name": {
-            "en": "Line 21",
-            "zh-Hans": "21号线",
-            "zh-Hant": "21號線"
+            "en": "Yangluo Line（Line 21）",
+            "zh-Hans": "阳逻线（21号线）",
+            "zh-Hant": "陽邏線（21號線）"
+        }
+    },
+    {
+        "id": "wh34",
+        "colour": "#F29742",
+        "fg": "#fff",
+        "name": {
+            "en": "Line YL",
+            "zh-Hans": “新港线（34号线）",
+            "zh-Hant": "新港線（34號線）"
         }
     },
     {
