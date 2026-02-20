@@ -1,0 +1,42 @@
+[
+    {
+        "id": "citl",
+        "colour": "#ed1d24",
+        "fg": "#fff",
+        "name": {
+            "en": "City Line - Lein Y Ddinas"
+        }
+    },
+    {
+        "id": "trel",
+        "colour": "#00a9b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Treherbert Line - Lein Treherbert"
+        }
+    },
+    {
+        "id": "rhyl",
+        "colour": "#782b90",
+        "fg": "#fff",
+        "name": {
+            "en": "Vale of Glamorgan Line - Lein Bro Morgannwg"
+        }
+    },
+    {
+        "id": "corl",
+        "colour": "#f47920",
+        "fg": "#fff",
+        "name": {
+            "en": "Coryton Line - Lein Coryton"
+        }
+    },
+    {
+        "id": "cabl",
+        "colour": "#00a955",
+        "fg": "#fff",
+        "name": {
+            "en": "Cardiff Bay Line - Lein Bae Caerdydd"
+        }
+    }
+]
