@@ -128,5 +128,15 @@
             "zh-Hans": "杭海城际",
             "zh-Hant": "杭海城際"
         }
+    },
+    {
+        "id": "hz12",
+        "colour": "#0095ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號線"
+        }
     }
 ]
