@@ -1,0 +1,72 @@
+[
+    {
+        "id": "orange",
+        "colour": "#f15921",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "zh-Hans": "橙线",
+            "zh-Hant": "橘子線"
+        }
+    },
+    {
+        "id": "green",
+        "colour": "#79c142",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "zh-Hans": "绿线",
+            "zh-Hant": "綠線"
+        }
+    },
+    {
+        "id": "mm",
+        "colour": "#eb7d35",
+        "fg": "#fff",
+        "name": {
+            "en": "Metromover",
+            "zh-Hans": "橡胶轮胎有轨电车",
+            "zh-Hant": "輕軌"
+        }
+    },
+    {
+        "id": "601",
+        "colour": "#3b77b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Express BRT",
+            "zh-Hans": "地铁快线BRT",
+            "zh-Hant": "捷運快線快速公車"
+        }
+    },
+    {
+        "id": "trirail",
+        "colour": "#00a78e",
+        "fg": "#fff",
+        "name": {
+            "en": "Tri-Rail",
+            "zh-Hans": "三县铁路",
+            "zh-Hant": "三縣鐵路"
+        }
+    },
+    {
+        "id": "b",
+        "colour": "#fada06",
+        "fg": "#000",
+        "name": {
+            "en": "Brightline",
+            "zh-Hans": "布莱特线",
+            "zh-Hant": "布萊特萊恩"
+        }
+    },
+    {
+        "id": "mia",
+        "colour": "#a9218e",
+        "fg": "#fff",
+        "name": {
+            "en": "MIA Mover",
+            "zh-Hans": "MIA穿梭列车",
+            "zh-Hant": "邁阿密國際機場接駁列車"
+        }
+    }
+]
