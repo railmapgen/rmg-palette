@@ -1,6 +1,6 @@
 [
     {
-        "id": "jnr01",
+        "id": "jn1",
         "colour": "#BE1FA1",
         "fg": "#fff",
         "name": {
@@ -10,7 +10,7 @@
         }
     },
     {
-        "id": "jnr02",
+        "id": "jn2",
         "colour": "#FFB620",
         "fg": "#fff",
         "name": {
@@ -20,7 +20,7 @@
         }
     },
     {
-        "id": "jnr03",
+        "id": "jn3",
         "colour": "#0073CE",
         "fg": "#fff",
         "name": {
@@ -30,7 +30,7 @@
         }
     },
     {
-        "id": "jnr04",
+        "id": "jn4",
         "colour": "#229719",
         "fg": "#fff",
         "name": {
@@ -40,8 +40,8 @@
         }
     },
     {
-        "id": "jnr06",
-        "colour": "#27BFF0",
+        "id": "jn6",
+        "colour": "#5AB7E9",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -50,33 +50,13 @@
         }
     },
     {
-        "id": "jnr08",
-        "colour": "#62449C",
+        "id": "jn8",
+        "colour": "#7647BF",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
             "zh-Hans": "8号线",
             "zh-Hant": "8號線"
-        }
-    },
-    {
-        "id": "jnt01",
-        "colour": "#5AC5BD",
-        "fg": "#fff",
-        "name": {
-            "en": "JIYANG Line",
-            "zh-Hans": "济阳线",
-            "zh-Hant": "濟陽線"
-        }
-    },
-    {
-        "id": "jny01",
-        "colour": "#277AA3",
-        "fg": "#fff",
-        "name": {
-            "en": "Sky Shuttle Line 1",
-            "zh-Hans": "云巴1号线",
-            "zh-Hant": "雲巴1號線"
         }
     }
 ]
