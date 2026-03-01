@@ -729,6 +729,15 @@
         }
     },
     {
+        "id": "harbourvale",
+        "country": "HB",
+        "name": {
+            "en": "Harbourvale",
+            "zh-Hans": "港湾",
+            "zh-Hant": "港灣"
+        }
+    },
+    {
         "id": "hefei",
         "country": "CN",
         "name": {

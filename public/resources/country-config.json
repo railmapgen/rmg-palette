@@ -290,6 +290,17 @@
         ]
     },
     {
+        "id": "HB",
+        "name": {
+            "en": "Harbourvale",
+            "zh-Hans": "港湾",
+            "zh-Hant": "港灣"
+        },
+        "languages": [
+            "en"
+        ]
+    },
+    {
         "id": "HK",
         "name": {
             "en": "Hong Kong",

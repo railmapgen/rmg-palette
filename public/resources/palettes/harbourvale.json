@@ -1,0 +1,82 @@
+[
+    {
+        "id": "hbl",
+        "colour": "#ffbb00",
+        "fg": "#000",
+        "name": {
+            "en": "Harbourvale Line",
+            "zh-Hans": "港湾线",
+            "zh-Hant": "港灣綫"
+        }
+    },
+    {
+        "id": "ael",
+        "colour": "#27279d",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Express Line",
+            "zh-Hans": "机场快线",
+            "zh-Hant": "機場快綫"
+        }
+    },
+    {
+        "id": "nwl",
+        "colour": "#009645",
+        "fg": "#fff",
+        "name": {
+            "en": "North West Line",
+            "zh-Hans": "西北线",
+            "zh-Hant": "西北綫"
+        }
+    },
+    {
+        "id": "bll",
+        "colour": "#ff2a2a",
+        "fg": "#fff",
+        "name": {
+            "en": "Blackton Line",
+            "zh-Hans": "布莱顿线",
+            "zh-Hant": "布萊頓綫"
+        }
+    },
+    {
+        "id": "ksl",
+        "colour": "#660099",
+        "fg": "#fff",
+        "name": {
+            "en": "Kegstone Line",
+            "zh-Hans": "克士线",
+            "zh-Hant": "克士綫"
+        }
+    },
+    {
+        "id": "efl",
+        "colour": "#ecb3b3",
+        "fg": "#000",
+        "name": {
+            "en": "Evergreen Fields Line",
+            "zh-Hans": "绿华园线",
+            "zh-Hant": "綠花園綫"
+        }
+    },
+    {
+        "id": "csl",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Coastal Sands Line",
+            "zh-Hant": "海沙綫",
+            "zh-Hans": "海沙线"
+        }
+    },
+    {
+        "id": "ctl",
+        "colour": "#660000",
+        "fg": "#fff",
+        "name": {
+            "en": "City Line",
+            "zh-Hans": "市区线",
+            "zh-Hant": "市區綫"
+        }
+    }
+]
