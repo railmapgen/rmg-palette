@@ -5,7 +5,7 @@ import { LANGUAGE_NAMES } from '@railmapgen/rmg-translate';
 const translationAssertion = (nameObj: any) => {
     expect(typeof nameObj).toBe('object');
     Object.entries(nameObj).forEach(([lang, name]) => {
-        expect(lang in LANGUAGE_NAMES).toBeTruthy();
+        expect(LANGUAGE_NAMES).toHaveProperty(lang);
         expect(typeof name).toBe('string');
     });
 };
@@ -53,9 +53,11 @@ describe('Sanity', () => {
         countryList.forEach(country => {
             expect(typeof country.id).toBe('string');
             translationAssertion(country.name);
-            if (country.language) {
-                expect(country.language in LANGUAGE_NAMES).toBeTruthy();
-            }
+
+            expect(Array.isArray(country.languages)).toBeTruthy();
+            country.languages.forEach(language => {
+                expect(LANGUAGE_NAMES).toHaveProperty(language);
+            });
         });
     });
 

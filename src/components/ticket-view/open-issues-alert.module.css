@@ -1,0 +1,15 @@
+.alert {
+    flex-shrink: 0;
+}
+
+.item-wrapper {
+    width: calc(100% - 24px)
+}
+
+.item-label {
+    width: 100%;
+}
+
+.created {
+    margin-left: var(--mantine-spacing-sm);
+}

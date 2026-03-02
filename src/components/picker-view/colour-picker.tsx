@@ -1,14 +1,9 @@
-import { RmgAutoComplete, RmgLineBadge } from '@railmapgen/rmg-components';
 import { ColourHex, MonoColour, PaletteEntry } from '@railmapgen/rmg-palette-resources';
 import usePalette from '../hooks/use-palette';
 import useTranslatedName from '../hooks/use-translated-name';
-import { SystemStyleObject } from '@chakra-ui/react';
-
-const itemStyles: SystemStyleObject = {
-    display: 'inline-block',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-};
+import { Badge, ComboboxItem, OptionsFilter, Select, SelectProps } from '@mantine/core';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 interface ColourPickerProps {
     city?: string;
@@ -20,44 +15,60 @@ interface ColourPickerProps {
 export default function ColourPicker(props: ColourPickerProps) {
     const { city, defaultValueId, onChange, onSubmit } = props;
 
-    const translateName = useTranslatedName();
+    const { t } = useTranslation();
+    const { translateName } = useTranslatedName();
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const paletteList = usePalette(city);
+    const paletteMap = paletteList.reduce<Record<string, PaletteEntry>>((acc, cur) => ({ ...acc, [cur.id]: cur }), {});
 
-    const currentItem = defaultValueId ? paletteList.find(palette => palette.id === defaultValueId) : undefined;
+    const defaultValue = defaultValueId && defaultValueId in paletteMap ? defaultValueId : null;
 
-    const displayHandler = (item: PaletteEntry) => {
+    const handleSelect = (value: string | null) => {
+        if (value) {
+            const line = paletteMap[value];
+            onChange?.(line.id, line.colour, line.fg || MonoColour.white, line.pantone);
+        }
+    };
+
+    const renderOption: SelectProps['renderOption'] = ({ option }) => {
+        const line = paletteMap[option.value];
         return (
-            <RmgLineBadge
-                name={translateName(item.name)}
-                fg={item.fg || MonoColour.white}
-                bg={item.colour}
-                title={translateName(item.name)}
-                sx={itemStyles}
-            />
+            line && (
+                <Badge size="lg" radius="sm" color={line.colour} style={{ color: line.fg || MonoColour.white }}>
+                    {translateName(line.name)}
+                </Badge>
+            )
         );
     };
 
-    const filter = (input: string, item: PaletteEntry): boolean => {
-        const lowerCaseInput = input.toLocaleLowerCase();
-        return (
-            item.id.toLocaleLowerCase().includes(lowerCaseInput) ||
-            Object.values(item.name).some(name => name.toLocaleLowerCase().includes(lowerCaseInput))
-        );
+    const filter: OptionsFilter = ({ options, search }) => {
+        const lowerCaseInput = search.toLocaleLowerCase();
+        return (options as ComboboxItem[]).filter(option => {
+            const line = paletteMap[option.value];
+            return (
+                line &&
+                (line.id.toLocaleLowerCase().includes(lowerCaseInput) ||
+                    Object.values(line.name).some(name => name.toLocaleLowerCase().includes(lowerCaseInput)))
+            );
+        });
     };
 
-    const data = paletteList.map(item => ({ ...item, value: translateName(item.name) }));
+    const data = paletteList.map(item => ({ value: item.id, label: translateName(item.name) }));
 
     return (
-        <RmgAutoComplete
+        <Select
+            label={t('Line')}
             data={data}
-            displayHandler={displayHandler}
+            value={defaultValue}
+            onChange={handleSelect}
+            renderOption={renderOption}
+            searchable
             filter={filter}
-            value={currentItem && translateName(currentItem.name)}
-            onChange={item => onChange?.(item.id, item.colour, item.fg || MonoColour.white, item.pantone)}
-            InputPropsByState={isOpen => ({
-                onKeyDown: ({ key }) => !isOpen && key === 'Enter' && onSubmit?.(),
-            })}
+            onDropdownOpen={() => setIsDropdownOpen(true)}
+            onDropdownClose={() => setIsDropdownOpen(false)}
+            onKeyDown={({ key }) => !isDropdownOpen && key === 'Enter' && onSubmit?.()}
+            disabled={!city}
         />
     );
 }

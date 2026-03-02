@@ -1,0 +1,68 @@
+[
+    {
+        "id": "bfb",
+        "colour": "#FBC641",
+        "fg": "#fff",
+        "name": {
+            "en": "Bangor Line",
+            "ga": "Líne Beannchar",
+            "zh-Hans": "班戈线",
+            "zh-Hant": "班戈缐"
+        }
+    },
+    {
+        "id": "bfl",
+        "colour": "#BB133D",
+        "fg": "#fff",
+        "name": {
+            "en": "Larne Line",
+            "ga": "Líne Latharna",
+            "zh-Hans": "拉恩线",
+            "zh-Hant": "拉恩缐"
+        }
+    },
+    {
+        "id": "bfd",
+        "colour": "#0094DA",
+        "fg": "#fff",
+        "name": {
+            "en": "Derry/Londonderry Line",
+            "ga": "Líne Doire/Doire Cholmcille",
+            "zh-Hans": "德里线",
+            "zh-Hant": "德里缐"
+        }
+    },
+    {
+        "id": "bfp",
+        "colour": "#60B55F",
+        "fg": "#fff",
+        "name": {
+            "en": "Portadown/Newry Line",
+            "ga": "Líne Port an Dúnáin/An Iúraigh",
+            "zh-Hans": "纽里线",
+            "zh-Hant": "紐里缐"
+        }
+    },
+    {
+        "id": "bfe",
+        "colour": "#786180",
+        "fg": "#fff",
+        "name": {
+            "en": "Dublin Line",
+            "ga": "Líne Baile Átha Cliath",
+            "zh-Hans": "都柏林线",
+            "zh-Hant": "都柏林缐"
+        }
+    },
+    {
+        "id": "bfr",
+        "colour": "#39509B",
+        "fg": "#fff",
+        "name": {
+            "en": "Portrush Line",
+            "ga": "Líne Port Rois",
+            "zh-Hans": "波特拉什线",
+            "zh-Hant": "波特拉什缐"
+        }
+    }
+]

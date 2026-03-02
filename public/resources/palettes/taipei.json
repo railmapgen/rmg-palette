@@ -62,7 +62,7 @@
     {
         "id": "rb",
         "colour": "#fd92a3",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Xinbeitou Branch Line",
             "zh-Hans": "新北投支线",
@@ -72,7 +72,7 @@
     {
         "id": "gb",
         "colour": "#cfdb00",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Xiaobitan Branch Line",
             "zh-Hans": "小碧潭支线",
@@ -82,11 +82,11 @@
     {
         "id": "lg",
         "colour": "#a1d884",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Wanda-Zhonghe-Shulin Line (LG)",
-            "zh-Hans": "万大-中和-树林线",
-            "zh-Hant": "萬大-中和-樹林線"
+            "zh-Hans": "万大中和树林线",
+            "zh-Hant": "萬大中和樹林線"
         }
     },
     {
@@ -127,6 +127,36 @@
             "en": "Maokong Gondola",
             "zh-Hans": "猫空缆车",
             "zh-Hant": "貓空䌫車"
+        }
+    },
+    {
+        "id": "v",
+        "colour": "#fabeb5",
+        "fg": "#fff",
+        "name": {
+            "en": "Danhai LRT",
+            "zh-Hans": "淡海轻轨",
+            "zh-Hant": "淡海輕軌"
+        }
+    },
+    {
+        "id": "k",
+        "colour": "#d8d0ba",
+        "fg": "#fff",
+        "name": {
+            "en": "Ankeng LRT",
+            "zh-Hans": "安坑轻轨",
+            "zh-Hant": "安坑輕軌"
+        }
+    },
+    {
+        "id": "a",
+        "colour": "#d0c6e2",
+        "fg": "#fff",
+        "name": {
+            "en": "Taoyuan Airport MRT",
+            "zh-Hans": "桃园机场捷运",
+            "zh-Hant": "桃園機場捷運"
         }
     },
     {

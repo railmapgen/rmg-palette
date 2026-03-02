@@ -1,7 +1,7 @@
 [
     {
         "id": "sjz1",
-        "colour": "#e53e30",
+        "colour": "#ff0d33",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sjz2",
-        "colour": "#fec30a",
+        "colour": "#f2bf19",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "sjz3",
-        "colour": "#00a1e0",
+        "colour": "#33bce7",
         "fg": "#fff",
         "name": {
             "en": "Line 3",

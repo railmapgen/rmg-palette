@@ -1,0 +1,11 @@
+.wrapper {
+    position: relative;
+
+    input[type="color"] {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 0;
+        opacity: 0;
+    }
+}

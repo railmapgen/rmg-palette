@@ -1,0 +1,24 @@
+[
+    {
+        "id": "ccs",
+        "colour": "#7171a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Service",
+            "zh-Hans": "通勤铁路",
+            "zh-Hant": "通勤鐵路",
+            "ga": "Seirbhís Comaitéarachta"
+        }
+    },
+    {
+        "id": "cis",
+        "colour": "#7dc242",
+        "fg": "#fff",
+        "name": {
+            "en": "Intercity Service",
+            "zh-Hans": "城际列车",
+            "zh-Hant": "城際列車",
+            "ga": "Seirbhís Intercity"
+        }
+    }
+]

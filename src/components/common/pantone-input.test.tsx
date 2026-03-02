@@ -11,6 +11,8 @@ const mockCallbacks = {
 };
 
 describe('PantoneInput', () => {
+    const user = userEvent.setup();
+
     afterEach(() => {
         global.fetch = originalFetch;
         vi.resetAllMocks();
@@ -22,12 +24,12 @@ describe('PantoneInput', () => {
             json: () => Promise.resolve({ data: { getColor: { hex: '00629B' } } }),
         });
 
-        const user = userEvent.setup();
         render(<PantoneInput value="130 C" {...mockCallbacks} />);
 
-        await user.clear(screen.getByRole('combobox'));
-        await user.type(screen.getByRole('combobox'), '3015 C');
-        await waitFor(() => expect(mockFetch).toBeCalledTimes(1), { timeout: 1501 });
+        const input = screen.getByRole('textbox');
+        await user.clear(input);
+        await user.type(input, '3015 C');
+        await waitFor(() => expect(mockFetch).toBeCalledTimes(1), { timeout: 2000 });
 
         expect(mockCallbacks.onChange).toBeCalledTimes(1);
         expect(mockCallbacks.onChange).toBeCalledWith('3015 C', '#00629B');
@@ -36,14 +38,14 @@ describe('PantoneInput', () => {
     it('Reset input field if pantone colour is failed to fetch', async () => {
         global.fetch = mockFetch.mockRejectedValue('Failed to fetch');
 
-        const user = userEvent.setup();
         render(<PantoneInput value="130 C" {...mockCallbacks} />);
 
-        await user.clear(screen.getByRole('combobox'));
-        await user.type(screen.getByRole('combobox'), '3015 C');
+        const input = screen.getByRole('textbox');
+        await user.clear(input);
+        await user.type(input, '3015 C');
         await waitFor(() => expect(mockFetch).toBeCalledTimes(1), { timeout: 1501 });
 
         expect(mockCallbacks.onChange).toBeCalledTimes(0);
-        expect(screen.getByRole('combobox')).toHaveValue('130 C');
+        expect(input).toHaveValue('130 C');
     });
 });

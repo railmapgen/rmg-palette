@@ -1,19 +1,9 @@
-import {
-    Button,
-    HStack,
-    Modal,
-    ModalBody,
-    ModalCloseButton,
-    ModalContent,
-    ModalFooter,
-    ModalHeader,
-    ModalOverlay,
-} from '@chakra-ui/react';
 import { DRAFT_TICKET_KEY } from '../../util/constants';
 import { useRootDispatch } from '../../redux';
 import { resetTicket, TicketState } from '../../redux/ticket/ticket-slice';
 import { useTranslation } from 'react-i18next';
 import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Button, Flex, Group, Modal, Text } from '@mantine/core';
 
 interface DiscardDraftModalProps {
     isOpen: boolean;
@@ -38,23 +28,17 @@ export default function UnsavedDraftModal(props: DiscardDraftModalProps) {
     };
 
     return (
-        <Modal isOpen={isOpen} onClose={onClose}>
-            <ModalOverlay />
-            <ModalContent>
-                <ModalHeader>{t('Unsaved draft')}</ModalHeader>
-                <ModalCloseButton />
+        <Modal opened={isOpen} onClose={onClose} title={t('Unsaved draft')}>
+            <Flex direction="column">
+                <Text>{t('Do you want to continue with your last unsaved ticket?')}</Text>
 
-                <ModalBody>{t('Do you want to continue with your last unsaved ticket?')}</ModalBody>
-
-                <ModalFooter>
-                    <HStack>
-                        <Button onClick={handleDiscard}>{t('Discard')}</Button>
-                        <Button colorScheme="primary" onClick={handleContinue}>
-                            {t('Continue')}
-                        </Button>
-                    </HStack>
-                </ModalFooter>
-            </ModalContent>
+                <Group gap="xs" mt="xs">
+                    <Button variant="default" ml="auto" onClick={handleDiscard}>
+                        {t('Discard')}
+                    </Button>
+                    <Button onClick={handleContinue}>{t('Continue')}</Button>
+                </Group>
+            </Flex>
         </Modal>
     );
 }

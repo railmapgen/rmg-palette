@@ -1,0 +1,103 @@
+[
+    {
+        "id": "b",
+        "colour": "#015bba",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line (Chunghua Circular Line)",
+            "zh-Hans": "蓝线（中华环线）",
+            "zh-Hant": "藍線（中華環線）"
+        }
+    },
+    {
+        "id": "g",
+        "colour": "#267f00",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line (Fucheng Horizontal Line)",
+            "zh-Hans": "绿线（府城横贯线）",
+            "zh-Hant": "綠線（府城橫貫線）"
+        }
+    },
+    {
+        "id": "o",
+        "colour": "#f5a818",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line (Jiali-Yujing Line)",
+            "zh-Hans": "橘线（佳里玉井线）",
+            "zh-Hant": "橘線（佳里玉井線）"
+        }
+    },
+    {
+        "id": "r",
+        "colour": "#d90023",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line (Fucheng Vertical Line)",
+            "zh-Hans": "红线（府城纵贯线）",
+            "zh-Hant": "紅線（府城縱貫線）"
+        }
+    },
+    {
+        "id": "y",
+        "colour": "#fedb00",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow Line (Datong-Shanhua Line)",
+            "zh-Hans": "黄线（大同善化线）",
+            "zh-Hant": "黃線（大同善化線）"
+        }
+    },
+    {
+        "id": "br",
+        "colour": "#7f0037",
+        "fg": "#fff",
+        "name": {
+            "en": "Brown Line (Madou-Baihe Line)",
+            "zh-Hans": "棕线（麻豆白河线）",
+            "zh-Hant": "棕線（麻豆白河線）"
+        }
+    },
+    {
+        "id": "p",
+        "colour": "#b200ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line (Jiali-Xinying Line)",
+            "zh-Hans": "紫线（佳里新营线）",
+            "zh-Hant": "紫線（佳里新營線）"
+        }
+    },
+    {
+        "id": "dg",
+        "colour": "#107547",
+        "fg": "#fff",
+        "name": {
+            "en": "Dark Green Line (HSR-Sinshih Line)",
+            "zh-Hans": "深绿线（高铁新市线）",
+            "zh-Hant": "深綠線（高鐵新市線）"
+        }
+    },
+    {
+        "id": "tra",
+        "colour": "#0211bb",
+        "fg": "#fff",
+        "name": {
+            "en": "Taiwan Railway",
+            "zh-Hans": "台湾铁路",
+            "zh-Hant": "台灣鐵路"
+        }
+    },
+    {
+        "id": "hsr",
+        "colour": "#db5426",
+        "fg": "#fff",
+        "name": {
+            "en": "Taiwan High Speed Rail",
+            "zh-Hans": "台湾高铁",
+            "zh-Hant": "台灣高鐵",
+            "ja": "台湾新幹線"
+        }
+    }
+]

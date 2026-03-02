@@ -1,0 +1,72 @@
+[
+    {
+        "id": "EXP",
+        "colour": "#005dab",
+        "fg": "#fff",
+        "name": {
+            "en": "Expo Line",
+            "fr": "Ligne Expo",
+            "zh-Hant": "世博綫"
+        }
+    },
+    {
+        "id": "MLN",
+        "colour": "#ffd204",
+        "fg": "#fff",
+        "name": {
+            "en": "Millennium Line",
+            "fr": "Ligne Millénaire",
+            "zh-Hant": "千禧綫"
+        }
+    },
+    {
+        "id": "CAN",
+        "colour": "#009bc9",
+        "fg": "#fff",
+        "name": {
+            "en": "Canada Line",
+            "fr": "Ligne Canada",
+            "zh-Hant": "加拿大綫"
+        }
+    },
+    {
+        "id": "WCE",
+        "colour": "#79288c",
+        "fg": "#fff",
+        "name": {
+            "en": "West Coast Express",
+            "fr": "Express Côte-Ouest",
+            "zh-Hant": "西岸快綫"
+        }
+    },
+    {
+        "id": "rapidbus",
+        "colour": "#00a049",
+        "fg": "#fff",
+        "name": {
+            "en": "RapidBus",
+            "zh-Hans": "快速巴士线",
+            "zh-Hant": "快速巴士線"
+        }
+    },
+    {
+        "id": "99b",
+        "colour": "#f47a22",
+        "fg": "#fff",
+        "name": {
+            "en": "99 B-Line",
+            "zh-Hans": "99号线",
+            "zh-Hant": "99號線"
+        }
+    },
+    {
+        "id": "seabus",
+        "colour": "#887269",
+        "fg": "#fff",
+        "name": {
+            "en": "SeaBus",
+            "zh-Hans": "海上巴士",
+            "zh-Hant": "海上巴士"
+        }
+    }
+]

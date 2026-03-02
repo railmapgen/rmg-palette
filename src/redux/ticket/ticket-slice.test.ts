@@ -20,6 +20,7 @@ const countryList: CountryEntry[] = [
         name: {
             en: 'Hong Kong',
         },
+        languages: ['zh-Hant', 'en'],
     },
 ];
 

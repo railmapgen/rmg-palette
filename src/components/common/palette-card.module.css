@@ -1,0 +1,56 @@
+.card, .editable {
+    padding: var(--mantine-spacing-sm);
+    box-shadow: var(--mantine-shadow-sm);
+}
+
+.card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--mantine-spacing-sm);
+}
+
+:not(.editable) > .card-section {
+    flex-direction: column;
+}
+
+.card-section span:first-of-type {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+}
+
+.card-section span:nth-of-type(2) {
+    font-size: var(--mantine-font-size-sm);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+
+.editable .card-section span:first-of-type {
+    text-align: start;
+}
+
+.output {
+    flex-direction: column;
+    flex: 1
+}
+
+.output span, .output code {
+    text-wrap: nowrap;
+}
+
+.output span:first-of-type {
+    font-weight: bold;
+}
+
+.editable-group {
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.editable-group > div {
+    flex: 1;
+    min-width: 150px;
+}

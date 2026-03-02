@@ -1,21 +1,25 @@
-import { RmgLoader, RmgPage } from '@railmapgen/rmg-components';
-import { Flex } from '@chakra-ui/react';
-import PageHeader from '../page-header';
-import PaletteGrid from '../ag-grid/palette-grid';
-import SidePanel from './side-panel';
+import PageHeader from './page-header';
 import { useRootSelector } from '../../redux';
+import CityList from './city-list';
+import { RMPage, RMPageBody } from '@railmapgen/mantine-components';
+import { LoadingOverlay } from '@mantine/core';
+import { useTranslation } from 'react-i18next';
 
 export default function PaletteView() {
-    const { isDataLoading } = useRootSelector(state => state.app);
+    const { t } = useTranslation();
+    const { isDataLoading, selectedCountry } = useRootSelector(state => state.app);
 
     return (
-        <RmgPage>
-            {isDataLoading && <RmgLoader isIndeterminate />}
+        <RMPage>
+            <LoadingOverlay visible={isDataLoading} />
             <PageHeader />
-            <Flex flex={1} overflow="hidden" position="relative">
-                <PaletteGrid />
-                <SidePanel />
-            </Flex>
-        </RmgPage>
+            <RMPageBody>
+                <LoadingOverlay
+                    visible={!selectedCountry}
+                    loaderProps={{ children: t('Select a country or region to begin.') }}
+                />
+                <CityList />
+            </RMPageBody>
+        </RMPage>
     );
 }

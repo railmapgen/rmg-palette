@@ -1,0 +1,134 @@
+[
+    {
+        "id": "hb1",
+        "colour": "#00ab4f",
+        "fg": "#fff",
+        "name": {
+            "en": "1",
+            "de": "1",
+            "zh-Hans": "1",
+            "zh-Hant": "1"
+        }
+    },
+    {
+        "id": "hb2",
+        "colour": "#0065b7",
+        "fg": "#fff",
+        "name": {
+            "en": "2",
+            "de": "2",
+            "zh-Hans": "2",
+            "zh-Hant": "2"
+        }
+    },
+    {
+        "id": "hb3",
+        "colour": "#00b9f2",
+        "fg": "#fff",
+        "name": {
+            "en": "3",
+            "de": "3",
+            "zh-Hans": "3",
+            "zh-Hant": "3"
+        }
+    },
+    {
+        "id": "hb4",
+        "colour": "#ff2e17",
+        "fg": "#fff",
+        "name": {
+            "en": "4",
+            "de": "4",
+            "zh-Hans": "4",
+            "zh-Hant": "4"
+        }
+    },
+    {
+        "id": "hb5",
+        "colour": "#00b3bc",
+        "fg": "#fff",
+        "name": {
+            "en": "5",
+            "de": "5",
+            "zh-Hans": "5",
+            "zh-Hant": "5"
+        }
+    },
+    {
+        "id": "hb6",
+        "colour": "#ffc734",
+        "fg": "#000",
+        "name": {
+            "en": "6",
+            "de": "6",
+            "zh-Hans": "6",
+            "zh-Hant": "6"
+        }
+    },
+    {
+        "id": "hb8",
+        "colour": "#88c946",
+        "fg": "#fff",
+        "name": {
+            "en": "8",
+            "de": "8",
+            "zh-Hans": "8",
+            "zh-Hant": "8"
+        }
+    },
+    {
+        "id": "hb10",
+        "colour": "#102694",
+        "fg": "#fff",
+        "name": {
+            "en": "10",
+            "de": "10",
+            "zh-Hans": "10",
+            "zh-Hant": "10"
+        }
+    },
+    {
+        "id": "hb22",
+        "colour": "#939bd0",
+        "fg": "#fff",
+        "name": {
+            "en": "22",
+            "de": "22",
+            "zh-Hans": "22",
+            "zh-Hant": "22"
+        }
+    },
+    {
+        "id": "hb24",
+        "colour": "#872996",
+        "fg": "#fff",
+        "name": {
+            "en": "24",
+            "de": "24",
+            "zh-Hans": "24",
+            "zh-Hant": "24"
+        }
+    },
+    {
+        "id": "hbn3",
+        "colour": "#e5007e",
+        "fg": "#fff",
+        "name": {
+            "en": "N3",
+            "de": "N3",
+            "zh-Hans": "夜晚 3",
+            "zh-Hant": "夜晚 3"
+        }
+    },
+    {
+        "id": "hbreg",
+        "colour": "#b0b1b3",
+        "fg": "#fff",
+        "name": {
+            "en": "regional buses + trains",
+            "de": "Regionalbusse und Zuglinien",
+            "zh-Hans": "火车",
+            "zh-Hant": "火車"
+        }
+    }
+]

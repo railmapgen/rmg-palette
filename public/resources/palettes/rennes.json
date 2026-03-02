@@ -1,0 +1,20 @@
+[
+    {
+        "id": "ma",
+        "colour": "#da0f12",
+        "fg": "#fff",
+        "name": {
+            "fr": "Ligne a",
+            "en": "Line a"
+        }
+    },
+    {
+        "id": "mb",
+        "colour": "#158a45",
+        "fg": "#fff",
+        "name": {
+            "fr": "Ligne b",
+            "en": "Line b"
+        }
+    }
+]

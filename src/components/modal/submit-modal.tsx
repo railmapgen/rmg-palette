@@ -1,4 +1,4 @@
-import { Modal, ModalCloseButton, ModalContent, ModalHeader, ModalOverlay } from '@chakra-ui/react';
+import classes from './submit-modal.module.css';
 import { useEffect, useState } from 'react';
 import { DataSource, DRAFT_TICKET_KEY, InvalidReasonType } from '../../util/constants';
 import { useRootSelector } from '../../redux';
@@ -8,6 +8,8 @@ import SubmitModalStepError from './submit-modal-step-error';
 import SubmitModalStepJustification from './submit-modal-step-justification';
 import SubmitModalStepSubmit from './submit-modal-step-submit';
 import rmgRuntime from '@railmapgen/rmg-runtime';
+import { Modal, Stepper } from '@mantine/core';
+import { MdOutlineErrorOutline } from 'react-icons/md';
 
 interface SubmitModalProps {
     isOpen: boolean;
@@ -56,6 +58,16 @@ export default function SubmitModal(props: SubmitModalProps) {
     const isShowStepError = isContainError && !isIgnoreErrors;
     const isShowStepJustification = !isShowStepError && !isFinishJustification;
 
+    const getActiveStep = () => {
+        if (isShowStepError) {
+            return 0;
+        }
+        if (isShowStepJustification) {
+            return 1;
+        }
+        return 2;
+    };
+
     const handleCloseAfterFinish = () => {
         if (!isShowStepError && !isShowStepJustification) {
             rmgRuntime.storage.remove(DRAFT_TICKET_KEY);
@@ -64,13 +76,21 @@ export default function SubmitModal(props: SubmitModalProps) {
     };
 
     return (
-        <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose} scrollBehavior="inside">
-            <ModalOverlay />
-            <ModalContent>
-                <ModalHeader>{t('Submit palettes')}</ModalHeader>
-                <ModalCloseButton onClick={handleCloseAfterFinish} />
-
-                {isShowStepError && (
+        <Modal
+            classNames={{ content: classes.content, body: classes.body }}
+            opened={isOpen}
+            onClose={handleCloseAfterFinish}
+            title={t('Submit palettes')}
+        >
+            <Stepper
+                active={getActiveStep()}
+                classNames={{ root: classes['stepper-root'], content: classes['stepper-content'] }}
+            >
+                <Stepper.Step
+                    label={t('Validate')}
+                    color={isIgnoreErrors ? 'orange' : undefined}
+                    completedIcon={isIgnoreErrors ? <MdOutlineErrorOutline size={24} /> : undefined}
+                >
                     <SubmitModalStepError
                         countryErrors={countryErrors}
                         cityErrors={cityErrors}
@@ -78,9 +98,8 @@ export default function SubmitModal(props: SubmitModalProps) {
                         onIgnore={() => setIsIgnoreErrors(true)}
                         onClose={onClose}
                     />
-                )}
-
-                {isShowStepJustification && (
+                </Stepper.Step>
+                <Stepper.Step label={t('Justify')}>
                     <SubmitModalStepJustification
                         dataSource={dataSource}
                         onDataSourceChange={setDataSource}
@@ -91,9 +110,8 @@ export default function SubmitModal(props: SubmitModalProps) {
                         onPrev={isContainError ? () => setIsIgnoreErrors(false) : undefined}
                         onNext={() => setIsFinishJustification(true)}
                     />
-                )}
-
-                {!isShowStepError && !isShowStepJustification && (
+                </Stepper.Step>
+                <Stepper.Step label={t('Submit')}>
                     <SubmitModalStepSubmit
                         countryEntry={countryEntry}
                         cityEntry={cityEntry}
@@ -103,8 +121,8 @@ export default function SubmitModal(props: SubmitModalProps) {
                         justification={justification}
                         onPrev={() => setIsFinishJustification(false)}
                     />
-                )}
-            </ModalContent>
+                </Stepper.Step>
+            </Stepper>
         </Modal>
     );
 }

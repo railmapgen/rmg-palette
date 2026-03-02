@@ -1,6 +1,4 @@
-import { RmgSectionHeader } from '@railmapgen/rmg-components';
-import { Button, ButtonGroup, Heading, IconButton, Wrap, WrapItem } from '@chakra-ui/react';
-import { MdCircle, MdDelete } from 'react-icons/md';
+import { MdClose } from 'react-icons/md';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { useTranslation } from 'react-i18next';
 import { clearRecentlyUsed, removeRecentlyUsedItem } from '../../redux/app/app-slice';
@@ -8,6 +6,8 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import { Events } from '../../util/constants';
 import { Theme } from '@railmapgen/rmg-palette-resources';
 import { useState } from 'react';
+import { Button, Group, Title } from '@mantine/core';
+import { RMSection, RMSectionBody, RMSectionHeader, RMThemeButton } from '@railmapgen/mantine-components';
 
 type RecentlyUsedProps = {
     onApply: (theme: Theme) => void;
@@ -20,6 +20,7 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
     const { recentlyUsed } = useRootSelector(state => state.app);
 
     const [isClearing, setIsClearing] = useState(false);
+    const verb = isClearing ? t('Remove') : t('Apply');
 
     const handleRemoveItem = (index: number) => {
         dispatch(removeRecentlyUsedItem(index));
@@ -32,61 +33,45 @@ export default function RecentlyUsed({ onApply }: RecentlyUsedProps) {
     };
 
     return (
-        <section>
-            <RmgSectionHeader>
-                <Heading as="h5" size="xs">
+        <RMSection w="100%">
+            <RMSectionHeader>
+                <Title order={2} size="h4">
                     {t('Recently used')}
-                </Heading>
-
-                {isClearing ? (
-                    <>
-                        <Button variant="ghost" size="xs" onClick={handleClearHistory}>
-                            {t('Clear all')}
+                </Title>
+                <Group gap="xs" ml="auto">
+                    {isClearing ? (
+                        <>
+                            <Button variant="default" size="xs" onClick={handleClearHistory}>
+                                {t('Clear all')}
+                            </Button>
+                            <Button size="xs" onClick={() => setIsClearing(false)}>
+                                {t('Done')}
+                            </Button>
+                        </>
+                    ) : (
+                        <Button variant="default" size="xs" onClick={() => setIsClearing(true)}>
+                            {t('Clear')}
                         </Button>
-                        <Button
-                            colorScheme="primary"
-                            size="xs"
-                            onClick={() => setIsClearing(false)}
-                            sx={{ ml: '1 !important' }}
+                    )}
+                </Group>
+            </RMSectionHeader>
+
+            <RMSectionBody>
+                <Group gap="xs" p="xs">
+                    {recentlyUsed.map(({ theme, displayName }, idx) => (
+                        <RMThemeButton
+                            key={theme.join('-')}
+                            bg={theme[2]}
+                            fg={theme[3]}
+                            aria-label={verb + ' ' + displayName}
+                            title={verb + ' ' + displayName}
+                            onClick={() => (isClearing ? handleRemoveItem(idx) : onApply(theme))}
                         >
-                            {t('Done')}
-                        </Button>
-                    </>
-                ) : (
-                    <Button variant="ghost" size="xs" onClick={() => setIsClearing(true)}>
-                        {t('Clear')}
-                    </Button>
-                )}
-            </RmgSectionHeader>
-
-            <Wrap>
-                {recentlyUsed.map(({ theme, displayName }, idx) => (
-                    <WrapItem key={theme.join('-')}>
-                        <ButtonGroup size="xs" isAttached>
-                            <IconButton
-                                size="xs"
-                                aria-label={t('Apply') + ' ' + displayName}
-                                title={displayName}
-                                mt="0.45px"
-                                color={theme[3]}
-                                bg={theme[2]}
-                                icon={<MdCircle />}
-                                onClick={() => onApply(theme)}
-                            />
-                            {isClearing && (
-                                <IconButton
-                                    variant="outline"
-                                    aria-label={t('Remove') + ' ' + displayName}
-                                    title={t('Remove') + ' ' + displayName}
-                                    mt="0.45px"
-                                    icon={<MdDelete />}
-                                    onClick={() => handleRemoveItem(idx)}
-                                />
-                            )}
-                        </ButtonGroup>
-                    </WrapItem>
-                ))}
-            </Wrap>
-        </section>
+                            {isClearing ? <MdClose /> : 'Aa'}
+                        </RMThemeButton>
+                    ))}
+                </Group>
+            </RMSectionBody>
+        </RMSection>
     );
 }

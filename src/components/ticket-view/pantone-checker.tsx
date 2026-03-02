@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { getRGBByPantone } from '../../service/pantone-service';
-import { Text, TextProps } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import { useRootDispatch, useRootSelector } from '../../redux';
 import { setPantoneReady } from '../../redux/app/app-slice';
+import { Text, TextProps } from '@mantine/core';
 
 export default function PantoneChecker(props: TextProps) {
     const { t } = useTranslation();
@@ -25,7 +25,7 @@ export default function PantoneChecker(props: TextProps) {
     }, []);
 
     return (
-        <Text as="i" fontSize="xs" {...props}>
+        <Text fs="italic" size="xs" {...props}>
             {pantoneReady === undefined
                 ? t('Checking Pantone® service availability...')
                 : pantoneReady

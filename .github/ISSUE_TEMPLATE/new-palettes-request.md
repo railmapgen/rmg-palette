@@ -1,7 +1,7 @@
 ---
 name: New Palettes Request
 about: Upload palettes for RMG
-title: 'Resources: New palettes of [CITY]'
+title: 'Resources: New palettes of '
 labels: resources
 assignees: ''
 

@@ -1,0 +1,100 @@
+[
+    {
+        "id": "ta",
+        "colour": "#2061a7",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram A",
+            "zh-Hans": "电车A线",
+            "zh-Hant": "電車A綫"
+        }
+    },
+    {
+        "id": "tb",
+        "colour": "#1b9232",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram B",
+            "zh-Hans": "电车B线",
+            "zh-Hant": "電車B綫"
+        }
+    },
+    {
+        "id": "tc",
+        "colour": "#ee047f",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram C",
+            "zh-Hans": "电车C线",
+            "zh-Hant": "電車C綫"
+        }
+    },
+    {
+        "id": "td",
+        "colour": "#fd8a02",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram D",
+            "zh-Hans": "电车D线",
+            "zh-Hant": "電車D綫"
+        }
+    },
+    {
+        "id": "te",
+        "colour": "#401382",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram E",
+            "zh-Hans": "电车E线",
+            "zh-Hant": "電車E綫"
+        }
+    },
+    {
+        "id": "b1",
+        "colour": "#ffd23f",
+        "fg": "#000",
+        "name": {
+            "en": "Bus C1-C8"
+        }
+    },
+    {
+        "id": "b2",
+        "colour": "#ee7d00",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus C9-C14"
+        }
+    },
+    {
+        "id": "b3",
+        "colour": "#33a457",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 12-14/16-19/22/24"
+        }
+    },
+    {
+        "id": "b4",
+        "colour": "#0072bc",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 15/20/21/23/25/26/34-36/80/82/84-86/88-92"
+        }
+    },
+    {
+        "id": "b5",
+        "colour": "#e6669b",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 40-42/44-51/54-79"
+        }
+    },
+    {
+        "id": "b6",
+        "colour": "#86bc25",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus N62"
+        }
+    }
+]
