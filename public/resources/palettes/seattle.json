@@ -20,6 +20,22 @@
         }
     },
     {
+        "id": "3",
+        "colour": "#ed40a9",
+        "fg": "#fff",
+        "name": {
+            "en": "Link 3 Line"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#b14fc5",
+        "fg": "#fff",
+        "name": {
+            "en": "Link 4 Line"
+        }
+    },
+    {
         "id": "t",
         "colour": "#ef8c20",
         "fg": "#000",
@@ -27,6 +43,30 @@
             "en": "Link T Line",
             "zh-Hans": "Link T号线",
             "zh-Hant": "Link T號線"
+        }
+    },
+    {
+        "id": "s1",
+        "colour": "#eba900",
+        "fg": "#000",
+        "name": {
+            "en": "Stride S1 Line"
+        }
+    },
+    {
+        "id": "s2",
+        "colour": "#eba900",
+        "fg": "#000",
+        "name": {
+            "en": "Stride S2 Line"
+        }
+    },
+    {
+        "id": "s3",
+        "colour": "#eba900",
+        "fg": "#000",
+        "name": {
+            "en": "Stride S3 Line"
         }
     },
     {
