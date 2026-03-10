@@ -1159,6 +1159,13 @@
         }
     },
     {
+        "id": "mnl",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
+        }
+    },
+    {
         "id": "monterrey",
         "country": "MX",
         "name": {
