@@ -58,5 +58,15 @@
             "zh-Hans": "银线",
             "zh-Hant": "銀線"
         }
+    },
+    {
+        "id": "p",
+        "colour": "#65298a",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "zh-Hans": "紫色线",
+            "zh-Hant": "紫色線"
+        }
     }
 ]
