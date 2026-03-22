@@ -1,4 +1,5 @@
-import { CityEntry, CountryEntry, PaletteEntry } from './types';
+import type { CityEntry, CountryEntry, PaletteEntry } from './types';
+import { decompressCityConfig, decompressCountryConfig } from './compressor';
 
 let RESPONSE_CACHE: Record<string, any> = {};
 
@@ -22,9 +23,11 @@ export const getPalette = async (cityId: string, signal?: AbortSignal): Promise<
 };
 
 export const getCityList = async (signal?: AbortSignal): Promise<CityEntry[]> => {
-    return await cachedFetch(`/rmg-palette/resources/city-config.json`, { signal });
+    const data = await cachedFetch(`/rmg-palette/resources/city-config.compressed.json`, { signal });
+    return decompressCityConfig(data);
 };
 
 export const getCountryList = async (signal?: AbortSignal): Promise<CountryEntry[]> => {
-    return await cachedFetch(`/rmg-palette/resources/country-config.json`, { signal });
+    const data = await cachedFetch(`/rmg-palette/resources/country-config.compressed.json`, { signal });
+    return decompressCountryConfig(data);
 };
