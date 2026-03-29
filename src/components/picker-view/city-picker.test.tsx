@@ -93,18 +93,25 @@ describe('CityPicker', () => {
         vi.resetAllMocks();
     });
 
-    it('Can render flag emojis and translations as expected', async () => {
+    it('Can render country names and translations as expected', async () => {
         render(<CityPicker />, { store: mockStore });
 
         await user.click(screen.getByRole('textbox'));
 
-        expect(screen.getByText('🏴󠁧󠁢󠁳󠁣󠁴󠁿')).toBeInTheDocument();
-        expect(screen.getByText('🇹🇼')).toBeInTheDocument();
-        expect(screen.getByText('🇭🇰')).toBeInTheDocument();
+        // Check that flag emojis are not present anymore
+        expect(screen.queryByText('🏴󠁧󠁢󠁳󠁣󠁴󠁿')).not.toBeInTheDocument();
+        expect(screen.queryByText('🇹🇼')).not.toBeInTheDocument();
+        expect(screen.queryByText('🇭🇰')).not.toBeInTheDocument();
 
+        // Check that city names are still present
         expect(screen.getByText('爱丁堡')).toBeInTheDocument();
         expect(screen.getByText('台北')).toBeInTheDocument();
-        expect(screen.getByText('香港')).toBeInTheDocument();
+        expect(screen.getAllByText('香港')).toHaveLength(2); // Both city and country name
+
+        // Check that country names are shown instead of flags
+        expect(screen.getByText('Scotland')).toBeInTheDocument();
+        expect(screen.getByText('Taiwan')).toBeInTheDocument(); // Not censored anymore
+        // Hong Kong appears twice - once as city name, once as country name
 
         // const options = await screen.findAllByRole('option');
         // expect(options).toHaveLength(3);

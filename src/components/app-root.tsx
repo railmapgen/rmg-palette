@@ -12,37 +12,41 @@ export default function AppRoot() {
     return (
         <HashRouter>
             <RMMantineProvider>
-                <RMWindow>
-                    <Routes>
-                        <Route
-                            path="/new"
-                            element={
+                <Routes>
+                    <Route
+                        path="/new"
+                        element={
+                            <RMWindow>
+                                <TicketWindowHeader />
                                 <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
-                                    <TicketWindowHeader />
                                     <TicketView />
                                 </RMErrorBoundary>
-                            }
-                        />
-                        <Route
-                            path="/picker"
-                            element={
+                            </RMWindow>
+                        }
+                    />
+                    <Route
+                        path="/picker"
+                        element={
+                            <RMWindow isAppClip>
+                                <PickerWindowHeader />
                                 <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
-                                    <PickerWindowHeader />
                                     <PickerView />
                                 </RMErrorBoundary>
-                            }
-                        />
-                        <Route
-                            path="/"
-                            element={
+                            </RMWindow>
+                        }
+                    />
+                    <Route
+                        path="/"
+                        element={
+                            <RMWindow>
+                                <WindowHeader />
                                 <RMErrorBoundary suspenseFallback={<LoadingOverlay visible />}>
-                                    <WindowHeader />
                                     <PaletteView />
                                 </RMErrorBoundary>
-                            }
-                        />
-                    </Routes>
-                </RMWindow>
+                            </RMWindow>
+                        }
+                    />
+                </Routes>
             </RMMantineProvider>
         </HashRouter>
     );

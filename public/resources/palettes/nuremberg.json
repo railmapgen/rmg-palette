@@ -88,6 +88,28 @@
         }
     },
     {
+        "id": "nt10",
+        "colour": "#c85789",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram line 10",
+            "de": "Linie 10",
+            "zh-Hans": "有轨电车10号线",
+            "zh-Hant": "電車路線10號"
+        }
+    },
+    {
+        "id": "nt11",
+        "colour": "#f79447",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram line 11",
+            "de": "Linie 11",
+            "zh-Hans": "11号电车线路",
+            "zh-Hant": "電車路線11號"
+        }
+    },
+    {
         "id": "ns",
         "colour": "#70a26b",
         "fg": "#fff",

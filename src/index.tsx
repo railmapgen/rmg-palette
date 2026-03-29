@@ -11,7 +11,6 @@ import { Events } from './util/constants';
 import { initPickerState, initStore } from './redux/init';
 import { getCityList, getCountryList } from '@railmapgen/rmg-palette-resources';
 import { setCityList, setCountryList, setIsDataLoading } from './redux/app/app-slice';
-import { censorCountryList } from './util/censor-utils';
 
 let root: Root;
 
@@ -38,15 +37,16 @@ rmgRuntime
     })
     .then(async () => {
         // load cityList and countryList
-        try {
-            store.dispatch(setCityList(await getCityList()));
-        } catch (e) {
-            logger.error('Unable to load city list', e);
+        const [cityListResult, countryListResult] = await Promise.allSettled([getCityList(), getCountryList()]);
+        if (cityListResult.status === 'fulfilled') {
+            store.dispatch(setCityList(cityListResult.value));
+        } else {
+            logger.error('Unable to load city list', cityListResult.reason);
         }
-        try {
-            store.dispatch(setCountryList(censorCountryList(await getCountryList())));
-        } catch (e) {
-            logger.error('Unable to load country list', e);
+        if (countryListResult.status === 'fulfilled') {
+            store.dispatch(setCountryList(countryListResult.value));
+        } else {
+            logger.error('Unable to load country list', countryListResult.reason);
         }
         store.dispatch(setIsDataLoading(false));
 
