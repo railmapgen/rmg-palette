@@ -144,7 +144,7 @@
     },
     {
         "id": "sp15",
-        "colour": "8f8f8c",
+        "colour": "#8f8f8c",
         "fg": "#fff",
         "name": {
             "en": "Line 15",
