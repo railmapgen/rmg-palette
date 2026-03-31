@@ -1496,6 +1496,15 @@
         }
     },
     {
+        "id": "phoenix",
+        "country": "US",
+        "name": {
+            "en": "Phoenix",
+            "zh-Hans": "凤凰城",
+            "zh-Hant": "鳳凰城"
+        }
+    },
+    {
         "id": "pittsburgh",
         "country": "US",
         "name": {
