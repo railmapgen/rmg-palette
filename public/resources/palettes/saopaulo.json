@@ -1,115 +1,167 @@
 [
     {
         "id": "sp1",
+        "colour": "#171796",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
-            "pt": "Linha 1"
-        },
-        "colour": "#0153A0"
+            "pt": "Linha 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號缐"
+        }
     },
     {
         "id": "sp2",
+        "colour": "#007a5e",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
-            "pt": "Linha 2"
-        },
-        "colour": "#008061"
+            "pt": "Linha 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號缐"
+        }
     },
     {
         "id": "sp3",
+        "colour": "#ed2e38",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
-            "pt": "Linha 3"
-        },
-        "colour": "#EE3E34"
+            "pt": "Linha 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號缐"
+        }
     },
     {
         "id": "sp4",
+        "colour": "#fcc540",
+        "fg": "#000",
         "name": {
             "en": "Line 4",
-            "pt": "Linha 4"
-        },
-        "colour": "#FED304",
-        "fg": "#000"
+            "pt": "Linha 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號缐"
+        }
     },
     {
         "id": "sp5",
+        "colour": "#76509b",
+        "fg": "#fff",
         "name": {
             "en": "Line 5",
-            "pt": "Linha 5"
-        },
-        "colour": "#784D9F"
+            "pt": "Linha 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號缐"
+        }
     },
     {
         "id": "sp6",
+        "colour": "#F27C00",
+        "fg": "#fff",
         "name": {
             "en": "Line 6",
-            "pt": "Linha 6"
-        },
-        "colour": "#F27C00"
+            "pt": "Linha 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號缐"
+        }
     },
     {
         "id": "sp7",
+        "colour": "#9E1766",
+        "fg": "#fff",
         "name": {
             "en": "Line 7",
-            "pt": "Linha 7"
-        },
-        "colour": "#9E1766"
+            "pt": "Linha 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號缐"
+        }
     },
     {
         "id": "sp8",
+        "colour": "#9E9E93",
+        "fg": "#fff",
         "name": {
             "en": "Line 8",
-            "pt": "Linha 8"
-        },
-        "colour": "#9E9E93"
+            "pt": "Linha 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號缐"
+        }
     },
     {
         "id": "sp9",
+        "colour": "#00A78E",
+        "fg": "#fff",
         "name": {
             "en": "Line 9",
-            "pt": "Linha 9"
-        },
-        "colour": "#00A78E"
+            "pt": "Linha 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號缐"
+        }
     },
     {
         "id": "sp10",
+        "colour": "#007C8F",
+        "fg": "#fff",
         "name": {
             "en": "Line 10",
-            "pt": "Linha 10"
-        },
-        "colour": "#007C8F"
+            "pt": "Linha 10",
+            "zh-Hans": "10号线",
+            "zh-Hant": "10號缐"
+        }
     },
     {
         "id": "sp11",
+        "colour": "#F04D22",
+        "fg": "#fff",
         "name": {
             "en": "Line 11",
-            "pt": "Linha 11"
-        },
-        "colour": "#F04D22"
+            "pt": "Linha 11",
+            "zh-Hans": "11号线",
+            "zh-Hant": "11號缐"
+        }
     },
     {
         "id": "sp12",
+        "colour": "#083E89",
+        "fg": "#fff",
         "name": {
             "en": "Line 12",
-            "pt": "Linha 12"
-        },
-        "colour": "#083E89"
+            "pt": "Linha 12",
+            "zh-Hans": "12号线",
+            "zh-Hant": "12號缐"
+        }
     },
     {
         "id": "sp13",
+        "colour": "#00AB5B",
+        "fg": "#fff",
         "name": {
             "en": "Line 13",
-            "pt": "Linha 13"
-        },
-        "colour": "#00AB5B"
+            "pt": "Linha 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號缐"
+        }
     },
     {
         "id": "sp15",
+        "colour": "8f8f8c",
+        "fg": "#fff",
         "name": {
             "en": "Line 15",
-            "pt": "Linha 15"
-        },
-        "colour": "#858D90"
+            "pt": "Linha 15",
+            "zh-Hans": "15号线",
+            "zh-Hant": "15號缐"
+        }
+    },
+    {
+        "id": "sp17",
+        "colour": "#D58405",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "pt": "Linha 17",
+            "zh-Hans": "17号线",
+            "zh-Hant": "17號缐"
+        }
     }
 ]
