@@ -1,0 +1,58 @@
+[
+    {
+        "id": "bsl",
+        "colour": "#FF0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Bloom Street Line"
+        }
+    },
+    {
+        "id": "gsl",
+        "colour": "#aaaaaa",
+        "fg": "#000",
+        "name": {
+            "en": "Ginko Street Line"
+        }
+    },
+    {
+        "id": "gslb",
+        "colour": "#aaaaaa",
+        "fg": "#000",
+        "name": {
+            "en": "Ginko Street Branch"
+        }
+    },
+    {
+        "id": "lbl",
+        "colour": "#00ffff",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Boulevard Line"
+        }
+    },
+    {
+        "id": "tll",
+        "colour": "#c800ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Trill Lane Line"
+        }
+    },
+    {
+        "id": "hsl",
+        "colour": "#ffbf00",
+        "fg": "#000",
+        "name": {
+            "en": "Hover Street Line"
+        }
+    },
+    {
+        "id": "sal",
+        "colour": "#00ff15",
+        "fg": "#000",
+        "name": {
+            "en": "Sack Avenue Line"
+        }
+    }
+]
