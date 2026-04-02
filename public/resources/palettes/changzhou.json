@@ -20,5 +20,15 @@
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
         }
+    },
+    {
+        "id": "cz5",
+        "colour": "#2e9e46",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號綫"
+        }
     }
 ]
