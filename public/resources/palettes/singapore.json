@@ -95,5 +95,35 @@
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
         }
+    },
+    {
+        "id": "SLL",
+        "colour": "#301c1c",
+        "fg": "#fff",
+        "name": {
+            "en": "Southern Island Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "SEL",
+        "colour": "#da78b3",
+        "fg": "#fff",
+        "name": {
+            "en": "Seletar Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "NDL",
+        "colour": "#aaaaaa",
+        "fg": "#fff",
+        "name": {
+            "en": "Northern Dock Line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
     }
 ]
