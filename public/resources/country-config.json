@@ -76,6 +76,13 @@
         ]
     },
     {
+        "id": "BG",
+        "name": {
+            "en": "Bulgaria"
+        },
+        "languages": []
+    },
+    {
         "id": "BO",
         "name": {
             "en": "Bolivia",
