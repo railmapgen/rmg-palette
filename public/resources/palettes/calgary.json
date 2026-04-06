@@ -1,0 +1,137 @@
+[
+    {
+        "id": "201",
+        "colour": "#d91931",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "fr": "Ligne Rouge"
+        }
+    },
+    {
+        "id": "202",
+        "colour": "#0088ce",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "fr": "Ligne Bleue"
+        }
+    },
+    {
+        "id": "203",
+        "colour": "#23b24b",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "fr": "Ligne Verte"
+        }
+    },
+    {
+        "id": "300",
+        "colour": "#b13423",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT Airport/City Centre",
+            "fr": "BRT Aéroport/Centre-ville"
+        }
+    },
+    {
+        "id": "301",
+        "colour": "#b13423",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT North/City Centre",
+            "fr": "BRT Nord/Centre-ville"
+        }
+    },
+    {
+        "id": "302",
+        "colour": "#b13423",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT Southeast/City Centre",
+            "fr": "BRT Sud-Est/Centre-ville"
+        }
+    },
+    {
+        "id": "303",
+        "colour": "#f18a00",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX Orange",
+            "fr": "MAX Orange"
+        }
+    },
+    {
+        "id": "304",
+        "colour": "#fecb0a",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX Yellow",
+            "fr": "MAX Jaune"
+        }
+    },
+    {
+        "id": "305",
+        "colour": "#b13423",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT Bowness/17 Ave SE",
+            "fr": "BRT Bowness/17 Avenue SE"
+        }
+    },
+    {
+        "id": "306",
+        "colour": "#009ca7",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX Teal",
+            "fr": "MAX Teal"
+        }
+    },
+    {
+        "id": "307",
+        "colour": "#93358c",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX Purple",
+            "fr": "MAX Violet"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#a7a9ab",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX 52 Street East",
+            "fr": "MAX 52 Rue Est"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#a7a9ab",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX 144 Avenue North",
+            "fr": "MAX 144 Avenue Nord"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#a7a9ab",
+        "fg": "#fff",
+        "name": {
+            "en": "MAX West BRT",
+            "fr": "MAX Ouest BRT"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#a52a2f",
+        "fg": "#fff",
+        "name": {
+            "en": "MRU Streetcar",
+            "fr": "Tramway MRU"
+        }
+    }
+]
