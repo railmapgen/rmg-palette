@@ -270,13 +270,23 @@
         }
     },
     {
-        "id": "maglev",
+        "id": "maglev1",
         "colour": "#008b9a",
         "fg": "#fff",
         "name": {
-            "en": "Shanghai Maglev Train",
-            "zh-Hans": "磁浮线",
-            "zh-Hant": "磁浮線"
+            "en": "Shanghai Maglev Train（Double Colour 1)",
+            "zh-Hans": "磁浮线（双色线段一）",
+            "zh-Hant": "磁浮線（雙色綫段一）"
+        }
+    },
+    {
+        "id": "maglev2",
+        "colour": "#f5a74e",
+        "fg": "#fff",
+        "name": {
+            "en": "Shanghai Maglev Train（Double Colour 2)",
+            "zh-Hans": "磁浮线（双色线段二）",
+            "zh-Hant": "磁浮線（雙色綫段二）"
         }
     },
     {
