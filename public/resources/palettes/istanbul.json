@@ -231,17 +231,6 @@
         }
     },
     {
-        "id": "istcc",
-        "colour": "#62BCB0",
-        "fg": "#fff",
-        "name": {
-            "en": "Cable Car",
-            "tr": "Teleferik",
-            "zh-Hans": "缆车",
-            "zh-Hant": "纜車"
-        }
-    },
-    {
         "id": "istf",
         "colour": "#787256",
         "fg": "#fff",
@@ -272,6 +261,16 @@
             "tr": "Halkalı-Bahçeşehir Banliyö Hattı",
             "zh-Hans": "市域铁路B2线",
             "zh-Hant": "市域鐵路B2線"
+        }
+    },
+    {
+        "id": "tel177227",
+        "colour": "#DDFF00",
+        "fg": "#fff",
+        "name": {
+            "en": "M",
+            "tr": "M",
+            "es": "M"
         }
     }
 ]
