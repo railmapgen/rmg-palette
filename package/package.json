@@ -7,7 +7,7 @@
         "directory": "package"
     },
     "type": "module",
-    "version": "3.0.3",
+    "version": "3.0.4",
     "description": "",
     "scripts": {
         "build": "node --experimental-transform-types builder/prebuild.mts && tsc && unbuild",
