@@ -1,0 +1,1 @@
+import{w as e}from"./react-71hY5xF0.js";function t(){let{i18n:t}=e(),n=e=>t.languages.map(t=>e[t]).find(e=>e!==void 0)??e.en??`(Translation Error)`;return{translateName:n,otherOfficialNames:(e,r)=>{let i=n(e);return r?.filter(e=>e!==t.language).map(t=>e[t]).filter(e=>!!e&&i!==e).reduce((e,t)=>e.includes(t)?e:[...e,t],[]).join(`/`)??``}}}export{t};

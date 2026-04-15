@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DF2fYuay.js";import{nt as t}from"./dist-CH9L_NPV.js";import{A as n}from"./react-71hY5xF0.js";var r=e(n());function i(e){let[n,i]=(0,r.useState)([]);return(0,r.useEffect)(()=>{if(!e){i([]);return}let n=new AbortController;return t(e,n.signal).then(e=>i(e)).catch(()=>i([])),()=>{n.abort()}},[e]),n}export{i as t};
