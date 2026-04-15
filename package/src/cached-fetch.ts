@@ -1,5 +1,5 @@
 import type { CityEntry, CountryEntry, PaletteEntry } from './types';
-import { decompressCityConfig, decompressCountryConfig } from './compressor';
+import { decompressCityConfig, decompressCountryConfig } from './compressor.ts';
 
 let RESPONSE_CACHE: Record<string, any> = {};
 

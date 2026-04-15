@@ -6,11 +6,12 @@
         "url": "https://github.com/railmapgen/rmg-palette.git",
         "directory": "package"
     },
+    "type": "module",
     "version": "3.0.3",
     "description": "",
     "scripts": {
         "build": "node --experimental-transform-types builder/prebuild.mts && unbuild",
-        "test": "vitest",
+        "test": "node --experimental-transform-types --test",
         "issuebot": "node --experimental-transform-types issuebot/issuebot.mts"
     },
     "author": "",
@@ -19,11 +20,8 @@
         "@railmapgen/rmg-translate": "^3.4.4"
     },
     "devDependencies": {
-        "@types/jsdom": "^27.0.0",
-        "jsdom": "^27.3.0",
         "typescript": "^5.9.3",
-        "unbuild": "^3.6.1",
-        "vitest": "^4.0.15"
+        "unbuild": "^3.6.1"
     },
     "main": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
