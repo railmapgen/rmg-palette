@@ -841,6 +841,15 @@
         }
     },
     {
+        "id": "jiangzhou",
+        "country": "CN",
+        "name": {
+            "en": "Jiangzhou",
+            "zh-Hans": "江州",
+            "zh-Hant": "江州"
+        }
+    },
+    {
         "id": "jinan",
         "country": "CN",
         "name": {
