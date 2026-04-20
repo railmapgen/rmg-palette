@@ -55,17 +55,6 @@
         }
     },
     {
-        "id": "tel",
-        "colour": "#9B5A1A",
-        "fg": "#fff",
-        "pantone": "154-C",
-        "name": {
-            "en": "Thomson-East Coast Line",
-            "zh-Hans": "汤申-东海岸线",
-            "zh-Hant": "湯申-東海岸線"
-        }
-    },
-    {
         "id": "lrt",
         "colour": "#708573",
         "fg": "#fff",
@@ -94,6 +83,25 @@
             "en": "Cross Island Line",
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
+        }
+    },
+    {
+        "id": "Rapid Transit System",
+        "colour": "#0091ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Rapid Transit System"
+        }
+    },
+    {
+        "id": "tel",
+        "colour": "#9B5A1A",
+        "fg": "#fff",
+        "pantone": "154-C",
+        "name": {
+            "en": "Thomson-East Coast Line",
+            "zh-Hans": "汤申-东海岸线",
+            "zh-Hant": "湯申-東海岸線"
         }
     }
 ]
