@@ -212,7 +212,7 @@
     {
         "id": "sz20",
         "colour": "#88DBDF",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 20 (Exibition Express)",
             "zh-Hans": "20号线（会展快线）",
