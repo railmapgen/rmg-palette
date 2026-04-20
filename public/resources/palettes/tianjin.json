@@ -334,7 +334,7 @@
     {
         "id": "jinjing",
         "colour": "#F8B5C4",
-        "fg": "#fff",
+        "fg": "#000",
         "pantone": "707 C",
         "name": {
             "en": "Jinjing Line",
