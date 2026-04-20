@@ -231,14 +231,129 @@
         }
     },
     {
+        "id": "mt12",
+        "colour": "#903f97",
+        "fg": "#fff",
+        "name": {
+            "en": "12",
+            "de": "12"
+        }
+    },
+    {
+        "id": "mt16",
+        "colour": "#006cb3",
+        "fg": "#fff",
+        "name": {
+            "en": "16",
+            "de": "16"
+        }
+    },
+    {
+        "id": "mt17",
+        "colour": "#875a46",
+        "fg": "#fff",
+        "name": {
+            "en": "17",
+            "de": "17"
+        }
+    },
+    {
+        "id": "mt18",
+        "colour": "#20b14a",
+        "fg": "#fff",
+        "name": {
+            "en": "18",
+            "de": "18"
+        }
+    },
+    {
+        "id": "mt19",
+        "colour": "#ee1c25",
+        "fg": "#fff",
+        "name": {
+            "en": "19",
+            "de": "19"
+        }
+    },
+    {
+        "id": "mt20",
+        "colour": "#16c0e9",
+        "fg": "#fff",
+        "name": {
+            "en": "20",
+            "de": "20"
+        }
+    },
+    {
+        "id": "mt21",
+        "colour": "#bc7a00",
+        "fg": "#fff",
+        "name": {
+            "en": "21",
+            "de": "21"
+        }
+    },
+    {
+        "id": "mt23",
+        "colour": "#b3d235",
+        "fg": "#fff",
+        "name": {
+            "en": "23",
+            "de": "23"
+        }
+    },
+    {
+        "id": "mt25",
+        "colour": "#f48f99",
+        "fg": "#fff",
+        "name": {
+            "en": "25",
+            "de": "25"
+        }
+    },
+    {
+        "id": "mt27",
+        "colour": "#fba61c",
+        "fg": "#fff",
+        "name": {
+            "en": "27",
+            "de": "27"
+        }
+    },
+    {
+        "id": "mt28",
+        "colour": "#fba61c",
+        "fg": "#fff",
+        "name": {
+            "en": "28",
+            "de": "28"
+        }
+    },
+    {
+        "id": "mt37",
+        "colour": "#875a46",
+        "fg": "#fff",
+        "name": {
+            "en": "37",
+            "de": "37"
+        }
+    },
+    {
         "id": "mrz",
         "colour": "#313D85",
         "fg": "#fff",
         "name": {
             "en": "Regional Train",
-            "de": "Regionalzug",
-            "zh-Hans": "市域列车",
-            "zh-Hant": "市域列車"
+            "de": "Regionalzug"
+        }
+    },
+    {
+        "id": "fv",
+        "colour": "#9E9E9E",
+        "fg": "#fff",
+        "name": {
+            "en": "long distance train",
+            "de": "Fernverkehr"
         }
     }
 ]
