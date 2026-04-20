@@ -20,5 +20,15 @@
             "zh-Hans": "S2线",
             "zh-Hant": "S2線"
         }
+    },
+    {
+        "id": "S3",
+        "colour": "#ffa500",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S3",
+            "zh-Hans": "S3线",
+            "zh-Hant": "S3綫"
+        }
     }
 ]
