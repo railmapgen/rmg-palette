@@ -9,6 +9,15 @@
         }
     },
     {
+        "id": "algiers",
+        "country": "DZ",
+        "name": {
+            "en": "Algiers",
+            "ar": "الجزائر العاصمة",
+            "fr": "Alger"
+        }
+    },
+    {
         "id": "almaty",
         "country": "KZ",
         "name": {
@@ -122,6 +131,13 @@
             "en": "Berlin",
             "zh-Hans": "柏林",
             "zh-Hant": "柏林"
+        }
+    },
+    {
+        "id": "bham",
+        "country": "GBENG",
+        "name": {
+            "en": "Birmingham"
         }
     },
     {
@@ -259,6 +275,15 @@
             "en": "Changchun",
             "zh-Hans": "长春",
             "zh-Hant": "長春"
+        }
+    },
+    {
+        "id": "changhua",
+        "country": "TW",
+        "name": {
+            "en": "Changhua",
+            "zh-Hans": "彰化",
+            "zh-Hant": "彰化"
         }
     },
     {
@@ -423,6 +448,15 @@
         }
     },
     {
+        "id": "denver",
+        "country": "US",
+        "name": {
+            "en": "Denver",
+            "zh-Hans": "丹佛",
+            "zh-Hant": "丹佛"
+        }
+    },
+    {
         "id": "doha",
         "country": "QA",
         "name": {
@@ -479,6 +513,14 @@
             "ga": "Dùn Èideann",
             "zh-Hans": "爱丁堡",
             "zh-Hant": "愛丁堡"
+        }
+    },
+    {
+        "id": "edmonton",
+        "country": "CA",
+        "name": {
+            "en": "Edmonton",
+            "fr": "Edmonton"
         }
     },
     {
@@ -1071,7 +1113,10 @@
         "id": "manila",
         "country": "PH",
         "name": {
-            "en": "Manila"
+            "en": "Manila",
+            "fil": "Maynila",
+            "zh-Hans": "马尼拉",
+            "zh-Hant": "馬尼拉"
         }
     },
     {
@@ -1451,6 +1496,15 @@
         }
     },
     {
+        "id": "pittsburgh",
+        "country": "US",
+        "name": {
+            "en": "Pittsburgh",
+            "zh-Hans": "匹兹堡",
+            "zh-Hant": "匹茲堡"
+        }
+    },
+    {
         "id": "poznan",
         "country": "PL",
         "name": {
@@ -1736,6 +1790,16 @@
         }
     },
     {
+        "id": "surabaya",
+        "country": "ID",
+        "name": {
+            "en": "Surabaya",
+            "zh-Hans": "泗水",
+            "zh-Hant": "泗水",
+            "id": "Surabaya"
+        }
+    },
+    {
         "id": "suzhou",
         "country": "CN",
         "name": {
@@ -1760,6 +1824,15 @@
             "en": "Taichung",
             "zh-Hans": "台中",
             "zh-Hant": "台中"
+        }
+    },
+    {
+        "id": "tainan",
+        "country": "TW",
+        "name": {
+            "en": "Tainan",
+            "zh-Hans": "台南",
+            "zh-Hant": "台南"
         }
     },
     {

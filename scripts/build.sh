@@ -4,6 +4,7 @@ set -eux
 # build local resources
 cd ./package
 npm install
+npm run test
 npm run build
 cd ..
 

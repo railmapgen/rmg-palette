@@ -21,11 +21,11 @@ describe('ColourPicker', () => {
         setup();
 
         await user.click(screen.getByRole('textbox'));
-        expect(screen.getByRole('option', { name: 'Line 1' })).toHaveStyle({
+        expect(screen.getByText('Line 1').closest('.mantine-Badge-root')).toHaveStyle({
             background: '#F3D03E',
             color: '#000000',
         });
-        expect(screen.getByRole('option', { name: 'Line 2' })).toHaveStyle({
+        expect(screen.getByText('Line 2').closest('.mantine-Badge-root')).toHaveStyle({
             background: '#00629B',
             color: '#FFFFFF',
         });
@@ -35,7 +35,7 @@ describe('ColourPicker', () => {
         const { rerender } = setup();
 
         await user.click(screen.getByRole('textbox'));
-        await screen.findByRole('option', { name: 'Line 1' });
+        await screen.findByText('Line 1');
 
         rerender(<ColourPicker city={undefined} {...mockCallbacks} />);
 
@@ -49,12 +49,12 @@ describe('ColourPicker', () => {
         const inputField = screen.getByRole('textbox');
         await user.type(inputField, '广佛');
         await waitFor(() => expect(screen.queryByRole('option', { name: 'Line 1' })).not.toBeInTheDocument());
-        expect(screen.getByRole('option', { name: 'Guangfo Line' })).toBeInTheDocument();
+        expect(screen.getByText('Guangfo Line')).toBeInTheDocument();
 
         await user.clear(inputField);
         await user.type(inputField, '海珠');
-        await waitFor(() => expect(screen.queryByRole('option', { name: 'Guangfo Line' })).not.toBeInTheDocument());
-        const thz1Option = screen.getByRole('option', { name: 'THZ1 (Haizhu Tram Line 1)' });
+        await waitFor(() => expect(screen.queryByText('Guangfo Line')).not.toBeInTheDocument());
+        const thz1Option = screen.getByText('THZ1 (Haizhu Tram Line 1)');
         expect(thz1Option).toBeInTheDocument();
 
         // select THZ1

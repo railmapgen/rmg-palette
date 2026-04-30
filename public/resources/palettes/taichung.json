@@ -1,42 +1,72 @@
 [
     {
-        "id": "tc1",
+        "id": "1",
         "colour": "#8ec31c",
         "fg": "#fff",
         "name": {
-            "en": "Green Line (Line 1)",
-            "zh-Hans": "绿线",
-            "zh-Hant": "綠線"
+            "en": "Green Line (Wuri-Wenxin-Beitun Line, Line 1)",
+            "zh-Hans": "绿线（乌日文心北屯线）",
+            "zh-Hant": "綠線（烏日文心北屯線）"
         }
     },
     {
-        "id": "tc2",
+        "id": "2",
         "colour": "#0093db",
         "fg": "#fff",
         "name": {
-            "en": "Blue Line (Line 2)",
-            "zh-Hans": "蓝线",
-            "zh-Hant": "藍線"
+            "en": "Blue Line (Wuqi-Xitun Line, Line 2)",
+            "zh-Hans": "蓝线（梧栖西屯线）",
+            "zh-Hant": "藍線（梧棲西屯線）"
         }
     },
     {
-        "id": "tc3",
+        "id": "3",
         "colour": "#fca311",
         "fg": "#fff",
         "name": {
-            "en": "Orange Line (Line 3)",
-            "zh-Hans": "橘线",
-            "zh-Hant": "橘線"
+            "en": "Orange Line (Taichung Airport Line, Line 3)",
+            "zh-Hans": "橘线（台中机场线）",
+            "zh-Hant": "橘線（台中機場線）"
         }
     },
     {
-        "id": "tc4",
+        "id": "4",
         "colour": "#cc00cc",
         "fg": "#fff",
         "name": {
-            "en": "Purple Line (Line 4)",
-            "zh-Hans": "紫线",
-            "zh-Hant": "紫線"
+            "en": "Purple Line (Da-Ping-Wu Line, Line 4)",
+            "zh-Hans": "紫线（大平雾线）",
+            "zh-Hant": "紫線（大平霧線）"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#ea0437",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line (Chongde-Fengyuan Line, Line 5)",
+            "zh-Hans": "红线（崇德丰原线）",
+            "zh-Hant": "紅線（崇德豐原線）"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#ffdf00",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow Line (Fengke Line, Line 6)",
+            "zh-Hans": "黄线（丰科轴线）",
+            "zh-Hant": "黃線（豐科軸線）"
+        }
+    },
+    {
+        "id": "7",
+        "colour": "#00ced1",
+        "fg": "#000",
+        "name": {
+            "en": "Turquoise Line (Kegong Line, Line 7)",
+            "zh-Hans": "绿松线（科工轴线）",
+            "zh-Hant": "綠松線（科工軸線）"
         }
     }
 ]
