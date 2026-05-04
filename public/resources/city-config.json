@@ -1753,6 +1753,15 @@
         }
     },
     {
+        "id": "shronmdo",
+        "country": "LC",
+        "name": {
+            "en": "Sronmdo",
+            "zh-Hans": "顺都",
+            "zh-Hant": "順都"
+        }
+    },
+    {
         "id": "singapore",
         "country": "SG",
         "name": {

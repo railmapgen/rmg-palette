@@ -448,6 +448,17 @@
         ]
     },
     {
+        "id": "LC",
+        "name": {
+            "en": "Lyurchxieria",
+            "zh-Hans": "明华",
+            "zh-Hant": "明華"
+        },
+        "languages": [
+            "zh-Hant"
+        ]
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",
