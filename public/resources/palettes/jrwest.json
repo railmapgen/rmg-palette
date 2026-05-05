@@ -1,0 +1,298 @@
+[
+    {
+        "id": "sakurai",
+        "colour": "#c62828",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "桜井線"
+        }
+    },
+    {
+        "id": "osakaloop",
+        "colour": "#e80000",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "大阪環状線"
+        }
+    },
+    {
+        "id": "kishin",
+        "colour": "#ff593e",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "姫新線"
+        }
+    },
+    {
+        "id": "yamaguchi",
+        "colour": "#f37052",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "山口線"
+        }
+    },
+    {
+        "id": "hanwa",
+        "colour": "#ff8e1f",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "阪和線/舞鶴線"
+        }
+    },
+    {
+        "id": "imbi",
+        "colour": "#bb7d2e",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "因美線"
+        }
+    },
+    {
+        "id": "nara",
+        "colour": "#b67c2b",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "奈良線"
+        }
+    },
+    {
+        "id": "kure",
+        "colour": "#d38c06",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "呉線"
+        }
+    },
+    {
+        "id": "kisuki",
+        "colour": "#ffba00",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "木次線"
+        }
+    },
+    {
+        "id": "fukuchiyama",
+        "colour": "#ffc600",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "福知山線"
+        }
+    },
+    {
+        "id": "tsuyama",
+        "colour": "#fcc900",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "津山線"
+        }
+    },
+    {
+        "id": "kusatsu",
+        "colour": "#5a9934",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "草津線"
+        }
+    },
+    {
+        "id": "hakubi",
+        "colour": "#378640",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "伯備線"
+        }
+    },
+    {
+        "id": "gantoku",
+        "colour": "#00a663",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "岩徳線"
+        }
+    },
+    {
+        "id": "kansai",
+        "colour": "#00a569",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "関西線"
+        }
+    },
+    {
+        "id": "kakogawa",
+        "colour": "#00baa5",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "加古川線"
+        }
+    },
+    {
+        "id": "kabe",
+        "colour": "#09c0b0",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "可部線"
+        }
+    },
+    {
+        "id": "uno",
+        "colour": "#7cccd0",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "宇野線"
+        }
+    },
+    {
+        "id": "kisei",
+        "colour": "#00a7c0",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "紀勢線"
+        }
+    },
+    {
+        "id": "kosai",
+        "colour": "#00a8e4",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "湖西線"
+        }
+    },
+    {
+        "id": "osakahigashi",
+        "colour": "#387394",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "おおさか東線"
+        }
+    },
+    {
+        "id": "hakataminami",
+        "colour": "#0072ba",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "博多南線/北陸線/本四備讃線/関西空港線/境線/東海道線"
+        }
+    },
+    {
+        "id": "obama",
+        "colour": "#0068b7",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "小浜線/越美北線/七尾線/城端線/氷見線/高山線/大糸線"
+        }
+    },
+    {
+        "id": "sanyo",
+        "colour": "#006cc5",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "山陽線"
+        }
+    },
+    {
+        "id": "sakurajima",
+        "colour": "#003c88",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "桜島線"
+        }
+    },
+    {
+        "id": "sanin",
+        "colour": "#878ddc",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "山陰線"
+        }
+    },
+    {
+        "id": "fukuen",
+        "colour": "#49479e",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "福塩線"
+        }
+    },
+    {
+        "id": "shinkansen",
+        "colour": "#24197c",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "山陽新幹線/北陸新幹線"
+        }
+    },
+    {
+        "id": "geibi",
+        "colour": "#8f76d6",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "芸備線"
+        }
+    },
+    {
+        "id": "onoda",
+        "colour": "#776493",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "小野田線"
+        }
+    },
+    {
+        "id": "mine",
+        "colour": "#dc208f",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "美祢線"
+        }
+    },
+    {
+        "id": "katamachi",
+        "colour": "#ff1493",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "片町線/JR東西線"
+        }
+    },
+    {
+        "id": "ube",
+        "colour": "#a52f5d",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "宇部線"
+        }
+    },
+    {
+        "id": "bantan",
+        "colour": "#b11e52",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "播但線"
+        }
+    },
+    {
+        "id": "wakayama",
+        "colour": "#f79fba",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "和歌山線"
+        }
+    },
+    {
+        "id": "kibi",
+        "colour": "#f3aaba",
+        "fg": "#000",
+        "name": {
+            "zh-Hans": "吉備線"
+        }
+    },
+    {
+        "id": "ako",
+        "colour": "#ea5e60",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "赤穂線"
+        }
+    }
+]
