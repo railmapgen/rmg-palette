@@ -1363,6 +1363,14 @@
         }
     },
     {
+        "id": "nijmegen",
+        "country": "NL",
+        "name": {
+            "nl": "Nijmegen",
+            "en": "Nijmegen"
+        }
+    },
+    {
         "id": "ningbo",
         "country": "CN",
         "name": {
