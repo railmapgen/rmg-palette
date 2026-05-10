@@ -299,25 +299,5 @@
             "zh-Hans": "黄埔有轨2号线",
             "zh-Hant": "黃埔有軌2號線"
         }
-    },
-    {
-        "id": "fsmtr",
-        "colour": "#565656",
-        "fg": "#fff",
-        "name": {
-            "en": "Foshan Metro",
-            "zh-Hans": "佛山地铁",
-            "zh-Hant": "佛山地鐵"
-        }
-    },
-    {
-        "id": "gdcj",
-        "colour": "#255aa8",
-        "fg": "#fff",
-        "name": {
-            "en": "Guangdong Intercity",
-            "zh-Hans": "广东城际",
-            "zh-Hant": "廣東城際"
-        }
     }
 ]
