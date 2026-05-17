@@ -77,7 +77,7 @@
         }
     },
     {
-        "id": "JRL",
+        "id": "jrl",
         "colour": "#089cac",
         "fg": "#fff",
         "name": {
@@ -87,13 +87,23 @@
         }
     },
     {
-        "id": "CRL",
+        "id": "crl",
         "colour": "#a0c40c",
         "fg": "#000",
         "name": {
             "en": "Cross Island Line",
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
+        }
+    },
+    {
+        "id": "sll",
+        "colour": "#ffabab",
+        "fg": "#000",
+        "name": {
+            "en": "Seletar Airport Line",
+            "zh-Hans": " 实里达机场线",
+            "zh-Hant": " 實裡達機場線"
         }
     }
 ]
