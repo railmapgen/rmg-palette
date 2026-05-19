@@ -4,9 +4,11 @@
         "lib": ["dom", "dom.iterable", "esnext"],
         "outDir": "./dist",
         "allowJs": true,
+        "noEmit": true,
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "downlevelIteration": true,
@@ -15,10 +17,9 @@
         "declaration": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "jsx": "react-jsx",
         "noFallthroughCasesInSwitch": true,
         "strictNullChecks": true,
-        "types": ["vite/client", "vitest/globals"]
+        "types": ["node"]
     },
     "ts-node": {
         "esm": true

@@ -1,4 +1,4 @@
-import { LanguageCode, Translation } from '@railmapgen/rmg-translate';
+import type { LanguageCode, Translation } from '@railmapgen/rmg-translate';
 
 export enum MonoColour {
     black = '#000',
