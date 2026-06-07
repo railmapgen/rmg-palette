@@ -95,5 +95,25 @@
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
         }
+    },
+    {
+        "id": "SLL",
+        "colour": "#ff5ee2",
+        "fg": "#fff",
+        "name": {
+            "en": "Seletar Line",
+            "zh-Hans": "实里达线",
+            "zh-Hant": "實裡達線"
+        }
+    },
+    {
+        "id": "TGL",
+        "colour": "#7e9e37",
+        "fg": "#000",
+        "name": {
+            "en": "Tengah Line",
+            "zh-Hans": "登加线",
+            "zh-Hant": "登加線"
+        }
     }
 ]
