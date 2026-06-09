@@ -1411,6 +1411,15 @@
         }
     },
     {
+        "id": "onlonlin",
+        "country": "SG",
+        "name": {
+            "en": "Only one line",
+            "zh-Hans": "X",
+            "zh-Hant": "X"
+        }
+    },
+    {
         "id": "osaka",
         "country": "JP",
         "name": {
