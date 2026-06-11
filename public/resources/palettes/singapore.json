@@ -95,5 +95,25 @@
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
         }
+    },
+    {
+        "id": "N|SRL",
+        "colour": "#8238d1",
+        "fg": "#fff",
+        "name": {
+            "en": "Northern|Southern Region Line",
+            "zh-Hans": "X",
+            "zh-Hant": "X"
+        }
+    },
+    {
+        "id": "E|WRL",
+        "colour": "#48c7a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Eastern|Western Region Line",
+            "zh-Hans": "X",
+            "zh-Hant": "X"
+        }
     }
 ]
