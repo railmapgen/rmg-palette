@@ -1,0 +1,50 @@
+[
+    {
+        "id": "citylines",
+        "colour": "#ed1d24",
+        "fg": "#fff",
+        "name": {
+            "en": "Cardiff Valley Lines - Cardiff Central to Aberdare & Merthyr Tydfill"
+        }
+    },
+    {
+        "id": "valleylines",
+        "colour": "#00a9b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Cardiff Valley Lines - Treherbet Line"
+        }
+    },
+    {
+        "id": "bayline",
+        "colour": "#02a956",
+        "fg": "#fff",
+        "name": {
+            "en": "Cardiff Valley Lines - Cardiff Bay Line"
+        }
+    },
+    {
+        "id": "ccline",
+        "colour": "#f47920",
+        "fg": "#fff",
+        "name": {
+            "en": "Cardiff Valley Lines - Coryton & Caerphilly to Penarth"
+        }
+    },
+    {
+        "id": "rbbline",
+        "colour": "#782b90",
+        "fg": "#fff",
+        "name": {
+            "en": "Cardiff Valley Lines - Rhymney to Barry Island & Bridgend"
+        }
+    },
+    {
+        "id": "tfwalt",
+        "colour": "#9c9d9f",
+        "fg": "#fff",
+        "name": {
+            "en": "Transport for Wales - Alternate Lines (Not Part of the Valley Lines)"
+        }
+    }
+]
