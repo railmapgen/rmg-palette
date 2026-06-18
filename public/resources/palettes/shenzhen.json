@@ -152,7 +152,7 @@
     {
         "id": "sz14",
         "colour": "#F2C75C",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 14 (Eastern Express)",
             "zh-Hans": "14号线（东部快线）",
@@ -212,7 +212,7 @@
     {
         "id": "sz20",
         "colour": "#88DBDF",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 20 (Exibition Express)",
             "zh-Hans": "20号线（会展快线）",
@@ -222,7 +222,7 @@
     {
         "id": "sz22",
         "colour": "#f5e425",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 22 (Central Axis Line)",
             "zh-Hans": "22号线（中轴线）",
@@ -271,12 +271,12 @@
     },
     {
         "id": "tram",
-        "colour": "#b8b8b8",
+        "colour": "#EBD5A4",
         "fg": "#fff",
         "name": {
-            "en": "Tram",
-            "zh-Hans": "有轨电车",
-            "zh-Hant": "有軌電車"
+            "en": "Longhu Modern Tram",
+            "zh-Hans": "龙华现代有轨电车",
+            "zh-Hant": "龍華現代有軌電車"
         }
     },
     {
@@ -284,9 +284,9 @@
         "colour": "#1974d2",
         "fg": "#fff",
         "name": {
-            "en": "Pingshan SkyShuttle",
-            "zh-Hans": "坪山云巴",
-            "zh-Hant": "坪山雲巴"
+            "en": "Pingshan SkyShuttle Line 1",
+            "zh-Hans": "坪山云巴1号线",
+            "zh-Hant": "坪山雲巴1号線"
         }
     }
 ]
