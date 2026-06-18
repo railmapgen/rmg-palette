@@ -1,29 +1,42 @@
 [
     {
         "id": "hrb1",
+        "colour": "#C8102E",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#C8102E"
+        }
     },
     {
         "id": "hrb2",
+        "colour": "#44AF52",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#44AF52"
+        }
     },
     {
         "id": "hrb3",
+        "colour": "#FFC72C",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#FFC72C"
+        }
+    },
+    {
+        "id": "hrb9",
+        "colour": "#a6e20d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號缐"
+        }
     }
 ]
