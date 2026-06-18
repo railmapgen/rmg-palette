@@ -41,7 +41,7 @@
     },
     {
         "id": "cc5",
-        "colour": "#f8408a",
+        "colour": "#a88546",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -61,7 +61,7 @@
     },
     {
         "id": "cc7",
-        "colour": "#f6cf44",
+        "colour": "#a95898",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -81,7 +81,7 @@
     },
     {
         "id": "cc9",
-        "colour": "#a26745",
+        "colour": "#2d79bb",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
