@@ -97,5 +97,49 @@
             "ja": "関西本線",
             "zh-Hant": "關西本線"
         }
+    },
+    {
+        "id": "nh",
+        "colour": "#d1031f",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "名古屋本线",
+            "ja": "名古屋本線",
+            "zh-Hant": "名古屋本線",
+            "en": "Nagoya Main Line"
+        }
+    },
+    {
+        "id": "kg",
+        "colour": "#008b41",
+        "fg": "#fff",
+        "name": {
+            "en": "Kakamigahara Line",
+            "zh-Hans": "各务原线",
+            "ja": "各務原線",
+            "zh-Hant": "各務原線"
+        }
+    },
+    {
+        "id": "iy",
+        "colour": "#008b41",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "犬山线",
+            "ja": "犬山線",
+            "en": "Inuyama Line",
+            "zh-Hant": "犬山線"
+        }
+    },
+    {
+        "id": "hm",
+        "colour": "#008b41",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "广见线",
+            "ja": "広見線",
+            "en": "Hiroken Line",
+            "zh-Hant": "廣見線"
+        }
     }
 ]
