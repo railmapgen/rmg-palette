@@ -1,0 +1,66 @@
+[
+    {
+        "id": "sfm1",
+        "colour": "#EC2029",
+        "fg": "#fff",
+        "name": {
+            "en": "M1"
+        }
+    },
+    {
+        "id": "sfm2",
+        "colour": "#1077BC",
+        "fg": "#fff",
+        "name": {
+            "en": "M2"
+        }
+    },
+    {
+        "id": "sfm3",
+        "colour": "#3BB44B",
+        "fg": "#fff",
+        "name": {
+            "en": "M3"
+        }
+    },
+    {
+        "id": "sfm4",
+        "colour": "#FCD403",
+        "fg": "#000",
+        "name": {
+            "en": "M4"
+        }
+    },
+    {
+        "id": "sfm5",
+        "colour": "#8B603D",
+        "fg": "#fff",
+        "name": {
+            "en": "M5"
+        }
+    },
+    {
+        "id": "sfm6",
+        "colour": "#673091",
+        "fg": "#fff",
+        "name": {
+            "en": "M6"
+        }
+    },
+    {
+        "id": "sfm",
+        "colour": "#2E8ECE",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro"
+        }
+    },
+    {
+        "id": "sft",
+        "colour": "#F7941F",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram"
+        }
+    }
+]

@@ -1762,6 +1762,13 @@
         }
     },
     {
+        "id": "sofia",
+        "country": "BG",
+        "name": {
+            "en": "Sofia"
+        }
+    },
+    {
         "id": "stlouis",
         "country": "US",
         "name": {
