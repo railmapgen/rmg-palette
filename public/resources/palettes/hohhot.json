@@ -1,24 +1,26 @@
 [
     {
         "id": "hhht1",
-        "colour": "#e82311",
+        "colour": "#bf0001",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
             "ko": "1호선",
             "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
+            "zh-Hant": "1號線",
+            "zh": "1 ᠳ᠋ᠦᠭᠡᠷ ᠱᠤᠭᠤᠮ"
         }
     },
     {
         "id": "hhht2",
-        "colour": "#005bac",
+        "colour": "#2f74b3",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
             "ko": "2호선",
             "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
+            "zh-Hant": "2號線",
+            "zh": "2 ᠳ᠋ᠦᠭᠡᠷ ᠱᠤᠭᠤᠮ"
         }
     }
 ]
