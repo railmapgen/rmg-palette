@@ -1,0 +1,186 @@
+[
+    {
+        "id": "r1",
+        "colour": "#F39C12",
+        "fg": "#fff",
+        "name": {
+            "en": "R1"
+        }
+    },
+    {
+        "id": "r2",
+        "colour": "#E74C3C",
+        "fg": "#fff",
+        "name": {
+            "en": "R2"
+        }
+    },
+    {
+        "id": "r3",
+        "colour": "#283891",
+        "fg": "#fff",
+        "name": {
+            "en": "R3"
+        }
+    },
+    {
+        "id": "r4",
+        "colour": "#add8e6",
+        "fg": "#fff",
+        "name": {
+            "en": "R4"
+        }
+    },
+    {
+        "id": "r7",
+        "colour": "#efbf04",
+        "fg": "#fff",
+        "name": {
+            "en": "R7"
+        }
+    },
+    {
+        "id": "r8",
+        "colour": "#00c04b",
+        "fg": "#fff",
+        "name": {
+            "en": "R8"
+        }
+    },
+    {
+        "id": "r9",
+        "colour": "#06402b",
+        "fg": "#fff",
+        "name": {
+            "en": "R9"
+        }
+    },
+    {
+        "id": "r11",
+        "colour": "#D4143D",
+        "fg": "#fff",
+        "name": {
+            "en": "R11"
+        }
+    },
+    {
+        "id": "r20",
+        "colour": "#639E4C",
+        "fg": "#fff",
+        "name": {
+            "en": "R20"
+        }
+    },
+    {
+        "id": "r22",
+        "colour": "#D4143D",
+        "fg": "#fff",
+        "name": {
+            "en": "R22"
+        }
+    },
+    {
+        "id": "r30",
+        "colour": "#203A7C",
+        "fg": "#fff",
+        "name": {
+            "en": "R30"
+        }
+    },
+    {
+        "id": "r34",
+        "colour": "#203A7C",
+        "fg": "#fff",
+        "name": {
+            "en": "R34"
+        }
+    },
+    {
+        "id": "r35",
+        "colour": "#203A7C",
+        "fg": "#fff",
+        "name": {
+            "en": "R35"
+        }
+    },
+    {
+        "id": "r37",
+        "colour": "#203A7C",
+        "fg": "#fff",
+        "name": {
+            "en": "R37"
+        }
+    },
+    {
+        "id": "r55",
+        "colour": "#2339C9",
+        "fg": "#fff",
+        "name": {
+            "en": "R55"
+        }
+    },
+    {
+        "id": "r56",
+        "colour": "#33CC33",
+        "fg": "#fff",
+        "name": {
+            "en": "R56"
+        }
+    },
+    {
+        "id": "r57",
+        "colour": "#33CC33",
+        "fg": "#fff",
+        "name": {
+            "en": "R57"
+        }
+    },
+    {
+        "id": "r70",
+        "colour": "#b58141",
+        "fg": "#fff",
+        "name": {
+            "en": "R70"
+        }
+    },
+    {
+        "id": "r71",
+        "colour": "#614727",
+        "fg": "#fff",
+        "name": {
+            "en": "R71"
+        }
+    },
+    {
+        "id": "r72",
+        "colour": "#6B8E23",
+        "fg": "#fff",
+        "name": {
+            "en": "R72"
+        }
+    },
+    {
+        "id": "r74",
+        "colour": "#362e80",
+        "fg": "#fff",
+        "name": {
+            "en": "R74"
+        }
+    },
+    {
+        "id": "m1",
+        "colour": "#E91E63",
+        "fg": "#fff",
+        "name": {
+            "en": "M1"
+        }
+    },
+    {
+        "id": "m2",
+        "colour": "#E91E63",
+        "fg": "#fff",
+        "name": {
+            "en": "M2"
+        }
+    }
+]
