@@ -1,38 +1,62 @@
 [
     {
         "id": "xm1",
+        "colour": "#E27326",
+        "fg": "#fff",
         "name": {
             "en": "Line 1",
             "zh-Hans": "1号线",
             "zh-Hant": "1號線"
-        },
-        "colour": "#E27326"
+        }
     },
     {
         "id": "xm2",
+        "colour": "#52AB43",
+        "fg": "#fff",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
             "zh-Hant": "2號線"
-        },
-        "colour": "#52AB43"
+        }
     },
     {
         "id": "xm3",
+        "colour": "#2EC6D6",
+        "fg": "#fff",
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
             "zh-Hant": "3號線"
-        },
-        "colour": "#2EC6D6"
+        }
     },
     {
-        "id": "xmb",
+        "id": "4",
+        "colour": "#ec3333",
+        "fg": "#fff",
         "name": {
-            "en": "BRT",
-            "zh-Hans": "快速公交",
-            "zh-Hant": "快速公交"
-        },
-        "colour": "#00A5A6"
+            "en": "Line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#df3a84",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "9",
+        "colour": "#fed310",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
     }
 ]
