@@ -1,0 +1,290 @@
+[
+    {
+        "id": "mbal",
+        "colour": "#B51A00",
+        "fg": "#fff",
+        "name": {
+            "en": "Barton Loop"
+        }
+    },
+    {
+        "id": "mml",
+        "colour": "#FF8C82",
+        "fg": "#fff",
+        "name": {
+            "en": "Morganstown Line"
+        }
+    },
+    {
+        "id": "mbel",
+        "colour": "#B92D5D",
+        "fg": "#fff",
+        "name": {
+            "en": "Benton Line"
+        }
+    },
+    {
+        "id": "msul",
+        "colour": "#00B6D5",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford UFC Line"
+        }
+    },
+    {
+        "id": "mws",
+        "colour": "#7B2900",
+        "fg": "#fff",
+        "name": {
+            "en": "Willowfield Shuttle"
+        }
+    },
+    {
+        "id": "cro",
+        "colour": "#006AA1",
+        "fg": "#fff",
+        "name": {
+            "en": "Regional One"
+        }
+    },
+    {
+        "id": "crt",
+        "colour": "#00235B",
+        "fg": "#fff",
+        "name": {
+            "en": "Regional Two"
+        }
+    },
+    {
+        "id": "cac",
+        "colour": "#88B2FF",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport connect"
+        }
+    },
+    {
+        "id": "cwc",
+        "colour": "#00A4C0",
+        "fg": "#fff",
+        "name": {
+            "en": "Whitefield Connect"
+        }
+    },
+    {
+        "id": "cmc",
+        "colour": "#EE719E",
+        "fg": "#fff",
+        "name": {
+            "en": "Morgantown Connect"
+        }
+    },
+    {
+        "id": "clc",
+        "colour": "#93E3FD",
+        "fg": "#fff",
+        "name": {
+            "en": "Leighton Connect"
+        }
+    },
+    {
+        "id": "wwn",
+        "colour": "#004D65",
+        "fg": "#fff",
+        "name": {
+            "en": "Waterline North"
+        }
+    },
+    {
+        "id": "wws",
+        "colour": "#008CB4",
+        "fg": "#fff",
+        "name": {
+            "en": "Waterline South"
+        }
+    },
+    {
+        "id": "wsl",
+        "colour": "#ADADAD",
+        "fg": "#fff",
+        "name": {
+            "en": "Suburban Line"
+        }
+    },
+    {
+        "id": "wel",
+        "colour": "#00C4C8",
+        "fg": "#fff",
+        "name": {
+            "en": "Esterfield Line"
+        }
+    },
+    {
+        "id": "wal",
+        "colour": "#5C5C5C",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Line"
+        }
+    },
+    {
+        "id": "wml",
+        "colour": "#5C5C5C",
+        "fg": "#fff",
+        "name": {
+            "en": "Morganstown Line"
+        }
+    },
+    {
+        "id": "asl",
+        "colour": "#B1DD8B",
+        "fg": "#fff",
+        "name": {
+            "en": "Speed Link"
+        }
+    },
+    {
+        "id": "atll",
+        "colour": "#D19D01",
+        "fg": "#fff",
+        "name": {
+            "en": "Terminal Loop Link"
+        }
+    },
+    {
+        "id": "at12l",
+        "colour": "#D6D6D6",
+        "fg": "#fff",
+        "name": {
+            "en": "Terminal1&2Link"
+        }
+    },
+    {
+        "id": "at23l",
+        "colour": "#858585",
+        "fg": "#fff",
+        "name": {
+            "en": "Terminal2&3Link"
+        }
+    },
+    {
+        "id": "all",
+        "colour": "#474747",
+        "fg": "#fff",
+        "name": {
+            "en": "Leighton Link"
+        }
+    },
+    {
+        "id": "als",
+        "colour": "#D19D01",
+        "fg": "#fff",
+        "name": {
+            "en": "AirLink Shuttle"
+        }
+    },
+    {
+        "id": "elvb",
+        "colour": "#FF207A",
+        "fg": "#fff",
+        "name": {
+            "en": "Llyn via Benton"
+        }
+    },
+    {
+        "id": "elvm",
+        "colour": "#FF68A5",
+        "fg": "#fff",
+        "name": {
+            "en": "Llyn via Morganstown"
+        }
+    },
+    {
+        "id": "be",
+        "colour": "#FFAAC5",
+        "fg": "#fff",
+        "name": {
+            "en": "Benton Express"
+        }
+    },
+    {
+        "id": "ne",
+        "colour": "#00D3EB",
+        "fg": "#fff",
+        "name": {
+            "en": "Newry Express"
+        }
+    },
+    {
+        "id": "ns",
+        "colour": "#28AAAA",
+        "fg": "#fff",
+        "name": {
+            "en": "Newry Shuttle"
+        }
+    },
+    {
+        "id": "le",
+        "colour": "#FFBACC",
+        "fg": "#fff",
+        "name": {
+            "en": "Leighton Express"
+        }
+    },
+    {
+        "id": "we",
+        "colour": "#AA0078",
+        "fg": "#fff",
+        "name": {
+            "en": "Westwyvern Express"
+        }
+    },
+    {
+        "id": "re",
+        "colour": "#AA8198",
+        "fg": "#fff",
+        "name": {
+            "en": "Rayleigh Express"
+        }
+    },
+    {
+        "id": "m",
+        "colour": "#FF3A2F",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#00BDFD",
+        "fg": "#fff",
+        "name": {
+            "en": "Connect"
+        }
+    },
+    {
+        "id": "w",
+        "colour": "#24AAAA",
+        "fg": "#fff",
+        "name": {
+            "en": "Waterline"
+        }
+    },
+    {
+        "id": "a",
+        "colour": "#84AA00",
+        "fg": "#fff",
+        "name": {
+            "en": "AirLink "
+        }
+    },
+    {
+        "id": "e",
+        "colour": "#E30064",
+        "fg": "#fff",
+        "name": {
+            "en": "Express"
+        }
+    }
+]
