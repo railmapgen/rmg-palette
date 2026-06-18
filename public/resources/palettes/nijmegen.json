@@ -1,0 +1,218 @@
+[
+    {
+        "id": "2",
+        "colour": "#1F4499",
+        "fg": "#fff",
+        "name": {
+            "nl": "Bus 2",
+            "en": "Bus 2"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#089448",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 3",
+            "nl": "Bus 3"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#3DB657",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 4",
+            "nl": "Bus 4"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#F18BB9",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 5",
+            "nl": "Bus 5"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#429493",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 6",
+            "nl": "Bus 6"
+        }
+    },
+    {
+        "id": "8",
+        "colour": "#FFF215",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 8",
+            "nl": "Bus 8"
+        }
+    },
+    {
+        "id": "9",
+        "colour": "#C6205C",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 9",
+            "nl": "Bus 9"
+        }
+    },
+    {
+        "id": "10",
+        "colour": "#F69423",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 10",
+            "nl": "Bus 10"
+        }
+    },
+    {
+        "id": "11",
+        "colour": "#C7A83E",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 11",
+            "nl": "Bus 11"
+        }
+    },
+    {
+        "id": "12",
+        "colour": "#ADC067",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 12",
+            "nl": "Bus 12"
+        }
+    },
+    {
+        "id": "13",
+        "colour": "#0972BA",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 13",
+            "nl": "Bus 13"
+        }
+    },
+    {
+        "id": "14",
+        "colour": "#EB2528",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 14",
+            "nl": "Bus 14"
+        }
+    },
+    {
+        "id": "15",
+        "colour": "#22ABE2",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 15",
+            "nl": "Bus 15"
+        }
+    },
+    {
+        "id": "33",
+        "colour": "#046A38",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 33",
+            "nl": "Bus 33"
+        }
+    },
+    {
+        "id": "58",
+        "colour": "#B3B4B5",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 58",
+            "nl": "Bus 58"
+        }
+    },
+    {
+        "id": "80",
+        "colour": "#7561AB",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 80",
+            "nl": "Bus 80"
+        }
+    },
+    {
+        "id": "82",
+        "colour": "#7E2D1A",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 82",
+            "nl": "Bus 82"
+        }
+    },
+    {
+        "id": "83",
+        "colour": "#A46B54",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 83",
+            "nl": "Bus 83"
+        }
+    },
+    {
+        "id": "85",
+        "colour": "#EC1F7A",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 85",
+            "nl": "Bus 85"
+        }
+    },
+    {
+        "id": "89",
+        "colour": "#DCE11F",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 89",
+            "nl": "Bus 89"
+        }
+    },
+    {
+        "id": "99",
+        "colour": "#F16825",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 99",
+            "nl": "Bus 99"
+        }
+    },
+    {
+        "id": "300",
+        "colour": "#DA4197",
+        "fg": "#000",
+        "name": {
+            "en": "Bus 300",
+            "nl": "Bus 300"
+        }
+    },
+    {
+        "id": "331",
+        "colour": "#912C8D",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus 331",
+            "nl": "Bus 331"
+        }
+    },
+    {
+        "id": "ns",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Train",
+            "nl": "Trein"
+        }
+    }
+]
