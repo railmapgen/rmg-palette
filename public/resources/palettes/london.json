@@ -1,8 +1,9 @@
 [
     {
         "id": "bakerloo",
-        "colour": "#B26300",
+        "colour": "#A45A2A",
         "fg": "#fff",
+        "pantone": "470 C",
         "name": {
             "en": "Bakerloo Line",
             "zh-Hans": "贝克卢线",
@@ -11,8 +12,9 @@
     },
     {
         "id": "central",
-        "colour": "#DC241F",
+        "colour": "#DA291C",
         "fg": "#fff",
+        "pantone": "485 C",
         "name": {
             "en": "Central Line",
             "zh-Hans": "中央线",
@@ -21,34 +23,42 @@
     },
     {
         "id": "circle",
-        "colour": "#FFD329",
-        "fg": "#fff",
+        "colour": "#FFCD00",
+        "fg": "#000",
+        "pantone": "116 C",
         "name": {
             "en": "Circle Line",
-            "zh-Hant": "環綫"
+            "zh-Hant": "環綫",
+            "zh-Hans": "环线"
         }
     },
     {
         "id": "district",
-        "colour": "#007D32",
+        "colour": "#007A33",
         "fg": "#fff",
+        "pantone": "356 C",
         "name": {
-            "en": "District Line"
+            "en": "District Line",
+            "zh-Hans": "区域线",
+            "zh-Hant": "區域線"
         }
     },
     {
         "id": "hsmithcity",
-        "colour": "#F4A9BE",
-        "fg": "#fff",
+        "colour": "#E89CAE",
+        "fg": "#000",
+        "pantone": "197 C",
         "name": {
             "en": "Hammersmith & City Line",
-            "zh-Hant": "咸默史密夫及城市綫"
+            "zh-Hant": "咸默史密夫及城市綫",
+            "zh-Hans": "哈默史密斯及城市线"
         }
     },
     {
         "id": "jubilee",
-        "colour": "#A1A5A7",
+        "colour": "#7C878E",
         "fg": "#fff",
+        "pantone": "430 C",
         "name": {
             "en": "Jubilee Line",
             "zh-Hans": "银禧线",
@@ -57,8 +67,9 @@
     },
     {
         "id": "metropolitan",
-        "colour": "#9B0058",
+        "colour": "#840B55",
         "fg": "#fff",
+        "pantone": "235 C",
         "name": {
             "en": "Metropolitan Line",
             "zh-Hans": "大都会线",
@@ -67,24 +78,31 @@
     },
     {
         "id": "northern",
-        "colour": "#000000",
+        "colour": "#2D2926",
         "fg": "#fff",
+        "pantone": "Black C",
         "name": {
-            "en": "Northern Line"
+            "en": "Northern Line",
+            "zh-Hans": "北线",
+            "zh-Hant": "北綫"
         }
     },
     {
         "id": "piccadily",
-        "colour": "#0019A8",
+        "colour": "#10069F",
         "fg": "#fff",
+        "pantone": "Blue 072 C",
         "name": {
-            "en": "Piccadily Line"
+            "en": "Piccadily Line",
+            "zh-Hans": "皮卡迪利线",
+            "zh-Hant": "皮卡迪利綫"
         }
     },
     {
         "id": "victoria",
-        "colour": "#0098D8",
+        "colour": "#00A3E0",
         "fg": "#fff",
+        "pantone": "299 C",
         "name": {
             "en": "Victoria Line",
             "zh-Hans": "维多利亚线",
@@ -93,8 +111,9 @@
     },
     {
         "id": "waterloocity",
-        "colour": "#93CEBA",
-        "fg": "#fff",
+        "colour": "#6ECEB2",
+        "fg": "#000",
+        "pantone": "338 C",
         "name": {
             "en": "Waterloo & City Line",
             "zh-Hans": "滑铁卢及城市线",
@@ -102,92 +121,133 @@
         }
     },
     {
-        "id": "dlr",
-        "colour": "#00AFAD",
+        "id": "elizabeth",
+        "colour": "#753BBD",
         "fg": "#fff",
+        "pantone": "266 C",
         "name": {
-            "en": "Docklands Light Railway"
+            "en": "Elizabeth Line",
+            "zh-Hant": "伊利沙伯綫",
+            "zh-Hans": "伊丽莎白线"
         }
     },
     {
-        "id": "elizabeth",
-        "colour": "#9364CC",
+        "id": "eastlondon",
+        "colour": "#FFA400",
         "fg": "#fff",
+        "pantone": "137 C",
         "name": {
-            "en": "Elizabeth Line",
-            "zh-Hant": "伊利沙伯綫"
+            "en": "East London Line",
+            "zh-Hans": "东伦敦线",
+            "zh-Hant": "東倫敦線"
+        }
+    },
+    {
+        "id": "dlr",
+        "colour": "#00B2A9",
+        "fg": "#fff",
+        "pantone": "326 C",
+        "name": {
+            "en": "Docklands Light Railway",
+            "zh-Hans": "码头区轻便铁路",
+            "zh-Hant": "碼頭區輕便鐵路"
         }
     },
     {
         "id": "tfl",
-        "colour": "#0019A8",
+        "colour": "#10069F",
         "fg": "#fff",
+        "pantone": "Blue 072 C",
         "name": {
-            "en": "TfL Rail"
+            "en": "TfL Rail",
+            "zh-Hans": "伦敦交通局铁路",
+            "zh-Hant": "倫敦運輸局鐵路"
+        }
+    },
+    {
+        "id": "crossrail",
+        "colour": "#9063CD",
+        "fg": "#fff",
+        "pantone": "265 C",
+        "name": {
+            "en": "Crossrail",
+            "zh-Hans": "横贯铁路",
+            "zh-Hant": "橫貫鐵路"
         }
     },
     {
         "id": "overground",
-        "colour": "#EF7B10",
+        "colour": "#E87722",
         "fg": "#fff",
+        "pantone": "158 C",
         "name": {
-            "en": "London Overground"
+            "en": "London Overground",
+            "zh-Hans": "伦敦地上铁",
+            "zh-Hant": "倫敦地上鐵"
         }
     },
     {
         "id": "trams",
-        "colour": "#00BD19",
+        "colour": "#78BE21",
         "fg": "#fff",
+        "pantone": "368 C",
         "name": {
-            "en": "London Trams"
+            "en": "London Trams",
+            "zh-Hans": "伦敦电车",
+            "zh-Hant": "倫敦電車"
         }
     },
     {
-        "id": "emirates",
-        "colour": "#DC241F",
+        "id": "thames",
+        "colour": "#C964CF",
         "fg": "#fff",
+        "pantone": "252 C",
         "name": {
-            "en": "Emirates Air Line"
-        }
-    },
-    {
-        "id": "ifs",
-        "colour": "#734fa0",
-        "fg": "#fff",
-        "name": {
-            "en": "IFS Cloud Cable Car"
+            "en": "Thameslink",
+            "zh-Hans": "泰晤士连线",
+            "zh-Hant": "泰晤士連線"
         }
     },
     {
         "id": "lolib",
         "colour": "#676767",
         "fg": "#fff",
+        "pantone": "6215 C",
         "name": {
-            "en": "Liberty Line (London Overground)"
+            "en": "Liberty Line (London Overground)",
+            "zh-Hans": "自由线（伦敦地上铁）",
+            "zh-Hant": "自由綫（倫敦地上鐵）"
         }
     },
     {
         "id": "lolio",
-        "colour": "#f1b41c",
+        "colour": "#F1B41C",
         "fg": "#fff",
+        "pantone": "2012 C",
         "name": {
-            "en": "Lioness Line (London Overground)"
+            "en": "Lioness Line (London Overground)",
+            "zh-Hans": "雌狮线（伦敦地上铁）",
+            "zh-Hant": "雌獅綫（倫敦地上鐵）"
         }
     },
     {
         "id": "lomil",
-        "colour": "#437ec1",
+        "colour": "#437EC1",
         "fg": "#fff",
         "name": {
-            "en": "Mildmay Line (London Overground)"
+            "en": "Mildmay Line (London Overground)",
+            "zh-Hant": "米爾德梅綫（倫敦地上鐵）",
+            "zh-Hans": "米尔德梅线（伦敦地上铁）"
         }
     },
     {
         "id": "losuf",
-        "colour": "#39b97a",
+        "colour": "#39B97A",
         "fg": "#fff",
         "name": {
-            "en": "Suffragette Line (London Overground)"
+            "en": "Suffragette Line (London Overground)",
+            "zh-Hant": "婦政綫（倫敦地上鐵）",
+            "zh-Hans": "妇政线（伦敦地上铁）"
         }
     },
     {
@@ -195,15 +255,40 @@
         "colour": "#972861",
         "fg": "#fff",
         "name": {
-            "en": "Weaver Line (London Overground)"
+            "en": "Weaver Line (London Overground)",
+            "zh-Hant": "紡織工綫（倫敦地上鐵）",
+            "zh-Hans": "纺织工线（伦敦地上铁）"
         }
     },
     {
         "id": "lowin",
-        "colour": "#ef4d5e",
+        "colour": "#EF4D5E",
+        "fg": "#fff",
+        "pantone": "1795 C",
+        "name": {
+            "en": "Windrush Line (London Overground)",
+            "zh-Hant": "溫德魯什綫（倫敦地上鐵）",
+            "zh-Hans": "温德鲁什线（伦敦地上铁）"
+        }
+    },
+    {
+        "id": "ifs",
+        "colour": "#734fa0",
         "fg": "#fff",
         "name": {
-            "en": "Windrush Line (London Overground)"
+            "en": "IFS Cloud Cable Car",
+            "zh-Hans": "IFS云端索道",
+            "zh-Hant": "IFS雲端纜車"
+        }
+    },
+    {
+        "id": "emirates",
+        "colour": "#DC241F",
+        "fg": "#fff",
+        "name": {
+            "en": "Emirates Air Line",
+            "zh-Hans": "阿联酋航空空中索道",
+            "zh-Hant": "阿聯酋航空空中纜車"
         }
     }
 ]
