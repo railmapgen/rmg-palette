@@ -1,0 +1,50 @@
+[
+    {
+        "id": "dfl",
+        "colour": "#0091ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Deerfox Line"
+        }
+    },
+    {
+        "id": "trl",
+        "colour": "#636363",
+        "fg": "#fff",
+        "name": {
+            "en": "Troll rock Line"
+        }
+    },
+    {
+        "id": "sse",
+        "colour": "#00cc07",
+        "fg": "#fff",
+        "name": {
+            "en": "Sparrow Scout Express"
+        }
+    },
+    {
+        "id": "wfl",
+        "colour": "#ffff8c",
+        "fg": "#fff",
+        "name": {
+            "en": "Woff Line"
+        }
+    },
+    {
+        "id": "bhr",
+        "colour": "#fff700",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue-Haired Route"
+        }
+    },
+    {
+        "id": "ppwp",
+        "colour": "#c20000",
+        "fg": "#fff",
+        "name": {
+            "en": "Paperwork Path"
+        }
+    }
+]
