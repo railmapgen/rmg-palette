@@ -25,7 +25,8 @@
         "fg": "#fff",
         "name": {
             "en": "Circle Line",
-            "zh-Hant": "環綫"
+            "zh-Hant": "環綫",
+            "zh-Hans": "环线"
         }
     },
     {
@@ -78,7 +79,8 @@
         "colour": "#0019A8",
         "fg": "#fff",
         "name": {
-            "en": "Piccadily Line"
+            "en": "Piccadily Line",
+            "zh-Hans": "皮卡迪利线"
         }
     },
     {
@@ -115,7 +117,8 @@
         "fg": "#fff",
         "name": {
             "en": "Elizabeth Line",
-            "zh-Hant": "伊利沙伯綫"
+            "zh-Hant": "伊利沙伯綫",
+            "zh-Hans": "伊丽莎白线"
         }
     },
     {
@@ -131,7 +134,8 @@
         "colour": "#EF7B10",
         "fg": "#fff",
         "name": {
-            "en": "London Overground"
+            "en": "London Overground",
+            "zh-Hans": "伦敦地上铁"
         }
     },
     {
@@ -139,7 +143,8 @@
         "colour": "#00BD19",
         "fg": "#fff",
         "name": {
-            "en": "London Trams"
+            "en": "London Trams",
+            "zh-Hans": "伦敦有轨电车"
         }
     },
     {
