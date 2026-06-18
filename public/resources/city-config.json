@@ -869,6 +869,16 @@
         }
     },
     {
+        "id": "jrwest",
+        "country": "JP",
+        "name": {
+            "en": "JR West",
+            "zh-Hans": "JR 西日本",
+            "ja": "JR 西日本",
+            "zh-Hant": "JR 西日本"
+        }
+    },
+    {
         "id": "kansai",
         "country": "JP",
         "name": {
