@@ -120,13 +120,13 @@
         }
     },
     {
-        "id": "zz17",
+        "id": "zxl",
         "colour": "#1D4155",
         "fg": "#fff",
         "name": {
-            "en": "Line 17 (Zhengxu Line)",
-            "zh-Hans": "17号线（郑许市域铁路）",
-            "zh-Hant": "17號線（鄭許市域鐵路）"
+            "en": "Zhengxu Line",
+            "zh-Hans": "郑许市域铁路",
+            "zh-Hant": "鄭許市域鐵路"
         }
     }
 ]
