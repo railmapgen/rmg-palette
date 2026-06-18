@@ -1,0 +1,42 @@
+[
+    {
+        "id": "sc",
+        "colour": "#0096EE",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect"
+        }
+    },
+    {
+        "id": "sm",
+        "colour": "#EE4044",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Metro"
+        }
+    },
+    {
+        "id": "sw",
+        "colour": "#34495E",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Waterline"
+        }
+    },
+    {
+        "id": "sa",
+        "colour": "#EC7D33",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford AirLink"
+        }
+    },
+    {
+        "id": "se",
+        "colour": "#FF0080",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Express"
+        }
+    }
+]
