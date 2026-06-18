@@ -95,5 +95,15 @@
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
         }
+    },
+    {
+        "id": "twl",
+        "colour": "#7d3131",
+        "fg": "#fff",
+        "name": {
+            "en": "Tuas West Line",
+            "zh-Hans": "X",
+            "zh-Hant": "X"
+        }
     }
 ]
