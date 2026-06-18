@@ -1,0 +1,22 @@
+[
+    {
+        "id": "man1",
+        "colour": "#c91010",
+        "fg": "#fff",
+        "name": {
+            "en": "Main Line",
+            "es": "Línea Principal",
+            "ja": "本線"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#aaaaaa",
+        "fg": "#fff",
+        "name": {
+            "en": "",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    }
+]
