@@ -335,6 +335,15 @@
         }
     },
     {
+        "id": "chenqing",
+        "country": "CN",
+        "name": {
+            "en": "Chenqing",
+            "zh-Hans": "郴庆",
+            "zh-Hant": ""
+        }
+    },
+    {
         "id": "chicago",
         "country": "US",
         "name": {
