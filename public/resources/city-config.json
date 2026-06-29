@@ -544,6 +544,16 @@
         }
     },
     {
+        "id": "fortaleza",
+        "country": "BR",
+        "name": {
+            "pt": "Fortaleza",
+            "en": "Fortaleza",
+            "zh-Hans": "福塔雷萨",
+            "zh-Hant": "福塔雷薩"
+        }
+    },
+    {
         "id": "foshan",
         "country": "CN",
         "name": {
