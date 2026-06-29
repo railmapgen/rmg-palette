@@ -260,6 +260,16 @@
         }
     },
     {
+        "id": "casablanca",
+        "country": "MA",
+        "name": {
+            "ar": "الدار البيضاء‎",
+            "en": "Casablanca",
+            "zh-Hans": "卡萨布兰卡",
+            "zh-Hant": "卡薩布蘭卡"
+        }
+    },
+    {
         "id": "cbr",
         "country": "AU",
         "name": {

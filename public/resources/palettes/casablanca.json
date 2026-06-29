@@ -1,0 +1,62 @@
+[
+    {
+        "id": "t1",
+        "colour": "#E18B31",
+        "fg": "#fff",
+        "name": {
+            "en": "T1",
+            "zh-Hans": "电车1号线",
+            "zh-Hant": "電車1號綫"
+        }
+    },
+    {
+        "id": "t2",
+        "colour": "#F3DE4B",
+        "fg": "#000",
+        "name": {
+            "en": "T2",
+            "zh-Hans": "电车2号线",
+            "zh-Hant": "電車2號綫"
+        }
+    },
+    {
+        "id": "t3",
+        "colour": "#A26376",
+        "fg": "#fff",
+        "name": {
+            "en": "T3",
+            "zh-Hans": "电车3号线",
+            "zh-Hant": "電車3號綫"
+        }
+    },
+    {
+        "id": "t4",
+        "colour": "#6596BA",
+        "fg": "#fff",
+        "name": {
+            "en": "T4",
+            "zh-Hans": "电车4号线",
+            "zh-Hant": "電車4號綫"
+        }
+    },
+    {
+        "id": "bw1",
+        "colour": "#36753A",
+        "fg": "#fff",
+        "name": {
+            "en": "Bw1",
+            "zh-Hans": "快速公交1号线",
+            "zh-Hant": "快速公交1號綫"
+        }
+    },
+    {
+        "id": "bw2",
+        "colour": "#81B669",
+        "fg": "#fff",
+        "name": {
+            "en": "Bw2",
+            "zh-Hans": "快速公交2号线",
+            "zh-Hant": "快速公交2號綫"
+        }
+    }
+]
