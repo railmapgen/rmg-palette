@@ -260,6 +260,16 @@
         }
     },
     {
+        "id": "casablanca",
+        "country": "MA",
+        "name": {
+            "ar": "الدار البيضاء‎",
+            "en": "Casablanca",
+            "zh-Hans": "卡萨布兰卡",
+            "zh-Hant": "卡薩布蘭卡"
+        }
+    },
+    {
         "id": "cbr",
         "country": "AU",
         "name": {
@@ -531,6 +541,16 @@
             "tr": "Eskişehir",
             "zh-Hans": "埃斯基谢希尔",
             "zh-Hant": "埃斯基謝希爾"
+        }
+    },
+    {
+        "id": "fortaleza",
+        "country": "BR",
+        "name": {
+            "pt": "Fortaleza",
+            "en": "Fortaleza",
+            "zh-Hans": "福塔雷萨",
+            "zh-Hant": "福塔雷薩"
         }
     },
     {

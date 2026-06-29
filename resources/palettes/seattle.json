@@ -1,58 +1,78 @@
 [
     {
         "id": "1",
-        "colour": "#37AF4A",
+        "colour": "#3dAe2b",
         "fg": "#fff",
         "name": {
-            "en": "Link 1 Line",
-            "zh-Hans": "Link 1号线",
-            "zh-Hant": "Link 1號線"
+            "en": "1 Line",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
         }
     },
     {
         "id": "2",
-        "colour": "#00a0dd",
+        "colour": "#00a0df",
         "fg": "#fff",
         "name": {
-            "en": "Link 2 Line",
-            "zh-Hans": "Link 2号线",
-            "zh-Hant": "Link 2號線"
+            "en": "2 Line",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#ed40a9",
+        "fg": "#fff",
+        "name": {
+            "en": "3 Line",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#b14fc5",
+        "fg": "#fff",
+        "name": {
+            "en": "4 Line",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
         }
     },
     {
         "id": "t",
-        "colour": "#ef8c20",
+        "colour": "#f38b00",
         "fg": "#000",
         "name": {
-            "en": "Link T Line",
-            "zh-Hans": "Link T号线",
-            "zh-Hant": "Link T號線"
+            "en": "T Line",
+            "zh-Hans": "T号线",
+            "zh-Hant": "T號線"
         }
     },
     {
-        "id": "n",
+        "id": "s123",
+        "colour": "#edaa00",
+        "fg": "#000",
+        "name": {
+            "en": "Stride BRT",
+            "zh-Hans": "Stride快速公交",
+            "zh-Hant": "Stride快速公車"
+        }
+    },
+    {
+        "id": "ns",
         "colour": "#98b6d5",
         "fg": "#000",
         "name": {
-            "en": "Sounder N Line",
-            "zh-Hans": "Sounder N号线",
-            "zh-Hant": "Sounder N號線"
+            "en": "Sounder",
+            "zh-Hans": "发声器",
+            "zh-Hant": "普吉特海湾铁路"
         }
     },
     {
-        "id": "s",
-        "colour": "#98b6d5",
+        "id": "550",
+        "colour": "#66bdd1",
         "fg": "#000",
-        "name": {
-            "en": "Sounder S Line",
-            "zh-Hans": "Sounder S号线",
-            "zh-Hant": "Sounder S號線"
-        }
-    },
-    {
-        "id": "steb",
-        "colour": "#2b376e",
-        "fg": "#fff",
         "name": {
             "en": "ST Express bus",
             "zh-Hans": "ST 快车",
