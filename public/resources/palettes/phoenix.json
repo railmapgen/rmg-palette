@@ -1,0 +1,42 @@
+[
+    {
+        "id": "phxa",
+        "colour": "#238dcd",
+        "fg": "#fff",
+        "name": {
+            "en": "A Line",
+            "zh-Hans": "A线",
+            "zh-Hant": "A線"
+        }
+    },
+    {
+        "id": "phxb",
+        "colour": "#f68c1e",
+        "fg": "#fff",
+        "name": {
+            "en": "B Line",
+            "zh-Hans": "B线",
+            "zh-Hant": "B線"
+        }
+    },
+    {
+        "id": "phxs",
+        "colour": "#aace4f",
+        "fg": "#fff",
+        "name": {
+            "en": "Valley Metro Streetcar",
+            "zh-Hans": "谷地捷运有轨电车",
+            "zh-Hant": "山谷地鐵電車"
+        }
+    },
+    {
+        "id": "phxairport",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "PHX Sky Train",
+            "zh-Hans": "PHX 天空列车",
+            "zh-Hant": "PHX 天空列車"
+        }
+    }
+]
