@@ -190,5 +190,15 @@
             "zh-Hans": "S9号线/宁高线",
             "zh-Hant": "S9號線/寧高線"
         }
+    },
+    {
+        "id": "13",
+        "colour": "#fa7da9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 13",
+            "zh-Hans": "13号线",
+            "zh-Hant": "13號綫"
+        }
     }
 ]
