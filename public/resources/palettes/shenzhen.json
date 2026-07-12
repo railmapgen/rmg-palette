@@ -1,7 +1,7 @@
 [
     {
         "id": "sz1",
-        "colour": "#00B140",
+        "colour": "#00A946",
         "fg": "#fff",
         "name": {
             "en": "Line 1 (Luobao Line)",
@@ -11,7 +11,7 @@
     },
     {
         "id": "sz2",
-        "colour": "#B94700",
+        "colour": "#B75020",
         "fg": "#fff",
         "name": {
             "en": "Line 2 (Shekou Line)",
@@ -21,7 +21,7 @@
     },
     {
         "id": "sz3",
-        "colour": "#00A9E0",
+        "colour": "#00A4E0",
         "fg": "#fff",
         "name": {
             "en": "Line 3 (Longgang Line)",
@@ -31,7 +31,7 @@
     },
     {
         "id": "sz4",
-        "colour": "#DA291C",
+        "colour": "#D3101A",
         "fg": "#fff",
         "name": {
             "en": "Line 4 (Longhua Line)",
@@ -41,7 +41,7 @@
     },
     {
         "id": "sz5",
-        "colour": "#A05EB5",
+        "colour": "#914696",
         "fg": "#fff",
         "name": {
             "en": "Line 5 (Huanzhong Line)",
@@ -51,7 +51,7 @@
     },
     {
         "id": "sz6",
-        "colour": "#00C7B1",
+        "colour": "#1AB5AD",
         "fg": "#fff",
         "name": {
             "en": "Line 6（Guangming Line)",
@@ -61,7 +61,7 @@
     },
     {
         "id": "sz6b",
-        "colour": "#168773",
+        "colour": "#219089",
         "fg": "#fff",
         "name": {
             "en": "Branch Line 6",
@@ -71,7 +71,7 @@
     },
     {
         "id": "sz7",
-        "colour": "#0033A0",
+        "colour": "#003A91",
         "fg": "#fff",
         "name": {
             "en": "Line 7 (Xili Line)",
@@ -81,7 +81,7 @@
     },
     {
         "id": "sz8",
-        "colour": "#b94700",
+        "colour": "#B75020",
         "fg": "#fff",
         "name": {
             "en": "Line 8 (Yantian Line)",
@@ -101,7 +101,7 @@
     },
     {
         "id": "sz9",
-        "colour": "#7B6469",
+        "colour": "#83656B",
         "fg": "#fff",
         "name": {
             "en": "Line 9 (Meilin Line)",
@@ -111,7 +111,7 @@
     },
     {
         "id": "sz10",
-        "colour": "#F8779E",
+        "colour": "#EB6B91",
         "fg": "#fff",
         "name": {
             "en": "Line 10 (Bantian Line)",
@@ -121,7 +121,7 @@
     },
     {
         "id": "sz11",
-        "colour": "#672146",
+        "colour": "#741D51",
         "fg": "#fff",
         "name": {
             "en": "Line 11 (Airport Line)",
@@ -131,7 +131,7 @@
     },
     {
         "id": "sz12",
-        "colour": "#A192B2",
+        "colour": "#A794B0",
         "fg": "#fff",
         "name": {
             "en": "Line 12 (Nanbao Line)",
@@ -141,7 +141,7 @@
     },
     {
         "id": "sz13",
-        "colour": "#DE7C00",
+        "colour": "#DA830A",
         "fg": "#fff",
         "name": {
             "en": "Line 13 (Shiyan Line)",
@@ -151,8 +151,8 @@
     },
     {
         "id": "sz14",
-        "colour": "#F2C75C",
-        "fg": "#fff",
+        "colour": "#E8CC60",
+        "fg": "#000",
         "name": {
             "en": "Line 14 (Eastern Express)",
             "zh-Hans": "14号线（东部快线）",
@@ -171,7 +171,7 @@
     },
     {
         "id": "sz16",
-        "colour": "#1E22AA",
+        "colour": "#493D93",
         "fg": "#fff",
         "name": {
             "en": "Line 16 (Longping Line)",
@@ -211,8 +211,8 @@
     },
     {
         "id": "sz20",
-        "colour": "#88DBDF",
-        "fg": "#fff",
+        "colour": "#9CD0CB",
+        "fg": "#000",
         "name": {
             "en": "Line 20 (Exibition Express)",
             "zh-Hans": "20号线（会展快线）",
