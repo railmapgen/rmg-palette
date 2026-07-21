@@ -151,8 +151,8 @@
     },
     {
         "id": "whggxdygdcl1",
-        "colour": "#0000ff",
-        "fg": "#fff",
+        "colour": "",
+        "fg": "#000",
         "name": {
             "en": "Wuhan Optics Valley Modern Tram Line 1",
             "zh-Hans": "武汉光谷现代有轨电车1号线",
@@ -161,12 +161,22 @@
     },
     {
         "id": "whggxdygdcl2",
-        "colour": "#ff0000",
+        "colour": "#A2D2B1",
         "fg": "#fff",
         "name": {
             "en": "Wuhan Optics Valley Modern Tram Line 2",
             "zh-Hans": "武汉光谷现代有轨电车2号线",
             "zh-Hant": "武漢光谷現代電車2號線"
+        }
+    },
+    {
+        "id": "whggxdygdcl3",
+        "colour": "#73B4E6",
+        "fg": "#fff",
+        "name": {
+            "en": "Wuhan Optics Valley Modern Tram Line 3 (Event Time Only)",
+            "zh-Hans": "武汉光谷现代有轨电车3号线",
+            "zh-Hant": "武漢光谷現代電車3號線"
         }
     },
     {
