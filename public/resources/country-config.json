@@ -178,6 +178,19 @@
         ]
     },
     {
+        "id": "DZ",
+        "name": {
+            "en": "Algeria",
+            "ar": "الجزائر",
+            "fr": "Algérie"
+        },
+        "languages": [
+            "ar",
+            "fr",
+            "en"
+        ]
+    },
+    {
         "id": "EG",
         "name": {
             "en": "Egypt",
@@ -435,6 +448,18 @@
         ]
     },
     {
+        "id": "MA",
+        "name": {
+            "en": "Morocco",
+            "zh-Hans": "摩洛哥",
+            "zh-Hant": "摩洛哥",
+            "ar": "المغرب"
+        },
+        "languages": [
+            "ar"
+        ]
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",
@@ -541,7 +566,8 @@
             "zh-Hant": "菲律賓"
         },
         "languages": [
-            "fil", "en"
+            "fil",
+            "en"
         ]
     },
     {

@@ -3,15 +3,18 @@ name: Package Compile and Publish
 on:
   workflow_dispatch:
 
+permissions:
+  id-token: write  # Required for OIDC
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '24'
           cache: 'npm'
@@ -28,10 +31,7 @@ jobs:
 
       - name: Publish to npm
         working-directory: ./package
-        run: |
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.RMG_NPM_PUBLISH }}
+        run: npm publish
 
       - name: Trigger RMG Palette rebuild
         run: |

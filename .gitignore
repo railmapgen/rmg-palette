@@ -12,6 +12,7 @@ coverage/
 build/
 dist/
 public/resources/history.json
+*.compressed.json
 
 # misc
 .DS_Store
