@@ -9,5 +9,71 @@
             "zh-Hant": "捷運1號線",
             "it": "M1"
         }
+    },
+    {
+        "id": "sfm1",
+        "colour": "#f07f1a",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 1"
+        }
+    },
+    {
+        "id": "sfm2",
+        "colour": "#018DD3",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 2",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "sfm3",
+        "colour": "#b0d301",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 3"
+        }
+    },
+    {
+        "id": "sfm4",
+        "colour": "#e21f24",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 4"
+        }
+    },
+    {
+        "id": "sfm5",
+        "colour": "#9c4e95",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 5"
+        }
+    },
+    {
+        "id": "sfm6",
+        "colour": "#8b231d",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 6"
+        }
+    },
+    {
+        "id": "sfm7",
+        "colour": "#ffcd00",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 7"
+        }
+    },
+    {
+        "id": "sfm8",
+        "colour": "#bbb392",
+        "fg": "#fff",
+        "name": {
+            "en": "SFM 8"
+        }
     }
 ]
