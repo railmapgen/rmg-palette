@@ -823,6 +823,15 @@
         }
     },
     {
+        "id": "huaian",
+        "country": "CN",
+        "name": {
+            "en": "Huaian",
+            "zh-Hans": "淮安",
+            "zh-Hant": "淮安"
+        }
+    },
+    {
         "id": "iashi",
         "country": "RO",
         "name": {
