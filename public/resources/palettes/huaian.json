@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ha1",
+        "colour": "#94A8E0",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line 1",
+            "zh-Hans": "有轨电车1号线",
+            "zh-Hant": "有軌電車1號線"
+        }
+    }
+]
