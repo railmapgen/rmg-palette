@@ -1838,6 +1838,15 @@
         }
     },
     {
+        "id": "szczecin",
+        "country": "PL",
+        "name": {
+            "pl": "Szczecin (ZDiTM)",
+            "en": "Szczecin",
+            "de": "Stettin"
+        }
+    },
+    {
         "id": "taichung",
         "country": "TW",
         "name": {
