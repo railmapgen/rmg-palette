@@ -31,7 +31,7 @@
     },
     {
         "id": "s",
-        "colour": "#cc7722",
+        "colour": "#836400",
         "fg": "#fff",
         "name": {
             "en": "Shenkeng LRT",
@@ -40,18 +40,8 @@
         }
     },
     {
-        "id": "f",
-        "colour": "#e5007f",
-        "fg": "#fff",
-        "name": {
-            "en": "Wugu-Taishan-Banqiao LRT",
-            "zh-Hans": "五股泰山板桥轻轨",
-            "zh-Hant": "五股泰山板橋輕軌"
-        }
-    },
-    {
-        "id": "p",
-        "colour": "#f6c2d8",
+        "id": "b",
+        "colour": "#009093",
         "fg": "#fff",
         "name": {
             "en": "Linkou LRT/Zhonghe-Guangfu Line",
@@ -60,13 +50,13 @@
         }
     },
     {
-        "id": "y",
-        "colour": "#ffd500",
-        "fg": "#000",
+        "id": "p",
+        "colour": "#FF41E5",
+        "fg": "#fff",
         "name": {
-            "en": "Circular Line",
-            "zh-Hans": "环状线",
-            "zh-Hant": "環狀線"
+            "en": "Wugu-Taishan-Banqiao LRT",
+            "zh-Hans": "五股泰山板桥轻轨",
+            "zh-Hant": "五股泰山板橋輕軌"
         }
     },
     {
@@ -74,9 +64,59 @@
         "colour": "#25aae1",
         "fg": "#fff",
         "name": {
-            "en": "Xizhi-Donghu MRT/Keelung MRT",
-            "zh-Hans": "汐东捷运/基隆捷运",
-            "zh-Hant": "汐東捷運/基隆捷運"
+            "en": "Minsheng Xizhi line",
+            "zh-Hans": "民生汐止线",
+            "zh-Hant": "民生汐止線"
+        }
+    },
+    {
+        "id": "y",
+        "colour": "#ffd500",
+        "fg": "#fff",
+        "name": {
+            "en": "Circular Line",
+            "zh-Hans": "环状线",
+            "zh-Hant": "環狀線"
+        }
+    },
+    {
+        "id": "th",
+        "colour": "#FFFFFF",
+        "fg": "#fff",
+        "name": {
+            "en": "",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "sb",
+        "colour": "#25aae1",
+        "fg": "#fff",
+        "name": {
+            "en": "Minsheng Xizhi line",
+            "zh-Hans": "民生汐止线",
+            "zh-Hant": "民生汐止線"
+        }
+    },
+    {
+        "id": "t",
+        "colour": "#F7F7FF",
+        "fg": "#000",
+        "name": {
+            "en": "TR ",
+            "zh-Hans": "台铁公司",
+            "zh-Hant": "台鐵公司"
+        }
+    },
+    {
+        "id": "s",
+        "colour": "#E77400",
+        "fg": "#fff",
+        "name": {
+            "en": "THSR ",
+            "zh-Hans": "高铁",
+            "zh-Hant": "高鐵"
         }
     }
 ]
