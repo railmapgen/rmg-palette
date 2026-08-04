@@ -1,0 +1,12 @@
+[
+    {
+        "id": "jz1",
+        "colour": "#00b7ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Jiangzhou Metro Line 1",
+            "zh-Hans": "江州地铁1号线",
+            "zh-Hant": "江州地鐵1號線"
+        }
+    }
+]
