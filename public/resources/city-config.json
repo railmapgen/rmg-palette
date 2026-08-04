@@ -2133,6 +2133,16 @@
         }
     },
     {
+        "id": "zaporizhzhia",
+        "country": "UA",
+        "name": {
+            "uk": "Запоріжжя",
+            "zh-Hans": "扎波罗热",
+            "zh-Hant": "札波羅熱",
+            "en": "Zaporizhzhia"
+        }
+    },
+    {
         "id": "zhengzhou",
         "country": "CN",
         "name": {
