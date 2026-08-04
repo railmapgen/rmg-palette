@@ -1,7 +1,7 @@
 [
     {
         "id": "zz1",
-        "colour": "#D20200",
+        "colour": "#FF0000",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,8 +11,8 @@
     },
     {
         "id": "zz2",
-        "colour": "#D28F00",
-        "fg": "#fff",
+        "colour": "#FFFF00",
+        "fg": "#000",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
@@ -21,7 +21,7 @@
     },
     {
         "id": "zz3",
-        "colour": "#CB5100",
+        "colour": "#FF8000",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "zz4",
-        "colour": "#3792D6",
+        "colour": "#0080FF",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "zz5",
-        "colour": "#25AC74",
+        "colour": "#008000",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "zz6",
-        "colour": "#852081",
+        "colour": "#800080",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "zz7",
-        "colour": "#C0955A",
+        "colour": "#C07830",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -71,8 +71,8 @@
     },
     {
         "id": "zz8",
-        "colour": "#E6E394",
-        "fg": "#fff",
+        "colour": "#F0FFA6",
+        "fg": "#000",
         "name": {
             "en": "Line 8",
             "zh-Hans": "8号线",
@@ -81,17 +81,17 @@
     },
     {
         "id": "zz9",
-        "colour": "#828C47",
+        "colour": "#87A65B",
         "fg": "#fff",
         "name": {
-            "en": "Suburban Line",
-            "zh-Hans": "城郊线",
-            "zh-Hant": "城郊線"
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
         }
     },
     {
         "id": "zz10",
-        "colour": "#B15F56",
+        "colour": "#A04040",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
@@ -101,7 +101,7 @@
     },
     {
         "id": "zz12",
-        "colour": "#225E9E",
+        "colour": "#0000FF",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
@@ -111,7 +111,7 @@
     },
     {
         "id": "zz14",
-        "colour": "#844F7C",
+        "colour": "#A58CD8",
         "fg": "#fff",
         "name": {
             "en": "Line 14",
@@ -121,12 +121,12 @@
     },
     {
         "id": "zz17",
-        "colour": "#1D4155",
+        "colour": "#14445C",
         "fg": "#fff",
         "name": {
-            "en": "Line 17 (Zhengxu Line)",
-            "zh-Hans": "17号线（郑许市域铁路）",
-            "zh-Hant": "17號線（鄭許市域鐵路）"
+            "en": "Zhengxu Line",
+            "zh-Hans": "郑许市域铁路",
+            "zh-Hant": "鄭許市域鐵路"
         }
     }
 ]
