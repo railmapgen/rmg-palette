@@ -4,7 +4,8 @@
         "colour": "#00B500",
         "fg": "#fff",
         "name": {
-            "en": "LRT Line 1"
+            "en": "LRT Line 1",
+            "zh-Hans": "1号线"
         }
     },
     {
@@ -12,7 +13,8 @@
         "colour": "#6A0DAD",
         "fg": "#fff",
         "name": {
-            "en": "LRT Line 2"
+            "en": "LRT Line 2",
+            "zh-Hans": "2号线"
         }
     },
     {
@@ -20,7 +22,17 @@
         "colour": "#FEEC00",
         "fg": "#fff",
         "name": {
-            "en": "MRT Line 3"
+            "en": "MRT Line 3",
+            "zh-Hans": "3号线"
+        }
+    },
+    {
+        "id": "pnr",
+        "colour": "#FF6D00",
+        "fg": "#fff",
+        "name": {
+            "en": "PNR Commuter Line",
+            "zh-Hans": "PNR通勤线"
         }
     }
 ]
