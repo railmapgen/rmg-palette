@@ -48,5 +48,25 @@
             "zh-Hans": "5号线",
             "zh-Hant": "5號綫"
         }
+    },
+    {
+        "id": "wx6",
+        "colour": "#ef96cf",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號綫"
+        }
+    },
+    {
+        "id": "sxk",
+        "colour": "#fc8083",
+        "fg": "#fff",
+        "name": {
+            "en": "Suzhou Metro Suzhou-Wuxi Express",
+            "zh-Hans": "苏锡轨道快线",
+            "zh-Hant": "蘇錫軌道快線"
+        }
     }
 ]
