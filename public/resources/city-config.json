@@ -230,6 +230,15 @@
         }
     },
     {
+        "id": "buf",
+        "country": "US",
+        "name": {
+            "en": "Buffalo",
+            "es": "Búfalo",
+            "ja": "バッファロー"
+        }
+    },
+    {
         "id": "busan",
         "country": "KR",
         "name": {
