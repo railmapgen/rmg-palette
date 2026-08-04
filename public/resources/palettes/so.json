@@ -1,0 +1,12 @@
+[
+    {
+        "id": "sz2",
+        "colour": "#ff3a2f",
+        "fg": "#fff",
+        "name": {
+            "en": "Suzhou Rail Transit Line 2",
+            "zh-Hans": "苏州轨道交通2号线",
+            "zh-Hant": "蘇州軌道交通2號線"
+        }
+    }
+]
