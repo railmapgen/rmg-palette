@@ -1,0 +1,152 @@
+[
+    {
+        "id": "stepconnlogopri",
+        "colour": "#0096EE",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Primary Logo Colour",
+            "zh-Hans": "Stepford Connect 主要徽标色",
+            "zh-Hant": "Stepford Connect 主要徽標色"
+        }
+    },
+    {
+        "id": "stepconnlogosec",
+        "colour": "#090D2B",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Secondary Logo Colour",
+            "zh-Hans": "Stepford Connect 次要徽标色",
+            "zh-Hant": "Stepford Connect 次要徽標色"
+        }
+    },
+    {
+        "id": "stepconnregion1",
+        "colour": "#155c9a",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Regional One",
+            "zh-Hans": "Stepford Connect 地区一号连接线",
+            "zh-Hant": "Stepford Connect 地區一號連接綫"
+        }
+    },
+    {
+        "id": "stepconnregion2",
+        "colour": "#253c6a",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Regional Two",
+            "zh-Hans": "Stepford Connect 地区二号连接线",
+            "zh-Hant": "Stepford Connect 地區二號連接綫"
+        }
+    },
+    {
+        "id": "stepconnairconn",
+        "colour": "#109ddf",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Airport Connect",
+            "zh-Hans": "Stepford Connect 机场连接线",
+            "zh-Hant": "Stepford Connect 機場連接綫"
+        }
+    },
+    {
+        "id": "stepconnmorgconn",
+        "colour": "#4a6b7e",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Morganstown Connect",
+            "zh-Hans": "Stepford Connect 莫根斯坦连接线",
+            "zh-Hant": "Stepford Connect 莫根斯坦連接綫"
+        }
+    },
+    {
+        "id": "stepconnleighconn",
+        "colour": "#77a7cc",
+        "fg": "#fff",
+        "name": {
+            "en": "Stepford Connect Leighton Connect",
+            "zh-Hans": "Stepford Connect 雷顿连接线",
+            "zh-Hant": "Stepford Connect 雷頓連接綫"
+        }
+    },
+    {
+        "id": "stepmetrologopri",
+        "colour": "#EE4044",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Primary Logo Colour",
+            "zh-Hans": "地铁主要徽标色",
+            "zh-Hant": "地鐵/捷運主要徽標色"
+        }
+    },
+    {
+        "id": "stepmetrologosec",
+        "colour": "#DBF3FF",
+        "fg": "#000",
+        "name": {
+            "en": "Metro Secondary Logo Colour",
+            "zh-Hans": "地铁次要徽标色",
+            "zh-Hant": "地鐵/捷運次要徽標色"
+        }
+    },
+    {
+        "id": "stepmetrobartloop",
+        "colour": "#E02E37",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Barton Loop",
+            "zh-Hans": "地铁巴尔顿环状线",
+            "zh-Hant": "地鐵/捷運巴爾頓環狀線"
+        }
+    },
+    {
+        "id": "stepmetromorgline",
+        "colour": "#F06363",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Morganstown Line",
+            "zh-Hans": "地铁莫根斯坦线",
+            "zh-Hant": "地鐵/捷運莫根斯坦線"
+        }
+    },
+    {
+        "id": "stepmetrobentline",
+        "colour": "#334555",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Benton Line",
+            "zh-Hans": "地铁本顿线",
+            "zh-Hant": "地鐵/捷運本頓線"
+        }
+    },
+    {
+        "id": "stepmetroufcline",
+        "colour": "#7BA9BF",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Stepford UFC Line",
+            "zh-Hans": "地铁斯黛浦福德联队线",
+            "zh-Hant": "地鐵/捷運斯黛浦福德聯隊線"
+        }
+    },
+    {
+        "id": "stepmetrowillshuttle",
+        "colour": "#A82334",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Willowfield Shuttle",
+            "zh-Hans": "地铁威娄菲尔德穿梭线",
+            "zh-Hant": "地鐵/捷運威婁菲爾德穿梭線"
+        }
+    },
+    {
+        "id": "stepmetroformerlogo",
+        "colour": "#C4281C",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Former Logo Colour",
+            "zh-Hans": "地铁前徽标色",
+            "zh-Hant": "地鐵/捷運前徽標色"
+        }
+    }
+]
