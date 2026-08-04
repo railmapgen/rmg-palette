@@ -1,0 +1,12 @@
+[
+    {
+        "id": "e",
+        "colour": "#eeeeee",
+        "fg": "#fff",
+        "name": {
+            "en": "e",
+            "zh-Hans": "e",
+            "zh-Hant": "E"
+        }
+    }
+]
