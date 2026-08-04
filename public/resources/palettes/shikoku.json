@@ -1,0 +1,112 @@
+[
+    {
+        "id": "jrb",
+        "colour": "#2C6482",
+        "fg": "#fff",
+        "name": {
+            "ja": "徳島線（よしの川ブルーライン）",
+            "en": "Tokushima Line (Yoshinogawa Blue Line) ",
+            "zh-Hans": "德岛线（吉野川蓝色路线）",
+            "zh-Hant": "德島線（吉野川藍色路線）"
+        }
+    },
+    {
+        "id": "jrdk",
+        "colour": "#E15985",
+        "fg": "#fff",
+        "name": {
+            "ja": "土讃線",
+            "en": "Dosan Line",
+            "zh-Hans": "土赞线",
+            "zh-Hant": "土讚線"
+        }
+    },
+    {
+        "id": "jrg",
+        "colour": "#009156",
+        "fg": "#fff",
+        "name": {
+            "ja": "予土線（しまんとグリーンライン）",
+            "en": "Yodo Line (Shimanto Green Line)",
+            "zh-Hans": "予土线（四万十绿色路线）",
+            "zh-Hant": "予土線（四萬十綠色路線）"
+        }
+    },
+    {
+        "id": "jrm",
+        "colour": "#00B9B3",
+        "fg": "#fff",
+        "name": {
+            "ja": "牟岐線（阿波室戸シーサイドライン）",
+            "en": "Mugi Line (Awa-Muroto Seaside Line)",
+            "zh-Hans": "牟岐线（阿波室户海岸线）",
+            "zh-Hant": "牟岐線（阿波室戶海岸線）"
+        }
+    },
+    {
+        "id": "jrn",
+        "colour": "#8C2C5F",
+        "fg": "#fff",
+        "name": {
+            "ja": "鳴門線",
+            "en": "Naruto Line",
+            "zh-Hans": "鸣门线",
+            "zh-Hant": "鳴門線"
+        }
+    },
+    {
+        "id": "jrs",
+        "colour": "#97AAD7",
+        "fg": "#fff",
+        "name": {
+            "ja": "予讃線（愛ある伊予灘線）",
+            "en": "Yosan Line (Aiaru Iyonada Line)",
+            "zh-Hans": "予赞线（爱之伊予滩线）",
+            "zh-Hant": "予讚線（愛之伊予灘線）"
+        }
+    },
+    {
+        "id": "jrt",
+        "colour": "#8AC53E",
+        "fg": "#fff",
+        "name": {
+            "ja": "高徳線",
+            "en": "Kōtoku Line",
+            "zh-Hans": "高德线",
+            "zh-Hant": "高德線"
+        }
+    },
+    {
+        "id": "jruy",
+        "colour": "#FBAF19",
+        "fg": "#fff",
+        "name": {
+            "ja": "予讃線（内子線）",
+            "en": "Yosan Line (Uchiko Line)",
+            "zh-Hans": "予赞线（内子线）",
+            "zh-Hant": "予讚線（內子線）"
+        }
+    },
+    {
+        "id": "tosagn",
+        "colour": "#9E9FA3",
+        "fg": "#fff",
+        "name": {
+            "ja": "ごめん・なはり線",
+            "en": "Gomen-Nahari Line",
+            "zh-Hans": "后免、奈半利线",
+            "zh-Hant": "後免、奈半利線"
+        }
+    },
+    {
+        "id": "tosatk",
+        "colour": "#9E9FA3",
+        "fg": "#fff",
+        "name": {
+            "ja": "中村・宿毛線",
+            "en": "Nakamura-Sukumo Line",
+            "zh-Hans": "中村线、宿毛线",
+            "zh-Hant": "中村線、宿毛線"
+        }
+    }
+]
