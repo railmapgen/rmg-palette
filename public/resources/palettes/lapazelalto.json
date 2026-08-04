@@ -1,0 +1,119 @@
+[
+    {
+        "id": "lapazred",
+        "colour": "#ee1f2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "es": "Línea Roja"
+        }
+    },
+    {
+        "id": "lapazyellow",
+        "colour": "#fff101",
+        "fg": "#000",
+        "name": {
+            "en": "Yellow Line",
+            "es": "Línea Amarilla"
+        }
+    },
+    {
+        "id": "lapazgreen",
+        "colour": "#23b24b",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "es": "Línea Verde"
+        }
+    },
+    {
+        "id": "lapazblue",
+        "colour": "#243d98",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "es": "Línea Azul"
+        }
+    },
+    {
+        "id": "lapazorange",
+        "colour": "#f79f1c",
+        "fg": "#000",
+        "name": {
+            "en": "Orange Line",
+            "es": "Línea Naranja"
+        }
+    },
+    {
+        "id": "lapazwhite",
+        "colour": "#ffffff",
+        "fg": "#000",
+        "name": {
+            "en": "White Line",
+            "es": "Línea Blanca"
+        }
+    },
+    {
+        "id": "lapazskyblue",
+        "colour": "#00aeee",
+        "fg": "#fff",
+        "name": {
+            "en": "Sky Blue Line",
+            "es": "Línea Celeste"
+        }
+    },
+    {
+        "id": "lapazpurple",
+        "colour": "#6a3f8e",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "es": "Línea Morada"
+        }
+    },
+    {
+        "id": "lapazbrown",
+        "colour": "#ab662b",
+        "fg": "#fff",
+        "name": {
+            "en": "Brown Line",
+            "es": "Línea Café"
+        }
+    },
+    {
+        "id": "lapazsilver",
+        "colour": "#7e7e7f",
+        "fg": "#fff",
+        "name": {
+            "en": "Silver Line",
+            "es": "Línea Plateada"
+        }
+    },
+    {
+        "id": "lapazgold",
+        "colour": "#ba952e",
+        "fg": "#000",
+        "name": {
+            "en": "Gold Line",
+            "es": "Línea Dorada"
+        }
+    },
+    {
+        "id": "lapazcrimson",
+        "colour": "#dc143c",
+        "fg": "#fff",
+        "name": {
+            "en": "Crimson Line",
+            "es": "Línea Carmesí"
+        }
+    },
+    {
+        "id": "lapaztourist",
+        "colour": "#8b0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Santuario Virgen del Socavón Tourist Line",
+            "es": "Línea Turística Santuario Virgen del Socavón"
+        }
+    }
+]
