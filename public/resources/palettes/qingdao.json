@@ -1,22 +1,20 @@
 [
     {
         "id": "qd1",
-        "colour": "#f7b000",
+        "colour": "#f7a700",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
-            "zh-Hans": "1号线",
-            "zh-Hant": "1號線"
+            "zh-Hans": "1号线"
         }
     },
     {
         "id": "qd2",
-        "colour": "#c32a05",
+        "colour": "#c12e1a",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
-            "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
+            "zh-Hans": "2号线"
         }
     },
     {
@@ -25,28 +23,25 @@
         "fg": "#fff",
         "name": {
             "en": "Line 3",
-            "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
+            "zh-Hans": "3号线"
         }
     },
     {
         "id": "qd4",
-        "colour": "#00763c",
+        "colour": "#00763d",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
-            "zh-Hans": "4号线",
-            "zh-Hant": "4號線"
+            "zh-Hans": "4号线"
         }
     },
     {
         "id": "qd5",
-        "colour": "#9e1a96",
+        "colour": "#922489",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
-            "zh-Hans": "5号线",
-            "zh-Hant": "5號線"
+            "zh-Hans": "5号线"
         }
     },
     {
@@ -55,108 +50,123 @@
         "fg": "#fff",
         "name": {
             "en": "Line 6",
-            "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
+            "zh-Hans": "6号线"
         }
     },
     {
         "id": "qd7",
-        "colour": "#AD96DC",
+        "colour": "#9e9ccc",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
-            "zh-Hans": "7号线",
-            "zh-Hant": "7號線"
+            "zh-Hans": "7号线"
         }
     },
     {
         "id": "qd8",
-        "colour": "#e74893",
+        "colour": "#e84994",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
-            "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "zh-Hans": "8号线"
+        }
+    },
+    {
+        "id": "qdb8",
+        "colour": "#e84994",
+        "fg": "#fff",
+        "name": {
+            "en": "Branch Line 8",
+            "zh-Hans": "8支线"
         }
     },
     {
         "id": "qd9",
-        "colour": "#62a60a",
+        "colour": "#61a032",
         "fg": "#fff",
         "name": {
             "en": "Line 9",
-            "zh-Hans": "9号线",
-            "zh-Hant": "9號線"
+            "zh-Hans": "9号线"
         }
     },
     {
         "id": "qd10",
-        "colour": "#b46e00",
+        "colour": "#a66500",
         "fg": "#fff",
         "name": {
             "en": "Line 10",
-            "zh-Hans": "10号线",
-            "zh-Hant": "10號線"
+            "zh-Hans": "10号线"
         }
     },
     {
-        "id": "qd11",
-        "colour": "#304299",
+        "id": "qdlg",
+        "colour": "#2f4399",
         "fg": "#fff",
         "name": {
-            "en": "Line 11 (Oceantec Valley Line)",
-            "zh-Hans": "11号线（蓝谷快线）",
-            "zh-Hant": "11號線（藍穀快線）"
+            "en": "Oceantec Valley Line",
+            "zh-Hans": "蓝谷快线"
         }
     },
     {
         "id": "qd12",
-        "colour": "#8246ac",
+        "colour": "#794698",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
-            "zh-Hans": "12号线",
-            "zh-Hant": "12號線"
+            "zh-Hans": "12号线"
         }
     },
     {
-        "id": "qd13",
-        "colour": "#009c86",
+        "id": "qdxha",
+        "colour": "#009d87",
         "fg": "#fff",
         "name": {
-            "en": "Line 13 (The West Coast Line)",
-            "zh-Hans": "13号线（西海岸快线）",
-            "zh-Hant": "13號線（西海岸快線）"
+            "en": "The West Coast Line",
+            "zh-Hans": "西海岸快线"
         }
     },
     {
-        "id": "qd14",
-        "colour": "#ff5859",
+        "id": "qdpd",
+        "colour": "#ea5959",
         "fg": "#fff",
         "name": {
-            "en": "Line 14",
-            "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
+            "en": "Pingdu Line",
+            "zh-Hans": "平度快线"
         }
     },
     {
         "id": "qd15",
-        "colour": "#f3a9b3",
+        "colour": "#f3aab4",
         "fg": "#fff",
         "name": {
             "en": "Line 15",
-            "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "zh-Hans": "15号线"
         }
     },
     {
         "id": "qd16",
-        "colour": "#71dbd5",
+        "colour": "#a8d9d8",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
-            "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "zh-Hans": "16号线"
+        }
+    },
+    {
+        "id": "qd17",
+        "colour": "#ec790d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 17",
+            "zh-Hans": "17号线"
+        }
+    },
+    {
+        "id": "qdyg",
+        "colour": "#ff9100",
+        "fg": "#fff",
+        "name": {
+            "zh-Hans": "城阳有轨电车"
         }
     }
 ]
