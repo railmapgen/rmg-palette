@@ -1,212 +1,232 @@
 [
     {
         "id": "m1",
+        "colour": "#3CB4E5",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 1",
             "es": "Metro Línea 1"
-        },
-        "colour": "#36B3E6"
+        }
     },
     {
         "id": "m2",
+        "colour": "#E1251B",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 2",
             "es": "Metro Línea 2"
-        },
-        "colour": "#E5271A"
+        }
     },
     {
         "id": "m3",
+        "colour": "#FFCD00",
+        "fg": "#000",
         "name": {
             "en": "Metro Line 3",
             "es": "Metro Línea 3"
-        },
-        "colour": "#FFD700",
-        "fg": "#000"
+        }
     },
     {
         "id": "m4",
+        "colour": "#A65A2A",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 4",
             "es": "Metro Línea 4"
-        },
-        "colour": "#AB5D25"
+        }
     },
     {
         "id": "m5",
+        "colour": "#80BC00",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 5",
             "es": "Metro Línea 5"
-        },
-        "colour": "#7ABD28"
+        }
     },
     {
         "id": "m6",
+        "colour": "#7B868C",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 6",
             "es": "Metro Línea 6"
-        },
-        "colour": "#7A868B"
+        }
     },
     {
         "id": "m7",
+        "colour": "#FF8501",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 7",
             "es": "Metro Línea 7"
-        },
-        "colour": "#F49C00"
+        }
     },
     {
         "id": "m8",
+        "colour": "#EE6FBB",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 8",
             "es": "Metro Línea 8"
-        },
-        "colour": "#DD71A8"
+        }
     },
     {
         "id": "m9",
+        "colour": "#B11CAB",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 9",
             "es": "Metro Línea 9"
-        },
-        "colour": "#A01E87"
+        }
     },
     {
         "id": "m10",
+        "colour": "#003DA6",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 10",
             "es": "Metro Línea 10"
-        },
-        "colour": "#004892"
+        }
     },
     {
         "id": "m11",
+        "colour": "#00953B",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 11",
             "es": "Metro Línea 11"
-        },
-        "colour": "#009D42"
+        }
     },
     {
         "id": "m12",
+        "colour": "#A19200",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 12",
             "es": "Metro Línea 12"
-        },
-        "colour": "#B0A400"
+        }
     },
     {
         "id": "m13",
+        "colour": "#17A099",
+        "fg": "#fff",
         "name": {
             "en": "Metro Line 13",
             "es": "Metro Línea 13"
-        },
-        "colour": "#17A099"
+        }
     },
     {
-        "id": "r",
+        "id": "mr",
+        "colour": "#003DA6",
+        "fg": "#fff",
         "name": {
-            "en": "Ramal"
-        },
-        "colour": "#004892"
+            "en": "Metro Ramal",
+            "es": "Metro Ramal"
+        }
     },
     {
         "id": "ml1",
+        "colour": "#287EE2",
+        "fg": "#fff",
         "name": {
             "en": "ML1"
-        },
-        "colour": "#4F82C3"
+        }
     },
     {
         "id": "ml2",
+        "colour": "#AA148E",
+        "fg": "#fff",
         "name": {
             "en": "ML2"
-        },
-        "colour": "#A01E87"
+        }
     },
     {
         "id": "ml3",
+        "colour": "#FF4336",
+        "fg": "#fff",
         "name": {
             "en": "ML3"
-        },
-        "colour": "#E94D31"
+        }
     },
     {
         "id": "ml4",
+        "colour": "#77BA26",
+        "fg": "#fff",
         "name": {
             "en": "ML4"
-        },
-        "colour": "#009849"
+        }
     },
     {
         "id": "c1",
+        "colour": "#66AEDE",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-1"
-        },
-        "colour": "#77b5d7"
+        }
     },
     {
         "id": "c2",
+        "colour": "#299538",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-2"
-        },
-        "colour": "#009252"
+        }
     },
     {
         "id": "c3",
+        "colour": "#BB29BB",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-3"
-        },
-        "colour": "#8d3b84"
-    },
-    {
-        "id": "c3a",
-        "name": {
-            "en": "Cercanías C-3a"
-        },
-        "colour": "#ea5ebe"
+        }
     },
     {
         "id": "c4",
+        "colour": "#0032A0",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-4a/C-4b"
-        },
-        "colour": "#2a5f9b"
+        }
     },
     {
         "id": "c5",
+        "colour": "#FFC72C",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-5"
-        },
-        "colour": "#f3b137"
+        }
     },
     {
         "id": "c7",
+        "colour": "#EF3340",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-7"
-        },
-        "colour": "#db3c37"
+        }
     },
     {
         "id": "c8",
+        "colour": "#777980",
+        "fg": "#fff",
         "name": {
-            "en": "Cercanías C-8"
-        },
-        "colour": "#636463"
+            "en": "Cercanías C-8a/C-8b"
+        }
     },
     {
         "id": "c9",
+        "colour": "#936037",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-9"
-        },
-        "colour": "#ed9a43"
+        }
     },
     {
         "id": "c10",
+        "colour": "#BAC12D",
+        "fg": "#fff",
         "name": {
             "en": "Cercanías C-10"
-        },
-        "colour": "#b6d144"
+        }
     }
 ]
