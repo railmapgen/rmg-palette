@@ -121,7 +121,7 @@
     },
     {
         "id": "mao",
-        "colour": "#77bc1f",
+        "colour": "#00a8d3",
         "fg": "#fff",
         "name": {
             "en": "Maokong Gondola",
@@ -177,6 +177,16 @@
             "en": "Taiwan High Speed Rail",
             "zh-Hans": "台湾高铁",
             "zh-Hant": "台灣高鐵"
+        }
+    },
+    {
+        "id": "lb",
+        "colour": "#a3d6e3",
+        "fg": "#000",
+        "name": {
+            "en": "Saying Line",
+            "zh-Hans": "三莺线",
+            "zh-Hant": "三鶯線"
         }
     }
 ]
