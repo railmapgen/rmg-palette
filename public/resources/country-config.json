@@ -24,6 +24,17 @@
         ]
     },
     {
+        "id": "AS",
+        "name": {
+            "en": "Astanakartal",
+            "zh-Hans": "阿斯塔納卡爾塔爾",
+            "zh-Hant": "阿斯塔納卡爾塔爾 "
+        },
+        "languages": [
+            "fa"
+        ]
+    },
+    {
         "id": "AT",
         "name": {
             "en": "Austria",
