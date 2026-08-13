@@ -6,7 +6,7 @@
         "name": {
             "en": "Line 1/Batong Line",
             "zh-Hans": "1号线/八通线",
-            "zh-Hant": "1號線/八通線"
+            "zh-Hant": "1号缐/八通缐"
         }
     },
     {
@@ -16,7 +16,7 @@
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
-            "zh-Hant": "2號線"
+            "zh-Hant": "2号缐"
         }
     },
     {
@@ -26,7 +26,7 @@
         "name": {
             "en": "Line 3",
             "zh-Hans": "3号线",
-            "zh-Hant": "3號線"
+            "zh-Hant": "3号缐"
         }
     },
     {
@@ -36,7 +36,7 @@
         "name": {
             "en": "Line 4/Daxing Line",
             "zh-Hans": "4号线/大兴线",
-            "zh-Hant": "4號線/大興線"
+            "zh-Hant": "4号缐/大兴缐"
         }
     },
     {
@@ -46,7 +46,7 @@
         "name": {
             "en": "Line 5",
             "zh-Hans": "5号线",
-            "zh-Hant": "5號線"
+            "zh-Hant": "5号缐"
         }
     },
     {
@@ -56,7 +56,7 @@
         "name": {
             "en": "Line 6",
             "zh-Hans": "6号线",
-            "zh-Hant": "6號線"
+            "zh-Hant": "6号缐"
         }
     },
     {
@@ -66,7 +66,7 @@
         "name": {
             "en": "Line 7",
             "zh-Hans": "7号线",
-            "zh-Hant": "7號線"
+            "zh-Hant": "7号缐"
         }
     },
     {
@@ -76,7 +76,7 @@
         "name": {
             "en": "Line 8",
             "zh-Hans": "8号线",
-            "zh-Hant": "8號線"
+            "zh-Hant": "8号缐"
         }
     },
     {
@@ -86,7 +86,7 @@
         "name": {
             "en": "Line 9",
             "zh-Hans": "9号线",
-            "zh-Hant": "9號線"
+            "zh-Hant": "9号缐"
         }
     },
     {
@@ -96,7 +96,7 @@
         "name": {
             "en": "Line 10",
             "zh-Hans": "10号线",
-            "zh-Hant": "10號線"
+            "zh-Hant": "10号缐"
         }
     },
     {
@@ -106,7 +106,7 @@
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
-            "zh-Hant": "11號線"
+            "zh-Hant": "11号缐"
         }
     },
     {
@@ -116,7 +116,7 @@
         "name": {
             "en": "Line 12",
             "zh-Hans": "12号线",
-            "zh-Hant": "12號線"
+            "zh-Hant": "12号缐"
         }
     },
     {
@@ -126,7 +126,7 @@
         "name": {
             "en": "Line 13",
             "zh-Hans": "13号线",
-            "zh-Hant": "13號線"
+            "zh-Hant": "13号缐"
         }
     },
     {
@@ -136,7 +136,7 @@
         "name": {
             "en": "Line 14",
             "zh-Hans": "14号线",
-            "zh-Hant": "14號線"
+            "zh-Hant": "14号缐"
         }
     },
     {
@@ -146,7 +146,7 @@
         "name": {
             "en": "Line 15",
             "zh-Hans": "15号线",
-            "zh-Hant": "15號線"
+            "zh-Hant": "15号缐"
         }
     },
     {
@@ -156,7 +156,7 @@
         "name": {
             "en": "Line 16",
             "zh-Hans": "16号线",
-            "zh-Hant": "16號線"
+            "zh-Hant": "16号缐"
         }
     },
     {
@@ -166,7 +166,7 @@
         "name": {
             "en": "Line 17",
             "zh-Hans": "17号线",
-            "zh-Hant": "17號線"
+            "zh-Hant": "17号缐"
         }
     },
     {
@@ -176,7 +176,7 @@
         "name": {
             "en": "Line 18",
             "zh-Hans": "18号线",
-            "zh-Hant": "18號線"
+            "zh-Hant": "18号缐"
         }
     },
     {
@@ -186,7 +186,7 @@
         "name": {
             "en": "Line 19",
             "zh-Hans": "19号线",
-            "zh-Hant": "19號線"
+            "zh-Hant": "19号缐"
         }
     },
     {
@@ -196,7 +196,7 @@
         "name": {
             "en": "Line 22 (Pinggu Line)",
             "zh-Hans": "22号线（平谷线）",
-            "zh-Hant": "22號線（平谷線）"
+            "zh-Hant": "22号缐（平谷缐）"
         }
     },
     {
@@ -206,7 +206,7 @@
         "name": {
             "en": "Yizhuang Line",
             "zh-Hans": "亦庄线",
-            "zh-Hant": "亦莊線"
+            "zh-Hant": "亦庄缐"
         }
     },
     {
@@ -216,7 +216,7 @@
         "name": {
             "en": "Fangshan Line/Yanfang Line",
             "zh-Hans": "房山线/燕房线",
-            "zh-Hant": "房山線/燕房線"
+            "zh-Hant": "房山缐/燕房缐"
         }
     },
     {
@@ -226,7 +226,7 @@
         "name": {
             "en": "Line S1",
             "zh-Hans": "S1线",
-            "zh-Hant": "S1線"
+            "zh-Hant": "S1缐"
         }
     },
     {
@@ -236,7 +236,7 @@
         "name": {
             "en": "Changping Line",
             "zh-Hans": "昌平线",
-            "zh-Hant": "昌平線"
+            "zh-Hant": "昌平缐"
         }
     },
     {
@@ -246,7 +246,7 @@
         "name": {
             "en": "Line 28",
             "zh-Hans": "28号线",
-            "zh-Hant": "28號線"
+            "zh-Hant": "28号缐"
         }
     },
     {
@@ -256,7 +256,7 @@
         "name": {
             "en": "Xijiao Line",
             "zh-Hans": "西郊线",
-            "zh-Hant": "西郊線"
+            "zh-Hant": "西郊缐"
         }
     },
     {
@@ -266,7 +266,7 @@
         "name": {
             "en": "Yizhuang T1 Line",
             "zh-Hans": "亦庄T1线",
-            "zh-Hant": "亦莊T1線"
+            "zh-Hant": "亦庄T1缐"
         }
     },
     {
@@ -276,7 +276,7 @@
         "name": {
             "en": "Capital Airport Express",
             "zh-Hans": "首都机场线",
-            "zh-Hant": "首都機場線"
+            "zh-Hant": "首都机场缐"
         }
     },
     {
@@ -286,7 +286,17 @@
         "name": {
             "en": "Daxing Airport Express",
             "zh-Hans": "大兴机场线",
-            "zh-Hant": "大興機場線"
+            "zh-Hant": "大兴机场缐"
+        }
+    },
+    {
+        "id": "jx",
+        "colour": "#00569F",
+        "fg": "#fff",
+        "name": {
+            "en": "Jingxiong Express Line",
+            "zh-Hans": "京雄快线",
+            "zh-Hant": "京雄快缐"
         }
     }
 ]
