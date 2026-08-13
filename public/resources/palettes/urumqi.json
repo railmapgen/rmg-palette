@@ -10,9 +10,19 @@
         }
     },
     {
+        "id": "urumqijeiyun",
+        "colour": "#F8C60D",
+        "fg": "#000",
+        "name": {
+            "en": "Airport MRT",
+            "zh-Hans": "机场捷运",
+            "zh-Hant": "機場捷運"
+        }
+    },
+    {
         "id": "urumqi2",
-        "colour": "#5fe864",
-        "fg": "#fff",
+        "colour": "#F8C60D",
+        "fg": "#000",
         "name": {
             "en": "Line 2",
             "zh-Hans": "2号线",
@@ -21,7 +31,7 @@
     },
     {
         "id": "urumqi3",
-        "colour": "#ffc110",
+        "colour": "#017F3F",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +41,7 @@
     },
     {
         "id": "urumqi4",
-        "colour": "#ff4152",
+        "colour": "#B5851B",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
