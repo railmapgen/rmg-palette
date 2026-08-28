@@ -1,0 +1,13 @@
+[
+    {
+        "id": "l1",
+        "colour": "#EB4137",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "zh-Hans": "红线",
+            "zh-Hant": "紅線",
+            "he": "הקו האדום"
+        }
+    }
+]
