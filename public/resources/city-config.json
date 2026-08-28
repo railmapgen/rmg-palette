@@ -861,6 +861,16 @@
         }
     },
     {
+        "id": "jerusalem",
+        "country": "IL",
+        "name": {
+            "en": "Jerusalem",
+            "zh-Hans": "耶路撒冷",
+            "zh-Hant": "耶路撒冷",
+            "he": "ירושלים "
+        }
+    },
+    {
         "id": "jinan",
         "country": "CN",
         "name": {
