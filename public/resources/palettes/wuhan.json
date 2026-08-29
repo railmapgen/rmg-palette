@@ -80,6 +80,16 @@
         }
     },
     {
+        "id": "wh9 ",
+        "colour": "#70c4a1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
+        }
+    },
+    {
         "id": "wh10",
         "colour": "#7F74AC",
         "fg": "#fff",
@@ -137,6 +147,16 @@
             "en": "Line 21",
             "zh-Hans": "21号线",
             "zh-Hant": "21號線"
+        }
+    },
+    {
+        "id": "wh34 ",
+        "colour": "#F29844",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 34",
+            "zh-Hans": "34号线",
+            "zh-Hant": "34號線"
         }
     },
     {
