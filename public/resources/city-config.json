@@ -1986,6 +1986,16 @@
         }
     },
     {
+        "id": "valencia",
+        "country": "ES",
+        "name": {
+            "en": "Valencia",
+            "zh-Hans": "巴伦西亚",
+            "zh-Hant": "瓦倫西亞",
+            "es": "Valencia"
+        }
+    },
+    {
         "id": "vancouver",
         "country": "CA",
         "name": {
