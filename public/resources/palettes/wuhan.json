@@ -1,7 +1,7 @@
 [
     {
         "id": "wh1",
-        "colour": "#3D84C6",
+        "colour": "#0067A1",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "wh2",
-        "colour": "#EB7CAF",
+        "colour": "#E99DC2",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "wh3",
-        "colour": "#D9B966",
+        "colour": "#DAB96B",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "wh4",
-        "colour": "#8EC720",
+        "colour": "#B9D31A",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "wh5",
-        "colour": "#a62e37",
+        "colour": "#A43034",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "wh6",
-        "colour": "#008536",
+        "colour": "#007A3E",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "wh7",
-        "colour": "#EB7900",
+        "colour": "#EE7B1D",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "wh8",
-        "colour": "#98ACAB",
+        "colour": "#9BAFAE",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -91,8 +91,8 @@
     },
     {
         "id": "wh11",
-        "colour": "#F2CF01",
-        "fg": "#fff",
+        "colour": "#FDD100",
+        "fg": "#000",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
@@ -101,7 +101,7 @@
     },
     {
         "id": "wh12",
-        "colour": "#00A3E9",
+        "colour": "#019ADD",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
@@ -111,7 +111,7 @@
     },
     {
         "id": "wh16",
-        "colour": "#CC0256",
+        "colour": "#C24C6D",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
@@ -121,7 +121,7 @@
     },
     {
         "id": "wh19",
-        "colour": "#18a079",
+        "colour": "#00A07E",
         "fg": "#fff",
         "name": {
             "en": "Line 19",
@@ -130,13 +130,13 @@
         }
     },
     {
-        "id": "wh21",
-        "colour": "#CF0192",
+        "id": "whyl",
+        "colour": "#B71B84",
         "fg": "#fff",
         "name": {
-            "en": "Line 21",
-            "zh-Hans": "21号线",
-            "zh-Hant": "21號線"
+            "en": "Yangluo Line",
+            "zh-Hans": "阳逻线",
+            "zh-Hant": "陽邏線"
         }
     },
     {
@@ -151,32 +151,32 @@
     },
     {
         "id": "whggxdygdcl1",
-        "colour": "#0000ff",
+        "colour": "#ffffff",
         "fg": "#fff",
         "name": {
-            "en": "Wuhan Optics Valley Modern Tram Line 1",
-            "zh-Hans": "武汉光谷现代有轨电车1号线",
-            "zh-Hant": "武漢光谷現代電車1號線"
+            "en": "Wuhan Optics Valley Modern Tram Line L1",
+            "zh-Hans": "武汉光谷现代有轨电车L1线",
+            "zh-Hant": "武漢光谷現代電車L1線"
         }
     },
     {
         "id": "whggxdygdcl2",
-        "colour": "#ff0000",
+        "colour": "#a0d4bd",
         "fg": "#fff",
         "name": {
-            "en": "Wuhan Optics Valley Modern Tram Line 2",
-            "zh-Hans": "武汉光谷现代有轨电车2号线",
-            "zh-Hant": "武漢光谷現代電車2號線"
+            "en": "Wuhan Optics Valley Modern Tram Line L2",
+            "zh-Hans": "武汉光谷现代有轨电车L2线",
+            "zh-Hant": "武漢光谷現代電車L2線"
         }
     },
     {
-        "id": "whggxdygdcl5",
-        "colour": "#818181",
+        "id": "whggxdygdcl3",
+        "colour": "#3c99d6",
         "fg": "#fff",
         "name": {
-            "en": "Wuhan Optics Valley Modern Tram Line 5 (Event Time Only)",
-            "zh-Hans": "武汉光谷现代有轨电车5号线（大型活动开行）",
-            "zh-Hant": "武漢光谷現代電車5號線（大型活動開行）"
+            "en": "Wuhan Optics Valley Modern Tram Line L3",
+            "zh-Hans": "武汉光谷现代有轨电车L3线",
+            "zh-Hant": "武漢光谷現代電車L3線"
         }
     }
 ]
