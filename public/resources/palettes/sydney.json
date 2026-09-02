@@ -14,9 +14,9 @@
         "colour": "#0098cd",
         "fg": "#fff",
         "name": {
-            "en": "T2 - Inner West & Leppington Line",
-            "zh-Hans": "T2 - 中西部与雷平顿线",
-            "zh-Hant": "T2 - 中西部與雷平頓線"
+            "en": "T2 - Leppington and Inner West Line",
+            "zh-Hans": "T2 - 莱平顿和内西线",
+            "zh-Hant": "T2 - 萊平頓和內西線"
         }
     },
     {
@@ -24,9 +24,9 @@
         "colour": "#f37021",
         "fg": "#fff",
         "name": {
-            "en": "T3 - Bankstown Line",
-            "zh-Hans": "T3 - 班克斯顿线",
-            "zh-Hant": "T3 - 班克斯敦線"
+            "en": "T3 - Liverpool and Inner West Line",
+            "zh-Hans": "T3 - 利物浦和内西线",
+            "zh-Hant": "T3 - 利物浦和內西線"
         }
     },
     {
@@ -47,6 +47,16 @@
             "en": "T5 - Cumberland Line",
             "zh-Hans": "T5 - 坎伯兰线",
             "zh-Hant": "T5 - 坎伯蘭線"
+        }
+    },
+    {
+        "id": "syd6",
+        "colour": "#7d3f21",
+        "fg": "#fff",
+        "name": {
+            "en": "T6 - Lidcombe and Bankstown Line",
+            "zh-Hans": "T6 - 利德科姆和班克斯敦线",
+            "zh-Hant": "T6 - 利德科姆和班克斯敦線"
         }
     },
     {
@@ -74,19 +84,19 @@
         "colour": "#d11f2f",
         "fg": "#fff",
         "name": {
-            "en": "T9 - Northern Line test",
-            "zh-Hans": "T9 - 北部线（测试中）",
-            "zh-Hant": "T9 - 北線測試"
+            "en": "T9 - Northern Line",
+            "zh-Hans": "T9 - 北部线",
+            "zh-Hant": "T9 - 北部線"
         }
     },
     {
-        "id": "sydm",
+        "id": "sym1",
         "colour": "#168388",
         "fg": "#fff",
         "name": {
-            "en": "Metro North West Line",
-            "zh-Hans": "地铁西北线",
-            "zh-Hant": "地鐵西北線"
+            "en": "M1 - Metro North West and Bankstown Line",
+            "zh-Hans": "M1 - 地铁西北线和班克斯敦线",
+            "zh-Hant": "M1 - 地鐵西北線和班克斯敦線"
         }
     },
     {
@@ -104,8 +114,8 @@
         "colour": "#d11f2f",
         "fg": "#fff",
         "name": {
-            "en": "Central Cost & Newcastle Line",
-            "zh-Hans": "中部海岸与纽卡斯尔线",
+            "en": "Central Coast & Newcastle Line",
+            "zh-Hans": "中央海岸和纽卡斯尔线",
             "zh-Hant": "中央海岸和紐卡斯爾線"
         }
     },
@@ -230,6 +240,16 @@
         }
     },
     {
+        "id": "syf10",
+        "colour": "#5AB031",
+        "fg": "#fff",
+        "name": {
+            "en": "F10 - Blackwattle Bay",
+            "zh-Hans": "F10 - 布莱克瓦特尔湾",
+            "zh-Hant": "F10 - 布萊克瓦特爾灣"
+        }
+    },
+    {
         "id": "syff",
         "colour": "#5ab031",
         "fg": "#fff",
@@ -267,6 +287,16 @@
             "en": "L3 - Kingsford Line",
             "zh-Hans": "L3 - 金斯福德轻轨",
             "zh-Hant": "L3 - 金斯福德輕軌"
+        }
+    },
+    {
+        "id": "syl4",
+        "colour": "#CD0D4D",
+        "fg": "#fff",
+        "name": {
+            "en": "L4 - Westmead and Carlingford Line",
+            "zh-Hans": "L4 - 韦斯特米德和卡林福德线",
+            "zh-Hant": "L4 - 韋斯特米德和卡林福德線"
         }
     },
     {

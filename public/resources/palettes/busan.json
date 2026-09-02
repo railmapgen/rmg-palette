@@ -45,7 +45,7 @@
     },
     {
         "id": "bu5",
-        "colour": "#ff007a",
+        "colour": "#F14C53",
         "fg": "#000",
         "name": {
             "en": "Line 5",
@@ -78,7 +78,7 @@
     },
     {
         "id": "ym",
-        "colour": "#a2272a",
+        "colour": "#59C3B8",
         "fg": "#fff",
         "name": {
             "en": "Yangsan Metro",

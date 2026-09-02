@@ -13,6 +13,7 @@ BRANCH=$(git branch | grep \* | cut -d ' ' -f2 | tr '/' '.')
 npm config set tag-version-prefix "${APP_NAME}-"
 
 cd ./package
+npm run test
 
 ### BUMP VERSION
 if [ "$BRANCH" = "main" ]

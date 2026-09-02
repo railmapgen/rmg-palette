@@ -1,0 +1,65 @@
+[
+    {
+        "id": "izban",
+        "colour": "#1d4da3",
+        "fg": "#fff",
+        "name": {
+            "en": "IZBAN",
+            "tr": "İZBAN"
+        }
+    },
+    {
+        "id": "m1",
+        "colour": "#e81b2c",
+        "fg": "#fff",
+        "name": {
+            "en": "M1",
+            "tr": "M1"
+        }
+    },
+    {
+        "id": "t1green",
+        "colour": "#019644",
+        "fg": "#fff",
+        "name": {
+            "en": "T1 Green Line",
+            "tr": "T1 Yeşil Hat"
+        }
+    },
+    {
+        "id": "t1orange",
+        "colour": "#f39212",
+        "fg": "#fff",
+        "name": {
+            "en": "T1 Orange (Ring) Line",
+            "tr": "T1 Turuncu (Ring) Hat"
+        }
+    },
+    {
+        "id": "t2",
+        "colour": "#99c73b",
+        "fg": "#fff",
+        "name": {
+            "en": "T2",
+            "tr": "T2"
+        }
+    },
+    {
+        "id": "t3redouter",
+        "colour": "#e91d22",
+        "fg": "#fff",
+        "name": {
+            "en": "T3 Red (Outer) Line",
+            "tr": "T3 Kırmızı (Dış) Hat"
+        }
+    },
+    {
+        "id": "t3blueinner",
+        "colour": "#274998",
+        "fg": "#fff",
+        "name": {
+            "en": "T3 Blue (Inner) Line",
+            "tr": "T3 Mavi (İç) Hat"
+        }
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "r",
+        "colour": "#db0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line (Dazhu-Lukang Line)",
+            "zh-Hans": "红线（大竹鹿港线）",
+            "zh-Hant": "紅線（大竹鹿港線）"
+        }
+    },
+    {
+        "id": "br",
+        "colour": "#390000",
+        "fg": "#fff",
+        "name": {
+            "en": "Brown Line (Southern Changhua Line)",
+            "zh-Hans": "棕线（彰南线）",
+            "zh-Hant": "棕線（彰南線）"
+        }
+    }
+]

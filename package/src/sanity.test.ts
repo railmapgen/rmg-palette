@@ -1,12 +1,15 @@
-import cityList from '../../public/resources/city-config.json';
-import countryList from '../../public/resources/country-config.json';
+import { describe, it } from 'node:test';
+import assert from 'node:assert';
+import fs from 'node:fs';
+import cityList from '../../public/resources/city-config.json' with { type: 'json' };
+import countryList from '../../public/resources/country-config.json' with { type: 'json' };
 import { LANGUAGE_NAMES } from '@railmapgen/rmg-translate';
 
 const translationAssertion = (nameObj: any) => {
-    expect(typeof nameObj).toBe('object');
+    assert.equal(typeof nameObj, 'object');
     Object.entries(nameObj).forEach(([lang, name]) => {
-        expect(LANGUAGE_NAMES).toHaveProperty(lang);
-        expect(typeof name).toBe('string');
+        assert.ok(lang in LANGUAGE_NAMES);
+        assert.equal(typeof name, 'string');
     });
 };
 
@@ -15,48 +18,50 @@ const allCities = cityList.map(city => city.id);
 describe('Sanity', () => {
     it('Check city-config.json follows type CityEntry[]', () => {
         cityList.forEach(city => {
-            expect(typeof city.id).toBe('string');
-            expect(typeof city.country).toBe('string');
+            assert.equal(typeof city.id, 'string');
+            assert.equal(typeof city.country, 'string');
             translationAssertion(city.name);
         });
     });
 
     it('Make sure every city in cityCode correspond to a JSON file in palettes', () => {
-        const palettes = import.meta.glob(`../../public/resources/palettes/*.json`);
-        Object.keys(palettes).forEach(path => {
-            const cityId = path.match(/\/(\w+).json/)![1];
-            expect(allCities).toContain(cityId);
+        allCities.forEach(cityId => {
+            assert.ok(fs.existsSync(`../public/resources/palettes/${cityId}.json`), `${cityId}.json is missing`);
         });
     });
 
-    it.each(allCities)('Palette file of %s exists and follows type PaletteEntry[] and no duplicates', async cityId => {
-        const { default: palette } = await import(`../../public/resources/palettes/${cityId}.json`);
+    allCities.forEach(cityId =>
+        it(`Palette file of ${cityId} exists and follows type PaletteEntry[] and no duplicates`, async () => {
+            const { default: palette } = await import(`../../public/resources/palettes/${cityId}.json`, {
+                with: { type: 'json' },
+            });
 
-        // type check
-        palette.forEach((line: any) => {
-            expect(typeof line.id).toBe('string');
-            translationAssertion(line.name);
-            expect(line.colour.match(/^#[0-9a-fA-F]{6}$/)).toBeTruthy();
-            if (line.fg) {
-                expect(line.fg.match(/^#fff|#000$/)).toBeTruthy();
-            }
-            if (line.pantone) {
-                expect(typeof line.pantone).toBe('string');
-            }
-        });
+            // type check
+            palette.forEach((line: any) => {
+                assert.equal(typeof line.id, 'string');
+                translationAssertion(line.name);
+                assert.ok(line.colour.match(/^#[0-9a-fA-F]{6}$/));
+                if (line.fg) {
+                    assert.ok(line.fg.match(/^#fff|#000$/));
+                }
+                if (line.pantone) {
+                    assert.equal(typeof line.pantone, 'string');
+                }
+            });
 
-        // duplication check
-        expect(new Set(palette.map((line: any) => line.id)).size).toBe(palette.length);
-    });
+            // duplication check
+            assert.equal(new Set(palette.map((line: any) => line.id)).size, palette.length);
+        })
+    );
 
     it('Check country-config.json follows type CountryEntry[]', () => {
         countryList.forEach(country => {
-            expect(typeof country.id).toBe('string');
+            assert.equal(typeof country.id, 'string');
             translationAssertion(country.name);
 
-            expect(Array.isArray(country.languages)).toBeTruthy();
+            assert.ok(Array.isArray(country.languages));
             country.languages.forEach(language => {
-                expect(LANGUAGE_NAMES).toHaveProperty(language);
+                assert.ok(language in LANGUAGE_NAMES);
             });
         });
     });
@@ -64,11 +69,14 @@ describe('Sanity', () => {
     it('Check city-config countries are in country-config', () => {
         const allCountries = countryList.map(country => country.id);
         cityList.forEach(city => {
-            expect(allCountries).toContain(city.country);
+            assert.ok(allCountries.includes(city.country));
         });
     });
 
-    it.each(countryList.map(country => country.id))('Check country code %s validity', countryId => {
-        expect(countryId.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/)).not.toBeNull();
+    countryList.forEach(country => {
+        const countryId = country.id;
+        it(`Check country code ${countryId} validity`, () => {
+            assert.notEqual(countryId.match(/^[A-Z]{2}$|^GB[A-Z]{3}$/), null);
+        });
     });
 });

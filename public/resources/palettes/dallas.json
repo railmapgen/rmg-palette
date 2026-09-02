@@ -1,0 +1,83 @@
+[
+    {
+        "id": "red",
+        "colour": "#ed3938",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "es": "Linea Rojo"
+        }
+    },
+    {
+        "id": "blue",
+        "colour": "#0f8cc5",
+        "fg": "#fff",
+        "name": {
+            "en": "Blue Line",
+            "es": "Linea Azul"
+        }
+    },
+    {
+        "id": "green",
+        "colour": "#047c41",
+        "fg": "#fff",
+        "name": {
+            "en": "Green Line",
+            "es": "Linea Verde"
+        }
+    },
+    {
+        "id": "orange",
+        "colour": "#f4912d",
+        "fg": "#fff",
+        "name": {
+            "en": "Orange Line",
+            "es": "Linea Naranja"
+        }
+    },
+    {
+        "id": "mata",
+        "colour": "#791418",
+        "fg": "#fff",
+        "name": {
+            "en": "M Line",
+            "es": "Linea M"
+        }
+    },
+    {
+        "id": "tre",
+        "colour": "#172859",
+        "fg": "#fff",
+        "name": {
+            "en": "Trinity Railway Express",
+            "es": "Exprés Ferroviario Trinity"
+        }
+    },
+    {
+        "id": "dal",
+        "colour": "#0093d8",
+        "fg": "#fff",
+        "name": {
+            "en": "Dallas Streetcar",
+            "es": "Tranvía de Dallas"
+        }
+    },
+    {
+        "id": "tex",
+        "colour": "#ed3d42",
+        "fg": "#fff",
+        "name": {
+            "en": "TEXRail",
+            "es": "Ferroviario TEX"
+        }
+    },
+    {
+        "id": "dcta",
+        "colour": "#045130",
+        "fg": "#fff",
+        "name": {
+            "en": "A-Train",
+            "es": "Tren A"
+        }
+    }
+]

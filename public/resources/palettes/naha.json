@@ -1,0 +1,13 @@
+[
+    {
+        "id": "yui",
+        "colour": "#FF9600",
+        "fg": "#fff",
+        "name": {
+            "en": "Okinawa Urban Monorail (Yui Rail)",
+            "zh-Hans": "冲绳都市单轨电车",
+            "zh-Hant": "沖繩都市單軌電車",
+            "ja": "沖縄都市モノレール線（ゆいレール）"
+        }
+    }
+]

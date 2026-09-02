@@ -1,7 +1,7 @@
 [
     {
         "id": "xz1",
-        "colour": "#a43337",
+        "colour": "#a33438",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -21,7 +21,7 @@
     },
     {
         "id": "xz3",
-        "colour": "#008cd7",
+        "colour": "#008cd6",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "xz4",
-        "colour": "#6fb92c",
+        "colour": "#6fba2c",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "xz5",
-        "colour": "#ae4283",
+        "colour": "#af4284",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,12 +51,62 @@
     },
     {
         "id": "xz6",
-        "colour": "#541f7f",
+        "colour": "#552375",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
             "zh-Hans": "6号线",
             "zh-Hant": "6號線"
+        }
+    },
+    {
+        "id": "xz7",
+        "colour": "#b44c21",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
+        "id": "xzs1",
+        "colour": "#a5d4ad",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S1",
+            "zh-Hans": "S1号线",
+            "zh-Hant": "S1號線"
+        }
+    },
+    {
+        "id": "xzs2",
+        "colour": "#bae3f9",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S2",
+            "zh-Hans": "S2号线",
+            "zh-Hant": "S2號線"
+        }
+    },
+    {
+        "id": "xzs3",
+        "colour": "#f4b4d0",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S3",
+            "zh-Hans": "S3号线",
+            "zh-Hant": "S3號線"
+        }
+    },
+    {
+        "id": "xzs4",
+        "colour": "#cfd500",
+        "fg": "#fff",
+        "name": {
+            "en": "Line S4",
+            "zh-Hans": "S4号线",
+            "zh-Hant": "S4號線"
         }
     }
 ]

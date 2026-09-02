@@ -6,12 +6,13 @@ node_modules/
 .pnp.js
 
 # testing
-/coverage
+coverage/
 
 # production
 build/
 dist/
 public/resources/history.json
+*.compressed.json
 
 # misc
 .DS_Store

@@ -62,7 +62,7 @@
     {
         "id": "rb",
         "colour": "#fd92a3",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Xinbeitou Branch Line",
             "zh-Hans": "新北投支线",
@@ -72,7 +72,7 @@
     {
         "id": "gb",
         "colour": "#cfdb00",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Xiaobitan Branch Line",
             "zh-Hans": "小碧潭支线",
