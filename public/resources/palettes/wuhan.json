@@ -1,7 +1,7 @@
 [
     {
         "id": "wh1",
-        "colour": "#3D84C6",
+        "colour": "#0067a1",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "wh2",
-        "colour": "#EB7CAF",
+        "colour": "#ec9cbb",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -31,7 +31,7 @@
     },
     {
         "id": "wh4",
-        "colour": "#8EC720",
+        "colour": "#a6d30b",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -92,7 +92,7 @@
     {
         "id": "wh11",
         "colour": "#F2CF01",
-        "fg": "#fff",
+        "fg": "#000",
         "name": {
             "en": "Line 11",
             "zh-Hans": "11号线",
@@ -111,7 +111,7 @@
     },
     {
         "id": "wh16",
-        "colour": "#CC0256",
+        "colour": "#c34c6d",
         "fg": "#fff",
         "name": {
             "en": "Line 16",
@@ -130,13 +130,13 @@
         }
     },
     {
-        "id": "wh21",
-        "colour": "#CF0192",
+        "id": "whyl",
+        "colour": "#B2007B",
         "fg": "#fff",
         "name": {
-            "en": "Line 21",
-            "zh-Hans": "21号线",
-            "zh-Hant": "21號線"
+            "en": "Yangluo Line",
+            "zh-Hans": "阳逻线",
+            "zh-Hant": "陽邏線"
         }
     },
     {
@@ -151,22 +151,32 @@
     },
     {
         "id": "whggxdygdcl1",
-        "colour": "#0000ff",
-        "fg": "#fff",
+        "colour": "#FFFFFF",
+        "fg": "#000",
         "name": {
-            "en": "Wuhan Optics Valley Modern Tram Line 1",
-            "zh-Hans": "武汉光谷现代有轨电车1号线",
-            "zh-Hant": "武漢光谷現代電車1號線"
+            "en": "Wuhan Optics Valley Modern Tram Line L1",
+            "zh-Hans": "武汉光谷现代有轨电车L1线",
+            "zh-Hant": "武漢光谷現代電車L1線"
         }
     },
     {
         "id": "whggxdygdcl2",
-        "colour": "#ff0000",
+        "colour": "#A0D4BD",
         "fg": "#fff",
         "name": {
-            "en": "Wuhan Optics Valley Modern Tram Line 2",
-            "zh-Hans": "武汉光谷现代有轨电车2号线",
-            "zh-Hant": "武漢光谷現代電車2號線"
+            "en": "Wuhan Optics Valley Modern Tram Line L2",
+            "zh-Hans": "武汉光谷现代有轨电车L2线",
+            "zh-Hant": "武漢光谷現代電車L2線"
+        }
+    },
+    {
+        "id": "whggxdygdcl3",
+        "colour": "#3b98d6",
+        "fg": "#fff",
+        "name": {
+            "en": "Wuhan Optics Valley Modern Tram Line L3",
+            "zh-Hans": "武汉光谷现代有轨电车L3线",
+            "zh-Hant": "武漢光谷現代有軌電車L3線"
         }
     },
     {
