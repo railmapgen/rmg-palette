@@ -5,9 +5,7 @@
         "fg": "#fff",
         "name": {
             "en": "Blue Line",
-            "zh-Hans": "蓝线",
-            "zh-Hant": "藍線",
-            "hi": "ब्लू लाइन"
+            "ta": "நீல வழித்தடம்"
         }
     },
     {
@@ -16,9 +14,34 @@
         "fg": "#fff",
         "name": {
             "en": "Green Line",
-            "zh-Hans": "绿线",
-            "zh-Hant": "綠線",
-            "hi": "ग्रीन लाइन"
+            "ta": "பச்சை வழித்தடம்"
+        }
+    },
+    {
+        "id": "pl",
+        "colour": "#6f2f9f",
+        "fg": "#fff",
+        "name": {
+            "en": "Purple Line",
+            "ta": "ஊதா வழித்தடம்"
+        }
+    },
+    {
+        "id": "yl",
+        "colour": "#ffc000",
+        "fg": "#fff",
+        "name": {
+            "en": "Yellow Line",
+            "ta": "மஞ்சள் வழித்தடம்"
+        }
+    },
+    {
+        "id": "rd",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Red Line",
+            "ta": "சிவப்பு வழித்தடம்"
         }
     }
 ]
