@@ -1763,6 +1763,16 @@
         }
     },
     {
+        "id": "shikoku",
+        "country": "JP",
+        "name": {
+            "ja": "四国地方",
+            "en": "Shikoku Area",
+            "zh-Hans": "四国地方",
+            "zh-Hant": "四國地方"
+        }
+    },
+    {
         "id": "shiraz",
         "country": "IR",
         "name": {
