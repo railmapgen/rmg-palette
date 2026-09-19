@@ -1,0 +1,42 @@
+[
+    {
+        "id": "sh2",
+        "colour": "#FF5959",
+        "fg": "#fff",
+        "name": {
+            "en": "1",
+            "zh-Hans": "1",
+            "zh-Hant": "1"
+        }
+    },
+    {
+        "id": "gz3",
+        "colour": "#FFAA3B",
+        "fg": "#fff",
+        "name": {
+            "en": "2",
+            "zh-Hans": "2",
+            "zh-Hant": "2"
+        }
+    },
+    {
+        "id": "twl",
+        "colour": "#D94FFF",
+        "fg": "#fff",
+        "name": {
+            "en": "3",
+            "zh-Hans": "3",
+            "zh-Hant": "3"
+        }
+    },
+    {
+        "id": "gz9",
+        "colour": "#3F9656",
+        "fg": "#fff",
+        "name": {
+            "en": "4",
+            "zh-Hans": "4",
+            "zh-Hant": "4"
+        }
+    }
+]

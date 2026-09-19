@@ -908,6 +908,15 @@
         }
     },
     {
+        "id": "kartashima",
+        "country": "AS",
+        "name": {
+            "fa": "کارتاشیما",
+            "zh-Hans": "片岛",
+            "zh-Hant": "片島"
+        }
+    },
+    {
         "id": "kharkiv",
         "country": "UA",
         "name": {
