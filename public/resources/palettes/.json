@@ -1,0 +1,272 @@
+[
+    {
+        "id": "ewl",
+        "colour": "#1E9B43",
+        "fg": "#fff",
+        "name": {
+            "en": "east west line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "nsl",
+        "colour": "#EE1C23",
+        "fg": "#fff",
+        "name": {
+            "en": "north south line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "nel",
+        "colour": "#A249A3",
+        "fg": "#fff",
+        "name": {
+            "en": "north east line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "ccl",
+        "colour": "#FE7F27",
+        "fg": "#fff",
+        "name": {
+            "en": "circle line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "dtl",
+        "colour": "#3E49CB",
+        "fg": "#fff",
+        "name": {
+            "en": "downtown line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "tel",
+        "colour": "#9D6342",
+        "fg": "#fff",
+        "name": {
+            "en": "thomson east coast line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "jrl",
+        "colour": "#05AAB9",
+        "fg": "#fff",
+        "name": {
+            "en": "jurong region line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "crl",
+        "colour": "#A2D118",
+        "fg": "#000",
+        "name": {
+            "en": "cross island line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "sll",
+        "colour": "#E10583",
+        "fg": "#fff",
+        "name": {
+            "en": "seletar line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "erl",
+        "colour": "#F0E406",
+        "fg": "#fff",
+        "name": {
+            "en": "eastern region line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "ycl",
+        "colour": "#B18602",
+        "fg": "#fff",
+        "name": {
+            "en": "yio chu kang line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "ctl",
+        "colour": "#FFB3CC",
+        "fg": "#000",
+        "name": {
+            "en": "central line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "csl",
+        "colour": "#C887DF",
+        "fg": "#000",
+        "name": {
+            "en": "changi coast simpang line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "nrl",
+        "colour": "#93E3FD",
+        "fg": "#000",
+        "name": {
+            "en": "northern region line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "wcl",
+        "colour": "#880014",
+        "fg": "#fff",
+        "name": {
+            "en": "west coast line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "lgl",
+        "colour": "#000B55",
+        "fg": "#fff",
+        "name": {
+            "en": "long island line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "mcl",
+        "colour": "#9A05FE",
+        "fg": "#fff",
+        "name": {
+            "en": "mandai changi line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "tll",
+        "colour": "#FDC700",
+        "fg": "#000",
+        "name": {
+            "en": "tagore loyang line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "cwl",
+        "colour": "#2B94D3",
+        "fg": "#fff",
+        "name": {
+            "en": "changi western line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "hpl",
+        "colour": "#01C7FC",
+        "fg": "#000",
+        "name": {
+            "en": "holland paya lebar line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "mpl",
+        "colour": "#6F760A",
+        "fg": "#fff",
+        "name": {
+            "en": "mandai punggol line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "twl",
+        "colour": "#FF4015",
+        "fg": "#fff",
+        "name": {
+            "en": "tengah waterfront line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "tpl",
+        "colour": "#D357FE",
+        "fg": "#fff",
+        "name": {
+            "en": "tampines line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "pil",
+        "colour": "#A8A600",
+        "fg": "#fff",
+        "name": {
+            "en": "pan island line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "cel",
+        "colour": "#FB006B",
+        "fg": "#fff",
+        "name": {
+            "en": "central east line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "nwl",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "north west line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "scl",
+        "colour": "#06FD00",
+        "fg": "#000",
+        "name": {
+            "en": "south coastel line",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    }
+]
