@@ -80,6 +80,16 @@
         }
     },
     {
+        "id": "Line wh9 ",
+        "colour": "#CDE8B5",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9号线"
+        }
+    },
+    {
         "id": "wh10",
         "colour": "#7F74AC",
         "fg": "#fff",
