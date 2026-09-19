@@ -160,21 +160,21 @@
         }
     },
     {
-        "id": "tr",
+        "id": "tra",
         "colour": "#020281",
         "fg": "#fff",
         "name": {
-            "en": "Taiwan Railways",
-            "zh-Hans": "台铁",
-            "zh-Hant": "台鐵"
+            "en": "Taiwan Railway (TRA)",
+            "zh-Hans": "台湾铁路",
+            "zh-Hant": "台灣鐵路"
         }
     },
     {
-        "id": "hsr",
+        "id": "thsr",
         "colour": "#db5426",
         "fg": "#fff",
         "name": {
-            "en": "Taiwan High Speed Rail",
+            "en": "Taiwan High Speed Rail (THSR)",
             "zh-Hans": "台湾高铁",
             "zh-Hant": "台灣高鐵"
         }
