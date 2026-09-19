@@ -1,0 +1,42 @@
+[
+    {
+        "id": "xa1",
+        "colour": "#0077c8",
+        "fg": "#fff",
+        "name": {
+            "en": "Xi'an Line 1",
+            "zh-Hans": "西安1号线",
+            "zh-Hant": "西安1號線"
+        }
+    },
+    {
+        "id": "xa5",
+        "colour": "#a6e35f",
+        "fg": "#000",
+        "name": {
+            "en": "Xi'an Line 5",
+            "zh-Hans": "西安5号线",
+            "zh-Hant": "西安5號線"
+        }
+    },
+    {
+        "id": "xa14",
+        "colour": "#00c1d4",
+        "fg": "#000",
+        "name": {
+            "en": "Xi'an Line 14",
+            "zh-Hans": "西安14号线",
+            "zh-Hant": "西安14號線"
+        }
+    },
+    {
+        "id": "xa16",
+        "colour": "#ee805f",
+        "fg": "#fff",
+        "name": {
+            "en": "Xi'an Line 16",
+            "zh-Hans": "西安16号线",
+            "zh-Hant": "西安16號線"
+        }
+    }
+]
