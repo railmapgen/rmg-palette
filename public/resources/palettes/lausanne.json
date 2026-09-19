@@ -1,0 +1,22 @@
+[
+    {
+        "id": "lsm1",
+        "colour": "#427bff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M1",
+            "de": "Linie M1",
+            "fr": "Ligne M1"
+        }
+    },
+    {
+        "id": "lsm2",
+        "colour": "#f93da1",
+        "fg": "#fff",
+        "name": {
+            "en": "Line M2",
+            "de": "Linie M2",
+            "fr": "Ligne M2"
+        }
+    }
+]
