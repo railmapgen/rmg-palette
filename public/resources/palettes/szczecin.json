@@ -1,0 +1,110 @@
+[
+    {
+        "id": "1",
+        "colour": "#f7952c",
+        "fg": "#fff",
+        "name": {
+            "pl": "Linia 1",
+            "en": "Line 1"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "#3853a3",
+        "fg": "#fff",
+        "name": {
+            "pl": "Linia 2",
+            "en": "Line 2"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#94371e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "pl": "Linia 3"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#d6d228",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "pl": "Linia 4"
+        }
+    },
+    {
+        "id": "5",
+        "colour": "#ee2f2a",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "pl": "Linia 5"
+        }
+    },
+    {
+        "id": "6",
+        "colour": "#178842",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "pl": "Linia 6"
+        }
+    },
+    {
+        "id": "7",
+        "colour": "#ad59a3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "pl": "Linia 7"
+        }
+    },
+    {
+        "id": "8",
+        "colour": "#5dbb46",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "pl": "Linia 8"
+        }
+    },
+    {
+        "id": "9",
+        "colour": "#2cc4f3",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "pl": "Linia 9"
+        }
+    },
+    {
+        "id": "10",
+        "colour": "#ac91c4",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10",
+            "pl": "Linia 10"
+        }
+    },
+    {
+        "id": "11",
+        "colour": "#3f419b",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 11",
+            "pl": "Linia 11"
+        }
+    },
+    {
+        "id": "12",
+        "colour": "#81c562",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 12",
+            "pl": "Linia 12"
+        }
+    }
+]
