@@ -1,0 +1,209 @@
+[
+    {
+        "id": "cq1",
+        "colour": "#3ce6b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 1",
+            "zh-Hans": "郴庆地铁1号线"
+        }
+    },
+    {
+        "id": "cq2",
+        "colour": "#2386c4",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 2",
+            "zh-Hans": "郴庆地铁2号线"
+        }
+    },
+    {
+        "id": "cq3",
+        "colour": "#baa332",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 3",
+            "zh-Hans": "郴庆地铁3号线"
+        }
+    },
+    {
+        "id": "cq4",
+        "colour": "#f2ac20",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 4",
+            "zh-Hans": "郴庆地铁4号线"
+        }
+    },
+    {
+        "id": "cq5",
+        "colour": "#950a0c",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 5",
+            "zh-Hans": "郴庆地铁5号线"
+        }
+    },
+    {
+        "id": "cq6",
+        "colour": "#007a33",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 6",
+            "zh-Hans": "郴庆地铁6号线"
+        }
+    },
+    {
+        "id": "cq7",
+        "colour": "#bf2c73",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 7",
+            "zh-Hans": "郴庆地铁7号线"
+        }
+    },
+    {
+        "id": "cq8",
+        "colour": "#81b9e4",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 8",
+            "zh-Hans": "郴庆地铁8号线"
+        }
+    },
+    {
+        "id": "cq9",
+        "colour": "#fd9787",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 9",
+            "zh-Hans": "郴庆地铁9号线"
+        }
+    },
+    {
+        "id": "cq10",
+        "colour": "#ffce0a",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 10",
+            "zh-Hans": "郴庆地铁10号线"
+        }
+    },
+    {
+        "id": "cq11",
+        "colour": "#451379",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 11",
+            "zh-Hans": "郴庆地铁11号线"
+        }
+    },
+    {
+        "id": "cq12",
+        "colour": "#8e8c14",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 12",
+            "zh-Hans": "郴庆地铁12号线"
+        }
+    },
+    {
+        "id": "cq13",
+        "colour": "#f89dbf",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 13",
+            "zh-Hans": "郴庆地铁13号线"
+        }
+    },
+    {
+        "id": "cq14",
+        "colour": "#f2e623",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 14",
+            "zh-Hans": "郴庆地铁14号线"
+        }
+    },
+    {
+        "id": "cq15",
+        "colour": "#4c301a",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 15",
+            "zh-Hans": "郴庆地铁15号线"
+        }
+    },
+    {
+        "id": "cq16",
+        "colour": "#b4ec16",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 16",
+            "zh-Hans": "郴庆地铁16号线"
+        }
+    },
+    {
+        "id": "cq17",
+        "colour": "#80225F",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 17",
+            "zh-Hans": "郴庆地铁17号线"
+        }
+    },
+    {
+        "id": "cq18",
+        "colour": "#203ea6",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 18",
+            "zh-Hans": "郴庆地铁18号线"
+        }
+    },
+    {
+        "id": "cq19",
+        "colour": "#f3a1f7",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 19",
+            "zh-Hans": "郴庆地铁19号线"
+        }
+    },
+    {
+        "id": "cq20",
+        "colour": "#8af2c6",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 20",
+            "zh-Hans": "郴庆地铁20号线"
+        }
+    },
+    {
+        "id": "cq21",
+        "colour": "#212368",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 21",
+            "zh-Hans": "郴庆地铁21号线"
+        }
+    },
+    {
+        "id": "cq22",
+        "colour": "#d25a22",
+        "fg": "#fff",
+        "name": {
+            "en": "Chenqing Line 22",
+            "zh-Hans": "郴庆地铁22号线"
+        }
+    },
+    {
+        "id": "cq23",
+        "colour": "#44d1f5",
+        "fg": "#000",
+        "name": {
+            "en": "Chenqing Line 23",
+            "zh-Hans": "郴庆地铁23号线"
+        }
+    }
+]
