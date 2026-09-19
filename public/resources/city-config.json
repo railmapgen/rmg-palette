@@ -516,6 +516,13 @@
         }
     },
     {
+        "id": "dundeestagecoach",
+        "country": "GBSCT",
+        "name": {
+            "en": "Dundee (Stagecoach Services)"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {

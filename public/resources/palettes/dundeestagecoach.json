@@ -1,0 +1,86 @@
+[
+    {
+        "id": "16",
+        "colour": "#bc731e",
+        "fg": "#fff",
+        "name": {
+            "en": "16/16B/16X Dundee-Perth"
+        }
+    },
+    {
+        "id": "20",
+        "colour": "#ffd41f",
+        "fg": "#000",
+        "name": {
+            "en": "20/20C Dundee-Kirriemuir/Stracathro Hospital"
+        }
+    },
+    {
+        "id": "21",
+        "colour": "#f08262",
+        "fg": "#fff",
+        "name": {
+            "en": "21/21A Dundee-Edzell"
+        }
+    },
+    {
+        "id": "22",
+        "colour": "#a71681",
+        "fg": "#fff",
+        "name": {
+            "en": "22 Dundee-Kirriemuir"
+        }
+    },
+    {
+        "id": "57",
+        "colour": "#f4aacc",
+        "fg": "#fff",
+        "name": {
+            "en": "57 Dundee-Blairgowrie for Perth"
+        }
+    },
+    {
+        "id": "59",
+        "colour": "#007b3d",
+        "fg": "#fff",
+        "name": {
+            "en": "59 Dundee-Blairgowrie"
+        }
+    },
+    {
+        "id": "72",
+        "colour": "#b71b56",
+        "fg": "#fff",
+        "name": {
+            "en": "72 Arbroath-Ninewells Hospital"
+        }
+    },
+    {
+        "id": "73",
+        "colour": "#76b82a",
+        "fg": "#fff",
+        "name": {
+            "en": "73/73A/73B/73C Arbroath/Carnoustie-Ninewells Hospital"
+        }
+    },
+    {
+        "id": "74",
+        "colour": "#0b7ec3",
+        "fg": "#fff",
+        "name": {
+            "en": "74A/74C Monifieth-Dundee",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    },
+    {
+        "id": "x7",
+        "colour": "#f9ae00",
+        "fg": "#fff",
+        "name": {
+            "en": "X7 Dundee-Montrose for Aberdeen",
+            "zh-Hans": "",
+            "zh-Hant": ""
+        }
+    }
+]
