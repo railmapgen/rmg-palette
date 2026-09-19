@@ -1,5 +1,15 @@
 [
     {
+        "id": "",
+        "name": {
+            "en": "Slovenija"
+        },
+        "languages": [
+            "en",
+            "hr"
+        ]
+    },
+    {
         "id": "AE",
         "name": {
             "en": "United Arab Emirates",

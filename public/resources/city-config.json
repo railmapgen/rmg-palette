@@ -1,5 +1,14 @@
 [
     {
+        "id": "",
+        "country": "",
+        "name": {
+            "en": "Ljubljana",
+            "de": "Laibach",
+            "it": "Lubiana"
+        }
+    },
+    {
         "id": "adelaide",
         "country": "AU",
         "name": {
