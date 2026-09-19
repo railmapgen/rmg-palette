@@ -1,0 +1,112 @@
+[
+    {
+        "id": "vc1",
+        "colour": "#e7b233",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號綫",
+            "es": "Línea 1"
+        }
+    },
+    {
+        "id": "vc2",
+        "colour": "#b93777",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號綫",
+            "es": "Línea 2"
+        }
+    },
+    {
+        "id": "vc3",
+        "colour": "#c31729",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 3",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號綫",
+            "es": "Línea 3"
+        }
+    },
+    {
+        "id": "vc4",
+        "colour": "#034485",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 4",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號綫",
+            "es": "Línea 4"
+        }
+    },
+    {
+        "id": "vc5",
+        "colour": "#008557",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 5",
+            "zh-Hans": "5号线",
+            "zh-Hant": "5號綫",
+            "es": "Línea 5"
+        }
+    },
+    {
+        "id": "vc6",
+        "colour": "#8162a2",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 6",
+            "zh-Hans": "6号线",
+            "zh-Hant": "6號綫",
+            "es": "Línea 6"
+        }
+    },
+    {
+        "id": "vc7",
+        "colour": "#dc8511",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號綫",
+            "es": "Línea 7"
+        }
+    },
+    {
+        "id": "vc8",
+        "colour": "#3eb4cc",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 8",
+            "zh-Hans": "8号线",
+            "zh-Hant": "8號綫",
+            "es": "Línea 8"
+        }
+    },
+    {
+        "id": "vc9",
+        "colour": "#ae7e4e",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號綫",
+            "es": "Línea 9"
+        }
+    },
+    {
+        "id": "vc10",
+        "colour": "#b4cc6d",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 10",
+            "zh-Hans": "10号线",
+            "zh-Hant": "10號綫",
+            "es": "Línea 10"
+        }
+    }
+]
