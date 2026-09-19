@@ -1,7 +1,7 @@
 [
     {
         "id": "lb",
-        "colour": "#79bce8",
+        "colour": "#39c0e0",
         "fg": "#fff",
         "name": {
             "en": "Sanying Line",
@@ -54,9 +54,9 @@
         "colour": "#f6c2d8",
         "fg": "#fff",
         "name": {
-            "en": "Linkou LRT/Zhonghe-Guangfu Line",
-            "zh-Hans": "林口轻轨/中和光复线",
-            "zh-Hant": "林口輕軌/中和光復線"
+            "en": "Danhai Line",
+            "zh-Hans": "淡海线延伸",
+            "zh-Hant": "淡海線延伸"
         }
     },
     {
@@ -77,6 +77,26 @@
             "en": "Xizhi-Donghu MRT/Keelung MRT",
             "zh-Hans": "汐东捷运/基隆捷运",
             "zh-Hant": "汐東捷運/基隆捷運"
+        }
+    },
+    {
+        "id": "c",
+        "colour": "#00ffea",
+        "fg": "#fff",
+        "name": {
+            "en": "Zhonghe-Guangfu Line",
+            "zh-Hans": "中和光复线",
+            "zh-Hant": "中和光復線"
+        }
+    },
+    {
+        "id": "s2",
+        "colour": "#676581",
+        "fg": "#fff",
+        "name": {
+            "en": "New Taolin Line",
+            "zh-Hans": "新桃林线",
+            "zh-Hant": "新桃林線"
         }
     }
 ]
