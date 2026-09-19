@@ -168,5 +168,15 @@
             "zh-Hans": "杭德城际",
             "zh-Hant": "杭德城際"
         }
+    },
+    {
+        "id": "xiashachanganintercityrail",
+        "colour": "#B06EA6",
+        "fg": "#fff",
+        "name": {
+            "en": "Xiasha-Chang'an Intercity Rail",
+            "zh-Hans": "下长城际",
+            "zh-Hant": "下長城際"
+        }
     }
 ]
