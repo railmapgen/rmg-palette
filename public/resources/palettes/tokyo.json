@@ -143,14 +143,25 @@
         }
     },
     {
-        "id": "jy",
-        "colour": "#7bab4f",
-        "fg": "#000",
+        "id": "jt",
+        "colour": "#f68b1f",
+        "fg": "#fff",
         "name": {
-            "en": "Yamanote Line (JY)",
-            "ja": "山手線",
-            "zh-Hant": "山手線",
-            "zh-Hans": "山手线"
+            "en": "Tōkaidō Line/Itō Line (JT)",
+            "ja": "東海道線・伊東線",
+            "zh-Hans": "东海道线・伊东线",
+            "zh-Hant": "東海道線・伊東線"
+        }
+    },
+    {
+        "id": "jo",
+        "colour": "#007ac0",
+        "fg": "#fff",
+        "name": {
+            "en": "Yokosuka Line/Sōbu Line (Rapid) (JO)",
+            "ja": "横須賀・総武快速線",
+            "zh-Hans": "横须贺・总武快速线",
+            "zh-Hant": "横須賀・総武快速線"
         }
     },
     {
@@ -165,14 +176,47 @@
         }
     },
     {
-        "id": "jb",
-        "colour": "#fed304",
+        "id": "jh",
+        "colour": "#B1CB39",
         "fg": "#000",
         "name": {
-            "en": "Chūō Line/Sōbu Line (Local) (JB)",
-            "ja": "中央線・総武線",
-            "zh-Hans": "中央线・总武线",
-            "zh-Hant": "中央線・總武線"
+            "en": "Yokohama Line (JH)",
+            "ja": "横浜線",
+            "zh-Hans": "横滨线",
+            "zh-Hant": "橫濱線"
+        }
+    },
+    {
+        "id": "jn",
+        "colour": "#F2D01F",
+        "fg": "#000",
+        "name": {
+            "en": "Nambu Line (JN)",
+            "ja": "南武線",
+            "zh-Hans": "南武线",
+            "zh-Hant": "南武線"
+        }
+    },
+    {
+        "id": "ji",
+        "colour": "#F2D01F",
+        "fg": "#000",
+        "name": {
+            "en": "Tsurumi Line (JI)",
+            "ja": "鶴見線",
+            "zh-Hans": "鹤见线",
+            "zh-Hant": "鶴見線"
+        }
+    },
+    {
+        "id": "jy",
+        "colour": "#7bab4f",
+        "fg": "#000",
+        "name": {
+            "en": "Yamanote Line (JY)",
+            "ja": "山手線",
+            "zh-Hant": "山手線",
+            "zh-Hans": "山手线"
         }
     },
     {
@@ -180,21 +224,21 @@
         "colour": "#f15921",
         "fg": "#fff",
         "name": {
-            "en": "Chūō Line (Rapid)/Chūō Line/Ōme Line/Itsukaichi Line (JC)",
-            "ja": "中央線快速・中央本線・青梅線・五日市線",
-            "zh-Hans": "中央线快速・中央本线・青梅线・五日市线",
-            "zh-Hant": "中央線快速・中央本線・青梅線・五日市線"
+            "en": "Chūō Line (Rapid)/Ōme Line/Itsukaichi Line (JC)",
+            "ja": "中央線快速・青梅線・五日市線",
+            "zh-Hans": "中央线快速・青梅线・五日市线",
+            "zh-Hant": "中央線快速・青梅線・五日市線"
         }
     },
     {
-        "id": "jo",
-        "colour": "#007ac0",
-        "fg": "#fff",
+        "id": "jb",
+        "colour": "#fed304",
+        "fg": "#000",
         "name": {
-            "en": "Yokosuka Line/Sōbu Line (Rapid)/Sōbu Line/Narita Line (JO)",
-            "ja": "横須賀線・総武快速線・総武本線・成田線",
-            "zh-Hans": "横须贺线・总武快速线・总武本线・成田线",
-            "zh-Hant": "橫須賀線・總武快速線・總武本線・成田線"
+            "en": "Chūō-Sōbu Line (Local) (JB)",
+            "ja": "中央・総武緩行線",
+            "zh-Hans": "中央・总武缓行线",
+            "zh-Hant": "中央・總武緩行線"
         }
     },
     {
@@ -209,17 +253,6 @@
         }
     },
     {
-        "id": "jt",
-        "colour": "#f68b1f",
-        "fg": "#fff",
-        "name": {
-            "en": "Tōkaidō Line/Itō Line (JT)",
-            "ja": "東海道線・伊東線",
-            "zh-Hans": "东海道线・伊东线",
-            "zh-Hant": "東海道線・伊東線"
-        }
-    },
-    {
         "id": "ja",
         "colour": "#0ab38d",
         "fg": "#fff",
@@ -231,25 +264,14 @@
         }
     },
     {
-        "id": "js",
-        "colour": "#DB2027",
-        "fg": "#fff",
-        "name": {
-            "en": "Shōnan-Shinjuku Line (JS)",
-            "ja": "湘南新宿ライン",
-            "zh-Hans": "湘南新宿线",
-            "zh-Hant": "湘南新宿線"
-        }
-    },
-    {
         "id": "jj",
         "colour": "#1DAF7E",
         "fg": "#fff",
         "name": {
             "en": "Jōban Line (Rapid) (JJ)",
-            "ja": "常磐線快速電車",
-            "zh-Hans": "常磐线快速电车",
-            "zh-Hant": "常磐線快速電車"
+            "ja": "常磐快速線",
+            "zh-Hans": "常磐快速线",
+            "zh-Hant": "常磐快速線"
         }
     },
     {
@@ -258,9 +280,9 @@
         "fg": "#fff",
         "name": {
             "en": "Jōban Line (Local) (JL)",
-            "ja": "常磐線各駅停車",
-            "zh-Hans": "常磐线各站停车",
-            "zh-Hant": "常磐線各站停車"
+            "ja": "常磐緩行線",
+            "zh-Hans": "常磐缓行线",
+            "zh-Hant": "常磐緩行線"
         }
     },
     {
@@ -275,17 +297,6 @@
         }
     },
     {
-        "id": "jh",
-        "colour": "#B1CB39",
-        "fg": "#fff",
-        "name": {
-            "en": "Yokohama Line (JH)",
-            "ja": "横浜線",
-            "zh-Hans": "横滨线",
-            "zh-Hant": "橫濱線"
-        }
-    },
-    {
         "id": "jm",
         "colour": "#EB5A28",
         "fg": "#fff",
@@ -297,25 +308,69 @@
         }
     },
     {
-        "id": "jn",
-        "colour": "#F2D01F",
+        "id": "js",
+        "colour": "#DB2027",
         "fg": "#fff",
         "name": {
-            "en": "Nambu Line (JN)",
-            "ja": "南武線",
-            "zh-Hans": "南武线",
-            "zh-Hant": "南武線"
+            "en": "Shōnan-Shinjuku Line (JS)",
+            "ja": "湘南新宿ライン",
+            "zh-Hans": "湘南新宿线",
+            "zh-Hant": "湘南新宿線"
         }
     },
     {
-        "id": "ji",
-        "colour": "#F2D01F",
+        "id": "ut",
+        "colour": "#91268f",
         "fg": "#fff",
         "name": {
-            "en": "Tsurumi Line (JI)",
-            "ja": "鶴見線",
-            "zh-Hans": "鹤见线",
-            "zh-Hant": "鶴見線"
+            "en": "Ueno Tokyo Line",
+            "ja": "上野東京ライン",
+            "zh-Hans": "上野东京线",
+            "zh-Hant": "上野東京線"
+        }
+    },
+    {
+        "id": "na",
+        "colour": "#a6a9ab",
+        "fg": "#fff",
+        "name": {
+            "en": "Kawagoe Line",
+            "ja": "川越線",
+            "zh-Hans": "川越线",
+            "zh-Hant": "川越線"
+        }
+    },
+    {
+        "id": "nonavilable",
+        "colour": "#a09d95",
+        "fg": "#fff",
+        "name": {
+            "en": "Hachiko Line",
+            "zh-Hans": "八高线",
+            "zh-Hant": "八高線",
+            "ja": "八高線"
+        }
+    },
+    {
+        "id": "sotobo",
+        "colour": "#f21f31",
+        "fg": "#fff",
+        "name": {
+            "en": "Sotobo Line",
+            "zh-Hans": "外房线",
+            "zh-Hant": "外房線",
+            "ja": "外房線"
+        }
+    },
+    {
+        "id": "togane",
+        "colour": "#b31c31",
+        "fg": "#fff",
+        "name": {
+            "en": "Togane Line",
+            "zh-Hans": "东金线",
+            "zh-Hant": "東金線",
+            "ja": "東金線"
         }
     },
     {
@@ -327,17 +382,6 @@
             "ja": "東京モノレール羽田空港線",
             "zh-Hans": "东京单轨电车羽田机场线",
             "zh-Hant": "東京單軌電車羽田機場線"
-        }
-    },
-    {
-        "id": "uen-tyo",
-        "colour": "#91268f",
-        "fg": "#fff",
-        "name": {
-            "en": "Ueno Tokyo Line",
-            "ja": "上野東京ライン",
-            "zh-Hans": "上野东京线",
-            "zh-Hant": "上野東京線"
         }
     },
     {
@@ -382,6 +426,17 @@
             "ja": "東急目黒線",
             "zh-Hans": "东急目黑线",
             "zh-Hant": "東急目黑線"
+        }
+    },
+    {
+        "id": "sh",
+        "colour": "#890d84",
+        "fg": "#fff",
+        "name": {
+            "en": "Tōkyū Shin-Yokohama Line (SH)",
+            "ja": "東急新横浜線",
+            "zh-Hans": "东急新横滨线",
+            "zh-Hant": "東急新横浜線"
         }
     },
     {
@@ -455,10 +510,21 @@
         "colour": "#EF7A00",
         "fg": "#fff",
         "name": {
-            "en": "Seibu Ikebukuro Line (SI)",
-            "ja": "西武池袋線",
-            "zh-Hans": "西武池袋线",
-            "zh-Hant": "西武池袋線"
+            "en": "Seibu Ikebukuro Line/Chichibu Line/Yūrakuchō Line/Toshima Line/Sayama Line (SI)",
+            "ja": "西武池袋線・秩父線・有楽町線・豊島線・狭山線",
+            "zh-Hans": "西武池袋线・秩父线・有乐町线・丰岛线・狭山线",
+            "zh-Hant": "西武池袋線・秩父線・有楽町線・豊島線・狭山線"
+        }
+    },
+    {
+        "id": "sy",
+        "colour": "#ec4840",
+        "fg": "#fff",
+        "name": {
+            "en": "Seibu Yamaguchi Line (SY)",
+            "ja": "西武山口線",
+            "zh-Hans": "西武山口线",
+            "zh-Hant": "西武山口線"
         }
     },
     {
@@ -477,21 +543,10 @@
         "colour": "#38b35c",
         "fg": "#fff",
         "name": {
-            "en": "Seibu Kokubunji Line (SK)",
-            "ja": "西武国分寺線",
-            "zh-Hans": "西武国分寺线",
-            "zh-Hant": "西武國分寺線"
-        }
-    },
-    {
-        "id": "sw",
-        "colour": "#f17c24",
-        "fg": "#fff",
-        "name": {
-            "en": "Seibu Tamagawa Line (SW)",
-            "ja": "西武多摩川線",
-            "zh-Hans": "西武多摩川线",
-            "zh-Hant": "西武多摩川線"
+            "en": "Seibu Kokubunji Line/Seibuen Line (SK)",
+            "ja": "西武国分寺線・西武園線",
+            "zh-Hans": "西武国分寺线・西武园线",
+            "zh-Hant": "西武國分寺線・西武園線"
         }
     },
     {
@@ -506,14 +561,14 @@
         }
     },
     {
-        "id": "sy",
-        "colour": "#ec4840",
+        "id": "sw",
+        "colour": "#f17c24",
         "fg": "#fff",
         "name": {
-            "en": "Seibu Yamaguchi Line (SY)",
-            "ja": "西武山口線",
-            "zh-Hans": "西武山口线",
-            "zh-Hant": "西武山口線"
+            "en": "Seibu Tamagawa Line (SW)",
+            "ja": "西武多摩川線",
+            "zh-Hans": "西武多摩川线",
+            "zh-Hant": "西武多摩川線"
         }
     },
     {
@@ -521,10 +576,10 @@
         "colour": "#006CBA",
         "fg": "#fff",
         "name": {
-            "en": "Tōbu Skytree Line (TS)",
-            "ja": "東武スカイツリーライン",
-            "zh-Hans": "东武晴空塔线",
-            "zh-Hant": "東武晴空塔線"
+            "en": "Tōbu Skytree Line/Kameido Line/Daishi Line (TS)",
+            "ja": "東武スカイツリーライン・亀戸線・大師線",
+            "zh-Hans": "东武晴空塔线・龟户线・大师线",
+            "zh-Hant": "東武晴空塔線・亀戸線・大師線"
         }
     },
     {
@@ -532,10 +587,10 @@
         "colour": "#E61919",
         "fg": "#fff",
         "name": {
-            "en": "Tōbu Isesaki Line (TI)",
-            "ja": "東武伊勢崎線",
-            "zh-Hans": "东武伊势崎线",
-            "zh-Hant": "東武伊勢崎線"
+            "en": "Tōbu Isesaki Line/Sano Line/Koizumi Line/Kiryū Line (TI)",
+            "ja": "東武伊勢崎線・佐野線・小泉線・桐生線",
+            "zh-Hans": "东武伊势崎线・佐野线・小泉线・桐生线",
+            "zh-Hant": "東武伊勢崎線・佐野線・小泉線・桐生線"
         }
     },
     {
@@ -543,10 +598,10 @@
         "colour": "#F5A200",
         "fg": "#fff",
         "name": {
-            "en": "Tōbu Nikkō Line (TN)",
-            "ja": "東武日光線",
-            "zh-Hans": "东武日光线",
-            "zh-Hant": "東武日光線"
+            "en": "Tōbu Nikkō Line/Utsunomiya Line/Kinugawa Line (TN)",
+            "ja": "東武日光線・宇都宮線・鬼怒川線",
+            "zh-Hans": "东武日光线・宇都宫线・鬼怒川线",
+            "zh-Hant": "東武日光線・宇都宮線・鬼怒川線"
         }
     },
     {
@@ -576,10 +631,10 @@
         "colour": "#005AAA",
         "fg": "#fff",
         "name": {
-            "en": "Keisei Main Line (KS)",
-            "ja": "京成本線",
-            "zh-Hans": "京成本线",
-            "zh-Hant": "京成本線"
+            "en": "Keisei Line (KS)",
+            "ja": "京成線",
+            "zh-Hans": "京成线",
+            "zh-Hant": "京成線"
         }
     },
     {
@@ -664,10 +719,10 @@
         "colour": "#00BFFF",
         "fg": "#fff",
         "name": {
-            "en": "Keikyū Main Line (KK)",
-            "ja": "京急本線",
-            "zh-Hans": "京急本线",
-            "zh-Hant": "京急本線"
+            "en": "Keikyū Line (KK)",
+            "ja": "京急線",
+            "zh-Hans": "京急线",
+            "zh-Hant": "京急線"
         }
     },
     {
@@ -675,10 +730,10 @@
         "colour": "#0071C1",
         "fg": "#fff",
         "name": {
-            "en": "Sōtetsu Main Line (SO)",
-            "ja": "相鉄本線",
-            "zh-Hans": "相线本线",
-            "zh-Hant": "相鐵本線"
+            "en": "Sōtetsu Line (SO)",
+            "ja": "相鉄線",
+            "zh-Hans": "相铁线",
+            "zh-Hant": "相鐵線"
         }
     },
     {
@@ -814,28 +869,6 @@
         }
     },
     {
-        "id": "nonavilable",
-        "colour": "#a09d95",
-        "fg": "#fff",
-        "name": {
-            "en": "Hachiko Line",
-            "zh-Hans": "八高线",
-            "zh-Hant": "八高線",
-            "ja": "八高線"
-        }
-    },
-    {
-        "id": "na",
-        "colour": "#a6a9ab",
-        "fg": "#fff",
-        "name": {
-            "en": "Kawagoe Line",
-            "ja": "川越線",
-            "zh-Hans": "川越线",
-            "zh-Hant": "川越線"
-        }
-    },
-    {
         "id": "tx",
         "colour": "#003b83",
         "fg": "#fff",
@@ -844,28 +877,6 @@
             "zh-Hans": "筑波快线",
             "zh-Hant": "筑波快線",
             "ja": "つくばエクスプレス"
-        }
-    },
-    {
-        "id": "togane",
-        "colour": "#b31c31",
-        "fg": "#fff",
-        "name": {
-            "en": "Togane Line",
-            "zh-Hans": "东金线",
-            "zh-Hant": "東金線",
-            "ja": "東金線"
-        }
-    },
-    {
-        "id": "sotobo",
-        "colour": "#f21f31",
-        "fg": "#fff",
-        "name": {
-            "en": "Sotobo Line",
-            "zh-Hans": "外房线",
-            "zh-Hant": "外房線",
-            "ja": "外房線"
         }
     }
 ]
