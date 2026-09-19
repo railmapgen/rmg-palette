@@ -1,0 +1,20 @@
+[
+    {
+        "id": "mvl1",
+        "colour": "#1C7BB1",
+        "fg": "#fff",
+        "name": {
+            "es": "Línea 1",
+            "en": "Line 1"
+        }
+    },
+    {
+        "id": "bsmt",
+        "colour": "#E8D611",
+        "fg": "#000",
+        "name": {
+            "es": "Conexión Bus + Metro",
+            "en": "Bus + Metro Conection"
+        }
+    }
+]
