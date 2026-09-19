@@ -1,0 +1,46 @@
+[
+    {
+        "id": "tramzp",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram lines",
+            "zh-Hans": "有轨电车线路",
+            "zh-Hant": "有軌電車線路",
+            "uk": "Лінії трамваїв"
+        }
+    },
+    {
+        "id": "trolzp",
+        "colour": "#1400c7",
+        "fg": "#fff",
+        "name": {
+            "en": "Trolleybus lines",
+            "zh-Hans": "无轨电车线路",
+            "zh-Hant": "無軌電車線路",
+            "uk": "Лінії тролейбусів"
+        }
+    },
+    {
+        "id": "buszp",
+        "colour": "#03ab0c",
+        "fg": "#fff",
+        "name": {
+            "en": "Bus lines (unofficial color)",
+            "zh-Hans": "公交线路（非官方颜色）",
+            "zh-Hant": "公車路線（非官方顏色）",
+            "uk": "Лінії автобусів (неофіційний колір)"
+        }
+    },
+    {
+        "id": "marshrutkazp",
+        "colour": "#ffd900",
+        "fg": "#000",
+        "name": {
+            "en": "Minibus (route taxi) lines (unofficial color)",
+            "zh-Hans": "小巴线路（非官方颜色）",
+            "zh-Hant": "小巴線路（非官方顏色）",
+            "uk": "Лінії маршрутних таксі (неофіційний колір)"
+        }
+    }
+]
