@@ -191,6 +191,20 @@
         ]
     },
     {
+        "id": "EE",
+        "name": {
+            "en": "e",
+            "zh-Hans": "e",
+            "zh-Hant": "E"
+        },
+        "languages": [
+            "en",
+            "es",
+            "fi",
+            "fa"
+        ]
+    },
+    {
         "id": "EG",
         "name": {
             "en": "Egypt",

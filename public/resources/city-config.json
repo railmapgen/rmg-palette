@@ -534,6 +534,15 @@
         }
     },
     {
+        "id": "eeeeeee",
+        "country": "EE",
+        "name": {
+            "en": "e",
+            "zh-Hans": "e",
+            "zh-Hant": "e"
+        }
+    },
+    {
         "id": "eskisehir",
         "country": "TR",
         "name": {
