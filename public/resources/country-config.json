@@ -154,6 +154,14 @@
         ]
     },
     {
+        "id": "CZ",
+        "name": {
+            "en": "Czech Republic",
+            "de": "Tschechische Republik"
+        },
+        "languages": []
+    },
+    {
         "id": "DE",
         "name": {
             "en": "Germany",

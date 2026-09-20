@@ -1,0 +1,47 @@
+[
+    {
+        "id": "pra",
+        "colour": "#009A44",
+        "fg": "#fff",
+        "name": {
+            "en": "Line A",
+            "de": "Linie A"
+        }
+    },
+    {
+        "id": "prb",
+        "colour": "#FFD100",
+        "fg": "#fff",
+        "name": {
+            "en": "Line B",
+            "de": "Linie B"
+        }
+    },
+    {
+        "id": "prc",
+        "colour": "#E30613",
+        "fg": "#fff",
+        "name": {
+            "en": "Line C",
+            "de": "Linie C"
+        }
+    },
+    {
+        "id": "prd",
+        "colour": "#0072CE",
+        "fg": "#fff",
+        "name": {
+            "en": "Line D",
+            "de": "Linie D"
+        }
+    },
+    {
+        "id": "pro",
+        "colour": "#FF6700",
+        "fg": "#fff",
+        "name": {
+            "en": "Line O",
+            "de": "Linie O"
+        }
+    }
+]

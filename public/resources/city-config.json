@@ -1535,6 +1535,14 @@
         }
     },
     {
+        "id": "praha",
+        "country": "CZ",
+        "name": {
+            "en": "Prague",
+            "de": "Prag"
+        }
+    },
+    {
         "id": "pyongyang",
         "country": "KP",
         "name": {
