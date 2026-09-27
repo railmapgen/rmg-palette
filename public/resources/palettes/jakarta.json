@@ -1,214 +1,213 @@
 [
     {
-        "id": "jb1",
-        "colour": "#d12028",
+        "id": "ja",
+        "colour": "#0a0547",
         "fg": "#fff",
         "name": {
-            "en": "BRT1"
-        }
-    },
-    {
-        "id": "jb2",
-        "colour": "#274a9b",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT2"
-        }
-    },
-    {
-        "id": "jb3",
-        "colour": "#fbc821",
-        "fg": "#000",
-        "name": {
-            "en": "BRT3"
-        }
-    },
-    {
-        "id": "jb4",
-        "colour": "#512c5f",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT4"
-        }
-    },
-    {
-        "id": "jb5",
-        "colour": "#cd6329",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT5"
-        }
-    },
-    {
-        "id": "jb6",
-        "colour": "#30a94a",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT6"
-        }
-    },
-    {
-        "id": "jb7",
-        "colour": "#e82760",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT7"
-        }
-    },
-    {
-        "id": "jb8",
-        "colour": "#d73491",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT8"
-        }
-    },
-    {
-        "id": "jb8a",
-        "colour": "#84276e",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT8A"
-        }
-    },
-    {
-        "id": "jb9",
-        "colour": "#449d9b",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT9"
-        }
-    },
-    {
-        "id": "jb10",
-        "colour": "#932727",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT10"
-        }
-    },
-    {
-        "id": "jb11",
-        "colour": "#2d328e",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT11"
-        }
-    },
-    {
-        "id": "jb12",
-        "colour": "#73b877",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT12"
-        }
-    },
-    {
-        "id": "jb13",
-        "colour": "#78357a",
-        "fg": "#fff",
-        "name": {
-            "en": "BRT13"
-        }
-    },
-    {
-        "id": "jm",
-        "colour": "#cd224c",
-        "fg": "#fff",
-        "name": {
-            "en": "MRT North-South Line",
-            "zh-Hans": "地铁南北线",
-            "zh-Hant": "地鐵南北缐"
-        }
-    },
-    {
-        "id": "js",
-        "colour": "#ff5e24",
-        "fg": "#fff",
-        "name": {
-            "en": "LRT Line 1",
-            "zh-Hans": "轻轨一号线",
-            "zh-Hant": "輕鐵一號線"
-        }
-    },
-    {
-        "id": "jb",
-        "colour": "#23bcff",
-        "fg": "#fff",
-        "name": {
-            "en": "Cikarang Line"
-        }
-    },
-    {
-        "id": "jr",
-        "colour": "#99cd3a",
-        "fg": "#fff",
-        "name": {
-            "en": "Rangkasbitung Line"
-        }
-    },
-    {
-        "id": "jl",
-        "colour": "#ffb014",
-        "fg": "#fff",
-        "name": {
-            "en": "Loop Line"
+            "en": "Airport Railway Soekarno-Hatta Line",
+            "id": "KA Bandara Lin Soekarno-Hatta"
         }
     },
     {
         "id": "jc",
-        "colour": "#ee202c",
+        "colour": "#fc1417",
         "fg": "#fff",
         "name": {
-            "en": "Central Line"
+            "en": "Commuter Rail Bogor Line",
+            "id": "KRL Komuter Lin Bogor"
+        }
+    },
+    {
+        "id": "jb",
+        "colour": "#51b9d4",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Rail Cikarang Loop Line",
+            "id": "KRL Komuter Lin Lingkar Cikarang"
+        }
+    },
+    {
+        "id": "jr",
+        "colour": "#84c634",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Rail Rangkasbitung Line",
+            "id": "KRL Komuter Lin Rangkasbitung"
         }
     },
     {
         "id": "jt",
-        "colour": "#c65e2b",
+        "colour": "#c04311",
         "fg": "#fff",
         "name": {
-            "en": "Tangerang Line"
-        }
-    },
-    {
-        "id": "ja",
-        "colour": "#292467",
-        "fg": "#fff",
-        "name": {
-            "en": "Airport Railway Soekarno-Hatta Line"
+            "en": "Commuter Rail Tangerang Line",
+            "id": "KRL Komuter Lin Tangerang"
         }
     },
     {
         "id": "jtp",
-        "colour": "#e94a9a",
+        "colour": "#f33697",
         "fg": "#fff",
         "name": {
-            "en": "Tanjung Priok Line"
+            "en": "Commuter Rail Tanjung Priok Line",
+            "id": "KRL Komuter Lin Tanjung Priok"
+        }
+    },
+    {
+        "id": "jm",
+        "colour": "#cf0e33",
+        "fg": "#fff",
+        "name": {
+            "en": "MRT Jakarta North-South Line",
+            "id": "MRT Jakarta Lin Utara-Selatan"
+        }
+    },
+    {
+        "id": "js",
+        "colour": "#fd4813",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT Jakarta Southern Line",
+            "id": "LRT Jakarta Lin Selatan"
         }
     },
     {
         "id": "jbk",
-        "colour": "#b3dbc0",
+        "colour": "#144d21",
         "fg": "#fff",
         "name": {
-            "en": "LRT Jabodebek Bekasi Line"
+            "en": "LRT Jabodebek Bekasi Line",
+            "id": "LRT Jabodebek Lin Bekasi"
         }
     },
     {
         "id": "jcb",
-        "colour": "#cfd7ee",
+        "colour": "#16248a",
         "fg": "#fff",
         "name": {
-            "en": "LRT Jabodebek Cibubur Line"
+            "en": "LRT Jabodebek Cibubur Line",
+            "id": "LRT Jabodebek Lin Cibubur"
         }
     },
     {
         "id": "jas",
-        "colour": "#6b6c6d",
+        "colour": "#535152",
         "fg": "#fff",
         "name": {
-            "en": "Airport Skytrain"
+            "en": "Airport Skytrain",
+            "id": "Kalayang Bandara"
+        }
+    },
+    {
+        "id": "jb1",
+        "colour": "#dc0d11",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 1"
+        }
+    },
+    {
+        "id": "jb2",
+        "colour": "#1f2b8d",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 2"
+        }
+    },
+    {
+        "id": "jb3",
+        "colour": "#f9c417",
+        "fg": "#000",
+        "name": {
+            "en": "BRT 3"
+        }
+    },
+    {
+        "id": "jb4",
+        "colour": "#310b48",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 4"
+        }
+    },
+    {
+        "id": "jb5",
+        "colour": "#cd4411",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 5"
+        }
+    },
+    {
+        "id": "jb6",
+        "colour": "#39a33b",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 6"
+        }
+    },
+    {
+        "id": "jb7",
+        "colour": "#f71652",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 7"
+        }
+    },
+    {
+        "id": "jb8",
+        "colour": "#d1228e",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 8"
+        }
+    },
+    {
+        "id": "jb9",
+        "colour": "#48937e",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 9"
+        }
+    },
+    {
+        "id": "jb10",
+        "colour": "#88060e",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 10"
+        }
+    },
+    {
+        "id": "jb11",
+        "colour": "#171284",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 11"
+        }
+    },
+    {
+        "id": "jb12",
+        "colour": "#6cbb61",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 12"
+        }
+    },
+    {
+        "id": "jb13",
+        "colour": "#5f136c",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 13"
+        }
+    },
+    {
+        "id": "jb14",
+        "colour": "#f87014",
+        "fg": "#fff",
+        "name": {
+            "en": "BRT 14"
         }
     }
 ]
