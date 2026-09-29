@@ -1,0 +1,47 @@
+[
+    {
+        "id": "cap",
+        "colour": "#0d4a9f",
+        "fg": "#fff",
+        "name": {
+            "en": "Capital Line",
+            "fr": "Ligne Capital"
+        }
+    },
+    {
+        "id": "met",
+        "colour": "#ed2d23",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro Line",
+            "fr": "Ligne Metro"
+        }
+    },
+    {
+        "id": "val",
+        "colour": "#08944c",
+        "fg": "#fff",
+        "name": {
+            "en": "Valley Line",
+            "fr": "Ligne Valley"
+        }
+    },
+    {
+        "id": "eng",
+        "colour": "#bf52b9",
+        "fg": "#fff",
+        "name": {
+            "en": "Energy Line",
+            "fr": "Ligne Energy"
+        }
+    },
+    {
+        "id": "fst",
+        "colour": "#dead1b",
+        "fg": "#fff",
+        "name": {
+            "en": "Festival Line",
+            "fr": "Ligne Festival"
+        }
+    }
+]

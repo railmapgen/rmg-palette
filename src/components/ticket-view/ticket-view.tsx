@@ -11,6 +11,7 @@ import { DRAFT_TICKET_KEY, Events } from '../../util/constants';
 import UnsavedDraftModal from '../modal/unsaved-draft-modal';
 import { Button, Divider, Group, LoadingOverlay } from '@mantine/core';
 import { RMPage, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
+import OpenIssuesAlert from './open-issues-alert';
 
 export default function TicketView() {
     const { t } = useTranslation();
@@ -54,6 +55,7 @@ export default function TicketView() {
             <RMPageBody direction="column" px="xs" style={{ overflowY: 'auto' }}>
                 <CountrySection />
                 <CitySection />
+                <OpenIssuesAlert />
                 <LinesSection />
             </RMPageBody>
 

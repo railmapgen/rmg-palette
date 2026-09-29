@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "colour": "#3dAe2b",
+        "fg": "#fff",
+        "name": {
+            "en": "1 Line",
+            "zh-Hans": "1号线",
+            "zh-Hant": "1號線"
+        }
+    },
+    {
+        "id": "2",
+        "colour": "#00a0df",
+        "fg": "#fff",
+        "name": {
+            "en": "2 Line",
+            "zh-Hans": "2号线",
+            "zh-Hant": "2號線"
+        }
+    },
+    {
+        "id": "3",
+        "colour": "#ed40a9",
+        "fg": "#fff",
+        "name": {
+            "en": "3 Line",
+            "zh-Hans": "3号线",
+            "zh-Hant": "3號線"
+        }
+    },
+    {
+        "id": "4",
+        "colour": "#b14fc5",
+        "fg": "#fff",
+        "name": {
+            "en": "4 Line",
+            "zh-Hans": "4号线",
+            "zh-Hant": "4號線"
+        }
+    },
+    {
+        "id": "t",
+        "colour": "#f38b00",
+        "fg": "#000",
+        "name": {
+            "en": "T Line",
+            "zh-Hans": "T号线",
+            "zh-Hant": "T號線"
+        }
+    },
+    {
+        "id": "s123",
+        "colour": "#edaa00",
+        "fg": "#000",
+        "name": {
+            "en": "Stride BRT",
+            "zh-Hans": "Stride快速公交",
+            "zh-Hant": "Stride快速公車"
+        }
+    },
+    {
+        "id": "ns",
+        "colour": "#98b6d5",
+        "fg": "#000",
+        "name": {
+            "en": "Sounder",
+            "zh-Hans": "发声器",
+            "zh-Hant": "普吉特海湾铁路"
+        }
+    },
+    {
+        "id": "550",
+        "colour": "#66bdd1",
+        "fg": "#000",
+        "name": {
+            "en": "ST Express bus",
+            "zh-Hans": "ST 快车",
+            "zh-Hant": "ST 快車"
+        }
+    }
+]

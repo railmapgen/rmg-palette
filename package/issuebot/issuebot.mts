@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
-import { CityEntry, CountryEntry, PaletteEntry } from '../src';
+import type { CityEntry, CountryEntry, PaletteEntry } from '../src';
 import { JSDOM } from 'jsdom';
 
 const readIssueBody = (): HTMLDetailsElement[] => {

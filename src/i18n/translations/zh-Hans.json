@@ -19,6 +19,7 @@
     "Enter a valid URL, e.g.": "输入有效的URL，如",
     "Enter name": "输入名称",
     "Example": "例子",
+    "Find more details in": "详情请参考",
     "If the button below doesn't work for you, please follow the instructions below:": "如果您无法使用下面的按钮，请按下方的指引开启 Issue：",
     "Input mode": "输入模式",
     "Justify": "证明",
@@ -44,7 +45,9 @@
     "Submit anyway": "继续提交",
     "Submit palettes": "提交调色板",
     "Unsaved draft": "未储存的草稿",
+    "Uploaded templates pending for review": "等候审核的已上传调色板",
     "Use Pantone®": "使用潘通®",
     "Validate": "验证",
+    "You can now earn points for redeeming subscriptions by reviewing palettes uploaded by others.": "您现在可以通过审核他人上传的调色板赢取积分来兑换订阅了。",
     "Your inputs contain the following errors. Please consider fixing it before submitting.": "您的输入存在以下问题，请考虑在提交前修正他們。"
 }

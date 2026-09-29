@@ -3,6 +3,7 @@
     width: 100%;
     overflow-y: auto;
     transform: translateZ(0);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 
 .control {

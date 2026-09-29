@@ -1,0 +1,90 @@
+[
+    {
+        "id": "sbd",
+        "colour": "#729b6b",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Dhoho",
+            "zh-Hans": "多霍通勤线",
+            "zh-Hant": "多霍通勤線",
+            "id": "Commuter Lin Dhoho"
+        }
+    },
+    {
+        "id": "sbp",
+        "colour": "#00a53a",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Penataran",
+            "zh-Hans": "佩纳塔兰通勤线",
+            "zh-Hant": "佩納塔蘭通勤線",
+            "id": "Commuter Lin Penataran"
+        }
+    },
+    {
+        "id": "sbt",
+        "colour": "#ba513d",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Tumapel",
+            "zh-Hans": "图马佩尔通勤线",
+            "zh-Hant": "圖馬佩爾通勤線",
+            "id": "Commuter Lin Tumapel"
+        }
+    },
+    {
+        "id": "sbb",
+        "colour": "#424694",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Blorasura",
+            "zh-Hans": "布罗拉苏拉通勤线",
+            "zh-Hant": "布羅拉蘇拉通勤線",
+            "id": "Commuter Lin Blorasura"
+        }
+    },
+    {
+        "id": "sba",
+        "colour": "#27295d",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Arjonegoro",
+            "zh-Hans": "阿霍内戈罗通勤线",
+            "zh-Hant": "阿霍內戈羅通勤線",
+            "id": "Commuter Lin Arjonegoro"
+        }
+    },
+    {
+        "id": "sbj",
+        "colour": "#63bfb0",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Jenggala",
+            "zh-Hans": "詹加拉通勤线",
+            "zh-Hant": "詹加拉通勤線",
+            "id": "Commuter Lin Jenggala"
+        }
+    },
+    {
+        "id": "sbsp",
+        "colour": "#a95d40",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Supas",
+            "zh-Hans": "苏帕斯通勤线",
+            "zh-Hant": "蘇帕斯通勤線",
+            "id": "Commuter Lin Supas"
+        }
+    },
+    {
+        "id": "sbsi",
+        "colour": "#22acd5",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line Sindro",
+            "zh-Hans": "辛多罗通勤线",
+            "zh-Hant": "辛多羅通勤線",
+            "id": "Commuter Lin Sindro"
+        }
+    }
+]
