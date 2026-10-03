@@ -144,7 +144,7 @@
     },
     {
         "id": "p",
-        "colour": "#233f97",
+        "colour": "#003c88",
         "fg": "#fff",
         "name": {
             "en": "Sakurajima Line (JR Yumesaki Line) (P)",
@@ -177,7 +177,7 @@
     },
     {
         "id": "s",
-        "colour": "#007ac2",
+        "colour": "#0072ba",
         "fg": "#fff",
         "name": {
             "en": "Kansai-airport Line (S)",
