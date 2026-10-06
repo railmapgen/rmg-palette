@@ -879,6 +879,16 @@
         }
     },
     {
+        "id": "jrtohokushinetsu",
+        "country": "JP",
+        "name": {
+            "en": "JR Lines of Tohoku And Shinetsu Area",
+            "zh-Hans": "JR东日本（东北/信越地区）",
+            "ja": "JR東日本（東北・信越地区）",
+            "zh-Hant": "JR東日本（東北/信越地區）"
+        }
+    },
+    {
         "id": "jrtokai",
         "country": "JP",
         "name": {
