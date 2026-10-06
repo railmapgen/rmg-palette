@@ -977,6 +977,15 @@
         }
     },
     {
+        "id": "langfang",
+        "country": "CN",
+        "name": {
+            "en": "langfang",
+            "zh-Hans": "廊坊",
+            "zh-Hant": "廊坊"
+        }
+    },
+    {
         "id": "lanzhou",
         "country": "CN",
         "name": {
