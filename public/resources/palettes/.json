@@ -1,0 +1,18 @@
+[
+    {
+        "id": "sf1",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 1"
+        }
+    },
+    {
+        "id": "sf2",
+        "colour": "#2200ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 2"
+        }
+    }
+]
