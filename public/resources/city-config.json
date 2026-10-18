@@ -1,5 +1,12 @@
 [
     {
+        "id": "",
+        "country": "BG",
+        "name": {
+            "en": "Sofia"
+        }
+    },
+    {
         "id": "adelaide",
         "country": "AU",
         "name": {
