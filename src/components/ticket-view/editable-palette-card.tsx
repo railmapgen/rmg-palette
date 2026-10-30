@@ -130,7 +130,7 @@ export default function EditablePaletteCard({
                     <Group gap="xs" className={classes['editable-group']}>
                         <TextInput
                             label={t('Line code')}
-                            placeholder="e.g. twl, gz1, sh1"
+                            placeholder={t('e.g. twl, gz1, sh1')}
                             value={lineDetail.id}
                             onChange={({ currentTarget: { value } }) => onUpdate?.({ id: value })}
                             error={
