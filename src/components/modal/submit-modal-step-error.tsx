@@ -30,7 +30,7 @@ export default function SubmitModalStepError(props: SubmitModalStepErrorProps) {
                         <Title order={3} size="h5">
                             {t('Country/Region')}
                         </Title>
-                        <List size="sm" withPadding aria-label="List of country errors">
+                        <List size="sm" withPadding aria-label={t('List of country errors')}>
                             {countryErrors.map((e, i) => (
                                 <List.Item key={i}>{translateName(INVALID_REASON[e])}</List.Item>
                             ))}
@@ -43,7 +43,7 @@ export default function SubmitModalStepError(props: SubmitModalStepErrorProps) {
                         <Title order={3} size="h5">
                             {t('City')}
                         </Title>
-                        <List size="sm" withPadding aria-label="List of city errors">
+                        <List size="sm" withPadding aria-label={t('List of city errors')}>
                             {cityErrors.map((e, i) => (
                                 <List.Item key={i}>{translateName(INVALID_REASON[e])}</List.Item>
                             ))}
@@ -56,10 +56,10 @@ export default function SubmitModalStepError(props: SubmitModalStepErrorProps) {
                         <Title order={3} size="h5">
                             {t('Lines')}
                         </Title>
-                        <List size="sm" withPadding aria-label="List of line errors">
+                        <List size="sm" withPadding aria-label={t('List of line errors')}>
                             {Object.entries(lineErrors).map(([item, errors]) => (
                                 <List.Item key={item}>
-                                    {item}
+                                    {item === 'Overall' ? t('Overall') : `${t('Line')} ${item.slice('Line '.length)}`}
                                     <List size="sm" withPadding>
                                         {errors.map((e, i) => (
                                             <List.Item key={i}>{translateName(INVALID_REASON[e])}</List.Item>
