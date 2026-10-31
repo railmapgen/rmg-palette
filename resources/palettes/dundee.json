@@ -1,0 +1,122 @@
+[
+    {
+        "id": "fly",
+        "colour": "#2358a6",
+        "fg": "#fff",
+        "name": {
+            "en": "Fly Dundee"
+        }
+    },
+    {
+        "id": "aa",
+        "colour": "#fb8c00",
+        "fg": "#fff",
+        "name": {
+            "en": "Aberdeen Adventurer"
+        }
+    },
+    {
+        "id": "xplored1",
+        "colour": "#87189d",
+        "fg": "#fff",
+        "name": {
+            "en": "1 City Centre-St Mary's"
+        }
+    },
+    {
+        "id": "",
+        "colour": "#4bdb33",
+        "fg": "#fff",
+        "name": {
+            "en": "2 City Centre-Kingsway Retail Park"
+        }
+    },
+    {
+        "id": "xplore5and5a",
+        "colour": "#0046c2",
+        "fg": "#fff",
+        "name": {
+            "en": "5, 5a Ninewells Hospital-Barnhill"
+        }
+    },
+    {
+        "id": "xplored6",
+        "colour": "#4f7942",
+        "fg": "#fff",
+        "name": {
+            "en": "6 City Centre-Ninewells Hospital"
+        }
+    },
+    {
+        "id": "xplored10",
+        "colour": "#c8102e",
+        "fg": "#fff",
+        "name": {
+            "en": "10 Ninewells Hospital-Broughty Ferry"
+        }
+    },
+    {
+        "id": "xplored17",
+        "colour": "#01c5bb",
+        "fg": "#fff",
+        "name": {
+            "en": "17 Ninewells Hospital-Whitfield"
+        }
+    },
+    {
+        "id": "xplored18",
+        "colour": "#ff6ec7",
+        "fg": "#fff",
+        "name": {
+            "en": "18 City Centre-Claverhouse/Mill O' Mains"
+        }
+    },
+    {
+        "id": "xplored22and22c",
+        "colour": "#ffe600",
+        "fg": "#fff",
+        "name": {
+            "en": "22, 22c Ninewells Hospital-Craigowl"
+        }
+    },
+    {
+        "id": "xplored23",
+        "colour": "#008000",
+        "fg": "#fff",
+        "name": {
+            "en": "23 Woodside Circular"
+        }
+    },
+    {
+        "id": "xplored28",
+        "colour": "#55acee",
+        "fg": "#fff",
+        "name": {
+            "en": "28 Myrekirk-Douglas"
+        }
+    },
+    {
+        "id": "xplored32",
+        "colour": "#f89328",
+        "fg": "#fff",
+        "name": {
+            "en": "32 City Centre-Fintry"
+        }
+    },
+    {
+        "id": "xplored33",
+        "colour": "#b78e61",
+        "fg": "#fff",
+        "name": {
+            "en": "33 City Centre-Whitfield"
+        }
+    },
+    {
+        "id": "xploreaberdeen",
+        "colour": "#75ccf4",
+        "fg": "#fff",
+        "name": {
+            "en": "14 Kingswell Village-Aberdeen City Centre"
+        }
+    }
+]
