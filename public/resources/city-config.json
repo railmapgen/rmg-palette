@@ -411,6 +411,14 @@
         }
     },
     {
+        "id": "cremona",
+        "country": "IT",
+        "name": {
+            "en": "Cremona",
+            "it": "Cremona"
+        }
+    },
+    {
         "id": "daegu",
         "country": "KR",
         "name": {

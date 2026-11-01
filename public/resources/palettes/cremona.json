@@ -1,0 +1,92 @@
+[
+    {
+        "id": "c",
+        "colour": "#eb01eb",
+        "fg": "#000",
+        "name": {
+            "en": "C (Circolare Centro)"
+        }
+    },
+    {
+        "id": "d",
+        "colour": "#000075",
+        "fg": "#fff",
+        "name": {
+            "en": "D (Boschetto-Centro-Ospedale)"
+        }
+    },
+    {
+        "id": "e",
+        "colour": "#aadde7",
+        "fg": "#000",
+        "name": {
+            "en": "E (Barriera Po-Ospedale)"
+        }
+    },
+    {
+        "id": "f",
+        "colour": "#d4b574",
+        "fg": "#000",
+        "name": {
+            "it": "F (Circolare sinistra)",
+            "en": "F (Counterclockwise Circular Line)"
+        }
+    },
+    {
+        "id": "g",
+        "colour": "#6c0075",
+        "fg": "#fff",
+        "name": {
+            "en": "G (Spinadesco-FS-Bonemerse)"
+        }
+    },
+    {
+        "id": "h",
+        "colour": "#cb0174",
+        "fg": "#fff",
+        "name": {
+            "en": "H1 H2 H3 H5 (S. Marino Iper, S. Savino, S. Felice, Castelverde)"
+        }
+    },
+    {
+        "id": "i",
+        "colour": "#eaa729",
+        "fg": "#000",
+        "name": {
+            "en": "I (Castelverde/Persico Dosimo-Cremona)"
+        }
+    },
+    {
+        "id": "l",
+        "colour": "#ec0101",
+        "fg": "#000",
+        "name": {
+            "en": "L (Cambonino-FS-Zaist)"
+        }
+    },
+    {
+        "id": "m",
+        "colour": "#00d003",
+        "fg": "#000",
+        "name": {
+            "it": "M (Circolare Destra)",
+            "en": "M (Clockwise Circular Line)"
+        }
+    },
+    {
+        "id": "u",
+        "colour": "#819aad",
+        "fg": "#000",
+        "name": {
+            "en": "U (FS-Università-Azzurri d’Italia)"
+        }
+    },
+    {
+        "id": "z",
+        "colour": "#000000",
+        "fg": "#fff",
+        "name": {
+            "en": "Z (FS-Stagno Lombardo)"
+        }
+    }
+]
