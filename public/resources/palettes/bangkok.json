@@ -1,116 +1,149 @@
 [
     {
-        "id": "bk1",
-        "colour": "#e10506",
-        "fg": "#fff",
-        "name": {
-            "en": " SRT Dark Red Line (Line 1)",
-            "zh-Hans": "城郊铁路暗红线",
-            "zh-Hant": "城郊鐵路暗紅線"
-        }
-    },
-    {
-        "id": "bk2",
-        "colour": "#fd5252",
-        "fg": "#fff",
-        "name": {
-            "en": "SRT Light Red Line (Line 2)",
-            "zh-Hans": "城郊铁路浅红线",
-            "zh-Hant": "城郊鐵路淺紅線"
-        }
-    },
-    {
-        "id": "bk3c",
-        "colour": "#0075c0",
-        "fg": "#fff",
-        "name": {
-            "en": "Suvarnabhumi Airport Rail Link City Line(Line 3)",
-            "zh-Hans": "素万那普机场快轨城市线",
-            "zh-Hant": "素萬那普機場快軌城市線"
-        }
-    },
-    {
-        "id": "bk3e",
-        "colour": "#761f21",
-        "fg": "#fff",
-        "name": {
-            "en": "Suvarnabhumi Airport Rail Link Express Line (Line 3)",
-            "zh-Hans": "素万那普机场快轨特快",
-            "zh-Hant": "素萬那普機場快軌特快"
-        }
-    },
-    {
-        "id": "bk4",
-        "colour": "#77cc00",
-        "fg": "#fff",
-        "name": {
-            "en": "Sukhumvit Line (Line 4)",
-            "zh-Hans": "素坤逸线",
-            "zh-Hant": "素坤逸線"
-        }
-    },
-    {
-        "id": "bk5",
-        "colour": "#246b5b",
-        "fg": "#fff",
-        "name": {
-            "en": "Silom Line (Line 5)",
-            "zh-Hans": "世隆线",
-            "zh-Hant": "世隆線"
-        }
-    },
-    {
-        "id": "bk6",
+        "id": "bkkmrtbl",
         "colour": "#1964b7",
         "fg": "#fff",
         "name": {
-            "en": "Metro Blue Line (Line 6)",
-            "zh-Hans": "地铁蓝线",
-            "zh-Hant": "地鐵藍線"
+            "en": "MRT Blue Line",
+            "zh-Hans": "MRT地铁蓝线",
+            "zh-Hant": "MRT地鐵藍線",
+            "th": "รถไฟฟ้ามหานคร-สีน้ำเงิน, สายเฉลิมรัชมงคล"
         }
     },
     {
-        "id": "bk7",
+        "id": "bkkmrtpp",
         "colour": "#800080",
         "fg": "#fff",
         "name": {
-            "en": "Metro Purple Line (Line 7)",
-            "zh-Hans": "地铁紫线",
-            "zh-Hant": "地鐵紫線"
+            "en": "MRT Purple Line",
+            "zh-Hans": "MRT地铁紫线",
+            "zh-Hant": "MRT地鐵紫線",
+            "th": "รถไฟฟ้ามหานคร-สีม่วง, สายฉลองรัชธรรม"
         }
     },
     {
-        "id": "bk8",
+        "id": "bkkmrtor",
         "colour": "#ff6601",
         "fg": "#fff",
         "name": {
-            "en": "Metro Orange Line (Line 8)",
-            "zh-Hans": "地铁橙线",
-            "zh-Hant": "地鐵橙線"
+            "en": "MRT Orange Line",
+            "zh-Hans": "MRT地铁橙线",
+            "zh-Hant": "MRT地鐵橙線",
+            "th": "รถไฟฟ้ามหานคร-สีส้ม"
         }
     },
     {
-        "id": "bk9",
-        "colour": "#ff69b4",
+        "id": "bkkbtssk",
+        "colour": "#77cc00",
         "fg": "#fff",
         "name": {
-            "en": "MRT Pink Line (Line 9)",
-            "zh-Hans": "单轨粉红线",
-            "zh-Hant": "單軌粉紅線"
+            "en": "BTS Sukhumvit Line",
+            "zh-Hans": "BTS天铁素坤逸线",
+            "zh-Hant": "BTS天鐵素坤逸線",
+            "th": "รถไฟฟ้าบีทีเอส-สายสุขุมวิท"
         }
     },
     {
-        "id": "bk10",
+        "id": "bkkbtssl",
+        "colour": "#246b5b",
+        "fg": "#fff",
+        "name": {
+            "en": "BTS Silom Line",
+            "zh-Hans": "BTS天铁世隆线",
+            "zh-Hant": "BTS天鐵世隆線",
+            "th": "รถไฟฟ้าบีทีเอส-สายสีลม"
+        }
+    },
+    {
+        "id": "bkkbtsgl",
+        "colour": "#d4af37",
+        "fg": "#fff",
+        "name": {
+            "en": "BTS Gold Line",
+            "zh-Hans": "BTS金线",
+            "zh-Hant": "BTS金線",
+            "th": "รถไฟฟ้าบีทีเอส-สายสีทอง"
+        }
+    },
+    {
+        "id": "bkkmrtyl",
         "colour": "#ffcc33",
         "fg": "#fff",
         "name": {
-            "en": "MRT Yellow Line (Line 10)",
-            "zh-Hans": "单轨黄线",
-            "zh-Hant": "單軌黄线"
+            "en": "MRT Yellow Line",
+            "zh-Hans": "MRT单轨黄线",
+            "zh-Hant": "MRT單軌黄线",
+            "th": "รถไฟฟ้ามหานคร-สีเหลือง, สายนัคราพิพัฒน์"
         }
     },
     {
-        "id": "bk11",
+        "id": "bkkmrtpk",
+        "colour": "#ff69b4",
+        "fg": "#fff",
+        "name": {
+            "en": "MRT Pink Line",
+            "zh-Hans": "MRT单轨粉红线",
+            "zh-Hant": "MRT單軌粉紅線",
+            "th": "รถไฟฟ้ามหานคร-สีชมพู, สายวิวัฒน์นคร"
+        }
+    },
+    {
+        "id": "bkksrt",
+        "colour": "#a41e2b",
+        "fg": "#fff",
+        "name": {
+            "en": "SRT State Railway of Thailand",
+            "zh-Hans": "SRT泰国国家铁路",
+            "zh-Hant": "SRT泰國國家鐵路",
+            "th": "รถไฟทางไกล รฟท."
+        }
+    },
+    {
+        "id": "bkksrtdr",
+        "colour": "#e10506",
+        "fg": "#fff",
+        "name": {
+            "en": " SRT Dark Red Line",
+            "zh-Hans": "SRT城郊铁路暗红线",
+            "zh-Hant": "SRT城郊鐵路暗紅線",
+            "th": "สีแดงเข้ม, สายธานีรัถยา"
+        }
+    },
+    {
+        "id": "bkksrtlr",
+        "colour": "#fd5252",
+        "fg": "#fff",
+        "name": {
+            "en": "SRT Light Red Line",
+            "zh-Hans": "SRT城郊铁路浅红线",
+            "zh-Hant": "SRT城郊鐵路淺紅線",
+            "th": "สีแดงอ่อน, สายนครวิถี"
+        }
+    },
+    {
+        "id": "bkkarlcl",
+        "colour": "#0075c0",
+        "fg": "#fff",
+        "name": {
+            "en": "ARL Suvarnabhumi Airport Rail Link City Line",
+            "zh-Hans": "ARL素万那普机场快轨城市线",
+            "zh-Hant": "ARL素萬那普機場快軌城市線",
+            "th": "แอร์พอร์ต เรล ลิงก์, ซิตี้ไลน์"
+        }
+    },
+    {
+        "id": "bkkarlel",
+        "colour": "#761f21",
+        "fg": "#fff",
+        "name": {
+            "en": "ARL Suvarnabhumi Airport Rail Link Express Line",
+            "zh-Hans": "ARL素万那普机场快轨特快",
+            "zh-Hant": "ARL素萬那普機場快軌特快",
+            "th": "แอร์พอร์ต เรล ลิงก์, ซิตี้ไลน์"
+        }
+    },
+    {
+        "id": "bkkbma11",
         "colour": "#808080",
         "fg": "#fff",
         "name": {
@@ -120,7 +153,7 @@
         }
     },
     {
-        "id": "bk12",
+        "id": "bkkbma12",
         "colour": "#87cefa",
         "fg": "#000",
         "name": {
@@ -130,17 +163,17 @@
         }
     },
     {
-        "id": "bk13",
+        "id": "bkkbma13",
         "colour": "#a85c1f",
         "fg": "#fff",
         "name": {
-            "en": "MRT Brown Line (Line 13)",
+            "en": "BMA Brown Line (Line 13)",
             "zh-Hans": "单轨棕线",
             "zh-Hant": "單軌棕线"
         }
     },
     {
-        "id": "bk15",
+        "id": "bkkbma15",
         "colour": "#e0e0e0",
         "fg": "#000",
         "name": {
@@ -150,23 +183,36 @@
         }
     },
     {
-        "id": "bka",
-        "colour": "#d4af37",
-        "fg": "#fff",
+        "id": "bkkbrt",
+        "colour": "#d9e114",
+        "fg": "#000",
         "name": {
-            "en": "BTS Gold Line",
-            "zh-Hans": "旅客捷运金线",
-            "zh-Hant": "旅客捷運金線"
+            "en": "BRT",
+            "zh-Hans": "BRT",
+            "zh-Hant": "BRT",
+            "th": "รถโดยสารด่วนพิเศษ บีอาร์ที"
         }
     },
     {
-        "id": "bkb",
+        "id": "bkkcpb",
+        "colour": "#0b8bcc",
+        "fg": "#fff",
+        "name": {
+            "en": "Chao Phraya Express Boat",
+            "zh-Hans": "昭披耶快船",
+            "zh-Hant": "昭披耶快船",
+            "th": "เรือด่วนเจ้าพระยา"
+        }
+    },
+    {
+        "id": "bkkklb",
         "colour": "#bbeeff",
         "fg": "#000",
         "name": {
             "en": "Khlong Saen Saep Express Boat",
             "zh-Hans": "空盛桑运河快船",
-            "zh-Hant": "空盛桑運河快船"
+            "zh-Hant": "空盛桑運河快船",
+            "th": "คลองแสนแสบ"
         }
     }
 ]
