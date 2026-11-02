@@ -1,0 +1,102 @@
+[
+    {
+        "id": "red",
+        "colour": "#EB1C23",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 10/15",
+            "zh-Hans": "路线10/15",
+            "zh-Hant": "路綫10/15"
+        }
+    },
+    {
+        "id": "green",
+        "colour": "#00B17B",
+        "fg": "#000",
+        "name": {
+            "en": "Route 20",
+            "zh-Hans": "路线20",
+            "zh-Hant": "路綫20"
+        }
+    },
+    {
+        "id": "lblue",
+        "colour": "#00CCFF",
+        "fg": "#000",
+        "name": {
+            "en": "Route 25",
+            "zh-Hans": "路线25",
+            "zh-Hant": "路綫25"
+        }
+    },
+    {
+        "id": "yellow",
+        "colour": "#F9AE4A",
+        "fg": "#000",
+        "name": {
+            "en": "Route 35",
+            "zh-Hans": "路线35",
+            "zh-Hant": "路綫35"
+        }
+    },
+    {
+        "id": "blue",
+        "colour": "#007EC5",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 40/45",
+            "zh-Hans": "路线40/45",
+            "zh-Hant": "路綫40/45"
+        }
+    },
+    {
+        "id": "indigo",
+        "colour": "#002E62",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 50",
+            "zh-Hans": "路线50",
+            "zh-Hant": "路綫50"
+        }
+    },
+    {
+        "id": "lime",
+        "colour": "#B1C23D",
+        "fg": "#000",
+        "name": {
+            "en": "Route 55",
+            "zh-Hans": "路线55",
+            "zh-Hant": "路綫55"
+        }
+    },
+    {
+        "id": "purple",
+        "colour": "#915C8E",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 60",
+            "zh-Hans": "路线60",
+            "zh-Hant": "路綫60"
+        }
+    },
+    {
+        "id": "magenta",
+        "colour": "#D54296",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 65",
+            "zh-Hans": "路线65",
+            "zh-Hant": "路綫65"
+        }
+    },
+    {
+        "id": "orange",
+        "colour": "#F97C18",
+        "fg": "#fff",
+        "name": {
+            "en": "Route 70",
+            "zh-Hans": "路线70",
+            "zh-Hant": "路綫70"
+        }
+    }
+]
