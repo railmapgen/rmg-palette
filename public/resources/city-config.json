@@ -858,6 +858,15 @@
         }
     },
     {
+        "id": "jackson",
+        "country": "US",
+        "name": {
+            "en": "Jackson",
+            "zh-Hans": "杰克逊",
+            "zh-Hant": "傑克遜"
+        }
+    },
+    {
         "id": "jakarta",
         "country": "ID",
         "name": {
