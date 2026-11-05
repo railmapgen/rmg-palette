@@ -10,6 +10,8 @@ import { formatDistanceToNow } from 'date-fns';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { zhCN } from 'date-fns/locale/zh-CN';
 import { zhHK } from 'date-fns/locale/zh-HK';
+import { ja } from 'date-fns/locale/ja';
+import { ko } from 'date-fns/locale/ko';
 
 const getLocale = () => {
     switch (rmgRuntime.getLanguage()) {
@@ -17,6 +19,10 @@ const getLocale = () => {
             return zhCN;
         case 'zh-Hant':
             return zhHK;
+        case 'ja':
+            return ja;
+        case 'ko':
+            return ko;
         default:
             return undefined;
     }
@@ -59,7 +65,7 @@ export default function OpenIssuesAlert() {
                 ))}
             </List>
             <Text>
-                {t('You can now earn points for redeeming subscriptions by reviewing templates uploaded by others.')}{' '}
+                {t('You can now earn points for redeeming subscriptions by reviewing palettes uploaded by others.')}{' '}
                 {t('Find more details in')}{' '}
                 <Anchor href="https://github.com/railmapgen/rmg-palette/wiki/Review-Guidelines" target="_blank">
                     {t('Review guidelines')}
