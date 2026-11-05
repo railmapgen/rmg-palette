@@ -67,7 +67,7 @@ export default function CountrySection() {
                     />
                     <TextInput
                         label={t('Country/region code')}
-                        placeholder="e.g. CN, HK, JP (ISO 3166-1 alpha-2)"
+                        placeholder={t('e.g. CN, HK, JP (ISO 3166-1 alpha-2)')}
                         value={newCountry}
                         onChange={({ currentTarget: { value } }) => dispatch(setNewCountry(value))}
                         error={
