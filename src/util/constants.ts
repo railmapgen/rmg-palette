@@ -79,21 +79,21 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hans': '缺少英文名称',
         'zh-Hant': '缺少英文名稱',
         ja: '英語の名称が入力されていません',
-        ko: '영어 명칭이 누락되었습니다',
+        ko: '영어 이름이 누락되었습니다',
     },
     ZH_HANS_UNDEFINED: {
         en: 'Simplified Chinese name is missing',
         'zh-Hans': '缺少简体中文名称',
         'zh-Hant': '缺少簡體中文名稱',
         ja: '簡体字中国語の名称が入力されていません',
-        ko: '중국어 간체 명칭이 누락되었습니다',
+        ko: '중국어 간체 이름이 누락되었습니다',
     },
     ZH_HANT_UNDEFINED: {
         en: 'Traditional Chinese name is missing',
         'zh-Hans': '缺少繁体中文名称',
         'zh-Hant': '缺少繁體中文名稱',
         ja: '繁体字中国語の名称が入力されていません',
-        ko: '중국어 번체 명칭이 누락되었습니다',
+        ko: '중국어 번체 이름이 누락되었습니다',
     },
     LANGUAGE_DUPLICATED: {
         en: 'Duplicated language found',
@@ -107,7 +107,7 @@ export const INVALID_REASON: Record<InvalidReasonType, Translation> = {
         'zh-Hans': '缺少官方语言名称',
         'zh-Hant': '缺少官方語言名稱',
         ja: '公用語の名称が入力されていません',
-        ko: '공용어 명칭이 누락되었습니다',
+        ko: '공용어 이름이 누락되었습니다',
     },
 };
 
