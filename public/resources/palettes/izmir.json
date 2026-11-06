@@ -1,7 +1,7 @@
 [
     {
         "id": "izban",
-        "colour": "#1d4da3",
+        "colour": "#005BFF",
         "fg": "#fff",
         "name": {
             "en": "IZBAN",
@@ -10,7 +10,7 @@
     },
     {
         "id": "m1",
-        "colour": "#e81b2c",
+        "colour": "#F62200",
         "fg": "#fff",
         "name": {
             "en": "M1",
@@ -19,47 +19,47 @@
     },
     {
         "id": "t1green",
-        "colour": "#019644",
+        "colour": "#4BD67D",
         "fg": "#fff",
         "name": {
-            "en": "T1 Green Line",
-            "tr": "T1 Yeşil Hat"
+            "en": "T1 Karşıyaka Tram",
+            "tr": "T1 Karşıyaka Tramvayı"
         }
     },
     {
         "id": "t1orange",
-        "colour": "#f39212",
+        "colour": "#FFA13D",
         "fg": "#fff",
         "name": {
-            "en": "T1 Orange (Ring) Line",
-            "tr": "T1 Turuncu (Ring) Hat"
+            "en": "T1 Karşıyaka Ring Tram (Orange)",
+            "tr": "T1 Karşıyaka Ring Tramvayı (Turuncu)"
         }
     },
     {
         "id": "t2",
-        "colour": "#99c73b",
+        "colour": "#B6CC03",
         "fg": "#fff",
         "name": {
-            "en": "T2",
-            "tr": "T2"
+            "en": "T2 Konak Tram",
+            "tr": "T2 Konak Tramvayı"
         }
     },
     {
         "id": "t3redouter",
-        "colour": "#e91d22",
+        "colour": "#FF6673",
         "fg": "#fff",
         "name": {
-            "en": "T3 Red (Outer) Line",
-            "tr": "T3 Kırmızı (Dış) Hat"
+            "en": "T3 Çiğli Tram - Outer (Red)",
+            "tr": "T3 Çiğli Tramvayı - Dış Hat (Kırmızı)"
         }
     },
     {
         "id": "t3blueinner",
-        "colour": "#274998",
+        "colour": "#00E3FF",
         "fg": "#fff",
         "name": {
-            "en": "T3 Blue (Inner) Line",
-            "tr": "T3 Mavi (İç) Hat"
+            "en": "T3 Çiğli Tram - Inner (Blue)",
+            "tr": "T3 Çiğli Tramvayı - İç Hat (Mavi)"
         }
     }
 ]
