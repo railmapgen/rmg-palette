@@ -39,7 +39,7 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
                     <Group gap="xs" flex={1} grow>
                         <Select
                             size="xs"
-                            aria-label={t('Language')}
+                            aria-label={t('Translation language')}
                             value={lang}
                             onChange={value => onLangSwitch(lang, value as LanguageCode)}
                             data={languageOptions}
