@@ -11,13 +11,11 @@
     "City code should contain lower case letters only": "도시 코드에는 영문 소문자만 사용할 수 있습니다",
     "Clear": "비우기",
     "Clear all": "모두 지우기",
-    "Continue": "계속",
     "Country code should be in the format of ISO 3166-1 alpha-2": "국가 코드는 ISO 3166-1 alpha-2 형식이어야 합니다",
     "Country/region code": "국가/지역 코드",
     "Data source": "자료 출처",
     "Discard": "폐기",
     "Do you want to continue with your last unsaved ticket?": "이전에 저장하지 않은 초안을 이어서 편집하시겠습니까?",
-    "Done": "완료",
     "Duplicate": "복제",
     "Edit city": "도시 편집",
     "Enter a valid URL, e.g.": "유효한 URL을 입력하세요. 예:",
@@ -36,7 +34,6 @@
     "List of line errors": "노선 오류 목록",
     "Move down": "아래로 이동",
     "Move up": "위로 이동",
-    "Multi-languages": "다중 언어",
     "Official language": "공용언어",
     "Overall": "전체",
     "Pantone®": "Pantone®",
@@ -64,10 +61,5 @@
     "e.g. CN, HK, JP (ISO 3166-1 alpha-2)": "예: CN, HK, JP (ISO 3166-1 alpha-2)",
     "e.g. hongkong, guangzhou, shanghai": "예: hongkong, guangzhou, shanghai",
     "e.g. twl, gz1, sh1": "예: twl, gz1, sh1",
-    "Go back": "돌아가기",
-    "Language": "언어",
-    "Name": "이름",
-    "Previous": "이전",
-    "Remove": "제거",
-    "Reset": "초기화"
+    "Translation language": "언어"
 }
