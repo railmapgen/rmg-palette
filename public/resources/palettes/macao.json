@@ -1,7 +1,7 @@
 [
     {
         "id": "taipa",
-        "colour": "#A4D65E",
+        "colour": "#93d50a",
         "fg": "#fff",
         "name": {
             "en": "Taipa Line",
@@ -12,7 +12,7 @@
     },
     {
         "id": "seacpaivan",
-        "colour": "#9900ff",
+        "colour": "#8a66c3",
         "fg": "#fff",
         "name": {
             "pt": "Linha Seac Pai Van",
@@ -23,24 +23,13 @@
     },
     {
         "id": "hengqin",
-        "colour": "#d30000",
+        "colour": "#bd273a",
         "fg": "#fff",
         "name": {
             "pt": "Linha de Hengqin",
             "zh-Hans": "横琴线",
             "zh-Hant": "橫琴線",
             "en": "Hengqin Line"
-        }
-    },
-    {
-        "id": "leste",
-        "colour": "#5d2de1",
-        "fg": "#fff",
-        "name": {
-            "pt": "Linha Leste",
-            "zh-Hans": "东线",
-            "zh-Hant": "東線",
-            "en": "East Line"
         }
     }
 ]
