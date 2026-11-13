@@ -50,6 +50,16 @@
         }
     },
     {
+        "id": "jnr07",
+        "colour": "#ef1918",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 7",
+            "zh-Hans": "7号线",
+            "zh-Hant": "7號線"
+        }
+    },
+    {
         "id": "jnr08",
         "colour": "#62449C",
         "fg": "#fff",
@@ -57,6 +67,16 @@
             "en": "Line 8",
             "zh-Hans": "8号线",
             "zh-Hant": "8號線"
+        }
+    },
+    {
+        "id": "jnr09",
+        "colour": "#fd7c06",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 9",
+            "zh-Hans": "9号线",
+            "zh-Hant": "9號線"
         }
     },
     {
