@@ -31,7 +31,7 @@
     },
     {
         "id": "t1",
-        "colour": "#00b4e5",
+        "colour": "#00BBE3",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 1",
@@ -41,7 +41,7 @@
     },
     {
         "id": "t2",
-        "colour": "#65b32e",
+        "colour": "#758AC5",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 2",
@@ -51,7 +51,7 @@
     },
     {
         "id": "t3",
-        "colour": "#007ec7",
+        "colour": "#7366AD",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 3",
@@ -61,7 +61,7 @@
     },
     {
         "id": "t4",
-        "colour": "#e61657",
+        "colour": "#00A665",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 4",
@@ -71,7 +71,7 @@
     },
     {
         "id": "t5",
-        "colour": "#7a6f6f",
+        "colour": "#007B41",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 5",
@@ -81,7 +81,7 @@
     },
     {
         "id": "t6",
-        "colour": "#009757",
+        "colour": "#CD3092",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 6",
@@ -91,7 +91,7 @@
     },
     {
         "id": "t7",
-        "colour": "#d5007f",
+        "colour": "#F295BF",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 7",
@@ -101,7 +101,7 @@
     },
     {
         "id": "t8",
-        "colour": "#7f5ca3",
+        "colour": "#00A2A6",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 8",
@@ -111,7 +111,7 @@
     },
     {
         "id": "t9",
-        "colour": "#f19ec4",
+        "colour": "#0087CE",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 9",
@@ -121,7 +121,7 @@
     },
     {
         "id": "t10",
-        "colour": "#fbb800",
+        "colour": "#63BC58",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 10",
@@ -130,8 +130,28 @@
         }
     },
     {
+        "id": "t11",
+        "colour": "#F0A336",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 11",
+            "zh-Hans": "有轨电车11号线",
+            "zh-Hant": "有軌電車11號缐"
+        }
+    },
+    {
+        "id": "t12",
+        "colour": "#F8DB00",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line 12",
+            "zh-Hans": "有轨电车12号线",
+            "zh-Hant": "有軌電車12號缐"
+        }
+    },
+    {
         "id": "t13",
-        "colour": "#ffdd00",
+        "colour": "#D47E51",
         "fg": "#fff",
         "name": {
             "en": "Tram Line 13",
