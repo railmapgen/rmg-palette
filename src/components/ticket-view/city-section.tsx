@@ -69,12 +69,12 @@ export default function CitySection() {
                     {city === 'new' && (
                         <TextInput
                             label={t('City code')}
-                            placeholder="e.g. hongkong, guangzhou, shanghai"
+                            placeholder={t('e.g. hongkong, guangzhou, shanghai')}
                             value={newCity}
                             onChange={({ currentTarget: { value } }) => dispatch(setNewCity(value))}
                             error={
                                 newCity && newCity.match(/[^a-z]/)
-                                    ? 'City code should contain lower case letters only'
+                                    ? t('City code should contain lower case letters only')
                                     : undefined
                             }
                         />

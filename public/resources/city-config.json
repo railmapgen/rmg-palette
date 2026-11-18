@@ -516,6 +516,13 @@
         }
     },
     {
+        "id": "dundee",
+        "country": "GBSCT",
+        "name": {
+            "en": "Dundee"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {
@@ -1189,6 +1196,13 @@
         }
     },
     {
+        "id": "mnl",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
+        }
+    },
+    {
         "id": "monterrey",
         "country": "MX",
         "name": {
@@ -1817,6 +1831,16 @@
             "zh-Hans": "斯特拉斯堡",
             "zh-Hant": "斯特拉斯堡",
             "fr": "Strasbourg"
+        }
+    },
+    {
+        "id": "stuttgart",
+        "country": "DE",
+        "name": {
+            "en": "Stuttgart",
+            "de": "Stuttgart",
+            "zh-Hant": "斯圖加特",
+            "zh-Hans": "斯图加特"
         }
     },
     {
