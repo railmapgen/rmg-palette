@@ -516,6 +516,13 @@
         }
     },
     {
+        "id": "dundee",
+        "country": "GBSCT",
+        "name": {
+            "en": "Dundee"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {
