@@ -30,10 +30,10 @@ describe('MultiLangEntryCard', () => {
         expect(
             within(stack1).queryByRole('button', { name: 'Add a name in another language' })
         ).not.toBeInTheDocument();
-        expect(within(stack1).getByRole('button', { name: 'Remove this name' })).toBeInTheDocument();
+        expect(within(stack1).getByRole('button', { name: 'Delete this name' })).toBeInTheDocument();
 
         const stack2 = screen.getByTestId('entry-card-stack-zh-Hant');
         expect(within(stack2).getByRole('button', { name: 'Add a name in another language' })).toBeInTheDocument();
-        expect(within(stack2).getByRole('button', { name: 'Remove this name' })).toBeInTheDocument();
+        expect(within(stack2).getByRole('button', { name: 'Delete this name' })).toBeInTheDocument();
     });
 });
