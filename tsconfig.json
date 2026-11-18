@@ -10,6 +10,7 @@
         "skipLibCheck": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "downlevelIteration": true,
@@ -20,7 +21,7 @@
         "noEmit": true,
         "jsx": "react-jsx",
         "noFallthroughCasesInSwitch": true,
-        "types": ["vitest/globals"],
+        "types": ["vitest/globals", "node"],
         "plugins": [{ "name": "typescript-plugin-css-modules" }]
     },
     "include": [

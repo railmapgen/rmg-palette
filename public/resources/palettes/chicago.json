@@ -78,5 +78,125 @@
             "zh-Hans": "黄线",
             "zh-Hant": "黃線"
         }
+    },
+    {
+        "id": "bnsf",
+        "colour": "#41AF27",
+        "fg": "#fff",
+        "name": {
+            "en": "BNSF Line",
+            "zh-Hans": "BNSF线",
+            "zh-Hant": "BNSF線"
+        }
+    },
+    {
+        "id": "hc",
+        "colour": "#851C3F",
+        "fg": "#fff",
+        "name": {
+            "en": "Heritage Corridor",
+            "zh-Hans": "文物走廊线",
+            "zh-Hant": "文物走廊線"
+        }
+    },
+    {
+        "id": "mdn",
+        "colour": "#E47123",
+        "fg": "#fff",
+        "name": {
+            "en": "Milwaukee District North Line",
+            "zh-Hans": "密尔沃基北线",
+            "zh-Hant": "密爾沃基北線"
+        }
+    },
+    {
+        "id": "mdw",
+        "colour": "#F1BD46",
+        "fg": "#000",
+        "name": {
+            "en": "Milwaukee District West Line",
+            "zh-Hans": "密尔沃基西线",
+            "zh-Hant": "密爾沃基西線"
+        }
+    },
+    {
+        "id": "ncs",
+        "colour": "#8F62CC",
+        "fg": "#fff",
+        "name": {
+            "en": "North Central Service",
+            "zh-Hans": "北方中心服务线",
+            "zh-Hant": "北方中心服務線"
+        }
+    },
+    {
+        "id": "rid",
+        "colour": "#DA261A",
+        "fg": "#fff",
+        "name": {
+            "en": "Rock Island District",
+            "zh-Hans": "岩岛线",
+            "zh-Hant": "岩島線"
+        }
+    },
+    {
+        "id": "sws",
+        "colour": "#005DB7",
+        "fg": "#fff",
+        "name": {
+            "en": "SouthWest Service",
+            "zh-Hans": "西南服务线",
+            "zh-Hant": "西南服務線"
+        }
+    },
+    {
+        "id": "upn",
+        "colour": "#00833B",
+        "fg": "#fff",
+        "name": {
+            "en": "Union Pacific North Line",
+            "zh-Hans": "联合太平洋北线",
+            "zh-Hant": "聯合太平洋北線"
+        }
+    },
+    {
+        "id": "upnw",
+        "colour": "#FEDC39",
+        "fg": "#000",
+        "name": {
+            "en": "Union Pacific Northwest Line",
+            "zh-Hans": "联合太平洋西北线",
+            "zh-Hant": "聯合太平洋西北線"
+        }
+    },
+    {
+        "id": "upw",
+        "colour": "#FEB0BA",
+        "fg": "#000",
+        "name": {
+            "en": "Union Pacific West Line",
+            "zh-Hans": "联合太平洋西线",
+            "zh-Hant": "聯合太平洋西線"
+        }
+    },
+    {
+        "id": "ssl",
+        "colour": "#88160A",
+        "fg": "#fff",
+        "name": {
+            "en": "South Shore Line",
+            "zh-Hans": "南岸线",
+            "zh-Hant": "南岸線"
+        }
+    },
+    {
+        "id": "me",
+        "colour": "#FE4E22",
+        "fg": "#fff",
+        "name": {
+            "en": "Metra Electric District",
+            "zh-Hans": "Metra电铁线",
+            "zh-Hant": "Metra電鐵線"
+        }
     }
 ]
