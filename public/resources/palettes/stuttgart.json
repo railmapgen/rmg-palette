@@ -1,0 +1,299 @@
+[
+    {
+        "id": "u1",
+        "colour": "#cb9e77",
+        "fg": "#000",
+        "name": {
+            "en": "U1",
+            "de": "U1",
+            "zh-Hans": "U1",
+            "zh-Hant": "U1"
+        }
+    },
+    {
+        "id": "u2",
+        "colour": "#ed733e",
+        "fg": "#fff",
+        "name": {
+            "en": "U2",
+            "de": "U2",
+            "zh-Hans": "U1",
+            "zh-Hant": "U1"
+        }
+    },
+    {
+        "id": "u3",
+        "colour": "#926546",
+        "fg": "#fff",
+        "name": {
+            "en": "U3",
+            "de": "U3",
+            "zh-Hans": "U3",
+            "zh-Hant": "U3"
+        }
+    },
+    {
+        "id": "u4",
+        "colour": "#7969ab",
+        "fg": "#fff",
+        "name": {
+            "en": "U4",
+            "de": "U4",
+            "zh-Hans": "U4",
+            "zh-Hant": "U4"
+        }
+    },
+    {
+        "id": "u5",
+        "colour": "#31b9ef",
+        "fg": "#000",
+        "name": {
+            "en": "U5",
+            "de": "U5",
+            "zh-Hans": "U5",
+            "zh-Hant": "U5"
+        }
+    },
+    {
+        "id": "u6",
+        "colour": "#e5238b",
+        "fg": "#fff",
+        "name": {
+            "en": "U6",
+            "de": "U6",
+            "zh-Hans": "U6",
+            "zh-Hant": "U6"
+        }
+    },
+    {
+        "id": "u7",
+        "colour": "#35b28e",
+        "fg": "#fff",
+        "name": {
+            "en": "U7",
+            "de": "U7",
+            "zh-Hans": "U7",
+            "zh-Hant": "U7"
+        }
+    },
+    {
+        "id": "u8",
+        "colour": "#bfb77d",
+        "fg": "#000",
+        "name": {
+            "en": "U8",
+            "de": "U8",
+            "zh-Hans": "U8",
+            "zh-Hant": "U8"
+        }
+    },
+    {
+        "id": "u9",
+        "colour": "#fdd53a",
+        "fg": "#000",
+        "name": {
+            "en": "U9",
+            "de": "U9",
+            "zh-Hans": "U9",
+            "zh-Hant": "U9"
+        }
+    },
+    {
+        "id": "10",
+        "colour": "#fab938",
+        "fg": "#000",
+        "name": {
+            "en": "Rack Railway",
+            "de": "Zacke",
+            "zh-Hans": "齿轮铁路",
+            "zh-Hant": "齒軌鐵路"
+        }
+    },
+    {
+        "id": "u11",
+        "colour": "#939598",
+        "fg": "#fff",
+        "name": {
+            "en": "U11",
+            "de": "U11",
+            "zh-Hans": "U11",
+            "zh-Hant": "U11"
+        }
+    },
+    {
+        "id": "u12",
+        "colour": "#8abbe4",
+        "fg": "#000",
+        "name": {
+            "en": "U12",
+            "de": "U12",
+            "zh-Hans": "U12",
+            "zh-Hant": "U12"
+        }
+    },
+    {
+        "id": "u13",
+        "colour": "#f1a1b3",
+        "fg": "#000",
+        "name": {
+            "en": "U13",
+            "de": "U13",
+            "zh-Hans": "U13",
+            "zh-Hant": "U13"
+        }
+    },
+    {
+        "id": "u14",
+        "colour": "#72bd5b",
+        "fg": "#000",
+        "name": {
+            "en": "U14",
+            "de": "U14",
+            "zh-Hans": "U14",
+            "zh-Hant": "U14"
+        }
+    },
+    {
+        "id": "u15",
+        "colour": "#105aa8",
+        "fg": "#fff",
+        "name": {
+            "en": "U15",
+            "de": "U15",
+            "zh-Hans": "U15",
+            "zh-Hant": "U15"
+        }
+    },
+    {
+        "id": "u16",
+        "colour": "#c5c043",
+        "fg": "#000",
+        "name": {
+            "en": "U16",
+            "de": "U16",
+            "zh-Hans": "U16",
+            "zh-Hant": "U16"
+        }
+    },
+    {
+        "id": "u19",
+        "colour": "#faba37",
+        "fg": "#000",
+        "name": {
+            "en": "U19",
+            "de": "U19",
+            "zh-Hans": "U19",
+            "zh-Hant": "U19"
+        }
+    },
+    {
+        "id": "20",
+        "colour": "#fab938",
+        "fg": "#000",
+        "name": {
+            "en": "Cable Car",
+            "de": "Seilbahn",
+            "zh-Hans": "缆车",
+            "zh-Hant": "纜車"
+        }
+    },
+    {
+        "id": "s1",
+        "colour": "#64ae4b",
+        "fg": "#fff",
+        "name": {
+            "en": "S1",
+            "de": "S1",
+            "zh-Hans": "S1",
+            "zh-Hant": "S1"
+        }
+    },
+    {
+        "id": "s11",
+        "colour": "#64ae4b",
+        "fg": "#fff",
+        "name": {
+            "en": "S11",
+            "de": "S11",
+            "zh-Hans": "S11",
+            "zh-Hant": "S11"
+        }
+    },
+    {
+        "id": "s2",
+        "colour": "#e62e32",
+        "fg": "#fff",
+        "name": {
+            "en": "S2",
+            "de": "S2",
+            "zh-Hans": "S2",
+            "zh-Hant": "S2"
+        }
+    },
+    {
+        "id": "s3",
+        "colour": "#ed733e",
+        "fg": "#fff",
+        "name": {
+            "en": "S3",
+            "de": "S3",
+            "zh-Hans": "S3",
+            "zh-Hant": "S3"
+        }
+    },
+    {
+        "id": "s4",
+        "colour": "#1466b0",
+        "fg": "#fff",
+        "name": {
+            "en": "S4",
+            "de": "S4",
+            "zh-Hans": "S4",
+            "zh-Hant": "S4"
+        }
+    },
+    {
+        "id": "s5",
+        "colour": "#2dabda",
+        "fg": "#fff",
+        "name": {
+            "en": "S5",
+            "de": "S5",
+            "zh-Hans": "S5",
+            "zh-Hant": "S5"
+        }
+    },
+    {
+        "id": "s6",
+        "colour": "#824e13",
+        "fg": "#fff",
+        "name": {
+            "en": "S6",
+            "de": "S6",
+            "zh-Hans": "S6",
+            "zh-Hant": "S6"
+        }
+    },
+    {
+        "id": "s60",
+        "colour": "#8c8d24",
+        "fg": "#fff",
+        "name": {
+            "en": "S60",
+            "de": "S60",
+            "zh-Hans": "S60",
+            "zh-Hant": "S60"
+        }
+    },
+    {
+        "id": "s62",
+        "colour": "#c17b3a",
+        "fg": "#fff",
+        "name": {
+            "en": "S62",
+            "de": "S62",
+            "zh-Hans": "S62",
+            "zh-Hant": "S62"
+        }
+    }
+]
