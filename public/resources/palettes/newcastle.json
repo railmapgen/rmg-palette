@@ -8,5 +8,15 @@
             "zh-Hans": "纽卡斯尔轻轨",
             "zh-Hant": "紐卡斯爾輕軌"
         }
+    },
+    {
+        "id": "stkn",
+        "colour": "#5AB031",
+        "fg": "#fff",
+        "name": {
+            "en": "Stockton Ferry",
+            "zh-Hans": "斯托克顿渡轮",
+            "zh-Hant": "斯托克頓渡輪"
+        }
     }
 ]

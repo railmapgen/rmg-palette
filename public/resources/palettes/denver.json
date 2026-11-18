@@ -1,0 +1,102 @@
+[
+    {
+        "id": "a",
+        "colour": "#57c1e9",
+        "fg": "#fff",
+        "name": {
+            "en": "Airport Line",
+            "zh-Hans": "机场线",
+            "zh-Hant": "機場線"
+        }
+    },
+    {
+        "id": "b",
+        "colour": "#4e9d2d",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line B",
+            "zh-Hans": "通勤线路 B",
+            "zh-Hant": "通勤線B"
+        }
+    },
+    {
+        "id": "g",
+        "colour": "#f6b221",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line G",
+            "zh-Hans": "通勤线路 G",
+            "zh-Hant": "通勤線 G"
+        }
+    },
+    {
+        "id": "n",
+        "colour": "#9f26b5",
+        "fg": "#fff",
+        "name": {
+            "en": "Commuter Line N",
+            "zh-Hans": "通勤线路 N",
+            "zh-Hant": "通勤線 N"
+        }
+    },
+    {
+        "id": "d",
+        "colour": "#008348",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line D",
+            "zh-Hans": "D路有轨电车线路",
+            "zh-Hant": "D線有軌電車"
+        }
+    },
+    {
+        "id": "e",
+        "colour": "#552683",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line E",
+            "zh-Hans": "E路有轨电车线路",
+            "zh-Hant": "E線有軌電車"
+        }
+    },
+    {
+        "id": "h",
+        "colour": "#0075be",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line H",
+            "zh-Hans": "H路有轨电车线路",
+            "zh-Hant": "H線有軌電車"
+        }
+    },
+    {
+        "id": "l",
+        "colour": "#ffce00",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line L",
+            "zh-Hans": "L路有轨电车线路",
+            "zh-Hant": "L線有軌電車"
+        }
+    },
+    {
+        "id": "r",
+        "colour": "#c4d600",
+        "fg": "#000",
+        "name": {
+            "en": "Tram Line R",
+            "zh-Hans": "R路有轨电车线路",
+            "zh-Hant": "R線有軌電車"
+        }
+    },
+    {
+        "id": "w",
+        "colour": "#009daa",
+        "fg": "#fff",
+        "name": {
+            "en": "Tram Line W",
+            "zh-Hans": "W路有轨电车线路",
+            "zh-Hant": "W線有軌電車"
+        }
+    }
+]

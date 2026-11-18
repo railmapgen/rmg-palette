@@ -25,6 +25,10 @@ global.fetch = vi.fn().mockImplementation((...args: any[]) => {
                 });
             },
         });
+    } else if (args[0].includes('/rmg-palette/issues')) {
+        return Promise.resolve({
+            json: async () => [],
+        });
     } else if (args[0].includes('resources/palettes')) {
         const file = args[0].split('/').at(-1);
         return Promise.resolve({

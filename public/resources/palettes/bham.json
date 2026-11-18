@@ -1,0 +1,26 @@
+[
+    {
+        "id": "metro",
+        "colour": "#0075c9",
+        "fg": "#fff",
+        "name": {
+            "en": "West Midlands Metro"
+        }
+    },
+    {
+        "id": "bus",
+        "colour": "#ea0029",
+        "fg": "#fff",
+        "name": {
+            "en": "West Midlands Buses"
+        }
+    },
+    {
+        "id": "rail",
+        "colour": "#e07709",
+        "fg": "#fff",
+        "name": {
+            "en": "West Midlands Railway"
+        }
+    }
+]

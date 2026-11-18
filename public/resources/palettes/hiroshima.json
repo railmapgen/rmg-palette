@@ -1,11 +1,68 @@
 [
     {
+        "id": "b",
+        "colour": "#09C0B0",
+        "fg": "#fff",
+        "name": {
+            "en": "Kabe Line",
+            "zh-Hans": "可部线",
+            "zh-Hant": "可部線",
+            "ja": "可部線"
+        }
+    },
+    {
+        "id": "g",
+        "colour": "#60ad3b",
+        "fg": "#fff",
+        "name": {
+            "en": "San'yō Main Line (Itozaki - Hiroshima)",
+            "zh-Hans": "山阳本线（糸崎 - 广岛）",
+            "zh-Hant": "山陽本線（糸崎 - 廣島）",
+            "ja": "山陽本線（糸崎 - 広島）"
+        }
+    },
+    {
+        "id": "r",
+        "colour": "#cb342e",
+        "fg": "#fff",
+        "name": {
+            "en": "San'yō Main Line (Hiroshima - Iwakuni)",
+            "zh-Hans": "山阳本线（广岛 - 岩国）",
+            "zh-Hant": "山陽本線（廣島 - 岩國）",
+            "ja": "山陽本線（広島 - 岩国）"
+        }
+    },
+    {
+        "id": "p",
+        "colour": "#8F76D6",
+        "fg": "#fff",
+        "name": {
+            "en": "Geibi Line",
+            "zh-Hans": "艺备线",
+            "zh-Hant": "藝備線",
+            "ja": "芸備線"
+        }
+    },
+    {
+        "id": "y",
+        "colour": "#d28b0e",
+        "fg": "#000",
+        "name": {
+            "en": "Kure Line",
+            "zh-Hans": "吴线",
+            "zh-Hant": "吳線",
+            "ja": "呉線"
+        }
+    },
+    {
         "id": "ha",
         "colour": "#ff9900",
         "fg": "#fff",
         "name": {
             "en": "Astram Line",
-            "ja": "アストラムライン"
+            "ja": "アストラムライン",
+            "zh-Hans": "广岛新交通1号线",
+            "zh-Hant": "廣島新交通1號線"
         }
     },
     {
