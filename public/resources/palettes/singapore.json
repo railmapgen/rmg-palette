@@ -7,8 +7,7 @@
         "name": {
             "en": "East-West Line",
             "zh-Hans": "东西线",
-            "zh-Hant": "東西線",
-            "ms": "Laluan Timur Barat"
+            "zh-Hant": "東西線"
         }
     },
     {
@@ -19,8 +18,7 @@
         "name": {
             "en": "North-South Line",
             "zh-Hans": "南北线",
-            "zh-Hant": "南北線",
-            "ms": "Laluan Utara-Selatan"
+            "zh-Hant": "南北線"
         }
     },
     {
@@ -31,8 +29,7 @@
         "name": {
             "en": "North-East Line",
             "zh-Hans": "东北线",
-            "zh-Hant": "東北線",
-            "ms": "Laluan Timur Laut"
+            "zh-Hant": "東北線"
         }
     },
     {
@@ -43,8 +40,7 @@
         "name": {
             "en": "Circle Line",
             "zh-Hans": "环线",
-            "zh-Hant": "環線",
-            "ms": "Laluan Bulatan"
+            "zh-Hant": "環線"
         }
     },
     {
@@ -55,8 +51,7 @@
         "name": {
             "en": "Downtown Line",
             "zh-Hans": "滨海市区线",
-            "zh-Hant": "濱海市區線",
-            "ms": "Laluan Pusat Bandar"
+            "zh-Hant": "濱海市區線"
         }
     },
     {
@@ -67,8 +62,7 @@
         "name": {
             "en": "Thomson-East Coast Line",
             "zh-Hans": "汤申-东海岸线",
-            "zh-Hant": "湯申-東海岸線",
-            "ms": "Laluan Thomson-Pantai Timur"
+            "zh-Hant": "湯申-東海岸線"
         }
     },
     {
@@ -79,8 +73,7 @@
         "name": {
             "en": "Light Rapid Transit (LRT)",
             "zh-Hans": "轻轨",
-            "zh-Hant": "輕軌",
-            "ms": "LRT"
+            "zh-Hant": "輕軌"
         }
     },
     {
@@ -101,6 +94,16 @@
             "en": "Cross Island Line",
             "zh-Hans": "跨岛线",
             "zh-Hant": "跨島線"
+        }
+    },
+    {
+        "id": "sll",
+        "colour": "#ffabab",
+        "fg": "#000",
+        "name": {
+            "en": "Seletar Airport Line",
+            "zh-Hans": " 实里达机场线",
+            "zh-Hant": " 實裡達機場線"
         }
     }
 ]
