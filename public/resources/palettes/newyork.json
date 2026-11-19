@@ -1,29 +1,22 @@
 [
     {
-        "id": "nybdfm",
-        "colour": "#ff6319",
-        "fg": "#fff",
-        "name": {
-            "en": "IND Sixth Avenue Line",
-            "zh-Hans": "IND第六大道线"
-        }
-    },
-    {
         "id": "nyace",
         "colour": "#0039a6",
         "fg": "#fff",
         "name": {
             "en": "IND Eighth Avenue Line",
-            "zh-Hans": "IND第八大道线"
+            "zh-Hans": "IND第八大道线",
+            "zh-Hant": "IND第八大道線"
         }
     },
     {
-        "id": "nyl",
-        "colour": "#a7a9ac",
+        "id": "nybdfm",
+        "colour": "#ff6319",
         "fg": "#fff",
         "name": {
-            "en": "BMT Canarsie Line",
-            "zh-Hans": "BMT卡纳西线"
+            "en": "IND Sixth Avenue Line",
+            "zh-Hans": "IND第六大道线",
+            "zh-Hant": "IND第六大道線"
         }
     },
     {
@@ -32,7 +25,18 @@
         "fg": "#fff",
         "name": {
             "en": "IND Crosstown Line",
-            "zh-Hans": "IND跨城线"
+            "zh-Hans": "IND跨城线",
+            "zh-Hant": "IND跨城線"
+        }
+    },
+    {
+        "id": "nyl",
+        "colour": "#a7a9ac",
+        "fg": "#fff",
+        "name": {
+            "en": "BMT Canarsie Line",
+            "zh-Hans": "BMT卡纳西线",
+            "zh-Hant": "BMT卡納西線"
         }
     },
     {
@@ -41,7 +45,8 @@
         "fg": "#fff",
         "name": {
             "en": "BMT Nassau Street Line",
-            "zh-Hans": "BMT纳苏街线"
+            "zh-Hans": "BMT纳苏街线",
+            "zh-Hant": "BMT納蘇街線"
         }
     },
     {
@@ -50,16 +55,8 @@
         "fg": "#000",
         "name": {
             "en": "BMT Broadway Line",
-            "zh-Hans": "BMT百老汇线"
-        }
-    },
-    {
-        "id": "ny456",
-        "colour": "#00933c",
-        "fg": "#fff",
-        "name": {
-            "en": "IRT Lexington Avenue Line",
-            "zh-Hans": "IRT莱辛顿大道线"
+            "zh-Hans": "BMT百老汇线",
+            "zh-Hant": "BMT百老匯線"
         }
     },
     {
@@ -68,16 +65,18 @@
         "fg": "#fff",
         "name": {
             "en": "IRT Broadway–Seventh Avenue Line",
-            "zh-Hans": "IRT百老汇-第七大道线"
+            "zh-Hans": "IRT百老汇-第七大道线",
+            "zh-Hant": "IRT百老匯-第七大道線"
         }
     },
     {
-        "id": "nyt",
-        "colour": "#00add0",
+        "id": "ny456",
+        "colour": "#00933c",
         "fg": "#fff",
         "name": {
-            "en": "IND Second Avenue Line",
-            "zh-Hans": "IND第二大道线"
+            "en": "IRT Lexington Avenue Line",
+            "zh-Hans": "IRT列克星敦大道线",
+            "zh-Hant": "IRT列星頓大道線"
         }
     },
     {
@@ -86,7 +85,18 @@
         "fg": "#fff",
         "name": {
             "en": "IRT Flushing Line",
-            "zh-Hans": "IRT法拉盛线"
+            "zh-Hans": "IRT法拉盛线",
+            "zh-Hant": "IRT法拉盛線"
+        }
+    },
+    {
+        "id": "nyt",
+        "colour": "#00add0",
+        "fg": "#fff",
+        "name": {
+            "en": "IND Second Avenue Line",
+            "zh-Hans": "IND第二大道线",
+            "zh-Hant": "IND第二大道線"
         }
     },
     {
@@ -95,7 +105,8 @@
         "fg": "#fff",
         "name": {
             "en": "Shuttles",
-            "zh-Hans": "接驳线"
+            "zh-Hans": "接驳线",
+            "zh-Hant": "接駁線"
         }
     },
     {
@@ -104,7 +115,148 @@
         "fg": "#fff",
         "name": {
             "en": "Staten Island Railway",
-            "zh-Hans": "斯塔顿岛铁路"
+            "zh-Hans": "斯塔滕岛铁路",
+            "zh-Hant": "史泰登島鐵路"
+        }
+    },
+    {
+        "id": "lirrb",
+        "colour": "#00985F",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Babylon Branch",
+            "zh-Hans": "长岛铁路 - 巴比伦支线",
+            "zh-Hant": "長島鐵路 - 巴比倫支線"
+        }
+    },
+    {
+        "id": "lirrh",
+        "colour": "#CE8E00",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Hempstead Branch",
+            "zh-Hans": "长岛铁路 - 亨普斯特德支线",
+            "zh-Hant": "長島鐵路 - 亨普斯特德支線"
+        }
+    },
+    {
+        "id": "lirro",
+        "colour": "#00AF3f",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Oyster Bay Branch",
+            "zh-Hans": "长岛铁路 - 奥尔斯特贝支线",
+            "zh-Hant": "長島鐵路 - 奧爾斯特貝支線"
+        }
+    },
+    {
+        "id": "lirrrr",
+        "colour": "#A626AA",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Ronkonkoma Branch",
+            "zh-Hans": "长岛铁路 - 朗康科马支线",
+            "zh-Hant": "長島鐵路 - 朗康科馬支線"
+        }
+    },
+    {
+        "id": "lirrm",
+        "colour": "#00b2a9",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Montauk Branch",
+            "zh-Hans": "长岛铁路 - 蒙塔克支线",
+            "zh-Hant": "長島鐵路 - 蒙塔克支線"
+        }
+    },
+    {
+        "id": "lirrl",
+        "colour": "#FF6319",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Long Beach Branch",
+            "zh-Hans": "长岛铁路 - 长滩支线",
+            "zh-Hant": "長島鐵路 - 長灘支線"
+        }
+    },
+    {
+        "id": "lirrf",
+        "colour": "#6e3219",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Far Rockaway Branch",
+            "zh-Hans": "长岛铁路 - 远洛克威支线",
+            "zh-Hant": "長島鐵路 - 遠洛克威支線"
+        }
+    },
+    {
+        "id": "lirrwh",
+        "colour": "#00A1DE",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - West Hempstead Branch",
+            "zh-Hans": "长岛铁路 - 西亨普斯特德支线",
+            "zh-Hant": "長島鐵路 - 西亨普斯特德支線"
+        }
+    },
+    {
+        "id": "lirrpj",
+        "colour": "#006ec7",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Port Jefferson Branch",
+            "zh-Hans": "长岛铁路 - 杰斐逊港支线",
+            "zh-Hant": "長島鐵路 - 傑斐遜港支線"
+        }
+    },
+    {
+        "id": "lirrw",
+        "colour": "#C60C30",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - Port Washington Branch",
+            "zh-Hans": "长岛铁路 - 华盛顿港支线",
+            "zh-Hant": "長島鐵路 - 華盛頓港支線"
+        }
+    },
+    {
+        "id": "lirrc",
+        "colour": "#4d5357",
+        "fg": "#fff",
+        "name": {
+            "en": "Long Island Rail Road - City Terminal Zone",
+            "zh-Hans": "长岛铁路 - 市区终点站区",
+            "zh-Hant": "長島鐵路 - 市區終點站區"
+        }
+    },
+    {
+        "id": "mnrrha",
+        "colour": "#0039A6",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro-North Railroad - Harlem Line",
+            "zh-Hans": "大都会北方铁路 - 哈莱姆线",
+            "zh-Hant": "大都會北方鐵路 - 哈萊姆線"
+        }
+    },
+    {
+        "id": "mnrrhu",
+        "colour": "#009B3A",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro-North Railroad - Hudson Line",
+            "zh-Hans": "大都会北方铁路 - 哈得森线",
+            "zh-Hant": "大都會北方鐵路 - 哈得森線"
+        }
+    },
+    {
+        "id": "mnrrn",
+        "colour": "#EE0034",
+        "fg": "#fff",
+        "name": {
+            "en": "Metro-North Railroad - New Haven Line",
+            "zh-Hans": "大都会北方铁路 - 纽黑文线",
+            "zh-Hant": "大都會北方鐵路 - 紐希雲線"
         }
     }
 ]

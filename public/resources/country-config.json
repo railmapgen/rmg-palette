@@ -448,6 +448,18 @@
         ]
     },
     {
+        "id": "MA",
+        "name": {
+            "en": "Morocco",
+            "zh-Hans": "摩洛哥",
+            "zh-Hant": "摩洛哥",
+            "ar": "المغرب"
+        },
+        "languages": [
+            "ar"
+        ]
+    },
+    {
         "id": "MO",
         "name": {
             "en": "Macao",

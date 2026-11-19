@@ -7,7 +7,8 @@
         "name": {
             "en": "East-West Line",
             "zh-Hans": "东西线",
-            "zh-Hant": "東西線"
+            "zh-Hant": "東西線",
+            "ms": "Laluan Timur Barat"
         }
     },
     {
@@ -18,7 +19,8 @@
         "name": {
             "en": "North-South Line",
             "zh-Hans": "南北线",
-            "zh-Hant": "南北線"
+            "zh-Hant": "南北線",
+            "ms": "Laluan Utara-Selatan"
         }
     },
     {
@@ -29,7 +31,8 @@
         "name": {
             "en": "North-East Line",
             "zh-Hans": "东北线",
-            "zh-Hant": "東北線"
+            "zh-Hant": "東北線",
+            "ms": "Laluan Timur Laut"
         }
     },
     {
@@ -40,7 +43,8 @@
         "name": {
             "en": "Circle Line",
             "zh-Hans": "环线",
-            "zh-Hant": "環線"
+            "zh-Hant": "環線",
+            "ms": "Laluan Bulatan"
         }
     },
     {
@@ -51,7 +55,8 @@
         "name": {
             "en": "Downtown Line",
             "zh-Hans": "滨海市区线",
-            "zh-Hant": "濱海市區線"
+            "zh-Hant": "濱海市區線",
+            "ms": "Laluan Pusat Bandar"
         }
     },
     {
@@ -62,7 +67,8 @@
         "name": {
             "en": "Thomson-East Coast Line",
             "zh-Hans": "汤申-东海岸线",
-            "zh-Hant": "湯申-東海岸線"
+            "zh-Hant": "湯申-東海岸線",
+            "ms": "Laluan Thomson-Pantai Timur"
         }
     },
     {
@@ -73,11 +79,12 @@
         "name": {
             "en": "Light Rapid Transit (LRT)",
             "zh-Hans": "轻轨",
-            "zh-Hant": "輕軌"
+            "zh-Hant": "輕軌",
+            "ms": "LRT"
         }
     },
     {
-        "id": "JRL",
+        "id": "jrl",
         "colour": "#089cac",
         "fg": "#fff",
         "name": {
@@ -87,7 +94,7 @@
         }
     },
     {
-        "id": "CRL",
+        "id": "crl",
         "colour": "#a0c40c",
         "fg": "#000",
         "name": {
