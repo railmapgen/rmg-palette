@@ -1,0 +1,596 @@
+[
+    {
+        "id": "sanyoshinkansen",
+        "colour": "#0072ba",
+        "fg": "#fff",
+        "name": {
+            "en": "Sanyo Shinkansen",
+            "zh-Hans": "山阳新干线",
+            "zh-Hant": "山陽新幹線",
+            "ja": "山陽新幹線"
+        }
+    },
+    {
+        "id": "kyushushinkansen",
+        "colour": "#f62e36",
+        "fg": "#fff",
+        "name": {
+            "en": "Kyushu Shinkansen",
+            "zh-Hans": "九州新干线",
+            "zh-Hant": "九州新幹線",
+            "ja": "九州新幹線"
+        }
+    },
+    {
+        "id": "westkyushushinkansen",
+        "colour": "#f62e36",
+        "fg": "#fff",
+        "name": {
+            "en": "West Kyushu Shinkansen",
+            "zh-Hans": "西九州新干线",
+            "zh-Hant": "西九州新幹線",
+            "ja": "西九州新幹線"
+        }
+    },
+    {
+        "id": "hakataminami",
+        "colour": "#0b318e",
+        "fg": "#fff",
+        "name": {
+            "en": "Hakataminami Line",
+            "zh-Hans": "博多南线",
+            "zh-Hant": "博多南線",
+            "ja": "博多南線"
+        }
+    },
+    {
+        "id": "ja",
+        "colour": "#ee3d49",
+        "fg": "#fff",
+        "name": {
+            "en": "Sanyo Main Line",
+            "zh-Hans": "山阳本线",
+            "zh-Hant": "山陽本線",
+            "ja": "山陽本線"
+        }
+    },
+    {
+        "id": "jb",
+        "colour": "#ee3d49",
+        "fg": "#fff",
+        "name": {
+            "en": "Kagoshima Main Line",
+            "zh-Hans": "鹿儿岛本线",
+            "zh-Hant": "鹿兒島本線",
+            "ja": "鹿児島本線"
+        }
+    },
+    {
+        "id": "jc",
+        "colour": "#faaf18",
+        "fg": "#000",
+        "name": {
+            "en": "Fukuhoku Yutaka Line",
+            "zh-Hans": "福北丰线",
+            "zh-Hant": "福北豐線",
+            "ja": "福北ゆたか線"
+        }
+    },
+    {
+        "id": "jd",
+        "colour": "#0095d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Kashii Line",
+            "zh-Hans": "香椎线",
+            "zh-Hant": "香椎線",
+            "ja": "香椎線"
+        }
+    },
+    {
+        "id": "je",
+        "colour": "#0095d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Wakamatsu Line",
+            "zh-Hans": "若松线",
+            "zh-Hant": "若松線",
+            "ja": "若松線"
+        }
+    },
+    {
+        "id": "jf",
+        "colour": "#0095d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Nippo Main Line",
+            "zh-Hans": "日丰本线",
+            "zh-Hant": "日豐本線",
+            "ja": "日豊本線"
+        }
+    },
+    {
+        "id": "jg",
+        "colour": "#36b558",
+        "fg": "#000",
+        "name": {
+            "en": "Haruda Line",
+            "zh-Hans": "原田线",
+            "zh-Hant": "原田線",
+            "ja": "原田線"
+        }
+    },
+    {
+        "id": "jh",
+        "colour": "#faaf18",
+        "fg": "#000",
+        "name": {
+            "en": "Nagasaki Main Line",
+            "zh-Hans": "长崎本线",
+            "zh-Hant": "長崎本線",
+            "ja": "長崎本線"
+        }
+    },
+    {
+        "id": "ji",
+        "colour": "#b96f30",
+        "fg": "#fff",
+        "name": {
+            "en": "Hita Hikosan Line",
+            "zh-Hans": "日田彦山线",
+            "zh-Hant": "日田彥山線",
+            "ja": "日田彦山線"
+        }
+    },
+    {
+        "id": "jj",
+        "colour": "#8f3e97",
+        "fg": "#fff",
+        "name": {
+            "en": "Gotoji Line",
+            "zh-Hans": "后藤寺线",
+            "zh-Hant": "後藤寺線",
+            "ja": "後藤寺線"
+        }
+    },
+    {
+        "id": "jk",
+        "colour": "#8f3e97",
+        "fg": "#fff",
+        "name": {
+            "en": "Chikuhi Line",
+            "zh-Hans": "筑肥线",
+            "zh-Hant": "筑肥線",
+            "ja": "筑肥線"
+        }
+    },
+    {
+        "id": "karatsu",
+        "colour": "#0095d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Karatsu Line",
+            "zh-Hans": "唐津线",
+            "zh-Hant": "唐津線",
+            "ja": "唐津線"
+        }
+    },
+    {
+        "id": "sasebo",
+        "colour": "#36b558",
+        "fg": "#000",
+        "name": {
+            "en": "Sasebo Line",
+            "zh-Hans": "佐世保线",
+            "zh-Hant": "佐世保線",
+            "ja": "佐世保線"
+        }
+    },
+    {
+        "id": "kyudai",
+        "colour": "#36b558",
+        "fg": "#000",
+        "name": {
+            "en": "Kyudai Main Line",
+            "zh-Hans": "久大本线",
+            "zh-Hant": "久大本線",
+            "ja": "久大本線"
+        }
+    },
+    {
+        "id": "hohi",
+        "colour": "#b96f30",
+        "fg": "#fff",
+        "name": {
+            "en": "Hohi Main Line",
+            "zh-Hans": "丰肥本线",
+            "zh-Hant": "豐肥本線",
+            "ja": "豊肥本線"
+        }
+    },
+    {
+        "id": "omura",
+        "colour": "#0095d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Omura Line",
+            "zh-Hans": "大村线",
+            "zh-Hant": "大村線",
+            "ja": "大村線"
+        }
+    },
+    {
+        "id": "misumi",
+        "colour": "#0095d9",
+        "fg": "#fff",
+        "name": {
+            "en": "Misumi Line",
+            "zh-Hans": "三角线",
+            "zh-Hant": "三角線",
+            "ja": "三角線"
+        }
+    },
+    {
+        "id": "hisatsu",
+        "colour": "#8f3e97",
+        "fg": "#fff",
+        "name": {
+            "en": "Hisatsu Line",
+            "zh-Hans": "肥萨线",
+            "zh-Hant": "肥薩線",
+            "ja": "肥薩線"
+        }
+    },
+    {
+        "id": "kitto",
+        "colour": "#36b558",
+        "fg": "#000",
+        "name": {
+            "en": "Kitto Line",
+            "zh-Hans": "吉都线",
+            "zh-Hant": "吉都線",
+            "ja": "吉都線"
+        }
+    },
+    {
+        "id": "nichinan",
+        "colour": "#faaf18",
+        "fg": "#000",
+        "name": {
+            "en": "Nichinan Line",
+            "zh-Hans": "日南线",
+            "zh-Hant": "日南線",
+            "ja": "日南線"
+        }
+    },
+    {
+        "id": "miyazakiairport",
+        "colour": "#36b558",
+        "fg": "#000",
+        "name": {
+            "en": "Miyazaki Airport Line",
+            "zh-Hans": "宫崎机场线",
+            "zh-Hant": "宮崎機場線",
+            "ja": "宮崎空港線"
+        }
+    },
+    {
+        "id": "ibusukimakurazaki",
+        "colour": "#faaf18",
+        "fg": "#000",
+        "name": {
+            "en": "Ibusuki Makurazaki Line",
+            "zh-Hans": "指宿枕崎线",
+            "zh-Hant": "指宿枕崎線",
+            "ja": "指宿枕崎線"
+        }
+    },
+    {
+        "id": "brt",
+        "colour": "#48b492",
+        "fg": "#000",
+        "name": {
+            "en": "Hita Hikosan Line BRT",
+            "zh-Hans": "日田彦山线BRT",
+            "zh-Hant": "日田彥山線BRT",
+            "ja": "日田彦山線BRT"
+        }
+    },
+    {
+        "id": "t",
+        "colour": "#004ea2",
+        "fg": "#fff",
+        "name": {
+            "en": "Nishitetsu Tenjin-Omuta Line",
+            "zh-Hans": "西铁天神大牟田线",
+            "zh-Hant": "西鐵天神大牟田線",
+            "ja": "西鉄天神大牟田線"
+        }
+    },
+    {
+        "id": "d",
+        "colour": "#004ea2",
+        "fg": "#fff",
+        "name": {
+            "en": "Nishitetsu Dazaifu Line",
+            "zh-Hans": "西铁太宰府线",
+            "zh-Hant": "西鐵太宰府線",
+            "ja": "西鉄太宰府線"
+        }
+    },
+    {
+        "id": "a",
+        "colour": "#004ea2",
+        "fg": "#fff",
+        "name": {
+            "en": "Nishitetsu Amagi Line",
+            "zh-Hans": "西铁甘木线",
+            "zh-Hant": "西鐵甘木線",
+            "ja": "西鉄甘木線"
+        }
+    },
+    {
+        "id": "nk",
+        "colour": "#004ea2",
+        "fg": "#fff",
+        "name": {
+            "en": "Nishitetsu Kaizuka Line",
+            "zh-Hans": "西铁贝冢线",
+            "zh-Hant": "西鐵貝塚線",
+            "ja": "西鉄貝塚線"
+        }
+    },
+    {
+        "id": "orange",
+        "colour": "#ffa500",
+        "fg": "#000",
+        "name": {
+            "en": "Hisatsu Orange Railway Line",
+            "zh-Hans": "肥萨橙铁道线",
+            "zh-Hant": "肥薩橙鐵道線",
+            "ja": "肥薩おれんじ鉄道線"
+        }
+    },
+    {
+        "id": "hcita",
+        "colour": "#ffa500",
+        "fg": "#000",
+        "name": {
+            "en": "Heisei Chikuho Railway Ita Line",
+            "zh-Hans": "平成筑丰铁道伊田线",
+            "zh-Hant": "平成筑豐鐵道伊田線",
+            "ja": "平成筑豊鉄道伊田線"
+        }
+    },
+    {
+        "id": "hcitoda",
+        "colour": "#32cd32",
+        "fg": "#000",
+        "name": {
+            "en": "Heisei Chikuho Railway Itoda Line",
+            "zh-Hans": "平成筑丰铁道糸田线",
+            "zh-Hant": "平成筑豐鐵道糸田線",
+            "ja": "平成筑豊鉄道糸田線"
+        }
+    },
+    {
+        "id": "hctagawa",
+        "colour": "#00bfff",
+        "fg": "#000",
+        "name": {
+            "en": "Heisei Chikuho Railway Tagawa Line",
+            "zh-Hans": "平成筑丰铁道田川线",
+            "zh-Hant": "平成筑豐鐵道田川線",
+            "ja": "平成筑豊鉄道田川線"
+        }
+    },
+    {
+        "id": "mojiko",
+        "colour": "#3328ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Mojiko Retro Kanko Line",
+            "zh-Hans": "门司港怀旧观光线",
+            "zh-Hant": "門司港懷舊觀光線",
+            "ja": "門司港レトロ観光線"
+        }
+    },
+    {
+        "id": "matsuura",
+        "colour": "#e70012",
+        "fg": "#fff",
+        "name": {
+            "en": "Matsuura Railway Nishi-Kyushu Line",
+            "zh-Hans": "松浦铁道西九州线",
+            "zh-Hant": "松浦鐵道西九州線",
+            "ja": "松浦鉄道西九州線"
+        }
+    },
+    {
+        "id": "amagi",
+        "colour": "#298b94",
+        "fg": "#fff",
+        "name": {
+            "en": "Amagi Railway Amagi Line",
+            "zh-Hans": "甘木铁道甘木线",
+            "zh-Hant": "甘木鐵道甘木線",
+            "ja": "甘木鉄道甘木線"
+        }
+    },
+    {
+        "id": "shimabara",
+        "colour": "#ffee06",
+        "fg": "#000",
+        "name": {
+            "en": "Shimabara Railway Line",
+            "zh-Hans": "岛原铁道线",
+            "zh-Hant": "島原鐵道線",
+            "ja": "島原鉄道線"
+        }
+    },
+    {
+        "id": "kumagawa",
+        "colour": "#dd9d3b",
+        "fg": "#000",
+        "name": {
+            "en": "Kumagawa Rail Yunomae Line",
+            "zh-Hans": "球磨川铁道汤前线",
+            "zh-Hant": "球磨川鐵道湯前線",
+            "ja": "くま川鉄道湯前線"
+        }
+    },
+    {
+        "id": "minamiaso",
+        "colour": "#029077",
+        "fg": "#fff",
+        "name": {
+            "en": "Minamiaso Railway Takamori Line",
+            "zh-Hans": "南阿苏铁道高森线",
+            "zh-Hant": "南阿蘇鐵道高森線",
+            "ja": "南阿蘇鉄道高森線"
+        }
+    },
+    {
+        "id": "ck",
+        "colour": "#e30075",
+        "fg": "#fff",
+        "name": {
+            "en": "Chikuho Electric Railroad Line",
+            "zh-Hans": "筑丰电气铁道线",
+            "zh-Hant": "筑豐電氣鐵道線",
+            "ja": "筑豊電気鉄道線"
+        }
+    },
+    {
+        "id": "kikuchi",
+        "colour": "#f76011",
+        "fg": "#fff",
+        "name": {
+            "en": "Kumamoto Electric Railway Kikuchi Line",
+            "zh-Hans": "熊本电气铁道菊池线",
+            "zh-Hant": "熊本電氣鐵道菊池線",
+            "ja": "熊本電気鉄道菊池線"
+        }
+    },
+    {
+        "id": "fujisaki",
+        "colour": "#be2f2b",
+        "fg": "#fff",
+        "name": {
+            "en": "Kumamoto Electric Railway Fujisaki Line",
+            "zh-Hans": "熊本电气铁道藤崎线",
+            "zh-Hant": "熊本電氣鐵道藤崎線",
+            "ja": "熊本電気鉄道藤崎線"
+        }
+    },
+    {
+        "id": "kumamotoa",
+        "colour": "#ff0000",
+        "fg": "#fff",
+        "name": {
+            "en": "Kumamoto City Tram Route A",
+            "zh-Hans": "熊本市电A系统",
+            "zh-Hant": "熊本市電A系統",
+            "ja": "熊本市電A系統"
+        }
+    },
+    {
+        "id": "kumamotob",
+        "colour": "#0000ff",
+        "fg": "#fff",
+        "name": {
+            "en": "Kumamoto City Tram Route B",
+            "zh-Hans": "熊本市电B系统",
+            "zh-Hant": "熊本市電B系統",
+            "ja": "熊本市電B系統"
+        }
+    },
+    {
+        "id": "nagasaki1",
+        "colour": "#4243be",
+        "fg": "#fff",
+        "name": {
+            "en": "Nagasaki Electric Tramway Route 1",
+            "zh-Hans": "长崎电气轨道1号系统",
+            "zh-Hant": "長崎電氣軌道1號系統",
+            "ja": "長崎電気軌道1号系統"
+        }
+    },
+    {
+        "id": "nagasaki2",
+        "colour": "#ffffff",
+        "fg": "#000",
+        "name": {
+            "en": "Nagasaki Electric Tramway Route 2",
+            "zh-Hans": "长崎电气轨道2号系统",
+            "zh-Hant": "長崎電氣軌道2號系統",
+            "ja": "長崎電気軌道2号系統"
+        }
+    },
+    {
+        "id": "nagasaki3",
+        "colour": "#ef1731",
+        "fg": "#fff",
+        "name": {
+            "en": "Nagasaki Electric Tramway Route 3",
+            "zh-Hans": "长崎电气轨道3号系统",
+            "zh-Hant": "長崎電氣軌道3號系統",
+            "ja": "長崎電気軌道3号系統"
+        }
+    },
+    {
+        "id": "nagasaki4",
+        "colour": "#ffcc00",
+        "fg": "#000",
+        "name": {
+            "en": "Nagasaki Electric Tramway Route 4",
+            "zh-Hans": "长崎电气轨道4号系统",
+            "zh-Hant": "長崎電氣軌道4號系統",
+            "ja": "長崎電気軌道4号系統"
+        }
+    },
+    {
+        "id": "nagasaki5",
+        "colour": "#005a52",
+        "fg": "#fff",
+        "name": {
+            "en": "Nagasaki Electric Tramway Route 5",
+            "zh-Hans": "长崎电气轨道5号系统",
+            "zh-Hant": "長崎電氣軌道5號系統",
+            "ja": "長崎電気軌道5号系統"
+        }
+    },
+    {
+        "id": "kagoshima1",
+        "colour": "#4243be",
+        "fg": "#fff",
+        "name": {
+            "en": "Kagoshima City Tram Route 1",
+            "zh-Hans": "鹿儿岛市电1系统",
+            "zh-Hant": "鹿兒島市電1系統",
+            "ja": "鹿児島市電1系統"
+        }
+    },
+    {
+        "id": "kagoshima2",
+        "colour": "#ef1731",
+        "fg": "#fff",
+        "name": {
+            "en": "Kagoshima City Tram Route 2",
+            "zh-Hans": "鹿儿岛市电2系统",
+            "zh-Hant": "鹿兒島市電2系統",
+            "ja": "鹿児島市電2系統"
+        }
+    },
+    {
+        "id": "monorail",
+        "colour": "#00a0e9",
+        "fg": "#000",
+        "name": {
+            "en": "Kitakyushu Monorail Kokura Line",
+            "zh-Hans": "北九州高速铁道小仓线（北九州单轨电车）",
+            "zh-Hant": "北九州高速鐵道小倉線（北九州單軌電車）",
+            "ja": "北九州高速鉄道小倉線（北九州モノレール）"
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "lrt1",
+        "colour": "#00AD00",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT-1"
+        }
+    },
+    {
+        "id": "mrt3",
+        "colour": "#FFEA00",
+        "fg": "#000",
+        "name": {
+            "en": "MRT-3"
+        }
+    },
+    {
+        "id": "lrt2",
+        "colour": "#7B219F",
+        "fg": "#fff",
+        "name": {
+            "en": "LRT-2"
+        }
+    }
+]
