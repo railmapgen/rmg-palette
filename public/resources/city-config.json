@@ -516,6 +516,13 @@
         }
     },
     {
+        "id": "dundee",
+        "country": "GBSCT",
+        "name": {
+            "en": "Dundee"
+        }
+    },
+    {
         "id": "edinburgh",
         "country": "GBSCT",
         "name": {
@@ -879,6 +886,16 @@
         }
     },
     {
+        "id": "jrtohokushinetsu",
+        "country": "JP",
+        "name": {
+            "en": "JR Lines of Tohoku And Shinetsu Area",
+            "zh-Hans": "JR东日本（东北/信越地区）",
+            "ja": "JR東日本（東北・信越地区）",
+            "zh-Hant": "JR東日本（東北/信越地區）"
+        }
+    },
+    {
         "id": "jrtokai",
         "country": "JP",
         "name": {
@@ -964,6 +981,16 @@
             "zh-Hans": "京都",
             "zh-Hant": "京都",
             "ja": "京都"
+        }
+    },
+    {
+        "id": "kyushu",
+        "country": "JP",
+        "name": {
+            "en": "Kyushu Area",
+            "ja": "九州地方",
+            "zh-Hans": "九州地方",
+            "zh-Hant": "九州地方"
         }
     },
     {
@@ -1176,6 +1203,13 @@
             "it": "Milano",
             "zh-Hans": "米兰",
             "zh-Hant": "米蘭"
+        }
+    },
+    {
+        "id": "mnl",
+        "country": "PH",
+        "name": {
+            "en": "Manila"
         }
     },
     {
@@ -1807,6 +1841,16 @@
             "zh-Hans": "斯特拉斯堡",
             "zh-Hant": "斯特拉斯堡",
             "fr": "Strasbourg"
+        }
+    },
+    {
+        "id": "stuttgart",
+        "country": "DE",
+        "name": {
+            "en": "Stuttgart",
+            "de": "Stuttgart",
+            "zh-Hant": "斯圖加特",
+            "zh-Hans": "斯图加特"
         }
     },
     {
