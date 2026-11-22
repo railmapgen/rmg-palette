@@ -1,7 +1,7 @@
 [
     {
         "id": "nb1",
-        "colour": "#1590ca",
+        "colour": "#188BC0",
         "fg": "#fff",
         "name": {
             "en": "Line 1",
@@ -11,7 +11,7 @@
     },
     {
         "id": "nb2",
-        "colour": "#d60e19",
+        "colour": "#DA0B12",
         "fg": "#fff",
         "name": {
             "en": "Line 2",
@@ -21,7 +21,7 @@
     },
     {
         "id": "nb3",
-        "colour": "#f39800",
+        "colour": "#E6B118",
         "fg": "#fff",
         "name": {
             "en": "Line 3",
@@ -31,7 +31,7 @@
     },
     {
         "id": "nb4",
-        "colour": "#abcd03",
+        "colour": "#81BC2E",
         "fg": "#fff",
         "name": {
             "en": "Line 4",
@@ -41,7 +41,7 @@
     },
     {
         "id": "nb5",
-        "colour": "#1d2088",
+        "colour": "#162196",
         "fg": "#fff",
         "name": {
             "en": "Line 5",
@@ -51,7 +51,7 @@
     },
     {
         "id": "nb6",
-        "colour": "#167f3d",
+        "colour": "#04852A",
         "fg": "#fff",
         "name": {
             "en": "Line 6",
@@ -61,7 +61,7 @@
     },
     {
         "id": "nb7",
-        "colour": "#7c572d",
+        "colour": "#85541a",
         "fg": "#fff",
         "name": {
             "en": "Line 7",
@@ -71,7 +71,7 @@
     },
     {
         "id": "nb8",
-        "colour": "#d33a94",
+        "colour": "#EF1980",
         "fg": "#fff",
         "name": {
             "en": "Line 8",
@@ -111,7 +111,7 @@
     },
     {
         "id": "nb12",
-        "colour": "#42bdca",
+        "colour": "#39CFDD",
         "fg": "#fff",
         "name": {
             "en": "Line 12",
