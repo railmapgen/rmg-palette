@@ -319,5 +319,15 @@
             "zh-Hans": "广东城际",
             "zh-Hant": "廣東城際"
         }
+    },
+    {
+        "id": "28",
+        "colour": "#ff00b7",
+        "fg": "#fff",
+        "name": {
+            "en": "Line 28",
+            "zh-Hans": "28号缐",
+            "zh-Hant": "28號線"
+        }
     }
 ]
